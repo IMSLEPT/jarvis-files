@@ -170,12 +170,7 @@ private fun CacheTab(vm: MainViewModel) {
     LazyColumn(contentPadding = PaddingValues(14.dp)) {
         if (!hasAccess) {
             item {
-                GlassCard(Modifier.fillMaxWidth(), highlight = true) {
-                    Text("Serve il permesso \"Accesso ai dati di utilizzo\"", color = J.Text, style = MaterialTheme.typography.titleSmall)
-                    Text("Così Jarvis vede quanto pesa la cache di ogni app e quali app usi di più.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
-                    Spacer(Modifier.height(10.dp))
-                    GradientButton("Concedi") { usageLauncher.launch(AppCache.usageAccessIntent()) }
-                }
+                com.jarvis.files.ui.components.UsageAccessGuide { usageLauncher.launch(AppCache.usageAccessIntent()) }
             }
             return@LazyColumn
         }

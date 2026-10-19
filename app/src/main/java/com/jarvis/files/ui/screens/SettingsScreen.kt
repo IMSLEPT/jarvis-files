@@ -176,7 +176,7 @@ fun SettingsScreen(vm: MainViewModel) {
             ONLINE_PRESETS.forEach { pr ->
                 Column(Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
-                        Chip(pr.name, base == pr.baseUrl) { base = pr.baseUrl; model = pr.model; p.onlineBaseUrl = pr.baseUrl; p.onlineModel = pr.model }
+                        Chip(pr.name, base == pr.baseUrl) { base = pr.baseUrl; model = pr.model; p.onlineBaseUrl = pr.baseUrl; p.onlineModel = pr.model; p.onlineTokenLimit = pr.tokenLimit }
                         Spacer(Modifier.width(8.dp))
                         Text("Crea chiave ›", color = J.Cyan, style = MaterialTheme.typography.labelLarge, modifier = Modifier.clickable {
                             ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(pr.keyUrl)))
@@ -230,6 +230,11 @@ fun SettingsScreen(vm: MainViewModel) {
             listOf(5, 10, 20, 30).forEach { g -> Chip("$g GB", lowGb == g) { lowGb = g; p.lowSpaceGb = g } }
         }
 
+        BackupSection(vm) {
+            // ricarica i campi dopo il ripristino
+            name = p.userName; mode = p.aiMode; base = p.onlineBaseUrl; key = p.onlineApiKey; model = p.onlineModel; vt = p.virusTotalKey
+        }
+
         SectionTitle("Permessi")
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             GhostButton("Accesso file") {
@@ -245,4 +250,75 @@ fun SettingsScreen(vm: MainViewModel) {
         Text("Jarvis Files 1.0 · progetto personale", color = J.Muted, style = MaterialTheme.typography.bodySmall)
         Spacer(Modifier.height(20.dp))
     }
+}
+
+
+/** Backup cifrato di chiavi API e impostazioni AI, con ripristino. */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun BackupSection(vm: MainViewModel, onRestored: () -> Unit) {
+    val ctx = LocalContext.current
+    val scope = rememberCoroutineScope()
+    var askExport by remember { mutableStateOf(false) }
+    var importUri by remember { mutableStateOf<android.net.Uri?>(null) }
+    var lastFile by remember { mutableStateOf<java.io.File?>(null) }
+    val picker = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.OpenDocument()
+    ) { uri -> if (uri != null) importUri = uri }
+
+    SectionTitle("Backup delle chiavi")
+    GlassCard(Modifier.fillMaxWidth()) {
+        Text(
+            "Salva in un file protetto da password la chiave dell'AI su internet, quella di VirusTotal e le impostazioni. " +
+                "Se reinstalli l'app o cambi telefono le ripristini in un attimo. Conserva il file su Drive o mandalo via email a te stesso.",
+            color = J.Muted, style = MaterialTheme.typography.bodySmall,
+        )
+        Spacer(Modifier.height(12.dp))
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            GradientButton("Crea backup") { askExport = true }
+            GhostButton("Ripristina") { picker.launch(arrayOf("*/*")) }
+            lastFile?.let { f -> GhostButton("Condividi file") { com.jarvis.files.core.Storage.shareFiles(ctx, listOf(f)) } }
+        }
+        lastFile?.let { Text("Salvato in Download/Jarvis Backup/${it.name}", color = J.Green, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 8.dp)) }
+    }
+
+    if (askExport) PasswordDialog("Password del backup", confirm = true, onDismiss = { askExport = false }) { pw ->
+        askExport = false
+        scope.launch {
+            val r = withContext(Dispatchers.IO) { runCatching { com.jarvis.files.core.KeyBackup.export(ctx, pw) } }
+            r.onSuccess { lastFile = it; vm.toast = "Backup creato. Ricorda la password: senza non si può aprire." }
+                .onFailure { vm.toast = "Backup non riuscito: ${it.message}" }
+        }
+    }
+    importUri?.let { uri ->
+        PasswordDialog("Password del backup", confirm = false, onDismiss = { importUri = null }) { pw ->
+            importUri = null
+            scope.launch {
+                val r = withContext(Dispatchers.IO) { runCatching { com.jarvis.files.core.KeyBackup.import(ctx, uri, pw) } }
+                r.onSuccess { n -> vm.toast = "Ripristinate $n impostazioni"; onRestored() }
+                    .onFailure { vm.toast = it.message ?: "Ripristino non riuscito" }
+            }
+        }
+    }
+}
+
+@Composable
+private fun PasswordDialog(title: String, confirm: Boolean, onDismiss: () -> Unit, onOk: (String) -> Unit) {
+    var pw by remember { mutableStateOf("") }
+    var pw2 by remember { mutableStateOf("") }
+    val valid = pw.length >= 6 && (!confirm || pw == pw2)
+    androidx.compose.material3.AlertDialog(
+        onDismissRequest = onDismiss,
+        containerColor = J.Card,
+        title = { Text(title, color = J.Text) },
+        text = {
+            Column {
+                field(pw, "Password (minimo 6 caratteri)", password = true) { pw = it }
+                if (confirm) field(pw2, "Ripeti la password", password = true) { pw2 = it }
+                if (confirm && pw2.isNotEmpty() && pw != pw2) Text("Le password non coincidono", color = J.Amber, style = MaterialTheme.typography.bodySmall)
+            }
+        },
+        confirmButton = { androidx.compose.material3.TextButton(enabled = valid, onClick = { onOk(pw) }) { Text("OK") } },
+        dismissButton = { androidx.compose.material3.TextButton(onClick = onDismiss) { Text("Annulla") } },
+    )
 }

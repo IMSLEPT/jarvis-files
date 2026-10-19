@@ -34,6 +34,11 @@ class Prefs(context: Context) {
         get() = sp.getString("online_model", "openai/gpt-oss-120b") ?: ""
         set(v) = sp.edit().putString("online_model", v.trim()).apply()
 
+    /** Token al minuto consentiti dal servizio online (si adatta da solo dopo un errore 413). */
+    var onlineTokenLimit: Int
+        get() = sp.getInt("online_tpm", 7000)
+        set(v) = sp.edit().putInt("online_tpm", v).apply()
+
     // Modello locale
     var localModelRepo: String
         get() = sp.getString("local_repo", "litert-community/gemma-4-E2B-it-litert-lm") ?: ""

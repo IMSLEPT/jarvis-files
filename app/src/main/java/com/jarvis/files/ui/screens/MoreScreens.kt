@@ -243,7 +243,7 @@ fun BatteryScreen(vm: MainViewModel) {
                 color = J.Muted, style = MaterialTheme.typography.bodySmall,
             )
             Spacer(Modifier.height(8.dp))
-            if (!hasAccess) GhostButton("Concedi accesso ai dati di utilizzo") { ctx.startActivity(AppCache.usageAccessIntent()) }
+            if (!hasAccess) com.jarvis.files.ui.components.UsageAccessGuide { ctx.startActivity(AppCache.usageAccessIntent()) }
         }
         val list = usage ?: emptyList()
         val max = list.maxOfOrNull { it.foregroundMs }?.coerceAtLeast(1) ?: 1

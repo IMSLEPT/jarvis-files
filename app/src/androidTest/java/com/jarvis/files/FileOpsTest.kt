@@ -142,6 +142,23 @@ class FileOpsTest {
         TestUtil.report("AI", "OK pulizia di ricerche e date non richieste")
     }
 
+    @Test fun keyBackupRoundTrip() {
+        val p = com.jarvis.files.core.Prefs(ctx)
+        p.onlineApiKey = "gsk_test_123"; p.virusTotalKey = "vt_456"
+        val f = com.jarvis.files.core.KeyBackup.export(ctx, "segreta1")
+        assertFalse("la chiave non deve comparire in chiaro", f.readText().contains("gsk_test_123"))
+        p.onlineApiKey = ""; p.virusTotalKey = ""
+        var wrong = false
+        try { com.jarvis.files.core.KeyBackup.import(ctx, android.net.Uri.fromFile(f), "sbagliata") } catch (e: com.jarvis.files.core.KeyBackup.WrongPassword) { wrong = true }
+        assertTrue("password errata rifiutata", wrong)
+        com.jarvis.files.core.KeyBackup.import(ctx, android.net.Uri.fromFile(f), "segreta1")
+        assertEquals("gsk_test_123", p.onlineApiKey)
+        assertEquals("vt_456", p.virusTotalKey)
+        p.onlineApiKey = ""; p.virusTotalKey = ""
+        f.delete()
+        TestUtil.report("Backup", "OK backup cifrato delle chiavi: esporta, password errata rifiutata, ripristino")
+    }
+
     @Test fun trashRestore() {
         val id = Trash.put(ctx, "JarvisTest/Download/note.txt")
         assertNotNull(id)

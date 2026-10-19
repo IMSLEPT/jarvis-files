@@ -75,7 +75,7 @@ Regole:
         sb.append(DeviceInfo.snapshot(c))
         sb.appendLine("=== CARTELLE (file, peso) ===")
         val byFolder = entries.groupBy { it.folder.split('/').take(2).joinToString("/") }
-        byFolder.entries.sortedByDescending { it.value.size }.take(if (fileBudget > 200) 70 else 18).forEach { (f, list) ->
+        byFolder.entries.sortedByDescending { it.value.size }.take((fileBudget / 4 + 8).coerceIn(10, 70)).forEach { (f, list) ->
             sb.appendLine("${f.ifEmpty { "(radice)" }} | ${list.size} | ${Fmt.size(list.sumOf { it.size })}")
         }
 
@@ -97,18 +97,48 @@ Regole:
             sb.appendLine("${e.rel} | ${e.size / 1024} | ${Fmt.iso(e.modified)}")
         }
         if (relevant.size > fileBudget) sb.appendLine("… altri ${relevant.size - fileBudget} file non mostrati: usa azioni *_where per coprirli tutti.")
-        val subdirs = folders.filter { f -> target.any { t -> t.isNotEmpty() && f.startsWith("$t/") } }.take(60)
+        val subdirs = folders.filter { f -> target.any { t -> t.isNotEmpty() && f.startsWith("$t/") } }.take((fileBudget / 3).coerceIn(10, 60))
         if (subdirs.isNotEmpty()) sb.appendLine("Sottocartelle esistenti: ${subdirs.joinToString(", ")}")
         return sb.toString()
     }
 
+    /** Stima prudente dei token (italiano + percorsi: circa 3 caratteri per token). */
+    private fun tokens(text: String) = text.length / 3 + 4
+
     suspend fun ask(c: Context, history: List<ChatMsg>): Pair<BrainReply, String> {
         val engine = AiRouter.engine(c)
+        val p = Prefs(c)
         val last = history.last()
-        val ctx = buildContext(c, last.text, AiRouter.fileBudget(engine))
-        val msgs = history.dropLast(1).takeLast(if (engine is OnlineAi) 8 else 4) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
-        val raw = engine.complete(systemPrompt(Prefs(c).userName), msgs)
-        return clean(parse(raw), last.text) to engine.displayName
+        val online = engine is OnlineAi
+        val sys = systemPrompt(p.userName)
+        val maxOut = if (online) 1500 else 4096
+        var budget = AiRouter.fileBudget(engine)
+        var limit = if (online) p.onlineTokenLimit else Int.MAX_VALUE
+        var lastError: Throwable? = null
+        repeat(5) {
+            val ctx = buildContext(c, last.text, budget)
+            val msgs = history.dropLast(1).takeLast(4) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
+            val est = tokens(sys) + msgs.sumOf { tokens(it.text) } + maxOut
+            if (est > limit && budget > 10) {
+                // Riduci l'elenco dei file prima di inviare, invece di farsi rifiutare la richiesta
+                budget = (budget * (limit.toFloat() / est) * 0.85f).toInt().coerceAtLeast(10)
+                return@repeat
+            }
+            try {
+                val raw = engine.complete(sys, msgs, maxOut)
+                return clean(parse(raw), last.text) to engine.displayName
+            } catch (e: TooLarge) {
+                lastError = e
+                limit = (e.limit * 0.9f).toInt()
+                p.onlineTokenLimit = limit
+                budget = (budget * (e.limit.toFloat() / e.requested) * 0.7f).toInt().coerceAtLeast(8)
+            }
+        }
+        throw AiUnavailable(
+            "La richiesta è troppo grande per il piano gratuito del servizio online" +
+                (lastError?.let { " (${(it as? TooLarge)?.limit} token al minuto)" } ?: "") +
+                ". Prova a indicare una cartella più piccola, oppure usa l'AI nel telefono."
+        )
     }
 
     private val photoWords = Regex("(?i)foto|immagin|selfie|scatt|video|ritratt|mostra")

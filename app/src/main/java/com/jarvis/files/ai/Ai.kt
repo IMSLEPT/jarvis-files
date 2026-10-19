@@ -62,7 +62,7 @@ object AiRouter {
     }
 
     /** Quante righe di elenco file conviene mandare a questo motore (contesto limitato in locale). */
-    fun fileBudget(engine: AiEngine) = if (engine is OnlineAi) 450 else 80
+    fun fileBudget(engine: AiEngine) = if (engine is OnlineAi) 300 else 80
 }
 
 /** Estrae il primo oggetto JSON valido da una risposta del modello (anche dentro ```json ... ```). */
