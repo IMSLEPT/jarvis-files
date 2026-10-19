@@ -184,7 +184,7 @@ private fun buildHolo(seed: Int, count: Int): List<HoloRing> {
             radius = radius.coerceAtMost(1f),
             tilt = if (rnd.nextFloat() < 0.55f) rnd.nextFloat() * 0.75f else 0f,
             axis = rnd.nextFloat() * 180f,
-            speed = (0.4f + rnd.nextFloat() * 1.6f) * (if (rnd.nextBoolean()) 1 else -1),
+            speed = ((1 + rnd.nextInt(3)) * (if (rnd.nextBoolean()) 1 else -1)).toFloat(),
             phase = rnd.nextFloat() * 360f,
             width = 0.4f + rnd.nextFloat() * 1.6f,
             arcs = arcs,
@@ -203,19 +203,10 @@ fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier) 
     val dark = J.p.isDark
     val rings = remember(size) { buildHolo(7, if (size < 40.dp) 7 else if (size < 80.dp) 12 else 18) }
     val t = rememberInfiniteTransition(label = "holo")
-    val boost by animateFloatAsState(if (active) 3.2f else 1f, tween(800), label = "boost")
-    // Tempo continuo (in gradi): niente salti quando l'animazione ricomincia
-    var time by remember { mutableFloatStateOf(0f) }
-    val boostNow by androidx.compose.runtime.rememberUpdatedState(boost)
-    LaunchedEffect(Unit) {
-        var last = 0L
-        while (true) {
-            androidx.compose.runtime.withFrameNanos { n ->
-                if (last != 0L) time += (n - last) / 1e9f * 15f * boostNow
-                last = n
-            }
-        }
-    }
+    // Velocità intere: la rotazione è continua quando l'animazione ricomincia
+    val slow by t.animateFloat(0f, 360f, infiniteRepeatable(tween(48000, easing = LinearEasing)), label = "slow")
+    val fast by t.animateFloat(0f, 360f, infiniteRepeatable(tween(12000, easing = LinearEasing)), label = "fast")
+    val time = if (active) fast else slow
     val pulse by t.animateFloat(0.75f, 1f, infiniteRepeatable(tween(if (active) 600 else 2200, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "pulse")
     val gold = Color(0xFFFFB238)
     val goldHi = Color(0xFFFFE08A)
@@ -258,7 +249,7 @@ fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier) 
         }
         // nucleo
         drawCircle(Brush.radialGradient(listOf(Color.White.copy(alpha = 0.9f * pulse), goldHi.copy(alpha = 0.6f), Color.Transparent), center = c, radius = r * 0.2f), r * 0.2f, c, blendMode = blend)
-        withTransform({ rotate(-time * 2f, c) }) {
+        withTransform({ rotate(-time * 4f, c) }) {
             drawArc(goldHi, 0f, 250f, false, Offset(c.x - r * 0.12f, c.y - r * 0.12f), androidx.compose.ui.geometry.Size(r * 0.24f, r * 0.24f),
                 style = Stroke(1.6f * px, cap = StrokeCap.Round), blendMode = blend)
         }
