@@ -1,0 +1,11 @@
+adb: error: failed to copy 'model/gemma-4-E2B-it.litertlm' to '/sdcard/JarvisModel/gemma-4-E2B-it.litertlm': remote couldn't create file: Operation not permitted
+model/gemma-4-E2B-it.litertlm: 1 file pushed, 0 skipped. 59.2 MB/s (2588147712 bytes in 41.717s)
+model/gemma-4-E2B-it.litertlm: 1 file pushed, 0 skipped. 45.7 MB/s (2588147712 bytes in 53.996s)
+total 2527496
+-rw-rw---- 1 u0_a163 media_rw 2588147712 2026-10-19 21:02 gemma-4-E2B-it.litertlm
+Filesystem       Size Used Avail Use% Mounted on
+/dev/block/dm-34  13G 3.0G   10G  24% /storage/emulated/0/Android/obb
+total 2527500
+drwxr-xr-x 2 runner runner       4096 Oct 19 21:01 .
+drwxr-xr-x 9 runner runner       4096 Oct 19 21:17 ..
+-rw-r--r-- 1 runner runner 2588147712 Oct 19 21:02 gemma-4-E2B-it.litertlm
