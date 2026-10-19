@@ -134,7 +134,7 @@ fun ChatScreen(vm: MainViewModel) {
         ) {
             if (vm.messages.isEmpty()) item {
                 Column(Modifier.fillMaxWidth().padding(top = 36.dp)) {
-                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(96.dp) }
+                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(190.dp, active = false) }
                     Spacer(Modifier.height(28.dp))
                     Text("Agli ordini, signore.", style = MaterialTheme.typography.headlineLarge, color = J.Text)
                     Text("Cosa metto in ordine oggi?", style = MaterialTheme.typography.headlineLarge, color = J.Muted)

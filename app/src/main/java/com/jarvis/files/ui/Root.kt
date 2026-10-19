@@ -107,7 +107,7 @@ fun JarvisRoot(vm: MainViewModel, locked: Boolean, onUnlock: () -> Unit) {
 private fun LockScreen(onUnlock: () -> Unit) {
     LaunchedEffect(Unit) { onUnlock() }
     Column(Modifier.fillMaxSize().padding(32.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
-        ArcReactor(120.dp)
+        ArcReactor(220.dp)
         Spacer(Modifier.height(32.dp))
         Text("Jarvis Files", style = MaterialTheme.typography.headlineMedium, color = J.Text)
         Spacer(Modifier.height(6.dp))
@@ -126,7 +126,7 @@ private fun Onboarding(hasAccess: Boolean, onDone: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        ArcReactor(110.dp)
+        ArcReactor(170.dp)
         Spacer(Modifier.height(20.dp))
         Text("Buongiorno, signore.", style = MaterialTheme.typography.headlineMedium, color = J.Text)
         Spacer(Modifier.height(8.dp))
