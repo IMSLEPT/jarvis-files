@@ -178,8 +178,10 @@ private fun buildHolo(seed: Int, count: Int): List<HoloRing> {
     val rnd = java.util.Random(seed.toLong())
     return List(count) { i ->
         val radius = 0.22f + 0.78f * (i + rnd.nextFloat() * 0.6f) / count
-        val arcN = 1 + rnd.nextInt(4)
-        val arcs = List(arcN) { rnd.nextFloat() * 360f to (25f + rnd.nextFloat() * 150f) }
+        // Alcuni anelli sono "frammenti di dati": tanti trattini corti, come nell'ologramma del film
+        val dashed = rnd.nextFloat() < 0.35f
+        val arcs = if (dashed) List(10 + rnd.nextInt(18)) { rnd.nextFloat() * 360f to (2f + rnd.nextFloat() * 9f) }
+        else List(1 + rnd.nextInt(4)) { rnd.nextFloat() * 360f to (25f + rnd.nextFloat() * 150f) }
         HoloRing(
             radius = radius.coerceAtMost(1f),
             tilt = if (rnd.nextFloat() < 0.55f) rnd.nextFloat() * 0.75f else 0f,
@@ -201,16 +203,16 @@ private fun buildHolo(seed: Int, count: Int): List<HoloRing> {
 @Composable
 fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier) {
     val dark = J.p.isDark
-    val rings = remember(size) { buildHolo(7, if (size < 40.dp) 7 else if (size < 80.dp) 12 else 18) }
+    val rings = remember(size) { buildHolo(7, if (size < 40.dp) 8 else if (size < 80.dp) 16 else 30) }
     val t = rememberInfiniteTransition(label = "holo")
     // Velocità intere: la rotazione è continua quando l'animazione ricomincia
     val slow by t.animateFloat(0f, 360f, infiniteRepeatable(tween(48000, easing = LinearEasing)), label = "slow")
     val fast by t.animateFloat(0f, 360f, infiniteRepeatable(tween(12000, easing = LinearEasing)), label = "fast")
     val time = if (active) fast else slow
     val pulse by t.animateFloat(0.75f, 1f, infiniteRepeatable(tween(if (active) 600 else 2200, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "pulse")
-    val gold = Color(0xFFFFB238)
-    val goldHi = Color(0xFFFFE08A)
-    val orange = Color(0xFFFF8A1E)
+    val gold = if (dark) Color(0xFFFFB238) else Color(0xFFE08A00)
+    val goldHi = if (dark) Color(0xFFFFE08A) else Color(0xFFF0A21C)
+    val orange = if (dark) Color(0xFFFF8A1E) else Color(0xFFD06200)
     val blend = if (dark) androidx.compose.ui.graphics.BlendMode.Plus else androidx.compose.ui.graphics.BlendMode.SrcOver
     Canvas(modifier.size(size)) {
         val r = this.size.minDimension / 2f
