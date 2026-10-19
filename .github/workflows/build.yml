@@ -31,10 +31,9 @@ jobs:
           chmod +x ./gradlew
           set -o pipefail
           ./gradlew assembleRelease 2>&1 | tee build.log || {
-            # Errori come annotazioni (leggibili dall'API anche senza scaricare i log)
-            grep -E "^e: |error:|What went wrong|Could not|> " build.log | head -60 | while IFS= read -r l; do
-              echo "::error::${l//%/%25}"
-            done
+            # Errori in un'unica annotazione (leggibile dall'API senza scaricare i log)
+            msg=$( (grep -E "^e: " build.log; grep -A6 "What went wrong" build.log) | head -80 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Compilazione::${msg}"
             exit 1
           }
 
