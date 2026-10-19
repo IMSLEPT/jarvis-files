@@ -129,7 +129,7 @@ class FileOpsTest {
             ),
             "Perché il telefono è lento?",
         )
-        assertEquals(null, r.plan)
+        assertEquals("il piano resta visibile insieme alle domande", 1, r.plan!!.ops.size)
         assertEquals(null, r.photoSearch)
         assertEquals(null, r.fileQuery)
         val r2 = Brain.clean(

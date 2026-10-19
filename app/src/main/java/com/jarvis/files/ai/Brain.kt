@@ -42,7 +42,8 @@ RISPONDI SOLO con un oggetto JSON valido, senza testo fuori:
  "file_search": {"keywords": ["..."], "ext": ["pdf"], "folder": "Download", "from": "2026-01-01", "to": "2026-12-31"}
 }
 Includi SOLO i campi che servono davvero: niente "photo_search" o "file_search" se l'utente non chiede di cercare; niente date se l'utente non le dice.
-Se fai domande in "questions", lascia "actions" vuoto: agirai dopo la risposta.
+NON chiedere mai conferma ("Confermi?", "Procedo?"): l'utente vede già un'anteprima con il tasto Esegui. Se il comando è chiaro, prepara subito le "actions".
+Fai domande SOLO se manca un'informazione indispensabile (es. che stile di nome usare): in quel caso proponi comunque un piano con la scelta più probabile.
 
 Tipi di "actions" (percorsi RELATIVI alla memoria, es. "Download/file.pdf"):
 - {"type":"mkdir","path":"Documenti/Bollette"}
@@ -57,7 +58,7 @@ FILTRO: {"folder":"Download","recursive":false,"ext":["pdf"],"name_contains":["f
 Regole:
 - Usa SOLO percorsi presenti nell'elenco fornito. Per molti file preferisci le azioni *_where.
 - Riordina DENTRO la cartella indicata dall'utente, rispettando le sottocartelle che esistono già (se c'è già "Download/PDF" usala, non crearne una doppia).
-- Se la richiesta è ambigua (che nomi usare, dove mettere le cartelle, cosa cancellare) NON agire: fai 1-2 domande in "questions" con opzioni pronte da toccare, ad esempio stili di nome: "2026-10-19 Bolletta Enel.pdf" / "Bolletta Enel 19-10-2026.pdf".
+- Se manca un'informazione importante (che stile di nome, cosa cancellare) fai 1 domanda in "questions" con opzioni pronte da toccare, ad esempio stili di nome: "2026-10-19 Bolletta Enel.pdf" / "Bolletta Enel 19-10-2026.pdf".
 - Per nomi nuovi: chiari, in italiano, senza caratteri strani, mantieni l'estensione.
 - L'utente vedrà un'anteprima e confermerà: descrivi in "reply" cosa farai.
 - Se chiede foto (persone, luoghi, oggetti, "foto di Leo", "montagne", "lago") usa "photo_search" con la richiesta completa.
@@ -120,9 +121,9 @@ Regole:
         val fq = r.fileQuery?.takeIf { searchWords.containsMatchIn(userText) && r.plan == null }
             ?.let { q -> if (dateWords.containsMatchIn(userText)) q else q.copy(fromIso = null, toIso = null) }
             ?.let { q -> if (q.folder != null && com.jarvis.files.core.Storage.file(q.folder).isDirectory) q else q.copy(folder = null) }
-        // Se Jarvis fa domande, il piano aspetta la risposta (si evita di eseguire scelte non confermate)
-        val plan = if (r.questions.isNotEmpty()) null else r.plan
-        return r.copy(photoSearch = photo, fileQuery = fq, plan = plan)
+        // Il piano resta visibile anche se Jarvis fa domande: l'anteprima con "Esegui" è già la conferma,
+        // e toccare un'opzione rigenera il piano con la scelta fatta.
+        return r.copy(photoSearch = photo, fileQuery = fq)
     }
 
     fun parse(raw: String): BrainReply {
