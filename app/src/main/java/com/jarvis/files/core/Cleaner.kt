@@ -137,7 +137,8 @@ object Cleaner {
         }
         Storage.listDirs(4).filter { d ->
             val f = Storage.file(d)
-            !d.startsWith("Android") && f.list()?.isEmpty() == true
+            // Solo sottocartelle: le cartelle principali (Alarms, Movies…) le ricrea il sistema
+            '/' in d && !d.startsWith("Android") && !d.contains("/.") && f.list()?.isEmpty() == true
         }.forEach { out.add(JunkItem(it, 0, "Cartella vuota")) }
         return out
     }
