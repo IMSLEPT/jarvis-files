@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -128,7 +129,7 @@ private fun TrashBar(vm: MainViewModel, selected: List<Pair<String, Long>>, sour
 }
 
 @Composable
-private fun SelectRow(selected: Boolean, onToggle: () -> Unit, content: @Composable () -> Unit) {
+private fun SelectRow(selected: Boolean, onToggle: () -> Unit, content: @Composable RowScope.() -> Unit) {
     Row(Modifier.fillMaxWidth().clickable(onClick = onToggle).padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
         Icon(if (selected) Icons.Filled.CheckCircle else Icons.Filled.RadioButtonUnchecked, null, tint = if (selected) J.Electric else J.Muted)
         Spacer(Modifier.width(10.dp))
