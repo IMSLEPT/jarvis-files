@@ -46,6 +46,8 @@ object LocalAi {
     private var loadedPath: String? = null
     var visionAvailable = false
         private set
+    /** Se la visione su GPU fallisce (driver non compatibile) si passa al processore. */
+    private var visionOnCpu = false
 
     fun engine(c: Context): AiEngine = Wrapper(c.applicationContext)
 
@@ -82,7 +84,7 @@ object LocalAi {
         val cache = c.cacheDir.path
         // Prima prova con la visione (Gemma 4 legge le immagini), poi solo testo, poi CPU.
         val attempts = listOf(
-            { EngineConfig(modelPath = path, backend = backend, visionBackend = Backend.GPU(), cacheDir = cache) to true },
+            { EngineConfig(modelPath = path, backend = backend, visionBackend = if (visionOnCpu) Backend.CPU() else Backend.GPU(), cacheDir = cache) to true },
             { EngineConfig(modelPath = path, backend = backend, cacheDir = cache) to false },
             { EngineConfig(modelPath = path, backend = Backend.CPU(), cacheDir = cache) to false },
         )
@@ -107,15 +109,23 @@ object LocalAi {
     /** Descrive un'immagine (solo se il modello supporta la visione). */
     suspend fun describeImage(c: Context, file: File, prompt: String): String? = withContext(Dispatchers.Default) {
         mutex.withLock {
-            val e = ensureLoaded(c)
-            if (!visionAvailable) return@withLock null
-            runCatching {
-                e.createConversation(
-                    ConversationConfig(samplerConfig = SamplerConfig(topK = 20, topP = 0.9, temperature = 0.1))
-                ).use { conv ->
-                    conv.sendMessage(Contents.of(Content.ImageFile(file.absolutePath), Content.Text(prompt))).toString()
-                }
-            }.onFailure { Log.w(TAG, "Visione fallita", it) }.getOrNull()
+            for (attempt in 0..1) {
+                val e = ensureLoaded(c)
+                if (!visionAvailable) return@withLock null
+                val res = runCatching {
+                    e.createConversation(
+                        ConversationConfig(samplerConfig = SamplerConfig(topK = 20, topP = 0.9, temperature = 0.1))
+                    ).use { conv ->
+                        conv.sendMessage(Contents.of(Content.ImageFile(file.absolutePath), Content.Text(prompt))).toString()
+                    }
+                }.onFailure { Log.w(TAG, "Visione fallita (cpu=$visionOnCpu)", it) }
+                if (res.isSuccess) return@withLock res.getOrNull()
+                if (visionOnCpu) return@withLock null
+                // Ripiego: ricarica il modello con la visione sul processore e riprova una volta
+                visionOnCpu = true
+                release()
+            }
+            null
         }
     }
 

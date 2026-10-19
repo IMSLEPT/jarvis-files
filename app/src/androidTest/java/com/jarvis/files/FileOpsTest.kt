@@ -104,6 +104,44 @@ class FileOpsTest {
         TestUtil.report("FileOps", "OK nomi duplicati e rinomina con schema")
     }
 
+    @Test fun moveWithFullTargetPath() {
+        // Come fa a volte Gemma: "to" è il percorso completo del file, non la cartella
+        val plan = FileOps.buildPlan(JSONArray("""[
+            {"type":"move","from":"JarvisTest/Download/fattura_tim.pdf","to":"JarvisTest/Download/PDF/fattura_tim.pdf"},
+            {"type":"move","from":"JarvisTest/Download/bolletta_enel_marzo.pdf","to":"JarvisTest/Download/PDF/Bolletta Enel marzo.pdf"}
+        ]"""))
+        TestUtil.report("FileOps", "Destinazione completa: ${plan.ops.map { it.label }}")
+        assertEquals(0, plan.mkdirs)
+        assertEquals(2, plan.moves)
+        FileOps.execute(ctx, plan, "Test")
+        assertTrue(Storage.file("JarvisTest/Download/PDF/fattura_tim.pdf").isFile)
+        assertTrue(Storage.file("JarvisTest/Download/PDF/Bolletta Enel marzo.pdf").isFile)
+        TestUtil.report("FileOps", "OK destinazione come percorso completo")
+    }
+
+    @Test fun cleanSpuriousSearches() {
+        val r = Brain.clean(
+            com.jarvis.files.ai.BrainReply(
+                "ok", questions = listOf(com.jarvis.files.ai.FollowUp("Che nome?", listOf("A", "B"))),
+                plan = com.jarvis.files.core.Plan(listOf(Op.Mkdir("X")), emptyList()),
+                photoSearch = "N/A",
+                fileQuery = com.jarvis.files.ai.FileQuery(listOf("log"), emptyList(), "System", "2024-01-01", "2024-06-01"),
+            ),
+            "Perché il telefono è lento?",
+        )
+        assertEquals(null, r.plan)
+        assertEquals(null, r.photoSearch)
+        assertEquals(null, r.fileQuery)
+        val r2 = Brain.clean(
+            com.jarvis.files.ai.BrainReply("ok", fileQuery = com.jarvis.files.ai.FileQuery(listOf("bolletta"), listOf("pdf"), "Inesistente", "2024-01-01", null)),
+            "Trova la bolletta della luce",
+        )
+        assertEquals(listOf("bolletta"), r2.fileQuery!!.keywords)
+        assertEquals(null, r2.fileQuery!!.fromIso)
+        assertEquals(null, r2.fileQuery!!.folder)
+        TestUtil.report("AI", "OK pulizia di ricerche e date non richieste")
+    }
+
     @Test fun trashRestore() {
         val id = Trash.put(ctx, "JarvisTest/Download/note.txt")
         assertNotNull(id)

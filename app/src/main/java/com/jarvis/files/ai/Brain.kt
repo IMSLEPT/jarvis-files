@@ -41,7 +41,8 @@ RISPONDI SOLO con un oggetto JSON valido, senza testo fuori:
  "photo_search": "testo",
  "file_search": {"keywords": ["..."], "ext": ["pdf"], "folder": "Download", "from": "2026-01-01", "to": "2026-12-31"}
 }
-Includi solo i campi utili.
+Includi SOLO i campi che servono davvero: niente "photo_search" o "file_search" se l'utente non chiede di cercare; niente date se l'utente non le dice.
+Se fai domande in "questions", lascia "actions" vuoto: agirai dopo la risposta.
 
 Tipi di "actions" (percorsi RELATIVI alla memoria, es. "Download/file.pdf"):
 - {"type":"mkdir","path":"Documenti/Bollette"}
@@ -73,7 +74,7 @@ Regole:
         sb.append(DeviceInfo.snapshot(c))
         sb.appendLine("=== CARTELLE (file, peso) ===")
         val byFolder = entries.groupBy { it.folder.split('/').take(2).joinToString("/") }
-        byFolder.entries.sortedByDescending { it.value.size }.take(if (fileBudget > 200) 70 else 30).forEach { (f, list) ->
+        byFolder.entries.sortedByDescending { it.value.size }.take(if (fileBudget > 200) 70 else 18).forEach { (f, list) ->
             sb.appendLine("${f.ifEmpty { "(radice)" }} | ${list.size} | ${Fmt.size(list.sumOf { it.size })}")
         }
 
@@ -104,9 +105,24 @@ Regole:
         val engine = AiRouter.engine(c)
         val last = history.last()
         val ctx = buildContext(c, last.text, AiRouter.fileBudget(engine))
-        val msgs = history.dropLast(1).takeLast(8) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
+        val msgs = history.dropLast(1).takeLast(if (engine is OnlineAi) 8 else 4) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
         val raw = engine.complete(systemPrompt(Prefs(c).userName), msgs)
-        return parse(raw) to engine.displayName
+        return clean(parse(raw), last.text) to engine.displayName
+    }
+
+    private val photoWords = Regex("(?i)foto|immagin|selfie|scatt|video|ritratt|mostra")
+    private val searchWords = Regex("(?i)trova|cerca|dov'?[èe]|dove|mostra|elenca|quali")
+    private val dateWords = Regex("(?i)\\b(19|20)\\d{2}\\b|gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|ieri|oggi|settimana|mese|anno")
+
+    /** Ripulisce la risposta: ricerche non richieste, date inventate, piano proposto insieme a domande. */
+    fun clean(r: BrainReply, userText: String): BrainReply {
+        val photo = r.photoSearch?.takeIf { photoWords.containsMatchIn(userText) && it.length >= 3 && !Regex("(?i)^(n/?a|null|nessun)").containsMatchIn(it) }
+        val fq = r.fileQuery?.takeIf { searchWords.containsMatchIn(userText) && r.plan == null }
+            ?.let { q -> if (dateWords.containsMatchIn(userText)) q else q.copy(fromIso = null, toIso = null) }
+            ?.let { q -> if (q.folder != null && com.jarvis.files.core.Storage.file(q.folder).isDirectory) q else q.copy(folder = null) }
+        // Se Jarvis fa domande, il piano aspetta la risposta (si evita di eseguire scelte non confermate)
+        val plan = if (r.questions.isNotEmpty()) null else r.plan
+        return r.copy(photoSearch = photo, fileQuery = fq, plan = plan)
     }
 
     fun parse(raw: String): BrainReply {

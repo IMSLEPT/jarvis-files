@@ -65,7 +65,8 @@ class LlmTest {
 
         val img = File(ctx.cacheDir, "obama.jpg").apply { writeBytes(TestUtil.asset("obama.jpg")) }
         val t0 = System.currentTimeMillis()
-        val cap = LocalAi.describeImage(ctx, img, "Descrivi questa foto in italiano in massimo 25 parole.")
+        val small = File(ctx.cacheDir, "obama_small.jpg").apply { com.jarvis.files.photos.BitmapLoader.load(img, 512)!!.compress(android.graphics.Bitmap.CompressFormat.JPEG, 85, outputStream()) }
+        val cap = LocalAi.describeImage(ctx, small, "Descrivi questa foto in italiano in massimo 25 parole.")
         TestUtil.report("LLM", "Visione disponibile=${LocalAi.visionAvailable} [${(System.currentTimeMillis() - t0) / 1000}s] descrizione=$cap")
 
         Storage.file("JarvisTest").deleteRecursively()

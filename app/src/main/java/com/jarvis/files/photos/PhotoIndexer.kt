@@ -135,7 +135,7 @@ object PhotoIndexer {
             if (shouldStop()) return
             val f = Storage.file(path)
             // Gemma lavora meglio con immagini ridotte: crea un JPEG temporaneo da 768 px
-            val bmp = BitmapLoader.load(f, 768) ?: continue
+            val bmp = BitmapLoader.load(f, 512) ?: continue
             val tmp = File(c.cacheDir, "caption.jpg")
             tmp.outputStream().use { bmp.compress(android.graphics.Bitmap.CompressFormat.JPEG, 85, it) }
             bmp.recycle()

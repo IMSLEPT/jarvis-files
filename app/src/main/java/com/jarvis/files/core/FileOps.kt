@@ -176,8 +176,19 @@ object FileOps {
                 "mkdir" -> Storage.sanitize(a.optString("path"))?.let { ensureDir(it) }
                 "move" -> {
                     val from = Storage.sanitize(a.optString("from")) ?: continue
-                    val to = Storage.sanitize(a.optString("to")) ?: continue
-                    addMove(from, to, a.optString("new_name").takeIf { it.isNotBlank() })
+                    var to = Storage.sanitize(a.optString("to")) ?: continue
+                    var newName = a.optString("new_name").takeIf { it.isNotBlank() }
+                    // L'AI a volte indica come destinazione il percorso completo del file ("Cartella/file.pdf"):
+                    // se l'ultimo pezzo ha un'estensione e non è una cartella esistente, è il nuovo nome.
+                    val last = to.substringAfterLast('/')
+                    val srcFile = Storage.file(from)
+                    if (srcFile.isFile && '.' in last && !Storage.file(to).isDirectory &&
+                        last.substringAfterLast('.').equals(srcFile.extension, ignoreCase = true)
+                    ) {
+                        if (newName == null) newName = last
+                        to = to.substringBeforeLast('/', "")
+                    }
+                    addMove(from, to, newName)
                 }
                 "rename" -> {
                     val p = Storage.sanitize(a.optString("path")) ?: continue
