@@ -35,6 +35,8 @@ android {
             isMinifyEnabled = false
             isShrinkResources = false
             signingConfig = signingConfigs.getByName("release")
+            // Solo telefoni moderni a 64 bit (Pixel e simili): APK molto più leggero
+            ndk { abiFilters += "arm64-v8a" }
         }
     }
 
