@@ -23,7 +23,14 @@ import java.io.File
 class LlmTest {
     @Test fun realModel() = runBlocking {
         TestUtil.grantAll()
-        val model = File(Storage.root, "JarvisModel").listFiles()?.firstOrNull { it.name.endsWith(".litertlm") }
+        var model: File? = null
+        repeat(60) {
+            if (model == null) {
+                model = File(Storage.root, "JarvisModel").listFiles()?.firstOrNull { it.name.endsWith(".litertlm") }
+                if (model == null) Thread.sleep(500)
+            }
+        }
+        TestUtil.report("LLM", "Modello: ${model?.name} (${model?.length()} byte), accesso file=${Storage.hasAllFilesAccess()}")
         assumeTrue("Modello non presente: test saltato", model != null)
         val ctx = TestUtil.ctx
         Prefs(ctx).apply {
