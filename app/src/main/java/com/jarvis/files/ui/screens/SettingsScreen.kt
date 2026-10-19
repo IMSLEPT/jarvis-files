@@ -7,6 +7,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -81,6 +83,7 @@ private fun ToggleRow(title: String, sub: String, checked: Boolean, onChange: (B
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun SettingsScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
@@ -118,7 +121,7 @@ fun SettingsScreen(vm: MainViewModel) {
         field(name, "Come ti chiamo") { name = it; p.userName = it }
 
         SectionTitle("Cervello di Jarvis")
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             AiMode.entries.forEach { m -> Chip(m.label, mode == m) { mode = m; p.aiMode = m } }
         }
         Text(
@@ -223,12 +226,12 @@ fun SettingsScreen(vm: MainViewModel) {
 
         SectionTitle("Avvisi")
         Text("Avvisami quando restano meno di $lowGb GB liberi", color = J.Text)
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(vertical = 6.dp)) {
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(vertical = 6.dp)) {
             listOf(5, 10, 20, 30).forEach { g -> Chip("$g GB", lowGb == g) { lowGb = g; p.lowSpaceGb = g } }
         }
 
         SectionTitle("Permessi")
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             GhostButton("Accesso file") {
                 ctx.startActivity(Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, Uri.parse("package:${ctx.packageName}")))
             }
