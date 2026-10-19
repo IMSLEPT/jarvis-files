@@ -103,8 +103,7 @@ import java.util.Calendar
 @Composable
 fun MoreScreen(vm: MainViewModel) {
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).statusBarsPadding().padding(18.dp)) {
-        Text("ALTRO", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
-        Text("Strumenti di Jarvis", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+        Text("Altro", style = MaterialTheme.typography.headlineLarge, color = J.Text)
         Spacer(Modifier.height(10.dp))
         MoreItem(Icons.Filled.Security, "Sicurezza", "App sospette, APK, impostazioni a rischio") { vm.sub = Sub.SECURITY }
         MoreItem(Icons.Filled.Schedule, "Automazioni", "Riordini, scansioni e avvisi programmati da te") { vm.sub = Sub.AUTOMATIONS }
@@ -121,7 +120,7 @@ fun MoreScreen(vm: MainViewModel) {
 private fun MoreItem(icon: ImageVector, title: String, sub: String, onClick: () -> Unit) {
     GlassCard(Modifier.fillMaxWidth().padding(bottom = 10.dp), onClick = onClick) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Icon(icon, null, tint = J.Electric, modifier = Modifier.size(26.dp))
+            com.jarvis.files.ui.components.IconBadge(icon)
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text(title, color = J.Text, style = MaterialTheme.typography.titleMedium)

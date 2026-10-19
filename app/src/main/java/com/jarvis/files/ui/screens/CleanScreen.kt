@@ -84,8 +84,7 @@ fun CleanScreen(vm: MainViewModel) {
     var tab by remember { mutableStateOf(CleanTab.CACHE) }
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Column(Modifier.padding(horizontal = 18.dp, vertical = 10.dp)) {
-            Text("PULIZIA", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
-            Text("Libera spazio in sicurezza", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+            Text("Pulizia", style = MaterialTheme.typography.headlineLarge, color = J.Text)
         }
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             CleanTab.entries.forEach { t -> Chip(t.title, selected = t == tab) { tab = t } }

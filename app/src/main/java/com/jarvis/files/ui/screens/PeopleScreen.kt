@@ -59,7 +59,7 @@ fun SubHeader(title: String, subtitle: String? = null, onBack: () -> Unit) {
     Row(Modifier.fillMaxWidth().padding(top = 8.dp, bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
         IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "Indietro", tint = J.Text) }
         Column {
-            Text(title, style = MaterialTheme.typography.headlineSmall, color = J.Text)
+            Text(title, style = MaterialTheme.typography.headlineMedium, color = J.Text)
             if (subtitle != null) Text(subtitle, style = MaterialTheme.typography.bodySmall, color = J.Muted)
         }
     }

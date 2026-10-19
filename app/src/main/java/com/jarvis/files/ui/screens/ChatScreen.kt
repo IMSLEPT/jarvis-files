@@ -5,15 +5,18 @@ import android.content.Intent
 import android.speech.RecognizerIntent
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -24,24 +27,29 @@ import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.filled.ArrowUpward
+import androidx.compose.material.icons.filled.CleaningServices
 import androidx.compose.material.icons.filled.DeleteSweep
+import androidx.compose.material.icons.filled.FolderOpen
+import androidx.compose.material.icons.filled.Landscape
 import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.PhoneAndroid
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
-import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -51,8 +59,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -69,20 +78,22 @@ import com.jarvis.files.ui.components.ArcReactor
 import com.jarvis.files.ui.components.Chip
 import com.jarvis.files.ui.components.FileThumb
 import com.jarvis.files.ui.components.GlassCard
+import com.jarvis.files.ui.components.IconBadge
 import com.jarvis.files.ui.components.PlanCard
+import com.jarvis.files.ui.components.TypingDots
+import com.jarvis.files.ui.components.pressable
 import com.jarvis.files.ui.theme.J
 
+private data class Suggestion(val icon: ImageVector, val title: String, val prompt: String)
+
 private val SUGGESTIONS = listOf(
-    "Metti in ordine la cartella Download",
-    "Rinomina le foto di WhatsApp con la data",
-    "Trova i PDF delle bollette",
-    "Mostrami le foto di montagna",
-    "Perché il telefono è lento?",
-    "Cancella gli APK già installati",
-    "Come libero spazio velocemente?",
+    Suggestion(Icons.Filled.FolderOpen, "Metti in ordine i Download", "Metti in ordine la cartella Download"),
+    Suggestion(Icons.Filled.Search, "Trova i PDF delle bollette", "Trova i PDF delle bollette"),
+    Suggestion(Icons.Filled.Landscape, "Foto di montagna", "Mostrami le foto di montagna"),
+    Suggestion(Icons.Filled.CleaningServices, "Libera spazio velocemente", "Come libero spazio velocemente?"),
+    Suggestion(Icons.Filled.PhoneAndroid, "Perché il telefono è lento?", "Perché il telefono è lento?"),
 )
 
-@OptIn(ExperimentalLayoutApi::class, ExperimentalFoundationApi::class)
 @Composable
 fun ChatScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
@@ -102,60 +113,78 @@ fun ChatScreen(vm: MainViewModel) {
     val engineLabel = when (p.aiMode) {
         AiMode.LOCAL -> "AI nel telefono"
         AiMode.ONLINE -> "AI su internet"
-        AiMode.AUTO -> if (AiRouter.onlineConfigured(ctx)) "Automatica" else if (AiRouter.localReady(ctx)) "AI nel telefono" else "Nessuna AI configurata"
+        AiMode.AUTO -> if (AiRouter.onlineConfigured(ctx)) "Automatica" else if (AiRouter.localReady(ctx)) "AI nel telefono" else "Da configurare"
     }
 
     Column(Modifier.fillMaxSize().statusBarsPadding().imePadding()) {
-        Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
-            ArcReactor(36.dp, active = vm.busy)
-            Spacer(Modifier.width(10.dp))
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 12.dp, bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+            ArcReactor(34.dp, active = vm.busy)
+            Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text("Jarvis", style = MaterialTheme.typography.titleLarge, color = J.Text)
-                Text(engineLabel, style = MaterialTheme.typography.labelSmall, color = J.Cyan)
+                Text(if (vm.busy) vm.busyText else engineLabel, style = MaterialTheme.typography.bodySmall, color = J.Muted, maxLines = 1)
             }
-            if (vm.messages.isNotEmpty()) IconButton(onClick = { vm.clearChat() }) { Icon(Icons.Filled.DeleteSweep, "Pulisci chat", tint = J.Muted) }
+            if (vm.messages.isNotEmpty()) IconButton(onClick = { vm.clearChat() }) { Icon(Icons.Filled.DeleteSweep, "Nuova chat", tint = J.Muted) }
         }
 
-        LazyColumn(Modifier.weight(1f).fillMaxWidth(), state = list, contentPadding = PaddingValues(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        LazyColumn(
+            Modifier.weight(1f).fillMaxWidth(), state = list,
+            contentPadding = PaddingValues(horizontal = 20.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
+        ) {
             if (vm.messages.isEmpty()) item {
-                Column(Modifier.fillMaxWidth().padding(top = 30.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                    ArcReactor(110.dp)
-                    Spacer(Modifier.height(18.dp))
-                    Text("Agli ordini, signore.", style = MaterialTheme.typography.headlineSmall, color = J.Text)
-                    Text("Scrivi o tieni premuto il microfono e dimmi cosa fare.", color = J.Muted, style = MaterialTheme.typography.bodyMedium)
-                    Spacer(Modifier.height(18.dp))
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                        SUGGESTIONS.forEach { s -> Chip(s) { vm.send(s) } }
+                Column(Modifier.fillMaxWidth().padding(top = 36.dp)) {
+                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(96.dp) }
+                    Spacer(Modifier.height(28.dp))
+                    Text("Agli ordini, signore.", style = MaterialTheme.typography.headlineLarge, color = J.Text)
+                    Text("Cosa metto in ordine oggi?", style = MaterialTheme.typography.headlineLarge, color = J.Muted)
+                    Spacer(Modifier.height(24.dp))
+                    GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
+                        SUGGESTIONS.forEach { s ->
+                            Row(
+                                Modifier.fillMaxWidth().pressable({ vm.send(s.prompt) }).padding(horizontal = 16.dp, vertical = 12.dp),
+                                verticalAlignment = Alignment.CenterVertically,
+                            ) {
+                                IconBadge(s.icon, size = 36.dp)
+                                Spacer(Modifier.width(14.dp))
+                                Text(s.title, color = J.Text, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
+                                Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(18.dp))
+                            }
+                        }
                     }
                 }
             }
-            items(vm.messages, key = { it.id }) { m -> MessageView(vm, m) }
-            if (vm.busy) item {
-                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(6.dp)) {
+            items(vm.messages, key = { it.id }) { m ->
+                Box(Modifier.animateItem(fadeInSpec = tween(350), placementSpec = tween(300))) { MessageView(vm, m) }
+            }
+            if (vm.busy) item(key = "typing") {
+                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.animateItem()) {
                     ArcReactor(26.dp)
-                    Spacer(Modifier.width(10.dp))
-                    Text(vm.busyText, color = J.Cyan, style = MaterialTheme.typography.bodyMedium)
+                    Spacer(Modifier.width(12.dp))
+                    TypingDots()
                 }
             }
         }
 
-        Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            TextField(
-                value = input,
-                onValueChange = { input = it },
-                placeholder = { Text("Cosa faccio, signore?", color = J.Muted) },
-                modifier = Modifier.weight(1f).clip(RoundedCornerShape(24.dp)).border(1.dp, J.Stroke, RoundedCornerShape(24.dp)),
-                maxLines = 4,
-                colors = TextFieldDefaults.colors(
-                    focusedContainerColor = J.Card, unfocusedContainerColor = J.Card,
-                    focusedIndicatorColor = Color.Transparent, unfocusedIndicatorColor = Color.Transparent,
-                    focusedTextColor = J.Text, unfocusedTextColor = J.Text, cursorColor = J.Electric,
-                ),
-            )
+        // Barra di input a pillola, con microfono che diventa "invia"
+        Row(
+            Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp)
+                .clip(RoundedCornerShape(28.dp)).background(J.Card).padding(start = 20.dp, end = 6.dp, top = 6.dp, bottom = 6.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Box(Modifier.weight(1f).padding(vertical = 10.dp)) {
+                if (input.isEmpty()) Text("Chiedi a Jarvis", color = J.Muted, style = MaterialTheme.typography.bodyLarge)
+                BasicTextField(
+                    value = input, onValueChange = { input = it },
+                    textStyle = MaterialTheme.typography.bodyLarge.copy(color = J.Text),
+                    cursorBrush = SolidColor(J.Blue), maxLines = 5,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
             Spacer(Modifier.width(8.dp))
             val sendMode = input.isNotBlank()
             Box(
-                Modifier.size(52.dp).clip(CircleShape).background(J.accent).clickable(enabled = !vm.busy) {
+                Modifier.size(44.dp).clip(CircleShape).background(if (sendMode) J.Blue else J.CardHi).clickable(enabled = !vm.busy) {
                     if (sendMode) { vm.send(input); input = "" }
                     else {
                         val i = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
@@ -167,87 +196,96 @@ fun ChatScreen(vm: MainViewModel) {
                 },
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(if (sendMode) Icons.AutoMirrored.Filled.Send else Icons.Filled.Mic, null, tint = Color.White)
+                AnimatedContent(sendMode, transitionSpec = { (fadeIn() + scaleIn(initialScale = 0.6f)) togetherWith (fadeOut() + scaleOut(targetScale = 0.6f)) }, label = "send") { s ->
+                    Icon(if (s) Icons.Filled.ArrowUpward else Icons.Filled.Mic, null, tint = if (s) Color.White else J.Text)
+                }
             }
         }
     }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun MessageView(vm: MainViewModel, m: UiMsg) {
     val ctx = LocalContext.current
     if (m.role == "user") {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
             Text(
-                m.text, color = Color.White,
-                modifier = Modifier.widthIn(max = 300.dp).clip(RoundedCornerShape(20.dp, 20.dp, 4.dp, 20.dp))
-                    .background(Brush.linearGradient(listOf(J.Blue, Color(0xFF1F5FD0)))).padding(12.dp),
+                m.text, color = Color.White, style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.widthIn(max = 290.dp).clip(RoundedCornerShape(22.dp)).background(J.Blue)
+                    .padding(horizontal = 16.dp, vertical = 11.dp),
             )
         }
         return
     }
-    Column(Modifier.fillMaxWidth()) {
-        Text(
-            m.text, color = if (m.error) J.Amber else J.Text,
-            modifier = Modifier.widthIn(max = 330.dp).clip(RoundedCornerShape(20.dp, 20.dp, 20.dp, 4.dp))
-                .background(J.Card).border(1.dp, J.Stroke, RoundedCornerShape(20.dp, 20.dp, 20.dp, 4.dp)).padding(12.dp),
-        )
-        if (m.engine.isNotBlank()) Text(m.engine, style = MaterialTheme.typography.labelSmall, color = J.Muted, modifier = Modifier.padding(start = 6.dp, top = 2.dp))
+    // Messaggi di Jarvis: testo libero con piccolo orb, come i moderni assistenti
+    Row(Modifier.fillMaxWidth()) {
+        ArcReactor(22.dp, active = false, modifier = Modifier.padding(top = 2.dp))
+        Spacer(Modifier.width(12.dp))
+        Column(Modifier.weight(1f)) {
+            Text(m.text, color = if (m.error) J.Amber else J.Text, style = MaterialTheme.typography.bodyLarge)
+            if (m.engine.isNotBlank()) Text(m.engine, style = MaterialTheme.typography.labelSmall, color = J.Muted, modifier = Modifier.padding(top = 4.dp))
 
-        m.questions.forEach { q ->
-            Spacer(Modifier.height(8.dp))
-            Text(q.question, color = J.Cyan, style = MaterialTheme.typography.bodyMedium)
-            Spacer(Modifier.height(6.dp))
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                q.options.forEach { o -> Chip(o) { vm.send(o) } }
-            }
-        }
-
-        m.plan?.let { plan ->
-            Spacer(Modifier.height(8.dp))
-            when (m.planState) {
-                PlanState.PENDING -> if (plan.isEmpty) {
-                    Text(plan.warnings.joinToString("\n"), color = J.Amber, style = MaterialTheme.typography.bodySmall)
-                } else PlanCard(plan, onConfirm = { vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) })
-                PlanState.RUNNING -> Text("Eseguo…", color = J.Cyan)
-                PlanState.DONE -> Text("✓ Eseguito", color = J.Green)
-                PlanState.CANCELLED -> Text("Annullato", color = J.Muted)
-            }
-        }
-
-        m.photoHits?.let { hits ->
-            Spacer(Modifier.height(8.dp))
-            if (hits.isEmpty()) Text("Nessuna foto trovata. Se non hai ancora fatto l'analisi delle foto, avviala dalla scheda Foto.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
-            else {
-                Text("${hits.size} foto trovate", color = J.Cyan, style = MaterialTheme.typography.labelLarge)
-                Spacer(Modifier.height(6.dp))
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    items(hits.take(60), key = { it.path }) { h ->
-                        FileThumb(Storage.file(h.path), 96.dp, Modifier.clickable { Storage.openFile(ctx, Storage.file(h.path)) })
-                    }
-                }
-                Text("Vedi tutte nella scheda Foto", color = J.Cyan, style = MaterialTheme.typography.labelLarge,
-                    modifier = Modifier.padding(top = 6.dp).clickable { vm.photoResults = hits; vm.tab = Tab.PHOTOS })
-            }
-        }
-
-        m.fileHits?.let { files ->
-            Spacer(Modifier.height(8.dp))
-            if (files.isEmpty()) Text("Nessun file trovato.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
-            else GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(10.dp)) {
-                files.take(15).forEach { e ->
-                    Row(Modifier.fillMaxWidth().clickable { Storage.openFile(ctx, Storage.file(e.rel)) }.padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-                        FileThumb(Storage.file(e.rel), 40.dp)
-                        Spacer(Modifier.width(10.dp))
-                        Column(Modifier.weight(1f)) {
-                            Text(e.name, color = J.Text, maxLines = 1, overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodyMedium)
-                            Text("${e.folder} · ${Fmt.size(e.size)} · ${Fmt.date(e.modified)}", color = J.Muted, maxLines = 1,
-                                overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodySmall)
+            m.questions.forEach { q ->
+                Spacer(Modifier.height(12.dp))
+                Text(q.question, color = J.Text, style = MaterialTheme.typography.titleSmall)
+                Spacer(Modifier.height(8.dp))
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    q.options.forEach { o ->
+                        Row(
+                            Modifier.fillMaxWidth().pressable({ vm.send(o) }).clip(RoundedCornerShape(16.dp)).background(J.Card)
+                                .padding(horizontal = 16.dp, vertical = 12.dp),
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Text(o, color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
+                            Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Blue, modifier = Modifier.size(16.dp))
                         }
                     }
                 }
-                if (files.size > 15) Text("+${files.size - 15} altri", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+            }
+
+            m.plan?.let { plan ->
+                Spacer(Modifier.height(12.dp))
+                when (m.planState) {
+                    PlanState.PENDING -> if (plan.isEmpty) {
+                        Text(plan.warnings.joinToString("\n"), color = J.Amber, style = MaterialTheme.typography.bodySmall)
+                    } else PlanCard(plan, onConfirm = { vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) })
+                    PlanState.RUNNING -> Row(verticalAlignment = Alignment.CenterVertically) { TypingDots(J.Blue); Spacer(Modifier.width(8.dp)); Text("Eseguo…", color = J.Muted) }
+                    PlanState.DONE -> Text("✓ Eseguito", color = J.Green, style = MaterialTheme.typography.titleSmall)
+                    PlanState.CANCELLED -> Text("Annullato", color = J.Muted, style = MaterialTheme.typography.titleSmall)
+                }
+            }
+
+            m.photoHits?.let { hits ->
+                Spacer(Modifier.height(12.dp))
+                if (hits.isEmpty()) Text("Nessuna foto trovata. Se non hai ancora analizzato le foto, avvia l'analisi dalla scheda Foto.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                else {
+                    LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        items(hits.take(60), key = { it.path }) { h ->
+                            FileThumb(Storage.file(h.path), 104.dp, Modifier.pressable({ Storage.openFile(ctx, Storage.file(h.path)) }))
+                        }
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Chip("Vedi tutte le ${hits.size} foto") { vm.photoResults = hits; vm.tab = Tab.PHOTOS }
+                }
+            }
+
+            m.fileHits?.let { files ->
+                Spacer(Modifier.height(12.dp))
+                if (files.isEmpty()) Text("Nessun file trovato.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                else GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
+                    files.take(12).forEach { e ->
+                        Row(Modifier.fillMaxWidth().pressable({ Storage.openFile(ctx, Storage.file(e.rel)) }).padding(horizontal = 14.dp, vertical = 9.dp), verticalAlignment = Alignment.CenterVertically) {
+                            FileThumb(Storage.file(e.rel), 40.dp)
+                            Spacer(Modifier.width(12.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text(e.name, color = J.Text, maxLines = 1, overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodyMedium)
+                                Text("${e.folder} · ${Fmt.size(e.size)} · ${Fmt.date(e.modified)}", color = J.Muted, maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodySmall)
+                            }
+                        }
+                    }
+                    if (files.size > 12) Text("+${files.size - 12} altri", color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(14.dp))
+                }
             }
         }
     }

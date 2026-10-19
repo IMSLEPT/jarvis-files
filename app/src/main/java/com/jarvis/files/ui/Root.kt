@@ -10,6 +10,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -105,11 +107,11 @@ fun JarvisRoot(vm: MainViewModel, locked: Boolean, onUnlock: () -> Unit) {
 private fun LockScreen(onUnlock: () -> Unit) {
     LaunchedEffect(Unit) { onUnlock() }
     Column(Modifier.fillMaxSize().padding(32.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
-        ArcReactor(140.dp)
-        Spacer(Modifier.height(28.dp))
-        Text("JARVIS FILES", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
-        Spacer(Modifier.height(8.dp))
-        Text("Identificazione richiesta, signore.", style = MaterialTheme.typography.titleLarge, color = J.Text, textAlign = TextAlign.Center)
+        ArcReactor(120.dp)
+        Spacer(Modifier.height(32.dp))
+        Text("Jarvis Files", style = MaterialTheme.typography.headlineMedium, color = J.Text)
+        Spacer(Modifier.height(6.dp))
+        Text("Identificazione richiesta, signore.", style = MaterialTheme.typography.bodyLarge, color = J.Muted, textAlign = TextAlign.Center)
         Spacer(Modifier.height(28.dp))
         GradientButton("Sblocca", icon = Icons.Filled.Fingerprint, onClick = onUnlock)
     }
@@ -170,7 +172,7 @@ private fun MainShell(vm: MainViewModel) {
         containerColor = Color.Transparent,
         snackbarHost = { SnackbarHost(snack) },
         bottomBar = {
-            NavigationBar(containerColor = J.Bg.copy(alpha = 0.96f), tonalElevation = 0.dp) {
+            NavigationBar(containerColor = J.Card, tonalElevation = 0.dp) {
                 listOf(
                     Triple(Tab.HOME, "Home", Icons.Filled.Dashboard),
                     Triple(Tab.CHAT, "Jarvis", Icons.Filled.AutoAwesome),
@@ -184,7 +186,7 @@ private fun MainShell(vm: MainViewModel) {
                         icon = { Icon(icon, label) },
                         label = { Text(label) },
                         colors = NavigationBarItemDefaults.colors(
-                            selectedIconColor = J.Electric, selectedTextColor = J.Electric, indicatorColor = J.CardHi,
+                            selectedIconColor = J.Blue, selectedTextColor = J.Text, indicatorColor = J.AccentSoft,
                             unselectedIconColor = J.Muted, unselectedTextColor = J.Muted,
                         ),
                     )
@@ -193,7 +195,13 @@ private fun MainShell(vm: MainViewModel) {
         },
     ) { pad ->
         Box(Modifier.fillMaxSize().padding(pad)) {
-            AnimatedContent(vm.tab to vm.sub, transitionSpec = { fadeIn() togetherWith fadeOut() }, label = "nav") { (tab, sub) ->
+            AnimatedContent(
+                vm.tab to vm.sub,
+                transitionSpec = {
+                    (fadeIn(tween(260)) + scaleIn(tween(260), initialScale = 0.98f)) togetherWith fadeOut(tween(160))
+                },
+                label = "nav",
+            ) { (tab, sub) ->
                 when (sub) {
                     Sub.SECURITY -> SecurityScreen(vm)
                     Sub.BATTERY -> BatteryScreen(vm)

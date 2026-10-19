@@ -40,12 +40,14 @@ class UiTest {
     private fun go(tab: Tab, sub: Sub = Sub.NONE) = rule.runOnUiThread { vm().tab = tab; vm().sub = sub }
 
     @Test fun allScreens() {
-        shot("01_home", 4000)
+        TestUtil.sh("cmd uimode night no")
+        rule.activityRule.scenario.recreate()
+        shot("01_home", 5000)
         rule.onAllNodesWithText("Jarvis").onFirst().performClick()
         shot("02_chat_vuota")
         // Messaggio vero senza AI configurata: deve spiegare cosa fare
         rule.runOnUiThread { vm().send("Metti in ordine la cartella Download") }
-        rule.waitUntil(20_000) { rule.onAllNodesWithText("AI", substring = true).fetchSemanticsNodes().size > 1 }
+        rule.waitUntil(20_000) { rule.onAllNodesWithText("Nessuna AI", substring = true).fetchSemanticsNodes().isNotEmpty() }
         shot("03_chat_senza_ai")
         // Esempio di risposta con domanda e anteprima (dati finti solo per mostrare l'aspetto)
         rule.runOnUiThread {
@@ -73,5 +75,12 @@ class UiTest {
         go(Tab.MORE, Sub.TRASH); shot("15_cestino")
         go(Tab.MORE, Sub.VAULT); shot("16_cassaforte")
         go(Tab.MORE, Sub.FIND); shot("17_trova")
+        // Stesse schermate principali in tema scuro
+        TestUtil.sh("cmd uimode night yes")
+        rule.activityRule.scenario.recreate()
+        go(Tab.HOME); shot("20_home_scuro", 4000)
+        go(Tab.CHAT); shot("21_chat_scura")
+        go(Tab.CLEAN); shot("22_pulizia_scura")
+        TestUtil.sh("cmd uimode night no")
     }
 }

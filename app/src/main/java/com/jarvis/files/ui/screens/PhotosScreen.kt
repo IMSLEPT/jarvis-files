@@ -126,8 +126,7 @@ fun PhotosScreen(vm: MainViewModel) {
     ) {
         item(span = { GridItemSpan(maxLineSpan) }) {
             Column {
-                Text("FOTO", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
-                Text("Cerca come su Google Foto", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+                Text("Foto", style = MaterialTheme.typography.headlineLarge, color = J.Text)
                 Spacer(Modifier.height(12.dp))
                 OutlinedTextField(
                     value = query, onValueChange = { query = it },
