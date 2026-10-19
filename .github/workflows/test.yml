@@ -11,7 +11,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -36,13 +36,15 @@ jobs:
       - name: Esegui i test sull'emulatore
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
+          api-level: 33
           target: google_apis
           arch: x86_64
           ram-size: 4096M
           disk-size: 6000M
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           disable-animations: true
+          cores: 4
+          emulator-boot-timeout: 1200
           script: ./.github/scripts/run-tests.sh
 
       - name: Riepilogo come annotazione
