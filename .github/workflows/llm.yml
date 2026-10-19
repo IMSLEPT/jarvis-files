@@ -41,6 +41,7 @@ jobs:
         run: |
           chmod +x ./gradlew
           ./gradlew assembleDebug assembleDebugAndroidTest
+          ./gradlew --stop
 
       - name: Scarica Gemma
         run: |
@@ -60,7 +61,7 @@ jobs:
           api-level: 33
           target: google_apis
           arch: x86_64
-          ram-size: 8192M
+          ram-size: 6144M
           disk-size: 14000M
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           disable-animations: true
@@ -82,7 +83,7 @@ jobs:
                   for fl in list(tc.findall('failure')) + list(tc.findall('error')):
                       fail += 1
                       lines.append(f"FALLITO {tc.get('classname')}.{tc.get('name')}: {(fl.text or '')[:700]}")
-          rep = ''
+          rep = open('results/instrument.txt').read()[-3000:] + '\n' if os.path.exists('results/instrument.txt') else ''
           for p in glob.glob('results/**/report.txt', recursive=True):
               rep = open(p).read()
           msg = f"Test: {tot} eseguiti, {fail} falliti\n" + "\n".join(lines) + "\n--- RAPPORTO ---\n" + rep[:9000]
