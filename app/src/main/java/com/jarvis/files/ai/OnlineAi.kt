@@ -43,6 +43,11 @@ class OnlineAi(private val baseUrl: String, private val apiKey: String, private 
                 .put("messages", msgs)
                 .put("temperature", 0.2)
                 .put("max_tokens", maxTokens)
+                .apply {
+                    // GPT-OSS ragiona prima di rispondere: con ragionamento basso la risposta non viene tagliata
+                    // e la richiesta resta dentro i limiti gratuiti
+                    if (model.contains("gpt-oss") && baseUrl.contains("groq")) put("reasoning_effort", "low")
+                }
             var resp: String? = null
             for (attempt in 0..1) {
                 try {
@@ -55,7 +60,9 @@ class OnlineAi(private val baseUrl: String, private val apiKey: String, private 
                 }
             }
             val o = JSONObject(resp!!)
-            o.getJSONArray("choices").getJSONObject(0).getJSONObject("message").optString("content", "")
+            val content = o.getJSONArray("choices").getJSONObject(0).getJSONObject("message").optString("content", "")
+            if (content.isBlank()) throw AiUnavailable("Il servizio online ha risposto vuoto (risposta troppo lunga). Riprova con una richiesta più precisa.")
+            content
         }
 
     suspend fun listModels(): List<String> = withContext(Dispatchers.IO) {
