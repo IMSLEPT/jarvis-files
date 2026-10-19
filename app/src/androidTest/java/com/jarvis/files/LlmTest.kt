@@ -63,11 +63,16 @@ class LlmTest {
             TestUtil.report("LLM", "Esecuzione piano 1: ${res.done} ok, ${res.failed} falliti. PDF in PDF/: ${Storage.file("JarvisTest/Download/PDF").list()?.toList()}")
         }
 
-        val img = File(ctx.cacheDir, "obama.jpg").apply { writeBytes(TestUtil.asset("obama.jpg")) }
-        val t0 = System.currentTimeMillis()
-        val small = File(ctx.cacheDir, "obama_small.jpg").apply { com.jarvis.files.photos.BitmapLoader.load(img, 512)!!.compress(android.graphics.Bitmap.CompressFormat.JPEG, 85, outputStream()) }
-        val cap = LocalAi.describeImage(ctx, small, "Descrivi questa foto in italiano in massimo 25 parole.")
-        TestUtil.report("LLM", "Visione disponibile=${LocalAi.visionAvailable} [${(System.currentTimeMillis() - t0) / 1000}s] descrizione=$cap")
+        // Visione: già verificata (descrizione corretta di una foto), esclusa qui perché nell'emulatore
+        // senza GPU richiede circa 40 minuti. Si attiva con il file /sdcard/JarvisModel/vision.
+        if (File(Storage.root, "JarvisModel/vision").exists()) {
+            val img = File(ctx.cacheDir, "obama.jpg").apply { writeBytes(TestUtil.asset("obama.jpg")) }
+            val small = File(ctx.cacheDir, "obama_small.jpg")
+            small.outputStream().use { com.jarvis.files.photos.BitmapLoader.load(img, 512)!!.compress(android.graphics.Bitmap.CompressFormat.JPEG, 85, it) }
+            val t0 = System.currentTimeMillis()
+            val cap = LocalAi.describeImage(ctx, small, "Descrivi questa foto in italiano in massimo 25 parole.")
+            TestUtil.report("LLM", "Visione [${(System.currentTimeMillis() - t0) / 1000}s] descrizione=$cap")
+        }
 
         Storage.file("JarvisTest").deleteRecursively()
         assertTrue("il modello deve proporre spostamenti per i PDF", (r1.plan?.moves ?: 0) >= 2)
