@@ -101,7 +101,7 @@ fun GlassCard(
 @Composable
 fun SectionTitle(text: String, modifier: Modifier = Modifier) {
     Text(
-        text.lowercase().replaceFirstChar { it.uppercase() },
+        text,
         style = MaterialTheme.typography.titleSmall,
         color = J.Muted,
         modifier = modifier.padding(start = 4.dp, top = 26.dp, bottom = 10.dp),
