@@ -28,6 +28,7 @@ class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        createPrompt()
         handleIntent(intent)
         setContent {
             JarvisTheme {
@@ -67,16 +68,11 @@ class MainActivity : FragmentActivity() {
     }
 
     private var prompting = false
+    private var prompt: BiometricPrompt? = null
 
-    fun authenticate() {
-        if (prompting || unlocked.value) return
-        val authenticators = BIOMETRIC_WEAK or DEVICE_CREDENTIAL
-        if (BiometricManager.from(this).canAuthenticate(authenticators) != BiometricManager.BIOMETRIC_SUCCESS) {
-            unlocked.value = true // nessun blocco schermo configurato: non lasciare l'utente fuori
-            return
-        }
-        prompting = true
-        val prompt = BiometricPrompt(this, ContextCompat.getMainExecutor(this), object : BiometricPrompt.AuthenticationCallback() {
+    /** Il BiometricPrompt va creato in onCreate (prima che l'activity sia avviata). */
+    private fun createPrompt() {
+        prompt = BiometricPrompt(this, ContextCompat.getMainExecutor(this), object : BiometricPrompt.AuthenticationCallback() {
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 prompting = false
                 unlocked.value = true
@@ -87,14 +83,21 @@ class MainActivity : FragmentActivity() {
                 prompting = false
             }
         })
+    }
+
+    fun authenticate() {
+        if (prompting || unlocked.value) return
+        val authenticators = BIOMETRIC_WEAK or DEVICE_CREDENTIAL
+        if (BiometricManager.from(this).canAuthenticate(authenticators) != BiometricManager.BIOMETRIC_SUCCESS) {
+            unlocked.value = true // nessun blocco schermo configurato: non lasciare l'utente fuori
+            return
+        }
+        prompting = true
         val info = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Jarvis Files")
             .setSubtitle("Sblocca con impronta o PIN")
             .setAllowedAuthenticators(authenticators)
             .build()
-        runCatching { prompt.authenticate(info) }.onFailure {
-            prompting = false
-            unlocked.value = true // nessun metodo di sblocco configurato: non bloccare l'utente fuori
-        }
+        runCatching { prompt!!.authenticate(info) }.onFailure { prompting = false }
     }
 }

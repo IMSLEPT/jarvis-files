@@ -86,10 +86,16 @@ fun JarvisRoot(vm: MainViewModel, locked: Boolean, onUnlock: () -> Unit) {
         lifecycle.addObserver(obs)
         onDispose { lifecycle.removeObserver(obs) }
     }
+    var onboarded by remember { mutableStateOf(Prefs(ctx).onboardingDone) }
     Box(Modifier.fillMaxSize().background(J.background)) {
         when {
             locked -> LockScreen(onUnlock)
-            !hasAccess || !Prefs(ctx).onboardingDone -> Onboarding(hasAccess) { Prefs(ctx).onboardingDone = true; hasAccess = Storage.hasAllFilesAccess() }
+            !hasAccess || !onboarded -> Onboarding(hasAccess) {
+                Prefs(ctx).onboardingDone = true
+                onboarded = true
+                hasAccess = Storage.hasAllFilesAccess()
+                vm.rescan()
+            }
             else -> MainShell(vm)
         }
     }
