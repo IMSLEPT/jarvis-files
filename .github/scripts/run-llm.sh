@@ -2,8 +2,13 @@
 # Copia Gemma nell'emulatore e prova l'AI vera (senza Gradle in esecuzione, per risparmiare RAM).
 set -x
 adb shell rm -rf /sdcard/JarvisReport
-adb shell mkdir -p /sdcard/JarvisModel
-adb push model/*.litertlm /sdcard/JarvisModel/ > push.log 2>&1
+# La memoria condivisa dell'emulatore può non essere pronta subito dopo l'avvio: riprova
+for i in 1 2 3 4 5 6 7 8; do
+  adb wait-for-device
+  adb shell mkdir -p /sdcard/JarvisModel
+  if adb push model/*.litertlm /sdcard/JarvisModel/ >> push.log 2>&1 && adb shell ls /sdcard/JarvisModel/ | grep -q litertlm; then break; fi
+  sleep 20
+done
 adb shell ls -la /sdcard/JarvisModel/ >> push.log 2>&1
 adb shell df -h /data >> push.log 2>&1
 adb install -r -g app/build/outputs/apk/debug/app-debug.apk
