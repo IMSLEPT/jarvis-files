@@ -16,6 +16,7 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
@@ -133,11 +134,11 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
 
     Box(
         Modifier.fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xF20B0C10), Color(0xFA16181F), Color(0xFF0B0C10))))
+            .background(Brush.verticalGradient(listOf(Color(0xF7F7F9FC), Color(0xFCFFF6EE), Color(0xFFF7F9FC))))
             .clickable(interactionSource = remember { MutableInteractionSource() }, indication = null) {},
     ) {
         IconButton(onClick = onClose, modifier = Modifier.statusBarsPadding().padding(8.dp).align(Alignment.TopEnd)) {
-            Icon(Icons.Filled.Close, "Chiudi", tint = Color.White)
+            Icon(Icons.Filled.Close, "Chiudi", tint = Color(0xFF0A0D18))
         }
         Column(
             Modifier.fillMaxSize().padding(28.dp),
@@ -148,19 +149,19 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
             Spacer(Modifier.height(28.dp))
             AnimatedContent(text.ifBlank { state }, transitionSpec = { fadeIn() togetherWith fadeOut() }, label = "voice") { t ->
                 Text(
-                    t, color = Color.White, textAlign = TextAlign.Center,
+                    t, color = Color(0xFF0A0D18), textAlign = TextAlign.Center,
                     fontSize = if (text.isBlank()) 22.sp else 26.sp, fontWeight = FontWeight.SemiBold,
                 )
             }
             Spacer(Modifier.height(24.dp))
             if (text.isBlank()) {
-                Text("Prova a dire", color = Color(0xFF9A9FAD))
+                Text("Prova a dire", color = Color(0xFF5B6680))
                 Spacer(Modifier.height(10.dp))
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     VOICE_HINTS.forEach { h ->
                         Text(
-                            "“$h”", color = Color.White,
-                            modifier = Modifier.clip(CircleShape).background(Color(0x26FFFFFF)).clickable { onResult(h) }
+                            "“$h”", color = Color(0xFF1B2A6B),
+                            modifier = Modifier.clip(CircleShape).background(Color.White).border(1.dp, Color(0xFFE6EAF0), CircleShape).clickable { onResult(h) }
                                 .padding(horizontal = 14.dp, vertical = 9.dp),
                         )
                     }
@@ -169,7 +170,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
             Spacer(Modifier.height(32.dp))
             Box(
                 Modifier.size(68.dp).clip(CircleShape)
-                    .background(if (listening) Brush.linearGradient(listOf(Color(0xFFFF6A2B), Color(0xFFFF3D2E))) else Brush.linearGradient(listOf(Color(0x33FFFFFF), Color(0x33FFFFFF))))
+                    .background(if (listening) Brush.linearGradient(listOf(Color(0xFFFF6A2B), Color(0xFFFF3D2E))) else Brush.linearGradient(listOf(Color(0xFF1E91E8), Color(0xFF7731DE), Color(0xFFFD893F))))
                     .clickable { text = ""; attempt++ },
                 contentAlignment = Alignment.Center,
             ) { Icon(Icons.Filled.Mic, "Riascolta", tint = Color.White, modifier = Modifier.size(30.dp)) }

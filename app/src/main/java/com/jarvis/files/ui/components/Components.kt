@@ -49,6 +49,8 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
@@ -164,112 +166,53 @@ fun Chip(text: String, selected: Boolean = false, onClick: () -> Unit) {
 }
 
 /**
- * Jarvis: sfera metallica con pannelli che ruotano, anello arancione luminoso, arco blu,
- * stella centrale e particelle in orbita. Sempre in movimento; più veloce quando [active].
- * [level] (0-1) fa "pulsare" la sfera con la voce durante l'ascolto.
+ * Jarvis, identico al design di riferimento: la sfera è l'immagine originale; la stella centrale ruota,
+ * la sfera fluttua e il bagliore pulsa. Più veloce quando [active]; [level] (0-1) segue la voce.
+ * Sotto i 90 dp si usa la versione rotonda della barra in basso.
  */
 @Composable
 fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier, level: Float = 0f) {
     val t = rememberInfiniteTransition(label = "orb")
-    val spin by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 3600 else 9000, easing = LinearEasing)), label = "spin")
-    val slow by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 9000 else 24000, easing = LinearEasing)), label = "slow")
-    val orbit by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 2600 else 6000, easing = LinearEasing)), label = "orbit")
-    val pulse by t.animateFloat(0.82f, 1f, infiniteRepeatable(tween(if (active) 550 else 1400, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "pulse")
+    val spin by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 3500 else 12000, easing = LinearEasing)), label = "spin")
+    val float by t.animateFloat(-1f, 1f, infiniteRepeatable(tween(2600, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "float")
+    val pulse by t.animateFloat(0.75f, 1f, infiniteRepeatable(tween(if (active) 500 else 1600, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "pulse")
     val lvl by animateFloatAsState(level.coerceIn(0f, 1f), tween(120), label = "lvl")
-    val dark = J.p.isDark
-    val detailed = size >= 56.dp
-    val orange = Color(0xFFFF6A2B)
-    val gold = Color(0xFFFFB347)
-    val blue = Color(0xFF3B82F6)
-    val metalHi = if (dark) Color(0xFF4A505E) else Color(0xFF3A3F4B)
-    Canvas(modifier.size(size)) {
-        val r = this.size.minDimension / 2f
-        val c = center
-        val sr = r * (if (detailed) 0.56f else 0.78f) * (1f + lvl * 0.08f)
-        // aloni
-        drawCircle(Brush.radialGradient(listOf(orange.copy(alpha = 0.28f * pulse + lvl * 0.3f), Color.Transparent), center = c, radius = r), r, c)
-        if (detailed) drawCircle(Brush.radialGradient(listOf(blue.copy(alpha = 0.16f), Color.Transparent), center = Offset(c.x - r * 0.3f, c.y + r * 0.2f), radius = r * 0.8f), r * 0.8f, Offset(c.x - r * 0.3f, c.y + r * 0.2f))
-
-        fun particle(i: Int, front: Boolean) {
-            val a = Math.toRadians((orbit * (1f + i * 0.17f) + i * 72f).toDouble())
-            val depth = kotlin.math.sin(a).toFloat()
-            if ((depth >= 0f) != front) return
-            val ex = kotlin.math.cos(a).toFloat() * r * 0.95f
-            val ey = depth * r * 0.32f
-            // ellisse inclinata di -20°
-            val ang = Math.toRadians(-20.0)
-            val x = c.x + (ex * kotlin.math.cos(ang) - ey * kotlin.math.sin(ang)).toFloat()
-            val y = c.y + (ex * kotlin.math.sin(ang) + ey * kotlin.math.cos(ang)).toFloat()
-            val col = if (i % 2 == 0) blue else orange
-            val pr = r * (0.035f + 0.025f * (depth + 1f) / 2f)
-            drawCircle(col.copy(alpha = 0.35f), pr * 2.2f, Offset(x, y))
-            drawCircle(col, pr, Offset(x, y))
-        }
-        if (detailed) {
-            withTransform({ rotate(-20f, c) }) {
-                drawOval(
-                    (if (dark) Color.White else Color(0xFF9AA3B5)).copy(alpha = 0.45f),
-                    topLeft = Offset(c.x - r * 0.95f, c.y - r * 0.32f),
-                    size = androidx.compose.ui.geometry.Size(r * 1.9f, r * 0.64f),
-                    style = Stroke(r * 0.012f),
-                )
+    val glow = Color(0xFFFF7A2E)
+    if (size < 90.dp) {
+        Box(modifier.size(size), contentAlignment = Alignment.Center) {
+            Canvas(Modifier.matchParentSize()) {
+                drawCircle(Brush.radialGradient(listOf(glow.copy(alpha = 0.35f * pulse + lvl * 0.3f), Color.Transparent)), this.size.minDimension / 2)
             }
-            for (i in 0 until 5) particle(i, front = false)
-        }
-
-        // corpo della sfera
-        drawCircle(
-            Brush.radialGradient(listOf(metalHi, Color(0xFF14161C)), center = Offset(c.x - sr * 0.35f, c.y - sr * 0.35f), radius = sr * 1.5f),
-            sr, c,
-        )
-        // pannelli metallici che ruotano (due fasce in senso opposto)
-        val ring1 = sr * 0.84f
-        withTransform({ rotate(spin, c) }) {
-            for (i in 0 until 12) drawArc(
-                Color(0xFF6B7282).copy(alpha = 0.75f), i * 30f + 3f, 22f, false,
-                Offset(c.x - ring1, c.y - ring1), androidx.compose.ui.geometry.Size(ring1 * 2, ring1 * 2), style = Stroke(sr * 0.13f),
+            androidx.compose.foundation.Image(
+                androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_nav), null,
+                Modifier.size(size).graphicsLayer {
+                    rotationZ = spin * 0.6f
+                    scaleX = 1f + lvl * 0.08f; scaleY = 1f + lvl * 0.08f
+                },
             )
         }
-        val ring2 = sr * 0.62f
-        withTransform({ rotate(-spin * 0.7f, c) }) {
-            for (i in 0 until 8) drawArc(
-                Color(0xFF2C313C), i * 45f + 4f, 34f, false,
-                Offset(c.x - ring2, c.y - ring2), androidx.compose.ui.geometry.Size(ring2 * 2, ring2 * 2), style = Stroke(sr * 0.1f),
-            )
+        return
+    }
+    // Immagine base 507×404 px; nucleo rotante 172 px con angolo in alto a sinistra a (216, 132)
+    val w = size
+    val h = size * (404f / 507f)
+    Box(modifier.size(w, h).graphicsLayer { translationY = float * 4.dp.toPx() }) {
+        Canvas(Modifier.matchParentSize()) {
+            val cx = this.size.width * (302.5f / 507f); val cy = this.size.height * (218.2f / 404f)
+            val r = this.size.width * 0.32f
+            drawCircle(Brush.radialGradient(listOf(glow.copy(alpha = 0.22f * pulse + lvl * 0.35f), Color.Transparent), center = Offset(cx, cy), radius = r), r, Offset(cx, cy))
         }
-        // anello arancione luminoso
-        drawCircle(orange.copy(alpha = 0.30f * pulse), sr * 1.02f, c, style = Stroke(sr * 0.2f))
-        withTransform({ rotate(slow, c) }) {
-            drawCircle(Brush.sweepGradient(listOf(orange, gold, orange, Color(0xFFFF3D2E), orange), center = c), sr * 1.0f, c, style = Stroke(sr * 0.07f))
-        }
-        // arco blu sul lato sinistro
-        val rb = sr * 1.16f
-        withTransform({ rotate(-slow * 0.5f, c) }) {
-            drawArc(blue.copy(alpha = 0.9f), 110f, 120f, false, Offset(c.x - rb, c.y - rb), androidx.compose.ui.geometry.Size(rb * 2, rb * 2),
-                style = Stroke(sr * 0.05f, cap = StrokeCap.Round))
-        }
-        // anello interno e stella a tre punte
-        drawCircle(orange.copy(alpha = 0.35f * pulse), sr * 0.42f, c, style = Stroke(sr * 0.14f))
-        drawCircle(gold, sr * 0.42f, c, style = Stroke(sr * 0.04f))
-        withTransform({ rotate(spin * 0.35f, c) }) {
-            for (k in 0 until 3) {
-                val ang = Math.toRadians((k * 120 - 90).toDouble())
-                val dx = kotlin.math.cos(ang).toFloat(); val dy = kotlin.math.sin(ang).toFloat()
-                val tip = Offset(c.x + dx * sr * 0.40f, c.y + dy * sr * 0.40f)
-                val w = sr * 0.07f
-                val path = androidx.compose.ui.graphics.Path().apply {
-                    moveTo(c.x - dy * w, c.y + dx * w); lineTo(tip.x, tip.y); lineTo(c.x + dy * w, c.y - dx * w); close()
-                }
-                drawPath(path, Brush.linearGradient(listOf(Color.White, gold, orange), start = c, end = tip))
-            }
-        }
-        drawCircle(Brush.radialGradient(listOf(Color.White, Color.White.copy(alpha = 0f)), center = c, radius = sr * 0.18f * (0.9f + 0.3f * pulse)), sr * 0.18f, c)
-        // riflesso: effetto vetro
-        drawCircle(
-            Brush.radialGradient(listOf(Color.White.copy(alpha = 0.30f), Color.Transparent), center = Offset(c.x - sr * 0.4f, c.y - sr * 0.45f), radius = sr * 0.55f),
-            sr * 0.55f, Offset(c.x - sr * 0.4f, c.y - sr * 0.45f),
+        androidx.compose.foundation.Image(
+            androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_orb), null, Modifier.matchParentSize(),
         )
-        if (detailed) for (i in 0 until 5) particle(i, front = true)
+        androidx.compose.foundation.Image(
+            androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_orb_core), null,
+            Modifier.offset(x = w * (216f / 507f), y = w * (132f / 507f)).size(w * (172f / 507f)).graphicsLayer {
+                rotationZ = spin
+                val sc = 1f + lvl * 0.06f + (pulse - 0.75f) * 0.04f
+                scaleX = sc; scaleY = sc
+            },
+        )
     }
 }
 

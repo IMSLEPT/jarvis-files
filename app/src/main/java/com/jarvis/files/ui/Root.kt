@@ -1,5 +1,13 @@
 package com.jarvis.files.ui
 
+import com.jarvis.files.ui.components.Mk
+import com.jarvis.files.ui.components.MkColor
+import com.jarvis.files.ui.components.T
+import androidx.compose.material.icons.outlined.CleaningServices
+import androidx.compose.material.icons.outlined.Description
+import androidx.compose.material.icons.outlined.GridView
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.foundation.layout.offset
 import android.Manifest
 import android.content.Intent
 import android.net.Uri
@@ -227,7 +235,7 @@ private fun MainShell(vm: MainViewModel) {
     }
 }
 
-/** Barra in basso flottante: Home, File, Jarvis al centro (tocco = chat, pressione lunga = voce), Pulizia, Altro. */
+/** Barra in basso come nel mockup: Home, File, Jarvis rialzato (tocco = chat, pressione lunga = voce), Pulizia, Altro. */
 @OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
 @Composable
 private fun JarvisBottomBar(vm: MainViewModel) {
@@ -237,60 +245,63 @@ private fun JarvisBottomBar(vm: MainViewModel) {
         vm.sub == Sub.CATEGORY -> Tab.FILES
         else -> vm.tab
     }
-    Box(Modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 14.dp, vertical = 8.dp), contentAlignment = Alignment.BottomCenter) {
-        Row(
-            Modifier.fillMaxWidth().height(72.dp)
-                .shadow(18.dp, RoundedCornerShape(30.dp), ambientColor = Color(0x33000000), spotColor = Color(0x331E2A4A))
-                .clip(RoundedCornerShape(30.dp)).background(J.Card),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            NavItem(vm, Tab.HOME, "Home", Icons.Filled.Home, current, Modifier.weight(1f))
-            NavItem(vm, Tab.FILES, "File", Icons.Filled.Description, current, Modifier.weight(1f))
-            Spacer(Modifier.weight(1.1f))
-            NavItem(vm, Tab.CLEAN, "Pulizia", Icons.Filled.CleaningServices, current, Modifier.weight(1f))
-            NavItem(vm, Tab.MORE, "Altro", Icons.Filled.GridView, current, Modifier.weight(1f))
-        }
-        // Jarvis al centro, rialzato
-        Column(
-            Modifier.padding(bottom = 6.dp)
-                .combinedClickable(
-                    interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null,
-                    onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE },
-                    onLongClick = {
-                        haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
-                        vm.voiceOpen = true
-                    },
-                ),
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
+    val mk = com.jarvis.files.ui.components.rememberMk()
+    with(mk) {
+        // Misure del mockup: barra 386,5 × 59,8 a 12,8 dal bordo; Jarvis sporge di 10,5 sopra
+        Box(Modifier.fillMaxWidth().navigationBarsPadding().padding(bottom = 6f.d).height((59.8f + 10.5f).d)) {
             Box(
-                Modifier.size(70.dp).shadow(14.dp, CircleShape, ambientColor = Color(0x55FF6A2B), spotColor = Color(0x55FF6A2B))
-                    .clip(CircleShape).background(J.Card),
-                contentAlignment = Alignment.Center,
+                Modifier.offset(12.8f.d, 10.5f.d).size(386.5f.d, 59.8f.d)
+                    .shadow(16f.d, RoundedCornerShape(29f.d), ambientColor = Color(0x22000000), spotColor = Color(0x261E2A4A))
+                    .clip(RoundedCornerShape(29f.d)).background(Color.White),
+            )
+            NavItem(vm, Tab.HOME, "Home", Icons.Outlined.Home, Icons.Filled.Home, current, 54.3f)
+            NavItem(vm, Tab.FILES, "File", Icons.Outlined.Description, Icons.Filled.Description, current, 130f)
+            NavItem(vm, Tab.CLEAN, "Pulizia", Icons.Outlined.CleaningServices, Icons.Filled.CleaningServices, current, 280.7f)
+            NavItem(vm, Tab.MORE, "Altro", Icons.Outlined.GridView, Icons.Filled.GridView, current, 354.2f)
+            // Jarvis al centro
+            Box(
+                Modifier.offset((205f - 32f).d, 0f.d).size(64f.d, 70.3f.d)
+                    .combinedClickable(
+                        interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null,
+                        onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE },
+                        onLongClick = {
+                            haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
+                            vm.voiceOpen = true
+                        },
+                    ),
             ) {
-                com.jarvis.files.ui.components.ArcReactor(66.dp, active = current == Tab.CHAT || vm.busy)
+                com.jarvis.files.ui.components.ArcReactor(
+                    53.6f.d, active = current == Tab.CHAT || vm.busy,
+                    modifier = Modifier.offset((32f - 26.8f).d, (-2.2f).d),
+                )
+                T("Jarvis", 0f, 51.4f, 9.9f, 700, if (current == Tab.CHAT) MkColor.Orange else MkColor.NavInk,
+                    width = 64f, align = androidx.compose.ui.text.style.TextAlign.Center)
             }
-            Text("Jarvis", color = if (current == Tab.CHAT) J.Info else J.Text, style = MaterialTheme.typography.labelLarge)
         }
     }
 }
 
 @Composable
-private fun NavItem(vm: MainViewModel, tab: Tab, label: String, icon: androidx.compose.ui.graphics.vector.ImageVector, current: Tab, modifier: Modifier) {
+private fun Mk.NavItem(
+    vm: MainViewModel, tab: Tab, label: String,
+    outline: androidx.compose.ui.graphics.vector.ImageVector, filled: androidx.compose.ui.graphics.vector.ImageVector,
+    current: Tab, cx: Float,
+) {
     val selected = current == tab
-    val col = if (selected) J.Orange else J.Muted
-    Column(
-        modifier.fillMaxHeight().clickable(
+    val ink = Color(0xFF2F3F57)
+    Box(
+        Modifier.offset((cx - 36f).d, 10.5f.d).size(72f.d, 59.8f.d).clickable(
             interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null,
         ) { vm.tab = tab; vm.sub = Sub.NONE },
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
     ) {
-        Box(
-            Modifier.clip(RoundedCornerShape(50)).background(if (selected) J.Orange.copy(alpha = 0.14f) else Color.Transparent)
-                .padding(horizontal = 14.dp, vertical = 4.dp),
-        ) { Icon(icon, label, tint = col, modifier = Modifier.size(24.dp)) }
-        Text(label, color = col, style = MaterialTheme.typography.labelMedium)
+        if (selected) Box(Modifier.offset((36f - 27.75f).d, 12.3f.d).size(55.5f.d, 22f.d).clip(CircleShape).background(MkColor.Peach))
+        Icon(
+            if (selected) filled else outline, label,
+            tint = if (selected) Color(0xFFFF5A22) else ink,
+            modifier = Modifier.offset((36f - 9.5f).d, (23.6f - 9.5f).d).size(19f.d),
+        )
+        if (selected) T(label, 0f, 42.1f, 10.5f, 700, MkColor.Orange, width = 72f, align = androidx.compose.ui.text.style.TextAlign.Center)
+        else T(label, 0f, 42.1f, 9f, 400, ink, width = 72f, align = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
 

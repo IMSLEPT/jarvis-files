@@ -53,6 +53,8 @@ data class HomeData(
     val byCat: List<Pair<com.jarvis.files.core.FileCategory, Long>> = emptyList(),
     val tips: List<HomeTip> = emptyList(),
     val recent: List<String> = emptyList(),
+    /** Spazio di cartelle note: whatsapp, screenshot, camera, download, trash. */
+    val extra: Map<String, Long> = emptyMap(),
 )
 
 class MainViewModel(app: Application) : AndroidViewModel(app) {
@@ -113,7 +115,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             runCatching {
                 val junk = com.jarvis.files.core.Cleaner.junk(ctx)
                 if (junk.isNotEmpty()) tips += HomeTip("junk", "di file inutili", Fmt.size(junk.sumOf { it.size }),
-                    "${junk.size} elementi: APK già installati, file temporanei e cartelle vuote che puoi rimuovere in sicurezza.")
+                    "File temporanei, cache e residui che puoi rimuovere in sicurezza.")
             }
             runCatching {
                 val wa = com.jarvis.files.core.Cleaner.whatsapp().sumOf { it.size }
@@ -125,7 +127,13 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 val trash = com.jarvis.files.core.Trash.totalSize(ctx)
                 if (trash > 200_000_000) tips += HomeTip("trash", "nel cestino", Fmt.size(trash), "Svuotalo per liberare spazio subito.")
             }
-            home = HomeData(byCat, tips, recent)
+            val extra = HashMap<String, Long>()
+            extra["whatsapp"] = entries.filter { it.rel.contains("whatsapp", true) }.sumOf { it.size }
+            extra["screenshot"] = entries.filter { it.rel.contains("/Screenshots/", true) }.sumOf { it.size }
+            extra["camera"] = entries.filter { it.rel.startsWith("DCIM/Camera/") }.sumOf { it.size }
+            extra["download"] = entries.filter { it.rel.startsWith("Download/") }.sumOf { it.size }
+            extra["trash"] = runCatching { com.jarvis.files.core.Trash.totalSize(ctx) }.getOrDefault(0L)
+            home = HomeData(byCat, tips, recent, extra)
         }
     }
 

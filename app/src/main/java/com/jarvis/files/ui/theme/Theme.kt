@@ -15,6 +15,15 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+/** Carattere Inter (variabile): il più vicino a quello del design di riferimento. */
+@OptIn(androidx.compose.ui.text.ExperimentalTextApi::class)
+private fun inter(w: Int) = androidx.compose.ui.text.font.Font(
+    com.jarvis.files.R.font.inter, FontWeight(w),
+    variationSettings = androidx.compose.ui.text.font.FontVariation.Settings(androidx.compose.ui.text.font.FontVariation.weight(w)),
+)
+
+val Inter = androidx.compose.ui.text.font.FontFamily(inter(400), inter(500), inter(600), inter(700), inter(800), inter(900))
+
 /** Palette "Minimal premium": neutri morbidi + un solo colore d'accento. Segue tema chiaro/scuro. */
 data class Palette(
     val bg: Color,
@@ -32,7 +41,7 @@ data class Palette(
 )
 
 private val LightPalette = Palette(
-    bg = Color(0xFFF6F7FB),
+    bg = Color(0xFFF6F8FA),
     surface = Color(0xFFFFFFFF),
     surfaceHi = Color(0xFFF0F2F7),
     hairline = Color(0x12000000),
@@ -97,7 +106,14 @@ object J {
     val background: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.bg, p.bg))
 }
 
-private val base = Typography()
+private val base = Typography().let { t ->
+    fun TextStyle.i() = copy(fontFamily = Inter)
+    Typography(
+        t.displayLarge.i(), t.displayMedium.i(), t.displaySmall.i(), t.headlineLarge.i(), t.headlineMedium.i(), t.headlineSmall.i(),
+        t.titleLarge.i(), t.titleMedium.i(), t.titleSmall.i(), t.bodyLarge.i(), t.bodyMedium.i(), t.bodySmall.i(),
+        t.labelLarge.i(), t.labelMedium.i(), t.labelSmall.i(),
+    )
+}
 private val typo = Typography(
     displayMedium = base.displayMedium.copy(fontWeight = FontWeight.SemiBold, letterSpacing = (-1.2).sp),
     displaySmall = base.displaySmall.copy(fontWeight = FontWeight.SemiBold, letterSpacing = (-1).sp),
@@ -108,12 +124,13 @@ private val typo = Typography(
     titleMedium = base.titleMedium.copy(fontWeight = FontWeight.SemiBold),
     titleSmall = base.titleSmall.copy(fontWeight = FontWeight.Medium),
     bodyLarge = base.bodyLarge.copy(lineHeight = 24.sp),
-    labelSmall = TextStyle(fontSize = 12.sp, fontWeight = FontWeight.Medium, letterSpacing = 0.2.sp),
+    labelSmall = TextStyle(fontFamily = Inter, fontSize = 12.sp, fontWeight = FontWeight.Medium, letterSpacing = 0.2.sp),
 )
 
 @Composable
 fun JarvisTheme(content: @Composable () -> Unit) {
-    val pal = if (isSystemInDarkTheme()) DarkPalette else LightPalette
+    // Tema chiaro fisso, identico al design di riferimento
+    val pal = LightPalette
     val scheme = if (pal.isDark) darkColorScheme(
         primary = pal.accent, onPrimary = Color.White, background = pal.bg, onBackground = pal.text,
         surface = pal.surface, onSurface = pal.text, surfaceVariant = pal.surfaceHi, onSurfaceVariant = pal.muted,
