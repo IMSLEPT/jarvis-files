@@ -143,7 +143,7 @@ fun HomeScreen(vm: MainViewModel) {
                 Text(Prefs(ctx).userName, color = J.Text, fontSize = 34.sp, fontWeight = FontWeight.Black, letterSpacing = (-0.5).sp, maxLines = 1)
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    if (vm.scanning) "Sto leggendo le cartelle… ${vm.fileCount} file" else "Il tuo spazio è sotto controllo\ncon Jarvis.",
+                    if (vm.scanning) "Sto leggendo le cartelle… ${vm.fileCount} file" else "Il tuo spazio è sotto controllo con Jarvis.",
                     color = J.Muted, style = MaterialTheme.typography.bodyLarge,
                 )
             }
