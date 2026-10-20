@@ -42,12 +42,14 @@ object Notifier {
         NotificationManagerCompat.from(c).notify(id, n)
     }
 
-    fun progress(c: Context, title: String, text: String, done: Int, total: Int) =
+    fun progress(c: Context, title: String, text: String, done: Int, total: Int, stop: PendingIntent? = null) =
         NotificationCompat.Builder(c, CH_WORK)
             .setSmallIcon(R.drawable.ic_launcher_fg)
             .setContentTitle(title)
             .setContentText(text)
             .setOngoing(true)
             .setProgress(total.coerceAtLeast(1), done, total <= 0)
+            .setContentIntent(openIntent(c, "photos"))
+            .apply { if (stop != null) addAction(0, "Ferma", stop) }
             .build()
 }

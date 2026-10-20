@@ -161,8 +161,17 @@ object Automations {
     }
 
     /** Analisi foto immediata (senza vincolo di ricarica), lanciata dall'utente. */
-    fun indexPhotosNow(c: Context) {
-        val req = OneTimeWorkRequestBuilder<PhotoIndexWorker>().build()
+    fun indexPhotosNow(c: Context, auto: Boolean = false) {
+        Prefs(c).photoStopRequested = false
+        val req = OneTimeWorkRequestBuilder<PhotoIndexWorker>()
+            .setInputData(Data.Builder().putBoolean(PhotoIndexWorker.KEY_AUTO, auto).build())
+            .build()
         WorkManager.getInstance(c).enqueueUniqueWork(PhotoIndexWorker.UNIQUE, ExistingWorkPolicy.KEEP, req)
+    }
+
+    /** Ferma subito l'analisi foto in corso (finisce solo la foto che sta elaborando). */
+    fun stopPhotoIndex(c: Context) {
+        Prefs(c).photoStopRequested = true
+        WorkManager.getInstance(c).cancelUniqueWork(PhotoIndexWorker.UNIQUE)
     }
 }

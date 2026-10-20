@@ -5,6 +5,7 @@ import android.content.pm.ServiceInfo
 import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
+import androidx.work.WorkManager
 import androidx.work.workDataOf
 import com.jarvis.files.ai.Brain
 import com.jarvis.files.ai.ChatMsg
@@ -112,8 +113,9 @@ class AutomationWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker
                 }
             }
             AutoType.PHOTO_INDEX -> {
-                val n = PhotoIndexer.run(c, { isStopped }) { }
-                "$n foto analizzate"
+                // Lavoro separato con notifica, tasto Ferma e controllo del calore
+                Automations.indexPhotosNow(c, auto = true)
+                "Analisi avviata"
             }
             AutoType.SECURITY_SCAN -> {
                 val f = SecurityScanner.scan(c)
@@ -191,24 +193,34 @@ class MaintenanceWorker(ctx: Context, params: WorkerParameters) : CoroutineWorke
 }
 
 class PhotoIndexWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
-    companion object { const val UNIQUE = "photo_index_now" }
+    companion object {
+        const val UNIQUE = "photo_index_now"
+        const val KEY_AUTO = "auto"
+    }
 
-    override suspend fun getForegroundInfo(): ForegroundInfo =
-        ForegroundInfo(4200, Notifier.progress(applicationContext, "Analisi foto", "Preparazione…", 0, 0),
-            ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
+    private fun info(title: String, text: String, done: Int, total: Int) = ForegroundInfo(
+        4200,
+        Notifier.progress(applicationContext, title, text, done, total, WorkManager.getInstance(applicationContext).createCancelPendingIntent(id)),
+        ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC,
+    )
+
+    override suspend fun getForegroundInfo(): ForegroundInfo = info("Analisi foto", "Preparazione…", 0, 0)
 
     override suspend fun doWork(): Result {
         val c = applicationContext
         if (!Storage.hasAllFilesAccess()) return Result.failure()
         runCatching { setForeground(getForegroundInfo()) }
-        val n = PhotoIndexer.run(c, { isStopped }) { p ->
+        val n = PhotoIndexer.run(c, { isStopped }, auto = inputData.getBoolean(KEY_AUTO, false)) { p ->
             setProgress(workDataOf("done" to p.done, "total" to p.total, "phase" to p.phase))
-            runCatching {
-                setForeground(ForegroundInfo(4200, Notifier.progress(c, "Analisi foto · ${p.phase}", "${p.done} di ${p.total}", p.done, p.total),
-                    ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC))
-            }
+            runCatching { setForeground(info("Analisi foto · ${p.phase}", "${p.done} di ${p.total}", p.done, p.total)) }
         }
-        Notifier.notify(c, 4201, "Analisi foto completata", "$n foto nuove analizzate. Ora puoi cercarle e dare un nome ai volti.", "photos")
+        val reason = Prefs(c).photoStopReason
+        when {
+            isStopped || Prefs(c).photoStopRequested -> {} // fermata dall'utente: nessun avviso
+            reason.isNotEmpty() -> Notifier.notify(c, 4201, "Analisi foto in pausa",
+                "Mi sono fermato: $reason. $n foto analizzate; riprendo la prossima volta.", "photos")
+            else -> Notifier.notify(c, 4201, "Analisi foto completata", "$n foto nuove analizzate. Ora puoi cercarle e dare un nome ai volti.", "photos")
+        }
         return Result.success()
     }
 }

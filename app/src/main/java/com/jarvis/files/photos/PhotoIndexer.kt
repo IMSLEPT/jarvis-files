@@ -9,6 +9,8 @@ import com.jarvis.files.ai.AiRouter
 import com.jarvis.files.ai.LocalAi
 import com.jarvis.files.core.FileCategory
 import com.jarvis.files.core.FileIndex
+import com.jarvis.files.core.DeviceInfo
+import com.jarvis.files.core.PowerGuard
 import com.jarvis.files.core.Prefs
 import com.jarvis.files.core.Stats
 import com.jarvis.files.core.Storage
@@ -36,9 +38,14 @@ object PhotoIndexer {
 
     /**
      * Esegue un passaggio di indicizzazione. [shouldStop] permette al Worker di fermarsi.
+     * Con [auto] (automazione notturna) si ferma anche se il telefono viene staccato dal caricatore.
      * Restituisce quante foto ha analizzato.
      */
-    suspend fun run(c: Context, shouldStop: () -> Boolean, onProgress: suspend (Progress) -> Unit): Int {
+    suspend fun run(c: Context, shouldStop: () -> Boolean, auto: Boolean = false, onProgress: suspend (Progress) -> Unit): Int {
+        val prefs = Prefs(c)
+        prefs.photoStopRequested = false
+        prefs.photoStopReason = ""
+        val stop = { shouldStop() || prefs.photoStopRequested }
         val db = PhotoDb.get(c)
         val all = candidates()
         val known = db.known()
@@ -53,7 +60,7 @@ object PhotoIndexer {
             val centroids = db.centroids().toMutableMap()
             VisionPipeline(c).use { vp ->
                 for (e in todo) {
-                    if (shouldStop()) break
+                    if (!guard(c, auto, stop, onProgress, done, todo.size)) break
                     val f = Storage.file(e.rel)
                     val bmp = BitmapLoader.load(f, 1024) ?: continue
                     try {
@@ -74,13 +81,42 @@ object PhotoIndexer {
                         bmp.recycle()
                     }
                     if (done % 10 == 0) onProgress(Progress(done, todo.size, "Volti e oggetti"))
+                    // Ritmo più lento a batteria: meno calore, meno consumo
+                    kotlinx.coroutines.delay(if (DeviceInfo.battery(c).charging) 60L else 400L)
                 }
             }
             Stats.addPhotosIndexed(c, done)
         }
-        if (!shouldStop()) geocode(c, shouldStop)
-        if (!shouldStop() && Prefs(c).photoDeepCaptions && AiRouter.localReady(c)) deepCaptions(c, shouldStop, onProgress)
+        if (!stop()) geocode(c, stop)
+        // Le descrizioni con Gemma sono il lavoro più pesante: solo con il telefono in carica
+        if (!stop() && prefs.photoDeepCaptions && AiRouter.localReady(c) && DeviceInfo.battery(c).charging) {
+            deepCaptions(c, auto, stop, onProgress)
+            LocalAi.release() // libera RAM e GPU appena finito
+        }
         return done
+    }
+
+    /**
+     * Prima di ogni foto: se il telefono è caldo si mette in pausa finché si raffredda;
+     * si ferma con batteria bassa, se richiesto o (in automatico) se si stacca il caricatore.
+     */
+    private suspend fun guard(
+        c: Context, auto: Boolean, stop: () -> Boolean, onProgress: suspend (Progress) -> Unit, done: Int, total: Int,
+    ): Boolean {
+        val prefs = Prefs(c)
+        var waited = 0
+        while (true) {
+            if (stop()) return false
+            val b = DeviceInfo.battery(c)
+            if (!b.charging && b.level in 0..29) { prefs.photoStopReason = "batteria sotto il 30%"; return false }
+            if (auto && prefs.photoIndexOnlyCharging && !b.charging) { prefs.photoStopReason = "telefono staccato dal caricatore"; return false }
+            val hot = if (waited == 0) PowerGuard.isHot(c) else !PowerGuard.isCool(c)
+            if (!hot) return true
+            if (waited >= 20 * 60) { prefs.photoStopReason = "telefono ancora caldo dopo 20 minuti di pausa"; return false }
+            onProgress(Progress(done, total, "In pausa: il telefono è caldo, riprendo quando si raffredda"))
+            kotlinx.coroutines.delay(30_000)
+            waited += 30
+        }
     }
 
     private fun gps(f: File): Pair<Double?, Double?> = runCatching {
@@ -127,12 +163,13 @@ object PhotoIndexer {
             "tipo di immagine (screenshot, documento, scontrino, ricevuta, meme), testo leggibile importante."
 
     /** Descrizioni dettagliate con Gemma: lente, quindi a piccoli blocchi. */
-    private suspend fun deepCaptions(c: Context, shouldStop: () -> Boolean, onProgress: suspend (Progress) -> Unit) {
+    private suspend fun deepCaptions(c: Context, auto: Boolean, shouldStop: () -> Boolean, onProgress: suspend (Progress) -> Unit) {
         val db = PhotoDb.get(c)
         val list = db.photosNeedingCaption(400)
         var n = 0
         for (path in list) {
-            if (shouldStop()) return
+            if (!guard(c, auto, shouldStop, onProgress, n, list.size)) return
+            if (!DeviceInfo.battery(c).charging) { Prefs(c).photoStopReason = "descrizioni dettagliate solo in carica"; return }
             val f = Storage.file(path)
             // Gemma lavora meglio con immagini ridotte: crea un JPEG temporaneo da 768 px
             val bmp = BitmapLoader.load(f, 512) ?: continue
@@ -146,6 +183,7 @@ object PhotoIndexer {
             }
             db.setCaption(path, cap.trim().take(400), 2)
             n++
+            kotlinx.coroutines.delay(1500) // pausa tra una descrizione e l'altra: la GPU si raffredda
             if (n % 3 == 0) onProgress(Progress(n, list.size, "Descrizioni dettagliate"))
         }
     }

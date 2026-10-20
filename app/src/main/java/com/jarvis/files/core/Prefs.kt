@@ -79,6 +79,16 @@ class Prefs(context: Context) {
         get() = sp.getBoolean("photo_deep", true)
         set(v) = sp.edit().putBoolean("photo_deep", v).apply()
 
+    /** Richiesta di fermare l'analisi foto (letta dal lavoro in corso). */
+    var photoStopRequested: Boolean
+        get() = sp.getBoolean("photo_stop", false)
+        set(v) = sp.edit().putBoolean("photo_stop", v).commit().let { }
+
+    /** Ultimo motivo per cui l'analisi si è fermata da sola (calore, batteria...). */
+    var photoStopReason: String
+        get() = sp.getString("photo_stop_reason", "") ?: ""
+        set(v) = sp.edit().putString("photo_stop_reason", v).apply()
+
     var onboardingDone: Boolean
         get() = sp.getBoolean("onboarding_done", false)
         set(v) = sp.edit().putBoolean("onboarding_done", v).apply()

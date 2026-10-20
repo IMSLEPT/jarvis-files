@@ -30,6 +30,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -162,14 +163,29 @@ fun PhotosScreen(vm: MainViewModel) {
                     }
                     Spacer(Modifier.height(8.dp))
                     LinearMeter(if (totalPhotos == 0) 0f else counts.first.toFloat() / totalPhotos)
+                    if (running) {
+                        Spacer(Modifier.height(10.dp))
+                        GhostButton("Ferma analisi", icon = Icons.Filled.Stop, color = J.Red) {
+                            Automations.stopPhotoIndex(ctx)
+                            vm.toast = "Analisi fermata. Riprenderà da dove era rimasta."
+                        }
+                        Text(
+                            "Se il telefono si scalda, Jarvis va in pausa da solo e riprende quando si raffredda. " +
+                                "Le descrizioni dettagliate con Gemma partono solo in carica.",
+                            color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 8.dp),
+                        )
+                    }
                     if (!running) {
+                        val reason = remember(running) { com.jarvis.files.core.Prefs(ctx).photoStopReason }
+                        if (reason.isNotEmpty()) Text("Ultima analisi in pausa: $reason", color = J.Amber,
+                            style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 8.dp))
                         Spacer(Modifier.height(10.dp))
                         Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
                             GradientButton("Analizza ora", Modifier.weight(1f), icon = Icons.Filled.PlayArrow) { Automations.indexPhotosNow(ctx) }
                             GhostButton("Volti", icon = Icons.Filled.Face) { vm.tab = Tab.MORE; vm.sub = Sub.PEOPLE }
                         }
                         Text(
-                            "Ogni notte, quando il telefono è in carica, Jarvis analizza da solo le foto nuove.",
+                            "Consigliato: lascia fare a Jarvis di notte, in carica. A batteria va più piano e si ferma sotto il 30%.",
                             color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 8.dp),
                         )
                     }
