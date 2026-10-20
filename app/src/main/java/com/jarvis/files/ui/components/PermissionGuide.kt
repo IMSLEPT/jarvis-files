@@ -58,6 +58,14 @@ fun UsageAccessGuide(onGrant: () -> Unit) {
                 Text(step, color = J.Text, style = MaterialTheme.typography.bodyMedium)
             }
         }
+        Spacer(Modifier.height(8.dp))
+        Text(
+            "Se nel menu ⋮ la voce non c'è: prima tocca \"Concedi accesso\" e prova ad attivare l'interruttore una volta " +
+                "(Android mostra l'avviso \"accesso negato\"), poi torna su Info app: la voce compare. " +
+                "Se hai attivo \"Protezione avanzata\" di Android lo sblocco non è possibile: la pulizia funziona comunque, " +
+                "vedrai solo meno dettagli.",
+            color = J.Muted, style = MaterialTheme.typography.bodySmall,
+        )
         Spacer(Modifier.height(12.dp))
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             GhostButton("Apri Info app", icon = Icons.Filled.Info) {

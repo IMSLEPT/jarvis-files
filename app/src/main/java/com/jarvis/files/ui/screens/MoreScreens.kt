@@ -243,7 +243,13 @@ fun BatteryScreen(vm: MainViewModel) {
                 color = J.Muted, style = MaterialTheme.typography.bodySmall,
             )
             Spacer(Modifier.height(8.dp))
-            if (!hasAccess) com.jarvis.files.ui.components.UsageAccessGuide { ctx.startActivity(AppCache.usageAccessIntent()) }
+            if (!hasAccess) {
+                GhostButton("Apri il consumo batteria di Android", icon = Icons.Filled.BatteryChargingFull) {
+                    runCatching { ctx.startActivity(Intent(Intent.ACTION_POWER_USAGE_SUMMARY).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+                }
+                Spacer(Modifier.height(10.dp))
+                com.jarvis.files.ui.components.UsageAccessGuide { ctx.startActivity(AppCache.usageAccessIntent()) }
+            }
         }
         val list = usage ?: emptyList()
         val max = list.maxOfOrNull { it.foregroundMs }?.coerceAtLeast(1) ?: 1

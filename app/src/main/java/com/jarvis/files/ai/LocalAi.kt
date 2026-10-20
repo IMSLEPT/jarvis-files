@@ -17,6 +17,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.launch
 import org.json.JSONObject
 import java.io.File
 import java.net.HttpURLConnection
@@ -51,12 +52,25 @@ object LocalAi {
 
     fun engine(c: Context): AiEngine = Wrapper(c.applicationContext)
 
+    // Il modello occupa GB di RAM e tiene sveglia la GPU: si chiude da solo dopo 2 minuti di inattività
+    private val idleScope = kotlinx.coroutines.CoroutineScope(Dispatchers.Default + kotlinx.coroutines.SupervisorJob())
+    private var idleJob: kotlinx.coroutines.Job? = null
+
+    private fun scheduleIdleRelease() {
+        idleJob?.cancel()
+        idleJob = idleScope.launch {
+            kotlinx.coroutines.delay(120_000)
+            mutex.withLock { release() }
+        }
+    }
+
     private class Wrapper(val c: Context) : AiEngine {
         override val displayName: String
             get() = "Telefono · " + (File(Prefs(c).localModelPath).nameWithoutExtension.take(28))
 
         override suspend fun complete(system: String, messages: List<ChatMsg>, maxTokens: Int): String =
             withContext(Dispatchers.Default) {
+                idleJob?.cancel()
                 mutex.withLock {
                     val e = ensureLoaded(c)
                     val history = messages.dropLast(1).takeLast(6).map {
@@ -70,7 +84,7 @@ object LocalAi {
                     e.createConversation(cfg).use { conv ->
                         conv.sendMessage(messages.last().text).toString()
                     }
-                }
+                }.also { scheduleIdleRelease() }
             }
     }
 
@@ -108,6 +122,7 @@ object LocalAi {
 
     /** Descrive un'immagine (solo se il modello supporta la visione). */
     suspend fun describeImage(c: Context, file: File, prompt: String): String? = withContext(Dispatchers.Default) {
+        idleJob?.cancel()
         mutex.withLock {
             for (attempt in 0..1) {
                 val e = ensureLoaded(c)
@@ -126,7 +141,7 @@ object LocalAi {
                 release()
             }
             null
-        }
+        }.also { scheduleIdleRelease() }
     }
 
     fun release() {

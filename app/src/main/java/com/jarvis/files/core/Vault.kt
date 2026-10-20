@@ -36,7 +36,7 @@ object Vault {
     }
 
     /** Importa da un Uri del selettore di sistema; prova a cancellare l'originale. */
-    fun importUri(c: Context, uri: Uri): Boolean {
+    fun importUri(c: Context, uri: Uri, deleteOriginal: Boolean = true): Boolean {
         val name = c.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
             if (it.moveToFirst()) it.getString(0) else null
         } ?: "file_${System.currentTimeMillis()}"
@@ -46,8 +46,20 @@ object Vault {
             true
         }.getOrDefault(false)
         if (!copied) { dst.delete(); return false }
-        runCatching { DocumentsContract.deleteDocument(c.contentResolver, uri) }
+        if (deleteOriginal) runCatching { DocumentsContract.deleteDocument(c.contentResolver, uri) }
         return true
+    }
+
+    /** Salva un file ricevuto da un'altra app in Download/Jarvis. */
+    fun copyToDownload(c: Context, uri: Uri): Boolean {
+        val name = c.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
+            if (it.moveToFirst()) it.getString(0) else null
+        } ?: "file_${System.currentTimeMillis()}"
+        val dst = unique(Storage.file("Download/Jarvis").apply { mkdirs() }, name)
+        return runCatching {
+            c.contentResolver.openInputStream(uri)!!.use { i -> dst.outputStream().use { o -> i.copyTo(o) } }
+            Storage.scanMedia(c, listOf(dst)); true
+        }.getOrDefault(false)
     }
 
     /** Riporta il file nella cartella Download/Jarvis Esportati. */

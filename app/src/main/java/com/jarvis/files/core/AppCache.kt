@@ -73,14 +73,17 @@ object AppCache {
         return pm.getInstalledApplications(0)
             .filter { it.flags and ApplicationInfo.FLAG_SYSTEM == 0 || it.flags and ApplicationInfo.FLAG_UPDATED_SYSTEM_APP != 0 || pm.getLaunchIntentForPackage(it.packageName) != null }
             .mapNotNull { ai ->
-                val st = runCatching { ssm.queryStatsForPackage(ai.storageUuid, ai.packageName, user) }.getOrNull() ?: return@mapNotNull null
-                val (safety, why) = classify(ai.packageName, st.cacheBytes)
+                // Senza "accesso ai dati di utilizzo" le dimensioni non sono leggibili: l'app resta in elenco con -1
+                val st = runCatching { ssm.queryStatsForPackage(ai.storageUuid, ai.packageName, user) }.getOrNull()
+                if (st == null && pm.getLaunchIntentForPackage(ai.packageName) == null) return@mapNotNull null
+                val cache = st?.cacheBytes ?: -1L
+                val (safety, why) = classify(ai.packageName, cache)
                 AppCacheInfo(
                     ai.packageName, pm.getApplicationLabel(ai).toString(), runCatching { pm.getApplicationIcon(ai) }.getOrNull(),
-                    st.cacheBytes, st.appBytes, st.dataBytes, safety, why,
+                    cache, st?.appBytes ?: -1L, st?.dataBytes ?: -1L, safety, why,
                 )
             }
-            .sortedByDescending { it.cacheBytes }
+            .sortedWith(compareByDescending<AppCacheInfo> { it.cacheBytes }.thenBy { it.name.lowercase() })
     }
 
     /** Tempo di utilizzo delle app nelle ultime 24 ore (indicatore del consumo di batteria). */

@@ -165,23 +165,23 @@ private fun CacheTab(vm: MainViewModel) {
     val usageLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         hasAccess = AppCache.hasUsageAccess(ctx); reload++
     }
-    LaunchedEffect(reload, hasAccess) { if (hasAccess) apps = withContext(Dispatchers.IO) { AppCache.list(ctx) } }
+    LaunchedEffect(reload, hasAccess) { apps = withContext(Dispatchers.IO) { AppCache.list(ctx) } }
+    var showGuide by remember { mutableStateOf(false) }
 
     LazyColumn(contentPadding = PaddingValues(14.dp)) {
-        if (!hasAccess) {
-            item {
-                com.jarvis.files.ui.components.UsageAccessGuide { usageLauncher.launch(AppCache.usageAccessIntent()) }
-            }
-            return@LazyColumn
-        }
         val list = apps
-        if (list == null) { item { Loading("Misuro le cache…") }; return@LazyColumn }
-        val total = list.sumOf { it.cacheBytes }
-        val safe = list.filter { it.safety == CacheSafety.SAFE }.sumOf { it.cacheBytes }
+        val measured = list?.filter { it.cacheBytes >= 0 }.orEmpty()
+        val total = measured.sumOf { it.cacheBytes }
+        val safe = measured.filter { it.safety == CacheSafety.SAFE }.sumOf { it.cacheBytes }
         item {
             GlassCard(Modifier.fillMaxWidth(), highlight = true) {
-                Text("Cache totale: ${Fmt.size(total)}", color = J.Text, style = MaterialTheme.typography.titleLarge)
-                Text("Di cui ${Fmt.size(safe)} sicura da svuotare senza perdere nulla.", color = J.Green, style = MaterialTheme.typography.bodySmall)
+                if (hasAccess && list != null) {
+                    Text("Cache totale: ${Fmt.size(total)}", color = J.Text, style = MaterialTheme.typography.titleLarge)
+                    Text("Di cui ${Fmt.size(safe)} sicura da svuotare senza perdere nulla.", color = J.Green, style = MaterialTheme.typography.bodySmall)
+                } else {
+                    Text("Svuota la cache di tutte le app", color = J.Text, style = MaterialTheme.typography.titleLarge)
+                    Text("Funziona anche senza permessi speciali.", color = J.Green, style = MaterialTheme.typography.bodySmall)
+                }
                 Spacer(Modifier.height(10.dp))
                 GradientButton("Svuota tutte le cache", Modifier.fillMaxWidth()) {
                     runCatching { clearAll.launch(AppCache.clearAllIntent()) }.onFailure { vm.toast = "Il telefono non supporta lo svuotamento globale" }
@@ -190,13 +190,23 @@ private fun CacheTab(vm: MainViewModel) {
                 Text(
                     "Android chiede conferma e svuota la cache di tutte le app insieme. La cache sono solo file temporanei: " +
                         "non perdi foto, chat o accessi. Le app \"Attenzione\" dovranno solo riscaricare contenuti (mappe, musica, video). " +
-                        "Per svuotarne solo alcune, tocca l'app e premi \"Svuota cache\".",
+                        "Per svuotarne solo alcune, tocca l'app qui sotto e premi \"Svuota cache\".",
                     color = J.Muted, style = MaterialTheme.typography.bodySmall,
                 )
             }
         }
-        item { SectionTitle("App per peso della cache") }
-        items(list.filter { it.cacheBytes > 1_000_000 }, key = { it.pkg }) { a ->
+        if (!hasAccess) item {
+            Spacer(Modifier.height(10.dp))
+            if (showGuide) com.jarvis.files.ui.components.UsageAccessGuide { usageLauncher.launch(AppCache.usageAccessIntent()) }
+            else GlassCard(Modifier.fillMaxWidth(), onClick = { showGuide = true }) {
+                Text("Vuoi vedere quanto pesa la cache di ogni app?", color = J.Text, style = MaterialTheme.typography.titleSmall)
+                Text("Serve un permesso che Android blocca per le app installate da file. Tocca per la guida (facoltativo).",
+                    color = J.Muted, style = MaterialTheme.typography.bodySmall)
+            }
+        }
+        if (list == null) { item { Loading("Leggo le app…") }; return@LazyColumn }
+        item { SectionTitle(if (hasAccess) "App per peso della cache" else "Le tue app (tocca per svuotare la cache)") }
+        items(list.filter { !hasAccess || it.cacheBytes > 1_000_000 }, key = { it.pkg }) { a ->
             Row(
                 Modifier.fillMaxWidth().clickable { ctx.startActivity(AppCache.appDetailsIntent(a.pkg)) }.padding(vertical = 8.dp),
                 verticalAlignment = Alignment.CenterVertically,
@@ -213,7 +223,7 @@ private fun CacheTab(vm: MainViewModel) {
                     }
                     Text(a.why, color = J.Muted, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 }
-                Text(Fmt.size(a.cacheBytes), color = J.Electric, style = MaterialTheme.typography.titleSmall)
+                Text(if (a.cacheBytes >= 0) Fmt.size(a.cacheBytes) else "›", color = J.Electric, style = MaterialTheme.typography.titleSmall)
             }
         }
     }

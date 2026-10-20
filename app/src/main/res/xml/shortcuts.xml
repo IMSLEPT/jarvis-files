@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="voice" android:enabled="true" android:icon="@drawable/sc_mic"
+        android:shortcutShortLabel="@string/sc_voice" android:shortcutLongLabel="@string/sc_voice_long">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.jarvis.files" android:targetClass="com.jarvis.files.MainActivity">
+            <extra android:name="open" android:value="voice" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="sort" android:enabled="true" android:icon="@drawable/sc_folder"
+        android:shortcutShortLabel="@string/sc_sort" android:shortcutLongLabel="@string/sc_sort">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.jarvis.files" android:targetClass="com.jarvis.files.MainActivity">
+            <extra android:name="open" android:value="sort_download" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="clean" android:enabled="true" android:icon="@drawable/sc_broom"
+        android:shortcutShortLabel="@string/sc_clean" android:shortcutLongLabel="@string/sc_clean">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.jarvis.files" android:targetClass="com.jarvis.files.MainActivity">
+            <extra android:name="open" android:value="clean" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="files" android:enabled="true" android:icon="@drawable/sc_files"
+        android:shortcutShortLabel="@string/sc_files" android:shortcutLongLabel="@string/sc_files">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.jarvis.files" android:targetClass="com.jarvis.files.MainActivity">
+            <extra android:name="open" android:value="files" />
+        </intent>
+    </shortcut>
+</shortcuts>

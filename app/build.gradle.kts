@@ -94,6 +94,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.4.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
     implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("io.coil-kt:coil-video:2.7.0")
 
     // AI dentro il telefono (Gemma 4 via LiteRT-LM)
     implementation("com.google.ai.edge.litertlm:litertlm-android:0.18.0")

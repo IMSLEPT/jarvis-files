@@ -58,7 +58,21 @@ class MainActivity : FragmentActivity() {
     }
 
     private fun handleIntent(i: Intent?) {
+        // File condivisi da altre app ("Condividi → Jarvis Files")
+        when (i?.action) {
+            Intent.ACTION_SEND -> {
+                @Suppress("DEPRECATION")
+                (i.getParcelableExtra<android.net.Uri>(Intent.EXTRA_STREAM))?.let { vm.shared = listOf(it) }
+            }
+            Intent.ACTION_SEND_MULTIPLE -> {
+                @Suppress("DEPRECATION")
+                i.getParcelableArrayListExtra<android.net.Uri>(Intent.EXTRA_STREAM)?.let { vm.shared = it.toList() }
+            }
+        }
         when (i?.getStringExtra(Notifier.EXTRA_OPEN)) {
+            "voice" -> vm.voiceOpen = true
+            "files" -> { vm.tab = Tab.FILES; vm.sub = Sub.NONE }
+            "sort_download" -> vm.openChatWith("Metti in ordine la cartella Download")
             "security" -> { vm.tab = Tab.MORE; vm.sub = Sub.SECURITY }
             "clean" -> { vm.tab = Tab.CLEAN; vm.sub = Sub.NONE }
             "photos" -> { vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }

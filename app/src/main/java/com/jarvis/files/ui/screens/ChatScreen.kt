@@ -186,13 +186,7 @@ fun ChatScreen(vm: MainViewModel) {
             Box(
                 Modifier.size(44.dp).clip(CircleShape).background(if (sendMode) J.Blue else J.CardHi).clickable(enabled = !vm.busy) {
                     if (sendMode) { vm.send(input); input = "" }
-                    else {
-                        val i = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
-                            .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-                            .putExtra(RecognizerIntent.EXTRA_LANGUAGE, "it-IT")
-                            .putExtra(RecognizerIntent.EXTRA_PROMPT, "Dimmi cosa fare")
-                        runCatching { speech.launch(i) }.onFailure { vm.toast = "Riconoscimento vocale non disponibile" }
-                    }
+                    else vm.voiceOpen = true
                 },
                 contentAlignment = Alignment.Center,
             ) {

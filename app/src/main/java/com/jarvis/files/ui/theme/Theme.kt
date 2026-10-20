@@ -32,29 +32,29 @@ data class Palette(
 )
 
 private val LightPalette = Palette(
-    bg = Color(0xFFF5F5F7),
+    bg = Color(0xFFF6F7FB),
     surface = Color(0xFFFFFFFF),
-    surfaceHi = Color(0xFFEDEDF0),
-    hairline = Color(0x14000000),
-    accent = Color(0xFF0A6CFF),
-    accentSoft = Color(0x1A0A6CFF),
-    text = Color(0xFF111114),
-    muted = Color(0xFF6E6E76),
-    green = Color(0xFF1FA463),
-    amber = Color(0xFFD98A00),
-    red = Color(0xFFE5484D),
+    surfaceHi = Color(0xFFF0F2F7),
+    hairline = Color(0x12000000),
+    accent = Color(0xFFFF6A2B),
+    accentSoft = Color(0x1FFF6A2B),
+    text = Color(0xFF12141C),
+    muted = Color(0xFF6B7080),
+    green = Color(0xFF22B573),
+    amber = Color(0xFFF29A12),
+    red = Color(0xFFEF4444),
     isDark = false,
 )
 
 private val DarkPalette = Palette(
-    bg = Color(0xFF000000),
-    surface = Color(0xFF141416),
-    surfaceHi = Color(0xFF1F1F23),
+    bg = Color(0xFF0B0C10),
+    surface = Color(0xFF16181F),
+    surfaceHi = Color(0xFF20232C),
     hairline = Color(0x1FFFFFFF),
-    accent = Color(0xFF3B8BFF),
-    accentSoft = Color(0x293B8BFF),
-    text = Color(0xFFF5F5F7),
-    muted = Color(0xFF9A9AA2),
+    accent = Color(0xFFFF7A3D),
+    accentSoft = Color(0x29FF7A3D),
+    text = Color(0xFFF4F5F8),
+    muted = Color(0xFF9A9FAD),
     green = Color(0xFF3CCB7F),
     amber = Color(0xFFF5B342),
     red = Color(0xFFFF6369),
@@ -84,6 +84,16 @@ object J {
     val Amber: Color @Composable @ReadOnlyComposable get() = p.amber
     val Red: Color @Composable @ReadOnlyComposable get() = p.red
     val accent: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.accent, p.accent))
+
+    // Colori delle categorie e del brand (come nel design di riferimento)
+    val Info = Color(0xFF2F6BFF)
+    val Navy = Color(0xFF1E3A8A)
+    val Purple = Color(0xFF8B5CF6)
+    val Pink = Color(0xFFFF4D8D)
+    val Orange = Color(0xFFFF6A2B)
+    val Peach = Color(0xFFFFF1E8)
+    /** Pulsanti principali: blu → viola → arancio. */
+    val brand = Brush.horizontalGradient(listOf(Color(0xFF2F6BFF), Color(0xFF8B5CF6), Color(0xFFFF6A2B)))
     val background: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.bg, p.bg))
 }
 
