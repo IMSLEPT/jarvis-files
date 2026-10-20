@@ -75,6 +75,13 @@ class UiTest {
         go(Tab.MORE, Sub.TRASH); shot("15_cestino")
         go(Tab.MORE, Sub.VAULT); shot("16_cassaforte")
         go(Tab.MORE, Sub.FIND); shot("17_trova")
+        go(Tab.FILES); shot("18_file")
+        rule.runOnUiThread { vm().category = com.jarvis.files.core.FileCategory.DOCUMENT; vm().folder = null; vm().sub = Sub.CATEGORY }
+        shot("18b_categoria")
+        go(Tab.HOME)
+        rule.runOnUiThread { vm().voiceOpen = true }
+        shot("19_voce", 3000)
+        rule.runOnUiThread { vm().voiceOpen = false }
         // Stesse schermate principali in tema scuro
         TestUtil.sh("cmd uimode night yes")
         rule.activityRule.scenario.recreate()

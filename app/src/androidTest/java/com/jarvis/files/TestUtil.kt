@@ -23,6 +23,7 @@ object TestUtil {
         sh("pm grant $pkg android.permission.POST_NOTIFICATIONS")
         sh("pm grant $pkg android.permission.READ_MEDIA_IMAGES")
         sh("pm grant $pkg android.permission.ACCESS_MEDIA_LOCATION")
+        sh("pm grant $pkg android.permission.RECORD_AUDIO")
         repeat(50) { if (Storage.hasAllFilesAccess()) return; Thread.sleep(100) }
     }
 

@@ -215,6 +215,8 @@ class PhotoIndexWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker
             runCatching { setForeground(info("Analisi foto · ${p.phase}", "${p.done} di ${p.total}", p.done, p.total)) }
         }
         val reason = Prefs(c).photoStopReason
+        // Interrotto da Android (limite di tempo in background), non dall'utente: riprende più tardi
+        if (isStopped && !Prefs(c).photoStopRequested) return Result.retry()
         when {
             isStopped || Prefs(c).photoStopRequested -> {} // fermata dall'utente: nessun avviso
             reason.isNotEmpty() -> Notifier.notify(c, 4201, "Analisi foto in pausa",

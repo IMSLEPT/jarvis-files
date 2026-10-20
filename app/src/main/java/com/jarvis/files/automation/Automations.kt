@@ -165,6 +165,14 @@ object Automations {
         Prefs(c).photoStopRequested = false
         val req = OneTimeWorkRequestBuilder<PhotoIndexWorker>()
             .setInputData(Data.Builder().putBoolean(PhotoIndexWorker.KEY_AUTO, auto).build())
+            .apply {
+                // In automatico: solo in carica e con batteria non bassa (se Android interrompe il lavoro, riprende alle stesse condizioni)
+                if (auto) setConstraints(Constraints.Builder().apply {
+                    if (Prefs(c).photoIndexOnlyCharging) setRequiresCharging(true)
+                    setRequiresBatteryNotLow(true)
+                }.build())
+            }
+            .setBackoffCriteria(androidx.work.BackoffPolicy.LINEAR, 5, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(c).enqueueUniqueWork(PhotoIndexWorker.UNIQUE, ExistingWorkPolicy.KEEP, req)
     }

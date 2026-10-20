@@ -101,7 +101,7 @@ val CAT_STYLES = listOf(
 /** Apre la categoria: le immagini vanno nella galleria intelligente, il resto nell'elenco file. */
 fun openCategory(vm: MainViewModel, cat: FileCategory) {
     if (cat == FileCategory.IMAGE) { vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }
-    else { vm.category = cat; vm.tab = Tab.FILES; vm.sub = Sub.CATEGORY }
+    else { vm.category = cat; vm.folder = null; vm.tab = Tab.FILES; vm.sub = Sub.CATEGORY }
 }
 
 fun tipAction(vm: MainViewModel, t: HomeTip) {
