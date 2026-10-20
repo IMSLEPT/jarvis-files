@@ -99,8 +99,8 @@ fun StorageDonut(
             drawCircle(surface, inner, center)
         }
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(freeGb, color = J.Text, fontSize = 40.sp, fontWeight = FontWeight.Black, letterSpacing = (-1).sp)
-            Text("GB liberi", color = J.Text, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+            Text(freeGb, color = J.Text, fontSize = (size.value * 0.2f).sp, fontWeight = FontWeight.Black, letterSpacing = (-1).sp, maxLines = 1)
+            Text("GB liberi", color = J.Text, fontSize = (size.value * 0.09f).sp, fontWeight = FontWeight.Bold, maxLines = 1)
             Text(totalLabel, color = J.Muted, style = MaterialTheme.typography.bodySmall)
             Spacer(Modifier.height(6.dp))
             Icon(Icons.Filled.SdStorage, null, tint = J.Muted, modifier = Modifier.size(18.dp))
@@ -112,12 +112,12 @@ fun StorageDonut(
 @Composable
 fun Callout(big: String, small: String, color: Color, alignEnd: Boolean, modifier: Modifier = Modifier) {
     Column(modifier, horizontalAlignment = if (alignEnd) Alignment.End else Alignment.Start) {
-        Text(big, color = J.Text, fontSize = 20.sp, fontWeight = FontWeight.Black)
-        Text(small, color = J.Muted, style = MaterialTheme.typography.bodySmall)
+        Text(big, color = J.Text, fontSize = 18.sp, fontWeight = FontWeight.Black, maxLines = 1, softWrap = false)
+        Text(small, color = J.Muted, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
         Spacer(Modifier.height(6.dp))
         Row(verticalAlignment = Alignment.CenterVertically) {
             if (!alignEnd) Dot(color, 7.dp)
-            Box(Modifier.width(46.dp).height(1.5.dp).background(color.copy(alpha = 0.7f)))
+            Box(Modifier.width(30.dp).height(1.5.dp).background(color.copy(alpha = 0.7f)))
             if (alignEnd) Dot(color, 7.dp)
         }
     }

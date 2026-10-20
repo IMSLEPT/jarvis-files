@@ -132,15 +132,15 @@ fun HomeScreen(vm: MainViewModel) {
         // ---------- intestazione con Jarvis animato ----------
         Box(Modifier.fillMaxWidth().padding(top = 8.dp)) {
             ArcReactor(
-                190.dp, active = vm.scanning,
-                modifier = Modifier.align(Alignment.TopEnd).offset(x = 28.dp, y = (-6).dp).pressable({ vm.tab = Tab.CHAT }),
+                170.dp, active = vm.scanning,
+                modifier = Modifier.align(Alignment.TopEnd).offset(x = 30.dp, y = (-10).dp).pressable({ vm.tab = Tab.CHAT }),
             )
-            Column(Modifier.padding(horizontal = 20.dp)) {
+            Column(Modifier.fillMaxWidth(0.7f).padding(start = 20.dp)) {
                 JarvisLogo()
                 Spacer(Modifier.height(22.dp))
                 Text(today, color = J.Muted, style = MaterialTheme.typography.titleSmall)
-                Text("$greet,", color = J.Text, fontSize = 36.sp, fontWeight = FontWeight.Black, letterSpacing = (-0.5).sp)
-                Text(Prefs(ctx).userName, color = J.Text, fontSize = 36.sp, fontWeight = FontWeight.Black, letterSpacing = (-0.5).sp)
+                Text("$greet,", color = J.Text, fontSize = 34.sp, fontWeight = FontWeight.Black, letterSpacing = (-0.5).sp, maxLines = 1, softWrap = false)
+                Text(Prefs(ctx).userName, color = J.Text, fontSize = 34.sp, fontWeight = FontWeight.Black, letterSpacing = (-0.5).sp, maxLines = 1)
                 Spacer(Modifier.height(6.dp))
                 Text(
                     if (vm.scanning) "Sto leggendo le cartelle… ${vm.fileCount} file" else "Il tuo spazio è sotto controllo\ncon Jarvis.",
@@ -159,15 +159,18 @@ fun HomeScreen(vm: MainViewModel) {
             // ---------- memoria ----------
             Spacer(Modifier.height(18.dp))
             GlassCard(Modifier.fillMaxWidth(), onClick = { vm.tab = Tab.FILES; vm.sub = Sub.NONE }, padding = PaddingValues(horizontal = 12.dp, vertical = 18.dp)) {
+                androidx.compose.foundation.layout.BoxWithConstraints {
+                val donut = (maxWidth * 0.5f).coerceAtMost(186.dp)
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Callout("${used * 100 / total.coerceAtLeast(1)}%", "utilizzato\n${Fmt.size(used)} in uso", J.Orange, alignEnd = false, modifier = Modifier.weight(1f))
+                    Callout("${used * 100 / total.coerceAtLeast(1)}%", "utilizzato · ${Fmt.size(used)}", J.Orange, alignEnd = false, modifier = Modifier.weight(1f))
                     val known = CAT_STYLES.mapNotNull { s -> sizes[s.cat]?.let { it to s } }
                     val segs = known.map { (bytes, s) -> (bytes.toFloat() / total.coerceAtLeast(1)) to Brush.sweepGradient(s.colors) as Brush } +
                         listOf(((used - known.sumOf { it.first }).coerceAtLeast(0).toFloat() / total.coerceAtLeast(1)) to Brush.linearGradient(listOf(Color(0xFFB8C0CC), Color(0xFFCBD2DC))) as Brush)
                     StorageDonut(
-                        segs, String.format(Locale.ITALY, "%.1f", free / 1_073_741_824f), "su ${Fmt.size(total)}", 176.dp,
+                        segs, String.format(Locale.ITALY, "%.1f", free / 1_073_741_824f), "su ${Fmt.size(total)}", donut,
                     )
                     Callout(Fmt.size(total), "totale", J.Info, alignEnd = true, modifier = Modifier.weight(1f))
+                }
                 }
             }
 
