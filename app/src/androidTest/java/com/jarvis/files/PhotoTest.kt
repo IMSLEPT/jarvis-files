@@ -66,6 +66,14 @@ class PhotoTest {
         assertTrue("stessa persona più simile di persone diverse", same > diff1 + 0.15f && same > diff2 + 0.15f)
     }
 
+    @Test fun a2_stopRequest() = runBlocking {
+        // Con la richiesta di stop attiva l'analisi non elabora nessuna foto
+        com.jarvis.files.photos.PhotoDb.get(TestUtil.ctx).removePhotos(listOf("JarvisTest/Pictures/obama.jpg"))
+        val n = PhotoIndexer.run(TestUtil.ctx, { true }) { }
+        TestUtil.report("Stop", "Analisi con stop richiesto: $n foto elaborate · caldo=${com.jarvis.files.core.PowerGuard.isHot(TestUtil.ctx)}")
+        assertEquals(0, n)
+    }
+
     @Test fun b_indexNameAndSearch() = runBlocking {
         val ctx = TestUtil.ctx
         val n = PhotoIndexer.run(ctx, { false }) { }
