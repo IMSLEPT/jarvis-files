@@ -175,7 +175,7 @@ fun HomeScreen(vm: MainViewModel) {
                 Box(Modifier.offset(y = statusTop - Y0.d).fillMaxWidth().height(Y_END.d)) {
                     // ---------- intestazione ----------
                     ArcReactor(
-                        223f.d, active = vm.scanning,
+                        223f.d, active = vm.scanning, feather = false,
                         modifier = Modifier.offset(189.1f.d, 21.1f.d).pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE }),
                     )
                     Image(painterResource(R.drawable.jarvis_logo), "Jarvis Files", Modifier.offset(15.8f.d, 32.5f.d).size(139.8f.d, 36.9f.d))

@@ -54,6 +54,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
@@ -171,7 +172,7 @@ fun Chip(text: String, selected: Boolean = false, onClick: () -> Unit) {
  * Sotto i 90 dp si usa la versione rotonda della barra in basso.
  */
 @Composable
-fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier, level: Float = 0f) {
+fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier, level: Float = 0f, feather: Boolean = true) {
     val t = rememberInfiniteTransition(label = "orb")
     val spin by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 3500 else 12000, easing = LinearEasing)), label = "spin")
     val float by t.animateFloat(-1f, 1f, infiniteRepeatable(tween(2600, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "float")
@@ -196,7 +197,25 @@ fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier, 
     // Immagine base 507×404 px; nucleo rotante 172 px con angolo in alto a sinistra a (216, 132)
     val w = size
     val h = size * (404f / 507f)
-    Box(modifier.size(w, h).graphicsLayer { translationY = float * 4.dp.toPx() }) {
+    Box(
+        modifier.size(w, h)
+            .graphicsLayer {
+                translationY = float * 4.dp.toPx()
+                // Con la sfumatura serve un livello a parte per la maschera
+                if (feather) compositingStrategy = androidx.compose.ui.graphics.CompositingStrategy.Offscreen
+            }
+            .drawWithContent {
+                drawContent()
+                // Bordi sfumati: niente riquadro dove lo sfondo non è identico a quello del mockup
+                if (feather) {
+                    val c = Offset(this.size.width * (302.5f / 507f), this.size.height * (218.2f / 404f))
+                    drawRect(
+                        Brush.radialGradient(0.72f to Color.Black, 1f to Color.Transparent, center = c, radius = this.size.width * 0.52f),
+                        blendMode = androidx.compose.ui.graphics.BlendMode.DstIn,
+                    )
+                }
+            },
+    ) {
         Canvas(Modifier.matchParentSize()) {
             val cx = this.size.width * (302.5f / 507f); val cy = this.size.height * (218.2f / 404f)
             val r = this.size.width * 0.32f
