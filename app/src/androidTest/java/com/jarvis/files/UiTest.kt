@@ -33,6 +33,8 @@ class UiTest {
     private fun shot(name: String, wait: Long = 2500) {
         rule.waitForIdle()
         Thread.sleep(wait)
+        TestUtil.sh("am broadcast -a android.intent.action.CLOSE_SYSTEM_DIALOGS")
+        Thread.sleep(300)
         TestUtil.screenshot(name)
         TestUtil.report("UI", "Schermata $name OK")
     }

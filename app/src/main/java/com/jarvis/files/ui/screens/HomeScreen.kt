@@ -164,7 +164,12 @@ fun HomeScreen(vm: MainViewModel) {
     val statusTop = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
 
     with(mk) {
-        Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+        // Sfondo come nel mockup: bianco in alto, grigio-azzurro chiarissimo più in basso
+        Column(
+            Modifier.fillMaxSize()
+                .background(Brush.verticalGradient(listOf(Color(0xFFFBFDFD), Color(0xFFF6F9FA)), endY = with(density) { (statusTop + 260f.d).toPx() }))
+                .verticalScroll(rememberScrollState()),
+        ) {
             Box(Modifier.fillMaxWidth().height(statusTop + (Y_END - Y0).d)) {
                 // Origine = angolo in alto del mockup; la barra di stato reale sostituisce quella disegnata
                 Box(Modifier.offset(y = statusTop - Y0.d).fillMaxWidth().height(Y_END.d)) {

@@ -3,6 +3,8 @@
 set -x
 adb shell rm -rf /sdcard/JarvisReport
 adb shell settings put global window_animation_scale 0
+# niente finestre "app non risponde" del launcher dell'emulatore sopra gli screenshot
+adb shell settings put global hide_error_dialogs 1
 ./gradlew connectedDebugAndroidTest --continue > test.log 2>&1
 echo $? > test-exit-code
 mkdir -p results

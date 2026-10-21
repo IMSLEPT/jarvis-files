@@ -192,6 +192,8 @@ private fun MainShell(vm: MainViewModel) {
     Box(Modifier.fillMaxSize()) {
         Scaffold(
             containerColor = Color.Transparent,
+            // Ogni schermata gestisce da sé la barra di stato (prima veniva contata due volte)
+            contentWindowInsets = androidx.compose.foundation.layout.WindowInsets(0, 0, 0, 0),
             snackbarHost = { SnackbarHost(snack) },
             bottomBar = { JarvisBottomBar(vm) },
         ) { pad ->
