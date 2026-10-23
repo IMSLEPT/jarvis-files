@@ -1,0 +1,596 @@
+10-23 13:13:22.972  4790  4985 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-23 13:13:22.977  4790  6987 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-23 13:13:22.977  4790  6987 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-23 13:13:22.978  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:22.980  4790  4985 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-23 13:13:22.983  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:22.994  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:22.997  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:23.022  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:23.022  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:23.042  4790  7057 I native  : I0000 00:00:1792761203.042272    7057 classifier_client_calculator.cc:144] Loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-23 13:13:23.049  4790  7057 I tflite  : Replacing 30 out of 31 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-23 13:13:23.057  4790  7057 I native  : I0000 00:00:1792761203.057776    7057 classifier_client_calculator.cc:151] Finished loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-23 13:13:23.061  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:23.063  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:23.085  4790  7001 V FaceDetectorV2Jni: initialize.start()
+10-23 13:13:23.085  4790  7001 I native  : I0000 00:00:1792761203.085807    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_v5.tflite
+10-23 13:13:23.086  4790  7001 I native  : I0000 00:00:1792761203.086046    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_gray_v5.tflite
+10-23 13:13:23.086  4790  7001 I native  : I0000 00:00:1792761203.086195    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_anchors_v5.pb
+10-23 13:13:23.086  4790  7001 I native  : I0000 00:00:1792761203.086237    7001 face_detector_v2_jni.cc:34] Loading models_bundled/LMprec_600.emd
+10-23 13:13:23.087  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:23.090  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:23.094  4790  7001 I native  : I0000 00:00:1792761203.094187    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLlefteyeclosed_200.emd
+10-23 13:13:23.094  4790  7001 I native  : I0000 00:00:1792761203.094318    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLrighteyeclosed_200.emd
+10-23 13:13:23.094  4790  7001 I native  : I0000 00:00:1792761203.094475    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLjoy_200.emd
+10-23 13:13:23.094  4790  7001 I native  : I0000 00:00:1792761203.094732    7001 face_detector_v2_jni.cc:34] Loading models_bundled/MFT_fssd_accgray.pb
+10-23 13:13:23.094  4790  7001 I native  : I0000 00:00:1792761203.094809    7001 face_detector_v2_jni.cc:34] Loading models_bundled/contours.tfl
+10-23 13:13:23.102  4790  7001 I native  : I0000 00:00:1792761203.102686    7001 face_detector_v2_jni.cc:34] Loading models_bundled/blazeface.tfl
+10-23 13:13:23.110  4790  7001 V FaceDetectorV2Jni: initialize.end()
+10-23 13:13:23.136  4790  7001 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:23.434  6556  6556 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.proximity.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-23 13:13:23.506  4790  7001 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:23.944  1892  2760 W A       : [Download] response code: 400
+10-23 13:13:24.011  6556  6717 I LockboxIntentOp: Completed task: true [CONTEXT service_id=26 ]
+10-23 13:13:24.048  6556  6556 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.proximity.devicesyncservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-23 13:13:24.403  1535  1535 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.lambda$new$0:152 Stopping service [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:24.403  1535  1535 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.finishJobAsync:461 finishing Job [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:24.404  1535  1535 I DialerTaskSchedulerJobService: com.android.voicemail.impl.scheduling.TaskSchedulerJobService.finishAsync:195 finishing job [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:24.406  1535  1535 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor$JobFinishedPoller.run:189 JobFinishedPoller.run Job finished [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:24.406  1535  1535 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.terminate:287 terminated [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:25.691  4790  6987 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:25.825  4790  6987 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:26.081  4790  4804 I om.jarvis.files: Background concurrent copying GC freed 253(66KB) AllocSpace objects, 2(4000KB) LOS objects, 49% free, 5240KB/10MB, paused 171us,12us total 252.695ms
+10-23 13:13:29.596  6545  6706 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+10-23 13:13:30.069  4790  7001 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:30.331  4790  7001 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:30.857  6556  6574 I .gms.persistent: Background young concurrent copying GC freed 225353(13MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 14MB/27MB, paused 36us,20us total 146.135ms
+10-23 13:13:31.315  6545  6701 D TrafficStats: tagSocket(112) with statsTag=0x30001803, statsUid=-1
+10-23 13:13:31.663  6545  6545 I NearbySharing: SharingTileService destroyed [CONTEXT service_id=194 ]
+10-23 13:13:32.485  4790  6987 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:32.704  3099  3483 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+10-23 13:13:32.933  1892  1892 I BgTaskExecutorImpl: Starting EXCLUSIVE background task INTERNAL_PERIODIC_TASK_SYNC.
+10-23 13:13:32.938  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task ACTIVITY_LEVEL_TASK.
+10-23 13:13:32.941  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task AWARE_TIP_WORKER_PROCESS_TIPS.
+10-23 13:13:32.948  1892  2726 E TipSharedPrefManager: invalid tip 40070019: tip does not need conditions checked only once
+10-23 13:13:32.948  1892  2726 E TipSharedPrefManager: invalid tip 40070055: tip does not need conditions checked only once
+10-23 13:13:32.948  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.949  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.949  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.949  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.949  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.950  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.950  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.950  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.950  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.950  1892  2726 E TipSharedPrefManager: invalid tip 40070197: tip does not need conditions checked only once
+10-23 13:13:32.950  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.950  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.951  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.951  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.951  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.951  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.951  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.951  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.952  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.953  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.953  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.953  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.954  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.954  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.954  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.954  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.954  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.954  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.955  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.955  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.955  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.955  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.955  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.956  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.956  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.956  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.956  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.956  1892  2726 E TipSharedPrefManager: invalid tip 40070251: tip does not need conditions checked only once
+10-23 13:13:32.963  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.963  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.963  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.963  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.964  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.964  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.964  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.964  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.964  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.966  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.966  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.966  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.966  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.966  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.967  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.967  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.967  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.967  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.967  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.968  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.968  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.968  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.969  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.969  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.969  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.969  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.969  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.969  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.970  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.970  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:32.970  1892  2726 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:32.970  1892  2726 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.970  1892  2726 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:32.971  1892  2726 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:32.971  1892  2726 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:32.971  1892  2726 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:32.976  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task CHROME_EXPERIMENT_SYNC.
+10-23 13:13:32.981  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task CLEAR_DATA_DETECTOR.
+10-23 13:13:32.984  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_CONTACTS_CHANGE_REFRESH.
+10-23 13:13:32.984  1892  2264 I FirstRunClassifier: First run of com.google.android.googlequicksearchbox on this device detected
+10-23 13:13:32.985  4790  6987 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:33.014  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_PERIODIC_REFRESH.
+10-23 13:13:33.017  1892  2581 W CAMPeriodicRefresh: Refreshing not complete, unable to upload top contacts.
+10-23 13:13:33.056  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task DOODLE_SCHEDULE_SYNC_TASK.
+10-23 13:13:33.064  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task FETCH_ADVERTISING_INFO.
+10-23 13:13:33.083  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837973
+10-23 13:13:33.083  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838041
+10-23 13:13:33.083  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838412
+10-23 13:13:33.083  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837964
+10-23 13:13:33.085  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838540
+10-23 13:13:33.086  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838539
+10-23 13:13:33.086  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838553
+10-23 13:13:33.086  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838190
+10-23 13:13:33.086  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838026
+10-23 13:13:33.087  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838419
+10-23 13:13:33.087  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837999
+10-23 13:13:33.087  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838146
+10-23 13:13:33.088  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837998
+10-23 13:13:33.088  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task FETCH_SCHEDULED_BUBBLES.
+10-23 13:13:33.099  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_ASSISTANT_ACTION_HISTORY_SYNC_TASK.
+10-23 13:13:33.102  1892  2579 I A       : Attempting to cache the data for corpora [14].
+10-23 13:13:33.110  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_CORE_REFRESH_TASK.
+10-23 13:13:33.113  1892  2248 I A       : Attempting to cache the data for corpora [21].
+10-23 13:13:33.119  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_CORE_RELAXED_REFRESH_TASK.
+10-23 13:13:33.120  1892  2579 I A       : Attempting to cache the data for corpora [21].
+10-23 13:13:33.124  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_OPA_REFRESH_TASK.
+10-23 13:13:33.129  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_PKG_ENTITIES_REFRESH_TASK.
+10-23 13:13:33.129  1892  2264 I A       : Attempting to cache the data for corpora [81, 22, 55, 49, 33, 32, 12].
+10-23 13:13:33.133  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838217
+10-23 13:13:33.135  1892  2579 I A       : No accounts found for [PKG_ENTITIES], not syncing anything.
+10-23 13:13:33.137  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_PKG_REFRESH_TASK.
+10-23 13:13:33.146  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_REFRESH_TASK.
+10-23 13:13:33.149  1892  2581 I A       : Attempting to cache the data for corpora [].
+10-23 13:13:33.154  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_CHARGING_TASK.
+10-23 13:13:33.156  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_CELLULAR_CHARGING_TASK.
+10-23 13:13:33.158  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838050
+10-23 13:13:33.158  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838044
+10-23 13:13:33.159  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838051
+10-23 13:13:33.159  6067  6103 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837961
+10-23 13:13:33.179  1222  1640 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.179  1222  1640 D SettingsSliceProvider: Allowlisting 16 uris to 3 pkgs.
+10-23 13:13:33.203  1892  7070 E SingleDataFileGroupPop: Failed to add file group
+10-23 13:13:33.205  1892  2582 E SingleDataFileGroupPop: Failed to add file group
+10-23 13:13:33.205  1222  1640 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.206  1222  1640 D SettingsSliceProvider: Allowlisting 5 uris to 3 pkgs.
+10-23 13:13:33.219  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task RESTORE_SPEAKER_MODEL.
+10-23 13:13:33.219  1222  1640 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-23 13:13:33.221  1222  1237 D SettingsSliceProvider: onSlicePinned: content://com.android.settings.slices/action/os_firmware_version
+10-23 13:13:33.221  1222  5045 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.221  1222  5045 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-23 13:13:33.221  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:33.222  1892  2726 I A       : Using proto config with mendel
+10-23 13:13:33.223  1892  2587 I A       : Canceling restore - user account is null
+10-23 13:13:33.224  1222  5045 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 3
+10-23 13:13:33.230  1222  1237 D SliceBuilder: Creating slice for: com.android.settings.accessibility.MagnificationGesturesPreferenceController
+10-23 13:13:33.230  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task LEGACY_NOW_SYNC.
+10-23 13:13:33.235  1892  2579 I A       : #fetchAndUpdateConfigurationInternal
+10-23 13:13:33.242  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_GSERVICES_CONFIG.
+10-23 13:13:33.244  1892  7075 I A       : Updating Gservices keys
+10-23 13:13:33.254  1222  1237 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-23 13:13:33.257  1222  1447 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.260  1222  1447 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen) in: 3
+10-23 13:13:33.271  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task UPLOAD_HOTWORD_SETTINGS.
+10-23 13:13:33.276  1222  3846 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.278  1222  3846 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 2
+10-23 13:13:33.284  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_MAINTENANCE_TASK.
+10-23 13:13:33.293  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_WIFI_CHARGING_TASK.
+10-23 13:13:33.295  1892  7072 E SingleDataFileGroupPop: Failed to add file group
+10-23 13:13:33.297  1222  5036 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.298  1222  5036 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/media_volume
+10-23 13:13:33.298  1222  5045 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.299  1222  1447 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.299  1222  3846 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.301  1222  5045 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-23 13:13:33.301  1222  1640 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/mobile_data
+10-23 13:13:33.301  1222  1447 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-23 13:13:33.302  1222  5045 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 4
+10-23 13:13:33.302  1222  5045 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.302  1222  1222 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/mobile_data
+10-23 13:13:33.302  1222  1222 D SliceBackgroundWorker: create instance: class com.android.settings.network.telephony.MobileDataSlice$MobileDataWorker
+10-23 13:13:33.303  1222  1447 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/ring_volume) in: 4
+10-23 13:13:33.303  1222  1447 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.304  1222  1447 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-23 13:13:33.305  1222  5036 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/media_volume) in: 8
+10-23 13:13:33.305  1222  5036 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.305  1222  6046 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
+10-23 13:13:33.306  1222  3846 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-23 13:13:33.307  1222  3846 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/separate_ring_volume) in: 8
+10-23 13:13:33.307  1222  3846 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.308  1222  5045 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-23 13:13:33.309  1222  3846 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/smart_battery) in: 2
+10-23 13:13:33.309  1222  3846 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.309  1222  3846 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-23 13:13:33.311  1222  1447 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 8
+10-23 13:13:33.311  1222  1447 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: Could not create slicedata for uri: content://com.android.settings.slices/intent/wifi_calling
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: java.lang.IllegalStateException: Invalid Slices key from path: wifi_calling
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getIndexedSliceData(SlicesDatabaseAccessor.java:132)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceDataFromUri(SlicesDatabaseAccessor.java:75)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.loadSlice(SettingsSliceProvider.java:395)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.lambda$loadSliceInBackground$5(SettingsSliceProvider.java:426)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider.$r8$lambda$IApJtz2y7JXGRdMRCkYjf83H4T4(Unknown Source:0)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at com.android.settings.slices.SettingsSliceProvider$$ExternalSyntheticLambda0.run(Unknown Source:4)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:33.312  1222  1447 D SettingsSliceProvider: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:33.312  1222  5045 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 10
+10-23 13:13:33.312  1222  5036 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/auto_rotate) in: 7
+10-23 13:13:33.315  1222  3846 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/hardware_info_device_model) in: 5
+10-23 13:13:33.316  1222  1447 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.317  1222  1447 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 1
+10-23 13:13:33.319  1222  5045 D SlicesIndexer: Slices already indexed - returning.
+10-23 13:13:33.319  1222  5045 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 0
+10-23 13:13:33.321  1222  6046 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://android.settings.slices/action/bluetooth
+10-23 13:13:33.331  1222  1222 D SettingsSliceProvider: Starting background worker for: content://android.settings.slices/action/wifi
+10-23 13:13:33.331  1222  1222 D SliceBackgroundWorker: create instance: class com.android.settings.wifi.slice.WifiScanWorker
+10-23 13:13:33.337  1222  6046 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+10-23 13:13:33.338  1222  6046 D MediaVolumePreCtrl: The slice doesn't support end item
+10-23 13:13:33.339  1222  1222 D WsuServiceClient: Binding to com.google.android.apps.carrier.carrierwifi
+10-23 13:13:33.339  1222  1222 D WsuServiceClient: the specified wsu service is not installed.
+10-23 13:13:33.341  1222  1640 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+10-23 13:13:33.341  1222  1222 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+10-23 13:13:33.342  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.342  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.342  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.342  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.342  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  2582 W earchbox:search: Long monitor contention with owner Blocking Thread #27 (7070) at java.util.Map com.google.android.libraries.phenotype.client.d.c()(PG:7) waiters=0 in java.util.Map com.google.android.libraries.phenotype.client.d.c() for 136ms
+10-23 13:13:33.343  1222  6046 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+10-23 13:13:33.343  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.343  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.348  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.348  1222  6046 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
+10-23 13:13:33.348  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.348  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.348  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.348  1892  7072 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@e6caa0c} with executor MoreExecutors.directExecutor()
+10-23 13:13:33.348  1892  7072 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.mdi.download.gs.s(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-23 13:13:33.348  1892  7072 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:33.348  1892  7072 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-23 13:13:33.348  1892  7072 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-23 13:13:33.348  1892  7072 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:33.349  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.349  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.349  1892  7072 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.349  1892  7070 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@e95325b} with executor MoreExecutors.directExecutor()
+10-23 13:13:33.349  1892  7070 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.mdi.download.gs.s(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:3)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-23 13:13:33.349  1892  7070 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:33.349  1892  7070 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-23 13:13:33.349  1892  7070 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-23 13:13:33.349  1892  7070 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:33.349  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.349  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.349  1892  7070 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.350  1892  7069 I A       : Starting new batch; batchId=1 corpus=1015
+10-23 13:13:33.350  1892  7075 I A       : Joining existing batch; batchId=1 corpus=1004
+10-23 13:13:33.350  1892  2264 I A       : Joining existing batch; batchId=1 corpus=1008
+10-23 13:13:33.351  1892  7068 I A       : Joining existing batch; batchId=1 corpus=1004
+10-23 13:13:33.354   511   767 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+10-23 13:13:33.356  1892  2301 I A       : NGA Sync: MDD Task: MDD.MAINTENANCE.PERIODIC.GCM.TASK done.
+10-23 13:13:33.357  1892  2301 I A       : NGA Sync: isNgaSyncEnabled: false; enableFileGroupPopulator: false; requiresMddAssets: false
+10-23 13:13:33.357  1892  2274 I A       : Refresh account policy.
+10-23 13:13:33.358  1892  2579 I A       : Joining existing batch; batchId=1 corpus=1014
+10-23 13:13:33.358  1892  2248 I A       : Joining existing batch; batchId=1 corpus=1008
+10-23 13:13:33.358  1892  2581 I A       : Joining existing batch; batchId=1 corpus=1015
+10-23 13:13:33.359  1892  7072 I A       : Download file group for language pack: en-US
+10-23 13:13:33.359  1892  7072 W A       : Locale en-US is not compatible, please check manifest exists
+10-23 13:13:33.359  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.359  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.359  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.360  1892  7072 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.360  1892  7072 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.360  1892  7072 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.360  1892  7072 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.360  1892  7072 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.360  1892  7072 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.360  1892  7072 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.361  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.361  1892  7073 I A       : Joining existing batch; batchId=1 corpus=1014
+10-23 13:13:33.362  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.362  1892  7072 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.362  1892  7072 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.362  1892  7072 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.362  1892  7072 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.362  1892  7072 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.362  1892  7072 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.364  1892  7072 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.364  1222  1238 D SliceBuilder: Creating slice for: com.android.settings.notification.RingVolumePreferenceController
+10-23 13:13:33.367  1892  2582 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@dcd782f} with executor MoreExecutors.directExecutor()
+10-23 13:13:33.367  1892  2582 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:4)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-23 13:13:33.367  1892  2582 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:33.367  1892  2582 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-23 13:13:33.367  1892  2582 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-23 13:13:33.367  1892  2582 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:33.367  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.367  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.367  1892  2582 E PhFileGroupPop: Failed to add file group
+10-23 13:13:33.367  1892  7072 I A       : Using proto config with mendel
+10-23 13:13:33.367  1892  7072 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.368  1892  7072 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.368  1892  7072 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.368  1892  7072 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.368  1892  7072 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.368  1892  7072 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.368  1892  7070 I A       : Download file group for language pack: en-US
+10-23 13:13:33.374  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LANGUAGE_PACKS.
+10-23 13:13:33.374  1892  7070 W A       : Locale en-US is not compatible, please check manifest exists
+10-23 13:13:33.374  1892  2586 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-23 13:13:33.375  1892  7072 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.375  1892  7073 I A       : Joining existing batch; batchId=1 corpus=1008
+10-23 13:13:33.375  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.375  1892  2248 I A       : Joining existing batch; batchId=1 corpus=1014
+10-23 13:13:33.375  1892  2579 I A       : Joining existing batch; batchId=1 corpus=1015
+10-23 13:13:33.375  1892  2581 I A       : Joining existing batch; batchId=1 corpus=1004
+10-23 13:13:33.375  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.376  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.376  1892  7070 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.376  1892  7070 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.376  1892  7070 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.376  1892  7070 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.376  1892  7070 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.376  1892  7070 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.376  1892  7070 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.376  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.377  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.377  1892  7070 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.377  1892  7070 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.377  1892  7070 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.377  1892  7070 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.377  1892  7070 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.377  1892  7070 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.377  1892  7070 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.378  1892  2582 I A       : Download file group for language pack: en-US
+10-23 13:13:33.378  1892  2581 I A       : Skip LanguagePack auto-update because controller is uninitialized.
+10-23 13:13:33.378  1892  2582 W A       : Locale en-US is not compatible, please check manifest exists
+10-23 13:13:33.383  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.383  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.388  1892  7070 I A       : Using proto config with mendel
+10-23 13:13:33.388  1892  7070 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.388  1892  7070 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.388  1892  7070 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.388  1892  7070 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.388  1892  7070 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.388  1892  7070 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.388  1892  2289 I LanguagePackUpdateContr: Queuing language pack download for: en-US
+10-23 13:13:33.388  1892  7070 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.388  1892  1892 I LanguagePackUpdateContr: #finishInitRunnable run
+10-23 13:13:33.389  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.389  1892  2582 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.389  1892  2582 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.389  1892  2582 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.389  1892  2582 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.389  1892  2582 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.389  1892  2582 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.389  1892  2582 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.389  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.390  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.390  1892  2582 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.390  1892  2582 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.390  1892  2582 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.390  1892  2582 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.390  1892  2582 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.390  1892  2582 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.390  1892  2582 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.395  1892  2582 I A       : Using proto config with mendel
+10-23 13:13:33.395  1892  2582 I A       : Merging legacy hotword config map with new proto.
+10-23 13:13:33.395  1892  2582 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.396  1892  2760 I LanguagePackUpdateContr: Proceeding with download, not active: soda-en-US-v1001
+10-23 13:13:33.396  1222  6046 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-23 13:13:33.400  1892  2586 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-23 13:13:33.400  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task NGA_PRIORITY_DOWNLOAD_TASK.
+10-23 13:13:33.403  1892  2582 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-23 13:13:33.403  1892  2582 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-23 13:13:33.403  1892  2582 I A       : Skipping. Expected model: 2 Found: 1
+10-23 13:13:33.403  1892  2582 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-23 13:13:33.403  1892  2582 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-23 13:13:33.411  1892  2586 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-23 13:13:33.411  1892  2586 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-23 13:13:33.412  1892  2586 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-23 13:13:33.412  1892  2586 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-23 13:13:33.423  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LAUNCHER_SHORTCUT.
+10-23 13:13:33.428   511  1188 D ConnectivityService: requestNetwork for uid/pid:1000/1222 activeRequest: null callbackRequest: 152 [NetworkRequest [ TRACK_SYSTEM_DEFAULT id=152, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED RequestorUid: 1000 RequestorPkg: com.android.settings UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-23 13:13:33.430   511   767 D ConnectivityService: NetReassign [152 : null → 100] [c 1] [a 0] [i 1]
+10-23 13:13:33.451  1892  2586 D PhFileGroupPop: Added file groups tapas_cortex
+10-23 13:13:33.451  1892  2586 D PhFileGroupPop: Added file groups tapas_cortex
+10-23 13:13:33.453  1892  2586 D PhFileGroupPop: Added file groups tapas_cortex
+10-23 13:13:33.463  1892  2274 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.464  1892  2274 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.465  1892  2274 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.465  1222  1237 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-23 13:13:33.466  1892  2285 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.466  1892  2289 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.466  1892  2285 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.467  1892  2289 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.467  1892  2274 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.469  1892  2285 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.475  1892  2289 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.475  1892  2274 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.476  1892  2289 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.477  1892  2274 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.478  1892  2285 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.479  1892  2274 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.480  1892  2274 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.480  1892  2289 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792761157095]
+10-23 13:13:33.481  1892  2289 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-23 13:13:33.496  1222  6046 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-23 13:13:33.497  1222  1238 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-23 13:13:33.498  1222  6046 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-23 13:13:33.498  1222  1238 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-23 13:13:33.501  1222  6046 D SliceBuilder: Creating slice for: com.android.settings.display.SmartAutoRotatePreferenceController
+10-23 13:13:33.502  1222  1640 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-23 13:13:33.502  1222  1640 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-23 13:13:33.506  1222  1640 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.SmartBatteryPreferenceController
+10-23 13:13:33.509  1222  1640 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-23 13:13:33.523   511  1188 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.523   511  1188 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+10-23 13:13:33.539  2177  7077 D DownloadManager: [13] Starting
+10-23 13:13:33.596   511  1865 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.596   511  1865 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+10-23 13:13:33.612   511  1865 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.612   511  1865 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+10-23 13:13:33.619   511  1865 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.619   511  1865 W WifiService: Attempt to retrieve OsuProviders with invalid scanResult List
+10-23 13:13:33.643  2177  7077 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-23 13:13:33.644  2177  7077 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-23 13:13:33.645   310  7078 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+10-23 13:13:33.653   310  7079 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:33.654   310  7079 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ed55e1150
+10-23 13:13:33.654   310  7079 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+10-23 13:13:33.655   310  7080 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:33.655   310  7080 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ec55e8290
+10-23 13:13:33.655   310  7080 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+10-23 13:13:33.699  2177  7077 D TrafficStats: tagSocket(75) with statsTag=0xffffff01, statsUid=10120
+10-23 13:13:33.847  1222  7076 D CompatibilityChangeReporter: Compat change id reported: 186082280; UID 1000; state: ENABLED
+10-23 13:13:33.862   511  1188 I WifiService: startScan uid=1000
+10-23 13:13:33.884   511  1865 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.884   511  1865 W WifiService: Attempt to retrieve WifiConfiguration with invalid scanResult List
+10-23 13:13:33.895   511  1188 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.895   511  1188 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+10-23 13:13:33.904   511  1188 W ScanResultUtil: Empty or null ScanResult list
+10-23 13:13:33.904   511  1188 W WifiService: Attempt to retrieve OsuProviders with invalid scanResult List
+10-23 13:13:33.950  1222  1237 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/mobile_data
+10-23 13:13:33.975  1222  1222 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/mobile_data
+10-23 13:13:33.997   511   613 I RoleService: Granting default roles...
+10-23 13:13:34.005  1037  1037 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-23 13:13:34.005  1037  1037 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+10-23 13:13:34.005  1037  1037 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-23 13:13:34.005  1037  1037 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+10-23 13:13:34.007   824   824 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-23 13:13:34.008   511   622 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-23 13:13:34.009  3015  3197 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@9bb541b
+10-23 13:13:34.015  1222  1238 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
+10-23 13:13:34.015  1070  1070 D CarrierSvcBindHelper: onPackageModified: com.google.android.googlequicksearchbox
+10-23 13:13:34.015  1070  1070 D CarrierSvcBindHelper: No carrier app for: 0
+10-23 13:13:34.017  1070  1070 D ImsResolver: maybeAddedImsService, packageName: com.google.android.googlequicksearchbox
+10-23 13:13:34.026  3847  7085 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-23 13:13:34.028  1660  1692 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-23 13:13:34.054  1222  1237 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-23 13:13:34.075  1222  1238 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://com.android.settings.slices/action/zen_mode_toggle
+10-23 13:13:34.079  1222  1237 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-23 13:13:34.081  6556  6615 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-23 13:13:34.084  6556  7093 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-23 13:13:34.085  6545  6640 W Icing   : Package com.google.android.googlequicksearchbox targets Android P and isn't allowed to use AppDataSearch indexing API
+10-23 13:13:34.104  6556  6615 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-23 13:13:34.113  1222  1238 D SliceBroadcastRelay: Unregistering uri broadcast relay: content://android.settings.slices/action/bluetooth
+10-23 13:13:34.114  1222  6046 D WifiSlice: calling uid name : com.google.android.settings.intelligence
+10-23 13:13:34.125  6556  7106 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-23 13:13:34.155  1222  1222 D SettingsSliceProvider: Stopping background worker for: content://android.settings.slices/action/wifi
+10-23 13:13:34.166  1660  7091 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-23 13:13:34.297  6545  6638 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-23 13:13:34.314  6545  6638 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-23 13:13:34.353  1892  2586 I A       : Scheduled one-off task for batch; batchId=1 taskId=-1000006 corpora=[1004,1008,1014,1015]
+10-23 13:13:34.353  1892  2586 I A       : Pending callbacks: 1
+10-23 13:13:34.437  6545  6638 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-23 13:13:34.461   511   522 I system_server: Background young concurrent copying GC freed 963727(21MB) AllocSpace objects, 7(268KB) LOS objects, 41% free, 25MB/44MB, paused 56us,55us total 432.409ms
+10-23 13:13:34.550  6545  6638 I Icing   : Indexing done com.google.android.gms-apps
+10-23 13:13:34.765  6545  6560 I gle.android.gms: Background concurrent copying GC freed 298799(11MB) AllocSpace objects, 94(4084KB) LOS objects, 49% free, 12MB/24MB, paused 33us,22us total 648.275ms
+10-23 13:13:35.249  6556  6574 I .gms.persistent: Background young concurrent copying GC freed 223138(12MB) AllocSpace objects, 2(40KB) LOS objects, 44% free, 15MB/28MB, paused 143us,25us total 200.914ms
+10-23 13:13:35.546  4790  7001 V FaceDetectorV2Jni: closeDetector.start()
+10-23 13:13:35.550  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task NGA_READ_ONLY_LOGS_BASED_TOP_CONTACTS_NGA_PUSH.
+10-23 13:13:35.564  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task OPA_ASSISTANT_LANGUAGE_TRANSITION_TASK.
+10-23 13:13:35.568  4790  7001 V FaceDetectorV2Jni: closeDetector.end()
+10-23 13:13:35.569  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:35.574  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task PCP_V1_BACKGROUND_REFRESH.
+10-23 13:13:35.575  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:35.577  1892  2586 E PCP.BackgroundTask: Missing PCP TNG entry point binding, or zero state response to PCP is not enabled.
+10-23 13:13:35.583  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_AUTH_TOKENS.
+10-23 13:13:35.584  4790  4985 I JarvisTest: [Indice] Foto analizzate: 4 · totale db=(4, 0, 5)
+10-23 13:13:35.586  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:35.588  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_NOW_CONFIGURATION.
+10-23 13:13:35.593  4790  4985 I JarvisTest: [Indice] Gruppi di volti: [[two_people.jpg, obama.jpg, obama2.jpg], [biden.jpg, two_people.jpg]]
+10-23 13:13:35.599  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:35.601  1892  1892 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_SEARCH_HISTORY.
+10-23 13:13:35.604  1892  2581 W LocationOracle: getBestLocation(): no location is available
+10-23 13:13:35.609  6556  6892 W .gms.persistent: Long monitor contention with owner lowpool[6] (6732) at long bwdg.a(bwdv)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12) waiters=0 in long bwdg.a(bwdv) for 25.814s
+10-23 13:13:35.609  6556  6845 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.phenotype.COMMITTED (6677) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 26.334s
+10-23 13:13:35.610  6556  7106 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_account
+10-23 13:13:35.622   511   522 I system_server: Background concurrent copying GC freed 827892(23MB) AllocSpace objects, 21(2704KB) LOS objects, 50% free, 23MB/47MB, paused 78us,1.257ms total 147.531ms
+10-23 13:13:35.626   310  7110 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-23 13:13:35.627   310  7111 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:35.627   310  7112 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:35.644  4790  4985 I JarvisTest: [Ricerca] foto di Obama → [two_people.jpg, obama.jpg, obama2.jpg]
+10-23 13:13:35.646  4790  4985 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+10-23 13:13:35.649  4790  4985 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+10-23 13:13:35.652  4790  4985 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+10-23 13:13:35.652  4790  4985 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)

@@ -1,0 +1,96 @@
+10-23 13:12:39.309  4790  4985 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-23 13:12:39.315  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.328  1775  2121 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.331  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.334  1775  5064 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.337  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.355  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.356  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.361  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.361  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.370  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.396  4790  4985 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-20 Vacanza 001.jpg, JarvisTest/Foto/2026-10-21 Vacanza 002.jpg]
+10-23 13:12:39.408  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-23 13:12:39.410  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.410  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-23 13:12:39.410  4790  4985 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+10-23 13:12:39.414  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim (1).pdf to content://media/external_primary/file/1000000030
+10-23 13:12:39.416  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/a.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/a.jpg
+10-23 13:12:39.417  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.418  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/a.jpg to null
+10-23 13:12:39.419  1775  2124 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.420  1775  1817 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+10-23 13:12:39.420  1775  1817 W ExifInterface: java.io.IOException: Invalid byte order: 0
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:4000)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-23 13:12:39.420  1775  1817 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-23 13:12:39.421  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.422  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.422  1775  1817 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisTest/Foto/2026-10-20 Vacanza 001.jpg: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+10-23 13:12:39.425  1775  2121 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.425  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-10-20 Vacanza 001.jpg to content://media/external_primary/images/media/1000000044
+10-23 13:12:39.427  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/b.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/b.jpg
+10-23 13:12:39.428  1775  5064 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.428  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.429  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/b.jpg to null
+10-23 13:12:39.431  1775  2121 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.432  1775  1817 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+10-23 13:12:39.432  1775  1817 W ExifInterface: java.io.IOException: Invalid byte order: 0
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:4000)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-23 13:12:39.432  1775  1817 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-23 13:12:39.432  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.432  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.432  1775  1817 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisTest/Foto/2026-10-21 Vacanza 002.jpg: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+10-23 13:12:39.437  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-10-21 Vacanza 002.jpg to content://media/external_primary/images/media/1000000045
+10-23 13:12:39.441  1775  2124 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.444  1775  2121 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.449  1775  2124 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.451  1775  5226 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.453  4790  4985 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)

@@ -1,0 +1,35 @@
+10-23 13:12:34.460  4790  4985 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-23 13:12:34.468  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.473  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.480  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.484  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.490  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.498  3015  4535 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:34.527  3015  4535 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:34.557   511   613 I RoleService: Granting default roles...
+10-23 13:12:34.563  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.563  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.572  1660  1703 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gm#com.google.android.gm_Hub failed
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at ogi.v(PG:7)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at qgi.a(PG:2)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at qgi.j(PG:2)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at qgi.h(Unknown Source:4)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at gdz.run(PG:7)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:12:34.575  4759  4847 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:12:34.580  1775  2121 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.596  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:34.645  4790  4985 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+10-23 13:12:34.658  4790  4985 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+10-23 13:12:34.665  1775  2124 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:34.667  1775  5064 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:34.672  1775  2121 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:34.680  1775  2124 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:34.687  1775  3715 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:34.695  1775  3715 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:34.702  1775  2121 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:34.710  1775  5064 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:34.711  4790  4985 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)

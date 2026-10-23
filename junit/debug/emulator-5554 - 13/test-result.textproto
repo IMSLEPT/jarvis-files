@@ -1,0 +1,774 @@
+# proto-message: google.testing.platform.proto.api.core.TestSuiteResult
+# 2026-10-23T13:15:11.351906966Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 14
+  device {
+    id: "emulator-5554"
+    friendly_name: "primary"
+  }
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "moveWithFullTargetPath"
+    start_time {
+      seconds: 1792761154
+      nanos: 458000000
+    }
+    end_time {
+      seconds: 1792761154
+      nanos: 745000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-moveWithFullTargetPath.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "duplicatesAndSearch"
+    start_time {
+      seconds: 1792761154
+      nanos: 779000000
+    }
+    end_time {
+      seconds: 1792761155
+      nanos: 7000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-duplicatesAndSearch.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "trashRestore"
+    start_time {
+      seconds: 1792761155
+      nanos: 14000000
+    }
+    end_time {
+      seconds: 1792761155
+      nanos: 91000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-trashRestore.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "cleanSpuriousSearches"
+    start_time {
+      seconds: 1792761155
+      nanos: 97000000
+    }
+    end_time {
+      seconds: 1792761155
+      nanos: 150000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-cleanSpuriousSearches.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "keyBackupRoundTrip"
+    start_time {
+      seconds: 1792761155
+      nanos: 154000000
+    }
+    end_time {
+      seconds: 1792761159
+      nanos: 369000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-keyBackupRoundTrip.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "sortDownloadRule"
+    start_time {
+      seconds: 1792761159
+      nanos: 374000000
+    }
+    end_time {
+      seconds: 1792761159
+      nanos: 502000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-sortDownloadRule.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "parseModelReply"
+    start_time {
+      seconds: 1792761159
+      nanos: 505000000
+    }
+    end_time {
+      seconds: 1792761159
+      nanos: 584000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-parseModelReply.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "collisionsAndPattern"
+    start_time {
+      seconds: 1792761159
+      nanos: 586000000
+    }
+    end_time {
+      seconds: 1792761159
+      nanos: 741000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-collisionsAndPattern.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "FileOpsTest"
+    test_package: "com.jarvis.files"
+    test_method: "planExecuteAndUndo"
+    start_time {
+      seconds: 1792761159
+      nanos: 745000000
+    }
+    end_time {
+      seconds: 1792761159
+      nanos: 923000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.FileOpsTest-planExecuteAndUndo.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "LlmTest"
+    test_package: "com.jarvis.files"
+    test_method: "realModel"
+    start_time {
+      seconds: 1792761159
+      nanos: 925000000
+    }
+    end_time {
+      seconds: 1792761190
+      nanos: 125000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: IGNORED
+  error {
+    error_message: "org.junit.AssumptionViolatedException: Modello non presente: test saltato\nat org.junit.Assume.assumeTrue(Assume.java:68)\nat com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\nat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\nat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\nat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)\nat com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)\nat java.lang.reflect.Method.invoke(Native Method)\nat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\nat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\nat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\nat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\nat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\nat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\nat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\nat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\nat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\nat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\nat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\nat org.junit.runners.Suite.runChild(Suite.java:128)\nat org.junit.runners.Suite.runChild(Suite.java:27)\nat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\nat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\nat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\nat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\nat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\nat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\nat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\nat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)\nat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)\nat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)\nat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)\n"
+    error_type: "org.junit.AssumptionViolatedException"
+    stack_trace: "org.junit.AssumptionViolatedException: Modello non presente: test saltato\nat org.junit.Assume.assumeTrue(Assume.java:68)\nat com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\nat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\nat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\nat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)\nat com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)\nat java.lang.reflect.Method.invoke(Native Method)\nat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\nat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\nat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\nat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\nat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\nat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\nat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\nat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\nat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\nat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\nat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\nat androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)\nat org.junit.runners.Suite.runChild(Suite.java:128)\nat org.junit.runners.Suite.runChild(Suite.java:27)\nat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\nat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\nat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\nat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\nat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\nat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\nat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\nat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\nat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\nat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)\nat androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)\nat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)\nat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)\n"
+  }
+}
+test_result {
+  test_case {
+    test_class: "PhotoTest"
+    test_package: "com.jarvis.files"
+    test_method: "a2_stopRequest"
+    start_time {
+      seconds: 1792761190
+      nanos: 331000000
+    }
+    end_time {
+      seconds: 1792761190
+      nanos: 459000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.PhotoTest-a2_stopRequest.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PhotoTest"
+    test_package: "com.jarvis.files"
+    test_method: "a_facesAndEmbeddings"
+    start_time {
+      seconds: 1792761190
+      nanos: 465000000
+    }
+    end_time {
+      seconds: 1792761203
+      nanos: 249000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.PhotoTest-a_facesAndEmbeddings.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PhotoTest"
+    test_package: "com.jarvis.files"
+    test_method: "b_indexNameAndSearch"
+    start_time {
+      seconds: 1792761203
+      nanos: 253000000
+    }
+    end_time {
+      seconds: 1792761215
+      nanos: 945000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.PhotoTest-b_indexNameAndSearch.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "UiTest"
+    test_package: "com.jarvis.files"
+    test_method: "allScreens"
+    start_time {
+      seconds: 1792761215
+      nanos: 974000000
+    }
+    end_time {
+      seconds: 1792761310
+      nanos: 131000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/logcat-com.jarvis.files.UiTest-allScreens.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/androidTest-results/connected/debug/emulator-5554 - 13/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

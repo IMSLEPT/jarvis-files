@@ -1,0 +1,124 @@
+10-23 13:12:39.454  4790  4985 I TestRunner: started: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-23 13:12:39.459  1775  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.463  1775  2124 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.467  1775  5226 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.471  1392  1392 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-23 13:12:39.472  1775  5064 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.482  1775  5226 W MediaProvider: isAppCloneUserPair for user 0: false
+10-23 13:12:39.492  3015  3283 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-23 13:12:39.495  3015  3283 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-23 13:12:39.496  3015  3283 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-23 13:12:39.502  3015  3283 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:39.503  3015  3283 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-23 13:12:39.506  3015  3283 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-23 13:12:39.507  3015  3283 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-23 13:12:39.512  3015  3283 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:39.516  3015  3283 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-23 13:12:39.519  3015  3283 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-23 13:12:39.520  3015  3283 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-23 13:12:39.522  4790  4985 I JarvisTest: [FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+10-23 13:12:39.526  3015  3283 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:39.531  1775  1887 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000046
+10-23 13:12:39.531  1775  1887 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000046
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-23 13:12:39.531  1775  1887 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-23 13:12:39.542  3015  3283 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-23 13:12:39.547  3015  3283 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-23 13:12:39.548  3015  3283 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-23 13:12:39.554  3015  3283 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-23 13:12:39.556  4790  4985 I JarvisTest: [FileOps] Eseguito: 6 ok, 0 falliti []
+10-23 13:12:39.557  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf
+10-23 13:12:39.559  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.560  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf to null
+10-23 13:12:39.572  4790  5228 D ProfileInstaller: Installing profile for com.jarvis.files
+10-23 13:12:39.574  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/bolletta_enel_marzo.pdf to content://media/external_primary/file/1000000029
+10-23 13:12:39.582  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-23 13:12:39.584  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.585  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-23 13:12:39.590  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf to content://media/external_primary/file/1000000023
+10-23 13:12:39.591  1775  1817 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+10-23 13:12:39.591  1775  1817 W ExifInterface: java.io.IOException: Invalid byte order: 707
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:4000)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-23 13:12:39.591  1775  1817 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-23 13:12:39.591  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.591  1775  1817 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-23 13:12:39.591  1775  1817 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisTest/Download/IMG_001.jpg: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+10-23 13:12:39.597  1775  1887 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000023
+10-23 13:12:39.597  1775  1887 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000023
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-23 13:12:39.597  1775  1887 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-23 13:12:39.597  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/IMG_001.jpg to content://media/external_primary/images/media/1000000024
+10-23 13:12:39.601  4790  4985 I JarvisTest: [FileOps] Annulla: 6 ripristinati, 0 falliti
+10-23 13:12:39.602  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/Foto mare.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/Foto mare.jpg
+10-23 13:12:39.603  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.603  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/Foto mare.jpg to null
+10-23 13:12:39.606  4790  4985 I JarvisTest: [FileOps] OK sposta/rinomina/cestino/annulla
+10-23 13:12:39.608  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/vecchio.apk to content://media/external_primary/file/1000000025
+10-23 13:12:39.612  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to content://media/external_primary/file/1000000026
+10-23 13:12:39.613  1775  2124 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.614  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt
+10-23 13:12:39.615  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.615  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt to null
+10-23 13:12:39.618  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/vecchio.apk to content://media/external_primary/file/1000000025
+10-23 13:12:39.620  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/note.txt: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/note.txt
+10-23 13:12:39.620  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.621  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to null
+10-23 13:12:39.621  1775  3715 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.622  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt
+10-23 13:12:39.623  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.623  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Documenti/Note/Appunti.txt to null
+10-23 13:12:39.625  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/IMG_001.jpg to content://media/external_primary/images/media/1000000024
+10-23 13:12:39.626  1775  2121 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.632  1775  5064 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-23 13:12:39.634  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/Foto mare.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/Foto mare.jpg
+10-23 13:12:39.634  1775  5226 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-23 13:12:39.635  1775  1817 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-23 13:12:39.636  4790  5061 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/Foto mare.jpg to null
+10-23 13:12:39.637  1775  1817 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-23 13:12:39.639  4790  4985 I TestRunner: finished: planExecuteAndUndo(com.jarvis.files.FileOpsTest)

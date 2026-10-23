@@ -1,0 +1,643 @@
+10-23 13:13:10.185  4790  4985 I TestRunner: started: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-23 13:13:10.186  3099  3116 D TrafficStats: tagSocket(81) with statsTag=0x1809, statsUid=-1
+10-23 13:13:10.189  4790  4985 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-23 13:13:10.223   511   878 D ConnectivityService: requestNetwork for uid/pid:10121/1861 activeRequest: null callbackRequest: 143 [NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10121 RequestorUid: 10121 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-23 13:13:10.225   511   767 D ConnectivityService: NetReassign [144 : null → 100] [c 0] [a 0] [i 1]
+10-23 13:13:10.226   511   760 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10121 RequestorUid: 10121 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+10-23 13:13:10.226   511   760 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10121 RequestorUid: 10121 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+10-23 13:13:10.226   511   760 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10121 RequestorUid: 10121 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+10-23 13:13:10.226   511   760 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10121 RequestorUid: 10121 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+10-23 13:13:10.242  3099  3116 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-23 13:13:10.244  3099  3116 W libc    : Access denied finding property "service.adb.tls.port"
+10-23 13:13:10.246  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.253  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 49 uptime_millis: 49 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.238  3099  3099 W binder:3099_2: type=1400 audit(0.0:98): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-23 13:13:10.266  3099  3116 D EGL_emulation: eglCreateContext: 0x7fc51a7e1750: maj 3 min 0 rcv 3
+10-23 13:13:10.238  3099  3099 W binder:3099_2: type=1400 audit(0.0:99): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-23 13:13:10.291   310  6988 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10121 0}
+10-23 13:13:10.291  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.291   310  6989 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:10.291   310  6989 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55e4950
+10-23 13:13:10.291   310  6989 I resolv  : doQuery: rcode=0, ancount=8, return value=265
+10-23 13:13:10.291   310  6990 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:10.291   310  6990 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ee55e97f0
+10-23 13:13:10.291   310  6990 I resolv  : doQuery: rcode=0, ancount=8, return value=169
+10-23 13:13:10.302  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.337  4790  4804 I om.jarvis.files: Background young concurrent copying GC freed 20754(2572KB) AllocSpace objects, 12(1416KB) LOS objects, 0% free, 10MB/10MB, paused 8.860ms,20us total 86.843ms
+10-23 13:13:10.338  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:10.338  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:10.338  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:10.338  4790  4806 W System  : A resource failed to call close.
+10-23 13:13:10.351  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.361  4790  6982 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1279581277 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-23 13:13:10.362   511  1856 D ConnectivityService: requestNetwork for uid/pid:1000/511 asUid: 10174 activeRequest: null callbackRequest: 145 [NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-23 13:13:10.365  6556  6574 I .gms.persistent: Background concurrent copying GC freed 282410(14MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 12MB/24MB, paused 164us,24us total 270.811ms
+10-23 13:13:10.368   511   767 D ConnectivityService: NetReassign [146 : null → 100] [c 3] [a 0] [i 1]
+10-23 13:13:10.368   511   760 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-23 13:13:10.368   511   760 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-23 13:13:10.369   511   760 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-23 13:13:10.369   511   760 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-23 13:13:10.378  4790  6986 I Manager : DeviceManager::DeviceManager
+10-23 13:13:10.381   511   533 I ServiceWatcher: [network] connected to {com.google.android.gms/com.google.android.location.network.NetworkLocationService}
+10-23 13:13:10.381  4790  6986 W ServerFlag: Failed to parse result of GetServerConfigurableFlag, errno=34
+10-23 13:13:10.381  4790  6986 I Manager : findAvailableDevices
+10-23 13:13:10.384   511  1726 I LocationManagerService: network provider loaded extra attribution tags: [activity_recognition_provider, awareness_provider, current_semantic_location, fused_location_provider, geofencer_provider, network_location_calibration, network_location_provider, wearable_flp_shim]
+10-23 13:13:10.388  4790  6986 W libc    : Access denied finding property "ro.debuggable"
+10-23 13:13:10.389  6556  6730 W SystemServiceRegistry: No service published for: wifirtt
+10-23 13:13:10.394  4790  6986 I Manager : Found interface nnapi-sample_all (version = JUST_AN_EXAMPLE)
+10-23 13:13:10.394  4790  6986 I Manager : Found interface nnapi-sample_float_fast (version = JUST_AN_EXAMPLE)
+10-23 13:13:10.394  4790  6986 I Manager : Found interface nnapi-sample_float_slow (version = JUST_AN_EXAMPLE)
+10-23 13:13:10.394  4790  6986 I Manager : Found interface nnapi-sample_minimal (version = JUST_AN_EXAMPLE)
+10-23 13:13:10.394  4790  6986 I Manager : Found interface nnapi-sample_quant (version = JUST_AN_EXAMPLE)
+10-23 13:13:10.410  4790  6986 E native  : E0000 00:00:1792761190.409990    6986 proto_data_store.cc:36] Could not open file /data/user/0/com.jarvis.files/files/com.google.mlkit.acceleration/com.google.perception.acceleration_analytics_storage_v2.: No such file or directory
+10-23 13:13:10.410  6556  6742 I NearbyDiscovery: FastPairHandler: Received action android.location.PROVIDERS_CHANGED [CONTEXT service_id=265 ]
+10-23 13:13:10.410  6556  6742 I NearbyDiscovery: FastPairScanner: isScreenOn=true, scanWithScreenOff=false, isLocationEnabled=true, disableLocationRequirement=true, isDiscoveryScanningEnabled=true, during24GhzWifiWarmingUpPeriod=false [CONTEXT service_id=265 ]
+10-23 13:13:10.410  6556  6742 D BluetoothAdapter: isLeEnabled(): ON
+10-23 13:13:10.413  6556  6742 I NearbyDiscovery: FastPairScanner: eventType=LOCATION, intReq=false, scanning=true, scanAllowed=true, bleEnabled=true, bleScanAvailable=false, lockScanRate=false, startScanningByLowPowerMode=false [CONTEXT service_id=265 ]
+10-23 13:13:10.413  6556  6742 I NearbyDiscovery: FastPairScanner: nothing changed, eventType=LOCATION [CONTEXT service_id=265 ]
+10-23 13:13:10.386  4790  4790 W pool-4-thread-1: type=1400 audit(0.0:100): avc: denied { read } for name="u:object_r:userdebug_or_eng_prop:s0" dev="tmpfs" ino=292 scontext=u:r:untrusted_app:s0:c174,c256,c512,c768 tcontext=u:object_r:userdebug_or_eng_prop:s0 tclass=file permissive=0 app=com.jarvis.files
+10-23 13:13:10.423  6556  6921 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-23 13:13:10.425  6545  6843 I LocationHistory: [IntentOperation] Handling action android.location.PROVIDERS_CHANGED [CONTEXT service_id=314 ]
+10-23 13:13:10.425  6545  6843 I LocationHistory: [IntentOperation] Device settings changed to ENABLED. Scheduling periodic tasks. [CONTEXT service_id=314 ]
+10-23 13:13:10.426  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.storevisits.StoreVisitsProcessingService.StoreVisitsProcessing is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-23 13:13:10.427  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.WifiPlaceVisit is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.427  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.uploads.BatchDeidentifiedDataUploadService.BatchDeidentifiedDataUpload is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-23 13:13:10.429  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService.GellerCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.432  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.LocationHistoryActiveProcessing is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.435  6556  6632 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-23 13:13:10.435  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpInferenceService.PulpInference is scheduled to run EVERY_7_DAYS [CONTEXT service_id=173 ]
+10-23 13:13:10.436  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.PulpMddRefreshDownloadTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.436  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.PulpMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.436  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.FederatedLocation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.436  6545  6843 W GmsTaskScheduler: com.google.android.gms.semanticlocationhistory.federated.FederatedTaskIdentityDataService is not available. This may cause the task to be lost.
+10-23 13:13:10.436  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedTaskIdentityDataService.FederatedLocation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.436  6545  6843 W GmsTaskScheduler: com.google.android.gms.semanticlocationhistory.federated.FederatedJobHistoryService is not available. This may cause the task to be lost.
+10-23 13:13:10.436  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedJobHistoryService.FederatedLocation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.437  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.OdlhDatabaseCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.437  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.EditMergeJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.437  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditUploadJob.EditUploadJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.438  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.HistoricalBusyness is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.438  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob.OdlhRemovedAccountsCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.441  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.OdlhUserEditSync is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.441  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.RegionMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-23 13:13:10.441  6545  6843 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddDownloadScheduleService.RegionMddRefreshDownloadTask is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-23 13:13:10.444  4790  6993 I native  : I0000 00:00:1792761190.444837    6993 classifier_client_calculator.cc:144] Loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-23 13:13:10.454  4790  6993 I tflite  : Initialized TensorFlow Lite runtime.
+10-23 13:13:10.454  4790  6993 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-23 13:13:10.455  4790  6993 I tflite  : Replacing 30 out of 31 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-23 13:13:10.477  4790  4804 I om.jarvis.files: Background concurrent copying GC freed 7983(3298KB) AllocSpace objects, 1(348KB) LOS objects, 49% free, 10121KB/19MB, paused 10.014ms,17us total 139.820ms
+10-23 13:13:10.478  4790  6993 I native  : I0000 00:00:1792761190.478762    6993 classifier_client_calculator.cc:151] Finished loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-23 13:13:10.481  6556  6848 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+10-23 13:13:10.484  6556  6848 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-23 13:13:10.486  6556  6848 I GCoreUlr: Unbound from all signal providers.
+10-23 13:13:10.486  4790  6986 I native  : I0000 00:00:1792761190.486653    6986 scheduler.cc:693] ImageMetadata: 910x1137
+10-23 13:13:10.492  6556  6556 I GCoreUlr: Unbound from all signal providers.
+10-23 13:13:10.492  6556  6556 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-23 13:13:10.494  6556  6848 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-23 13:13:10.549  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.553  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.568  4790  6983 W LibraryVersion: Failed to get app version for libraryName: shared-installation-id
+10-23 13:13:10.571  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.571  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.574  4790  7001 V FaceDetectorV2Jni: initialize.start()
+10-23 13:13:10.574  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.575  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.578  4790  7001 I native  : I0000 00:00:1792761190.578156    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_v5.tflite
+10-23 13:13:10.580  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.580  4790  7001 I native  : I0000 00:00:1792761190.580663    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_gray_v5.tflite
+10-23 13:13:10.581  4790  6983 W LibraryVersion: Failed to get app version for libraryName: shared-acceleration-allowlist
+10-23 13:13:10.582  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.584  4790  7001 I native  : I0000 00:00:1792761190.584141    7001 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_anchors_v5.pb
+10-23 13:13:10.584  4790  7001 I native  : I0000 00:00:1792761190.584964    7001 face_detector_v2_jni.cc:34] Loading models_bundled/LMprec_600.emd
+10-23 13:13:10.585  6556  6742 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-23 13:13:10.586  6556  6742 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+10-23 13:13:10.586  6556  6742 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+10-23 13:13:10.587  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.590  4790  6982 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1274600540 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-23 13:13:10.604  4790  7001 I native  : I0000 00:00:1792761190.603997    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLlefteyeclosed_200.emd
+10-23 13:13:10.604  4790  7001 I native  : I0000 00:00:1792761190.604298    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLrighteyeclosed_200.emd
+10-23 13:13:10.604  4790  7001 I native  : I0000 00:00:1792761190.604421    7001 face_detector_v2_jni.cc:34] Loading models_bundled/BCLjoy_200.emd
+10-23 13:13:10.604  4790  7001 I native  : I0000 00:00:1792761190.604919    7001 face_detector_v2_jni.cc:34] Loading models_bundled/MFT_fssd_accgray.pb
+10-23 13:13:10.605  4790  7001 I native  : I0000 00:00:1792761190.605102    7001 face_detector_v2_jni.cc:34] Loading models_bundled/contours.tfl
+10-23 13:13:10.605  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.608  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.611  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.616  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.618  4790  7001 I native  : I0000 00:00:1792761190.618245    7001 face_detector_v2_jni.cc:34] Loading models_bundled/blazeface.tfl
+10-23 13:13:10.619  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.620  6545  6638 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-23 13:13:10.620  6545  6638 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-23 13:13:10.622  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.627  4790  7001 I tflite  : Initialized TensorFlow Lite runtime.
+10-23 13:13:10.629  4790  7001 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-23 13:13:10.629  4790  7001 W tflite  : Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#137 is a dynamic-sized tensor).
+10-23 13:13:10.633  4790  7001 V FaceDetectorV2Jni: initialize.end()
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.ClearcutInitChimeraIntentService.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.DefaultPriorityClearcutInitChimeraIntentService.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:10.648  6545  6828 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:10.649  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.658  6556  6654 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+10-23 13:13:10.658  6556  6654 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:154)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at cdoy.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:10.658  6556  6654 W TapAndPay: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:10.664  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.668  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.671  6556  6997 W SystemServiceRegistry: No service published for: contexthub
+10-23 13:13:10.675  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.676  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 3 elapsed_millis: 33 uptime_millis: 33 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.679  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.680  6556  6997 W ChimeraUtils: Module com.google.android.gms.location__nonwearable missing resource location_module_display_name(0)
+10-23 13:13:10.685  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:10.690  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:10.693  6556  6654 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-23 13:13:10.706  6556  6654 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-23 13:13:10.708  6556  6654 I GCoreUlr: Unbound from all signal providers.
+10-23 13:13:10.710  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.712  6556  6556 I GCoreUlr: Unbound from all signal providers.
+10-23 13:13:10.712  6556  6556 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-23 13:13:10.712  6556  6654 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-23 13:13:10.719  6556  6717 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (max-target-p, reflection, denied)
+10-23 13:13:10.722  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.732  4790  7001 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:10.744  3099  3116 W SystemServiceRegistry: No service published for: persistent_data_block
+10-23 13:13:10.745  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.755  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.757   310  7007 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-23 13:13:10.757   310  7008 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:10.757   310  7008 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55dfa90
+10-23 13:13:10.757   310  7008 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+10-23 13:13:10.759   310  7009 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:10.759   310  7009 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ee55e8770
+10-23 13:13:10.759   310  7009 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+10-23 13:13:10.760  6545  6638 D TrafficStats: tagSocket(146) with statsTag=0x30003000, statsUid=-1
+10-23 13:13:10.778  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.793  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.813  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.813  6556  6654 W ChimeraUtils: Module com.google.android.gms.tapandpay missing resource null(0)
+10-23 13:13:10.817  6545  6545 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-23 13:13:10.817  6545  6545 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-23 13:13:10.825  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.829  6545  6639 E Pay     : [SeTosMigration] payCapabilities gating flag: enabled [CONTEXT service_id=198 ]
+10-23 13:13:10.830  6545  6639 E Pay     : [SeTosMigration] payCapabilities RoW use_wallet: true, use_wallet_jp: false [CONTEXT service_id=198 ]
+10-23 13:13:10.847  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.851  6545  6639 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-23 13:13:10.854  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.873  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.878  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.899  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.901  6545  6639 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-23 13:13:10.902  6545  6639 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-23 13:13:10.905  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.911  6545  6639 I Pay     : Migration already completed. [CONTEXT service_id=198 ]
+10-23 13:13:10.914  6545  6639 I Pay     : Migration already completed. [CONTEXT service_id=198 ]
+10-23 13:13:10.914  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.914  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.914  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.915  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.915  6545  6639 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-23 13:13:10.917  6545  6639 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-23 13:13:10.918  6545  6639 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-23 13:13:10.921  6556  6848 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 28 uptime_millis: 28 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:10.946  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+10-23 13:13:11.086  4790  7001 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:11.094  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:11.098  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:11.101  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:11.104  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:11.207   511  1188 D WifiNl80211Manager: Scan result ready event
+10-23 13:13:11.208   511  1188 D WifiNative: Scan result ready event
+10-23 13:13:11.232  6556  6654 I GmsCoreVoilaTileGrpc: grpc compression enabled: gzip
+10-23 13:13:11.587  6556  6633 W ctxmgr  : [PendingIntentCompat] Timed out delivering to pendingIntent=PendingIntent{d0cc32d: android.os.BinderProxy@336e4b8}, package=com.google.android.settings.intelligence, permission=null [CONTEXT service_id=47 ]
+10-23 13:13:11.589  6556  6633 W ctxmgr  : [WorkManager] Long workInfo: pkg=com.google.android.gms, lbl=DispatcherDeliver, start=2026-10-23 13:13:01.571+0000, stop=2026-10-23 13:13:11.588+0000, durtn=10017ms [CONTEXT service_id=47 ]
+10-23 13:13:11.694   824   914 D EGL_emulation: app_time_stats: avg=4185.09ms min=89.76ms max=11565.21ms count=3
+10-23 13:13:11.788  6556  6654 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-23 13:13:11.900  3099  3116 W DG      : [flow devicekey] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-23 13:13:12.123  3585  6878 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-23 13:13:12.124  3585  6878 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: Pool status.
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: Total: 6
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: Attested: 6
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: Unassigned: 5
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: Expiring: 0
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-23 13:13:12.124  3585  6878 I RemoteProvisioningService: No provisioning needed.
+10-23 13:13:12.269  3099  3116 W SystemServiceRegistry: No service published for: persistent_data_block
+10-23 13:13:12.275   310  7017 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-23 13:13:12.277  3099  3116 D TrafficStats: tagSocket(81) with statsTag=0x1809, statsUid=-1
+10-23 13:13:12.284  3099  3116 D TrafficStats: tagSocket(81) with statsTag=0x1809, statsUid=-1
+10-23 13:13:12.291  3099  3116 D TrafficStats: tagSocket(81) with statsTag=0x1809, statsUid=-1
+10-23 13:13:12.437  6412  7018 W AssistantConfig: appIntegrationDataInBase64 is null
+10-23 13:13:12.442  6412  7018 E AssistantConnector: Couldn't read whether gRPC is supported from public value
+10-23 13:13:12.442  6412  7018 E AssistantConnector: java.lang.IllegalStateException: Failed to query AGSA value. This is most likely caused by a Google signature check failure. Please make sure both of the AGSA app and the client app are either release or dev builds.
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at bhtw.call(PG:17)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at byyi.call(PG:3)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at ceby.a(PG:1)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at ceav.run(PG:4)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at cebz.run(PG:1)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:12.442  6412  7018 E AssistantConnector: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:12.949  6556  6848 E bwel    : Phenotype registration failed [CONTEXT service_id=51 ]
+10-23 13:13:12.949  6556  6848 E bwel    : java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-23 13:13:12.949  6556  6848 E bwel    : 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at bwel.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:12.949  6556  6848 E bwel    : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:13.297  4790  4985 I JarvisTest: [Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 3007 ms
+10-23 13:13:13.310  3099  3116 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-23 13:13:13.298  3099  3099 W binder:3099_2: type=1400 audit(0.0:101): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-23 13:13:13.320  3099  3116 W libc    : Access denied finding property "service.adb.tls.port"
+10-23 13:13:13.306  3099  3099 W binder:3099_2: type=1400 audit(0.0:102): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-23 13:13:13.329  3099  3116 D EGL_emulation: eglCreateContext: 0x7fc51a7e1750: maj 3 min 0 rcv 3
+10-23 13:13:13.393  4790  7019 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:13.578  6556  6574 I .gms.persistent: Background concurrent copying GC freed 207170(12MB) AllocSpace objects, 1(68KB) LOS objects, 49% free, 14MB/29MB, paused 349us,93us total 142.313ms
+10-23 13:13:13.584  6556  6654 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-23 13:13:13.584  6556  6654 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-23 13:13:13.587  6556  6654 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-23 13:13:13.608  6556  6654 D nativeloader: Configuring classloader-namespace for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-23 13:13:13.610  6556  6654 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-23 13:13:13.617   511  1723 D ConnectivityService: requestNetwork for uid/pid:10119/6556 activeRequest: null callbackRequest: 147 [NetworkRequest [ REQUEST id=148, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-23 13:13:13.619   511   767 D ConnectivityService: NetReassign [148 : null → 100] [c 0] [a 1] [i 1]
+10-23 13:13:13.619   511   760 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=148, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-23 13:13:13.619   511   760 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=148, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-23 13:13:13.619   511   760 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=148, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-23 13:13:13.620   511   760 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=148, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-23 13:13:13.622   511   767 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+10-23 13:13:13.640  6556  6654 W GmsUrlRequestImpl: Content-Type header is overwritten.
+10-23 13:13:13.647   310  7027 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-23 13:13:13.648   310  7029 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:13.648   310  7028 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:13.648   310  7028 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55e22d0
+10-23 13:13:13.648   310  7028 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-23 13:13:13.648   310  7029 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ee55e8fb0
+10-23 13:13:13.648   310  7029 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-23 13:13:13.650  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.652  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.655  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.657  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.661  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.663  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.665  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.667  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.670  6556  7025 D TrafficStats: tagSocket(176) with statsTag=0x401, statsUid=10119
+10-23 13:13:13.943  4790  7019 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:14.093  6556  6654 W GLSUser : [AppCertManager] Exception while requesting key:
+10-23 13:13:14.093  6556  6654 W GLSUser : java.util.concurrent.ExecutionException: avvw: Parse Proto Exception.
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dlnv.s(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dlnv.get(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at oub.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at otz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at otv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at otx.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at otx.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at abxk.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at abxw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at abxw.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at cyeg.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):27)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at czpd.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:14.093  6556  6654 W GLSUser : Caused by: avvw: Parse Proto Exception.
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at avxk.onSucceeded(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at jf.onSucceeded(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at ie.run(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):4)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	... 6 more
+10-23 13:13:14.093  6556  6654 W GLSUser : Caused by: dzfz: Protocol message contained an invalid tag (zero).
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzdb.k(:com.google.android.gms@231818047@23.18.18 (190800-535401451):13)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzha.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):47)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzha.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):45)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzfd.A(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzex.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzcx.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzcx.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at dzcx.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at avwn.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-23 13:13:14.093  6556  6654 W GLSUser : 	... 9 more
+10-23 13:13:14.100  6556  6654 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-23 13:13:14.183   310  7032 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-23 13:13:14.183   310  7034 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:14.183   310  7034 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ee55e9ed0
+10-23 13:13:14.183   310  7034 I resolv  : doQuery: rcode=0, ancount=8, return value=173
+10-23 13:13:14.187   310  7033 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:14.187   310  7033 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55e37d0
+10-23 13:13:14.187   310  7033 I resolv  : doQuery: rcode=0, ancount=8, return value=269
+10-23 13:13:14.197  6556  6717 D TrafficStats: tagSocket(167) with statsTag=0x34000609, statsUid=10118
+10-23 13:13:14.206  6556  6717 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 13:13:14.259  6556  6717 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:14.259  6556  6717 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.710  6556  6717 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 13:13:14.710  6556  6717 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:14.711  6556  6717 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: Voilatile gRPC failure INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header. [CONTEXT service_id=6 ]
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: enms: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at enmr.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at abxw.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at abxw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):17)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at abxw.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at cyeg.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):27)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at czpd.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:14.770  6556  6654 W GlsClientGrpc: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:14.986  6556  6556 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-23 13:13:15.220  6556  6556 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 13:13:16.131  4790  4985 I JarvisTest: [Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 2808 ms
+10-23 13:13:16.133   511   522 I system_server: Background young concurrent copying GC freed 1108307(22MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 22MB/44MB, paused 58us,64us total 203.940ms
+10-23 13:13:16.199  4790  7001 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:16.209  6545  6545 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-23 13:13:16.542  4790  7001 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:17.399  6545  6545 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-23 13:13:17.503   511  1203 W system_server: Long monitor contention with owner binder:511_11 (1723) at boolean com.android.server.am.ActivityManagerService.unbindService(android.app.IServiceConnection)(ActivityManagerService.java:12781) waiters=0 in void com.android.server.am.ActivityManagerService.serviceDoneExecuting(android.os.IBinder, int, int, int) for 104ms
+10-23 13:13:18.008  6545  6638 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 13:13:18.009  6545  6638 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:18.009  6545  6638 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:18.501  4790  4985 I JarvisTest: [Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 2347 ms
+10-23 13:13:18.515  6545  6638 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-23 13:13:18.516  6545  6638 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-23 13:13:18.517  6545  6638 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-23 13:13:18.580  4790  6987 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-23 13:13:18.720  4790  6987 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-23 13:13:18.772   310   310 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+10-23 13:13:18.772   310   310 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.01ms>
+10-23 13:13:18.772   310   310 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+10-23 13:13:18.772   310   310 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.01ms>
+10-23 13:13:19.112  6556  6574 I .gms.persistent: Background young concurrent copying GC freed 197972(11MB) AllocSpace objects, 0(0B) LOS objects, 40% free, 17MB/29MB, paused 31us,19us total 241.204ms
+10-23 13:13:19.243  1794  1794 V ContactsProvider: Scheduled notifyChange started.
+10-23 13:13:19.244  1037  1037 D BluetoothPbapService:  onChange on contact uri
+10-23 13:13:19.250  6545  6846 W PeopleGmsPhenoRgstrIntentOp: Google Api connection failed
+10-23 13:13:19.265  1037  7035 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+10-23 13:13:19.397  1535  3787 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:19.398  1535  1535 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCompleted:118 discarding deferred status [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:19.399  1535  1535 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.prepareStop:371 no more tasks, stopping service if no task are added in 5000 millis [CONTEXT enable_persistent_logger=true ]
+10-23 13:13:19.400  1535  1535 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_AUTO_RETRY_ACTIVATION
+10-23 13:13:19.488  6556  6556 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms }
+10-23 13:13:20.133  3847  3847 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-23 13:13:20.177  3847  7040 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-23 13:13:20.257  1892  2582 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-23 13:13:20.268  5638  5638 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-23 13:13:20.273  1892  1892 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-23 13:13:20.274  1892  1892 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-23 13:13:20.276  1892  2582 I NetworkRecognitionRnr: Using pair HTTP connection
+10-23 13:13:20.278  1892  2906 I A       : [Upload] Connected
+10-23 13:13:20.279  1892  2760 W LocationOracle: getBestLocation(): no location is available
+10-23 13:13:20.289  1892  2274 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-23 13:13:20.316  1892  2285 W LocationOracle: No location returned by GMS core getLastLocation()
+10-23 13:13:20.318  1892  2906 I NetworkRecognitionRnr: Using pair HTTP connection
+10-23 13:13:20.319  1892  2899 I A       : [Upload] Connected
+10-23 13:13:20.319  1892  1892 E A       : onError
+10-23 13:13:20.319  1892  1892 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-23 13:13:20.319  1892  1892 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-23 13:13:20.319  1892  1892 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-23 13:13:20.319  1892  1892 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:20.319  1892  1892 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:20.319  1892  1892 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-23 13:13:20.319  1892  1892 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-23 13:13:20.319  1892  1892 E A       : 	... 15 more
+10-23 13:13:20.319  1892  1892 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-23 13:13:20.319  1892  1892 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-23 13:13:20.319  1892  1892 E A       : 	... 12 more
+10-23 13:13:20.320  1892  1892 W A       : Failed to sync device settings.
+10-23 13:13:20.320  1892  1892 I A       : Retrying to sync device settings.
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: Exception in upload method
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.r.d: Error code: 262182
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.ab.bk.d(PG:5)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.ar.d(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.bo.b(PG:5)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.e.a(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.a.run(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bu.cancel(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:17)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.bk.b.h.run(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:20.321  1892  2301 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-23 13:13:20.406   824   914 D EGL_emulation: app_time_stats: avg=8711.70ms min=8711.70ms max=8711.70ms count=1
+10-23 13:13:20.829  6556  6602 W BpBinder: Large outgoing transaction of 329996 bytes, interface descriptor <uncached descriptor>, code 4
+10-23 13:13:20.836  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-23 13:13:20.837  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-23 13:13:20.837  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-23 13:13:20.841  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-23 13:13:20.841  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-23 13:13:20.841  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-23 13:13:20.841  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-23 13:13:20.844  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-23 13:13:20.845  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-23 13:13:20.846  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-23 13:13:20.846  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-23 13:13:20.846  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-23 13:13:20.846  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-23 13:13:20.847  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-23 13:13:20.847  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-23 13:13:20.847  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-23 13:13:20.847  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-23 13:13:20.848  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-23 13:13:20.848  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-23 13:13:20.848  1892  2288 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-23 13:13:20.849  1892  2288 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-23 13:13:20.849  1892  2288 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-23 13:13:20.859  1892  2289 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 311 seconds.
+10-23 13:13:20.862  1892  2289 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-23 13:13:20.863  1892  2274 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-23 13:13:20.863  1892  2274 I FedAssExpListener: Successfully processed experiments changed.
+10-23 13:13:20.864  1892  2285 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-23 13:13:20.866  1892  2289 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-23 13:13:20.883  6545  6699 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-23 13:13:20.889  6545  6714 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-23 13:13:20.947  6545  6638 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-23 13:13:21.024  6545  6638 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-23 13:13:21.451   511  1855 D WifiNl80211Manager: Scan result ready event
+10-23 13:13:21.452   511  1855 D WifiNative: Scan result ready event
+10-23 13:13:22.061  6556  6574 I .gms.persistent: Background concurrent copying GC freed 338724(16MB) AllocSpace objects, 10(400KB) LOS objects, 49% free, 13MB/26MB, paused 36us,40us total 107.226ms
+10-23 13:13:22.445   511   767 D ConnectivityService: reportNetworkConnectivity(100, false) by 10120
+10-23 13:13:22.445  1013  2898 D NetworkMonitor/100: Forcing reevaluation for UID 10120. Dns signal count: 0
+10-23 13:13:22.504  1013  7046 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.505  1013  7045 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.505  1013  7045 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.506  1013  7046 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.507   310  7047 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-23 13:13:22.507   310  7047 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55e2110
+10-23 13:13:22.508   310  7048 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-23 13:13:22.508   310  7048 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ec55e40f0
+10-23 13:13:22.509   310  7049 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-23 13:13:22.509   310  7049 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ed55dd370
+10-23 13:13:22.509  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.510  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.510  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.511  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.511  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.513  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.513  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.514  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.514  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.515  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.516  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.516  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.517  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.518  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.518  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.519  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.520  1013  7045 D NetworkMonitor/100: PROBE_DNS www.google.com 15ms OK 142.251.155.119,142.251.152.119,142.251.151.119,142.251.157.119,142.251.153.119,142.251.150.119,142.251.156.119,142.251.154.119,2001:4860:4829:7700::,2001:4860:4828:7700::,2001:4860:4827:7700::,2001:4860:482b:7700::,2001:4860:482a:7700::,2001:4860:4826:7700::,2001:4860:482d:7700::,2001:4860:482c:7700::
+10-23 13:13:22.523   310  7050 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-23 13:13:22.523   310  7050 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ec55e42b0
+10-23 13:13:22.524  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.525  1013  1013 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-23 13:13:22.526  1013  7046 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 22ms OK 142.251.150.120,2001:4860:4826:7800::
+10-23 13:13:22.527   310  7051 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-23 13:13:22.531   310  7052 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:22.531   310  7053 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:22.531   310  7054 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-23 13:13:22.531   310  7053 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ed55dd370
+10-23 13:13:22.531   310  7053 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+10-23 13:13:22.531   310  7052 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ef55e2110
+10-23 13:13:22.531   310  7052 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+10-23 13:13:22.532  1013  7045 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.537   310  7055 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-23 13:13:22.537   310  7055 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ec55e40f0
+10-23 13:13:22.538   310  7055 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+10-23 13:13:22.539   310  7056 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-23 13:13:22.539   310  7056 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7c5ec55e42b0
+10-23 13:13:22.539   310  7056 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+10-23 13:13:22.540  1013  7046 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-23 13:13:22.582  1013  7046 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=54ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 23 Oct 2026 13:13:22 GMT], X-Android-Received-Millis=[1792761202582], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792761202577]}
+10-23 13:13:22.585  1013  7045 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 time=64ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Fri, 23 Oct 2026 13:13:22 GMT], X-Android-Received-Millis=[1792761202583], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792761202577]}
+10-23 13:13:22.599  1013  7044 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=124ms
+10-23 13:13:22.607   511   767 D ConnectivityService: [100 WIFI] validation passed
+10-23 13:13:22.950  4790  4985 I JarvisTest: [Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 4426 ms
+10-23 13:13:22.952  4790  7001 V FaceDetectorV2Jni: closeDetector.start()
+10-23 13:13:22.961  4790  7001 V FaceDetectorV2Jni: closeDetector.end()
+10-23 13:13:22.963  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:22.966  4790  6982 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-23 13:13:22.968  4790  4985 I JarvisTest: [Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+10-23 13:13:22.970  4790  6982 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-23 13:13:22.970  4790  4985 I JarvisTest: [Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+10-23 13:13:22.970  4790  4985 I TestRunner: finished: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)

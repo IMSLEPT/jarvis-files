@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.jarvis.files.FileOpsTest" tests="14" failures="0" errors="0" skipped="1" time="156.656" timestamp="2026-10-23T13:15:11" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="moveWithFullTargetPath" classname="com.jarvis.files.FileOpsTest" time="0.147" />
+  <testcase name="duplicatesAndSearch" classname="com.jarvis.files.FileOpsTest" time="0.217" />
+  <testcase name="trashRestore" classname="com.jarvis.files.FileOpsTest" time="0.077" />
+  <testcase name="cleanSpuriousSearches" classname="com.jarvis.files.FileOpsTest" time="0.061" />
+  <testcase name="keyBackupRoundTrip" classname="com.jarvis.files.FileOpsTest" time="4.212" />
+  <testcase name="sortDownloadRule" classname="com.jarvis.files.FileOpsTest" time="0.13" />
+  <testcase name="parseModelReply" classname="com.jarvis.files.FileOpsTest" time="0.078" />
+  <testcase name="collisionsAndPattern" classname="com.jarvis.files.FileOpsTest" time="0.157" />
+  <testcase name="planExecuteAndUndo" classname="com.jarvis.files.FileOpsTest" time="0.179" />
+  <testcase name="realModel" classname="com.jarvis.files.LlmTest" time="30.21">
+    <skipped />
+  </testcase>
+  <testcase name="a2_stopRequest" classname="com.jarvis.files.PhotoTest" time="0.131" />
+  <testcase name="a_facesAndEmbeddings" classname="com.jarvis.files.PhotoTest" time="12.783" />
+  <testcase name="b_indexNameAndSearch" classname="com.jarvis.files.PhotoTest" time="12.697" />
+  <testcase name="allScreens" classname="com.jarvis.files.UiTest" time="94.16" />
+</testsuite>

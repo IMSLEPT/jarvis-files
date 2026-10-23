@@ -1,0 +1,25 @@
+10-23 13:13:10.053  4790  4985 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-23 13:13:10.066  6556  6717 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.085  3585  6878 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-23 13:13:10.087  3585  6878 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: Pool status.
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: Total: 6
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: Attested: 6
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: Unassigned: 5
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: Expiring: 0
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-23 13:13:10.087  3585  6878 I RemoteProvisioningService: No provisioning needed.
+10-23 13:13:10.108  6556  6893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.113  6556  6654 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-23 13:13:10.150  4790  6987 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-23 13:13:10.151  4790  6987 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-23 13:13:10.166  4790  4985 I TensorFlowLite: Loaded native library: tensorflowlite_jni
+10-23 13:13:10.167  6556  6556 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 13:13:10.167  6556  6556 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 13:13:10.170  4790  4985 I TensorFlowLite: Didn't load native library: tensorflowlite_jni_gms_client
+10-23 13:13:10.172  4790  4985 I tflite  : Initialized TensorFlow Lite runtime.
+10-23 13:13:10.174  4790  4985 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-23 13:13:10.176  4790  4985 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-23 13:13:10.182  3099  3116 D TrafficStats: tagSocket(81) with statsTag=0x1809, statsUid=-1
+10-23 13:13:10.183  4790  4985 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-23 13:13:10.183  4790  4985 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)
