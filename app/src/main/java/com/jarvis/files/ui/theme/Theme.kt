@@ -102,7 +102,7 @@ object J {
     val Orange = Color(0xFFFF6A2B)
     val Peach = Color(0xFFFFF1E8)
     /** Pulsanti principali: blu → viola → arancio. */
-    val brand = Brush.horizontalGradient(listOf(Color(0xFF2F6BFF), Color(0xFF8B5CF6), Color(0xFFFF6A2B)))
+    val brand = Brush.horizontalGradient(listOf(Color(0xFF2455C6), Color(0xFF7331B8), Color(0xFFBC451C)))
     val background: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.bg, p.bg))
 }
 

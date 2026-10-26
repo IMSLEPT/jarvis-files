@@ -82,7 +82,7 @@ fun Modifier.pressable(onClick: (() -> Unit)?, enabled: Boolean = true): Modifie
     val src = remember { MutableInteractionSource() }
     val pressed by src.collectIsPressedAsState()
     val s by animateFloatAsState(if (pressed) 0.97f else 1f, spring(dampingRatio = Spring.DampingRatioMediumBouncy), label = "press")
-    this.scale(s).clickable(interactionSource = src, indication = null, enabled = enabled, onClick = onClick)
+    this.scale(s).clickable(interactionSource = src, indication = null, enabled = enabled, role = androidx.compose.ui.semantics.Role.Button, onClick = onClick)
 }
 
 /** Scheda: superficie piena, angoli morbidi, nessun bordo. */
@@ -122,7 +122,8 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
             .pressable(onClick, enabled)
             .clip(RoundedCornerShape(50))
             .background(if (enabled) J.brand else Brush.linearGradient(listOf(J.CardHi, J.CardHi)))
-            .padding(horizontal = 20.dp, vertical = 14.dp),
+            .heightIn(min = 48.dp)
+            .padding(horizontal = 20.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {
@@ -135,12 +136,13 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
 }
 
 @Composable
-fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? = null, color: Color = J.Blue, onClick: () -> Unit) {
+fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? = null, color: Color = J.Blue, enabled: Boolean = true, onClick: () -> Unit) {
     Row(
         modifier
-            .pressable(onClick)
+            .pressable(onClick, enabled)
             .clip(RoundedCornerShape(50))
             .background(J.CardHi)
+            .heightIn(min = 48.dp)
             .padding(horizontal = 16.dp, vertical = 11.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
@@ -149,7 +151,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
             Icon(icon, null, tint = color, modifier = Modifier.size(16.dp))
             Spacer(Modifier.width(6.dp))
         }
-        Text(text, color = color, style = MaterialTheme.typography.labelLarge, maxLines = 1)
+        Text(text, color = if (enabled) color else J.Muted, style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)
     }
 }
 

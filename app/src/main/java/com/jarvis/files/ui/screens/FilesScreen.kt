@@ -107,7 +107,7 @@ fun FilesScreen(vm: MainViewModel) {
             }
             item {
                 GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
-                    ListRow(Icons.Filled.PhotoLibrary, "Foto e ricerca intelligente", "Persone, luoghi, oggetti") { vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }
+                    ListRow(Icons.Filled.PhotoLibrary, "Foto e ricerca intelligente", "Persone, luoghi, oggetti") { vm.photoResults = null; vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }
                     CAT_STYLES.filter { it.cat != com.jarvis.files.core.FileCategory.IMAGE }.forEach { s ->
                         ListRow(s.icon, s.title, Fmt.size(sizes[s.cat] ?: 0L)) { openCategory(vm, s.cat) }
                     }
@@ -117,7 +117,7 @@ fun FilesScreen(vm: MainViewModel) {
             item {
                 GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
                     QUICK_FOLDERS.filter { Storage.file(it.path).isDirectory }.forEach { f ->
-                        ListRow(f.icon, f.title, f.path) { vm.category = null; vm.folder = f.path; vm.sub = Sub.CATEGORY }
+                        ListRow(f.icon, f.title, f.path) { vm.searchResults = null; vm.category = null; vm.folder = f.path; vm.sub = Sub.CATEGORY }
                     }
                     ListRow(Icons.Filled.Lock, "Cartella segreta", "Protetta dall'impronta") { vm.sub = Sub.VAULT }
                     ListRow(Icons.Filled.Delete, "Cestino", "File eliminati negli ultimi 30 giorni") { vm.sub = Sub.TRASH }
@@ -136,25 +136,27 @@ fun CategoryScreen(vm: MainViewModel) {
     val scope = rememberCoroutineScope()
     val cat = vm.category
     val folder = vm.folder
+    val search = vm.searchResults
+    val searchPaths = remember(search) { search?.map { it.rel }?.toSet() }
     var sort by remember { mutableStateOf(0) }
     var files by remember { mutableStateOf<List<FileEntry>?>(null) }
-    val sel = remember(cat, folder) { mutableStateListOf<String>() }
+    val sel = remember(cat, folder, search) { mutableStateListOf<String>() }
     androidx.activity.compose.BackHandler(enabled = sel.isNotEmpty()) { sel.clear() }
     var reload by remember { mutableStateOf(0) }
-    LaunchedEffect(cat, folder, sort, reload, vm.filesRevision) {
+    LaunchedEffect(cat, folder, search, sort, reload, vm.filesRevision) {
         files = withContext(Dispatchers.IO) {
             FileIndex.ensure().filter { e ->
-                (cat == null || e.category == cat) && (folder == null || e.folder == folder || e.folder.startsWith("$folder/"))
+                (searchPaths == null || e.rel in searchPaths) && (cat == null || e.category == cat) && (folder == null || e.folder == folder || e.folder.startsWith("$folder/"))
             }.let { l ->
                 when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; else -> l.sortedByDescending { it.modified } }
             }
         }
         sel.retainAll(files.orEmpty().map { it.rel }.toSet())
     }
-    val title = cat?.let { c -> CAT_STYLES.firstOrNull { it.cat == c }?.title } ?: folder?.substringAfterLast('/') ?: "File"
+    val title = if (search != null) "Risultati ricerca" else cat?.let { c -> CAT_STYLES.firstOrNull { it.cat == c }?.title } ?: folder?.substringAfterLast('/') ?: "File"
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Column(Modifier.padding(horizontal = 6.dp)) {
-            SubHeader(title, files?.let { "${it.size} file · ${Fmt.size(it.sumOf { f -> f.size })}" }) { vm.sub = Sub.NONE; sel.clear() }
+            SubHeader(title, files?.let { "${it.size} file · ${Fmt.size(it.sumOf { f -> f.size })}" }) { vm.sub = Sub.NONE; vm.searchResults = null; sel.clear() }
         }
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp, vertical = 6.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             Chip("Recenti", sort == 0) { sort = 0 }

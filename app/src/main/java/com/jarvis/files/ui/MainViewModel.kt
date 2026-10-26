@@ -107,6 +107,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     var folder by mutableStateOf<String?>(null)
 
+    var searchResults by mutableStateOf<List<FileEntry>?>(null)
+
     /** File condivisi da altre app verso Jarvis, in attesa di una scelta. */
     var shared by mutableStateOf<List<android.net.Uri>>(emptyList())
 
@@ -189,7 +191,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     fun send(text: String) {
         val t = text.trim()
-        if (t.isEmpty() || busy || operationBusy) return
+        if (t.isEmpty()) return
+        if (busy || operationBusy) { toast = "Attendi la risposta oppure interrompila prima di inviare un nuovo comando"; return }
         messages.indices.forEach { i ->
             if (messages[i].planState == PlanState.PENDING && messages[i].plan != null)
                 messages[i] = messages[i].copy(planState = PlanState.CANCELLED)
@@ -205,18 +208,20 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                     ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    if (FileIndex.scannedAt == 0L) Storage.scanAll()
+                    Storage.scanAll()
                     Brain.ask(ctx, history)
                 }
                 ensureActive()
                 if (generation != chatGeneration) return@launch
                 var photoHits: List<PhotoHit>? = null
-                var fileHits: List<FileEntry>? = null
+                var fileHits: List<FileEntry>? = reply.fileResults
                 reply.photoSearch?.let { q ->
                     busyText = "Cerco nelle foto…"
                     photoHits = withContext(Dispatchers.IO) { PhotoSearch.search(ctx, q).second }
                 }
                 reply.fileQuery?.let { q -> fileHits = withContext(Dispatchers.IO) { Brain.searchFiles(q) } }
+                ensureActive()
+                if (generation != chatGeneration) return@launch
                 messages.add(
                     UiMsg(
                         nextId++, "assistant", reply.reply, reply.questions,

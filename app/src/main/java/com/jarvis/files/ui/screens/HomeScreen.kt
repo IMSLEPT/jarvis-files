@@ -18,6 +18,9 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -63,6 +66,8 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -112,10 +117,12 @@ val CAT_STYLES = listOf(
 
 /** Apre la categoria: le immagini vanno nella galleria intelligente, il resto nell'elenco file. */
 fun openCategory(vm: MainViewModel, cat: FileCategory) {
+    vm.searchResults = null
     if (cat == FileCategory.IMAGE) { vm.photoResults = null; vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }
     else { vm.category = cat; vm.folder = null; vm.tab = Tab.FILES; vm.sub = Sub.CATEGORY }
 }
 fun openFolder(vm: MainViewModel, path: String) {
+    vm.searchResults = null
     vm.category = null; vm.folder = path; vm.tab = Tab.FILES; vm.sub = Sub.CATEGORY
 }
 fun tipAction(vm: MainViewModel, t: HomeTip) {
@@ -128,179 +135,107 @@ fun tipAction(vm: MainViewModel, t: HomeTip) {
     }
 }
 
-/** Una scheda categoria della Home: immagine del mockup oppure icona su tessera colorata. */
-private data class CatItem(
-    val title: String, val bytes: Long, val image: Int?, val icon: ImageVector,
-    val bar: List<Color>, val tile: Color, val chevBg: Color, val chev: Color, val onClick: () -> Unit,
-)
-
-// Colori presi dal mockup
-private val BAR_VIDEO = listOf(Color(0xFFFF8A3D), Color(0xFFF23A2E))
-private val BAR_IMAGE = listOf(Color(0xFF2D98FD), Color(0xFF0341FC))
-private val BAR_AUDIO = listOf(Color(0xFFA066FF), Color(0xFF7C3AED))
-private val BAR_ARCH = listOf(Color(0xFF34D399), Color(0xFF16A34A))
-private val BAR_NAVY = listOf(Color(0xFF3B6FD8), Color(0xFF1C3A85))
-private val BAR_TEAL = listOf(Color(0xFF2DD4BF), Color(0xFF0F766E))
-private val BAR_GREY = listOf(Color(0xFFA7B0BE), Color(0xFF64748B))
-
-private val Y0 = 24f        // fine della barra di stato nel mockup
-private val Y_END = 660f    // fine della scheda suggerimento + margine
-
+/** Home a flusso: mantiene illustrazioni e grafico del brand, senza sovrapporre il testo. */
 @Composable
 fun HomeScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
     val mk = rememberMk()
     val free = remember(vm.scanning, vm.home, vm.filesRevision) { Storage.freeBytes() }
     val total = remember { Storage.totalBytes() }
+    val used = (total - free).coerceAtLeast(0)
+    val data = vm.home
+    val sizes = data.byCat.toMap()
     LaunchedEffect(Unit) {
         if (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 5 * 60_000L) vm.rescan() else vm.refreshHome()
     }
-    val data = vm.home
     val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-    val greet = when (hour) { in 5..12 -> "Buongiorno"; in 13..17 -> "Buon pomeriggio"; else -> "Buonasera" }
-    val today = remember { SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date()).replaceFirstChar { it.uppercase() } }
-    val used = (total - free).coerceAtLeast(0)
-    val sizes = data.byCat.toMap()
-    val statusTop = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
-
-    with(mk) {
-        // Sfondo come nel mockup: bianco in alto, grigio-azzurro chiarissimo più in basso
-        Column(
-            Modifier.fillMaxSize().testTag("home_layout")
-                .background(Brush.verticalGradient(listOf(Color(0xFFFBFDFD), Color(0xFFF6F9FA)), endY = with(density) { (statusTop + 260f.d).toPx() }))
-                .verticalScroll(rememberScrollState()),
-        ) {
-            Box(Modifier.fillMaxWidth().height(statusTop + (Y_END - Y0).d)) {
-                // Origine = angolo in alto del mockup; la barra di stato reale sostituisce quella disegnata
-                Box(Modifier.offset(y = statusTop - Y0.d).fillMaxWidth().height(Y_END.d)) {
-                    // ---------- intestazione ----------
-                    ArcReactor(
-                        223f.d, active = vm.scanning, feather = false,
-                        modifier = Modifier.offset(189.1f.d, 21.1f.d).pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE }),
-                    )
-                    Image(painterResource(R.drawable.jarvis_logo), "Jarvis Files", Modifier.offset(15.8f.d, 32.5f.d).size(139.8f.d, 36.9f.d))
-                    T(today, 19.3f, 85.3f, 11.9f, 400, MkColor.Slate)
-                    T("$greet,", 19.3f, 103.3f, 26.2f, 800, MkColor.Ink, letterSpacing = -0.2f, fit = 172f)
-                    T(Prefs(ctx).userName, 18.9f, 131.9f, 26.2f, 800, MkColor.Ink, letterSpacing = -0.2f, fit = 172f)
-                    if (vm.scanning) {
-                        T("Sto leggendo le cartelle…", 20.2f, 169.7f, 11.8f, 400, MkColor.Slate)
-                        T("${vm.fileCount} file trovati", 20.2f, 185.1f, 11.8f, 400, MkColor.Slate)
-                    } else {
-                        T("Il tuo spazio è sotto controllo", 20.2f, 169.7f, 11.8f, 400, MkColor.Slate)
-                        T("con Jarvis.", 20.2f, 185.1f, 11.8f, 400, MkColor.Slate)
-                    }
-
-                    // ---------- memoria ----------
-                    StorageBlock(vm, free, total, used, sizes)
-
-                    // ---------- categorie (3 pagine, come i 3 puntini) ----------
-                    val pages = remember(data, sizes) { categoryPages(vm, sizes, data.extra) }
-                    val pager = rememberPagerState { pages.size }
-                    HorizontalPager(pager, Modifier.offset(y = 370.7f.d).fillMaxWidth().height(122.3f.d)) { p ->
-                        Box(Modifier.fillMaxSize()) {
-                            val max = pages[p].maxOf { it.bytes }.coerceAtLeast(1)
-                            pages[p].forEachIndexed { i, it ->
-                                CatCard(if (i % 2 == 0) 17.2f else 209.5f, if (i < 2) 0f else 64.2f, it, max)
-                            }
-                        }
-                    }
-                    pages.indices.forEach { i ->
-                        val sel = pager.currentPage == i
-                        Box(
-                            Modifier.offset((205.4f + (i - (pages.size - 1) / 2f) * 14.7f - 3.5f).d, 500f.d).size(7f.d)
-                                .clip(CircleShape).background(if (sel) Color(0xFFFF5A1F) else Color(0xFFD5DAE2)),
-                        )
-                    }
-
-                    // ---------- suggerimento di Jarvis ----------
-                    val tip = data.tips.firstOrNull() ?: HomeTip(
-                        "chat", "in ordine", "Tutto", "Nessun file inutile trovato. Chiedimi di riordinare una cartella.",
-                    )
-                    Suggestion(tip) { tipAction(vm, tip) }
-                }
-            }
-
-            // Solo quando servono: piano in attesa, annulla, altri suggerimenti
-            Column(Modifier.padding(horizontal = 17.2f.d)) {
-                vm.pending?.let { (title, reply, plan) ->
-                    SectionTitle("Piano in attesa")
-                    Text("$title — $reply", color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(bottom = 10.dp))
-                    PlanCard(plan, onConfirm = { vm.confirmPending(it) }, onCancel = { vm.dismissPending() }, enabled = !vm.operationBusy && !vm.busy)
-                }
-                vm.undoInfo?.let { (src, n) ->
-                    Spacer(Modifier.height(10.dp))
-                    GlassCard(Modifier.fillMaxWidth(), padding = androidx.compose.foundation.layout.PaddingValues(horizontal = 18.dp, vertical = 14.dp)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Column(Modifier.weight(1f)) {
-                                Text(src, color = J.Text, style = MaterialTheme.typography.titleSmall, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                                Text("$n modifiche · puoi tornare indietro", color = J.Muted, style = MaterialTheme.typography.bodySmall)
-                            }
-                            GhostButton("Annulla", icon = Icons.AutoMirrored.Filled.Undo) { vm.undo() }
-                        }
-                    }
-                }
+    val greeting = when (hour) { in 5..12 -> "Buongiorno"; in 13..17 -> "Buon pomeriggio"; else -> "Buonasera" }
+    val today = SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date())
+    Column(Modifier.fillMaxSize().testTag("home_layout").statusBarsPadding().verticalScroll(rememberScrollState()).padding(bottom = 20.dp)) {
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Image(painterResource(R.drawable.jarvis_logo), "Jarvis Files", Modifier.size(140.dp, 37.dp))
+                Text(today, style = MaterialTheme.typography.bodySmall, color = J.Muted)
                 Spacer(Modifier.height(16.dp))
+                Text("$greeting,\n${Prefs(ctx).userName}", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+            }
+            ArcReactor(136.dp, active = vm.scanning, modifier = Modifier.pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE }).semantics { contentDescription = "Parla con Jarvis" })
+        }
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 12.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text("Il tuo spazio", style = MaterialTheme.typography.titleMedium, color = J.Text, modifier = Modifier.weight(1f))
+            androidx.compose.material3.TextButton(onClick = { vm.rescan() }, enabled = !vm.scanning && !vm.operationBusy) {
+                Text(if (vm.scanning) "Aggiorno…" else "Aggiorna")
             }
         }
-    }
-}
-
-private fun categoryPages(vm: MainViewModel, sizes: Map<FileCategory, Long>, extra: Map<String, Long>): List<List<CatItem>> {
-    fun cat(c: FileCategory, title: String, img: Int?, icon: ImageVector, bar: List<Color>, tile: Color, chevBg: Color, chev: Color) =
-        CatItem(title, sizes[c] ?: 0L, img, icon, bar, tile, chevBg, chev) { openCategory(vm, c) }
-    val peach = Color(0xFFFFEFE6); val blue = Color(0xFFEAF2FF); val lilac = Color(0xFFF1EAFF); val mint = Color(0xFFE6F8EE)
-    val orangeC = Color(0xFFF24A1D); val blueC = Color(0xFF1E5BFF); val purpleC = Color(0xFF7C3AED)
-    return listOf(
-        listOf(
-            cat(FileCategory.VIDEO, "Video", R.drawable.cat_video, Icons.Filled.VideoLibrary, BAR_VIDEO, peach, peach, orangeC),
-            cat(FileCategory.IMAGE, "Immagini", R.drawable.cat_image, Icons.Filled.Image, BAR_IMAGE, blue, blue, blueC),
-            cat(FileCategory.AUDIO, "Audio", R.drawable.cat_audio, Icons.Filled.MusicNote, BAR_AUDIO, lilac, lilac, purpleC),
-            cat(FileCategory.ARCHIVE, "Archivi", R.drawable.cat_archive, Icons.Filled.Folder, BAR_ARCH, mint, blue, blueC),
-        ),
-        listOf(
-            cat(FileCategory.DOCUMENT, "Documenti", null, Icons.Filled.Description, BAR_NAVY, blue, blue, blueC),
-            cat(FileCategory.APK, "App (APK)", null, Icons.Filled.Android, BAR_TEAL, Color(0xFFE3F7F4), blue, blueC),
-            cat(FileCategory.OTHER, "Altro", null, Icons.AutoMirrored.Filled.InsertDriveFile, BAR_GREY, Color(0xFFEEF1F5), blue, blueC),
-            CatItem("Download", extra["download"] ?: 0L, null, Icons.Filled.Download, BAR_NAVY, blue, blue, blueC) { openFolder(vm, "Download") },
-        ),
-        listOf(
-            CatItem("WhatsApp", extra["whatsapp"] ?: 0L, null, Icons.Filled.Chat, BAR_ARCH, mint, mint, Color(0xFF16A34A)) { vm.cleanSection = "WA"; vm.tab = Tab.CLEAN; vm.sub = Sub.NONE },
-            CatItem("Screenshot", extra["screenshot"] ?: 0L, null, Icons.Filled.Screenshot, BAR_AUDIO, lilac, lilac, purpleC) { vm.cleanSection = "SHOTS"; vm.tab = Tab.CLEAN; vm.sub = Sub.NONE },
-            CatItem("Fotocamera", extra["camera"] ?: 0L, null, Icons.Filled.CameraAlt, BAR_IMAGE, blue, blue, blueC) { vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE },
-            CatItem("Cestino", extra["trash"] ?: 0L, null, Icons.Filled.Delete, BAR_VIDEO, peach, peach, orangeC) { vm.tab = Tab.MORE; vm.sub = Sub.TRASH },
-        ),
-    )
-}
-
-/** Scheda categoria: 185,5 × 58 dp-mockup. */
-@Composable
-private fun Mk.CatCard(x: Float, y: Float, it: CatItem, max: Long) {
-    val anim = remember { Animatable(0f) }
-    val target = if (it.bytes <= 0) 0f else (it.bytes.toFloat() / max * 0.85f).coerceIn(0.06f, 1f)
-    LaunchedEffect(target) { anim.animateTo(target, tween(900, easing = FastOutSlowInEasing)) }
-    Box(
-        Modifier.offset(x.d, y.d).size(185.5f.d, 58f.d)
-            .shadow(7f.d, RoundedCornerShape(14f.d), ambientColor = Color(0x14000000), spotColor = Color(0x1A1E2A4A))
-            .clip(RoundedCornerShape(14f.d)).background(Color.White)
-            .pressable(it.onClick),
-    ) {
-        if (it.image != null) {
-            Image(painterResource(it.image), null, Modifier.offset(7.3f.d, 7.5f.d).size(43.1f.d))
-        } else {
-            Box(
-                Modifier.offset(8.8f.d, 8.75f.d).size(40.5f.d).clip(RoundedCornerShape(11f.d)).background(it.tile),
-                contentAlignment = Alignment.Center,
-            ) { Icon(it.icon, null, tint = it.bar.last(), modifier = Modifier.size(23f.d)) }
+        with(mk) {
+            Box(Modifier.fillMaxWidth().height(156f.d).semantics(mergeDescendants = true) {
+                contentDescription = "${Fmt.size(free)} disponibili su ${Fmt.size(total)}. ${used * 100 / total.coerceAtLeast(1)} per cento utilizzato."
+            }) {
+                Box(Modifier.offset(y = (-218f).d)) { StorageBlock(vm, free, total, used, sizes) }
+            }
         }
-        T(it.title, 61f, 11.5f, 9.4f, 400, MkColor.Ink, width = 100f)
-        T(Fmt.size(it.bytes), 61f, 26f, 13.4f, 700, MkColor.Ink, letterSpacing = -0.2f, width = 100f)
-        Box(Modifier.offset(61f.d, 43.5f.d).size(77.5f.d, 4.4f.d).clip(CircleShape).background(Color(0xFFE3E7EE))) {
-            Box(Modifier.fillMaxHeight().fillMaxWidth(anim.value.coerceAtLeast(0.001f)).clip(CircleShape).background(Brush.horizontalGradient(it.bar)))
+        Text(if (vm.scanning) "Scansione dei file in corso…" else "${vm.fileCount} file indicizzati", color = J.Muted,
+            style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp))
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 12.dp, top = 12.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text("I tuoi file", style = MaterialTheme.typography.titleLarge, color = J.Text, modifier = Modifier.weight(1f))
+            androidx.compose.material3.TextButton(onClick = { vm.sub = Sub.FIND }) { Text("Cerca") }
         }
-        Box(
-            Modifier.offset((185.5f - 19.8f - 11f).d, (29f - 11f).d).size(22f.d).clip(CircleShape).background(it.chevBg),
-            contentAlignment = Alignment.Center,
-        ) { Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = it.chev, modifier = Modifier.size(16f.d)) }
+        val categories = CAT_STYLES.take(6)
+        categories.chunked(2).forEach { row ->
+            Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                row.forEach { cat ->
+                    GlassCard(Modifier.weight(1f), onClick = { openCategory(vm, cat.cat) }, padding = PaddingValues(12.dp)) {
+                        Row(Modifier.heightIn(min = 48.dp), verticalAlignment = Alignment.CenterVertically) {
+                            val asset = when (cat.cat) {
+                                FileCategory.VIDEO -> R.drawable.cat_video; FileCategory.IMAGE -> R.drawable.cat_image
+                                FileCategory.AUDIO -> R.drawable.cat_audio; FileCategory.ARCHIVE -> R.drawable.cat_archive; else -> null
+                            }
+                            if (asset != null) Image(painterResource(asset), null, Modifier.size(40.dp))
+                            else IconBadge(cat.icon, cat.colors.last(), 40.dp)
+                            Spacer(Modifier.width(10.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text(cat.title, color = J.Text, style = MaterialTheme.typography.labelLarge)
+                                Text(Fmt.size(sizes[cat.cat] ?: 0L), color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            GhostButton("Download", Modifier.weight(1f), Icons.Filled.Download) { openFolder(vm, "Download") }
+            GhostButton("Tutte le cartelle", Modifier.weight(1f), Icons.Filled.Folder) { vm.tab = Tab.FILES; vm.sub = Sub.NONE }
+        }
+        val tip = data.tips.firstOrNull() ?: HomeTip("chat", "in ordine", "I tuoi file", "Chiedi a Jarvis di cercare un file o riordinare una cartella.")
+        GlassCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 12.dp), highlight = true) {
+            Text("SUGGERIMENTO DI JARVIS", color = J.Text, style = MaterialTheme.typography.labelSmall)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f).padding(vertical = 12.dp)) {
+                    Text("${tip.big} ${tip.title}", color = J.Text, style = MaterialTheme.typography.titleLarge)
+                    Spacer(Modifier.height(6.dp))
+                    Text(tip.sub, color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                }
+                Image(painterResource(R.drawable.jarvis_illus), null, Modifier.size(86.dp))
+            }
+            com.jarvis.files.ui.components.GradientButton(when (tip.kind) {
+                "download" -> "Vedi il riordino"; "trash" -> "Apri il cestino"; "chat" -> "Parla con Jarvis"; else -> "Controlla i file"
+            }, Modifier.fillMaxWidth()) { tipAction(vm, tip) }
+        }
+        Column(Modifier.padding(horizontal = 16.dp)) {
+            vm.pending?.let { (title, reply, plan) ->
+                SectionTitle("Piano in attesa")
+                Text("$title — $reply", color = J.Text, modifier = Modifier.padding(bottom = 10.dp))
+                PlanCard(plan, { vm.confirmPending(it) }, { vm.dismissPending() }, enabled = !vm.operationBusy && !vm.busy)
+            }
+            vm.undoInfo?.let { (source, count) ->
+                GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(16.dp)) {
+                    Text(source, color = J.Text, style = MaterialTheme.typography.titleSmall)
+                    Text("$count modifiche recuperabili", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    Spacer(Modifier.height(10.dp))
+                    GhostButton("Annulla modifiche", Modifier.fillMaxWidth(), Icons.AutoMirrored.Filled.Undo, enabled = !vm.busy && !vm.operationBusy) { vm.undo() }
+                }
+            }
+        }
     }
 }
 
@@ -404,55 +339,6 @@ private fun gradAt(cols: List<Color>, f: Float): Color {
     val pos = f * (cols.size - 1)
     val i = pos.toInt().coerceAtMost(cols.size - 2)
     return lerp(cols[i], cols[i + 1], pos - i)
-}
-
-/** Scheda "Suggerimento di Jarvis" con pulsante a gradiente e illustrazione. */
-@Composable
-private fun Mk.Suggestion(tip: HomeTip, onClick: () -> Unit) {
-    Box(
-        Modifier.offset(17.2f.d, 513.6f.d).size(377.7f.d, 141.6f.d)
-            .shadow(8f.d, RoundedCornerShape(22f.d), ambientColor = Color(0x10000000), spotColor = Color(0x14FF7A2E))
-            .clip(RoundedCornerShape(22f.d))
-            .background(Brush.linearGradient(listOf(Color(0xFFFFF6EC), Color(0xFFFEF3EB), Color(0xFFFDF2EA))))
-            .border(1f.d, Color(0xFFFFFBF7), RoundedCornerShape(22f.d))
-            .pressable(onClick),
-    ) {
-        Image(painterResource(R.drawable.jarvis_illus), null, Modifier.offset((237.5f - 17.2f).d, 1.8f.d).size(154.8f.d, 134.6f.d))
-        Canvas(Modifier.offset((38.7f - 17.2f - 6.5f).d, (533.4f - 513.6f - 6.5f).d).size(13f.d)) {
-            val w = size.width; val h = size.height
-            val star = Path().apply {
-                moveTo(w / 2, 0f); quadraticTo(w * 0.56f, h * 0.44f, w, h / 2); quadraticTo(w * 0.56f, h * 0.56f, w / 2, h)
-                quadraticTo(w * 0.44f, h * 0.56f, 0f, h / 2); quadraticTo(w * 0.44f, h * 0.44f, w / 2, 0f); close()
-            }
-            drawPath(star, Brush.linearGradient(listOf(Color(0xFFFF9A3D), Color(0xFFFF4A14))))
-        }
-        T("Suggerimento di Jarvis", 52.3f - 17.2f, 529.9f - 513.6f, 9.4f, 400, Color(0xFFFF5A1F))
-        Row(
-            Modifier.offset((38.3f - 17.2f).d, (550.1f - 513.6f - 0.2417f * 22.7f).d).width(205f.d),
-            verticalAlignment = Alignment.Bottom,
-        ) {
-            Text(tip.big, Modifier.alignByBaseline(), style = style(22.7f, 800, MkColor.Ink).copy(letterSpacing = sp(-0.6f)), maxLines = 1)
-            Text(" ${tip.title}", Modifier.alignByBaseline(), style = style(16.2f, 700, MkColor.Ink).copy(letterSpacing = sp(-0.3f)),
-                maxLines = 1, overflow = TextOverflow.Ellipsis)
-        }
-        T(tip.sub, 38.3f - 17.2f, 580f - 513.6f, 10.9f, 400, Color(0xFF2F3B4E), width = 178f, lineHeight = 15f, maxLines = 2)
-        Row(
-            Modifier.offset((38.3f - 17.2f).d, (613f - 513.6f).d).size(196f.d, 33f.d).clip(CircleShape)
-                .background(Brush.horizontalGradient(listOf(Color(0xFF1E91E8), Color(0xFF7731DE), Color(0xFFFD893F))))
-                .pressable(onClick),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Spacer(Modifier.width(18.3f.d))
-            Icon(Icons.Filled.CleaningServices, null, tint = Color.White, modifier = Modifier.size(16f.d))
-            Spacer(Modifier.width(13.2f.d))
-            Text(
-                when (tip.kind) { "download" -> "Metti in ordine"; "trash" -> "Apri il cestino"; "chat" -> "Parla con Jarvis"; "whatsapp" -> "Pulisci WhatsApp"; else -> "Avvia pulizia" },
-                Modifier.weight(1f), style = style(11.3f, 500, Color.White), maxLines = 1,
-            )
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = Color.White, modifier = Modifier.size(16f.d))
-            Spacer(Modifier.width(10f.d))
-        }
-    }
 }
 
 /** Riga di lista: icona tonale, titolo, sottotitolo, freccia. */

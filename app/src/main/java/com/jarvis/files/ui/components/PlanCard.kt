@@ -1,92 +1,72 @@
 package com.jarvis.files.ui.components
 
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.CreateNewFolder
-import androidx.compose.material.icons.filled.DeleteOutline
-import androidx.compose.material.icons.filled.DriveFileMove
 import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.filled.RadioButtonUnchecked
-import androidx.compose.material.icons.filled.Warning
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
 import com.jarvis.files.core.Op
 import com.jarvis.files.core.Plan
 import com.jarvis.files.ui.theme.J
 
-/** Anteprima di un piano: l'utente può escludere singole operazioni prima di confermare. */
+/** Tutte le operazioni si possono controllare e selezionare, anche con migliaia di file. */
 @Composable
 fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confirmLabel: String = "Esegui", enabled: Boolean = true) {
     val excluded = remember(plan) { mutableStateListOf<Int>() }
-    val selectedPlan = Plan(plan.ops.filterIndexed { i, _ -> i !in excluded }, plan.warnings)
-    var expanded by remember(plan) { mutableStateOf(plan.ops.size <= 8) }
-    GlassCard(Modifier.fillMaxWidth(), highlight = true) {
-        Text("ANTEPRIMA", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
-        Spacer(Modifier.height(4.dp))
-        Text(selectedPlan.summary(), style = MaterialTheme.typography.titleMedium, color = J.Text)
-        plan.warnings.take(3).forEach {
-            Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 4.dp)) {
-                Icon(Icons.Filled.Warning, null, tint = J.Amber, modifier = Modifier.size(14.dp))
-                Spacer(Modifier.width(6.dp))
-                Text(it, style = MaterialTheme.typography.bodySmall, color = J.Amber, maxLines = 1, overflow = TextOverflow.Ellipsis)
-            }
-        }
+    val selected = Plan(plan.ops.filterIndexed { i, _ -> i !in excluded }, plan.warnings)
+    var review by remember(plan) { mutableStateOf(false) }
+    fun toggle(i: Int) { if (i in excluded) excluded.remove(i) else excluded.add(i) }
+    GlassCard(Modifier.fillMaxWidth(), highlight = true, padding = PaddingValues(16.dp)) {
+        Text("CONTROLLA PRIMA DI CONFERMARE", style = MaterialTheme.typography.labelSmall, color = J.Text)
         Spacer(Modifier.height(8.dp))
-        val shown = if (expanded) plan.ops.withIndex().take(400) else plan.ops.withIndex().take(6)
-        shown.forEach { (i, op) ->
-            val off = i in excluded
-            Row(
-                Modifier.fillMaxWidth().clickable(enabled = enabled) { if (off) excluded.remove(i) else excluded.add(i) }.padding(vertical = 5.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Icon(if (off) Icons.Filled.RadioButtonUnchecked else Icons.Filled.CheckCircle, null,
-                    tint = if (off) J.Muted else J.Electric, modifier = Modifier.size(18.dp))
-                Spacer(Modifier.width(8.dp))
-                Icon(
-                    when (op) { is Op.Mkdir -> Icons.Filled.CreateNewFolder; is Op.Move -> Icons.Filled.DriveFileMove; is Op.Trash -> Icons.Filled.DeleteOutline },
-                    null, tint = if (op is Op.Trash) J.Red else J.Cyan, modifier = Modifier.size(16.dp),
-                )
-                Spacer(Modifier.width(8.dp))
-                Text(op.label, style = MaterialTheme.typography.bodySmall, color = if (off) J.Muted else J.Text,
-                    maxLines = 2, overflow = TextOverflow.Ellipsis)
+        Text(selected.summary(), style = MaterialTheme.typography.titleMedium, color = J.Text)
+        plan.warnings.forEach { Text(it, color = J.Red, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 6.dp)) }
+        Spacer(Modifier.height(8.dp))
+        plan.ops.take(3).forEachIndexed { i, op -> OperationRow(op, i !in excluded, enabled) { toggle(i) } }
+        if (plan.ops.size > 3) GhostButton("Controlla tutti i ${plan.ops.size} elementi", Modifier.fillMaxWidth(), enabled = enabled) { review = true }
+        Spacer(Modifier.height(12.dp))
+        GradientButton(confirmLabel, Modifier.fillMaxWidth(), Icons.Filled.CheckCircle, enabled && !selected.isEmpty) { onConfirm(selected) }
+        Spacer(Modifier.height(8.dp))
+        GhostButton("Annulla", Modifier.fillMaxWidth(), Icons.Filled.Close, J.Muted, enabled) { onCancel() }
+        if (plan.trashes > 0) Text("Recuperabili dal cestino per 30 giorni. Lo spazio si libera svuotando il cestino.",
+            style = MaterialTheme.typography.bodySmall, color = J.Muted, modifier = Modifier.padding(top = 12.dp))
+    }
+    if (review) Dialog(onDismissRequest = { review = false }) {
+        Surface(shape = MaterialTheme.shapes.extraLarge, color = J.Card) {
+            Column(Modifier.fillMaxWidth().fillMaxHeight(0.88f).padding(16.dp)) {
+                Text("Controlla i file", style = MaterialTheme.typography.titleLarge, color = J.Text)
+                Text("${selected.ops.size} di ${plan.ops.size} selezionati", color = J.Muted, modifier = Modifier.padding(vertical = 8.dp))
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    TextButton(onClick = { excluded.clear() }, enabled = enabled) { Text("Tutti") }
+                    TextButton(onClick = { excluded.clear(); excluded.addAll(plan.ops.indices) }, enabled = enabled) { Text("Nessuno") }
+                }
+                LazyColumn(Modifier.weight(1f)) {
+                    itemsIndexed(plan.ops) { i, op -> OperationRow(op, i !in excluded, enabled) { toggle(i) } }
+                }
+                GradientButton("Fine", Modifier.fillMaxWidth()) { review = false }
             }
-        }
-        if (!expanded && plan.ops.size > 6) {
-            Text("Mostra tutte le ${plan.ops.size} operazioni", color = J.Cyan, style = MaterialTheme.typography.labelLarge,
-                modifier = Modifier.clickable { expanded = true }.padding(vertical = 8.dp))
-        }
-        Spacer(Modifier.height(10.dp))
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            GradientButton(confirmLabel, Modifier.fillMaxWidth(), Icons.Filled.CheckCircle, enabled = enabled && !selectedPlan.isEmpty) {
-                onConfirm(selectedPlan)
-            }
-            GhostButton("Annulla", icon = Icons.Filled.Close, color = J.Muted, onClick = onCancel)
-        }
-        if (plan.trashes > 0) {
-            Text("I file eliminati restano nel cestino di Jarvis per 30 giorni.", style = MaterialTheme.typography.bodySmall,
-                color = J.Muted, modifier = Modifier.padding(top = 8.dp))
         }
     }
 }
 
+@Composable
+private fun OperationRow(op: Op, checked: Boolean, enabled: Boolean, onToggle: () -> Unit) {
+    Row(Modifier.fillMaxWidth().toggleable(checked, enabled, Role.Checkbox) { onToggle() }.heightIn(min = 52.dp).padding(vertical = 6.dp),
+        verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(checked, onCheckedChange = null, enabled = enabled)
+        Spacer(Modifier.width(8.dp))
+        Column(Modifier.weight(1f)) {
+            Text(op.label, color = if (checked) J.Text else J.Muted, style = MaterialTheme.typography.bodySmall)
+            if (op is Op.Trash) Text(com.jarvis.files.core.Fmt.size(op.size), color = J.Muted, style = MaterialTheme.typography.labelSmall)
+        }
+    }
+}

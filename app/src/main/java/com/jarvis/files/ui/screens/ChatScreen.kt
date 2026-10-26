@@ -23,6 +23,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -65,6 +66,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -90,6 +94,7 @@ import com.jarvis.files.ui.theme.J
 private data class Suggestion(val icon: ImageVector, val title: String, val prompt: String)
 
 private val SUGGESTIONS = listOf(
+    Suggestion(Icons.Filled.DeleteSweep, "Controlla gli APK da eliminare", "Cancella gli APK"),
     Suggestion(Icons.Filled.FolderOpen, "Metti in ordine i Download", "Metti in ordine la cartella Download"),
     Suggestion(Icons.Filled.Search, "Trova i PDF delle bollette", "Trova i PDF delle bollette"),
     Suggestion(Icons.Filled.Landscape, "Foto di montagna", "Mostrami le foto di montagna"),
@@ -112,17 +117,18 @@ fun ChatScreen(vm: MainViewModel) {
         vm.send(text)
     }
     LaunchedEffect(vm.messages.size, vm.busy) {
-        val n = vm.messages.size + if (vm.busy) 1 else 0
-        if (n > 0) list.animateScrollToItem(n - 1)
+        // All'arrivo della risposta mostra l'inizio dell'anteprima, non soltanto il fondo.
+        val index = if (vm.busy) vm.messages.size else vm.messages.lastIndex
+        if (index >= 0) list.animateScrollToItem(index)
     }
     val p = Prefs(ctx)
     val engineLabel = when (p.aiMode) {
-        AiMode.LOCAL -> if (AiRouter.localReady(ctx)) "Locale · sul telefono" else "AI locale da scaricare"
+        AiMode.LOCAL -> if (AiRouter.localReady(ctx)) "Locale · sul telefono" else "Comandi pronti · AI da configurare"
         AiMode.ONLINE -> "Internet · ${p.onlineModel.substringAfterLast('/')}"
         AiMode.AUTO -> "Automatica · preferenza locale"
     }
     Column(Modifier.fillMaxSize().statusBarsPadding().imePadding()) {
-        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(Modifier.fillMaxWidth().background(J.Card).padding(start = 20.dp, end = 8.dp, top = 10.dp, bottom = 10.dp), verticalAlignment = Alignment.CenterVertically) {
             ArcReactor(36.dp, active = vm.busy)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
@@ -133,17 +139,17 @@ fun ChatScreen(vm: MainViewModel) {
             IconButton(onClick = { vm.clearChat() }, enabled = !vm.operationBusy) { Icon(Icons.Filled.AddComment, "Nuova chat", tint = J.Blue) }
         }
         LazyColumn(
-            Modifier.weight(1f).fillMaxWidth(), state = list,
+            Modifier.weight(1f).fillMaxWidth().testTag("chat_messages"), state = list,
             contentPadding = PaddingValues(horizontal = 20.dp, vertical = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             if (vm.messages.isEmpty()) item(key = "welcome") {
                 Column(Modifier.fillMaxWidth()) {
-                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(128.dp, active = false) }
+                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(112.dp, active = false) }
                     Spacer(Modifier.height(20.dp))
-                    Text("Facciamo spazio alle cose importanti.", style = MaterialTheme.typography.headlineMedium, color = J.Text)
+                    Text("I tuoi file, in ordine.", style = MaterialTheme.typography.headlineMedium, color = J.Text)
                     Spacer(Modifier.height(8.dp))
-                    Text("Cerca, organizza o rinomina. Prima di modificare i file vedrai sempre un'anteprima.", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
+                    Text("Trova un file, riordina i Download o controlla gli APK. Ogni modifica passa da un’anteprima.", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
                     Spacer(Modifier.height(20.dp))
                     GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
                         SUGGESTIONS.forEach { suggestion ->
@@ -168,25 +174,27 @@ fun ChatScreen(vm: MainViewModel) {
         }
         if (vm.operationBusy) Text("Operazione sui file in corso…", color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(horizontal = 20.dp))
         Row(
-            Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp)
-                .clip(RoundedCornerShape(26.dp)).background(J.CardHi).padding(start = 18.dp, end = 6.dp, top = 6.dp, bottom = 6.dp),
-            verticalAlignment = Alignment.CenterVertically,
+            Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp)
+                .clip(RoundedCornerShape(24.dp)).background(J.Card).padding(6.dp),
+            verticalAlignment = Alignment.Bottom,
         ) {
-            Box(Modifier.weight(1f).padding(vertical = 10.dp)) {
+            IconButton(onClick = { focus.clearFocus(); vm.voiceOpen = true }, enabled = enabled) {
+                Icon(Icons.Filled.Mic, "Detta un messaggio", tint = if (enabled) J.Blue else J.Muted)
+            }
+            Box(Modifier.weight(1f).heightIn(min = 48.dp).padding(horizontal = 4.dp, vertical = 12.dp)) {
                 if (input.isEmpty()) Text("Chiedi a Jarvis…", color = J.Muted, style = MaterialTheme.typography.bodyLarge)
                 BasicTextField(
                     value = input, onValueChange = { input = it },
                     textStyle = MaterialTheme.typography.bodyLarge.copy(color = J.Text), cursorBrush = SolidColor(J.Blue), maxLines = 5,
                     keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(imeAction = androidx.compose.ui.text.input.ImeAction.Send),
                     keyboardActions = androidx.compose.foundation.text.KeyboardActions(onSend = { send() }),
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth().testTag("chat_input").semantics { contentDescription = "Messaggio per Jarvis" },
                 )
             }
-            Spacer(Modifier.width(8.dp))
             if (vm.busy) IconButton(onClick = { vm.stopReply() }) { Icon(Icons.Filled.StopCircle, "Interrompi risposta", tint = J.Blue) }
-            else IconButton(onClick = { if (input.isNotBlank()) send() else vm.voiceOpen = true }, enabled = enabled) {
-                Icon(if (input.isNotBlank()) Icons.Filled.ArrowUpward else Icons.Filled.Mic,
-                    if (input.isNotBlank()) "Invia messaggio" else "Detta un messaggio", tint = if (enabled) J.Blue else J.Muted)
+            else IconButton(onClick = { send() }, enabled = enabled && input.isNotBlank(),
+                modifier = Modifier.clip(CircleShape).background(if (enabled && input.isNotBlank()) J.Navy else J.CardHi)) {
+                Icon(Icons.Filled.ArrowUpward, "Invia messaggio", tint = if (enabled && input.isNotBlank()) Color.White else J.Muted)
             }
         }
     }
@@ -199,25 +207,31 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
             Text(
                 m.text, color = Color.White, style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.widthIn(max = 290.dp).clip(RoundedCornerShape(22.dp)).background(J.Blue)
+                modifier = Modifier.widthIn(max = 290.dp).clip(RoundedCornerShape(20.dp, 20.dp, 6.dp, 20.dp)).background(J.Navy)
                     .padding(horizontal = 16.dp, vertical = 11.dp),
             )
         }
         return
     }
-    // Messaggi di Jarvis: testo libero con piccolo orb, come i moderni assistenti
-    Row(Modifier.fillMaxWidth()) {
-        ArcReactor(22.dp, active = false, modifier = Modifier.padding(top = 2.dp))
-        Spacer(Modifier.width(12.dp))
-        Column(Modifier.weight(1f)) {
+    GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(16.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            ArcReactor(24.dp, active = false)
+            Spacer(Modifier.width(8.dp))
+            Text("Jarvis", style = MaterialTheme.typography.titleSmall, color = J.Text)
+            Spacer(Modifier.width(8.dp))
+            Text(if (m.engine.startsWith("Comando locale")) "FILE VERIFICATI" else if (m.error) "DA RIPROVARE" else "ASSISTENTE",
+                style = MaterialTheme.typography.labelSmall, color = J.Muted)
+        }
+        Spacer(Modifier.height(12.dp))
+        Column {
             androidx.compose.foundation.text.selection.SelectionContainer {
                 Text(m.text, color = if (m.error) J.Red else J.Text, style = MaterialTheme.typography.bodyLarge)
             }
             if (m.error && vm.messages.lastOrNull()?.id == m.id) {
                 Spacer(Modifier.height(8.dp))
-                com.jarvis.files.ui.components.GhostButton("Riprova") { vm.retryLast() }
+                com.jarvis.files.ui.components.GhostButton("Riprova", enabled = !vm.busy && !vm.operationBusy) { vm.retryLast() }
             }
-            if (m.engine.isNotBlank()) Text(m.engine, style = MaterialTheme.typography.labelSmall, color = J.Muted, modifier = Modifier.padding(top = 4.dp))
+
 
             m.questions.forEach { q ->
                 Spacer(Modifier.height(12.dp))
@@ -279,7 +293,9 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                             }
                         }
                     }
-                    if (files.size > 12) Text("+${files.size - 12} altri", color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(14.dp))
+                    if (files.size > 12) com.jarvis.files.ui.components.GhostButton("Vedi tutti i ${files.size} file", Modifier.fillMaxWidth()) {
+                        vm.searchResults = files; vm.category = null; vm.folder = null; vm.tab = Tab.FILES; vm.sub = com.jarvis.files.ui.Sub.CATEGORY
+                    }
                 }
             }
         }

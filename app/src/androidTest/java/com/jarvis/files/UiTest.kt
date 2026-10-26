@@ -48,7 +48,7 @@ class UiTest {
         rule.onAllNodesWithText("Jarvis").onFirst().performClick()
         shot("02_chat_vuota")
         // Messaggio vero senza AI configurata: deve spiegare cosa fare
-        rule.runOnUiThread { vm().send("Metti in ordine la cartella Download") }
+        rule.runOnUiThread { vm().send("Come posso organizzare i miei documenti per progetto?") }
         rule.waitUntil(20_000) { rule.onAllNodesWithText("Nessuna AI", substring = true).fetchSemanticsNodes().isNotEmpty() }
         shot("03_chat_senza_ai")
         // Esempio di risposta con domanda e anteprima (dati finti solo per mostrare l'aspetto)

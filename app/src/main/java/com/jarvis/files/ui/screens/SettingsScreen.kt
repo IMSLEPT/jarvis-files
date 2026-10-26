@@ -106,6 +106,9 @@ fun SettingsScreen(vm: MainViewModel) {
     var localReady by remember { mutableStateOf(AiRouter.localReady(ctx)) }
     var dlError by remember { mutableStateOf("") }
     var resolvingModel by remember { mutableStateOf(false) }
+    var testingLocal by remember { mutableStateOf(false) }
+    var localTestResult by remember { mutableStateOf("") }
+    var testingOnline by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {
         while (isActive) {
@@ -141,11 +144,27 @@ fun SettingsScreen(vm: MainViewModel) {
                     Text("Download: ${Fmt.size(d.done)} di ${if (d.total > 0) Fmt.size(d.total) else "?"}", color = J.Cyan)
                     LinearMeter(if (d.total > 0) d.done.toFloat() / d.total else 0f, Modifier.padding(vertical = 6.dp))
                     Text("Puoi chiudere l'app: il download continua da solo.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    GhostButton("Annulla download", enabled = !testingLocal) { LocalAi.deleteModel(ctx); dl = null }
                 }
                 localReady -> {
                     Text("✓ Pronto: ${p.localModelPath.substringAfterLast('/')}", color = J.Green)
                     ToggleRow("Usa la GPU", "Più veloce. Disattiva se l'app si blocca.", gpu) { gpu = it; p.localUseGpu = it; LocalAi.release() }
-                    GhostButton("Elimina modello", color = J.Red) { LocalAi.deleteModel(ctx); localReady = false }
+                    GradientButton(if (testingLocal) "Verifico…" else "Verifica AI locale", Modifier.fillMaxWidth(), enabled = !testingLocal && !vm.busy) {
+                        testingLocal = true; localTestResult = "Caricamento del modello e prova JSON in italiano…"
+                        scope.launch {
+                            try {
+                                val raw = LocalAi.engine(ctx).complete("Rispondi in italiano. Restituisci solo JSON con un campo reply di testo. Non eseguire operazioni.",
+                                    listOf(ChatMsg("user", "Scrivi che sei pronto ad aiutarmi con i file.")), 100)
+                                val json = com.jarvis.files.ai.extractJson(raw)
+                                require(json?.opt("reply") is String && json?.optString("reply")?.isNotBlank() == true) { "Il modello non ha restituito il formato richiesto" }
+                                localTestResult = "✓ Modello avviato e JSON valido: ${json!!.getString("reply")}. Questa prova non modifica file."
+                            } catch (e: kotlinx.coroutines.CancellationException) { throw e }
+                            catch (e: Exception) { localTestResult = "Verifica non riuscita: ${e.message}. Prova a disattivare la GPU." }
+                            finally { testingLocal = false }
+                        }
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    GhostButton("Elimina modello", color = J.Red, enabled = !testingLocal && !vm.busy) { LocalAi.deleteModel(ctx); localReady = false }
                 }
                 else -> {
                     if (d?.failed == true) Text("Download non riuscito: riprova.", color = J.Amber)
@@ -172,6 +191,7 @@ fun SettingsScreen(vm: MainViewModel) {
             }
         }
 
+        if (localTestResult.isNotBlank()) Text(localTestResult, color = J.Text, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(12.dp))
         GlassCard(Modifier.fillMaxWidth().padding(top = 10.dp)) {
             Text("AI su internet (gratis, modelli open source)", color = J.Text, style = MaterialTheme.typography.titleMedium)
             Text("Scegli un servizio, crea la chiave gratuita dal sito e incollala qui.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
@@ -191,13 +211,14 @@ fun SettingsScreen(vm: MainViewModel) {
             field(key, "Chiave API", password = true) { key = it; p.onlineApiKey = it }
             field(model, "Modello") { model = it; p.onlineModel = it }
             field(base, "Indirizzo servizio") { base = it; p.onlineBaseUrl = it }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 6.dp)) {
-                GradientButton("Prova") {
-                    testResult = "Provo…"
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 6.dp)) {
+                GradientButton("Prova", enabled = !testingOnline) {
+                    testResult = "Provo…"; testingOnline = true
                     scope.launch {
                         testResult = runCatching {
                             OnlineAi(p.onlineBaseUrl, p.onlineApiKey, p.onlineModel).complete("Rispondi in 5 parole.", listOf(ChatMsg("user", "Presentati")), 50)
                         }.fold({ "✓ Funziona: $it" }, { "✗ ${it.message}" })
+                        testingOnline = false
                     }
                 }
                 GhostButton("Elenco modelli") {
@@ -250,7 +271,7 @@ fun SettingsScreen(vm: MainViewModel) {
             runCatching { ctx.startActivity(Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)) }
         }
         Spacer(Modifier.height(30.dp))
-        Text("Jarvis Files 1.0 · progetto personale", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+        Text("Jarvis Files ${ctx.packageManager.getPackageInfo(ctx.packageName, 0).versionName}", color = J.Muted, style = MaterialTheme.typography.bodySmall)
         Spacer(Modifier.height(20.dp))
     }
 }

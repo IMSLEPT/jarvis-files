@@ -14,8 +14,8 @@ android {
         applicationId = "com.jarvis.files"
         minSdk = 31
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = System.getenv("JARVIS_BUILD_NUMBER")?.toIntOrNull() ?: 44
+        versionName = "1.0.$versionCode"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -110,3 +110,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
+

@@ -27,6 +27,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
 
       - name: Build release APK
+        env:
+          JARVIS_BUILD_NUMBER: ${{ github.run_number }}
         run: |
           chmod +x ./gradlew
           set -o pipefail
@@ -51,3 +53,4 @@ jobs:
           gh release create "v1.0.${{ github.run_number }}" dist/*.apk \
             --title "Jarvis Files v1.0.${{ github.run_number }}" \
             --notes "APK firmato, pronto da installare. Build #${{ github.run_number }} del commit ${GITHUB_SHA::7}."
+

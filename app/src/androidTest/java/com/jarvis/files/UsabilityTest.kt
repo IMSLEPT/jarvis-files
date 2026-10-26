@@ -48,10 +48,10 @@ class UsabilityTest {
             TestUtil.sh("settings put system font_scale 1.5")
             rule.waitUntil(10_000) { rule.activity.resources.configuration.fontScale >= 1.49f }
             rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
-            rule.onNodeWithText("Video").assertIsDisplayed()
-            rule.onNodeWithText("Immagini").assertIsDisplayed()
-            rule.onNodeWithText("Audio").assertIsDisplayed()
-            rule.onNodeWithText("Archivi").assertIsDisplayed()
+            rule.onNodeWithText("Video").performScrollTo().assertIsDisplayed()
+            rule.onNodeWithText("Immagini").performScrollTo().assertIsDisplayed()
+            rule.onNodeWithText("Audio").performScrollTo().assertIsDisplayed()
+            rule.onNodeWithText("Archivi").performScrollTo().assertIsDisplayed()
             TestUtil.screenshot("regression_home_font_150")
         } finally { TestUtil.sh("settings put system font_scale $oldScale") }
     }

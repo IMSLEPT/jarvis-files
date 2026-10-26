@@ -23,6 +23,7 @@ data class BrainReply(
     val plan: Plan? = null,
     val photoSearch: String? = null,
     val fileQuery: FileQuery? = null,
+    val fileResults: List<FileEntry>? = null,
 )
 
 /** Costruisce il contesto per l'AI e interpreta la risposta. */
@@ -82,9 +83,14 @@ Regole inderogabili:
         }.ifEmpty {
             if (Regex("download|scaric").containsMatchIn(text)) folders.filter { it.startsWith("Download") } else emptyList()
         }
-        val target = mentioned.ifEmpty { listOf("Download", "") }
-        val relevant = entries.filter { e -> target.any { t -> e.folder == t || (t.isNotEmpty() && e.folder.startsWith("$t/")) } }
-            .sortedByDescending { it.modified }
+        val target = mentioned
+        val query = simpleQuery(userText)
+        val relevant = entries.filter { e ->
+            (target.isEmpty() || target.any { t -> e.folder == t || e.folder.startsWith("$t/") }) &&
+                (query.ext.isEmpty() || e.ext in query.ext)
+        }.sortedWith(compareByDescending<FileEntry> { e -> query.keywords.count { e.rel.contains(it, true) } }.thenByDescending { it.modified })
+        sb.appendLine("L'indice contiene ${entries.size} file accessibili. L'elenco sotto è soltanto un campione: non dedurre che altri file non esistano.")
+        if (query.ext.isNotEmpty()) sb.appendLine("Estensioni richieste: ${query.ext.joinToString()}; corrispondenze reali: ${relevant.size}.")
 
         sb.appendLine("=== FILE (percorso | KB | data modifica) — ${relevant.size} totali, mostrati ${minOf(relevant.size, fileBudget)} ===")
         relevant.take(fileBudget).forEach { e: FileEntry ->
@@ -100,9 +106,10 @@ Regole inderogabili:
     private fun tokens(text: String) = text.length / 3 + 4
 
     suspend fun ask(c: Context, history: List<ChatMsg>): Pair<BrainReply, String> {
+        val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
+        FileCommands.resolve(last.text)?.let { return it to "Comando locale · verificato sui file" }
         val engine = AiRouter.engine(c)
         val p = Prefs(c)
-        val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
         val intentText = if (last.text.contains("\nScelgo:")) history.filter { it.role == "user" }.takeLast(2).joinToString("\n") { it.text } else last.text
         val online = engine is OnlineAi
         val sys = systemPrompt(p.userName)
@@ -121,9 +128,8 @@ Regole inderogabili:
             }
             try {
                 val raw = engine.complete(sys, msgs, maxOut)
-                val json = extractJson(raw) ?: throw AiUnavailable("La risposta AI non è valida: nessun file è stato modificato. Riprova con una richiesta più precisa.")
-                if (!json.has("reply")) throw AiUnavailable("Risposta AI incompleta. Nessun file è stato modificato.")
-                return clean(parse(raw), intentText) to engine.displayName
+                val reply = validateReply(raw, intentText)
+                return reply to engine.displayName
             } catch (e: TooLarge) {
                 lastError = e
                 limit = (e.limit * 0.9f).toInt()
@@ -132,10 +138,23 @@ Regole inderogabili:
             }
         }
         throw AiUnavailable(
-            "La richiesta è troppo grande per il piano gratuito del servizio online" +
+            (if (online) "La richiesta supera il limite del servizio online" else "La richiesta supera il contesto dell’AI locale") +
                 (lastError?.let { " (${(it as? TooLarge)?.limit} token al minuto)" } ?: "") +
-                ". Prova a indicare una cartella più piccola, oppure usa l'AI nel telefono."
+                ". Prova a indicare una cartella più piccola."
         )
+    }
+
+    fun validateReply(raw: String, userText: String): BrainReply {
+        val json = extractJson(raw) ?: throw AiUnavailable("Risposta AI non valida. Nessun file è stato modificato.")
+        if (json.opt("reply") !is String || json.getString("reply").isBlank())
+            throw AiUnavailable("Risposta AI incompleta. Nessun file è stato modificato.")
+        val reply = clean(parse(raw), userText)
+        val mutation = FileCommands.isMutation(userText)
+        if (mutation && reply.questions.isEmpty() && reply.plan?.isEmpty != false)
+            throw AiUnavailable("Jarvis non ha prodotto un piano valido. Nessun file è stato modificato. Specifica tipo e cartella, per esempio: «Cancella gli APK in Download».")
+        if (!mutation && reply.plan != null)
+            throw AiUnavailable("Jarvis ha proposto modifiche non richieste. Nessun file è stato modificato. Riformula la richiesta.")
+        return reply
     }
 
     private val photoWords = Regex("(?i)foto|immagin|selfie|scatt|video|ritratt|mostra")
@@ -166,7 +185,7 @@ Regole inderogabili:
         val plan = if (actions != null && actions.length() > 0) FileOps.buildPlan(actions) else null
         val fs = o.optJSONObject("file_search")?.let { f -> parseFileQuery(f) }
         return BrainReply(
-            reply = o.optString("reply").ifBlank { if (plan != null) "Ecco cosa propongo." else "Fatto." },
+            reply = o.optString("reply").ifBlank { if (plan != null) "Ecco cosa propongo." else "Non ho ricevuto una risposta completa. Nessun file è stato modificato." },
             questions = qs,
             plan = plan,
             photoSearch = o.optString("photo_search").takeIf { !o.isNull("photo_search") && it.isNotBlank() },

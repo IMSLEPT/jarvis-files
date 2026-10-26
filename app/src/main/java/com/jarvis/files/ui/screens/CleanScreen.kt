@@ -115,12 +115,13 @@ private fun Loading(text: String) {
 private fun TrashBar(vm: MainViewModel, selected: List<Pair<String, Long>>, source: String, onDone: () -> Unit) {
     if (selected.isEmpty()) return
     GlassCard(Modifier.fillMaxWidth().padding(12.dp), highlight = true) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Text("${selected.size} selezionati", color = J.Text, style = MaterialTheme.typography.titleSmall)
-                Text(Fmt.size(selected.sumOf { it.second }), color = J.Electric, style = MaterialTheme.typography.bodySmall)
+        Column {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text("${selected.size} selezionati", modifier = Modifier.weight(1f), color = J.Text, style = MaterialTheme.typography.titleSmall)
+                Text(Fmt.size(selected.sumOf { it.second }), color = J.Muted, style = MaterialTheme.typography.bodySmall)
             }
-            GradientButton("Nel cestino", icon = Icons.Filled.DeleteSweep, enabled = !vm.operationBusy && !vm.busy) {
+            Spacer(Modifier.height(8.dp))
+            GradientButton("Sposta nel cestino", Modifier.fillMaxWidth(), icon = Icons.Filled.DeleteSweep, enabled = !vm.operationBusy && !vm.busy) {
                 vm.runPlan(Plan(selected.map { Op.Trash(it.first, it.second) }, emptyList()), source, onDone)
             }
         }
@@ -159,7 +160,7 @@ private fun CacheTab(vm: MainViewModel) {
     var apps by remember { mutableStateOf<List<AppCacheInfo>?>(null) }
     var reload by remember { mutableStateOf(0) }
     val clearAll = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) { r ->
-        vm.toast = if (r.resultCode == Activity.RESULT_OK) "Cache svuotate" else "Operazione annullata"
+        vm.toast = if (r.resultCode == Activity.RESULT_OK) "Richiesta completata da Android" else "Richiesta chiusa: verifica la cache nelle impostazioni Android"
         reload++
     }
     val usageLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) {
@@ -276,12 +277,14 @@ private fun DupTab(vm: MainViewModel) {
     fun start() {
         running = true
         scope.launch {
-            val g = withContext(Dispatchers.IO) { Cleaner.findDuplicates { d, t -> progress = "$d / $t file confrontati" } }
-            groups = g
-            sel.clear()
-            // Tiene il più vecchio (l'originale), seleziona le copie
-            g.forEach { grp -> sel.addAll(grp.files.drop(1).map { it.rel }) }
-            running = false
+            try {
+                val g = withContext(Dispatchers.IO) { Cleaner.findDuplicates { d, t -> progress = "$d / $t file confrontati" } }
+                groups = g
+                sel.clear()
+                g.forEach { grp -> sel.addAll(grp.files.drop(1).map { it.rel }) }
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e }
+            catch (e: Exception) { vm.toast = "Ricerca doppioni non riuscita: ${e.message}" }
+            finally { running = false }
         }
     }
     Column(Modifier.fillMaxSize()) {
@@ -354,7 +357,7 @@ private fun WaTab(vm: MainViewModel) {
                             }
                         }
                     }
-                    if (open == c.key) fileRows(files.take(300), sel)
+                    if (open == c.key) fileRows(files, sel)
                 }
             }
         }
