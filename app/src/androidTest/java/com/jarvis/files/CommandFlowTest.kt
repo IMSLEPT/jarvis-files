@@ -23,6 +23,9 @@ class CommandFlowTest {
         rule.onNodeWithTag("chat_input").performTextInput("Cancella gli APK in JarvisCommandFlow")
         rule.onNodeWithContentDescription("Invia messaggio").performClick()
         rule.waitUntil(20_000) { !vm().busy && vm().messages.any { it.plan != null } }
+        rule.waitForIdle()
+        rule.onNodeWithTag("chat_input").assertTextEquals("")
+        rule.onNodeWithContentDescription("Invia messaggio").assertIsNotEnabled()
     }
     @Test fun sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel() {
         send()

@@ -102,8 +102,7 @@ object FileCommands {
         if (!deleting) return BrainReply("Ho trovato ${matched.size} file $label$scope.",
             fileResults = matched.sortedByDescending { it.modified })
         val plan = Plan(matched.sortedBy { it.rel }.map { Op.Trash(it.rel, it.size) }, emptyList())
-        return BrainReply("Ho trovato ${matched.size} file $label$scope (${Fmt.size(matched.sumOf { it.size })}). " +
-            "Controlla l'elenco e scegli cosa spostare nel cestino." +
+        return BrainReply("${matched.size} file $label$scope · ${Fmt.size(matched.sumOf { it.size })}." +
             if (kind == "apk") " Le app installate restano sul telefono." else "", plan = plan)
     }
 

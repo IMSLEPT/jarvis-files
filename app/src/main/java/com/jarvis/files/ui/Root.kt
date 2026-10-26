@@ -248,6 +248,8 @@ private fun MainShell(vm: MainViewModel) {
 private fun JarvisBottomBar(vm: MainViewModel) {
     val current = if (vm.tab == Tab.PHOTOS || vm.sub == Sub.CATEGORY) Tab.FILES else vm.tab
     val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
+    val scale = androidx.compose.ui.platform.LocalDensity.current.fontScale
+    val allLabels = androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp >= 360 || scale <= 1.25f
     Row(Modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)
         .shadow(8.dp, RoundedCornerShape(30.dp), ambientColor = Color(0x16000000), spotColor = Color(0x161E2A4A))
         .clip(RoundedCornerShape(30.dp)).background(J.Card).padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -261,10 +263,11 @@ private fun JarvisBottomBar(vm: MainViewModel) {
                 Box(Modifier.size(48.dp, 30.dp).clip(CircleShape).background(if (current == tab) J.AccentSoft else Color.Transparent), contentAlignment = Alignment.Center) {
                     if (tab == Tab.CHAT) ArcReactor(36.dp, active = vm.busy)
                     else Icon(when (tab) { Tab.HOME -> Icons.Outlined.Home; Tab.FILES -> Icons.Outlined.Description; Tab.CLEAN -> Icons.Outlined.CleaningServices; else -> Icons.Outlined.GridView },
-                        null, tint = if (current == tab) J.Blue else J.Muted, modifier = Modifier.size(23.dp))
+                        if (allLabels || current == tab) null else label, tint = if (current == tab) J.Blue else J.Muted, modifier = Modifier.size(23.dp))
                 }
-                Text(label, color = if (current == tab) J.Blue else J.Muted, style = MaterialTheme.typography.labelMedium,
+                if (allLabels || current == tab) Text(label, color = if (current == tab) J.Blue else J.Muted, style = MaterialTheme.typography.labelMedium,
                     maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)
+                else Spacer(Modifier.height((16 * scale).dp))
             }
         }
     }

@@ -70,6 +70,8 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -181,7 +183,9 @@ fun HomeScreen(vm: MainViewModel) {
             androidx.compose.material3.TextButton(onClick = { vm.sub = Sub.FIND }) { Text("Cerca") }
         }
         val categories = CAT_STYLES.take(6)
-        categories.chunked(2).forEach { row ->
+        val cellWidth = (LocalConfiguration.current.screenWidthDp - 42) / 2f
+        val columns = if (cellWidth < 70 + 60 * LocalDensity.current.fontScale) 1 else 2
+        categories.chunked(columns).forEach { row ->
             Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 row.forEach { cat ->
                     GlassCard(Modifier.weight(1f), onClick = { openCategory(vm, cat.cat) }, padding = PaddingValues(12.dp)) {

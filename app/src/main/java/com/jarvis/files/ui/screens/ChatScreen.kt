@@ -112,8 +112,8 @@ fun ChatScreen(vm: MainViewModel) {
     fun send() {
         if (input.isBlank() || !enabled) return
         val text = input
-        input = ""
         focus.clearFocus()
+        input = ""
         vm.send(text)
     }
     LaunchedEffect(vm.messages.size, vm.busy) {
