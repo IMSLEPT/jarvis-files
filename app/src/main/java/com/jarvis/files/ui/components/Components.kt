@@ -148,7 +148,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
         horizontalArrangement = Arrangement.Center,
     ) {
         if (icon != null) {
-            Icon(icon, null, tint = color, modifier = Modifier.size(16.dp))
+            Icon(icon, null, tint = if (enabled) color else J.Muted, modifier = Modifier.size(16.dp))
             Spacer(Modifier.width(6.dp))
         }
         Text(text, color = if (enabled) color else J.Muted, style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)

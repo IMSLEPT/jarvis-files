@@ -70,6 +70,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -251,7 +253,7 @@ private fun JarvisBottomBar(vm: MainViewModel) {
         .clip(RoundedCornerShape(30.dp)).background(J.Card).padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
         val tabs = listOf(Tab.HOME to "Home", Tab.FILES to "File", Tab.CHAT to "Jarvis", Tab.CLEAN to "Pulizia", Tab.MORE to "Altro")
         tabs.forEach { (tab, label) ->
-            Column(Modifier.weight(1f).combinedClickable(
+            Column(Modifier.weight(1f).semantics { selected = current == tab }.combinedClickable(
                 role = androidx.compose.ui.semantics.Role.Tab,
                 onClick = { vm.tab = tab; vm.sub = Sub.NONE; if (tab == Tab.FILES) vm.searchResults = null },
                 onLongClick = if (tab == Tab.CHAT) ({ haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress); vm.voiceOpen = true }) else null,

@@ -11,6 +11,17 @@ object FileCommands {
     private fun norm(s: String) = Normalizer.normalize(s, Normalizer.Form.NFD)
         .replace(Regex("\\p{M}+"), "").lowercase(Locale.ITALY).replace(Regex("\\s+"), " ").trim().trimEnd('.', '!', '?')
 
+    private fun commandText(s: String): String {
+        var n = norm(s).replace(Regex("^(?:(?:per favore,?|puoi|potresti) )+"), "")
+        mapOf("cancellare|cancellami|cancelli" to "cancella", "eliminare|eliminami|elimini" to "elimina",
+            "rimuovere|rimuovimi|rimuovi" to "rimuovi", "cercare|cercami|cerchi" to "cerca", "trovare|trovami|trovi" to "trova",
+            "mostrare|mostrami|mostri" to "mostra", "rinominare|rinominami|rinomini" to "rinomina",
+            "spostare|spostami|sposti" to "sposta", "riordinare|riordinami|riordini" to "riordina").forEach { (forms, verb) ->
+            n = n.replace(Regex("^(?:mi )?(?:$forms)\\b"), verb)
+        }
+        return n
+    }
+
     private val types = linkedMapOf(
         "apk" to setOf("apk", "apks", "xapk"), "apks" to setOf("apk", "apks", "xapk"), "pdf" to setOf("pdf"),
         "video" to setOf("mp4", "mkv", "mov", "3gp", "webm", "avi", "m4v"),
@@ -23,7 +34,7 @@ object FileCommands {
     fun resolve(text: String, entries: List<FileEntry> = FileIndex.ensure(), now: Long = System.currentTimeMillis()): BrainReply? {
         // Le opzioni dei comandi integrati sono richieste complete, non istruzioni nascoste.
         val request = text.substringAfter("\nScelgo: ", text)
-        val n = norm(request).replace(Regex("^(?:per favore |puoi |potresti )"), "")
+        val n = commandText(request)
         if (n in setOf("cancella", "elimina", "rimuovi", "cancella i file", "elimina i file", "libera spazio")) {
             return BrainReply("Scegli quali file vuoi controllare. Ti mostrerò l'elenco prima di spostarli nel cestino.",
                 listOf(FollowUp("Quali file vuoi controllare?", listOf("Cancella gli APK", "Trova i video", "Trova gli archivi"))))
@@ -48,7 +59,7 @@ object FileCommands {
                 else "Ci sono ${matching.size} file con questo nome. Indica il percorso completo tra virgolette, per esempio: Rinomina \"Download/$source\" in \"Nuovo nome\".")
             val actions = JSONArray().put(JSONObject().put("type", "rename").put("path", matching.single().rel).put("new_name", rename.groupValues[2]))
             val plan = FileOps.buildPlan(actions)
-            return BrainReply("Controlla il nuovo nome prima di confermare.", plan = plan)
+            return BrainReply(if (plan.isEmpty) "Il file ha già questo nome. Nessuna modifica necessaria." else "Controlla il nuovo nome prima di confermare.", plan = plan)
         }
         val verb = Regex("^(cancella|elimina|rimuovi|metti nel cestino|sposta nel cestino|trova|trovami|cerca|cercami|mostra|mostrami|elenca)\\s+(.+)$").matchEntire(n) ?: return null
         val deleting = verb.groupValues[1] in setOf("cancella", "elimina", "rimuovi", "metti nel cestino", "sposta nel cestino")
@@ -97,5 +108,5 @@ object FileCommands {
     }
 
     fun isMutation(text: String) = Regex("^(?:per favore |puoi |potresti )?(?:(?:cancella|elimina|rimuovi|rinomina|sposta|riordina|organizza|pulisci)\\b|metti (?:in ordine|nel cestino)|crea (?:una |la )?cartella)")
-        .containsMatchIn(norm(text))
+        .containsMatchIn(commandText(text))
 }

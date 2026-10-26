@@ -16,9 +16,9 @@ class CommandFlowTest {
     init { TestUtil.grantAll(); Prefs(TestUtil.ctx).apply { onboardingDone = true; biometricLock = false; aiMode = AiMode.LOCAL; localModelPath = ""; localDownloadId = -1 } }
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
     private fun vm() = ViewModelProvider(rule.activity)[MainViewModel::class.java]
-    private val path = "JarvisCommandFlow/test.apk"
+    private val path = "JarvisCommandFlow/JarvisCommandFlow-test.apk"
     @Before fun setup() { TestUtil.write(path, "apk test".toByteArray()); Storage.scanAll(); rule.runOnUiThread { vm().tab = Tab.CHAT } }
-    @After fun cleanup() { Storage.file("JarvisCommandFlow").deleteRecursively(); FileIndex.invalidate() }
+    @After fun cleanup() { Storage.file("JarvisCommandFlow").deleteRecursively(); Vault.list(TestUtil.ctx).filter { it.name.startsWith("JarvisCommandFlow-") }.forEach { it.delete() }; FileIndex.invalidate() }
     private fun send() {
         rule.onNodeWithTag("chat_input").performTextInput("Cancella gli APK in JarvisCommandFlow")
         rule.onNodeWithContentDescription("Invia messaggio").performClick()
@@ -51,6 +51,13 @@ class CommandFlowTest {
     @Test fun settingsButtonOpensAiSettings() {
         rule.onNodeWithContentDescription("Impostazioni AI").performClick()
         rule.onNodeWithText("Cervello di Jarvis").assertIsDisplayed()
+    }
+    @Test fun vaultImportButtonMovesOnlySelectedFile() {
+        rule.runOnUiThread { vm().tab = Tab.FILES; vm().category = null; vm().folder = "JarvisCommandFlow"; vm().sub = Sub.CATEGORY }
+        rule.onNodeWithText("JarvisCommandFlow-test.apk").performTouchInput { longClick() }
+        rule.onNodeWithText("Cassaforte").performScrollTo().performClick()
+        rule.waitUntil(20_000) { !vm().operationBusy && !Storage.file(path).exists() }
+        assertTrue(Vault.list(TestUtil.ctx).any { it.name.startsWith("JarvisCommandFlow-") && it.readText() == "apk test" })
     }
     @Test fun allPlanEntriesCanBeReviewedBeyondOldLimit() {
         val ops = (0..404).map { Op.Trash("JarvisCommandFlow/$it.apk", 1) }

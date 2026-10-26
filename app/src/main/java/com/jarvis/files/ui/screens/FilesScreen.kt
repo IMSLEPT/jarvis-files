@@ -3,6 +3,8 @@ package com.jarvis.files.ui.screens
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -128,7 +130,7 @@ fun FilesScreen(vm: MainViewModel) {
 }
 
 /** Elenco dei file di una categoria o di una cartella, con selezione multipla. */
-@OptIn(ExperimentalFoundationApi::class)
+@OptIn(ExperimentalFoundationApi::class, ExperimentalLayoutApi::class)
 @Composable
 fun CategoryScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
@@ -204,15 +206,12 @@ fun CategoryScreen(vm: MainViewModel) {
             GlassCard(Modifier.fillMaxWidth().padding(start = 12.dp, end = 12.dp, bottom = 12.dp), highlight = true) {
                 Text("${chosen.size} selezionati · ${Fmt.size(chosen.sumOf { it.size })}", color = J.Text, style = MaterialTheme.typography.titleSmall)
                 Spacer(Modifier.height(10.dp))
-                Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    GhostButton("Condividi", icon = Icons.Filled.Share) { Storage.shareFiles(ctx, chosen.map { Storage.file(it.rel) }) }
-                    GhostButton("Cassaforte", icon = Icons.Filled.Lock) {
-                        scope.launch {
-                            val n = withContext(Dispatchers.IO) { chosen.count { Vault.importPath(ctx, it.rel) } }
-                            vm.toast = "$n file nella cartella segreta"; sel.clear(); vm.filesChanged(); reload++
-                        }
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    GhostButton("Condividi", icon = Icons.Filled.Share, enabled = !vm.operationBusy && !vm.busy) { Storage.shareFiles(ctx, chosen.map { Storage.file(it.rel) }) }
+                    GhostButton("Cassaforte", icon = Icons.Filled.Lock, enabled = !vm.operationBusy && !vm.busy) {
+                        vm.importIntoVault(chosen.map { it.rel }) { imported -> sel.removeAll(imported); reload++ }
                     }
-                    GhostButton("Cestino", icon = Icons.Filled.Delete, color = J.Red) {
+                    GhostButton("Cestino", icon = Icons.Filled.Delete, color = J.Red, enabled = !vm.operationBusy && !vm.busy) {
                         vm.runPlan(Plan(chosen.map { Op.Trash(it.rel, it.size) }, emptyList()), "Eliminazione da $title") { sel.clear(); reload++ }
                     }
                     GhostButton("Annulla selezione", color = J.Muted) { sel.clear() }

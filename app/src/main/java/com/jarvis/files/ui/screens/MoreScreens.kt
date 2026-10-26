@@ -397,6 +397,9 @@ fun FindScreen(vm: MainViewModel) {
         searchJob = scope.launch {
             try {
             res = withContext(Dispatchers.IO) {
+                if (com.jarvis.files.core.FileIndex.scannedAt == 0L || System.currentTimeMillis() - com.jarvis.files.core.FileIndex.scannedAt > 30_000) Storage.scanAll()
+                val direct = com.jarvis.files.ai.FileCommands.resolve(text) ?: com.jarvis.files.ai.FileCommands.resolve("Trova $text")
+                if (direct?.fileResults != null) return@withContext direct.fileResults
                 // Prima prova con l'AI (capisce "di marzo", "della luce"...), altrimenti ricerca per parole
                 val ai = runCatching {
                     val engine = com.jarvis.files.ai.AiRouter.engine(ctx)

@@ -61,3 +61,12 @@ Verifica riproducibile: `./gradlew assembleDebug assembleDebugAndroidTest lintDe
 ## Ripristino grafica originale
 
 Ripristinati il design della Home precedente alla v1.0.42 (logo originale, sfera grande, grafico memoria, categorie compatte, suggerimento illustrato), la barra inferiore flottante e i colori originali. Restano le correzioni di AI, file, ricerca, cestino, ripristino e cartella segreta. La Home usa di nuovo le proporzioni del design approvato; i testi della Home seguono il ridimensionamento del mockup, non la scala dei caratteri di sistema.
+
+
+## Correzioni comandi e interfaccia (ottobre 2026)
+
+- Comandi comuni (APK, PDF, foto, video, audio e archivi) risolti sull'indice dei file accessibili, senza dipendere dal modello generativo. I comandi di eliminazione preparano sempre un'anteprima selezionabile e recuperabile dal cestino. Sono supportate cartelle e soglie in giorni; richieste con eccezioni non vengono semplificate automaticamente.
+- Ricerca per tipo/nome, riordino dei Download per categoria e rinomina esplicita tra virgolette. Le risposte generative senza un piano valido non vengono presentate come operazioni riuscite.
+- Home con impaginazione a flusso e caratteri di sistema; illustrazioni e grafico originali mantenuti. Invio e microfono separati, risposte in schede, controlli delle operazioni senza il precedente limite di 400 elementi e lista WhatsApp senza limite di 300.
+- Verifica del modello locale dalle Impostazioni: carica realmente il modello sul dispositivo e controlla una risposta JSON in italiano, senza modificare file. Non equivale a una certificazione dell'accuratezza di Gemma per ogni richiesta.
+- Test strumentati sui comandi e sui tasti Invio, Esegui, Annulla, ripristino, impostazioni e revisione di oltre 400 operazioni. Il test LLM richiede un modello presente sul dispositivo: se assente viene saltato. Le prestazioni su Pixel devono essere verificate sul telefono.

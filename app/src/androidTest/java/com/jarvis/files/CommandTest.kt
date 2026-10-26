@@ -38,6 +38,11 @@ class CommandTest {
         val r = FileCommands.resolve("Elimina gli APK più vecchi di 30 giorni", entries())!!
         assertEquals(listOf("$root/Download/a.apk"), r.plan!!.ops.filterIsInstance<Op.Trash>().map { it.path })
     }
+    @Test fun politeItalianCommandsKeepTheSameScope() {
+        listOf("Puoi cancellare gli APK", "Per favore, cancellami gli APK", "Mi cancelli gli APK", "Potresti eliminare gli APK").forEach {
+            assertEquals(it, 4, FileCommands.resolve(it, entries())!!.plan!!.trashes)
+        }
+    }
     @Test fun exclusionsAndCompoundRequestsAreNeverSilentlyIgnored() {
         listOf("Cancella gli APK tranne a.apk", "Cancella gli APK e i PDF", "Cancella gli APK dopo averli copiati", "Non cancellare gli APK", "Cancella gli APK del 2025").forEach {
             assertNull(it, FileCommands.resolve(it, entries()))

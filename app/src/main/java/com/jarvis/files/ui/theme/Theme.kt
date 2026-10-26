@@ -45,13 +45,13 @@ private val LightPalette = Palette(
     surface = Color(0xFFFFFFFF),
     surfaceHi = Color(0xFFF0F2F7),
     hairline = Color(0x12000000),
-    accent = Color(0xFFFF6A2B),
+    accent = Color(0xFFBC451C),
     accentSoft = Color(0x1FFF6A2B),
     text = Color(0xFF12141C),
     muted = Color(0xFF6B7080),
-    green = Color(0xFF22B573),
-    amber = Color(0xFFF29A12),
-    red = Color(0xFFEF4444),
+    green = Color(0xFF14804B),
+    amber = Color(0xFF986000),
+    red = Color(0xFFC83232),
     isDark = false,
 )
 

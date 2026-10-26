@@ -111,7 +111,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
                 override fun onBufferReceived(buffer: ByteArray?) {}
                 override fun onEndOfSpeech() { listening = false; level = 0f; state = "Elaboro…" }
                 override fun onError(error: Int) {
-                    listening = false; level = 0f
+                    listening = false; level = 0f; text = ""
                     state = when (error) {
                         SpeechRecognizer.ERROR_NO_MATCH, SpeechRecognizer.ERROR_SPEECH_TIMEOUT -> "Non ho sentito bene. Tocca il microfono e riprova."
                         SpeechRecognizer.ERROR_NETWORK, SpeechRecognizer.ERROR_NETWORK_TIMEOUT -> "Serve la connessione per capire la voce. Riprova."
@@ -121,7 +121,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
                 }
                 override fun onResults(results: Bundle?) {
                     val t = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull()
-                    if (!t.isNullOrBlank()) onResult(t) else state = "Non ho capito. Tocca il microfono e riprova."
+                    if (!t.isNullOrBlank()) onResult(t) else { text = ""; state = "Non ho capito. Tocca il microfono e riprova." }
                 }
                 override fun onPartialResults(partialResults: Bundle?) {
                     partialResults?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull()?.let { if (it.isNotBlank()) text = it }
@@ -178,7 +178,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
             Box(
                 Modifier.size(68.dp).clip(CircleShape)
                     .background(if (listening) Brush.linearGradient(listOf(Color(0xFFFF6A2B), Color(0xFFFF3D2E))) else Brush.linearGradient(listOf(Color(0xFF1E91E8), Color(0xFF7731DE), Color(0xFFFD893F))))
-                    .clickable { text = ""; attempt++ },
+                    .clickable { text = ""; if (!hasMic) permission.launch(Manifest.permission.RECORD_AUDIO) else if (!available) launchFallback() else attempt++ },
                 contentAlignment = Alignment.Center,
             ) { Icon(Icons.Filled.Mic, "Riascolta", tint = Color.White, modifier = Modifier.size(30.dp)) }
         }

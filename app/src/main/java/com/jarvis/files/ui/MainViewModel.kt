@@ -208,7 +208,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                     ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    Storage.scanAll()
+                    if (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(t)) Storage.scanAll()
                     Brain.ask(ctx, history)
                 }
                 ensureActive()
@@ -317,6 +317,20 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 filesChanged()
             } catch (e: Exception) { toast = "Ripristino non riuscito: ${e.message}" }
             finally { operationBusy = false; refreshStatus() }
+        }
+    }
+
+    fun importIntoVault(paths: List<String>, after: (Set<String>) -> Unit = {}) {
+        if (operationBusy || busy || paths.isEmpty()) return
+        operationBusy = true
+        viewModelScope.launch {
+            try {
+                val imported = withContext(Dispatchers.IO) { paths.filter { com.jarvis.files.core.Vault.importPath(ctx, it) }.toSet() }
+                toast = "${imported.size} file nella cartella segreta" + if (imported.size < paths.size) "; ${paths.size - imported.size} non importati" else ""
+                filesChanged()
+                after(imported)
+            } catch (e: Exception) { toast = "Importazione non completata: ${e.message}" }
+            finally { operationBusy = false }
         }
     }
 
