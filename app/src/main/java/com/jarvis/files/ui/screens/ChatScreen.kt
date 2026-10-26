@@ -113,10 +113,10 @@ fun ChatScreen(vm: MainViewModel) {
     fun send() {
         if (input.isBlank() || !enabled) return
         val text = input
-        keyboard?.hide()
         focus.clearFocus()
         input = ""
         vm.send(text)
+        keyboard?.hide()
     }
     LaunchedEffect(vm.messages.size, vm.busy) {
         // All'arrivo della risposta mostra l'inizio dell'anteprima, non soltanto il fondo.
@@ -205,6 +205,8 @@ fun ChatScreen(vm: MainViewModel) {
 @Composable
 private fun MessageView(vm: MainViewModel, m: UiMsg) {
     val ctx = LocalContext.current
+    val focus = androidx.compose.ui.platform.LocalFocusManager.current
+    val keyboard = androidx.compose.ui.platform.LocalSoftwareKeyboardController.current
     if (m.role == "user") {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
             Text(
@@ -258,7 +260,7 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                 when (m.planState) {
                     PlanState.PENDING -> if (plan.isEmpty) {
                         Text(plan.warnings.joinToString("\n"), color = J.Amber, style = MaterialTheme.typography.bodySmall)
-                    } else PlanCard(plan, onConfirm = { vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) }, enabled = !vm.busy && !vm.operationBusy)
+                    } else PlanCard(plan, onConfirm = { focus.clearFocus(); keyboard?.hide(); vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) }, enabled = !vm.busy && !vm.operationBusy)
                     PlanState.RUNNING -> Row(verticalAlignment = Alignment.CenterVertically) { TypingDots(J.Blue); Spacer(Modifier.width(8.dp)); Text("Eseguo…", color = J.Muted) }
                     PlanState.FAILED -> Text("Operazione non completata: vedi i dettagli sotto.", color = J.Red, style = MaterialTheme.typography.bodySmall)
                     PlanState.DONE -> Text("✓ Eseguito", color = J.Green, style = MaterialTheme.typography.titleSmall)
