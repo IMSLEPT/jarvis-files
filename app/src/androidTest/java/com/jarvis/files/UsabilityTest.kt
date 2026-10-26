@@ -43,24 +43,15 @@ class UsabilityTest {
         rule.onNodeWithText("Esegui").assertIsNotEnabled()
     }
     @Test fun homeWorksWithLargeFonts() {
-        val saved = Configuration(rule.activity.resources.configuration)
-        val large = Configuration(saved).apply { fontScale = 1.5f }
+        val oldScale = TestUtil.sh("settings get system font_scale").trim().toFloatOrNull() ?: 1f
         try {
-            rule.runOnUiThread {
-                @Suppress("DEPRECATION")
-                rule.activity.resources.updateConfiguration(large, rule.activity.resources.displayMetrics)
-                vm().tab = Tab.HOME
-            }
-            rule.activityRule.scenario.recreate()
-            rule.waitForIdle()
-            rule.onNodeWithText("I tuoi file").assertExists()
+            TestUtil.sh("settings put system font_scale 1.5")
+            rule.waitUntil(10_000) { rule.activity.resources.configuration.fontScale >= 1.49f }
+            rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
+            rule.onNodeWithTag("home_list").performScrollToNode(hasText("I tuoi file"))
+            rule.onNodeWithText("I tuoi file").assertIsDisplayed()
             TestUtil.screenshot("regression_home_font_150")
-        } finally {
-            rule.runOnUiThread {
-                @Suppress("DEPRECATION")
-                rule.activity.resources.updateConfiguration(saved, rule.activity.resources.displayMetrics)
-            }
-        }
+        } finally { TestUtil.sh("settings put system font_scale $oldScale") }
     }
     @Test fun vaultRequiresUnlockEvenWhenAppLockIsOff() {
         rule.runOnUiThread { vm().tab = Tab.MORE; vm().sub = Sub.VAULT }

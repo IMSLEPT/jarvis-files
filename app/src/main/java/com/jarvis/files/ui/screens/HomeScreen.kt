@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -76,7 +77,7 @@ fun HomeScreen(vm: MainViewModel) {
         in 5..12 -> "Buongiorno"; in 13..17 -> "Buon pomeriggio"; else -> "Buonasera"
     }
     LazyColumn(
-        modifier = Modifier.fillMaxSize().statusBarsPadding(),
+        modifier = Modifier.fillMaxSize().statusBarsPadding().testTag("home_list"),
         contentPadding = PaddingValues(start = 20.dp, end = 20.dp, top = 12.dp, bottom = 24.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
