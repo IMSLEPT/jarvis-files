@@ -24,6 +24,15 @@ class RegressionTest {
     }
     @After fun cleanup() { Storage.file("JarvisRegression").deleteRecursively(); FileIndex.invalidate() }
 
+    @Test fun brandLetterCounterRemainsTransparent() {
+        val drawable = androidx.core.content.ContextCompat.getDrawable(ctx, R.drawable.jarvis_wordmark_brand)!!.mutate()
+        val bitmap = android.graphics.Bitmap.createBitmap(288, 108, android.graphics.Bitmap.Config.ARGB_8888)
+        drawable.setBounds(0, 0, 288, 108)
+        drawable.draw(android.graphics.Canvas(bitmap))
+        // Actual pixels in the "a": clear counter, opaque left stroke. A background-colored patch also fails.
+        assertEquals(0, android.graphics.Color.alpha(bitmap.getPixel(82, 56)))
+        assertTrue(android.graphics.Color.alpha(bitmap.getPixel(66, 56)) > 200)
+    }
     @Test fun emptyGroupFilterCannotTargetEntirePhone() {
         val p = FileOps.buildPlan(JSONArray("""[{"type":"delete_where","where":{}}]"""))
         assertTrue(p.isEmpty)

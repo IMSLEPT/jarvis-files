@@ -26,3 +26,8 @@ Extract and faithfully reproduce the APPROVED JARVIS SPHERE from the upper-right
 ## Verifica
 
 La suite UI apre le schermate reali, prova il pulsante Chiedi a Jarvis e conserva la verifica con caratteri di sistema al 150%. Il rapporto dell'emulatore comprende Home, chat, icona adattiva renderizzata da Android e variante monocromatica a tema. Il test del modello Gemma richiede il modello installato e viene saltato quando manca; la modifica grafica non cambia il motore AI.
+
+
+## Correzione contatore e dimensione sfera
+
+Il contorno esterno e il contatore interno della lettera a sono parte dello stesso tracciato vettoriale, con riempimento evenOdd: il foro è realmente trasparente e segue lo sfondo. Un test sui pixel del VectorDrawable Android controlla la trasparenza del foro e l'opacità della lettera. La sfera della Home passa da 76 dp a 112 dp sui display da almeno 360 dp, oppure 96 dp su quelli più stretti; anche l'area del pulsante cresce per evitare collisioni con il marchio.

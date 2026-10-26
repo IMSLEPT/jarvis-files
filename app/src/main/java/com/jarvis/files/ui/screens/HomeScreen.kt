@@ -156,6 +156,7 @@ fun HomeScreen(vm: MainViewModel) {
     val today = SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date())
     Column(Modifier.fillMaxSize().testTag("home_layout").statusBarsPadding().verticalScroll(rememberScrollState()).padding(bottom = 20.dp)) {
         val largeText = LocalDensity.current.fontScale > 1.2f
+        val assistantSize = if (LocalConfiguration.current.screenWidthDp >= 360) 112.dp else 96.dp
         Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 16.dp, top = 16.dp), verticalAlignment = Alignment.Top) {
             Column(Modifier.weight(1f).padding(end = 8.dp)) {
                 JarvisBrand()
@@ -166,9 +167,9 @@ fun HomeScreen(vm: MainViewModel) {
                     Text("$greeting,\n${Prefs(ctx).userName}", style = MaterialTheme.typography.headlineSmall, color = J.Text)
                 }
             }
-            Column(Modifier.width(88.dp).pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE })
+            Column(Modifier.width(assistantSize + 16.dp).pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE })
                 .semantics(mergeDescendants = true) { contentDescription = "Chiedi a Jarvis" }, horizontalAlignment = Alignment.CenterHorizontally) {
-                ArcReactor(76.dp, active = vm.scanning)
+                ArcReactor(assistantSize, active = vm.scanning)
                 Spacer(Modifier.height(4.dp))
                 Text("Chiedi a Jarvis", color = J.Blue, style = MaterialTheme.typography.labelMedium,
                     textAlign = TextAlign.Center)
