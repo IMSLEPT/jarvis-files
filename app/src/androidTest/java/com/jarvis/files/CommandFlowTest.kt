@@ -58,7 +58,7 @@ class CommandFlowTest {
     @Test fun vaultImportButtonMovesOnlySelectedFile() {
         rule.runOnUiThread { vm().tab = Tab.FILES; vm().category = null; vm().folder = "JarvisCommandFlow"; vm().sub = Sub.CATEGORY }
         rule.onNodeWithText("JarvisCommandFlow-test.apk").performTouchInput { longClick() }
-        rule.onNodeWithText("Cassaforte").performScrollTo().performClick()
+        rule.onNodeWithText("Cassaforte").assertIsDisplayed().performClick()
         rule.waitUntil(20_000) { !vm().operationBusy && !Storage.file(path).exists() }
         assertTrue(Vault.list(TestUtil.ctx).any { it.name.startsWith("JarvisCommandFlow-") && it.readText() == "apk test" })
     }
