@@ -1,0 +1,44 @@
+10-26 16:18:41.955  4423  4508 I TestRunner: started: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+10-26 16:18:41.976  1584  1862 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download2/b.pdf to set project id.: No such file or directory
+10-26 16:18:41.976  1584  1862 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download2/b.pdf
+10-26 16:18:41.976  1584  1862 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download2/b.pdf
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:18:41.976  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:18:41.979  1584  1862 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download2/b.pdf to set project id.: No such file or directory
+10-26 16:18:41.979  1584  1862 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download2/b.pdf
+10-26 16:18:41.979  1584  1862 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download2/b.pdf
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:18:41.979  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:18:41.990  6220  6607 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 147 [CONTEXT service_id=218 ]
+10-26 16:18:42.018  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:42.034  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:42.037   483   494 I system_server: Background young concurrent copying GC freed 891461(22MB) AllocSpace objects, 41(1076KB) LOS objects, 48% free, 23MB/46MB, paused 57us,36us total 117.956ms
+10-26 16:18:42.039  6220  6603 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 72 uptime_millis: 72 exec_start_elapsed_seconds: 147 [CONTEXT service_id=218 ]
+10-26 16:18:42.066  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:42.091  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:42.147  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:42.176  1584  4672 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:42.222   282   316 I netd    : tetherGetStats() -> {[]} <0.55ms>
+10-26 16:18:42.227   282   316 I netd    : bandwidthSetGlobalAlert(2097152) <0.11ms>
+10-26 16:18:42.246  1584  4672 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:42.257  6220  6600 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 147 [CONTEXT service_id=218 ]
+10-26 16:18:42.273  1584  4672 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:42.280  4423  4508 I TestRunner: finished: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)

@@ -1,0 +1,57 @@
+10-26 16:17:38.927  4423  4508 I TestRunner: started: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.932  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/a.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/a.jpg
+10-26 16:17:38.935  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 5ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:38.937  1322  3962 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+10-26 16:17:38.947  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.948  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/a.jpg to null
+10-26 16:17:38.955  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/2026-10-23 Vacanza 001.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/2026-10-23 Vacanza 001.jpg
+10-26 16:17:38.975  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.977  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 23ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:38.978  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-10-23 Vacanza 001.jpg to null
+10-26 16:17:38.980  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.981  1584  1862 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000026
+10-26 16:17:38.981  1584  1862 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000026
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:17:38.981  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:17:38.983  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/b.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/b.jpg
+10-26 16:17:38.984  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:38.991  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/b.jpg to null
+10-26 16:17:38.991  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:39.000  1584  4672 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:39.006  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/2026-10-24 Vacanza 002.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/2026-10-24 Vacanza 002.jpg
+10-26 16:17:39.013  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 20ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:39.019  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-10-24 Vacanza 002.jpg to null
+10-26 16:17:39.050  4423  4508 I JarvisTest: [FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+10-26 16:17:39.087  4423  4508 I JarvisTest: [FileOps] Eseguito: 6 ok, 0 falliti []
+10-26 16:17:39.099  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf
+10-26 16:17:39.112  4423  4508 I JarvisTest: [FileOps] Annulla: 6 ripristinati, 0 falliti
+10-26 16:17:39.116  4423  4508 I JarvisTest: [FileOps] OK sposta/rinomina/cestino/annulla
+10-26 16:17:39.121  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:39.122  1581  3016 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 2565038 bytes from https://storage.googleapis.com/captions/sound_recognition_v1.zip.
+10-26 16:17:39.124  1584  1684 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to scan triggered by reason: REASON_DEMAND
+10-26 16:17:39.125  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:39.125  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 32ms, 0 inserts 0 updates 1 deletes
+10-26 16:17:39.126  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf to null
+10-26 16:17:39.129  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/PDF/bolletta_enel_marzo.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/PDF/bolletta_enel_marzo.pdf
+10-26 16:17:39.130  1581  2059 I SP.AiAi : Download stopped: captions_i18n_v0_mandatory:sound_recognition_v1, succeeded, size: 2565038
+10-26 16:17:39.131  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:39.133  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/bolletta_enel_marzo.pdf to null
+10-26 16:17:39.135  1080  1100 D BackupCallingPrefCtrl: Not supported by framework. subId = 1
+10-26 16:17:39.136  1584  2030 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:39.138  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-26 16:17:39.141  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:39.143  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-26 16:17:39.144  1584  2030 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:39.146  1584  4642 I MediaProvider: Deleted 0 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:39.148  4423  4508 I TestRunner: finished: planExecuteAndUndo(com.jarvis.files.FileOpsTest)

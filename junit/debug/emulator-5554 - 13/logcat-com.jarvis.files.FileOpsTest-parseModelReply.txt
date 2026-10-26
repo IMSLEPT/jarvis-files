@@ -1,0 +1,27 @@
+10-26 16:17:38.654  4423  4508 I TestRunner: started: parseModelReply(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.659  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.663  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.666  2862  2970 I BugleRcsEngine: [49] bgrh.b: Deleted transfers file: false
+10-26 16:17:38.668  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.673  1584  4672 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.681  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.689  1584  1862 E StorageManager: Failed to open /storage/emulated/0/Download/jt_song.mp3 to set project id.: No such file or directory
+10-26 16:17:38.694  1584  1862 W MediaProvider: Failed to update quota type for /storage/emulated/0/Download/jt_song.mp3
+10-26 16:17:38.694  1584  1862 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Download/jt_song.mp3
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:839)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:17:38.694  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:17:38.704  4423  4508 I JarvisTest: [AI] OK interpretazione risposta del modello (JSON, domande, piano)
+10-26 16:17:38.708  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.711  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.714  1584  2029 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.717  1584  4642 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.720  1584  4642 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.721  4423  4508 I TestRunner: finished: parseModelReply(com.jarvis.files.FileOpsTest)

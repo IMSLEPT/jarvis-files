@@ -1,0 +1,82 @@
+10-26 16:20:20.744  4423  4508 I TestRunner: started: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:20:20.760   126   126 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-26 16:20:20.760   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1110
+10-26 16:20:20.760   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1530
+10-26 16:20:20.760   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a39f0
+10-26 16:20:20.761  8272  8290 I Gralloc4: mapper 4.x is not supported
+10-26 16:20:20.781   126   126 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+10-26 16:20:20.782   125   125 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+10-26 16:20:20.782  8272  8290 W Gralloc4: allocator 4.x is not supported
+10-26 16:20:20.797  8272  8290 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-26 16:20:20.811  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:20:20.829  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:20:20.846  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:20:20.862  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:20:20.893  4423  4508 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@8f18089]
+10-26 16:20:20.899  4423  4508 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-26 16:20:20.914   761   804 D SplashScreenView: Build android.window.SplashScreenView{5e57c25 V.E...... ......ID 0,0-0,0}
+10-26 16:20:20.914   761   804 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-26 16:20:20.914   761   804 D SplashScreenView: Branding: view: android.view.View{82751fa G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-26 16:20:20.916   761   807 W Parcel  : Expecting binder but got null!
+10-26 16:20:21.024  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: PRE_ON_CREATE
+10-26 16:20:21.025  4423  4423 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-26 16:20:21.049  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: CREATED
+10-26 16:20:21.049  4423  4423 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@b4b0efd
+10-26 16:20:21.050  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: STARTED
+10-26 16:20:21.050  4423  4423 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@b4b0efd
+10-26 16:20:21.051  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: RESUMED
+10-26 16:20:21.051  4423  4423 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@b4b0efd
+10-26 16:20:21.053  4423  7279 W Parcel  : Expecting binder but got null!
+10-26 16:20:21.057   483   505 W InputManager-JNI: Input channel object '672e4fc Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+10-26 16:20:21.070  4423  4423 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-26 16:20:21.189   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a2f70
+10-26 16:20:21.210   483   501 W ziparchive: Unable to open '/data/app/~~Xl7AKpmfHCn6USjihakoCA==/com.jarvis.files-Ie2XssTk-77fvXMQsuc-Gw==/base.dm': No such file or directory
+10-26 16:20:21.211   483   501 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +306ms
+10-26 16:20:21.215   483  2600 W InputManager-JNI: Input channel object '6a2b7db com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-26 16:20:21.229   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a27f0
+10-26 16:20:21.229   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1f50
+10-26 16:20:21.229   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a2550
+10-26 16:20:21.229   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a2430
+10-26 16:20:21.229   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a2430
+10-26 16:20:21.233   483  2600 W InputManager-JNI: Input channel object '392a66d Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-26 16:20:21.254   761   807 D EGL_emulation: app_time_stats: avg=1020.47ms min=1020.47ms max=1020.47ms count=1
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1e30
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a0e10
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1e30
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1770
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1770
+10-26 16:20:21.260   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1770
+10-26 16:20:21.276  4423  4423 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-26 16:20:21.276  4423  4423 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-26 16:20:21.346  1466  1466 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-26 16:20:21.347  1466  1466 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-26 16:20:21.348  1466  1466 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-26 16:20:21.348  1466  1466 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-26 16:20:21.349  1466  1466 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-26 16:20:21.359   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1b90
+10-26 16:20:21.381  1466  1474 I putmethod.latin: JIT allocated 106KB for compiled code of boolean drz.a(ikb, java.lang.Object[])
+10-26 16:20:21.381  1466  1474 I putmethod.latin: Compiler allocated 5216KB to compile boolean drz.a(ikb, java.lang.Object[])
+10-26 16:20:21.602   761   804 D SplashScreenView: Build android.window.SplashScreenView{8116d9b V.E...... ......ID 0,0-0,0}
+10-26 16:20:21.602   761   804 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-26 16:20:21.602   761   804 D SplashScreenView: Branding: view: android.view.View{fb31538 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-26 16:20:21.604  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: PAUSED
+10-26 16:20:21.605   761   807 W Parcel  : Expecting binder but got null!
+10-26 16:20:21.606  4423  4423 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@b4b0efd
+10-26 16:20:21.625  8272  8290 W Parcel  : Expecting binder but got null!
+10-26 16:20:21.659   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1290
+10-26 16:20:21.659   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a27f0
+10-26 16:20:21.659   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a1290
+10-26 16:20:21.659   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a27f0
+10-26 16:20:21.678  1017  1017 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-26 16:20:21.681  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: STOPPED
+10-26 16:20:21.682   958  1282 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-26 16:20:21.682   958  1282 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-26 16:20:21.684  4423  4423 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@b4b0efd
+10-26 16:20:21.718  4423  4423 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@b4b0efd in: DESTROYED
+10-26 16:20:21.719  4423  4423 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-26 16:20:21.733  4423  4508 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@8f18089]
+10-26 16:20:21.734   483  2592 W InputManager-JNI: Input channel object '7aa0fa1 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-26 16:20:21.740   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a2970
+10-26 16:20:21.741   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a3e70
+10-26 16:20:21.741   364   376 W TransactionTracing: Could not find layer handle 0x72b4f04a3e70
+10-26 16:20:21.742  4423  4508 I TestRunner: finished: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)

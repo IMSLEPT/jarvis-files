@@ -1,0 +1,103 @@
+10-26 16:18:43.630  4423  4508 I TestRunner: started: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-26 16:18:43.634  6220  6605 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 146 uptime_millis: 146 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:18:43.636  1584  1862 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000055
+10-26 16:18:43.636  1584  1862 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000055
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:18:43.636  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:18:43.646  6220  6234 I .gms.persistent: Background young concurrent copying GC freed 176925(9995KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 14MB/24MB, paused 138us,23us total 195.617ms
+10-26 16:18:43.672  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/moved.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/moved.pdf
+10-26 16:18:43.687  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 18ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.714  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.730  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to null
+10-26 16:18:43.741  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:18:43.744  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 6ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.756  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.757  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+10-26 16:18:43.763  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/moved.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/moved.pdf
+10-26 16:18:43.765  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.780  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to null
+10-26 16:18:43.796  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.800  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:18:43.801  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.802  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+10-26 16:18:43.817  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/moved.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/moved.pdf
+10-26 16:18:43.821  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 5ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.825  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to null
+10-26 16:18:43.840  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.873  1584  4672 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.887  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.934  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.945  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.961  6220  6607 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 149 [CONTEXT service_id=218 ]
+10-26 16:18:44.031  6220  6605 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 128 uptime_millis: 128 exec_start_elapsed_seconds: 149 [CONTEXT service_id=218 ]
+10-26 16:18:44.157  6220  6710 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-26 16:18:44.162  6220  6710 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-26 16:18:44.354  6220  6710 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-26 16:18:44.381  6220  6710 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-26 16:18:44.390  6220  6710 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-26 16:18:44.553  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-26 16:18:44.570  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:44.726   282   316 I netd    : tetherGetStats() -> {[]} <0.46ms>
+10-26 16:18:44.731   282   316 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+10-26 16:18:45.052   483   494 I system_server: Background young concurrent copying GC freed 1011789(22MB) AllocSpace objects, 58(1224KB) LOS objects, 50% free, 22MB/46MB, paused 63us,93us total 232.193ms
+10-26 16:18:45.072  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-26 16:18:45.097  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:45.409  6220  6220 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+10-26 16:18:45.410  6220  6234 I .gms.persistent: Background concurrent copying GC freed 255584(13MB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 11MB/23MB, paused 39us,406us total 275.037ms
+10-26 16:18:45.623  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-26 16:18:45.638  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:45.747  6220  6220 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-26 16:18:45.974   282   316 I netd    : tetherGetStats() -> {[]} <0.31ms>
+10-26 16:18:45.980   282   316 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+10-26 16:18:45.982   282   316 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.53ms>
+10-26 16:18:45.984   282   316 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.74ms>
+10-26 16:18:46.233  1584  1862 D PickerSyncController: syncAllMedia
+10-26 16:18:46.233  1584  1862 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
+10-26 16:18:46.235  1584  1862 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
+10-26 16:18:46.244  1584  1862 D PickerSyncController:    Latest ID/Gen=1405:49ecbdb8-8990-4262-9644-6069d1c2729d:external_primary/292
+10-26 16:18:46.245  1584  1862 D PickerSyncController:    Cached ID/Gen=1405:49ecbdb8-8990-4262-9644-6069d1c2729d:external_primary/265
+10-26 16:18:46.247  1584  1862 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_INCREMENTAL, gen=265, latest=Bundle[{last_media_sync_generation=292, media_collection_id=1405:49ecbdb8-8990-4262-9644-6069d1c2729d:external_primary}]}
+10-26 16:18:46.247  1584  1862 I PickerSyncController: Executing SyncAdd. isLocal: true. authority: com.android.providers.media.photopicker
+10-26 16:18:46.255  1584  1862 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=265}]. Result count: 0. Cursor count: 0
+10-26 16:18:46.256  1584  1862 I PickerSyncController: Executing SyncRemove. isLocal: true. authority: com.android.providers.media.photopicker
+10-26 16:18:46.270  1584  1862 W PickerDbFacade: Unable to promote cloud media with localId: 1000000049
+10-26 16:18:46.272  1584  1862 W PickerDbFacade: Unable to promote cloud media with localId: 1000000050
+10-26 16:18:46.274  1584  1862 W PickerDbFacade: Unable to promote cloud media with localId: 1000000051
+10-26 16:18:46.275  1584  1862 W PickerDbFacade: Unable to promote cloud media with localId: 1000000052
+10-26 16:18:46.275  1584  1862 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=265}]. Result count: 0. Cursor count: 4
+10-26 16:18:46.276  1584  1862 D PickerSyncController: syncAllMediaFromProvider() CLOUD, auth=null, retry=true
+10-26 16:18:46.276  1584  1862 D PickerSyncController: getSyncRequestParams() CLOUD, auth=null
+10-26 16:18:46.276  1584  1862 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_RESET, gen=0, latest=null}
+10-26 16:18:46.276  1584  1862 I PickerSyncController: Executing SyncReset. isLocal: false. authority: null
+10-26 16:18:46.277  1584  1862 I PickerSyncController: SyncReset. isLocal:false. authority: null. result count: 0
+10-26 16:18:46.277  1584  1862 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
+10-26 16:18:46.278  1584  1862 I PickerSyncController: Executing SyncAlbumReset. isLocal: true. authority: com.android.providers.media.photopicker. albumId: null
+10-26 16:18:46.279  1584  1862 I PickerSyncController: Successfully executed SyncResetAlbum. authority: com.android.providers.media.photopicker. albumId: null. Result count: 0
+10-26 16:18:46.281  1584  1862 I PickerSyncController: Executing SyncAlbumReset. isLocal: false. authority: null. albumId: null
+10-26 16:18:46.281  1584  1862 I PickerSyncController: Successfully executed SyncResetAlbum. authority: null. albumId: null. Result count: 0
+10-26 16:18:46.397  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-26 16:18:46.419  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:46.557  6220  6605 I LockboxIntentOp: Completed task: true [CONTEXT service_id=26 ]
+10-26 16:18:46.834  2011  6750 D DownloadManager: [3] Finished with status SUCCESS
+10-26 16:18:46.889  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67366912
+10-26 16:18:46.894  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:47.104  1584  2028 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-26 16:18:47.110  1584  2028 I FuseDaemon: Threshold now 0
+10-26 16:18:47.139  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:47.144  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:47.149  1584  2029 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:18:47.170  6220  6607 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 152 [CONTEXT service_id=218 ]
+10-26 16:18:47.178  1584  4672 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:18:47.184  6220  6603 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 152 [CONTEXT service_id=218 ]
+10-26 16:18:47.203  4423  4508 I TestRunner: finished: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)

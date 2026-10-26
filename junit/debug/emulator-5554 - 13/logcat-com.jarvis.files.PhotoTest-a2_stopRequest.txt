@@ -1,0 +1,9 @@
+10-26 16:18:09.600  4423  4508 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:18:09.610  6340  6414 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
+10-26 16:18:09.659  4423  4508 I TensorFlowLite: Loaded native library: tensorflowlite_jni
+10-26 16:18:09.660  4423  4508 I TensorFlowLite: Didn't load native library: tensorflowlite_jni_gms_client
+10-26 16:18:09.662  4423  4508 I tflite  : Initialized TensorFlow Lite runtime.
+10-26 16:18:09.663  4423  4508 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-26 16:18:09.664  4423  4508 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-26 16:18:09.680  4423  4508 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-26 16:18:09.681  4423  4508 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)

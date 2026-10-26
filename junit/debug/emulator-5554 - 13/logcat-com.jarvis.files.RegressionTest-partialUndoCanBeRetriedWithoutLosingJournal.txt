@@ -1,0 +1,38 @@
+10-26 16:18:43.236  4423  4508 I TestRunner: started: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-26 16:18:43.303  6220  6605 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:18:43.307  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.341  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.349  6220  6605 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 123 uptime_millis: 123 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:18:43.361  1842  1842 V ContactsProvider: Scheduled notifyChange started.
+10-26 16:18:43.365   958   958 D BluetoothPbapService:  onChange on contact uri
+10-26 16:18:43.371  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.378   958  7082 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+10-26 16:18:43.411  4423  4508 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:18:43.460  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.470   282   316 I netd    : tetherGetStats() -> {[]} <0.35ms>
+10-26 16:18:43.473  6340  6577 W PeopleGmsPhenoRgstrIntentOp: Google Api connection failed
+10-26 16:18:43.478   282   316 I netd    : bandwidthSetGlobalAlert(2097152) <0.11ms>
+10-26 16:18:43.481   282   316 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.79ms>
+10-26 16:18:43.482   282   316 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.77ms>
+10-26 16:18:43.484  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.491  6220  6607 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:18:43.552  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:18:43.568  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:43.591  1584  1862 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download/a.pdf to set project id.: No such file or directory
+10-26 16:18:43.592  1584  1862 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:18:43.592  1584  1862 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:18:43.592  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:18:43.600  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:43.614  1584  4603 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:18:43.620  1584  4672 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:18:43.622  1584  4603 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 26ms, 0 inserts 0 updates 0 deletes
+10-26 16:18:43.626  4423  4508 I TestRunner: finished: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)

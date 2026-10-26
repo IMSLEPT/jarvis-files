@@ -1,0 +1,38 @@
+10-26 16:17:34.071  4423  4508 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:17:34.072  2862  2970 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:17:34.089  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:34.095  2862  2970 I RcsClientLib: Connecting ContactsService
+10-26 16:17:34.098  2643  3320 W SystemServiceRegistry: No service published for: persistent_data_block
+10-26 16:17:34.100  2643  3320 D EGL_emulation: eglCreateContext: 0x761bb0af7510: maj 3 min 0 rcv 3
+10-26 16:17:34.106  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:34.118  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to content://media/external_primary/file/1000000022
+10-26 16:17:34.120  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:34.127  1584  4642 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:34.143  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: Failed to set whitelist for augmented autofill service.
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: java.lang.SecurityException: caller is not user's Augmented Autofill Service
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at android.view.autofill.AutofillManager.setAugmentedAutofillWhitelist(AutofillManager.java:2386)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at bzn.b(PG:7)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at caa.g(PG:8)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at caa.i(Unknown Source:3)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at caa.h(PG:2)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at cab.a(PG:2)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at dum.run(PG:41)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at dum.run(PG:70)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at dum.run(PG:65)
+10-26 16:17:34.147  1581  1973 W AiAiAutofill: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:17:34.153  1581  1973 I AiAiTextClassifier: [KnowledgeGraphCollectionsTableDownloaderImpl] reading KnowledgeGraphCollectionsTable from path /data/user/0/com.google.android.as/files/superpacks/kg_collections_table/collections_table_main_21980965fbd997111d89f86c16e9e090/collections_table.
+10-26 16:17:34.154  1581  1973 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/superpacks_manifest.zip
+10-26 16:17:34.166  4423  4508 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+10-26 16:17:34.179  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:34.183  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:34.186  1581  1581 I AiAiEcho: EchoSearch: AppFetcherImpl is initialized with [19] apps [time=4, reason=com.jarvis.files.test is added]
+10-26 16:17:34.189  1584  4377 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:34.195  1584  4377 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:34.198  1584  4642 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:34.200  4423  4508 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)

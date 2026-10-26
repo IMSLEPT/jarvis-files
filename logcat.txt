@@ -1,0 +1,285 @@
+--------- beginning of main
+10-26 16:16:51.901   889   889 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:27.820  4397  4397 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 16:17:27.854  4397  4397 I AndroidRuntime: Using default boot image
+10-26 16:17:27.854  4397  4397 I AndroidRuntime: Leaving lock profiling enabled
+10-26 16:17:28.082  4397  4397 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 16:17:32.327  4423  4508 I TestRunner: run started: 32 tests
+10-26 16:17:32.533  4423  4508 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-26 16:17:32.719  4423  4508 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+10-26 16:17:32.758  4423  4508 I JarvisTest: [FileOps] OK destinazione come percorso completo
+10-26 16:17:33.022  4423  4508 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-26 16:17:33.024  4423  4508 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-26 16:17:33.577  4423  4508 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+10-26 16:17:33.588  4423  4508 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+10-26 16:17:33.629  4423  4508 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-26 16:17:33.630  4423  4508 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+10-26 16:17:33.921  4423  4508 I JarvisTest: [Cestino] OK sposta e ripristina
+10-26 16:17:34.069  4423  4508 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)
+10-26 16:17:34.071  4423  4508 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:17:34.166  4423  4508 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+10-26 16:17:34.200  4423  4508 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:17:34.201  4423  4508 I TestRunner: started: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.225  4423  4508 I JarvisTest: [Backup] OK backup cifrato delle chiavi: esporta, password errata rifiutata, ripristino
+10-26 16:17:38.276  4423  4508 I TestRunner: finished: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.277  4423  4508 I TestRunner: started: sortDownloadRule(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.612  4423  4508 I JarvisTest: [Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+10-26 16:17:38.653  4423  4508 I TestRunner: finished: sortDownloadRule(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.654  4423  4508 I TestRunner: started: parseModelReply(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.704  4423  4508 I JarvisTest: [AI] OK interpretazione risposta del modello (JSON, domande, piano)
+10-26 16:17:38.721  4423  4508 I TestRunner: finished: parseModelReply(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.722  4423  4508 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.830  4423  4508 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-23 Vacanza 001.jpg, JarvisTest/Foto/2026-10-24 Vacanza 002.jpg]
+10-26 16:17:38.871  4423  4508 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+10-26 16:17:38.926  4423  4508 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.927  4423  4508 I TestRunner: started: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-26 16:17:39.050  4423  4508 I JarvisTest: [FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+10-26 16:17:39.087  4423  4508 I JarvisTest: [FileOps] Eseguito: 6 ok, 0 falliti []
+10-26 16:17:39.112  4423  4508 I JarvisTest: [FileOps] Annulla: 6 ripristinati, 0 falliti
+10-26 16:17:39.116  4423  4508 I JarvisTest: [FileOps] OK sposta/rinomina/cestino/annulla
+10-26 16:17:39.148  4423  4508 I TestRunner: finished: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-26 16:17:39.150  4423  4508 I TestRunner: started: realModel(com.jarvis.files.LlmTest)
+10-26 16:17:58.102  4279  4279 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:58.267  5648  5648 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:58.505  5679  5679 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:58.646  5697  5697 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:58.888  5714  5714 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:59.283  5735  5735 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:59.492  5754  5754 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:59.740  5772  5772 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:17:59.897  5790  5790 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:00.073  5808  5808 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:00.172  5825  5825 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:00.350  5843  5843 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:00.536  5869  5869 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:00.800  5887  5887 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:01.027  5904  5904 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:01.328  5932  5932 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:01.465  5949  5949 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:01.554  5966  5966 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:07.828  6160  6160 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:07.907  6177  6177 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:07.989  6195  6195 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:08.198  6226  6226 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:08.257  6256  6256 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:09.448  4423  4508 I JarvisTest: [LLM] Modello: null (null byte), accesso file=true
+10-26 16:18:09.448  4423  4508 E TestRunner: assumption failed: realModel(com.jarvis.files.LlmTest)
+10-26 16:18:09.449  4423  4508 E TestRunner: ----- begin exception -----
+10-26 16:18:09.449  4423  4508 E TestRunner: org.junit.AssumptionViolatedException: Modello non presente: test saltato
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.Assume.assumeTrue(Assume.java:68)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+10-26 16:18:09.449  4423  4508 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+10-26 16:18:09.449  4423  4508 E TestRunner: ----- end exception -----
+10-26 16:18:09.453  4423  4508 I TestRunner: finished: realModel(com.jarvis.files.LlmTest)
+10-26 16:18:09.600  4423  4508 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:18:09.680  4423  4508 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-26 16:18:09.681  4423  4508 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:18:09.682  4423  4508 I TestRunner: started: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-26 16:18:13.362  4423  4508 I JarvisTest: [Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 3599 ms
+10-26 16:18:16.516  4423  4508 I JarvisTest: [Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 3135 ms
+10-26 16:18:19.357  4423  4508 I JarvisTest: [Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 2828 ms
+10-26 16:18:24.669  4423  4508 I JarvisTest: [Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 5297 ms
+10-26 16:18:24.679  4423  4508 I JarvisTest: [Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+10-26 16:18:24.683  4423  4508 I JarvisTest: [Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+10-26 16:18:24.683  4423  4508 I TestRunner: finished: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-26 16:18:24.686  4423  4508 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-26 16:18:41.024  4423  4508 I JarvisTest: [Indice] Foto analizzate: 4 · totale db=(4, 0, 5)
+10-26 16:18:41.039  4423  4508 I JarvisTest: [Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+10-26 16:18:41.095  4423  4508 I JarvisTest: [Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+10-26 16:18:41.099  4423  4508 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+10-26 16:18:41.103  4423  4508 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+10-26 16:18:41.113  4423  4508 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+10-26 16:18:41.114  4423  4508 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-26 16:18:41.191  4423  4508 I TestRunner: started: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:18:41.513  4423  4508 I TestRunner: finished: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:18:41.514  4423  4508 I TestRunner: started: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+10-26 16:18:41.754  4423  4508 I TestRunner: finished: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+10-26 16:18:41.756  4423  4508 I TestRunner: started: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+10-26 16:18:41.954  4423  4508 I TestRunner: finished: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+10-26 16:18:41.955  4423  4508 I TestRunner: started: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+10-26 16:18:42.280  4423  4508 I TestRunner: finished: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+10-26 16:18:42.282  4423  4508 I TestRunner: started: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:18:42.585  4423  4508 I TestRunner: finished: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:18:42.587  4423  4508 I TestRunner: started: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+10-26 16:18:42.819  4423  4508 I TestRunner: finished: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+10-26 16:18:42.821  4423  4508 I TestRunner: started: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+10-26 16:18:43.046  4423  4508 I TestRunner: finished: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+10-26 16:18:43.048  4423  4508 I TestRunner: started: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+10-26 16:18:43.233  4423  4508 I TestRunner: finished: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+10-26 16:18:43.236  4423  4508 I TestRunner: started: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-26 16:18:43.626  4423  4508 I TestRunner: finished: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-26 16:18:43.630  4423  4508 I TestRunner: started: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-26 16:18:47.203  4423  4508 I TestRunner: finished: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-26 16:18:47.204  4423  4508 I TestRunner: started: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+10-26 16:18:47.352  4423  4508 I TestRunner: finished: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+10-26 16:18:47.353  4423  4508 I TestRunner: started: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+10-26 16:18:47.505  4423  4508 I TestRunner: finished: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+10-26 16:18:47.506  4423  4508 I TestRunner: started: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+10-26 16:18:47.611  4423  4508 I TestRunner: finished: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+10-26 16:18:47.612  4423  4508 I TestRunner: started: allScreens(com.jarvis.files.UiTest)
+10-26 16:18:56.035  7471  7471 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:56.165  7495  7495 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:56.289  7531  7531 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:56.404  7551  7551 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:18:59.363  4423  4508 I JarvisTest: [UI] Schermata 01_home OK
+10-26 16:19:03.302  4423  4508 I JarvisTest: [UI] Schermata 02_chat_vuota OK
+10-26 16:19:06.367  4423  4508 I JarvisTest: [UI] Schermata 03_chat_senza_ai OK
+10-26 16:19:09.420  4423  4508 I JarvisTest: [UI] Schermata 04_chat_anteprima OK
+10-26 16:19:09.615  7833  7833 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:19:09.744  7855  7855 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:19:09.936  7872  7872 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:19:10.091  7893  7893 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:19:13.374  4423  4508 I JarvisTest: [UI] Schermata 05_foto OK
+10-26 16:19:19.029  4423  4508 I JarvisTest: [UI] Schermata 06_pulizia_cache OK
+10-26 16:19:21.922  4423  4508 I JarvisTest: [UI] Schermata 07_pulizia_whatsapp OK
+10-26 16:19:24.885  4423  4508 I JarvisTest: [UI] Schermata 08_pulizia_inutili OK
+10-26 16:19:27.876  4423  4508 I JarvisTest: [UI] Schermata 09_altro OK
+10-26 16:19:36.339  4423  4508 I JarvisTest: [UI] Schermata 10_sicurezza OK
+10-26 16:19:39.360  4423  4508 I JarvisTest: [UI] Schermata 11_automazioni OK
+10-26 16:19:42.320  4423  4508 I JarvisTest: [UI] Schermata 12_batteria OK
+10-26 16:19:45.359  4423  4508 I JarvisTest: [UI] Schermata 13_impostazioni OK
+10-26 16:19:50.827  4423  4508 I JarvisTest: [UI] Schermata 14_persone OK
+10-26 16:19:53.756  4423  4508 I JarvisTest: [UI] Schermata 15_cestino OK
+10-26 16:19:56.690  4423  4508 I JarvisTest: [UI] Schermata 16_cassaforte OK
+10-26 16:19:59.613  4423  4508 I JarvisTest: [UI] Schermata 17_trova OK
+10-26 16:20:02.580  4423  4508 I JarvisTest: [UI] Schermata 18_file OK
+10-26 16:20:05.510  4423  4508 I JarvisTest: [UI] Schermata 18b_categoria OK
+10-26 16:20:09.166  4423  4508 I JarvisTest: [UI] Schermata 19_voce OK
+10-26 16:20:14.118  4423  4508 I JarvisTest: [UI] Schermata 20_home_scuro OK
+10-26 16:20:17.127  4423  4508 I JarvisTest: [UI] Schermata 21_chat_scura OK
+10-26 16:20:20.112  4423  4508 I JarvisTest: [UI] Schermata 22_pulizia_scura OK
+10-26 16:20:20.737  4423  4508 I TestRunner: finished: allScreens(com.jarvis.files.UiTest)
+10-26 16:20:20.744  4423  4508 I TestRunner: started: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:20:21.742  4423  4508 I TestRunner: finished: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:20:21.744  4423  4508 I TestRunner: started: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+10-26 16:20:22.653  4423  4508 I TestRunner: finished: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+10-26 16:20:22.655  4423  4508 I TestRunner: started: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+10-26 16:20:23.334  4423  4508 I TestRunner: finished: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+10-26 16:20:23.336  4423  4508 I TestRunner: started: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+10-26 16:20:24.259  4423  4508 I TestRunner: finished: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+10-26 16:20:24.261  4423  4508 I TestRunner: started: homeWorksWithLargeFonts(com.jarvis.files.UsabilityTest)
+10-26 16:20:24.935  4423  4508 E TestRunner: failed: homeWorksWithLargeFonts(com.jarvis.files.UsabilityTest)
+10-26 16:20:24.936  4423  4508 E TestRunner: ----- begin exception -----
+10-26 16:20:24.936  4423  4508 E TestRunner: java.lang.AssertionError: Failed: assertExists.
+10-26 16:20:24.936  4423  4508 E TestRunner: Reason: Expected exactly '1' node but could not find any node that satisfies: (Text + InputText + EditableText contains 'I tuoi file' (ignoreCase: false))
+10-26 16:20:24.936  4423  4508 E TestRunner: 
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists(SemanticsNodeInteraction.kt:125)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.SemanticsNodeInteraction.assertExists$default(SemanticsNodeInteraction.kt:124)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at com.jarvis.files.UsabilityTest.homeWorksWithLargeFonts(UsabilityTest.kt:56)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:322)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:334)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(Unknown Source:8)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(Unknown Source:4)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:605)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(Unknown Source:8)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(Unknown Source:2)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.EspressoLink.withStrategy(EspressoLink.android.kt:69)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:602)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(Unknown Source:8)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(Unknown Source:4)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+10-26 16:20:24.936  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:585)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:334)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+10-26 16:20:24.937  4423  4508 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+10-26 16:20:24.937  4423  4508 E TestRunner: ----- end exception -----
+10-26 16:20:24.945  4423  4508 I TestRunner: finished: homeWorksWithLargeFonts(com.jarvis.files.UsabilityTest)
+10-26 16:20:24.948  4423  4508 I TestRunner: run finished: 32 tests, 1 failed, 0 ignored
+10-26 16:20:25.015  4397  4397 I AndroidRuntime: VM exiting with result code 0.

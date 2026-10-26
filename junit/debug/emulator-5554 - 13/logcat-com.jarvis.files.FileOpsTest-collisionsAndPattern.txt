@@ -1,0 +1,61 @@
+10-26 16:17:38.722  4423  4508 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-26 16:17:38.727  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.730  1584  4672 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.732  1584  1862 E StorageManager: Failed to open /storage/emulated/0/Download/jt_new.pdf to set project id.: No such file or directory
+10-26 16:17:38.736  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.739  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.742  1584  4377 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.765  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.765  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.766  1584  1862 W MediaProvider: Failed to update quota type for /storage/emulated/0/Download/jt_new.pdf
+10-26 16:17:38.766  1584  1862 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Download/jt_new.pdf
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:17:38.766  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:17:38.772  2862  2970 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-26 16:17:38.791   483   511 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-26 16:17:38.791   483   511 E system_server: No package ID 7f found for ID 0x7f150421.
+10-26 16:17:38.801  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.801  1584  2030 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.803  1584  1862 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000037
+10-26 16:17:38.803  1584  1862 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000037
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:17:38.803  1584  1862 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:17:38.806  1584  2029 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:17:38.830  4423  4508 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-23 Vacanza 001.jpg, JarvisTest/Foto/2026-10-24 Vacanza 002.jpg]
+10-26 16:17:38.856  2862  2883 I .apps.messaging: Background young concurrent copying GC freed 132717(6824KB) AllocSpace objects, 38(1392KB) LOS objects, 49% free, 8972KB/17MB, paused 144us,19us total 111.180ms
+10-26 16:17:38.871  4423  4508 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+10-26 16:17:38.872  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-26 16:17:38.876  1584  4672 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.880  1058  1070 I .gms.persistent: Background young concurrent copying GC freed 320249(18MB) AllocSpace objects, 8(448KB) LOS objects, 44% free, 21MB/38MB, paused 2.967ms,15us total 326.507ms
+10-26 16:17:38.881  1584  2029 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.884  1584  4672 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.886  1584  2030 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.889  1584  4672 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.891  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 20ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:38.891  1584  2029 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:17:38.898  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-26 16:17:38.908  1584  4672 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.913  1584  1684 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim (1).pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim (1).pdf
+10-26 16:17:38.919  1584  1684 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 9ms, 0 inserts 0 updates 0 deletes
+10-26 16:17:38.924  1584  4642 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:17:38.925  4423  4583 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim (1).pdf to null
+10-26 16:17:38.926  4423  4508 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)
