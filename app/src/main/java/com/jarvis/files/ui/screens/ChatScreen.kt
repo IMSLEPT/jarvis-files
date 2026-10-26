@@ -24,6 +24,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.ime
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -62,6 +64,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
@@ -109,6 +112,12 @@ fun ChatScreen(vm: MainViewModel) {
     val list = rememberLazyListState()
     val focus = androidx.compose.ui.platform.LocalFocusManager.current
     val keyboard = androidx.compose.ui.platform.LocalSoftwareKeyboardController.current
+    var inputFocused by remember { mutableStateOf(false) }
+    val imeShown = WindowInsets.ime.getBottom(androidx.compose.ui.platform.LocalDensity.current) > 0
+    LaunchedEffect(imeShown, inputFocused) {
+        // An IME can finish opening after focus was cleared (cold keyboard startup).
+        if (imeShown && !inputFocused) keyboard?.hide()
+    }
     val enabled = !vm.busy && !vm.operationBusy
     fun send() {
         if (input.isBlank() || !enabled) return
@@ -190,7 +199,7 @@ fun ChatScreen(vm: MainViewModel) {
                     textStyle = MaterialTheme.typography.bodyLarge.copy(color = J.Text), cursorBrush = SolidColor(J.Blue), maxLines = 5,
                     keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(imeAction = androidx.compose.ui.text.input.ImeAction.Send),
                     keyboardActions = androidx.compose.foundation.text.KeyboardActions(onSend = { send() }),
-                    modifier = Modifier.fillMaxWidth().testTag("chat_input").semantics { contentDescription = "Messaggio per Jarvis" },
+                    modifier = Modifier.fillMaxWidth().onFocusChanged { inputFocused = it.isFocused }.testTag("chat_input").semantics { contentDescription = "Messaggio per Jarvis" },
                 )
             }
             if (vm.busy) IconButton(onClick = { vm.stopReply() }) { Icon(Icons.Filled.StopCircle, "Interrompi risposta", tint = J.Blue) }
