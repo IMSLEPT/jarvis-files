@@ -138,16 +138,18 @@ fun CategoryScreen(vm: MainViewModel) {
     val folder = vm.folder
     var sort by remember { mutableStateOf(0) }
     var files by remember { mutableStateOf<List<FileEntry>?>(null) }
-    val sel = remember { mutableStateListOf<String>() }
+    val sel = remember(cat, folder) { mutableStateListOf<String>() }
+    androidx.activity.compose.BackHandler(enabled = sel.isNotEmpty()) { sel.clear() }
     var reload by remember { mutableStateOf(0) }
-    LaunchedEffect(cat, folder, sort, reload) {
+    LaunchedEffect(cat, folder, sort, reload, vm.filesRevision) {
         files = withContext(Dispatchers.IO) {
             FileIndex.ensure().filter { e ->
                 (cat == null || e.category == cat) && (folder == null || e.folder == folder || e.folder.startsWith("$folder/"))
             }.let { l ->
                 when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; else -> l.sortedByDescending { it.modified } }
-            }.take(1500)
+            }
         }
+        sel.retainAll(files.orEmpty().map { it.rel }.toSet())
     }
     val title = cat?.let { c -> CAT_STYLES.firstOrNull { it.cat == c }?.title } ?: folder?.substringAfterLast('/') ?: "File"
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
@@ -205,7 +207,7 @@ fun CategoryScreen(vm: MainViewModel) {
                     GhostButton("Cassaforte", icon = Icons.Filled.Lock) {
                         scope.launch {
                             val n = withContext(Dispatchers.IO) { chosen.count { Vault.importPath(ctx, it.rel) } }
-                            vm.toast = "$n file nella cartella segreta"; sel.clear(); com.jarvis.files.core.FileIndex.invalidate(); reload++
+                            vm.toast = "$n file nella cartella segreta"; sel.clear(); vm.filesChanged(); reload++
                         }
                     }
                     GhostButton("Cestino", icon = Icons.Filled.Delete, color = J.Red) {
@@ -217,3 +219,4 @@ fun CategoryScreen(vm: MainViewModel) {
         }
     }
 }
+

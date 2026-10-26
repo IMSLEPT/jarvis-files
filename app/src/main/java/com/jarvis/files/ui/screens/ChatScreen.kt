@@ -46,6 +46,9 @@ import androidx.compose.material.icons.filled.Landscape
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.PhoneAndroid
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.AddComment
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.StopCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -97,102 +100,93 @@ private val SUGGESTIONS = listOf(
 @Composable
 fun ChatScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
-    var input by remember { mutableStateOf("") }
+    var input by vm::chatInput
     val list = rememberLazyListState()
-    val speech = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) { r ->
-        if (r.resultCode == Activity.RESULT_OK) {
-            val text = r.data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)?.firstOrNull()
-            if (!text.isNullOrBlank()) vm.send(text)
-        }
+    val focus = androidx.compose.ui.platform.LocalFocusManager.current
+    val enabled = !vm.busy && !vm.operationBusy
+    fun send() {
+        if (input.isBlank() || !enabled) return
+        val text = input
+        input = ""
+        focus.clearFocus()
+        vm.send(text)
     }
     LaunchedEffect(vm.messages.size, vm.busy) {
-        val n = vm.messages.size + (if (vm.busy) 1 else 0)
+        val n = vm.messages.size + if (vm.busy) 1 else 0
         if (n > 0) list.animateScrollToItem(n - 1)
     }
     val p = Prefs(ctx)
     val engineLabel = when (p.aiMode) {
-        AiMode.LOCAL -> "AI nel telefono"
-        AiMode.ONLINE -> "AI su internet"
-        AiMode.AUTO -> if (AiRouter.onlineConfigured(ctx)) "Automatica" else if (AiRouter.localReady(ctx)) "AI nel telefono" else "Da configurare"
+        AiMode.LOCAL -> if (AiRouter.localReady(ctx)) "Locale · sul telefono" else "AI locale da scaricare"
+        AiMode.ONLINE -> "Internet · ${p.onlineModel.substringAfterLast('/')}"
+        AiMode.AUTO -> "Automatica · preferenza locale"
     }
-
     Column(Modifier.fillMaxSize().statusBarsPadding().imePadding()) {
-        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 12.dp, bottom = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-            ArcReactor(34.dp, active = vm.busy)
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            ArcReactor(36.dp, active = vm.busy)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text("Jarvis", style = MaterialTheme.typography.titleLarge, color = J.Text)
-                Text(if (vm.busy) vm.busyText else engineLabel, style = MaterialTheme.typography.bodySmall, color = J.Muted, maxLines = 1)
+                Text(if (vm.busy) vm.busyText else engineLabel, style = MaterialTheme.typography.bodySmall, color = J.Muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
-            if (vm.messages.isNotEmpty()) IconButton(onClick = { vm.clearChat() }) { Icon(Icons.Filled.DeleteSweep, "Nuova chat", tint = J.Muted) }
+            IconButton(onClick = { vm.sub = com.jarvis.files.ui.Sub.SETTINGS }) { Icon(Icons.Filled.Settings, "Impostazioni AI", tint = J.Muted) }
+            IconButton(onClick = { vm.clearChat() }, enabled = !vm.operationBusy) { Icon(Icons.Filled.AddComment, "Nuova chat", tint = J.Blue) }
         }
-
         LazyColumn(
             Modifier.weight(1f).fillMaxWidth(), state = list,
-            contentPadding = PaddingValues(horizontal = 20.dp, vertical = 12.dp),
-            verticalArrangement = Arrangement.spacedBy(18.dp),
+            contentPadding = PaddingValues(horizontal = 20.dp, vertical = 16.dp),
+            verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
-            if (vm.messages.isEmpty()) item {
-                Column(Modifier.fillMaxWidth().padding(top = 36.dp)) {
-                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(190.dp, active = false) }
-                    Spacer(Modifier.height(28.dp))
-                    Text("Agli ordini, signore.", style = MaterialTheme.typography.headlineLarge, color = J.Text)
-                    Text("Cosa metto in ordine oggi?", style = MaterialTheme.typography.headlineLarge, color = J.Muted)
-                    Spacer(Modifier.height(24.dp))
+            if (vm.messages.isEmpty()) item(key = "welcome") {
+                Column(Modifier.fillMaxWidth()) {
+                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(128.dp, active = false) }
+                    Spacer(Modifier.height(20.dp))
+                    Text("Facciamo spazio alle cose importanti.", style = MaterialTheme.typography.headlineMedium, color = J.Text)
+                    Spacer(Modifier.height(8.dp))
+                    Text("Cerca, organizza o rinomina. Prima di modificare i file vedrai sempre un'anteprima.", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
+                    Spacer(Modifier.height(20.dp))
                     GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
-                        SUGGESTIONS.forEach { s ->
-                            Row(
-                                Modifier.fillMaxWidth().pressable({ vm.send(s.prompt) }).padding(horizontal = 16.dp, vertical = 12.dp),
-                                verticalAlignment = Alignment.CenterVertically,
-                            ) {
-                                IconBadge(s.icon, size = 36.dp)
-                                Spacer(Modifier.width(14.dp))
-                                Text(s.title, color = J.Text, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
+                        SUGGESTIONS.forEach { suggestion ->
+                            Row(Modifier.fillMaxWidth().pressable({ vm.send(suggestion.prompt) }, enabled).padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
+                                IconBadge(suggestion.icon, size = 36.dp)
+                                Spacer(Modifier.width(12.dp))
+                                Text(suggestion.title, color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
                                 Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(18.dp))
                             }
                         }
                     }
                 }
             }
-            items(vm.messages, key = { it.id }) { m ->
-                Box(Modifier.animateItem(fadeInSpec = tween(350), placementSpec = tween(300))) { MessageView(vm, m) }
-            }
+            items(vm.messages, key = { it.id }) { m -> MessageView(vm, m) }
             if (vm.busy) item(key = "typing") {
-                Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.animateItem()) {
-                    ArcReactor(26.dp)
-                    Spacer(Modifier.width(12.dp))
+                Row(verticalAlignment = Alignment.CenterVertically) {
                     TypingDots()
+                    Spacer(Modifier.width(12.dp))
+                    Text(vm.busyText, color = J.Muted, style = MaterialTheme.typography.bodySmall)
                 }
             }
         }
-
-        // Barra di input a pillola, con microfono che diventa "invia"
+        if (vm.operationBusy) Text("Operazione sui file in corso…", color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(horizontal = 20.dp))
         Row(
             Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp)
-                .clip(RoundedCornerShape(28.dp)).background(J.Card).padding(start = 20.dp, end = 6.dp, top = 6.dp, bottom = 6.dp),
+                .clip(RoundedCornerShape(26.dp)).background(J.CardHi).padding(start = 18.dp, end = 6.dp, top = 6.dp, bottom = 6.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Box(Modifier.weight(1f).padding(vertical = 10.dp)) {
-                if (input.isEmpty()) Text("Chiedi a Jarvis", color = J.Muted, style = MaterialTheme.typography.bodyLarge)
+                if (input.isEmpty()) Text("Chiedi a Jarvis…", color = J.Muted, style = MaterialTheme.typography.bodyLarge)
                 BasicTextField(
                     value = input, onValueChange = { input = it },
-                    textStyle = MaterialTheme.typography.bodyLarge.copy(color = J.Text),
-                    cursorBrush = SolidColor(J.Blue), maxLines = 5,
+                    textStyle = MaterialTheme.typography.bodyLarge.copy(color = J.Text), cursorBrush = SolidColor(J.Blue), maxLines = 5,
+                    keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(imeAction = androidx.compose.ui.text.input.ImeAction.Send),
+                    keyboardActions = androidx.compose.foundation.text.KeyboardActions(onSend = { send() }),
                     modifier = Modifier.fillMaxWidth(),
                 )
             }
             Spacer(Modifier.width(8.dp))
-            val sendMode = input.isNotBlank()
-            Box(
-                Modifier.size(44.dp).clip(CircleShape).background(if (sendMode) J.Blue else J.CardHi).clickable(enabled = !vm.busy) {
-                    if (sendMode) { vm.send(input); input = "" }
-                    else vm.voiceOpen = true
-                },
-                contentAlignment = Alignment.Center,
-            ) {
-                AnimatedContent(sendMode, transitionSpec = { (fadeIn() + scaleIn(initialScale = 0.6f)) togetherWith (fadeOut() + scaleOut(targetScale = 0.6f)) }, label = "send") { s ->
-                    Icon(if (s) Icons.Filled.ArrowUpward else Icons.Filled.Mic, null, tint = if (s) Color.White else J.Text)
-                }
+            if (vm.busy) IconButton(onClick = { vm.stopReply() }) { Icon(Icons.Filled.StopCircle, "Interrompi risposta", tint = J.Blue) }
+            else IconButton(onClick = { if (input.isNotBlank()) send() else vm.voiceOpen = true }, enabled = enabled) {
+                Icon(if (input.isNotBlank()) Icons.Filled.ArrowUpward else Icons.Filled.Mic,
+                    if (input.isNotBlank()) "Invia messaggio" else "Detta un messaggio", tint = if (enabled) J.Blue else J.Muted)
             }
         }
     }
@@ -216,7 +210,13 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
         ArcReactor(22.dp, active = false, modifier = Modifier.padding(top = 2.dp))
         Spacer(Modifier.width(12.dp))
         Column(Modifier.weight(1f)) {
-            Text(m.text, color = if (m.error) J.Amber else J.Text, style = MaterialTheme.typography.bodyLarge)
+            androidx.compose.foundation.text.selection.SelectionContainer {
+                Text(m.text, color = if (m.error) J.Red else J.Text, style = MaterialTheme.typography.bodyLarge)
+            }
+            if (m.error && vm.messages.lastOrNull()?.id == m.id) {
+                Spacer(Modifier.height(8.dp))
+                com.jarvis.files.ui.components.GhostButton("Riprova") { vm.retryLast() }
+            }
             if (m.engine.isNotBlank()) Text(m.engine, style = MaterialTheme.typography.labelSmall, color = J.Muted, modifier = Modifier.padding(top = 4.dp))
 
             m.questions.forEach { q ->
@@ -226,7 +226,7 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     q.options.forEach { o ->
                         Row(
-                            Modifier.fillMaxWidth().pressable({ vm.send(o) }).clip(RoundedCornerShape(16.dp)).background(J.Card)
+                            Modifier.fillMaxWidth().pressable({ vm.send("${q.question}\nScelgo: $o") }, !vm.busy && !vm.operationBusy && vm.messages.lastOrNull()?.id == m.id).clip(RoundedCornerShape(16.dp)).background(J.Card)
                                 .padding(horizontal = 16.dp, vertical = 12.dp),
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
@@ -242,8 +242,9 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                 when (m.planState) {
                     PlanState.PENDING -> if (plan.isEmpty) {
                         Text(plan.warnings.joinToString("\n"), color = J.Amber, style = MaterialTheme.typography.bodySmall)
-                    } else PlanCard(plan, onConfirm = { vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) })
+                    } else PlanCard(plan, onConfirm = { vm.executePlan(m.id, it) }, onCancel = { vm.cancelPlan(m.id) }, enabled = !vm.busy && !vm.operationBusy)
                     PlanState.RUNNING -> Row(verticalAlignment = Alignment.CenterVertically) { TypingDots(J.Blue); Spacer(Modifier.width(8.dp)); Text("Eseguo…", color = J.Muted) }
+                    PlanState.FAILED -> Text("Operazione non completata: vedi i dettagli sotto.", color = J.Red, style = MaterialTheme.typography.bodySmall)
                     PlanState.DONE -> Text("✓ Eseguito", color = J.Green, style = MaterialTheme.typography.titleSmall)
                     PlanState.CANCELLED -> Text("Annullato", color = J.Muted, style = MaterialTheme.typography.titleSmall)
                 }
@@ -284,3 +285,4 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
         }
     }
 }
+

@@ -145,6 +145,7 @@ object FileOps {
         }
 
         fun addMove(from: String, toDir: String, newName: String? = null) {
+            if (from.isEmpty() || from in protectedTop) { warnings.add("Cartella protetta: $from"); return }
             if (from in touched) return
             val src = Storage.file(from)
             if (!src.exists()) { warnings.add("Non trovato: $from"); return }
@@ -197,7 +198,13 @@ object FileOps {
                 }
                 "delete" -> Storage.sanitize(a.optString("path"))?.let { addTrash(it) }
                 "move_where", "delete_where", "rename_where" -> {
-                    val w = Where.from(a.optJSONObject("where")) ?: continue
+                    val filter = a.optJSONObject("where")
+                    if (filter == null || !filter.has("folder") || filter.isNull("folder")) {
+                        warnings.add("Manca la cartella per l'operazione di gruppo")
+                        continue
+                    }
+                    val w = Where.from(filter) ?: continue
+                    if (w.folder.isNullOrEmpty()) { warnings.add("Operazioni di gruppo sulla radice non consentite"); continue }
                     val matched = entries.filter { w.matches(it, now) }.sortedBy { it.modified }
                     when (a.optString("type").lowercase(Locale.ROOT)) {
                         "move_where" -> {
@@ -213,6 +220,7 @@ object FileOps {
                         }
                     }
                 }
+                else -> warnings.add("Azione non supportata: ${a.optString("type")}")
             }
         }
         return Plan(ops, warnings)
@@ -250,18 +258,21 @@ object FileOps {
 
     // ---------------- Esecuzione ----------------
 
-    fun execute(context: Context, plan: Plan, source: String): ExecResult {
+    @Synchronized fun execute(context: Context, plan: Plan, source: String): ExecResult {
         val journal = JSONArray()
         var done = 0
         var failed = 0
         var freed = 0L
+        var moved = 0
         val errors = ArrayList<String>()
         val scan = ArrayList<File>()
         for (op in plan.ops) {
             try {
                 when (op) {
                     is Op.Mkdir -> {
+                        require(Storage.sanitize(op.dir) == op.dir && op.dir.isNotEmpty()) { "Percorso non valido" }
                         val d = Storage.file(op.dir)
+                        require(!d.exists() || d.isDirectory) { "Esiste già un file con questo nome" }
                         if (!d.exists()) {
                             if (d.mkdirs()) journal.put(JSONObject().put("t", "mkdir").put("d", op.dir))
                             else throw IllegalStateException("cartella non creata")
@@ -269,6 +280,9 @@ object FileOps {
                         done++
                     }
                     is Op.Move -> {
+                        require(Storage.sanitize(op.from) == op.from && op.from.isNotEmpty() && op.from !in protectedTop) { "Origine non valida" }
+                        require(Storage.sanitize(op.to) == op.to && op.to.isNotEmpty()) { "Destinazione non valida" }
+                        require(!op.to.startsWith(op.from + "/")) { "Cartella dentro sé stessa" }
                         val src = Storage.file(op.from)
                         val dst = Storage.file(op.to)
                         dst.parentFile?.mkdirs()
@@ -276,9 +290,11 @@ object FileOps {
                         if (!moveFile(src, dst)) throw IllegalStateException("spostamento fallito")
                         journal.put(JSONObject().put("t", "move").put("f", op.from).put("to", op.to))
                         scan.add(src); scan.add(dst)
+                        moved++
                         done++
                     }
                     is Op.Trash -> {
+                        require(Storage.sanitize(op.path) == op.path && op.path.isNotEmpty() && op.path !in protectedTop) { "Percorso protetto o non valido" }
                         val trashed = Trash.put(context, op.path) ?: throw IllegalStateException("cestino non riuscito")
                         journal.put(JSONObject().put("t", "trash").put("p", op.path).put("id", trashed))
                         scan.add(Storage.file(op.path))
@@ -294,19 +310,21 @@ object FileOps {
         Undo.save(context, journal, source)
         Storage.scanMedia(context, scan)
         FileIndex.invalidate()
-        Stats.addOrganized(context, plan.moves)
+        Stats.addOrganized(context, moved)
         return ExecResult(done, failed, freed, errors)
     }
 
     /** Rinomina (stesso volume) con fallback copia+cancella. */
     fun moveFile(src: File, dst: File): Boolean {
+        if (!src.exists() || dst.exists() || src.canonicalFile == dst.canonicalFile) return false
+        if (src.isDirectory && dst.canonicalPath.startsWith(src.canonicalPath + "/")) return false
         if (src.renameTo(dst)) return true
         if (src.isDirectory) return false
         return runCatching {
             src.inputStream().use { i -> dst.outputStream().use { o -> i.copyTo(o, 1 shl 16) } }
             dst.setLastModified(src.lastModified())
-            if (dst.length() == src.length()) src.delete() else { dst.delete(); false }
-        }.getOrDefault(false)
+            if (dst.length() == src.length() && src.delete()) true else { dst.delete(); false }
+        }.onFailure { dst.delete() }.getOrDefault(false)
     }
 }
 
@@ -328,7 +346,9 @@ object Undo {
     fun undo(c: Context): Pair<Int, Int> {
         val f = file(c)
         if (!f.exists()) return 0 to 0
-        val ops = JSONObject(f.readText()).getJSONArray("ops")
+        val saved = JSONObject(f.readText())
+        val ops = saved.getJSONArray("ops")
+        val remaining = ArrayList<JSONObject>()
         var ok = 0
         var ko = 0
         val scan = ArrayList<File>()
@@ -351,11 +371,13 @@ object Undo {
                     else -> true
                 }
             }.getOrDefault(false)
-            if (success) ok++ else ko++
+            if (success) ok++ else { ko++; remaining.add(o) }
         }
-        f.delete()
+        if (remaining.isEmpty()) f.delete()
+        else f.writeText(saved.put("ops", JSONArray(remaining.asReversed())).toString())
         Storage.scanMedia(c, scan)
         FileIndex.invalidate()
         return ok to ko
     }
 }
+

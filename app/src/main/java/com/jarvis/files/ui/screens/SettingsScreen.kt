@@ -105,6 +105,7 @@ fun SettingsScreen(vm: MainViewModel) {
     var dl by remember { mutableStateOf(LocalAi.downloadState(ctx)) }
     var localReady by remember { mutableStateOf(AiRouter.localReady(ctx)) }
     var dlError by remember { mutableStateOf("") }
+    var resolvingModel by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {
         while (isActive) {
@@ -125,7 +126,7 @@ fun SettingsScreen(vm: MainViewModel) {
             AiMode.entries.forEach { m -> Chip(m.label, mode == m) { mode = m; p.aiMode = m } }
         }
         Text(
-            "Automatica: usa internet se configurato (più veloce e intelligente), altrimenti l'AI nel telefono. " +
+            "Solo telefono: nessuna richiesta al cloud. Automatica: preferisce il modello locale, poi internet se configurato. " +
                 "Con l'AI su internet vengono inviati i NOMI dei file e le richieste, mai il contenuto dei file o le foto.",
             color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(vertical = 8.dp),
         )
@@ -149,14 +150,16 @@ fun SettingsScreen(vm: MainViewModel) {
                 else -> {
                     if (d?.failed == true) Text("Download non riuscito: riprova.", color = J.Amber)
                     LOCAL_MODELS.forEach { m ->
-                        Column(Modifier.fillMaxWidth().clickable {
+                        Column(Modifier.fillMaxWidth().clickable(enabled = !resolvingModel) {
                             dlError = ""
+                            resolvingModel = true
                             scope.launch {
                                 runCatching {
                                     val (file, size) = LocalAi.findModelFile(m.repo)
                                     if (size > 0 && size > com.jarvis.files.core.Storage.freeBytes() - 1_000_000_000L) error("Spazio insufficiente: servono ${Fmt.size(size)}")
                                     LocalAi.startDownload(ctx, m.repo, file)
                                 }.onFailure { dlError = it.message ?: "Errore" }
+                                resolvingModel = false
                             }
                         }.padding(vertical = 8.dp)) {
                             Text("⬇ ${m.title}", color = J.Electric, style = MaterialTheme.typography.titleSmall)
@@ -164,7 +167,7 @@ fun SettingsScreen(vm: MainViewModel) {
                         }
                     }
                     if (dlError.isNotBlank()) Text(dlError, color = J.Amber, style = MaterialTheme.typography.bodySmall)
-                    Text("Consigliato in Wi-Fi.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    Text(if (resolvingModel) "Cerco il modello da scaricare…" else "Consigliato in Wi-Fi. Il modello viene scaricato una sola volta.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                 }
             }
         }
@@ -175,7 +178,7 @@ fun SettingsScreen(vm: MainViewModel) {
             Spacer(Modifier.height(6.dp))
             ONLINE_PRESETS.forEach { pr ->
                 Column(Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         Chip(pr.name, base == pr.baseUrl) { base = pr.baseUrl; model = pr.model; p.onlineBaseUrl = pr.baseUrl; p.onlineModel = pr.model; p.onlineTokenLimit = pr.tokenLimit }
                         Spacer(Modifier.width(8.dp))
                         Text("Crea chiave ›", color = J.Cyan, style = MaterialTheme.typography.labelLarge, modifier = Modifier.clickable {
@@ -322,3 +325,4 @@ private fun PasswordDialog(title: String, confirm: Boolean, onDismiss: () -> Uni
         dismissButton = { androidx.compose.material3.TextButton(onClick = onDismiss) { Text("Annulla") } },
     )
 }
+

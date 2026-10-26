@@ -15,7 +15,8 @@ object Vault {
 
     fun list(c: Context): List<File> = dir(c).listFiles()?.sortedByDescending { it.lastModified() } ?: emptyList()
 
-    private fun unique(d: File, name: String): File {
+    private fun unique(d: File, unsafeName: String): File {
+        val name = unsafeName.replace('\\', '/').substringAfterLast('/').replace(Regex("[\\p{Cntrl}]"), "").trim().take(180).takeUnless { it.isEmpty() || it == "." || it == ".." } ?: "file_${System.currentTimeMillis()}"
         var f = File(d, name)
         var n = 1
         while (f.exists()) { f = File(d, "${name.substringBeforeLast('.')} ($n).${name.substringAfterLast('.', "")}".trimEnd('.')); n++ }
@@ -23,7 +24,7 @@ object Vault {
     }
 
     /** Sposta nella cassaforte un file della memoria (percorso relativo). */
-    fun importPath(c: Context, rel: String): Boolean {
+    @Synchronized fun importPath(c: Context, rel: String): Boolean {
         val src = Storage.file(rel)
         if (!src.isFile) return false
         val dst = unique(dir(c), src.name)
@@ -31,12 +32,12 @@ object Vault {
             src.inputStream().use { i -> dst.outputStream().use { o -> i.copyTo(o) } }
             dst.length() == src.length() && src.delete()
         }.getOrDefault(false)
-        if (!ok) dst.delete() else Storage.scanMedia(c, listOf(src))
+        if (!ok) dst.delete() else { Storage.scanMedia(c, listOf(src)); FileIndex.invalidate() }
         return ok
     }
 
     /** Importa da un Uri del selettore di sistema; prova a cancellare l'originale. */
-    fun importUri(c: Context, uri: Uri, deleteOriginal: Boolean = true): Boolean {
+    @Synchronized fun importUri(c: Context, uri: Uri, deleteOriginal: Boolean = true): Boolean {
         val name = c.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
             if (it.moveToFirst()) it.getString(0) else null
         } ?: "file_${System.currentTimeMillis()}"
@@ -51,7 +52,7 @@ object Vault {
     }
 
     /** Salva un file ricevuto da un'altra app in Download/Jarvis. */
-    fun copyToDownload(c: Context, uri: Uri): Boolean {
+    @Synchronized fun copyToDownload(c: Context, uri: Uri): Boolean {
         val name = c.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use {
             if (it.moveToFirst()) it.getString(0) else null
         } ?: "file_${System.currentTimeMillis()}"
@@ -63,9 +64,10 @@ object Vault {
     }
 
     /** Riporta il file nella cartella Download/Jarvis Esportati. */
-    fun export(c: Context, f: File): File? {
+    @Synchronized fun export(c: Context, f: File): File? {
         val outDir = Storage.file("Download/Jarvis Esportati").apply { mkdirs() }
         val dst = unique(outDir, f.name)
         return if (FileOps.moveFile(f, dst)) dst.also { Storage.scanMedia(c, listOf(it)) } else null
     }
 }
+

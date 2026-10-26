@@ -24,6 +24,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -121,7 +122,7 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
             .pressable(onClick, enabled)
             .clip(RoundedCornerShape(50))
             .background(if (enabled) J.brand else Brush.linearGradient(listOf(J.CardHi, J.CardHi)))
-            .padding(horizontal = 20.dp, vertical = 14.dp),
+            .heightIn(min = 48.dp).padding(horizontal = 20.dp, vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {
@@ -129,7 +130,7 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
             Icon(icon, null, tint = if (enabled) Color.White else J.Muted, modifier = Modifier.size(18.dp))
             Spacer(Modifier.width(8.dp))
         }
-        Text(text, color = if (enabled) Color.White else J.Muted, style = MaterialTheme.typography.titleSmall, maxLines = 1)
+        Text(text, color = if (enabled) Color.White else J.Muted, style = MaterialTheme.typography.titleSmall, overflow = TextOverflow.Ellipsis, maxLines = 1)
     }
 }
 
@@ -140,7 +141,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
             .pressable(onClick)
             .clip(RoundedCornerShape(50))
             .background(J.CardHi)
-            .padding(horizontal = 16.dp, vertical = 11.dp),
+            .heightIn(min = 48.dp).padding(horizontal = 16.dp, vertical = 11.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {
@@ -352,3 +353,4 @@ fun EmptyState(title: String, text: String, modifier: Modifier = Modifier) {
         Text(text, style = MaterialTheme.typography.bodyMedium, color = J.Muted, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
+

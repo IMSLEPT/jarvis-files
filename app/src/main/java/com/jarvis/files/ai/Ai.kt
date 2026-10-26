@@ -37,7 +37,7 @@ object AiRouter {
     fun onlineConfigured(c: Context) = Prefs(c).onlineApiKey.isNotBlank()
 
     /** Restituisce il motore da usare o lancia [AiUnavailable] con un messaggio chiaro. */
-    fun engine(c: Context, preferLocal: Boolean = false): AiEngine {
+    fun engine(c: Context, preferLocal: Boolean = true): AiEngine {
         val p = Prefs(c)
         val online = { OnlineAi(p.onlineBaseUrl, p.onlineApiKey, p.onlineModel) }
         val local = { LocalAi.engine(c) }
@@ -103,3 +103,4 @@ fun extractJson(text: String): JSONObject? {
     }
     return null
 }
+

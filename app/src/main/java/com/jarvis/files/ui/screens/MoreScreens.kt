@@ -73,6 +73,7 @@ import com.jarvis.files.core.AppUsage
 import com.jarvis.files.core.DeviceInfo
 import com.jarvis.files.core.FileEntry
 import com.jarvis.files.core.Fmt
+import com.jarvis.files.core.Prefs
 import com.jarvis.files.core.Storage
 import com.jarvis.files.core.Trash
 import com.jarvis.files.core.TrashItem
@@ -94,6 +95,7 @@ import com.jarvis.files.ui.components.LinearMeter
 import com.jarvis.files.ui.components.SectionTitle
 import com.jarvis.files.ui.components.StatTile
 import com.jarvis.files.ui.theme.J
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -288,12 +290,12 @@ fun TrashScreen(vm: MainViewModel) {
                 Spacer(Modifier.width(10.dp))
                 Column(Modifier.weight(1f)) {
                     Text(t.original.substringAfterLast('/'), color = J.Text, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                    val left = 30 - ((System.currentTimeMillis() - t.deletedAt) / 86_400_000L)
+                    val left = (Prefs(ctx).trashDays - ((System.currentTimeMillis() - t.deletedAt) / 86_400_000L)).coerceAtLeast(0)
                     Text("${Fmt.size(t.size)} · da ${t.original.substringBeforeLast('/', "radice")} · ancora $left giorni", color = J.Muted,
                         style = MaterialTheme.typography.bodySmall, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 }
                 IconButton(onClick = {
-                    scope.launch { val ok = withContext(Dispatchers.IO) { Trash.restore(ctx, t.id) }; vm.toast = if (ok) "Ripristinato" else "Ripristino non riuscito"; reload++ }
+                    scope.launch { val ok = withContext(Dispatchers.IO) { Trash.restore(ctx, t.id) }; vm.toast = if (ok) "Ripristinato" else "Ripristino non riuscito"; vm.filesChanged(); reload++ }
                 }) { Icon(Icons.Filled.Restore, "Ripristina", tint = J.Green) }
             }
         }
@@ -302,7 +304,7 @@ fun TrashScreen(vm: MainViewModel) {
         onDismissRequest = { confirmEmpty = false }, containerColor = J.Card,
         title = { Text("Svuotare il cestino?", color = J.Text) },
         text = { Text("I file verranno eliminati per sempre e non si potranno recuperare.", color = J.Muted) },
-        confirmButton = { TextButton(onClick = { confirmEmpty = false; scope.launch { withContext(Dispatchers.IO) { Trash.emptyAll(ctx) }; reload++ } }) { Text("Svuota", color = J.Red) } },
+        confirmButton = { TextButton(onClick = { confirmEmpty = false; scope.launch { withContext(Dispatchers.IO) { Trash.emptyAll(ctx) }; vm.filesChanged(); reload++ } }) { Text("Svuota", color = J.Red) } },
         dismissButton = { TextButton(onClick = { confirmEmpty = false }) { Text("Annulla") } },
     )
 }
@@ -312,14 +314,36 @@ fun TrashScreen(vm: MainViewModel) {
 @Composable
 fun VaultScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
+    var authorized by remember { mutableStateOf(false) }
+    val lifecycle = androidx.lifecycle.compose.LocalLifecycleOwner.current.lifecycle
+    androidx.compose.runtime.DisposableEffect(lifecycle) {
+        val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
+            if (event == androidx.lifecycle.Lifecycle.Event.ON_STOP) authorized = false
+        }
+        lifecycle.addObserver(observer)
+        onDispose { lifecycle.removeObserver(observer) }
+    }
+    if (!authorized) {
+        Column(Modifier.fillMaxSize().statusBarsPadding().padding(20.dp)) {
+            SubHeader("Cartella segreta") { vm.sub = Sub.NONE }
+            Spacer(Modifier.height(24.dp))
+            Text("I tuoi file privati", color = J.Text, style = MaterialTheme.typography.headlineSmall)
+            Text("Usa impronta o PIN per visualizzarli.", color = J.Muted, modifier = Modifier.padding(vertical = 16.dp))
+            GradientButton("Sblocca cartella", Modifier.fillMaxWidth(), icon = Icons.Filled.Lock) {
+                (ctx as? com.jarvis.files.MainActivity)?.authenticateVault { authorized = true }
+            }
+        }
+        return
+    }
     var files by remember { mutableStateOf<List<File>>(emptyList()) }
     var reload by remember { mutableStateOf(0) }
     val scope = rememberCoroutineScope()
-    LaunchedEffect(reload) { files = Vault.list(ctx) }
+    LaunchedEffect(reload) { files = withContext(Dispatchers.IO) { Vault.list(ctx) } }
     val picker = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris ->
         scope.launch {
             val n = withContext(Dispatchers.IO) { uris.count { Vault.importUri(ctx, it) } }
             vm.toast = "$n file nella cartella segreta"
+            vm.filesChanged()
             reload++
         }
     }
@@ -348,7 +372,7 @@ fun VaultScreen(vm: MainViewModel) {
                 }
                 IconButton(onClick = { Storage.shareFiles(ctx, listOf(f)) }) { Icon(Icons.Filled.Share, "Condividi", tint = J.Cyan) }
                 IconButton(onClick = {
-                    scope.launch { val r = withContext(Dispatchers.IO) { Vault.export(ctx, f) }; vm.toast = if (r != null) "Esportato in Download/Jarvis Esportati" else "Esportazione non riuscita"; reload++ }
+                    scope.launch { val r = withContext(Dispatchers.IO) { Vault.export(ctx, f) }; vm.toast = if (r != null) "Esportato in Download/Jarvis Esportati" else "Esportazione non riuscita"; vm.filesChanged(); reload++ }
                 }) { Icon(Icons.Filled.Upload, "Esporta", tint = J.Cyan) }
             }
         }
@@ -364,31 +388,38 @@ fun FindScreen(vm: MainViewModel) {
     var q by remember { mutableStateOf("") }
     var res by remember { mutableStateOf<List<FileEntry>?>(null) }
     var busy by remember { mutableStateOf(false) }
+    var searchJob by remember { mutableStateOf<kotlinx.coroutines.Job?>(null) }
     fun search() {
-        if (q.isBlank()) return
+        searchJob?.cancel()
+        val text = q.trim()
+        if (text.isBlank()) { busy = false; res = null; return }
         busy = true
-        scope.launch {
+        searchJob = scope.launch {
+            try {
             res = withContext(Dispatchers.IO) {
                 // Prima prova con l'AI (capisce "di marzo", "della luce"...), altrimenti ricerca per parole
                 val ai = runCatching {
                     val engine = com.jarvis.files.ai.AiRouter.engine(ctx)
                     val sys = "Converti la richiesta in JSON per cercare file per nome. Rispondi SOLO JSON: " +
                         "{\"keywords\":[parole probabili nel nome file, con sinonimi e nomi di aziende, es. enel, luce, bolletta, fattura],\"ext\":[estensioni],\"folder\":\"\",\"from\":\"AAAA-MM-GG\",\"to\":\"AAAA-MM-GG\"}. Oggi è ${Fmt.iso(System.currentTimeMillis())}."
-                    com.jarvis.files.ai.extractJson(engine.complete(sys, listOf(com.jarvis.files.ai.ChatMsg("user", q)), 300))
+                    com.jarvis.files.ai.extractJson(engine.complete(sys, listOf(com.jarvis.files.ai.ChatMsg("user", text)), 300))
                 }.getOrNull()
-                val query = ai?.let { Brain.parseFileQuery(it) } ?: Brain.simpleQuery(q)
-                Brain.searchFiles(query).ifEmpty { Brain.searchFiles(Brain.simpleQuery(q)) }
+                val query = ai?.let { Brain.parseFileQuery(it) } ?: Brain.simpleQuery(text)
+                Brain.searchFiles(query).ifEmpty { Brain.searchFiles(Brain.simpleQuery(text)) }
             }
-            busy = false
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e }
+            catch (e: Exception) { vm.toast = "Ricerca non riuscita: ${e.message}" }
+            finally { if (kotlinx.coroutines.currentCoroutineContext().isActive) busy = false }
         }
     }
     LazyColumn(Modifier.fillMaxSize().statusBarsPadding(), contentPadding = PaddingValues(14.dp)) {
         item {
             SubHeader("Trova documenti", "Scrivi come lo diresti a voce") { vm.sub = Sub.NONE }
             OutlinedTextField(
-                value = q, onValueChange = { q = it }, modifier = Modifier.fillMaxWidth(), singleLine = true,
+                value = q, onValueChange = { q = it; if (it.isBlank()) search() }, modifier = Modifier.fillMaxWidth(), singleLine = true,
                 placeholder = { Text("es. bolletta della luce di marzo", color = J.Muted) },
                 leadingIcon = { Icon(Icons.Filled.Search, null, tint = J.Cyan) },
+                trailingIcon = { IconButton(onClick = { search() }) { Icon(Icons.Filled.Search, "Cerca documenti", tint = J.Blue) } },
                 shape = RoundedCornerShape(18.dp),
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                 keyboardActions = KeyboardActions(onSearch = { search() }),
@@ -521,3 +552,4 @@ private fun AutomationDialog(initial: Automation, isNew: Boolean, onDismiss: () 
         },
     )
 }
+

@@ -23,7 +23,7 @@ import org.junit.runner.RunWith
 class UiTest {
     init {
         TestUtil.grantAll()
-        Prefs(TestUtil.ctx).apply { onboardingDone = true; biometricLock = false }
+        Prefs(TestUtil.ctx).apply { onboardingDone = true; biometricLock = false; aiMode = com.jarvis.files.core.AiMode.AUTO; onlineApiKey = ""; localModelPath = ""; localDownloadId = -1 }
     }
 
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
@@ -93,3 +93,4 @@ class UiTest {
         TestUtil.sh("cmd uimode night no")
     }
 }
+

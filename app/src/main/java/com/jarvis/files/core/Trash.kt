@@ -33,7 +33,8 @@ object Trash {
 
     /** Sposta nel cestino; restituisce l'id oppure null. */
     fun put(c: Context, rel: String): String? = synchronized(lock) {
-        val src = Storage.file(rel)
+        val clean = Storage.sanitize(rel)?.takeIf { it.isNotEmpty() } ?: return null
+        val src = Storage.file(clean)
         if (!src.exists()) return null
         val id = "${System.currentTimeMillis()}_${(1000..9999).random()}_${src.name}"
         val size = if (src.isDirectory) FileOps.dirSize(src) else src.length()
@@ -52,13 +53,19 @@ object Trash {
         val idx = (0 until a.length()).firstOrNull { a.getJSONObject(it).getString("id") == id } ?: return false
         val o = a.getJSONObject(idx)
         var target = Storage.file(o.getString("orig"))
-        if (target.exists()) target = File(target.parentFile, "${target.nameWithoutExtension} (ripristinato).${target.extension}".trimEnd('.'))
+        var n = 1
+        val original = target
+        while (target.exists()) {
+            target = File(original.parentFile, "${original.nameWithoutExtension} (ripristinato $n)" + if (original.extension.isEmpty()) "" else ".${original.extension}")
+            n++
+        }
         target.parentFile?.mkdirs()
         val ok = FileOps.moveFile(File(dir, id), target)
         if (ok) {
             a.remove(idx)
             store(c, a)
             Storage.scanMedia(c, listOf(target))
+            FileIndex.invalidate()
         }
         return ok
     }
@@ -66,15 +73,14 @@ object Trash {
     fun deleteForever(c: Context, id: String): Boolean = synchronized(lock) {
         val a = load(c)
         val idx = (0 until a.length()).firstOrNull { a.getJSONObject(it).getString("id") == id } ?: return false
-        File(dir, id).deleteRecursively()
+        if (!File(dir, id).deleteRecursively()) return false
         a.remove(idx)
         store(c, a)
         return true
     }
 
     fun emptyAll(c: Context) = synchronized(lock) {
-        items(c).forEach { File(dir, it.id).deleteRecursively() }
-        store(c, JSONArray())
+        items(c).forEach { deleteForever(c, it.id) }
     }
 
     /** Elimina definitivamente gli elementi più vecchi di [days] giorni. */
@@ -85,3 +91,4 @@ object Trash {
 
     fun totalSize(c: Context) = items(c).sumOf { it.size }
 }
+

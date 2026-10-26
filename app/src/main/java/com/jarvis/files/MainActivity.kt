@@ -33,7 +33,7 @@ class MainActivity : FragmentActivity() {
             navigationBarStyle = androidx.activity.SystemBarStyle.light(android.graphics.Color.TRANSPARENT, android.graphics.Color.TRANSPARENT),
         )
         createPrompt()
-        handleIntent(intent)
+        if (savedInstanceState == null) handleIntent(intent)
         setContent {
             JarvisTheme {
                 JarvisRoot(vm, locked = Prefs(this).biometricLock && !unlocked.value, onUnlock = { authenticate() })
@@ -43,6 +43,7 @@ class MainActivity : FragmentActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
+        setIntent(intent)
         handleIntent(intent)
     }
 
@@ -85,6 +86,7 @@ class MainActivity : FragmentActivity() {
         }
     }
 
+    private var vaultUnlockAction: (() -> Unit)? = null
     private var prompting = false
     private var prompt: BiometricPrompt? = null
 
@@ -95,12 +97,29 @@ class MainActivity : FragmentActivity() {
                 prompting = false
                 unlocked.value = true
                 lastUnlock = System.currentTimeMillis()
+                vaultUnlockAction?.invoke()
+                vaultUnlockAction = null
             }
 
             override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
+                vaultUnlockAction = null
                 prompting = false
             }
         })
+    }
+
+    fun authenticateVault(onSuccess: () -> Unit) {
+        if (prompting) return
+        val authenticators = BIOMETRIC_WEAK or DEVICE_CREDENTIAL
+        if (BiometricManager.from(this).canAuthenticate(authenticators) != BiometricManager.BIOMETRIC_SUCCESS) {
+            android.widget.Toast.makeText(this, "Configura un PIN o un'impronta per aprire la cartella segreta", android.widget.Toast.LENGTH_LONG).show()
+            return
+        }
+        vaultUnlockAction = onSuccess
+        prompting = true
+        val info = BiometricPrompt.PromptInfo.Builder().setTitle("Cartella segreta")
+            .setSubtitle("Sblocca con impronta o PIN").setAllowedAuthenticators(authenticators).build()
+        runCatching { prompt!!.authenticate(info) }.onFailure { prompting = false; vaultUnlockAction = null }
     }
 
     fun authenticate() {
@@ -119,3 +138,4 @@ class MainActivity : FragmentActivity() {
         runCatching { prompt!!.authenticate(info) }.onFailure { prompting = false }
     }
 }
+

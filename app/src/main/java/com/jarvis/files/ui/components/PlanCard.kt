@@ -37,13 +37,14 @@ import com.jarvis.files.ui.theme.J
 
 /** Anteprima di un piano: l'utente può escludere singole operazioni prima di confermare. */
 @Composable
-fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confirmLabel: String = "Esegui") {
+fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confirmLabel: String = "Esegui", enabled: Boolean = true) {
     val excluded = remember(plan) { mutableStateListOf<Int>() }
+    val selectedPlan = Plan(plan.ops.filterIndexed { i, _ -> i !in excluded }, plan.warnings)
     var expanded by remember(plan) { mutableStateOf(plan.ops.size <= 8) }
     GlassCard(Modifier.fillMaxWidth(), highlight = true) {
         Text("ANTEPRIMA", style = MaterialTheme.typography.labelSmall, color = J.Cyan)
         Spacer(Modifier.height(4.dp))
-        Text(plan.summary(), style = MaterialTheme.typography.titleMedium, color = J.Text)
+        Text(selectedPlan.summary(), style = MaterialTheme.typography.titleMedium, color = J.Text)
         plan.warnings.take(3).forEach {
             Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 4.dp)) {
                 Icon(Icons.Filled.Warning, null, tint = J.Amber, modifier = Modifier.size(14.dp))
@@ -56,7 +57,7 @@ fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confir
         shown.forEach { (i, op) ->
             val off = i in excluded
             Row(
-                Modifier.fillMaxWidth().clickable { if (off) excluded.remove(i) else excluded.add(i) }.padding(vertical = 5.dp),
+                Modifier.fillMaxWidth().clickable(enabled = enabled) { if (off) excluded.remove(i) else excluded.add(i) }.padding(vertical = 5.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Icon(if (off) Icons.Filled.RadioButtonUnchecked else Icons.Filled.CheckCircle, null,
@@ -76,9 +77,9 @@ fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confir
                 modifier = Modifier.clickable { expanded = true }.padding(vertical = 8.dp))
         }
         Spacer(Modifier.height(10.dp))
-        Row(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.CenterVertically) {
-            GradientButton(confirmLabel, Modifier.weight(1f), Icons.Filled.CheckCircle) {
-                onConfirm(Plan(plan.ops.filterIndexed { i, _ -> i !in excluded }, plan.warnings))
+        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            GradientButton(confirmLabel, Modifier.fillMaxWidth(), Icons.Filled.CheckCircle, enabled = enabled && !selectedPlan.isEmpty) {
+                onConfirm(selectedPlan)
             }
             GhostButton("Annulla", icon = Icons.Filled.Close, color = J.Muted, onClick = onCancel)
         }
@@ -88,3 +89,4 @@ fun PlanCard(plan: Plan, onConfirm: (Plan) -> Unit, onCancel: () -> Unit, confir
         }
     }
 }
+

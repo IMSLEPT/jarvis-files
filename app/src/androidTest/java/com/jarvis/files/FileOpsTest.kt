@@ -129,7 +129,7 @@ class FileOpsTest {
             ),
             "Perché il telefono è lento?",
         )
-        assertEquals("il piano resta visibile insieme alle domande", 1, r.plan!!.ops.size)
+        assertEquals("una richiesta ambigua non deve avere un piano eseguibile", null, r.plan)
         assertEquals(null, r.photoSearch)
         assertEquals(null, r.fileQuery)
         val r2 = Brain.clean(
@@ -220,3 +220,4 @@ class FileOpsTest {
         }
     }
 }
+

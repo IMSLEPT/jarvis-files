@@ -86,11 +86,16 @@ class OnlineAi(private val baseUrl: String, private val apiKey: String, private 
             setRequestProperty("HTTP-Referer", "https://github.com/IMSLEPT/jarvis-files")
             setRequestProperty("X-Title", "Jarvis Files")
         }
-        c.outputStream.use { it.write(json.toByteArray()) }
-        return readResponse(c)
+        try {
+            c.outputStream.use { it.write(json.toByteArray(Charsets.UTF_8)) }
+            return readResponse(c)
+        } catch (e: java.net.SocketTimeoutException) {
+            throw AiUnavailable("Il servizio AI non risponde in tempo. Riprova o cambia motore nelle impostazioni.")
+        } finally { c.disconnect() }
     }
 
     private fun readResponse(c: HttpURLConnection): String {
+        try {
         val code = c.responseCode
         val stream = if (code in 200..299) c.inputStream else c.errorStream
         val text = stream?.bufferedReader()?.use { it.readText() } ?: ""
@@ -116,5 +121,7 @@ class OnlineAi(private val baseUrl: String, private val apiKey: String, private 
             )
         }
         return text
+        } finally { c.disconnect() }
     }
 }
+

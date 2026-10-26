@@ -7,6 +7,9 @@ import androidx.compose.material.icons.outlined.CleaningServices
 import androidx.compose.material.icons.outlined.Description
 import androidx.compose.material.icons.outlined.GridView
 import androidx.compose.material.icons.outlined.Home
+import androidx.compose.foundation.layout.ime
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.offset
 import android.Manifest
 import android.content.Intent
@@ -143,7 +146,7 @@ private fun Onboarding(hasAccess: Boolean, onDone: () -> Unit) {
     val ctx = LocalContext.current
     val notif = rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { }
     Column(
-        Modifier.fillMaxSize().statusBarsPadding().padding(24.dp),
+        Modifier.fillMaxSize().statusBarsPadding().navigationBarsPadding().verticalScroll(rememberScrollState()).padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
@@ -195,7 +198,7 @@ private fun MainShell(vm: MainViewModel) {
             // Ogni schermata gestisce da sé la barra di stato (prima veniva contata due volte)
             contentWindowInsets = androidx.compose.foundation.layout.WindowInsets(0, 0, 0, 0),
             snackbarHost = { SnackbarHost(snack) },
-            bottomBar = { JarvisBottomBar(vm) },
+            bottomBar = { if (androidx.compose.foundation.layout.WindowInsets.ime.getBottom(androidx.compose.ui.platform.LocalDensity.current) == 0) JarvisBottomBar(vm) },
         ) { pad ->
             Box(Modifier.fillMaxSize().padding(pad)) {
                 AnimatedContent(
@@ -237,73 +240,30 @@ private fun MainShell(vm: MainViewModel) {
     }
 }
 
-/** Barra in basso come nel mockup: Home, File, Jarvis rialzato (tocco = chat, pressione lunga = voce), Pulizia, Altro. */
+/** Navigazione adattiva con aree di tocco standard, leggibile anche con caratteri grandi. */
 @OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
 @Composable
 private fun JarvisBottomBar(vm: MainViewModel) {
-    val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
-    val current = when {
-        vm.tab == Tab.PHOTOS -> Tab.FILES
-        vm.sub == Sub.CATEGORY -> Tab.FILES
-        else -> vm.tab
-    }
-    val mk = com.jarvis.files.ui.components.rememberMk()
-    with(mk) {
-        // Misure del mockup: barra 386,5 × 59,8 a 12,8 dal bordo; Jarvis sporge di 10,5 sopra
-        Box(Modifier.fillMaxWidth().navigationBarsPadding().padding(bottom = 6f.d).height((59.8f + 10.5f).d)) {
-            Box(
-                Modifier.offset(12.8f.d, 10.5f.d).size(386.5f.d, 59.8f.d)
-                    .shadow(16f.d, RoundedCornerShape(29f.d), ambientColor = Color(0x22000000), spotColor = Color(0x261E2A4A))
-                    .clip(RoundedCornerShape(29f.d)).background(Color.White),
+    val current = if (vm.tab == Tab.PHOTOS || vm.sub == Sub.CATEGORY) Tab.FILES else vm.tab
+    val tabs = listOf(Tab.HOME, Tab.FILES, Tab.CHAT, Tab.CLEAN, Tab.MORE)
+    val labels = listOf("Home", "File", "Jarvis", "Pulizia", "Altro")
+    val icons = listOf(Icons.Outlined.Home, Icons.Outlined.Description, Icons.Filled.AutoAwesome, Icons.Outlined.CleaningServices, Icons.Outlined.GridView)
+    NavigationBar(containerColor = J.Card, tonalElevation = 0.dp) {
+        tabs.forEachIndexed { i, tab ->
+            NavigationBarItem(
+                selected = current == tab,
+                onClick = { vm.tab = tab; vm.sub = Sub.NONE },
+                icon = {
+                    if (tab == Tab.CHAT) ArcReactor(30.dp, active = current == tab || vm.busy)
+                    else Icon(icons[i], contentDescription = labels[i])
+                },
+                label = { Text(labels[i], maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis) },
+                colors = NavigationBarItemDefaults.colors(
+                    selectedIconColor = J.Blue, selectedTextColor = J.Blue,
+                    indicatorColor = J.AccentSoft, unselectedIconColor = J.Muted, unselectedTextColor = J.Muted,
+                ),
             )
-            NavItem(vm, Tab.HOME, "Home", Icons.Outlined.Home, Icons.Filled.Home, current, 54.3f)
-            NavItem(vm, Tab.FILES, "File", Icons.Outlined.Description, Icons.Filled.Description, current, 130f)
-            NavItem(vm, Tab.CLEAN, "Pulizia", Icons.Outlined.CleaningServices, Icons.Filled.CleaningServices, current, 280.7f)
-            NavItem(vm, Tab.MORE, "Altro", Icons.Outlined.GridView, Icons.Filled.GridView, current, 354.2f)
-            // Jarvis al centro
-            Box(
-                Modifier.offset((205f - 32f).d, 0f.d).size(64f.d, 70.3f.d)
-                    .combinedClickable(
-                        interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null,
-                        onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE },
-                        onLongClick = {
-                            haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
-                            vm.voiceOpen = true
-                        },
-                    ),
-            ) {
-                com.jarvis.files.ui.components.ArcReactor(
-                    53.6f.d, active = current == Tab.CHAT || vm.busy,
-                    modifier = Modifier.offset((32f - 26.8f).d, (-2.2f).d),
-                )
-                T("Jarvis", 0f, 51.4f, 9.9f, 700, if (current == Tab.CHAT) MkColor.Orange else MkColor.NavInk,
-                    width = 64f, align = androidx.compose.ui.text.style.TextAlign.Center)
-            }
         }
-    }
-}
-
-@Composable
-private fun Mk.NavItem(
-    vm: MainViewModel, tab: Tab, label: String,
-    outline: androidx.compose.ui.graphics.vector.ImageVector, filled: androidx.compose.ui.graphics.vector.ImageVector,
-    current: Tab, cx: Float,
-) {
-    val selected = current == tab
-    val ink = Color(0xFF2F3F57)
-    Box(
-        Modifier.offset((cx - 36f).d, 10.5f.d).size(72f.d, 59.8f.d).clickable(
-            interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }, indication = null,
-        ) { vm.tab = tab; vm.sub = Sub.NONE },
-    ) {
-        if (selected) Box(Modifier.offset((36f - 27.75f).d, 12.3f.d).size(55.5f.d, 22f.d).clip(CircleShape).background(MkColor.Peach))
-        Icon(
-            if (selected) filled else outline, label,
-            tint = if (selected) Color(0xFFFF5A22) else ink,
-            modifier = Modifier.offset((36f - 9.5f).d, (23.6f - 9.5f).d).size(19f.d),
-        )
-        if (selected) T(label, 0f, 42.1f, 10.5f, 700, MkColor.Orange, width = 72f, align = androidx.compose.ui.text.style.TextAlign.Center)
-        else T(label, 0f, 42.1f, 9f, 400, ink, width = 72f, align = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
 
@@ -323,7 +283,7 @@ private fun SharedFilesDialog(vm: MainViewModel) {
                 vm.shared = emptyList()
                 scope.launch {
                     val n = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) { uris.count { com.jarvis.files.core.Vault.importUri(ctx, it, deleteOriginal = false) } }
-                    vm.toast = "$n file nella cartella segreta"
+                    vm.toast = "$n file nella cartella segreta"; vm.filesChanged()
                 }
             }) { Text("Cartella segreta") }
         },
@@ -333,9 +293,10 @@ private fun SharedFilesDialog(vm: MainViewModel) {
                 scope.launch {
                     val n = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) { uris.count { com.jarvis.files.core.Vault.copyToDownload(ctx, it) } }
                     vm.toast = "$n file salvati in Download/Jarvis"
-                    com.jarvis.files.core.FileIndex.invalidate()
+                    vm.filesChanged()
                 }
             }) { Text("Salva in Download") }
         },
     )
 }
+
