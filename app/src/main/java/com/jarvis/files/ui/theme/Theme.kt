@@ -41,7 +41,7 @@ data class Palette(
 )
 
 private val LightPalette = Palette(
-    bg = Color(0xFFF6F8FA),
+    bg = Color(0xFFFFFFFF),
     surface = Color(0xFFFFFFFF),
     surfaceHi = Color(0xFFF0F2F7),
     hairline = Color(0x12000000),
@@ -148,3 +148,4 @@ fun JarvisTheme(content: @Composable () -> Unit) {
         MaterialTheme(colorScheme = scheme, typography = typo, content = content)
     }
 }
+

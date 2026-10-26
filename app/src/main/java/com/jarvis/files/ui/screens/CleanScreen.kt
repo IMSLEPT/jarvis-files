@@ -81,13 +81,13 @@ private enum class CleanTab(val title: String) {
 
 @Composable
 fun CleanScreen(vm: MainViewModel) {
-    var tab by remember { mutableStateOf(CleanTab.CACHE) }
+    var tab by remember(vm.cleanSection) { mutableStateOf(CleanTab.entries.firstOrNull { it.name == vm.cleanSection } ?: CleanTab.CACHE) }
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Column(Modifier.padding(horizontal = 18.dp, vertical = 10.dp)) {
             Text("Pulizia", style = MaterialTheme.typography.headlineLarge, color = J.Text)
         }
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            CleanTab.entries.forEach { t -> Chip(t.title, selected = t == tab) { tab = t } }
+            CleanTab.entries.forEach { t -> Chip(t.title, selected = t == tab) { tab = t; vm.cleanSection = t.name } }
         }
         Spacer(Modifier.height(8.dp))
         Box(Modifier.weight(1f)) {
@@ -120,7 +120,7 @@ private fun TrashBar(vm: MainViewModel, selected: List<Pair<String, Long>>, sour
                 Text("${selected.size} selezionati", color = J.Text, style = MaterialTheme.typography.titleSmall)
                 Text(Fmt.size(selected.sumOf { it.second }), color = J.Electric, style = MaterialTheme.typography.bodySmall)
             }
-            GradientButton("Nel cestino", icon = Icons.Filled.DeleteSweep) {
+            GradientButton("Nel cestino", icon = Icons.Filled.DeleteSweep, enabled = !vm.operationBusy && !vm.busy) {
                 vm.runPlan(Plan(selected.map { Op.Trash(it.first, it.second) }, emptyList()), source, onDone)
             }
         }
@@ -443,3 +443,4 @@ private fun ShotsTab(vm: MainViewModel) {
         TrashBar(vm, sel.mapNotNull { r -> sizes[r]?.let { r to it } }, "Screenshot e foto") { sel.clear(); reload++ }
     }
 }
+

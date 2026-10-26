@@ -12,6 +12,9 @@ import com.google.ai.edge.litertlm.Engine
 import com.google.ai.edge.litertlm.EngineConfig
 import com.google.ai.edge.litertlm.Message
 import com.google.ai.edge.litertlm.SamplerConfig
+import com.google.ai.edge.litertlm.ThinkingConfig
+import com.google.ai.edge.litertlm.ResponseFormat
+import com.google.ai.edge.litertlm.Conversation
 import com.jarvis.files.core.Prefs
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
@@ -28,12 +31,12 @@ data class LocalModelOption(val repo: String, val title: String, val note: Strin
 
 val LOCAL_MODELS = listOf(
     LocalModelOption(
-        "litert-community/gemma-4-E2B-it-litert-lm", "Gemma 4 E2B (consigliato)",
-        "Circa 2-3 GB. Veloce, capisce testo e immagini."
+        "litert-community/gemma-4-E4B-it-litert-lm", "Gemma 4 E4B · qualità consigliata",
+        "Circa 3,7 GB da scaricare. Apache 2.0, offline. Più capacità, maggior uso di RAM e batteria."
     ),
     LocalModelOption(
-        "litert-community/gemma-4-E4B-it-litert-lm", "Gemma 4 E4B (più intelligente)",
-        "Circa 4-5 GB. Più preciso ma più lento; adatto a telefoni con molta RAM."
+        "litert-community/gemma-4-E2B-it-litert-lm", "Gemma 4 E2B · più veloce",
+        "Circa 2,6 GB da scaricare. Apache 2.0, offline. Per risposte più rapide e minori consumi."
     ),
 )
 
@@ -44,6 +47,9 @@ object LocalAi {
     private const val TAG = "LocalAi"
     private val mutex = Mutex()
     private var engine: Engine? = null
+    @Volatile private var activeConversation: Conversation? = null
+    private var loadedWithVision = false
+    private var loadedGpu = false
     private var loadedPath: String? = null
     var visionAvailable = false
         private set
@@ -60,7 +66,7 @@ object LocalAi {
         idleJob?.cancel()
         idleJob = idleScope.launch {
             kotlinx.coroutines.delay(120_000)
-            mutex.withLock { release() }
+            mutex.withLock { releaseLocked() }
         }
     }
 
@@ -72,35 +78,45 @@ object LocalAi {
             withContext(Dispatchers.Default) {
                 idleJob?.cancel()
                 mutex.withLock {
-                    val e = ensureLoaded(c)
+                    val e = ensureLoaded(c, withVision = false)
                     val history = messages.dropLast(1).takeLast(6).map {
                         if (it.role == "user") Message.user(it.text) else Message.model(it.text)
                     }
                     val cfg = ConversationConfig(
                         systemInstruction = Contents.of(system),
                         initialMessages = history,
-                        samplerConfig = SamplerConfig(topK = 40, topP = 0.95, temperature = 0.3),
+                        samplerConfig = SamplerConfig(topK = 20, topP = 0.9, temperature = 0.1),
+                        maxOutputToken = maxTokens,
+                        thinkingConfig = ThinkingConfig(enableThinking = false),
+                        automaticToolCalling = false,
+                        enableResponseFormat = system.contains("JSON", ignoreCase = true),
                     )
                     e.createConversation(cfg).use { conv ->
-                        conv.sendMessage(messages.last().text).toString()
+                        activeConversation = conv
+                        try {
+                            conv.sendMessage(messages.last().text,
+                                responseFormat = if (system.contains("JSON", ignoreCase = true)) ResponseFormat.json("""{"type":"object"}""") else null,
+                            ).toString()
+                        } finally { activeConversation = null }
                     }
                 }.also { scheduleIdleRelease() }
             }
     }
 
-    private fun ensureLoaded(c: Context): Engine {
+    private fun ensureLoaded(c: Context, withVision: Boolean): Engine {
         val p = Prefs(c)
         val path = p.localModelPath
-        engine?.let { if (loadedPath == path) return it }
+        engine?.let { if (loadedPath == path && loadedWithVision == withVision && loadedGpu == p.localUseGpu) return it }
         engine?.close()
         engine = null
         val backend = if (p.localUseGpu) Backend.GPU() else Backend.CPU()
         val cache = c.cacheDir.path
         // Prima prova con la visione (Gemma 4 legge le immagini), poi solo testo, poi CPU.
-        val attempts = listOf(
-            { EngineConfig(modelPath = path, backend = backend, visionBackend = if (visionOnCpu) Backend.CPU() else Backend.GPU(), cacheDir = cache) to true },
-            { EngineConfig(modelPath = path, backend = backend, cacheDir = cache) to false },
-            { EngineConfig(modelPath = path, backend = Backend.CPU(), cacheDir = cache) to false },
+        val attempts = (if (withVision) listOf(
+            { EngineConfig(modelPath = path, backend = backend, visionBackend = if (visionOnCpu) Backend.CPU() else Backend.GPU(), cacheDir = cache, maxNumTokens = 8192) to true }
+        ) else emptyList()) + listOf(
+            { EngineConfig(modelPath = path, backend = backend, cacheDir = cache, maxNumTokens = 8192) to false },
+            { EngineConfig(modelPath = path, backend = Backend.CPU(), cacheDir = cache, maxNumTokens = 8192) to false },
         )
         var last: Throwable? = null
         for (a in attempts) {
@@ -110,6 +126,8 @@ object LocalAi {
                 e.initialize()
                 engine = e
                 loadedPath = path
+                loadedWithVision = withVision
+                loadedGpu = p.localUseGpu
                 visionAvailable = vision
                 return e
             } catch (t: Throwable) {
@@ -125,7 +143,7 @@ object LocalAi {
         idleJob?.cancel()
         mutex.withLock {
             for (attempt in 0..1) {
-                val e = ensureLoaded(c)
+                val e = ensureLoaded(c, withVision = true)
                 if (!visionAvailable) return@withLock null
                 val res = runCatching {
                     e.createConversation(
@@ -138,13 +156,19 @@ object LocalAi {
                 if (visionOnCpu) return@withLock null
                 // Ripiego: ricarica il modello con la visione sul processore e riprova una volta
                 visionOnCpu = true
-                release()
+                releaseLocked()
             }
             null
         }.also { scheduleIdleRelease() }
     }
 
+    fun cancelGeneration() { runCatching { activeConversation?.cancelProcess() } }
+
     fun release() {
+        idleScope.launch { mutex.withLock { releaseLocked() } }
+    }
+
+    private fun releaseLocked() {
         engine?.close()
         engine = null
         loadedPath = null
@@ -174,17 +198,21 @@ object LocalAi {
     fun startDownload(c: Context, repo: String, fileName: String): Long {
         val dm = c.getSystemService(DownloadManager::class.java)
         val url = "https://huggingface.co/$repo/resolve/main/$fileName?download=true"
+        val p = Prefs(c)
+        if (p.localDownloadId >= 0) dm.remove(p.localDownloadId)
+        val localName = repo.substringAfterLast('/') + "_" + fileName.substringAfterLast('/')
+        val target = File(c.getExternalFilesDir("models"), localName)
+        if (target.exists() && target.absolutePath != loadedPath) target.delete()
         val req = DownloadManager.Request(Uri.parse(url))
             .setTitle("Jarvis · cervello offline")
             .setDescription(fileName)
             .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            .setDestinationInExternalFilesDir(c, "models", fileName)
+            .setDestinationInExternalFilesDir(c, "models", localName)
             .setAllowedOverMetered(true)
         val id = dm.enqueue(req)
-        val p = Prefs(c)
         p.localDownloadId = id
         p.localModelRepo = repo
-        p.localModelPath = File(c.getExternalFilesDir("models"), fileName).absolutePath
+        p.localModelPath = target.absolutePath
         release()
         return id
     }
@@ -209,11 +237,18 @@ object LocalAi {
     }
 
     fun deleteModel(c: Context) {
-        release()
         val p = Prefs(c)
-        runCatching { File(p.localModelPath).delete() }
+        val oldPath = p.localModelPath
+        val oldId = p.localDownloadId
         p.localModelPath = ""
         p.localDownloadId = -1
+        idleScope.launch {
+            mutex.withLock {
+                releaseLocked()
+                if (oldId >= 0) c.getSystemService(DownloadManager::class.java).remove(oldId)
+                runCatching { File(oldPath).takeIf { oldPath.isNotBlank() }?.delete() }
+            }
+        }
     }
 
     /** Info leggibile sul modello: usata dalle Impostazioni. */
@@ -223,3 +258,4 @@ object LocalAi {
         return JSONObject().put("path", p.localModelPath).put("exists", f.exists()).put("size", if (f.exists()) f.length() else 0)
     }
 }
+

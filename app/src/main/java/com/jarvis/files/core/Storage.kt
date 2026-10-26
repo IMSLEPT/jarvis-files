@@ -61,15 +61,18 @@ object Storage {
     /** Normalizza un percorso fornito dall'AI: niente "..", niente percorsi assoluti esterni. */
     fun sanitize(path: String): String? {
         var p = path.trim().replace('\\', '/')
-        val rootAbs = root.absolutePath
-        if (p.startsWith(rootAbs)) p = p.removePrefix(rootAbs)
-        p = p.removePrefix("/sdcard").removePrefix("/storage/emulated/0")
-        p = p.trim('/')
-        if (p.isEmpty()) return ""
-        val parts = p.split('/').filter { it.isNotEmpty() && it != "." }
+        if (p.any { it.code < 32 }) return null
+        for (prefix in listOf(root.absolutePath, "/sdcard", "/storage/emulated/0")) {
+            if (p == prefix || p.startsWith("$prefix/")) { p = p.removePrefix(prefix); break }
+        }
+        if (p.startsWith('/') && !path.trim().let { raw -> listOf(root.absolutePath, "/sdcard", "/storage/emulated/0").any { raw == it || raw.startsWith("$it/") } }) return null
+        val parts = p.trim('/').split('/').filter { it.isNotEmpty() && it != "." }
         if (parts.any { it == ".." }) return null
         val clean = parts.joinToString("/")
         if (skipPrefixes.any { clean == it || clean.startsWith("$it/") }) return null
+        val target = runCatching { File(root, clean).canonicalFile }.getOrNull() ?: return null
+        val base = root.canonicalFile
+        if (target != base && !target.path.startsWith(base.path + "/")) return null
         return clean
     }
 
@@ -82,24 +85,29 @@ object Storage {
     }
 
     fun openFile(context: Context, f: File) {
+        if (!f.isFile) { android.widget.Toast.makeText(context, "File non più disponibile", android.widget.Toast.LENGTH_SHORT).show(); return }
+        runCatching {
         val uri: Uri = FileProvider.getUriForFile(context, "${context.packageName}.files", f)
         val mime = MimeTypeMap.getSingleton().getMimeTypeFromExtension(f.extension.lowercase()) ?: "*/*"
         val i = Intent(Intent.ACTION_VIEW).setDataAndType(uri, mime)
             .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_ACTIVITY_NEW_TASK)
-        runCatching { context.startActivity(Intent.createChooser(i, "Apri con").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) }
+        context.startActivity(Intent.createChooser(i, "Apri con").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+        }.onFailure { android.widget.Toast.makeText(context, "Impossibile aprire il file", android.widget.Toast.LENGTH_SHORT).show() }
     }
 
     fun shareFiles(context: Context, files: List<File>) {
         if (files.isEmpty()) return
+        runCatching {
         val uris = ArrayList(files.map { FileProvider.getUriForFile(context, "${context.packageName}.files", it) })
         val i = Intent(Intent.ACTION_SEND_MULTIPLE).setType("*/*")
             .putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
             .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         context.startActivity(Intent.createChooser(i, "Condividi").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+        }.onFailure { android.widget.Toast.makeText(context, "Impossibile condividere i file", android.widget.Toast.LENGTH_SHORT).show() }
     }
 
     /** Scansione completa della memoria; aggiorna [FileIndex]. */
-    fun scanAll(onProgress: (Int) -> Unit = {}): List<FileEntry> {
+    @Synchronized fun scanAll(onProgress: (Int) -> Unit = {}): List<FileEntry> {
         val out = ArrayList<FileEntry>(20000)
         val rootAbs = root.absolutePath
         val stack = ArrayDeque<File>()
@@ -110,7 +118,9 @@ object Storage {
             for (c in children) {
                 val r = c.absolutePath.removePrefix(rootAbs).trimStart('/')
                 if (skipPrefixes.any { r == it || r.startsWith("$it/") }) continue
+                if (c.canonicalPath != c.absolutePath && !c.canonicalPath.startsWith(root.canonicalPath + "/")) continue
                 if (c.isDirectory) {
+                    if (java.nio.file.Files.isSymbolicLink(c.toPath())) continue
                     stack.add(c)
                 } else {
                     out.add(FileEntry(r, c.length(), c.lastModified()))
@@ -172,6 +182,7 @@ object Fmt {
         return String.format(Locale.ITALY, if (v < 10) "%.1f %s" else "%.0f %s", v, units[exp - 1])
     }
 
-    fun date(ms: Long): String = dateFmt.format(Date(ms))
-    fun iso(ms: Long): String = isoFmt.format(Date(ms))
+    @Synchronized fun date(ms: Long): String = dateFmt.format(Date(ms))
+    @Synchronized fun iso(ms: Long): String = isoFmt.format(Date(ms))
 }
+

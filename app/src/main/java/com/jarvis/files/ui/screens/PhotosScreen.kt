@@ -76,6 +76,7 @@ import com.jarvis.files.ui.components.GradientButton
 import com.jarvis.files.ui.components.LinearMeter
 import com.jarvis.files.ui.components.SectionTitle
 import com.jarvis.files.ui.theme.J
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -100,10 +101,13 @@ fun PhotosScreen(vm: MainViewModel) {
     val prog = work.firstOrNull()?.progress
     LaunchedEffect(running) { if (!running) refresh++ }
 
+    var searchJob by remember { mutableStateOf<kotlinx.coroutines.Job?>(null) }
     fun doSearch(text: String) {
-        if (text.isBlank()) { vm.photoResults = null; return }
+        searchJob?.cancel()
+        if (text.isBlank()) { vm.photoResults = null; searching = false; why = ""; return }
         searching = true
-        scope.launch {
+        searchJob = scope.launch {
+            try {
             val (q, hits) = withContext(Dispatchers.IO) { PhotoSearch.search(ctx, text) }
             why = listOfNotNull(
                 q.people.takeIf { it.isNotEmpty() }?.joinToString(prefix = "Persone: "),
@@ -111,7 +115,9 @@ fun PhotosScreen(vm: MainViewModel) {
                 q.place?.let { "Luogo: $it" },
             ).joinToString(" · ")
             vm.photoResults = hits
-            searching = false
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e }
+            catch (e: Exception) { vm.toast = "Ricerca non riuscita: ${e.message}" }
+            finally { if (kotlinx.coroutines.currentCoroutineContext().isActive) searching = false }
         }
     }
 
@@ -130,10 +136,11 @@ fun PhotosScreen(vm: MainViewModel) {
                 Text("Foto", style = MaterialTheme.typography.headlineLarge, color = J.Text)
                 Spacer(Modifier.height(12.dp))
                 OutlinedTextField(
-                    value = query, onValueChange = { query = it },
+                    value = query, onValueChange = { query = it; if (it.isBlank()) doSearch("") },
                     modifier = Modifier.fillMaxWidth(),
                     placeholder = { Text("es. foto di Leo, montagne, lago Nero, Ginger sul divano", color = J.Muted) },
                     leadingIcon = { Icon(Icons.Filled.Search, null, tint = J.Cyan) },
+                    trailingIcon = { androidx.compose.material3.IconButton(onClick = { doSearch(query) }) { Icon(Icons.Filled.Search, "Cerca foto", tint = J.Blue) } },
                     singleLine = true,
                     shape = RoundedCornerShape(18.dp),
                     keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
@@ -214,7 +221,7 @@ fun PhotosScreen(vm: MainViewModel) {
                     }
                 )
                 if (results != null) Text("Mostra tutte le foto recenti", color = J.Cyan, style = MaterialTheme.typography.labelLarge,
-                    modifier = Modifier.padding(bottom = 8.dp).clickable { vm.photoResults = null; query = "" })
+                    modifier = Modifier.padding(bottom = 8.dp).clickable { query = ""; doSearch("") })
             }
         }
         items(gridItems, key = { it }) { path ->
@@ -246,9 +253,10 @@ fun faceCrop(ctx: android.content.Context, faceId: Long): Bitmap? {
     val f = PhotoDb.get(ctx).faces("id = ?", arrayOf(faceId.toString())).firstOrNull() ?: return null
     val src = BitmapLoader.load(Storage.file(f.path), 1024) ?: return null
     val (l, t, r, b) = f.box.toList()
-    if (r > src.width || b > src.height || r - l <= 0 || b - t <= 0) { src.recycle(); return null }
+    if (l < 0 || t < 0 || r > src.width || b > src.height || r - l <= 0 || b - t <= 0) { src.recycle(); return null }
     val crop = Bitmap.createScaledBitmap(Bitmap.createBitmap(src, l, t, r - l, b - t), 160, 160, true)
     src.recycle()
     faceCache.put(faceId, crop)
     return crop
 }
+

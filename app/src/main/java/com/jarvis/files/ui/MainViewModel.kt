@@ -21,11 +21,14 @@ import com.jarvis.files.core.Storage
 import com.jarvis.files.core.Undo
 import com.jarvis.files.photos.PhotoHit
 import com.jarvis.files.photos.PhotoSearch
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-enum class PlanState { PENDING, RUNNING, DONE, CANCELLED }
+enum class PlanState { PENDING, RUNNING, DONE, FAILED, CANCELLED }
 
 data class UiMsg(
     val id: Long,
@@ -83,6 +86,14 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     var fileCount by mutableStateOf(0)
         private set
 
+    var chatInput by mutableStateOf("")
+    var operationBusy by mutableStateOf(false)
+        private set
+    var filesRevision by mutableStateOf(0)
+        private set
+    private var chatJob: Job? = null
+    private var chatGeneration = 0L
+    private var homeJob: Job? = null
     private var nextId = 1L
 
     /** Ascolto vocale aperto (sopra qualsiasi schermata). */
@@ -92,6 +103,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     var category by mutableStateOf<com.jarvis.files.core.FileCategory?>(null)
 
     /** Cartella aperta nella stessa schermata (alternativa alla categoria). */
+    var cleanSection by mutableStateOf("CACHE")
+
     var folder by mutableStateOf<String?>(null)
 
     /** File condivisi da altre app verso Jarvis, in attesa di una scelta. */
@@ -104,10 +117,11 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     /** Calcola i dati della Home (categorie, suggerimenti, ultime foto) al massimo ogni 5 minuti. */
     fun refreshHome(force: Boolean = false) {
         if (!force && System.currentTimeMillis() - homeAt < 5 * 60_000 && home.byCat.isNotEmpty()) return
-        if (FileIndex.entries.isEmpty()) return
+        homeJob?.cancel()
         homeAt = System.currentTimeMillis()
-        viewModelScope.launch(Dispatchers.IO) {
-            val entries = FileIndex.entries
+        homeJob = viewModelScope.launch {
+            val data = withContext(Dispatchers.IO) {
+            val entries = FileIndex.ensure()
             val byCat = entries.groupBy { it.category }.map { it.key to it.value.sumOf { e -> e.size } }.sortedByDescending { it.second }
             val recent = entries.filter { it.category == com.jarvis.files.core.FileCategory.IMAGE && !it.rel.contains("/.") && it.size > 25_000 }
                 .sortedByDescending { it.modified }.take(12).map { it.rel }
@@ -133,7 +147,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             extra["camera"] = entries.filter { it.rel.startsWith("DCIM/Camera/") }.sumOf { it.size }
             extra["download"] = entries.filter { it.rel.startsWith("Download/") }.sumOf { it.size }
             extra["trash"] = runCatching { com.jarvis.files.core.Trash.totalSize(ctx) }.getOrDefault(0L)
-            home = HomeData(byCat, tips, recent, extra)
+            HomeData(byCat, tips, recent, extra)
+            }
+            home = data
+            fileCount = FileIndex.entries.size
         }
     }
 
@@ -150,10 +167,14 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         if (scanning || !Storage.hasAllFilesAccess()) return
         scanning = true
         viewModelScope.launch {
-            val list = withContext(Dispatchers.IO) { runCatching { Storage.scanAll { fileCount = it } }.getOrDefault(emptyList()) }
-            fileCount = list.size
-            scanning = false
-            refreshHome(force = true)
+            try {
+                val list = withContext(Dispatchers.IO) { Storage.scanAll() }
+                fileCount = list.size
+                filesRevision++
+                refreshHome(force = true)
+            } catch (e: Exception) {
+                toast = "Scansione non riuscita: ${e.message}"
+            } finally { scanning = false }
         }
     }
 
@@ -165,21 +186,27 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     fun send(text: String) {
         val t = text.trim()
-        if (t.isEmpty() || busy) return
+        if (t.isEmpty() || busy || operationBusy) return
+        messages.indices.forEach { i ->
+            if (messages[i].planState == PlanState.PENDING && messages[i].plan != null)
+                messages[i] = messages[i].copy(planState = PlanState.CANCELLED)
+        }
+        val generation = ++chatGeneration
         messages.add(UiMsg(nextId++, "user", t))
         busy = true
         busyText = "Sto analizzando…"
-        viewModelScope.launch {
+        chatJob = viewModelScope.launch {
             try {
                 if (!Storage.hasAllFilesAccess()) throw AiUnavailable("Prima concedi l'accesso a tutti i file (Impostazioni → Permessi).")
                 val history = messages.filter { !it.error }.takeLast(10).map {
-                    ChatMsg(if (it.role == "user") "user" else "assistant", it.text)
+                    ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    if (FileIndex.entries.isEmpty()) { busyText = "Leggo le cartelle del telefono…"; Storage.scanAll() }
-                    busyText = "Jarvis sta pensando…"
+                    if (FileIndex.scannedAt == 0L) Storage.scanAll()
                     Brain.ask(ctx, history)
                 }
+                ensureActive()
+                if (generation != chatGeneration) return@launch
                 var photoHits: List<PhotoHit>? = null
                 var fileHits: List<FileEntry>? = null
                 reply.photoSearch?.let { q ->
@@ -194,55 +221,77 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                         photoHits = photoHits, fileHits = fileHits, engine = engine,
                     )
                 )
+            } catch (e: CancellationException) {
+                throw e
             } catch (e: AiUnavailable) {
                 messages.add(UiMsg(nextId++, "assistant", e.message ?: "AI non disponibile.", error = true))
-            } catch (e: Throwable) {
+            } catch (e: Exception) {
                 messages.add(UiMsg(nextId++, "assistant", "Qualcosa è andato storto: ${e.message}", error = true))
             } finally {
-                busy = false
+                if (generation == chatGeneration) { busy = false; busyText = "" }
             }
         }
     }
 
     fun executePlan(msgId: Long, plan: Plan) {
         val idx = messages.indexOfFirst { it.id == msgId }
-        if (idx < 0) return
+        if (idx < 0 || messages[idx].planState != PlanState.PENDING || operationBusy || busy || plan.isEmpty) return
+        operationBusy = true
         messages[idx] = messages[idx].copy(planState = PlanState.RUNNING)
         viewModelScope.launch {
-            val r = withContext(Dispatchers.IO) { FileOps.execute(ctx, plan, "Comando a Jarvis") }
-            val i = messages.indexOfFirst { it.id == msgId }
-            if (i >= 0) messages[i] = messages[i].copy(planState = PlanState.DONE)
-            val txt = buildString {
-                append("Fatto, signore. ${r.done} operazioni completate")
-                if (r.freedBytes > 0) append(", ${Fmt.size(r.freedBytes)} nel cestino")
-                append(".")
-                if (r.failed > 0) append(" ${r.failed} non riuscite: ${r.errors.take(2).joinToString("; ")}")
-            }
-            messages.add(UiMsg(nextId++, "assistant", txt))
-            refreshStatus()
+            try {
+                val r = withContext(Dispatchers.IO) { FileOps.execute(ctx, plan, "Comando a Jarvis") }
+                val i = messages.indexOfFirst { it.id == msgId }
+                if (i >= 0) messages[i] = messages[i].copy(planState = if (r.failed == 0) PlanState.DONE else PlanState.FAILED)
+                val txt = buildString {
+                    append("${r.done} operazioni completate.")
+                    if (r.freedBytes > 0) append(" ${Fmt.size(r.freedBytes)} spostati nel cestino.")
+                    if (r.failed > 0) append(" ${r.failed} non riuscite: ${r.errors.take(2).joinToString("; ")}")
+                }
+                messages.add(UiMsg(nextId++, "assistant", txt, error = r.failed > 0))
+                filesChanged()
+            } catch (e: Exception) {
+                val i = messages.indexOfFirst { it.id == msgId }
+                if (i >= 0) messages[i] = messages[i].copy(planState = PlanState.FAILED)
+                toast = "Operazione non completata: ${e.message}"
+            } finally { operationBusy = false; refreshStatus() }
         }
     }
 
     fun cancelPlan(msgId: Long) {
         val idx = messages.indexOfFirst { it.id == msgId }
-        if (idx >= 0) messages[idx] = messages[idx].copy(planState = PlanState.CANCELLED)
+        if (idx >= 0 && messages[idx].planState == PlanState.PENDING)
+            messages[idx] = messages[idx].copy(planState = PlanState.CANCELLED)
     }
 
-    /** Esegue un piano fuori dalla chat (pulizia, automazioni in attesa). */
+    fun filesChanged() {
+        FileIndex.invalidate()
+        filesRevision++
+        refreshHome(force = true)
+    }
+
     fun runPlan(plan: Plan, source: String, after: () -> Unit = {}) {
+        if (operationBusy || busy || plan.isEmpty) return
+        operationBusy = true
         viewModelScope.launch {
-            val r = withContext(Dispatchers.IO) { FileOps.execute(ctx, plan, source) }
-            toast = "${r.done} operazioni completate" + (if (r.freedBytes > 0) " · ${Fmt.size(r.freedBytes)} liberabili dal cestino" else "") +
-                (if (r.failed > 0) " · ${r.failed} non riuscite" else "")
-            refreshStatus()
-            after()
+            try {
+                val r = withContext(Dispatchers.IO) { FileOps.execute(ctx, plan, source) }
+                toast = "${r.done} operazioni completate" +
+                    (if (r.freedBytes > 0) " · ${Fmt.size(r.freedBytes)} nel cestino" else "") +
+                    (if (r.failed > 0) " · ${r.failed} non riuscite" else "")
+                filesChanged()
+                after()
+            } catch (e: Exception) { toast = "Operazione non completata: ${e.message}" }
+            finally { operationBusy = false; refreshStatus() }
         }
     }
 
     fun confirmPending(plan: Plan) {
+        if (operationBusy || busy || plan.isEmpty) return
+        val source = pending?.first ?: "Automazione"
         PendingPlan.clear(ctx)
-        runPlan(plan, pending?.first ?: "Automazione")
         pending = null
+        runPlan(plan, source)
     }
 
     fun dismissPending() {
@@ -251,12 +300,40 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun undo() {
+        if (operationBusy || busy) return
+        operationBusy = true
         viewModelScope.launch {
-            val (ok, ko) = withContext(Dispatchers.IO) { Undo.undo(ctx) }
-            toast = if (ko == 0) "Annullato: $ok operazioni ripristinate" else "Ripristinate $ok, $ko non riuscite"
-            refreshStatus()
+            try {
+                val (ok, ko) = withContext(Dispatchers.IO) { Undo.undo(ctx) }
+                toast = if (ko == 0) "Annullato: $ok operazioni ripristinate" else "Ripristinate $ok, $ko non riuscite"
+                filesChanged()
+            } catch (e: Exception) { toast = "Ripristino non riuscito: ${e.message}" }
+            finally { operationBusy = false; refreshStatus() }
         }
     }
 
-    fun clearChat() = messages.clear()
+    fun stopReply() {
+        chatGeneration++
+        com.jarvis.files.ai.LocalAi.cancelGeneration()
+        chatJob?.cancel()
+        chatJob = null
+        busy = false
+        busyText = ""
+    }
+
+    fun retryLast() {
+        if (busy || operationBusy) return
+        val i = messages.indexOfLast { it.role == "user" }
+        if (i < 0) return
+        val text = messages[i].text
+        while (messages.size > i) messages.removeAt(messages.lastIndex)
+        send(text)
+    }
+
+    fun clearChat() {
+        if (operationBusy) { toast = "Attendi il completamento dell'operazione"; return }
+        stopReply()
+        messages.clear()
+        chatInput = ""
+    }
 }

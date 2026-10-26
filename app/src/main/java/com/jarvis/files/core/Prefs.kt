@@ -20,7 +20,7 @@ class Prefs(context: Context) {
         set(v) = sp.edit().putString("user_name", v).apply()
 
     var aiMode: AiMode
-        get() = runCatching { AiMode.valueOf(sp.getString("ai_mode", AiMode.AUTO.name)!!) }.getOrDefault(AiMode.AUTO)
+        get() = runCatching { AiMode.valueOf(sp.getString("ai_mode", AiMode.LOCAL.name)!!) }.getOrDefault(AiMode.LOCAL)
         set(v) = sp.edit().putString("ai_mode", v.name).apply()
 
     // Servizio online compatibile OpenAI (Groq, OpenRouter, ...)
@@ -41,7 +41,7 @@ class Prefs(context: Context) {
 
     // Modello locale
     var localModelRepo: String
-        get() = sp.getString("local_repo", "litert-community/gemma-4-E2B-it-litert-lm") ?: ""
+        get() = sp.getString("local_repo", "litert-community/gemma-4-E4B-it-litert-lm") ?: ""
         set(v) = sp.edit().putString("local_repo", v).apply()
     var localModelPath: String
         get() = sp.getString("local_path", "") ?: ""
@@ -100,3 +100,4 @@ class Prefs(context: Context) {
     fun getString(key: String, def: String = ""): String = sp.getString(key, def) ?: def
     fun putString(key: String, v: String) = sp.edit().putString(key, v).apply()
 }
+
