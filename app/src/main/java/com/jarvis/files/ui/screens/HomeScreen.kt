@@ -1,5 +1,8 @@
 package com.jarvis.files.ui.screens
 
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
+import com.jarvis.files.R
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -87,8 +90,8 @@ fun HomeScreen(vm: MainViewModel) {
                     Spacer(Modifier.height(8.dp))
                     Text(SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date()), style = MaterialTheme.typography.bodySmall, color = J.Muted)
                 }
-                IconButton(onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE }, modifier = Modifier.size(100.dp).semantics { contentDescription = "Apri Jarvis" }) {
-                    ArcReactor(100.dp, active = vm.scanning)
+                IconButton(onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE }, modifier = Modifier.size(144.dp).semantics { contentDescription = "Apri Jarvis" }) {
+                    ArcReactor(144.dp, active = vm.scanning)
                 }
             }
         }
@@ -142,7 +145,13 @@ fun HomeScreen(vm: MainViewModel) {
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         row.forEach { s ->
                             GlassCard(Modifier.weight(1f), onClick = { openCategory(vm, s.cat) }, padding = PaddingValues(16.dp)) {
-                                IconBadge(s.icon, tint = s.colors.last(), size = 42.dp)
+                                val illustration = when (s.cat) {
+                                    FileCategory.VIDEO -> R.drawable.cat_video
+                                    FileCategory.IMAGE -> R.drawable.cat_image
+                                    FileCategory.AUDIO -> R.drawable.cat_audio
+                                    else -> R.drawable.cat_archive
+                                }
+                                Image(painterResource(illustration), null, Modifier.size(52.dp))
                                 Spacer(Modifier.height(12.dp))
                                 Text(s.title, color = J.Text, style = MaterialTheme.typography.titleSmall)
                                 Text(Fmt.size(sizes[s.cat] ?: 0L), color = J.Muted, style = MaterialTheme.typography.bodySmall)
