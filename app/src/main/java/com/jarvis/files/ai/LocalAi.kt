@@ -125,7 +125,7 @@ object LocalAi {
             try {
                 val (cfg, vision) = a()
                 val e = Engine(cfg)
-                e.initialize()
+                try { e.initialize() } catch (t: Throwable) { runCatching { e.close() }; throw t }
                 engine = e
                 loadedPath = path
                 loadedWithVision = withVision

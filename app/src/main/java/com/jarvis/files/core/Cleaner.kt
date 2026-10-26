@@ -31,9 +31,8 @@ object Cleaner {
         for ((size, list) in bySize) {
             val byQuick = list.groupBy { quickHash(Storage.file(it.rel)) }.filter { it.key != null && it.value.size > 1 }
             for ((_, same) in byQuick) {
-                // Conferma con hash completo per file fino a 200 MB
-                val confirmed = if (size <= 200L * 1024 * 1024) same.groupBy { fullHash(Storage.file(it.rel)) }.filter { it.key != null && it.value.size > 1 }.values
-                else listOf(same)
+                // L'hash parziale filtra soltanto: verifica il contenuto intero anche nei video grandi.
+                val confirmed = same.groupBy { fullHash(Storage.file(it.rel)) }.filter { it.key != null && it.value.size > 1 }.values
                 confirmed.forEach { g -> groups.add(DupGroup(size, g.sortedBy { it.modified })) }
             }
             done += list.size
@@ -73,9 +72,9 @@ object Cleaner {
                 when (sentOnly) { true -> e.rel.contains("/Sent/"); false -> !e.rel.contains("/Sent/"); null -> true }
         }
         return listOf(
-            WaCategory("voice", "Messaggi vocali", "I vocali già ascoltati restano nelle chat solo come file.", pick("WhatsApp Voice Notes") + pick("WhatsApp Audio")),
-            WaCategory("img_sent", "Foto inviate", "Copie delle foto che hai mandato tu: gli originali sono già in galleria.", pick("WhatsApp Images", true)),
-            WaCategory("vid_sent", "Video inviati", "Copie dei video che hai mandato: gli originali sono già in galleria.", pick("WhatsApp Video", true)),
+            WaCategory("voice", "Messaggi vocali", "Eliminandoli, i vocali potrebbero non essere più riproducibili nelle chat.", pick("WhatsApp Voice Notes") + pick("WhatsApp Audio")),
+            WaCategory("img_sent", "Foto inviate", "Foto inviate: controlla che gli originali siano ancora presenti prima di eliminare.", pick("WhatsApp Images", true)),
+            WaCategory("vid_sent", "Video inviati", "Video inviati: controlla che gli originali siano ancora presenti prima di eliminare.", pick("WhatsApp Video", true)),
             WaCategory("img", "Foto ricevute", "Foto arrivate nelle chat e nei gruppi.", pick("WhatsApp Images", false)),
             WaCategory("vid", "Video ricevuti", "Spesso sono i file più pesanti (video dei gruppi).", pick("WhatsApp Video", false)),
             WaCategory("gif", "GIF e sticker", "Animazioni e adesivi ricevuti.", pick("WhatsApp Animated Gifs") + pick("WhatsApp Stickers")),
@@ -126,7 +125,8 @@ object Cleaner {
             }
             if (reason != null) out.add(JunkItem(e.rel, e.size, reason))
         }
-        entries.filter { it.ext in setOf("tmp", "temp", "part", "crdownload", "log") || it.name.startsWith(".pending-") }
+        val staleBefore = System.currentTimeMillis() - 2 * 86_400_000L
+        entries.filter { it.modified < staleBefore && (it.ext in setOf("tmp", "temp", "part", "crdownload", "log") || it.name.startsWith(".pending-")) }
             .forEach { out.add(JunkItem(it.rel, it.size, "File temporaneo o download incompleto")) }
         listOf("DCIM/.thumbnails", "Pictures/.thumbnails", "Movies/.thumbnails").forEach { d ->
             val f = Storage.file(d)
@@ -146,3 +146,4 @@ object Cleaner {
     @Suppress("unused")
     private fun isInstalled(pm: PackageManager, pkg: String) = runCatching { pm.getPackageInfo(pkg, 0) }.isSuccess
 }
+

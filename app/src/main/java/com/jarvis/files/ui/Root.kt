@@ -251,7 +251,7 @@ private fun JarvisBottomBar(vm: MainViewModel) {
     NavigationBar(containerColor = J.Card, tonalElevation = 0.dp) {
         tabs.forEachIndexed { i, tab ->
             NavigationBarItem(
-                selected = current == tab && vm.sub == Sub.NONE,
+                selected = current == tab,
                 onClick = { vm.tab = tab; vm.sub = Sub.NONE },
                 icon = {
                     if (tab == Tab.CHAT) ArcReactor(30.dp, active = current == tab || vm.busy)

@@ -323,7 +323,7 @@ object FileOps {
         return runCatching {
             src.inputStream().use { i -> dst.outputStream().use { o -> i.copyTo(o, 1 shl 16) } }
             dst.setLastModified(src.lastModified())
-            if (dst.length() == src.length()) src.delete() else { dst.delete(); false }
+            if (dst.length() == src.length() && src.delete()) true else { dst.delete(); false }
         }.onFailure { dst.delete() }.getOrDefault(false)
     }
 }
@@ -346,7 +346,9 @@ object Undo {
     fun undo(c: Context): Pair<Int, Int> {
         val f = file(c)
         if (!f.exists()) return 0 to 0
-        val ops = JSONObject(f.readText()).getJSONArray("ops")
+        val saved = JSONObject(f.readText())
+        val ops = saved.getJSONArray("ops")
+        val remaining = ArrayList<JSONObject>()
         var ok = 0
         var ko = 0
         val scan = ArrayList<File>()
@@ -369,9 +371,10 @@ object Undo {
                     else -> true
                 }
             }.getOrDefault(false)
-            if (success) ok++ else ko++
+            if (success) ok++ else { ko++; remaining.add(o) }
         }
-        f.delete()
+        if (remaining.isEmpty()) f.delete()
+        else f.writeText(saved.put("ops", JSONArray(remaining.asReversed())).toString())
         Storage.scanMedia(c, scan)
         FileIndex.invalidate()
         return ok to ko

@@ -31,6 +31,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
@@ -67,6 +70,8 @@ private val VOICE_HINTS = listOf("Metti in ordine i Download", "Trovami le foto 
 @Composable
 fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
     val ctx = LocalContext.current
+    val localOnly = com.jarvis.files.core.Prefs(ctx).aiMode == com.jarvis.files.core.AiMode.LOCAL
+    val onDevice = remember { SpeechRecognizer.isOnDeviceRecognitionAvailable(ctx) }
     var level by remember { mutableFloatStateOf(0f) }
     var text by remember { mutableStateOf("") }
     var state by remember { mutableStateOf("Ti ascolto, signore…") }
@@ -80,6 +85,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
         if (r.resultCode == Activity.RESULT_OK && !t.isNullOrBlank()) onResult(t) else onClose()
     }
     fun launchFallback() {
+        if (localOnly) { state = "Dettatura offline non disponibile. Usa la tastiera o abilita il riconoscimento offline nelle impostazioni Android."; return }
         val i = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
             .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
             .putExtra(RecognizerIntent.EXTRA_LANGUAGE, "it-IT")
@@ -92,12 +98,12 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
     }
     LaunchedEffect(Unit) { if (!hasMic) permission.launch(Manifest.permission.RECORD_AUDIO) }
 
-    val available = remember { SpeechRecognizer.isRecognitionAvailable(ctx) }
+    val available = remember { if (localOnly) onDevice else SpeechRecognizer.isRecognitionAvailable(ctx) }
     LaunchedEffect(available, hasMic) { if (hasMic && !available) launchFallback() }
 
     if (hasMic && available) {
         DisposableEffect(attempt) {
-            val sr = SpeechRecognizer.createSpeechRecognizer(ctx)
+            val sr = if (onDevice) SpeechRecognizer.createOnDeviceSpeechRecognizer(ctx) else SpeechRecognizer.createSpeechRecognizer(ctx)
             sr.setRecognitionListener(object : RecognitionListener {
                 override fun onReadyForSpeech(params: Bundle?) { listening = true; state = "Ti ascolto, signore…" }
                 override fun onBeginningOfSpeech() {}
@@ -125,6 +131,7 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
             val i = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
                 .putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
                 .putExtra(RecognizerIntent.EXTRA_LANGUAGE, "it-IT")
+                .putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, localOnly)
                 .putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
                 .putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 1500L)
             runCatching { sr.startListening(i) }.onFailure { state = "Riconoscimento vocale non disponibile." }
@@ -141,11 +148,11 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
             Icon(Icons.Filled.Close, "Chiudi", tint = Color(0xFF0A0D18))
         }
         Column(
-            Modifier.fillMaxSize().padding(28.dp),
+            Modifier.fillMaxSize().statusBarsPadding().navigationBarsPadding().verticalScroll(rememberScrollState()).padding(horizontal = 28.dp, vertical = 64.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
         ) {
-            ArcReactor(250.dp, active = true, level = level)
+            ArcReactor(160.dp, active = listening, level = level)
             Spacer(Modifier.height(28.dp))
             AnimatedContent(text.ifBlank { state }, transitionSpec = { fadeIn() togetherWith fadeOut() }, label = "voice") { t ->
                 Text(
@@ -177,3 +184,4 @@ fun VoiceOverlay(onResult: (String) -> Unit, onClose: () -> Unit) {
         }
     }
 }
+

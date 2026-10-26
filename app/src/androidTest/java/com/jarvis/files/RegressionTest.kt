@@ -84,4 +84,29 @@ class RegressionTest {
         val reply = Brain.clean(BrainReply("Riordino", photoSearch = "foto"), "Riordina le foto in Download")
         assertNull(reply.photoSearch)
     }
+    @Test fun largeFilesWithMatchingEndsAreNotDuplicates() {
+        val a = Storage.file("JarvisRegression/large-a.mp4")
+        val b = Storage.file("JarvisRegression/large-b.mp4")
+        listOf(a, b).forEach { f -> java.io.RandomAccessFile(f, "rw").use { it.setLength(201L * 1024 * 1024) } }
+        java.io.RandomAccessFile(b, "rw").use { it.seek(100L * 1024 * 1024); it.write(1) }
+        Storage.scanAll()
+        assertTrue(Cleaner.findDuplicates().none { g -> g.files.any { it.rel.startsWith("JarvisRegression/large-") } })
+    }
+    @Test fun activeDownloadIsNotSuggestedAsJunk() {
+        TestUtil.write("JarvisRegression/active.crdownload", "downloading".toByteArray())
+        Storage.scanAll()
+        assertTrue(Cleaner.junk(ctx).none { it.rel == "JarvisRegression/active.crdownload" })
+    }
+    @Test fun partialUndoCanBeRetriedWithoutLosingJournal() {
+        val original = "JarvisRegression/Download/a.pdf"
+        val moved = "JarvisRegression/Download/moved.pdf"
+        FileOps.execute(ctx, Plan(listOf(Op.Move(original, moved)), emptyList()), "Regression")
+        TestUtil.write(original, "new content".toByteArray())
+        assertEquals(1, Undo.undo(ctx).second)
+        assertNotNull(Undo.info(ctx))
+        Storage.file(original).delete()
+        assertEquals(0, Undo.undo(ctx).second)
+        assertEquals("original", Storage.file(original).readText())
+    }
+
 }
