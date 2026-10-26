@@ -18,6 +18,11 @@ class UsabilityTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
     private fun vm() = ViewModelProvider(rule.activity)[MainViewModel::class.java]
 
+    @Test fun homeAssistantButtonOpensChat() {
+        rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
+        rule.onNodeWithContentDescription("Chiedi a Jarvis").performScrollTo().performClick()
+        rule.onNodeWithContentDescription("Impostazioni AI").assertIsDisplayed()
+    }
     @Test fun newChatRemovesConversationAndDraft() {
         rule.runOnUiThread {
             vm().tab = Tab.CHAT
@@ -48,6 +53,7 @@ class UsabilityTest {
             TestUtil.sh("settings put system font_scale 1.5")
             rule.waitUntil(10_000) { rule.activity.resources.configuration.fontScale >= 1.49f }
             rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
+            rule.onNodeWithContentDescription("Jarvis Files").assertIsDisplayed()
             rule.onNodeWithText("Video").performScrollTo().assertIsDisplayed()
             rule.onNodeWithText("Immagini").performScrollTo().assertIsDisplayed()
             rule.onNodeWithText("Audio").performScrollTo().assertIsDisplayed()

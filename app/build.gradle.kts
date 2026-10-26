@@ -14,7 +14,7 @@ android {
         applicationId = "com.jarvis.files"
         minSdk = 31
         targetSdk = 36
-        versionCode = System.getenv("JARVIS_BUILD_NUMBER")?.toIntOrNull() ?: 44
+        versionCode = System.getenv("JARVIS_BUILD_NUMBER")?.toIntOrNull() ?: 49
         versionName = "1.0.$versionCode"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

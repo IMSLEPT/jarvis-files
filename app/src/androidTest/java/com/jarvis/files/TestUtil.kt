@@ -38,6 +38,24 @@ object TestUtil {
         File(reportDir, "$name.png").outputStream().use { bmp.compress(Bitmap.CompressFormat.PNG, 100, it) }
     }
 
+    fun launcherIcons() {
+        val icon = ctx.packageManager.getApplicationIcon(ctx.packageName)
+        fun save(drawable: android.graphics.drawable.Drawable, name: String) {
+            val bitmap = Bitmap.createBitmap(512, 512, Bitmap.Config.ARGB_8888)
+            drawable.setBounds(0, 0, 512, 512)
+            drawable.draw(android.graphics.Canvas(bitmap))
+            File(reportDir, "$name.png").outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
+        }
+        save(icon, "launcher_icon")
+        if (android.os.Build.VERSION.SDK_INT >= 33 && icon is android.graphics.drawable.AdaptiveIconDrawable) {
+            icon.monochrome?.let { source ->
+                val mono = source.constantState?.newDrawable()?.mutate() ?: source.mutate()
+                mono.setTint(android.graphics.Color.rgb(7, 24, 47))
+                save(android.graphics.drawable.AdaptiveIconDrawable(android.graphics.drawable.ColorDrawable(android.graphics.Color.rgb(247, 248, 252)), mono), "launcher_icon_themed")
+            }
+        }
+    }
+
     fun write(rel: String, content: ByteArray, ageMs: Long = 0): File {
         val f = Storage.file(rel)
         f.parentFile?.mkdirs()
@@ -49,3 +67,4 @@ object TestUtil {
     fun asset(name: String): ByteArray =
         InstrumentationRegistry.getInstrumentation().context.assets.open(name).use { it.readBytes() }
 }
+

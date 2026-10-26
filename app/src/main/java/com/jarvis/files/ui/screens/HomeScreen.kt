@@ -87,6 +87,7 @@ import com.jarvis.files.ui.MainViewModel
 import com.jarvis.files.ui.Sub
 import com.jarvis.files.ui.Tab
 import com.jarvis.files.ui.components.ArcReactor
+import com.jarvis.files.ui.components.JarvisBrand
 import com.jarvis.files.ui.components.GhostButton
 import com.jarvis.files.ui.components.GlassCard
 import com.jarvis.files.ui.components.IconBadge
@@ -154,15 +155,27 @@ fun HomeScreen(vm: MainViewModel) {
     val greeting = when (hour) { in 5..12 -> "Buongiorno"; in 13..17 -> "Buon pomeriggio"; else -> "Buonasera" }
     val today = SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date())
     Column(Modifier.fillMaxSize().testTag("home_layout").statusBarsPadding().verticalScroll(rememberScrollState()).padding(bottom = 20.dp)) {
-        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Image(painterResource(R.drawable.jarvis_logo), "Jarvis Files", Modifier.size(140.dp, 37.dp))
+        val largeText = LocalDensity.current.fontScale > 1.2f
+        Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 16.dp, top = 16.dp), verticalAlignment = Alignment.Top) {
+            Column(Modifier.weight(1f).padding(end = 8.dp)) {
+                JarvisBrand()
+                Spacer(Modifier.height(4.dp))
                 Text(today, style = MaterialTheme.typography.bodySmall, color = J.Muted)
-                Spacer(Modifier.height(16.dp))
-                Text("$greeting,\n${Prefs(ctx).userName}", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+                if (!largeText) {
+                    Spacer(Modifier.height(16.dp))
+                    Text("$greeting,\n${Prefs(ctx).userName}", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+                }
             }
-            ArcReactor(136.dp, active = vm.scanning, modifier = Modifier.pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE }).semantics { contentDescription = "Parla con Jarvis" })
+            Column(Modifier.width(88.dp).pressable({ vm.tab = Tab.CHAT; vm.sub = Sub.NONE })
+                .semantics(mergeDescendants = true) { contentDescription = "Chiedi a Jarvis" }, horizontalAlignment = Alignment.CenterHorizontally) {
+                ArcReactor(76.dp, active = vm.scanning)
+                Spacer(Modifier.height(4.dp))
+                Text("Chiedi a Jarvis", color = J.Blue, style = MaterialTheme.typography.labelMedium,
+                    textAlign = TextAlign.Center)
+            }
         }
+        if (largeText) Text("$greeting,\n${Prefs(ctx).userName}", style = MaterialTheme.typography.headlineSmall, color = J.Text,
+            modifier = Modifier.padding(start = 20.dp, end = 20.dp, top = 16.dp))
         Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 12.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
             Text("Il tuo spazio", style = MaterialTheme.typography.titleMedium, color = J.Text, modifier = Modifier.weight(1f))
             androidx.compose.material3.TextButton(onClick = { vm.rescan() }, enabled = !vm.scanning && !vm.operationBusy) {

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small Jarvis emblem: single orange rim, navy sphere, three-pronged blue/white core. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt" android:width="32dp" android:height="32dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:fillColor="#FAFCFF" android:pathData="M50,2a48,48 0,1 1,0 96a48,48 0,1 1,0 -96" />
+    <path android:fillColor="#FF7D20" android:pathData="M50,5a45,45 0,1 1,0 90a45,45 0,1 1,0 -90" />
+    <path android:pathData="M50,9a41,41 0,1 1,0 82a41,41 0,1 1,0 -82">
+        <aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="24" android:startY="10" android:endX="65" android:endY="90" android:startColor="#334C73" android:centerColor="#061934" android:endColor="#020A1B" /></aapt:attr>
+    </path>
+    <path android:fillColor="#1BFFFFFF" android:pathData="M25,24Q48,9 72,25Q82,44 50,42Q23,43 25,24" />
+    <path android:fillColor="#156FDB" android:pathData="M18,29L50,46L82,29L59,56L50,88L41,56Z" />
+    <path android:pathData="M21,31L50,48L79,31L55,55L50,84L45,55Z">
+        <aapt:attr name="android:fillColor"><gradient android:type="linear" android:startX="50" android:startY="31" android:endX="50" android:endY="84" android:startColor="#B9F5FF" android:centerColor="#FFFFFF" android:endColor="#62D5FF" /></aapt:attr>
+    </path>
+    <path android:fillColor="#FFFFFF" android:pathData="M24,33L50,49L76,33L51,54L50,80L49,54Z" />
+</vector>

@@ -70,3 +70,10 @@ Ripristinati il design della Home precedente alla v1.0.42 (logo originale, sfera
 - Home con impaginazione a flusso e caratteri di sistema; illustrazioni e grafico originali mantenuti. Invio e microfono separati, risposte in schede, controlli delle operazioni senza il precedente limite di 400 elementi e lista WhatsApp senza limite di 300.
 - Verifica del modello locale dalle Impostazioni: carica realmente il modello sul dispositivo e controlla una risposta JSON in italiano, senza modificare file. Non equivale a una certificazione dell'accuratezza di Gemma per ogni richiesta.
 - Test strumentati sui comandi e sui tasti Invio, Esegui, Annulla, ripristino, impostazioni e revisione di oltre 400 operazioni. Il test LLM richiede un modello presente sul dispositivo: se assente viene saltato. Le prestazioni su Pixel devono essere verificate sul telefono.
+
+
+## Identità visiva approvata
+
+La Home usa il nuovo marchio Jarvis / FILES con puntino arancio, cartella avorio/arancio e nucleo blu. Il wordmark è convertito in tracciati vettoriali dal font Inter già incluso nel progetto (`scripts/build_brand_wordmark.py`). La sfera coordinata ha uno sfondo realmente trasparente e pulsa soltanto durante attività o ascolto. Per chat e navigazione viene usato un simbolo vettoriale leggibile alle dimensioni piccole.
+
+Le risorse cartella e sfera derivano dall'anteprima approvata e sono state preparate con Imagegen integrato; il prompt richiede di riprodurre fedelmente il simbolo approvato, isolato su trasparenza, mantenendo cartella avorio/arancio e nucleo a tre raggi blu/bianco. I file WebP sono codificati senza perdita da quei master. L'icona launcher è adattiva, con margine di sicurezza e variante monocromatica per le icone a tema Android. La data è separata dal logo; con caratteri ingranditi il saluto occupa una riga di layout dedicata.

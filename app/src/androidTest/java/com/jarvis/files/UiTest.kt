@@ -45,6 +45,7 @@ class UiTest {
         TestUtil.sh("cmd uimode night no")
         rule.activityRule.scenario.recreate()
         shot("01_home", 5000)
+        TestUtil.launcherIcons()
         rule.onAllNodesWithText("Jarvis").onFirst().performClick()
         shot("02_chat_vuota")
         // Messaggio vero senza AI configurata: deve spiegare cosa fare

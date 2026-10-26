@@ -262,7 +262,7 @@ private fun JarvisBottomBar(vm: MainViewModel) {
                 onLongClick = if (tab == Tab.CHAT) ({ haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress); vm.voiceOpen = true }) else null,
             ).padding(vertical = 4.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                 Box(Modifier.size(48.dp, 30.dp).clip(CircleShape).background(if (current == tab) J.AccentSoft else Color.Transparent), contentAlignment = Alignment.Center) {
-                    if (tab == Tab.CHAT) ArcReactor(36.dp, active = vm.busy)
+                    if (tab == Tab.CHAT) ArcReactor(28.dp, active = vm.busy)
                     else Icon(when (tab) { Tab.HOME -> Icons.Outlined.Home; Tab.FILES -> Icons.Outlined.Description; Tab.CLEAN -> Icons.Outlined.CleaningServices; else -> Icons.Outlined.GridView },
                         null, tint = if (current == tab) J.Blue else J.Muted, modifier = Modifier.size(23.dp))
                 }

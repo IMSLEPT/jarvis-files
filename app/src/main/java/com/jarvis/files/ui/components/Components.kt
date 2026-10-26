@@ -169,70 +169,22 @@ fun Chip(text: String, selected: Boolean = false, onClick: () -> Unit) {
     )
 }
 
-/**
- * Jarvis, identico al design di riferimento: la sfera è l'immagine originale; la stella centrale ruota,
- * la sfera fluttua e il bagliore pulsa. Più veloce quando [active]; [level] (0-1) segue la voce.
- * Sotto i 90 dp si usa la versione rotonda della barra in basso.
- */
+/** Approved Jarvis identity: quiet at rest; restrained pulse while working or listening. */
 @Composable
 fun ArcReactor(size: Dp, active: Boolean = true, modifier: Modifier = Modifier, level: Float = 0f, feather: Boolean = true) {
-    val t = rememberInfiniteTransition(label = "orb")
-    val spin by t.animateFloat(0f, 360f, infiniteRepeatable(tween(if (active) 3500 else 12000, easing = LinearEasing)), label = "spin")
-    val float by t.animateFloat(-1f, 1f, infiniteRepeatable(tween(2600, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "float")
-    val pulse by t.animateFloat(0.75f, 1f, infiniteRepeatable(tween(if (active) 500 else 1600, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "pulse")
-    val lvl by animateFloatAsState(level.coerceIn(0f, 1f), tween(120), label = "lvl")
-    val glow = Color(0xFFFF7A2E)
-    if (size < 90.dp) {
-        Box(modifier.size(size), contentAlignment = Alignment.Center) {
-            Canvas(Modifier.matchParentSize()) {
-                drawCircle(Brush.radialGradient(listOf(glow.copy(alpha = 0.35f * pulse + lvl * 0.3f), Color.Transparent)), this.size.minDimension / 2)
-            }
-            androidx.compose.foundation.Image(
-                androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_nav), null,
-                Modifier.size(size).graphicsLayer {
-                    rotationZ = spin * 0.6f
-                    scaleX = 1f + lvl * 0.08f; scaleY = 1f + lvl * 0.08f
-                },
-            )
-        }
-        return
+    var pulse = 1f
+    if (active) {
+        val transition = rememberInfiniteTransition(label = "jarvisPulse")
+        val p by transition.animateFloat(1f, 1.035f,
+            infiniteRepeatable(tween(1000, easing = FastOutSlowInEasing), RepeatMode.Reverse), label = "jarvisBreath")
+        pulse = p
     }
-    // Immagine base 507×404 px; nucleo rotante 172 px con angolo in alto a sinistra a (216, 132)
-    val w = size
-    val h = size * (404f / 507f)
-    Box(
-        modifier.size(w, h)
-            .graphicsLayer {
-                translationY = float * 4.dp.toPx()
-                // Con la sfumatura serve un livello a parte per la maschera
-                if (feather) compositingStrategy = androidx.compose.ui.graphics.CompositingStrategy.Offscreen
-            }
-            .drawWithContent {
-                drawContent()
-                // Bordi sfumati: niente riquadro dove lo sfondo non è identico a quello del mockup
-                if (feather) {
-                    val c = Offset(this.size.width * (302.5f / 507f), this.size.height * (218.2f / 404f))
-                    drawRect(
-                        Brush.radialGradient(0.72f to Color.Black, 1f to Color.Transparent, center = c, radius = this.size.width * 0.52f),
-                        blendMode = androidx.compose.ui.graphics.BlendMode.DstIn,
-                    )
-                }
-            },
-    ) {
-        Canvas(Modifier.matchParentSize()) {
-            val cx = this.size.width * (302.5f / 507f); val cy = this.size.height * (218.2f / 404f)
-            val r = this.size.width * 0.32f
-            drawCircle(Brush.radialGradient(listOf(glow.copy(alpha = 0.22f * pulse + lvl * 0.35f), Color.Transparent), center = Offset(cx, cy), radius = r), r, Offset(cx, cy))
-        }
+    val voice by animateFloatAsState(level.coerceIn(0f, 1f), tween(120), label = "jarvisVoice")
+    Box(modifier.size(size), contentAlignment = Alignment.Center) {
         androidx.compose.foundation.Image(
-            androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_orb), null, Modifier.matchParentSize(),
-        )
-        androidx.compose.foundation.Image(
-            androidx.compose.ui.res.painterResource(com.jarvis.files.R.drawable.jarvis_orb_core), null,
-            Modifier.offset(x = w * (216f / 507f), y = w * (132f / 507f)).size(w * (172f / 507f)).graphicsLayer {
-                rotationZ = spin
-                val sc = 1f + lvl * 0.06f + (pulse - 0.75f) * 0.04f
-                scaleX = sc; scaleY = sc
+            androidx.compose.ui.res.painterResource(if (size <= 48.dp) com.jarvis.files.R.drawable.jarvis_symbol_brand else com.jarvis.files.R.drawable.jarvis_sphere_brand),
+            null, Modifier.matchParentSize().graphicsLayer {
+                scaleX = pulse + voice * 0.06f; scaleY = scaleX
             },
         )
     }
