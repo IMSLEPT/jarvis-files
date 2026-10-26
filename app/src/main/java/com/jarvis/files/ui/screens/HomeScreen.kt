@@ -82,18 +82,19 @@ fun HomeScreen(vm: MainViewModel) {
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
         item {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Column(Modifier.weight(1f)) {
-                    Text("JARVIS FILES", style = MaterialTheme.typography.labelLarge, color = J.Orange)
-                    Spacer(Modifier.height(16.dp))
-                    Text("$greeting,", style = MaterialTheme.typography.headlineSmall, color = J.Text)
-                    Text(Prefs(ctx).userName, style = MaterialTheme.typography.headlineMedium, color = J.Text)
-                    Spacer(Modifier.height(8.dp))
-                    Text(SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date()), style = MaterialTheme.typography.bodySmall, color = J.Muted)
+            Column {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f)) {
+                        Text("JARVIS FILES", style = MaterialTheme.typography.labelLarge, color = J.Blue)
+                        Spacer(Modifier.height(8.dp))
+                        Text(SimpleDateFormat("EEEE d MMMM", Locale.ITALY).format(Date()), style = MaterialTheme.typography.bodySmall, color = J.Muted)
+                    }
+                    IconButton(onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE }, modifier = Modifier.size(124.dp).semantics { contentDescription = "Apri Jarvis" }) {
+                        ArcReactor(124.dp, active = vm.scanning)
+                    }
                 }
-                IconButton(onClick = { vm.tab = Tab.CHAT; vm.sub = Sub.NONE }, modifier = Modifier.size(144.dp).semantics { contentDescription = "Apri Jarvis" }) {
-                    ArcReactor(144.dp, active = vm.scanning)
-                }
+                Text("$greeting,", style = MaterialTheme.typography.headlineSmall, color = J.Text)
+                Text(Prefs(ctx).userName, style = MaterialTheme.typography.headlineMedium, color = J.Text)
             }
         }
         item {
@@ -131,7 +132,8 @@ fun HomeScreen(vm: MainViewModel) {
                         Text(Fmt.size(free), style = MaterialTheme.typography.headlineSmall, color = J.Text)
                         Text("disponibili", color = J.Muted, style = MaterialTheme.typography.bodyMedium)
                         Spacer(Modifier.height(8.dp))
-                        Text("${Fmt.size(used)} usati su ${Fmt.size(total)}", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                        Text("${Fmt.size(used)} usati", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                        Text("Totale ${Fmt.size(total)}", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                     }
                 }
                 Spacer(Modifier.height(16.dp))
