@@ -1,0 +1,240 @@
+10-26 16:30:46.149  4430  4604 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.150  1054  1054 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-26 16:30:46.150  1054  1054 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-26 16:30:46.158  3110  3289 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-26 16:30:46.165  3110  3289 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-26 16:30:46.170  3110  3289 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-26 16:30:46.214  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf to set project id.: No such file or directory
+10-26 16:30:46.227  1054  2527 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-26 16:30:46.233  1678  2644 I A       : [Upload] Connected
+10-26 16:30:46.235  1678  1678 I o       : processValidityUpdateForAllData
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: dhwp: FULL
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.237  1054  3372 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.238  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf
+10-26 16:30:46.238  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.238  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.254  3110  3289 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-26 16:30:46.259  1678  2048 I A       : Cobalt: try to find ProjectConfig for given tags
+10-26 16:30:46.260  1678  2048 W A       : Cobalt: couldn't find ProjectConfig for given tags
+10-26 16:30:46.263  1678  2048 I A       : Cobalt: try to find ProjectConfig for given tags
+10-26 16:30:46.267  1678  2048 W A       : Cobalt: couldn't find ProjectConfig for given tags
+10-26 16:30:46.268  1592  3767 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-26 16:30:46.271  3110  3289 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-26 16:30:46.280  1054  1308 W .gms.persistent: Long monitor contention with owner lowpool[1] (1466) at android.content.res.Resources android.app.ResourcesManager.createResources(android.content.res.ResourcesKey, java.lang.ClassLoader, android.app.ResourcesManager$ApkAssetsSupplier)(ResourcesManager.java:1033) waiters=0 in android.content.res.ApkAssets android.app.ResourcesManager.loadApkAssets(android.app.ResourcesManager$ApkKey) for 193ms
+10-26 16:30:46.281  1678  1678 I A       : Start work
+10-26 16:30:46.292  1678  1719 I earchbox:search: Background concurrent copying GC freed 130250(5943KB) AllocSpace objects, 43(5104KB) LOS objects, 49% free, 16MB/32MB, paused 747us,28us total 346.107ms
+10-26 16:30:46.308  1272  1272 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-26 16:30:46.311  1272  1272 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-26 16:30:46.311  1678  2045 I A       : Cobalt: try to find ProjectConfig for given tags
+10-26 16:30:46.312  1678  2045 W A       : Cobalt: couldn't find ProjectConfig for given tags
+10-26 16:30:46.315  1678  2048 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-26 16:30:46.316  1678  2045 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=9c1b4f44-9d5f-42c5-a2fe-3467b4263f9d, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.chime.registration.tasks.PeriodicChimeRegistrationWorker } ]
+10-26 16:30:46.317  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.327  3009  3009 I CarrierServices: [2] CarrierServicesBaseApp.initialize:126 Initialized already, return.
+10-26 16:30:46.331  1054  1054 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-26 16:30:46.331  1054  1054 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-26 16:30:46.339  3009  3009 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.BOOT_COMPLETED
+10-26 16:30:46.339  1678  2045 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=7b6d38b3-5da9-4dbb-a4b4-bc6ec2b64f5e, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.opa.worker.nudgeui.ResetOpaNgaQueryCounterTask } ]
+10-26 16:30:46.339  3009  3009 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+10-26 16:30:46.341  3110  3110 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-26 16:30:46.351  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.352  1678  2045 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=479e4c0a-2c7e-4e4f-81cb-147537598086, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.smartspace.task.LoggerTask } ]
+10-26 16:30:46.355  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.361  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.361  1678  1678 I BgTaskExecutorImpl: Starting EXCLUSIVE background task GELLER_OPA_REFRESH_TASK.
+10-26 16:30:46.364  1678  2466 I A       : Attempting to cache the data for corpora [21, 36].
+10-26 16:30:46.369  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.371  3110  3288 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.375  1482  1777 I LauncherIconVisibilityInitializerBase: LauncherIconVisibilityInitializerBase.lambda$doUpdate$1():69 doUpdate() : Visible = false
+10-26 16:30:46.381  1272  1272 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-26 16:30:46.381  1272  1272 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-26 16:30:46.382   285   285 D Zygote  : Forked child process 4721
+10-26 16:30:46.394  4721  4721 I timeinitializer: Using CollectorTypeCC GC.
+10-26 16:30:46.395  4721  4721 W timeinitializer: Unexpected CPU variant for x86: x86_64.
+10-26 16:30:46.395  4721  4721 W timeinitializer: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-26 16:30:46.403  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.403  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.408   374   394 I adbd    : jdwp connection from 4721
+10-26 16:30:46.432  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.432  1272  2947 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=AMBIENT_ASSISTANT serviceId=32
+10-26 16:30:46.437  1678  2045 W LocationOracle: No location returned by GMS core getLastLocation()
+10-26 16:30:46.438  3110  3289 D nativeloader: Configuring classloader-namespace for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-26 16:30:46.440  1678  1678 E A       : onError
+10-26 16:30:46.440  1678  1678 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-26 16:30:46.440  1678  1678 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-26 16:30:46.440  1678  1678 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-26 16:30:46.440  1678  1678 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.440  1678  1678 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.440  1678  1678 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-26 16:30:46.440  1678  1678 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-26 16:30:46.440  1678  1678 E A       : 	... 15 more
+10-26 16:30:46.440  1678  1678 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-26 16:30:46.440  1678  1678 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-26 16:30:46.440  1678  1678 E A       : 	... 12 more
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: Exception in upload method
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.r.d: Error code: 262182
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.ab.bk.d(PG:5)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.ar.d(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.bo.b(PG:5)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.e.a(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.a.run(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bu.cancel(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:17)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.bk.b.h.run(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.441  1678  2210 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-26 16:30:46.441  3110  3289 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-26 16:30:46.445  1678  2644 I NetworkRecognitionRnr: Using pair HTTP connection
+10-26 16:30:46.446  1678  2643 I A       : [Upload] Connected
+10-26 16:30:46.452  1016  1779 D EGL_emulation: app_time_stats: avg=766.41ms min=229.15ms max=1303.68ms count=2
+10-26 16:30:46.453  1678  1678 W A       : Failed to sync device settings.
+10-26 16:30:46.453  1678  1678 I A       : Retrying to sync device settings.
+10-26 16:30:46.464   483  2147 D ConnectivityService: requestNetwork for uid/pid:10113/3110 activeRequest: null callbackRequest: 124 [NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10113 RequestorUid: 10113 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-26 16:30:46.466   483   708 D ConnectivityService: NetReassign [125 : null → 100] [c 0] [a 1] [i 0]
+10-26 16:30:46.466   483   701 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10113 RequestorUid: 10113 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-26 16:30:46.466   483   701 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10113 RequestorUid: 10113 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-26 16:30:46.466   483   701 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10113 RequestorUid: 10113 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-26 16:30:46.466   483   701 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10113 RequestorUid: 10113 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]
+10-26 16:30:46.476  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.491  4721  4721 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10109; state: ENABLED
+10-26 16:30:46.496  4721  4721 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/GoogleOneTimeInitializer/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.onetimeinitializer:/product/lib64:/system/product/lib64
+10-26 16:30:46.502  4721  4721 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.onetimeinitializer' set to: 'default'
+10-26 16:30:46.502  4721  4721 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.onetimeinitializer: false
+10-26 16:30:46.502  4721  4721 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-26 16:30:46.504   483   708 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+10-26 16:30:46.504  4721  4721 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-26 16:30:46.504  4721  4721 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-26 16:30:46.505  4721  4721 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+10-26 16:30:46.506  4721  4745 V OneTimeInitializer: OneTimeInitializer.initialize
+10-26 16:30:46.508  3110  3289 I BugleNetwork: Creating gRPC Managed channel with Cronet: instantmessaging-pa.googleapis.com:443
+10-26 16:30:46.509  4721  4745 V OneTimeInitializer: Device Policy is not installed, doing nothing.
+10-26 16:30:46.520  1678  1678 V ClearcutMetricXmitter: Transmission is done.
+10-26 16:30:46.524   285   285 D Zygote  : Forked child process 4748
+10-26 16:30:46.531  4748  4748 I ackageinstaller: Using CollectorTypeCC GC.
+10-26 16:30:46.532  4748  4748 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+10-26 16:30:46.532  4748  4748 W ackageinstaller: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-26 16:30:46.537  2586  3959 W SystemServiceRegistry: No service published for: persistent_data_block
+10-26 16:30:46.537   374   394 I adbd    : jdwp connection from 4748
+10-26 16:30:46.547  4748  4748 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10079; state: ENABLED
+10-26 16:30:46.548  4430  4604 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+10-26 16:30:46.552  1592  3767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 263ms, 0 inserts 0 updates 0 deletes
+10-26 16:30:46.555  4430  4604 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+10-26 16:30:46.561  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.561   284  4765 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10113 0}
+10-26 16:30:46.565  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.565  1272  1334 W Icing   : No valid account for uploading user actions
+10-26 16:30:46.567   284  4766 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-26 16:30:46.567   284  4767 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-26 16:30:46.570  1592  1829 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.578  3110  3288 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.579  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-26 16:30:46.580  1592  1829 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.582  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.583  4748  4748 D nativeloader: Configuring classloader-namespace-shared for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=33, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+10-26 16:30:46.584   284  4766 I resolv  : res_nsend: used send_dg 276 terrno: 0
+10-26 16:30:46.584   284  4766 I resolv  : doQuery: rcode=0, ancount=8, return value=276
+10-26 16:30:46.585  2586  3959 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-26 16:30:46.585  2586  3959 W libc    : Access denied finding property "service.adb.tls.port"
+10-26 16:30:46.587   284  4767 I resolv  : res_nsend: used send_dg 180 terrno: 0
+10-26 16:30:46.587   284  4767 I resolv  : doQuery: rcode=0, ancount=8, return value=180
+10-26 16:30:46.595  1592  3947 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.598  1592  3947 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.602  1592  3947 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.604  4430  4604 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)

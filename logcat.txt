@@ -1,0 +1,212 @@
+--------- beginning of main
+10-26 16:30:02.400   859   859 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:30:40.457  4403  4403 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-26 16:30:40.483  4403  4403 I AndroidRuntime: Using default boot image
+10-26 16:30:40.483  4403  4403 I AndroidRuntime: Leaving lock profiling enabled
+10-26 16:30:40.704  4403  4403 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-26 16:30:45.520  4430  4604 I TestRunner: run started: 32 tests
+10-26 16:30:45.660  4430  4604 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-26 16:30:45.909  4430  4604 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+10-26 16:30:46.114  4430  4604 I JarvisTest: [FileOps] OK destinazione come percorso completo
+10-26 16:30:46.145  4430  4604 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.149  4430  4604 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.548  4430  4604 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+10-26 16:30:46.555  4430  4604 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+10-26 16:30:46.604  4430  4604 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.605  4430  4604 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.694  4430  4604 I JarvisTest: [Cestino] OK sposta e ripristina
+10-26 16:30:46.712  4430  4604 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.712  4430  4604 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.845  4430  4604 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+10-26 16:30:47.039  4430  4604 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:30:47.040  4430  4604 I TestRunner: started: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.231  4430  4604 I JarvisTest: [Backup] OK backup cifrato delle chiavi: esporta, password errata rifiutata, ripristino
+10-26 16:30:50.250  4430  4604 I TestRunner: finished: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.251  4430  4604 I TestRunner: started: sortDownloadRule(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.396  4430  4604 I JarvisTest: [Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+10-26 16:30:50.444  4430  4604 I TestRunner: finished: sortDownloadRule(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.446  4430  4604 I TestRunner: started: parseModelReply(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.524  4430  4604 I JarvisTest: [AI] OK interpretazione risposta del modello (JSON, domande, piano)
+10-26 16:30:50.548  4430  4604 I TestRunner: finished: parseModelReply(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.549  4430  4604 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.742  4430  4604 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-23 Vacanza 001.jpg, JarvisTest/Foto/2026-10-24 Vacanza 002.jpg]
+10-26 16:30:50.804  4430  4604 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+10-26 16:30:50.870  4430  4604 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+10-26 16:30:50.872  4430  4604 I TestRunner: started: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-26 16:30:51.018  4430  4604 I JarvisTest: [FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+10-26 16:30:51.086  4430  4604 I JarvisTest: [FileOps] Eseguito: 6 ok, 0 falliti []
+10-26 16:30:51.119  4430  4604 I JarvisTest: [FileOps] Annulla: 6 ripristinati, 0 falliti
+10-26 16:30:51.123  4430  4604 I JarvisTest: [FileOps] OK sposta/rinomina/cestino/annulla
+10-26 16:30:51.149  4430  4604 I TestRunner: finished: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+10-26 16:30:51.150  4430  4604 I TestRunner: started: realModel(com.jarvis.files.LlmTest)
+10-26 16:31:03.908  4146  4146 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.070  5554  5554 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.304  5572  5572 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.465  5590  5590 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.596  5608  5608 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.709  5626  5626 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.868  5644  5644 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:04.977  5661  5661 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.159  5679  5679 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.324  5708  5708 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.395  5725  5725 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.462  5742  5742 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.555  5759  5759 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.631  5776  5776 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.701  5793  5793 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.805  5812  5812 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.858  5830  5830 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:05.936  5848  5848 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:12.191  6038  6038 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:12.260  6055  6055 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:12.335  6072  6072 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:12.400  6089  6089 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:21.370  4430  4604 I JarvisTest: [LLM] Modello: null (null byte), accesso file=true
+10-26 16:31:21.370  4430  4604 E TestRunner: assumption failed: realModel(com.jarvis.files.LlmTest)
+10-26 16:31:21.371  4430  4604 E TestRunner: ----- begin exception -----
+10-26 16:31:21.371  4430  4604 E TestRunner: org.junit.AssumptionViolatedException: Modello non presente: test saltato
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.Assume.assumeTrue(Assume.java:68)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+10-26 16:31:21.371  4430  4604 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+10-26 16:31:21.371  4430  4604 E TestRunner: ----- end exception -----
+10-26 16:31:21.372  4430  4604 I TestRunner: finished: realModel(com.jarvis.files.LlmTest)
+10-26 16:31:21.483  4430  4604 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:31:21.564  4430  4604 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-26 16:31:21.564  4430  4604 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:31:21.565  4430  4604 I TestRunner: started: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-26 16:31:25.190  4430  4604 I JarvisTest: [Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 3596 ms
+10-26 16:31:28.669  4430  4604 I JarvisTest: [Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 3456 ms
+10-26 16:31:31.969  4430  4604 I JarvisTest: [Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 3273 ms
+10-26 16:31:37.565  4430  4604 I JarvisTest: [Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 5575 ms
+10-26 16:31:37.590  4430  4604 I JarvisTest: [Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+10-26 16:31:37.592  4430  4604 I JarvisTest: [Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+10-26 16:31:37.592  4430  4604 I TestRunner: finished: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-26 16:31:37.594  4430  4604 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-26 16:31:41.361  6630  6630 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:41.439  6659  6659 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:31:52.786  4430  4604 I JarvisTest: [Indice] Foto analizzate: 4 · totale db=(4, 0, 5)
+10-26 16:31:52.818  4430  4604 I JarvisTest: [Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+10-26 16:31:52.878  4430  4604 I JarvisTest: [Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+10-26 16:31:52.882  4430  4604 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+10-26 16:31:52.883  4430  4604 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+10-26 16:31:52.897  4430  4604 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+10-26 16:31:52.898  4430  4604 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-26 16:31:52.956  4430  4604 I TestRunner: started: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:31:53.126  4430  4604 I TestRunner: finished: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:31:53.127  4430  4604 I TestRunner: started: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+10-26 16:31:53.314  4430  4604 I TestRunner: finished: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+10-26 16:31:53.316  4430  4604 I TestRunner: started: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+10-26 16:31:53.580  4430  4604 I TestRunner: finished: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+10-26 16:31:53.583  4430  4604 I TestRunner: started: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+10-26 16:31:53.841  4430  4604 I TestRunner: finished: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+10-26 16:31:53.842  4430  4604 I TestRunner: started: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:31:54.087  4430  4604 I TestRunner: finished: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+10-26 16:31:54.089  4430  4604 I TestRunner: started: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+10-26 16:31:54.269  4430  4604 I TestRunner: finished: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+10-26 16:31:54.270  4430  4604 I TestRunner: started: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+10-26 16:31:54.461  4430  4604 I TestRunner: finished: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+10-26 16:31:54.462  4430  4604 I TestRunner: started: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+10-26 16:31:54.693  4430  4604 I TestRunner: finished: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+10-26 16:31:54.698  4430  4604 I TestRunner: started: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-26 16:31:55.008  4430  4604 I TestRunner: finished: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-26 16:31:55.009  4430  4604 I TestRunner: started: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-26 16:31:58.804  4430  4604 I TestRunner: finished: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-26 16:31:58.808  4430  4604 I TestRunner: started: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+10-26 16:31:59.039  4430  4604 I TestRunner: finished: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+10-26 16:31:59.041  4430  4604 I TestRunner: started: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+10-26 16:31:59.329  4430  4604 I TestRunner: finished: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+10-26 16:31:59.330  4430  4604 I TestRunner: started: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+10-26 16:31:59.481  4430  4604 I TestRunner: finished: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+10-26 16:31:59.482  4430  4604 I TestRunner: started: allScreens(com.jarvis.files.UiTest)
+10-26 16:32:02.306  7378  7378 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:07.502  7567  7567 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:09.790  7677  7677 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:12.514  7739  7739 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:13.110  4430  4604 I JarvisTest: [UI] Schermata 01_home OK
+10-26 16:32:13.874  7763  7763 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.010  7783  7783 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.096  7801  7801 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.167  7818  7818 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.238  7837  7837 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.307  7857  7857 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.369  7874  7874 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.423  7891  7891 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:14.478  7908  7908 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-26 16:32:16.737  4430  4604 I JarvisTest: [UI] Schermata 02_chat_vuota OK
+10-26 16:32:19.663  4430  4604 I JarvisTest: [UI] Schermata 03_chat_senza_ai OK
+10-26 16:32:22.633  4430  4604 I JarvisTest: [UI] Schermata 04_chat_anteprima OK
+10-26 16:32:25.682  4430  4604 I JarvisTest: [UI] Schermata 05_foto OK
+10-26 16:32:31.202  4430  4604 I JarvisTest: [UI] Schermata 06_pulizia_cache OK
+10-26 16:32:34.085  4430  4604 I JarvisTest: [UI] Schermata 07_pulizia_whatsapp OK
+10-26 16:32:37.040  4430  4604 I JarvisTest: [UI] Schermata 08_pulizia_inutili OK
+10-26 16:32:40.031  4430  4604 I JarvisTest: [UI] Schermata 09_altro OK
+10-26 16:32:48.500  4430  4604 I JarvisTest: [UI] Schermata 10_sicurezza OK
+10-26 16:32:51.451  4430  4604 I JarvisTest: [UI] Schermata 11_automazioni OK
+10-26 16:32:54.392  4430  4604 I JarvisTest: [UI] Schermata 12_batteria OK
+10-26 16:32:57.462  4430  4604 I JarvisTest: [UI] Schermata 13_impostazioni OK
+10-26 16:33:02.912  4430  4604 I JarvisTest: [UI] Schermata 14_persone OK
+10-26 16:33:05.823  4430  4604 I JarvisTest: [UI] Schermata 15_cestino OK
+10-26 16:33:08.733  4430  4604 I JarvisTest: [UI] Schermata 16_cassaforte OK
+10-26 16:33:11.646  4430  4604 I JarvisTest: [UI] Schermata 17_trova OK
+10-26 16:33:14.596  4430  4604 I JarvisTest: [UI] Schermata 18_file OK
+10-26 16:33:17.515  4430  4604 I JarvisTest: [UI] Schermata 18b_categoria OK
+10-26 16:33:21.088  4430  4604 I JarvisTest: [UI] Schermata 19_voce OK
+10-26 16:33:26.048  4430  4604 I JarvisTest: [UI] Schermata 20_home_scuro OK
+10-26 16:33:29.012  4430  4604 I JarvisTest: [UI] Schermata 21_chat_scura OK
+10-26 16:33:31.967  4430  4604 I JarvisTest: [UI] Schermata 22_pulizia_scura OK
+10-26 16:33:32.533  4430  4604 I TestRunner: finished: allScreens(com.jarvis.files.UiTest)
+10-26 16:33:32.535  4430  4604 I TestRunner: started: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:33:33.394  4430  4604 I TestRunner: finished: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:33:33.397  4430  4604 I TestRunner: started: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+10-26 16:33:34.172  4430  4604 I TestRunner: finished: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+10-26 16:33:34.290  4430  4604 I TestRunner: started: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+10-26 16:33:34.759  4430  4604 I TestRunner: finished: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+10-26 16:33:34.767  4430  4604 I TestRunner: started: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+10-26 16:33:35.633  4430  4604 I TestRunner: finished: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+10-26 16:33:35.634  4430  4604 I TestRunner: started: homeWorksWithLargeFonts(com.jarvis.files.UsabilityTest)
+10-26 16:33:36.823  4430  4604 I TestRunner: finished: homeWorksWithLargeFonts(com.jarvis.files.UsabilityTest)
+10-26 16:33:36.824  4430  4604 I TestRunner: run finished: 32 tests, 0 failed, 0 ignored
+10-26 16:33:36.890  4403  4403 I AndroidRuntime: VM exiting with result code 0.

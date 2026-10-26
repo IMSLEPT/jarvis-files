@@ -1,0 +1,13 @@
+10-26 16:31:54.089  4430  4604 I TestRunner: started: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+10-26 16:31:54.126  6120  6162 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:31:54.140  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:54.160  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:54.175  6120  6473 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 73 uptime_millis: 73 exec_start_elapsed_seconds: 148 [CONTEXT service_id=218 ]
+10-26 16:31:54.180  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:54.212  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:54.243  1592  4778 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:31:54.249  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:31:54.265  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download/a.pdf to set project id.: No such file or directory
+10-26 16:31:54.266  1592  4778 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:31:54.268  1592  3947 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:31:54.269  4430  4604 I TestRunner: finished: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)

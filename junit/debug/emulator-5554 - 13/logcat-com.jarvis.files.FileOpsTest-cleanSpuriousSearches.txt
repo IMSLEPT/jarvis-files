@@ -1,0 +1,178 @@
+10-26 16:30:46.712  4430  4604 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.714  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisTest/Dup/copia di uno.jpg to set project id.: No such file or directory
+10-26 16:30:46.714  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/copia di uno.jpg
+10-26 16:30:46.714  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/copia di uno.jpg
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:847)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.714  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.715  1592  1792 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000029
+10-26 16:30:46.715  1592  1792 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000029
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.715  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.716  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisTest/Dup/diverso.jpg to set project id.: No such file or directory
+10-26 16:30:46.717  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.725  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/diverso.jpg
+10-26 16:30:46.725  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/diverso.jpg
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:847)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.725  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.581  2586  2586 W binder:2586_5: type=1400 audit(0.0:85): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-26 16:30:46.728  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.729  1054  3372 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-26 16:30:46.732  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.737  4748  4748 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.packageinstaller' set to: 'default'
+10-26 16:30:46.737  4748  4748 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.packageinstaller: false
+10-26 16:30:46.737  4748  4748 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-26 16:30:46.738  4748  4748 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-26 16:30:46.738  4748  4748 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-26 16:30:46.740  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.745  3110  3279 I RcsClientLib: com.google.android.rcs.client.chatsession.ChatSessionService connected
+10-26 16:30:46.746  3110  3279 I BugleRcs: com.google.android.rcs.client.chatsession.ChatSessionService RCS service connected
+10-26 16:30:46.747  3110  3460 I RcsClientLib: Connecting EventService
+10-26 16:30:46.748  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.751  3110  3460 I RcsClientLib: Connecting ContactsService
+10-26 16:30:46.751  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.752  3110  3279 I RcsClientLib: com.google.android.rcs.client.events.EventService connected
+10-26 16:30:46.755  2387  2387 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10104; state: ENABLED
+10-26 16:30:46.756  1592  1792 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000030
+10-26 16:30:46.756  1592  1792 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000030
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.756  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.761   483   514 E system_server: No package ID 7f found for ID 0x7f08069b.
+10-26 16:30:46.761   483   514 E system_server: No package ID 7f found for ID 0x7f140c6e.
+10-26 16:30:46.761   483   514 E system_server: No package ID 7f found for ID 0x7f080729.
+10-26 16:30:46.762   483   514 E system_server: No package ID 7f found for ID 0x7f142028.
+10-26 16:30:46.763  3110  3279 I BugleRcs: com.google.android.rcs.client.events.EventService RCS service connected
+10-26 16:30:46.766  3110  3460 I RcsClientLib: Connecting FileTransferService
+10-26 16:30:46.766  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.767  3110  3279 I RcsClientLib: com.google.android.rcs.client.contacts.ContactsService connected
+10-26 16:30:46.769  3110  3279 I BugleRcs: com.google.android.rcs.client.contacts.ContactsService RCS service connected
+10-26 16:30:46.776  1054  1062 I .gms.persistent: Background young concurrent copying GC freed 299940(17MB) AllocSpace objects, 7(204KB) LOS objects, 44% free, 20MB/36MB, paused 179us,2.437ms total 581.931ms
+10-26 16:30:46.796  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.807  3110  3279 I RcsClientLib: com.google.android.rcs.client.filetransfer.FileTransferService connected
+10-26 16:30:46.807  3110  3279 I BugleRcs: com.google.android.rcs.client.filetransfer.FileTransferService RCS service connected
+10-26 16:30:46.809  1054  2538 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-26 16:30:46.815  3110  3460 I RcsClientLib: Connecting LocationSharingService
+10-26 16:30:46.817  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.819  3110  3460 I RcsClientLib: Connecting ImsConnectionTrackerService
+10-26 16:30:46.820  3110  3279 I RcsClientLib: com.google.android.rcs.client.locationsharing.LocationSharingService connected
+10-26 16:30:46.820   284  4775 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-26 16:30:46.825   284  4777 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-26 16:30:46.825   284  4777 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7057dab0a9d0
+10-26 16:30:46.825   284  4777 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-26 16:30:46.827  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf to content://media/external_primary/file/1000000025
+10-26 16:30:46.827   284  4776 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-26 16:30:46.827   284  4776 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7057eab0f0d0
+10-26 16:30:46.827   284  4776 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-26 16:30:46.828  1272  4316 D TrafficStats: tagSocket(84) with statsTag=0x30000408, statsUid=-1
+10-26 16:30:46.829  3110  3279 I BugleRcs: com.google.android.rcs.client.locationsharing.LocationSharingService RCS service connected
+10-26 16:30:46.829  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.833  1272  4316 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-26 16:30:46.834  1272  4316 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:46.835  1272  4316 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.845  4430  4604 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+10-26 16:30:46.851  3110  3279 I RcsClientLib: com.google.android.rcs.client.ims.ImsConnectionTrackerService connected
+10-26 16:30:46.857  1592  3767 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf
+10-26 16:30:46.866  1272  4316 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-26 16:30:46.866  1272  4316 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:46.866  1272  4316 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.869  1592  3767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 13ms, 0 inserts 0 updates 0 deletes
+10-26 16:30:46.875  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf to null
+10-26 16:30:46.876  3110  3279 I BugleRcs: com.google.android.rcs.client.ims.ImsConnectionTrackerService RCS service connected
+10-26 16:30:46.881  3110  3279 I BugleRcs: subscribing to global rcs listener
+10-26 16:30:46.881  3009  3359 I CarrierServices: [50] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@e0fd866 for category 3 with key 235919462 for hub UI
+10-26 16:30:46.882  3009  3359 I CarrierServices: [50] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@59267a7 for category 5 with key 93480871 for hub UI
+10-26 16:30:46.882  3009  3359 I CarrierServices: [50] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@d153454 for category 2 with key 219493460 for hub UI
+10-26 16:30:46.889   765   843 D EGL_emulation: app_time_stats: avg=2335.69ms min=2335.69ms max=2335.69ms count=1
+10-26 16:30:46.897  3110  3460 I RcsClientLib: Connecting RcsProfileService
+10-26 16:30:46.924  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.927  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to content://media/external_primary/file/1000000022
+10-26 16:30:46.941   769   769 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10171; state: ENABLED
+10-26 16:30:46.944  3110  4741 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@d22d30f
+10-26 16:30:46.966  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.973  3110  3329 I RcsClientLib: com.google.android.rcs.client.profile.RcsProfileService connected
+10-26 16:30:46.973  3110  3329 I BugleRcs: com.google.android.rcs.client.profile.RcsProfileService RCS service connected
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at vws.p(PG:5)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at vws.b(PG:2)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at xuv.d(PG:4)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at acvk.c(PG:51)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at acvk.j(PG:38)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at acvk.d(PG:3)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at qhq.run(PG:2)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at qic.run(PG:4)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at xtk.k(PG:5)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at wfa.f(PG:17)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at wfa.c(PG:1)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at wdz.run(PG:21)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at vvz.run(PG:11)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	... 1 more
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: Caused by: dlh
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	at wdz.run(PG:14)
+10-26 16:30:46.976  1664  2346 W YouTubeMusic: 	... 4 more
+10-26 16:30:46.981  3110  3460 I RcsClientLib: Connecting BusinessInfoService
+10-26 16:30:46.984   769   769 I HibernationPolicy: scheduleHibernationJob with frequency 1296000000ms and threshold 7776000000ms
+10-26 16:30:47.006  1592  1829 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:47.016  1592  1829 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:47.018  3476  3780 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-26 16:30:47.019  3476  3780 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: Pool status.
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: Total: 6
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: Attested: 6
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: Unassigned: 5
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: Expiring: 0
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-26 16:30:47.019  3476  3780 I RemoteProvisioningService: No provisioning needed.
+10-26 16:30:47.030   483   514 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-26 16:30:47.033   769   769 I HibernationPolicy: user 0 is a profileowner. Running hibernation job.
+10-26 16:30:47.035  1592  1829 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:47.035   483   514 E system_server: No package ID 7f found for ID 0x7f150421.
+10-26 16:30:47.038  1592  1829 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:47.039  4430  4604 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)

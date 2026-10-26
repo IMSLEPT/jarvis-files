@@ -1,0 +1,52 @@
+[FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+[FileOps] OK destinazione come percorso completo
+[Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+[Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+[Cestino] OK sposta e ripristina
+[AI] OK pulizia di ricerche e date non richieste
+[Backup] OK backup cifrato delle chiavi: esporta, password errata rifiutata, ripristino
+[Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+[AI] OK interpretazione risposta del modello (JSON, domande, piano)
+[FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-23 Vacanza 001.jpg, JarvisTest/Foto/2026-10-24 Vacanza 002.jpg]
+[FileOps] OK nomi duplicati e rinomina con schema
+[FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+[FileOps] Eseguito: 6 ok, 0 falliti []
+[FileOps] Annulla: 6 ripristinati, 0 falliti
+[FileOps] OK sposta/rinomina/cestino/annulla
+[LLM] Modello: null (null byte), accesso file=true
+[Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+[Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 3596 ms
+[Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 3456 ms
+[Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 3273 ms
+[Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 5575 ms
+[Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+[Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+[Indice] Foto analizzate: 4 · totale db=(4, 0, 5)
+[Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+[Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+[Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+[Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+[Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+[UI] Schermata 01_home OK
+[UI] Schermata 02_chat_vuota OK
+[UI] Schermata 03_chat_senza_ai OK
+[UI] Schermata 04_chat_anteprima OK
+[UI] Schermata 05_foto OK
+[UI] Schermata 06_pulizia_cache OK
+[UI] Schermata 07_pulizia_whatsapp OK
+[UI] Schermata 08_pulizia_inutili OK
+[UI] Schermata 09_altro OK
+[UI] Schermata 10_sicurezza OK
+[UI] Schermata 11_automazioni OK
+[UI] Schermata 12_batteria OK
+[UI] Schermata 13_impostazioni OK
+[UI] Schermata 14_persone OK
+[UI] Schermata 15_cestino OK
+[UI] Schermata 16_cassaforte OK
+[UI] Schermata 17_trova OK
+[UI] Schermata 18_file OK
+[UI] Schermata 18b_categoria OK
+[UI] Schermata 19_voce OK
+[UI] Schermata 20_home_scuro OK
+[UI] Schermata 21_chat_scura OK
+[UI] Schermata 22_pulizia_scura OK

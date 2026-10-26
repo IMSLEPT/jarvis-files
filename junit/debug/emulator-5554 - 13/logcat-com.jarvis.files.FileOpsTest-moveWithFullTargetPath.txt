@@ -1,0 +1,548 @@
+10-26 16:30:45.660  4430  4604 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-26 16:30:45.675  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.677  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.678  1054  1142 E AuthPII : [GoogleAccountDataServiceImpl] getToken() -> BAD_AUTHENTICATION. App: com.google.android.gms, Service: oauth2:https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/account.capabilities https://www.googleapis.com/auth/account.service_flags
+10-26 16:30:45.678  1054  1142 E AuthPII : abcp: Long live credential not available.
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-26 16:30:45.678  1054  1142 E AuthPII : Message is Long live credential not available.
+10-26 16:30:45.678  1054  1142 E AuthPII : abcp: Long live credential not available.
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-26 16:30:45.678  1054  1142 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-26 16:30:45.679  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.679  1054  1142 W Auth    : [AccountStateSyncher] Unable to look up account state from server: couldn't fetch accessToken [CONTEXT service_id=153 ]
+10-26 16:30:45.680  1054  1142 W Auth    : [GaiaServicesFlagManager] Services not available! [CONTEXT service_id=153 ]
+10-26 16:30:45.690  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.694  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.704  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.727  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.747  4560  4574 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10145; state: ENABLED
+10-26 16:30:45.788  1272  1334 I Icing   : Indexing com.google.android.deskclock-internal.3p:Alarm_cross_device from com.google.android.deskclock
+10-26 16:30:45.905  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.906  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:45.909  4430  4604 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+10-26 16:30:45.926  1054  4305 I WakefulBroadcastRcvr: Processing wakeful broadcast: BootOrGmsUpdated
+10-26 16:30:45.931  1054  2742 I NearbyConnections: Runtime state initialization complete. Nearby connections setting is disabled [CONTEXT service_id=54 ]
+10-26 16:30:45.934  1054  2641 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore default scan mode. [CONTEXT service_id=54 ]
+10-26 16:30:45.936  1054  2641 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore device name [CONTEXT service_id=54 ]
+10-26 16:30:45.942  1272  1334 E SQLiteLog: (1) no such table: Alarm_cross_device_com.google.android.deskclock_seq_table in "SELECT * FROM [Alarm_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20"
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: dhwp: FULL
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:45.945  1054  2527 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:45.953  1272  4316 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 8 attempt count: 1.
+10-26 16:30:45.956  1678  1678 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-26 16:30:45.960  1272  1334 E Icing   : Cursor call threw an exception: no such table: Alarm_cross_device_com.google.android.deskclock_seq_table (code 1 SQLITE_ERROR): , while compiling: SELECT * FROM [Alarm_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20
+10-26 16:30:45.960  1272  1334 I Icing   : Indexing done com.google.android.deskclock-internal.3p:Alarm_cross_device
+10-26 16:30:45.960  1272  1334 E Icing   : Aborting indexing of corpus internal.3p:Alarm_cross_device
+10-26 16:30:45.960  1678  1678 I CalRefreshTaskCtrl: #onDeviceInstallOrBoot(): Starting calendar refresh task.
+10-26 16:30:45.960  1678  1678 I CalRefreshTaskCtrl: PCP migration is enabled for calendar, skip the refresh.
+10-26 16:30:45.961  1678  1678 I CalWorkerScheduler: Scheduling calendar refresh task status check worker at device reboot or app install.
+10-26 16:30:45.961  1272  1334 I Icing   : Indexing com.google.android.deskclock-internal.3p:Stopwatch_cross_device from com.google.android.deskclock
+10-26 16:30:45.961  1272  1334 E SQLiteLog: (1) no such table: Stopwatch_cross_device_com.google.android.deskclock_seq_table in "SELECT * FROM [Stopwatch_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT
+10-26 16:30:45.967  4560  4608 W ymo     : Toggling Chat components off.
+10-26 16:30:45.970  1678  1678 I A       : Setting OMP browser to 2.
+10-26 16:30:45.972  1678  1678 I A       : Scheduling growth periodic tasks
+10-26 16:30:45.973  1678  1678 I WeatherWorkerScheduler: Scheduling weather workers.
+10-26 16:30:45.973  1678  1678 I PcpLocalCalendarStartup: #onDeviceInstallOrBoot(): Starting PCP calendar tasks.
+10-26 16:30:45.985  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.986  1678  1678 I HotwordUpgradeTask: App version upgraded to 301194889: running speaker ID model upgrade tasks v2.
+10-26 16:30:45.986  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.987  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.987  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.987  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.988  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.988  1678  1678 I A       : Merging legacy hotword config map with new proto.
+10-26 16:30:45.988  1678  1678 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.989  1678  1678 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-26 16:30:45.989  1678  1678 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-26 16:30:45.989  1678  1678 I A       : Skipping. Expected model: 2 Found: 1
+10-26 16:30:45.989  1678  1678 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.990  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.990  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.991  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.991  1678  1678 I A       : Merging legacy hotword config map with new proto.
+10-26 16:30:45.992  1678  1678 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.992  1678  1678 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-26 16:30:45.993  1678  1678 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-26 16:30:45.993  1678  1678 I A       : Skipping. Expected model: 2 Found: 1
+10-26 16:30:45.993  1678  1678 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.994  1678  1678 I HotwordUpgradeTask: #shouldShowNotificationForUserUpgrade - false [isUserSpeakerIdEnabled: false, isUserUpgraded: true]
+10-26 16:30:45.995  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.995  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.995  1678  1678 I A       : Using proto config with mendel
+10-26 16:30:45.996  1678  1678 I A       : Merging legacy hotword config map with new proto.
+10-26 16:30:45.996  1678  1678 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.996  1678  1678 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-26 16:30:45.996  1678  1678 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-26 16:30:45.997  1678  1678 I A       : Skipping. Expected model: 2 Found: 1
+10-26 16:30:45.997  1678  1678 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-26 16:30:45.998  1678  1678 I HotwordUpgradeTask: #shouldShowNotificationForModelDownload - false [shouldCheckHotwordModel: false, xGoogleHotwordModelPresent: true, isUserSpeakerIdEnabled: false]
+10-26 16:30:45.998  1678  1678 I HotwordUpgradeTask: Notification requirements not met. Do not show notification.
+10-26 16:30:45.998  1678  2459 I A       : Core Geller initializer successfully triggered.
+10-26 16:30:46.003  1678  1678 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-26 16:30:46.005  1678  1678 I A       : Util.isLowRamDevice: false, canUsePreemptibleAudioSource: true
+10-26 16:30:46.007  1678  1678 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [android.intent.action.BOOT_COMPLETED] package [com.google.android.googlequicksearchbox].
+10-26 16:30:46.007  1678  1678 I GnpSdk  : [ChimeBroadcastReceiver] Phenotype initialized.
+10-26 16:30:46.008  1678  1678 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [android.intent.action.BOOT_COMPLETED].
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications#com.google.android.googlequicksearchbox, using defaults.
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at f.a.a.e.a.c.c(PG:1)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.onReceive(PG:25)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-26 16:30:46.009  1678  1678 W SnapshotHandler: 	... 21 more
+10-26 16:30:46.009  1678  1678 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Submitting Broadcast execution [7657993] to tiktok executor.
+10-26 16:30:46.009  1678  2458 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [android.intent.action.BOOT_COMPLETED].
+10-26 16:30:46.023  1678  2049 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+10-26 16:30:46.029  1678  2466 I A       : Using proto config with mendel
+10-26 16:30:46.033  1678  2466 I A       : Using proto config with mendel
+10-26 16:30:46.040  1678  2466 I A       : #Utterance files for modelType-2 found-0
+10-26 16:30:46.044  1272  1334 E Icing   : Cursor call threw an exception: no such table: Stopwatch_cross_device_com.google.android.deskclock_seq_table (code 1 SQLITE_ERROR): , while compiling: SELECT * FROM [Stopwatch_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20
+10-26 16:30:46.045  1272  1334 I Icing   : Indexing done com.google.android.deskclock-internal.3p:Stopwatch_cross_device
+10-26 16:30:46.045  1272  1334 E Icing   : Aborting indexing of corpus internal.3p:Stopwatch_cross_device
+10-26 16:30:46.047  1678  2459 E BistoWorker: Couldn't get logged in Google account.
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox, using defaults.
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at f.a.a.i.a.i.b(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at f.a.a.i.a.g.c(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.f(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.a(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.o.a(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.o.a.a.b(PG:5)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.restart.a.b(PG:14)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.b(PG:3)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.b.run(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.apps.tiktok.tracing.ei.run(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.common.util.concurrent.dy.a(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.common.util.concurrent.cv.run(PG:4)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.common.util.concurrent.dz.run(PG:1)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.i.i.run(PG:2)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at com.google.android.libraries.i.p.run(PG:4)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-26 16:30:46.048  1678  2458 W SnapshotHandler: 	... 28 more
+10-26 16:30:46.048  1678  1678 I BgTaskExecutorImpl: Starting EXCLUSIVE background task OPA_NOTIFICATION_DELAYED_TRIGGER_SYNC.
+10-26 16:30:46.052  1272  3391 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+10-26 16:30:46.064  1678  2466 I A       : Utterances rename task completed.
+10-26 16:30:46.068  1272  3391 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
+10-26 16:30:46.068   483   514 E system_server: No package ID 7f found for ID 0x7f0802b0.
+10-26 16:30:46.068   483   514 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-26 16:30:46.068   483   514 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-26 16:30:46.069  1272  3391 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.cast [CONTEXT service_id=231 ]
+10-26 16:30:46.069   483   514 E system_server: No package ID 7f found for ID 0x7f150a3f.
+10-26 16:30:46.076  1272  3391 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+10-26 16:30:46.083  1678  2458 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Finished Broadcast execution [7657993].
+10-26 16:30:46.084  1678  1718 I earchbox:search: JIT allocated 77KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.amm.d()
+10-26 16:30:46.094  1272  3391 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+10-26 16:30:46.103  1678  1678 I A       : Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.platform.contexttrigger.impl.ContextTriggerBroadcastReceiver_Receiver (has extras) }
+10-26 16:30:46.110  1678  2210 W A       : No value provided for the places model index flag.
+10-26 16:30:46.114  4430  4604 I JarvisTest: [FileOps] OK destinazione come percorso completo
+10-26 16:30:46.117  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.CustomViolation: gcore.dynamite
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onCustomSlowCall(StrictMode.java:1625)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.StrictMode.noteSlowCall(StrictMode.java:2693)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at aciz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.chimera.container.GmsModuleChimeraProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at hfr.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-26 16:30:46.117  3110  3289 D StrictMode: # via Binder call with stack:
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.StrictMode.readAndHandleBinderCallViolations(StrictMode.java:2496)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:2956)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:139)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:481)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1219)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1151)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1107)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.e(PG:10)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:12)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.117  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.123  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:250)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.io.File.isDirectory(File.java:843)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:376)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:17)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.123  1592  1829 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.123  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:250)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.io.File.isFile(File.java:876)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:380)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:17)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.123  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.123  3110  3289 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.dm': No such file or directory
+10-26 16:30:46.123  3110  3289 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.dm': No such file or directory
+10-26 16:30:46.128  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:250)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.io.File.isDirectory(File.java:843)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList$Element.<init>(DexPathList.java:681)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:412)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:17)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.128  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at libcore.io.BlockGuardOs.stat(BlockGuardOs.java:419)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at libcore.io.ForwardingOs.stat(ForwardingOs.java:846)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at android.app.ActivityThread$AndroidOs.stat(ActivityThread.java:7824)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.splitPaths(DexPathList.java:319)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:181)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:17)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.128  1592  1844 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.128  3110  3289 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:250)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.io.File.isDirectory(File.java:843)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.makePathElements(DexPathList.java:507)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:182)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:17)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpo.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bcpp.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:8)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bdmz.b(PG:12)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:5)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.d(PG:68)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwo.b(PG:220)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.m(Unknown Source:4983)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at uwq.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cldz.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.b(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ule.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cagp.get(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at ulf.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.b(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.a(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhm.c(PG:4)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhg.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at alhw.b(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.n(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at altx.d(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at akyi.a(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at byyh.a(PG:3)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxi.d(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at cdxk.run(PG:9)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkac.run(PG:1)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bjzl.run(PG:2)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:30:46.128  3110  3289 D StrictMode: 	at bkam.run(PG:5)
+10-26 16:30:46.131  1592  1829 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.137  1592  3947 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.138  1678  2643 W LocationOracle: getBestLocation(): no location is available
+10-26 16:30:46.139  1678  2417 I NetworkRecognitionRnr: Using pair HTTP connection
+10-26 16:30:46.143  1592  1829 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.145  4430  4604 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)

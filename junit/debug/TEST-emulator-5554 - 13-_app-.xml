@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.jarvis.files.FileOpsTest" tests="32" failures="0" errors="0" skipped="1" time="172.372" timestamp="2026-10-26T16:33:38" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="moveWithFullTargetPath" classname="com.jarvis.files.FileOpsTest" time="0.421" />
+  <testcase name="duplicatesAndSearch" classname="com.jarvis.files.FileOpsTest" time="0.429" />
+  <testcase name="trashRestore" classname="com.jarvis.files.FileOpsTest" time="0.102" />
+  <testcase name="cleanSpuriousSearches" classname="com.jarvis.files.FileOpsTest" time="0.331" />
+  <testcase name="keyBackupRoundTrip" classname="com.jarvis.files.FileOpsTest" time="3.195" />
+  <testcase name="sortDownloadRule" classname="com.jarvis.files.FileOpsTest" time="0.183" />
+  <testcase name="parseModelReply" classname="com.jarvis.files.FileOpsTest" time="0.114" />
+  <testcase name="collisionsAndPattern" classname="com.jarvis.files.FileOpsTest" time="0.297" />
+  <testcase name="planExecuteAndUndo" classname="com.jarvis.files.FileOpsTest" time="0.255" />
+  <testcase name="realModel" classname="com.jarvis.files.LlmTest" time="30.238">
+    <skipped />
+  </testcase>
+  <testcase name="a2_stopRequest" classname="com.jarvis.files.PhotoTest" time="0.079" />
+  <testcase name="a_facesAndEmbeddings" classname="com.jarvis.files.PhotoTest" time="16.038" />
+  <testcase name="b_indexNameAndSearch" classname="com.jarvis.files.PhotoTest" time="15.308" />
+  <testcase name="jsonNullIsNotARealFolderOrPhotoSearch" classname="com.jarvis.files.RegressionTest" time="0.181" />
+  <testcase name="pathsCannotEscapeRootOrMatchRootByPrefix" classname="com.jarvis.files.RegressionTest" time="0.18" />
+  <testcase name="cannotMoveStorageRootOrSystemFolders" classname="com.jarvis.files.RegressionTest" time="0.25" />
+  <testcase name="executeValidatesPlansFromEverySource" classname="com.jarvis.files.RegressionTest" time="0.253" />
+  <testcase name="photoMentionsInOrganizationDoNotTriggerPhotoSearch" classname="com.jarvis.files.RegressionTest" time="0.255" />
+  <testcase name="folderSearchDoesNotIncludeSimilarFolderNames" classname="com.jarvis.files.RegressionTest" time="0.181" />
+  <testcase name="moveNeverOverwritesExistingFile" classname="com.jarvis.files.RegressionTest" time="0.185" />
+  <testcase name="emptyGroupFilterCannotTargetEntirePhone" classname="com.jarvis.files.RegressionTest" time="0.232" />
+  <testcase name="partialUndoCanBeRetriedWithoutLosingJournal" classname="com.jarvis.files.RegressionTest" time="0.299" />
+  <testcase name="largeFilesWithMatchingEndsAreNotDuplicates" classname="com.jarvis.files.RegressionTest" time="3.776" />
+  <testcase name="repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex" classname="com.jarvis.files.RegressionTest" time="0.23" />
+  <testcase name="activeDownloadIsNotSuggestedAsJunk" classname="com.jarvis.files.RegressionTest" time="0.304" />
+  <testcase name="clarificationCannotOfferPrematureExecution" classname="com.jarvis.files.RegressionTest" time="0.157" />
+  <testcase name="allScreens" classname="com.jarvis.files.UiTest" time="93.055" />
+  <testcase name="newChatRemovesConversationAndDraft" classname="com.jarvis.files.UsabilityTest" time="0.856" />
+  <testcase name="draftSurvivesTabNavigation" classname="com.jarvis.files.UsabilityTest" time="0.763" />
+  <testcase name="vaultRequiresUnlockEvenWhenAppLockIsOff" classname="com.jarvis.files.UsabilityTest" time="0.457" />
+  <testcase name="noExecutionWhenEveryOperationIsExcluded" classname="com.jarvis.files.UsabilityTest" time="0.882" />
+  <testcase name="homeWorksWithLargeFonts" classname="com.jarvis.files.UsabilityTest" time="1.188" />
+</testsuite>

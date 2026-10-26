@@ -1,0 +1,226 @@
+10-26 16:31:59.041  4430  4604 I TestRunner: started: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+10-26 16:31:59.041  6120  7088 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
+10-26 16:31:59.041  6120  7088 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
+10-26 16:31:59.042  6120  7088 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
+10-26 16:31:59.042  6120  7088 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.checkin [CONTEXT service_id=204 ]
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.checkin
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:31:59.043  6120  7088 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:31:59.049  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download/a.pdf to set project id.: No such file or directory
+10-26 16:31:59.050  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:31:59.050  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:31:59.050  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:31:59.051  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a (ripristinato 2).pdf to content://media/external_primary/file/1000000058
+10-26 16:31:59.053  3110  3278 W BugleRcsEngine: [48] bemz.x: Unable to send diagnostic log
+10-26 16:31:59.060  3110  7119 I BugleRcsEngine: [181] bghl.b: Using config server URL from beqz
+10-26 16:31:59.061  3110  7119 I BugleRcsEngine: [181] bgfx.d: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897]
+10-26 16:31:59.061  3110  7119 I BugleRcsEngine: [181] bgfx.z: ProvisioningConsent from user settings: false
+10-26 16:31:59.063  1592  1792 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000062
+10-26 16:31:59.063  1592  1792 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000062
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:31:59.063  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:31:59.065  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisRegression/Download/a (ripristinato 1).pdf to set project id.: No such file or directory
+10-26 16:31:59.065  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a (ripristinato 1).pdf
+10-26 16:31:59.065  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisRegression/Download/a (ripristinato 1).pdf
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:31:59.065  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:31:59.067  1592  1792 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000058
+10-26 16:31:59.067  1592  1792 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000058
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:31:59.067  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:31:59.075  3110  7119 I BugleRcsEngine: [181] bgfx.z: ProvisioningConsent from user settings: false
+10-26 16:31:59.075  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:59.079  3110  7119 I BugleRcsEngine: [181] bgfx.d: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897]
+10-26 16:31:59.079  3110  7119 W BugleRcsEngine: [181] bfyb.e: (PEv2-SM-Bugle-37891072): Could not retrieve MSISDN from configuration. Configuration is empty. [f35868c7-8085-42c8-b798-72ee4c855256]
+10-26 16:31:59.079  3110  7119 W BugleRcsEngine: [181] bfyb.e: (PEv2-SM-Bugle-37891072): Skipping adding Tachyon identity key to request. Null/empty RCS msisdn from configuration for sim ID: 89860318640220133897. [f35868c7-8085-42c8-b798-72ee4c855256]
+10-26 16:31:59.080  3110  7119 I BugleRcsEngine: [181] bfyb.d: (PEv2-SM-Bugle-37891072): RequestWithImsiState: event Send config request [f35868c7-8085-42c8-b798-72ee4c855256]
+10-26 16:31:59.080  3110  7119 I BugleRcsEngine: [181] bfyb.d: (PEv2-SM-Bugle-37891072): InProgressState: event Send config request [f35868c7-8085-42c8-b798-72ee4c855256]
+10-26 16:31:59.081  3110  7119 W BugleRcsEngine: [181] bemz.x: Unable to send diagnostic log
+10-26 16:31:59.081  6120  6158 W BpBinder: Large outgoing transaction of 329996 bytes, interface descriptor <uncached descriptor>, code 4
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-26 16:31:59.084  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-26 16:31:59.085  1678  2039 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-26 16:31:59.088  3110  3278 W BugleRcsEngine: [48] bemz.x: Unable to send diagnostic log
+10-26 16:31:59.096  3110  7150 W BugleRcsEngine: [182] bemz.x: Unable to send diagnostic log
+10-26 16:31:59.099  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:59.100  1678  6681 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-26 16:31:59.106  1678  2045 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-26 16:31:59.106  1678  2045 I FedAssExpListener: Successfully processed experiments changed.
+10-26 16:31:59.108  1678  2045 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+10-26 16:31:59.108  1678  2048 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-26 16:31:59.116  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-26 16:31:59.118  1678  2048 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-26 16:31:59.123   284  7162 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10113 0}
+10-26 16:31:59.129  4114  4114 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-26 16:31:59.129   284  7166 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-26 16:31:59.130   284  7165 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-26 16:31:59.135  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:31:59.142  1592  1792 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000058
+10-26 16:31:59.142  1592  1792 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000058
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:31:59.142  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:31:59.144   284  7166 I resolv  : res_nsend: used send_dg 64 terrno: 0
+10-26 16:31:59.144   284  7166 I resolv  : doQuery: rcode=0, ancount=1, return value=64
+10-26 16:31:59.145  6169  6204 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-26 16:31:59.146  6169  6270 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-26 16:31:59.146   284  7165 I resolv  : res_nsend: used send_dg 76 terrno: 0
+10-26 16:31:59.146   284  7165 I resolv  : doQuery: rcode=0, ancount=1, return value=76
+10-26 16:31:59.149  3110  7150 D TrafficStats: tagSocket(91) with statsTag=0xc26, statsUid=-1
+10-26 16:31:59.150  6169  6206 W Icing   : No valid account for uploading user actions
+10-26 16:31:59.152  4430  6539 D TransportRuntime.CctTransportBackend: Making request to: https://firebaselogging.googleapis.com/v0cc/log/batch?format=json_proto3
+10-26 16:31:59.157  1592  6971 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:31:59.161  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:31:59.163  6169  6206 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-26 16:31:59.164   284  7176 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10174 0}
+10-26 16:31:59.165  6169  6206 W Icing   : No valid account for uploading user actions
+10-26 16:31:59.167   284  7178 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-26 16:31:59.169   284  7177 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-26 16:31:59.172  6169  6206 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-26 16:31:59.181   958   958 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-26 16:31:59.181   958   958 D MediaPlayerList: Name of package changed: com.google.android.apps.messaging
+10-26 16:31:59.181   958   958 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-26 16:31:59.181   958   958 D MediaPlayerList: Name of package changed: com.google.android.apps.messaging
+10-26 16:31:59.184   483   593 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-26 16:31:59.186   284  7178 I resolv  : res_nsend: used send_dg 176 terrno: 0
+10-26 16:31:59.186   284  7178 I resolv  : doQuery: rcode=0, ancount=8, return value=176
+10-26 16:31:59.186   765   765 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-26 16:31:59.187  3110  3289 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@a135830
+10-26 16:31:59.188  4800  4813 I PermissionControllerServiceImpl: Updating user sensitive for uid 10113
+10-26 16:31:59.189   284  7177 I resolv  : res_nsend: used send_dg 272 terrno: 0
+10-26 16:31:59.189   284  7177 I resolv  : doQuery: rcode=0, ancount=8, return value=272
+10-26 16:31:59.192  4430  6539 D TrafficStats: tagSocket(98) with statsTag=0xffffffff, statsUid=-1
+10-26 16:31:59.199   483   584 I RoleService: Granting default roles...
+10-26 16:31:59.205   987   987 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-26 16:31:59.205   987   987 D CarrierSvcBindHelper: No carrier app for: 0
+10-26 16:31:59.207  1592  3947 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:31:59.208  3648  7183 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-26 16:31:59.209   987   987 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-26 16:31:59.215   483   514 E system_server: No package ID 7f found for ID 0x7f0802b0.
+10-26 16:31:59.216   483   514 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-26 16:31:59.216   483   514 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-26 16:31:59.216   483   514 E system_server: No package ID 7f found for ID 0x7f150a3f.
+10-26 16:31:59.222   483   593 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-26 16:31:59.224  4800  4813 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-26 16:31:59.225   958   958 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-26 16:31:59.225   958   958 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-26 16:31:59.225   958   958 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-26 16:31:59.226   958   958 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-26 16:31:59.227   765   765 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-26 16:31:59.229  3110  3325 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@a135830
+10-26 16:31:59.230  3009  3009 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.PACKAGE_CHANGED
+10-26 16:31:59.231   987   987 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-26 16:31:59.232   987   987 D CarrierSvcBindHelper: No carrier app for: 0
+10-26 16:31:59.232   987   987 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-26 16:31:59.235  3009  3009 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+10-26 16:31:59.242  3648  7189 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-26 16:31:59.242  6169  6563 I PeopleGalProvider: Gal directories started.
+10-26 16:31:59.243  6169  6563 I PeopleGalProvider: Method 1 completed.
+10-26 16:31:59.243  6169  6563 I PeopleGalProvider: Method 1 finished successfully.
+10-26 16:31:59.243  3110  3110 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-26 16:31:59.249  6120  7092 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-26 16:31:59.268  3110  5104 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-26 16:31:59.272  4800  6702 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-26 16:31:59.304  6120  7094 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-26 16:31:59.315  6120  7094 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-26 16:31:59.317  1592  4778 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:31:59.318  6120  7092 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-26 16:31:59.321  1592  4778 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:31:59.328  1592  4778 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:31:59.329  4430  4604 I TestRunner: finished: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)

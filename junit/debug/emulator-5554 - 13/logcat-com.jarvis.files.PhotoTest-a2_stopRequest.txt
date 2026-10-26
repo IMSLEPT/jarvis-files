@@ -1,0 +1,12 @@
+10-26 16:31:21.483  4430  4604 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-26 16:31:21.496  6120  6473 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-26 16:31:21.522  6120  6473 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 35 uptime_millis: 35 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-26 16:31:21.542  4430  6543 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-26 16:31:21.543  4430  6543 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-26 16:31:21.547  4430  4604 I TensorFlowLite: Loaded native library: tensorflowlite_jni
+10-26 16:31:21.552  4430  4604 I TensorFlowLite: Didn't load native library: tensorflowlite_jni_gms_client
+10-26 16:31:21.555  4430  4604 I tflite  : Initialized TensorFlow Lite runtime.
+10-26 16:31:21.558  4430  4604 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-26 16:31:21.558  4430  4604 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-26 16:31:21.564  4430  4604 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-26 16:31:21.564  4430  4604 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)

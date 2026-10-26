@@ -1,0 +1,103 @@
+10-26 16:33:32.535  4430  4604 I TestRunner: started: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+10-26 16:33:32.548   363   372 W TransactionTracing: Could not find layer handle 0x79ce002812b0
+10-26 16:33:32.548   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280770
+10-26 16:33:32.548   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280dd0
+10-26 16:33:32.548   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027ef70
+10-26 16:33:32.548   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280cb0
+10-26 16:33:32.550   363   600 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10175 pid=0
+10-26 16:33:32.550   363   600 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10175 => denied (67 us)
+10-26 16:33:32.550   363   600 W ServiceManager: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10175 pid=0
+10-26 16:33:32.550   363   600 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10175 => denied (503 us)
+10-26 16:33:32.551   363   370 W ServiceManager: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10175 pid=8334
+10-26 16:33:32.551   363   370 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10175 => denied (56 us)
+10-26 16:33:32.553   363   600 W ServiceManager: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10175 pid=0
+10-26 16:33:32.553   363   600 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10175 => denied (2548 us)
+10-26 16:33:32.556  8334  8353 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-26 16:33:32.558  8334  8353 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-26 16:33:32.558  8334  8353 D EGL_emulation: eglCreateContext: 0x78bfcc21c790: maj 3 min 0 rcv 3
+10-26 16:33:32.567  8334  8353 D EGL_emulation: eglMakeCurrent: 0x78bfcc21c790: ver 3 0 (tinfo 0x78c1ea1bc080) (first time)
+10-26 16:33:32.572  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:33:32.576   126   126 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-26 16:33:32.576  8334  8353 I Gralloc4: mapper 4.x is not supported
+10-26 16:33:32.594   126   126 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+10-26 16:33:32.594   125   125 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+10-26 16:33:32.594  8334  8353 W Gralloc4: allocator 4.x is not supported
+10-26 16:33:32.602  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:33:32.605  8334  8353 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-26 16:33:32.671  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:33:32.702  4430  4604 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-26 16:33:32.755  4430  4604 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@8afa0dd]
+10-26 16:33:32.767  4430  4604 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-26 16:33:32.790   765   835 D SplashScreenView: Build android.window.SplashScreenView{9428fd4 V.E...... ......ID 0,0-0,0}
+10-26 16:33:32.790   765   835 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-26 16:33:32.790   765   835 D SplashScreenView: Branding: view: android.view.View{b22057d G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-26 16:33:32.791   765   843 W Parcel  : Expecting binder but got null!
+10-26 16:33:32.820  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: PRE_ON_CREATE
+10-26 16:33:32.821  4430  4430 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-26 16:33:32.829   483   508 W InputManager-JNI: Input channel object '49661ba Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+10-26 16:33:32.835  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: CREATED
+10-26 16:33:32.836  4430  4430 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@57aff11
+10-26 16:33:32.837  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: STARTED
+10-26 16:33:32.837  4430  4430 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@57aff11
+10-26 16:33:32.839  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: RESUMED
+10-26 16:33:32.839  4430  4430 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@57aff11
+10-26 16:33:32.842  4430  7302 W Parcel  : Expecting binder but got null!
+10-26 16:33:32.852  4430  4430 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-26 16:33:32.960   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280950
+10-26 16:33:32.971   483   504 W ziparchive: Unable to open '/data/app/~~9xR8QewSjWamQTk9bZswwg==/com.jarvis.files-qaelbgUvxfIGdfcI5n4qEw==/base.dm': No such file or directory
+10-26 16:33:32.971   483   504 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +200ms
+10-26 16:33:32.974   483  1898 W InputManager-JNI: Input channel object 'ad86f04 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-26 16:33:32.977   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:32.977   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027c450
+10-26 16:33:32.977   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:32.986   483   984 W InputManager-JNI: Input channel object '29fbf64 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-26 16:33:32.989  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-26 16:33:32.991  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-26 16:33:32.992  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-26 16:33:32.992  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-26 16:33:32.993   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027edf0
+10-26 16:33:32.993   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280950
+10-26 16:33:32.998  1482  1482 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-26 16:33:33.010   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280f50
+10-26 16:33:33.018  4430  4430 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-26 16:33:33.018  4430  4430 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-26 16:33:33.271   765   835 D SplashScreenView: Build android.window.SplashScreenView{eab0622 V.E...... ......ID 0,0-0,0}
+10-26 16:33:33.271   765   835 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-26 16:33:33.271   765   835 D SplashScreenView: Branding: view: android.view.View{afc28b3 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-26 16:33:33.272   765   843 W Parcel  : Expecting binder but got null!
+10-26 16:33:33.274  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: PAUSED
+10-26 16:33:33.275  4430  4430 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@57aff11
+10-26 16:33:33.304  8334  8353 W Parcel  : Expecting binder but got null!
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280770
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280c50
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280c50
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280c50
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280770
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280770
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280c50
+10-26 16:33:33.310   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280770
+10-26 16:33:33.318  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: STOPPED
+10-26 16:33:33.318  4430  4430 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@57aff11
+10-26 16:33:33.332   483   504 W ziparchive: Unable to open '/data/app/~~apyL-jeAaWf4xfd2t2R5Qg==/com.jarvis.files.test-K9I7Q4OdT0r7Xyp663_W7g==/base.dm': No such file or directory
+10-26 16:33:33.333   483   504 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +66ms
+10-26 16:33:33.336  4430  4430 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@57aff11 in: DESTROYED
+10-26 16:33:33.338  4430  4430 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-26 16:33:33.358   958  1248 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-26 16:33:33.358   958  1248 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-26 16:33:33.368   483  2139 W InputManager-JNI: Input channel object '574cc32 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-26 16:33:33.375   483  1898 W InputManager-JNI: Input channel object 'c6da8bf Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce00281130
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027e5b0
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027ec70
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280830
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce00281130
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027d410
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce0027a0b0
+10-26 16:33:33.380   363   372 W TransactionTracing: Could not find layer handle 0x79ce00280830
+10-26 16:33:33.387  4430  4604 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@8afa0dd]
+10-26 16:33:33.392  1016  1016 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10153; state: ENABLED
+10-26 16:33:33.394  4430  4604 I TestRunner: finished: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)

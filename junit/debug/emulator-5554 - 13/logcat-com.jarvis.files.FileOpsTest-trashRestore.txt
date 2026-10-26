@@ -1,0 +1,57 @@
+10-26 16:30:46.605  4430  4604 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+10-26 16:30:46.612  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.616  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.620  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.634  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.641  1592  1829 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.644  1592  3767 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf
+10-26 16:30:46.581  2586  2586 W binder:2586_5: type=1400 audit(0.0:84): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-26 16:30:46.679  3009  3100 I CarrierServices: [41] RcsStateSaver.saveRcsState:57 Saving RCS State
+10-26 16:30:46.679  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.680  3009  3100 I CarrierServices: [41] RcsStateSaver.saveRcsState:66 Old operation mode: 2
+10-26 16:30:46.680  1592  1844 W MediaProvider: isAppCloneUserPair for user 0: false
+10-26 16:30:46.680  3009  3100 I CarrierServices: [41] RcsStateSaver.saveRcsState:71 New operation mode: 2
+10-26 16:30:46.680  3009  3009 I CarrierServices: [2] RcsStateFetcher$1.onPostExecute:189 Finalizing migration for RCS state: Operation mode FULL STACK
+10-26 16:30:46.680  3110  3288 I BugleRcsEngine: [53] RcsStateProvider.onMigrationComplete: Migration complete.
+10-26 16:30:46.681  3110  3460 I BugleRcsEngine: [76] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: Rcs Engine should be running in cs.apk. Stopping JibeService.
+10-26 16:30:46.682  3110  3460 I RcsClientLib: Disconnecting ChatSessionService
+10-26 16:30:46.683  3009  3009 I CarrierServices: [2] RcsStateFetcher$GetRcsStateConnection.onFinish:162 Unbinding RcsMigrationService
+10-26 16:30:46.683  3009  3359 I CarrierServices: [50] EventHubProxy.unsubscribe: Removing event listener 60515752 for category 2 for hub UI
+10-26 16:30:46.683  3009  3359 I CarrierServices: [50] EventHubProxy.unsubscribe: Removing event listener 267750554 for category 3 for hub UI
+10-26 16:30:46.684  3009  3359 I CarrierServices: [50] EventHubProxy.unsubscribe: Removing event listener 92273099 for category 5 for hub UI
+10-26 16:30:46.684  3110  3460 I RcsClientLib: Disconnecting EventService
+10-26 16:30:46.686  3110  3460 I RcsClientLib: Disconnecting ContactsService
+10-26 16:30:46.687  3110  3460 I RcsClientLib: Disconnecting FileTransferService
+10-26 16:30:46.690  3110  3460 I RcsClientLib: Disconnecting LocationSharingService
+10-26 16:30:46.691  3110  3460 I RcsClientLib: Disconnecting ImsConnectionTrackerService
+10-26 16:30:46.692  3110  3460 I RcsClientLib: Disconnecting RcsProfileService
+10-26 16:30:46.694  3110  3460 I RcsClientLib: Disconnecting BusinessInfoService
+10-26 16:30:46.694  4430  4604 I JarvisTest: [Cestino] OK sposta e ripristina
+10-26 16:30:46.696  3110  3460 I RcsClientLib: Disconnecting RcsMessagingService
+10-26 16:30:46.697  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.697  3110  3460 I RcsClientLib: Disconnecting TransportControlService
+10-26 16:30:46.698  3110  3460 W BugleRcs: disconnecting from all Rcs Services
+10-26 16:30:46.698  3110  3460 I BugleRcsEngine: [76] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: JibeService stopped: false
+10-26 16:30:46.699  3110  3460 I RcsClientLib: Connecting ChatSessionService
+10-26 16:30:46.699  1592  1844 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.700  3110  3460 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-26 16:30:46.701  1272  1334 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-26 16:30:46.702  1592  3767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 94ms, 0 inserts 0 updates 0 deletes
+10-26 16:30:46.702  1592  1844 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.704  4430  4704 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf to null
+10-26 16:30:46.706  1592  1844 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-26 16:30:46.708  1592  1829 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-26 16:30:46.711  1592  1792 E StorageManager: Failed to open /storage/emulated/0/JarvisTest/Dup/uno.jpg to set project id.: No such file or directory
+10-26 16:30:46.711  1592  1792 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/uno.jpg
+10-26 16:30:46.711  1592  1792 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisTest/Dup/uno.jpg
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:847)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-26 16:30:46.711  1592  1792 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-26 16:30:46.712  4430  4604 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)
