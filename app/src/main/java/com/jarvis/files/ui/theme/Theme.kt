@@ -41,17 +41,17 @@ data class Palette(
 )
 
 private val LightPalette = Palette(
-    bg = Color(0xFFFFFFFF),
+    bg = Color(0xFFF6F8FA),
     surface = Color(0xFFFFFFFF),
     surfaceHi = Color(0xFFF0F2F7),
     hairline = Color(0x12000000),
-    accent = Color(0xFFC44716),
+    accent = Color(0xFFFF6A2B),
     accentSoft = Color(0x1FFF6A2B),
     text = Color(0xFF12141C),
     muted = Color(0xFF6B7080),
-    green = Color(0xFF16784C),
-    amber = Color(0xFF986200),
-    red = Color(0xFFBE3030),
+    green = Color(0xFF22B573),
+    amber = Color(0xFFF29A12),
+    red = Color(0xFFEF4444),
     isDark = false,
 )
 
@@ -102,7 +102,7 @@ object J {
     val Orange = Color(0xFFFF6A2B)
     val Peach = Color(0xFFFFF1E8)
     /** Pulsanti principali: blu → viola → arancio. */
-    val brand = Brush.horizontalGradient(listOf(Color(0xFF1759C4), Color(0xFF6926B9), Color(0xFFB84413)))
+    val brand = Brush.horizontalGradient(listOf(Color(0xFF2F6BFF), Color(0xFF8B5CF6), Color(0xFFFF6A2B)))
     val background: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.bg, p.bg))
 }
 

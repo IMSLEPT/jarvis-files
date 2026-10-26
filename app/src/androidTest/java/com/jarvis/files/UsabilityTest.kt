@@ -42,14 +42,16 @@ class UsabilityTest {
         rule.onNodeWithText("Crea cartella  JarvisRegression/UI").performClick()
         rule.onNodeWithText("Esegui").assertIsNotEnabled()
     }
-    @Test fun homeWorksWithLargeFonts() {
+    @Test fun originalHomeRemainsVisibleWithLargeSystemFonts() {
         val oldScale = TestUtil.sh("settings get system font_scale").trim().toFloatOrNull() ?: 1f
         try {
             TestUtil.sh("settings put system font_scale 1.5")
             rule.waitUntil(10_000) { rule.activity.resources.configuration.fontScale >= 1.49f }
             rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
-            rule.onNodeWithTag("home_list").performScrollToNode(hasText("I tuoi file"))
-            rule.onNodeWithText("I tuoi file").assertIsDisplayed()
+            rule.onNodeWithText("Video").assertIsDisplayed()
+            rule.onNodeWithText("Immagini").assertIsDisplayed()
+            rule.onNodeWithText("Audio").assertIsDisplayed()
+            rule.onNodeWithText("Archivi").assertIsDisplayed()
             TestUtil.screenshot("regression_home_font_150")
         } finally { TestUtil.sh("settings put system font_scale $oldScale") }
     }

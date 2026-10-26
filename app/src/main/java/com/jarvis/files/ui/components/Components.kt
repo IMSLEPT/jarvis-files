@@ -122,7 +122,7 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
             .pressable(onClick, enabled)
             .clip(RoundedCornerShape(50))
             .background(if (enabled) J.brand else Brush.linearGradient(listOf(J.CardHi, J.CardHi)))
-            .heightIn(min = 48.dp).padding(horizontal = 20.dp, vertical = 14.dp),
+            .padding(horizontal = 20.dp, vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {
@@ -141,7 +141,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
             .pressable(onClick)
             .clip(RoundedCornerShape(50))
             .background(J.CardHi)
-            .heightIn(min = 48.dp).padding(horizontal = 16.dp, vertical = 11.dp),
+            .padding(horizontal = 16.dp, vertical = 11.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {

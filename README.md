@@ -57,3 +57,7 @@ Fonti della selezione modello (verificate il 26 ottobre 2026):
 - https://ai.google.dev/gemma/docs/capabilities/text/function-calling-gemma4
 
 Verifica riproducibile: `./gradlew assembleDebug assembleDebugAndroidTest lintDebug` e `./gradlew connectedDebugAndroidTest` su emulatore API 33. Il workflow `Verifica correzioni` conserva report e screenshot nel branch `validation-results/<commit>`. Le regressioni automatiche verificano interfaccia, parser e operazioni reali sui file di prova; la qualità e la velocità del modello E4B vanno misurate sul dispositivo reale. Nessun risultato di benchmark su altri telefoni dimostra quale sia il modello migliore sul Pixel 9 Pro XL.
+
+## Ripristino grafica originale
+
+Ripristinati il design della Home precedente alla v1.0.42 (logo originale, sfera grande, grafico memoria, categorie compatte, suggerimento illustrato), la barra inferiore flottante e i colori originali. Restano le correzioni di AI, file, ricerca, cestino, ripristino e cartella segreta. La Home usa di nuovo le proporzioni del design approvato; i testi della Home seguono il ridimensionamento del mockup, non la scala dei caratteri di sistema.
