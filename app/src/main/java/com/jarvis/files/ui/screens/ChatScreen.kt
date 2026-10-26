@@ -108,10 +108,12 @@ fun ChatScreen(vm: MainViewModel) {
     var input by vm::chatInput
     val list = rememberLazyListState()
     val focus = androidx.compose.ui.platform.LocalFocusManager.current
+    val keyboard = androidx.compose.ui.platform.LocalSoftwareKeyboardController.current
     val enabled = !vm.busy && !vm.operationBusy
     fun send() {
         if (input.isBlank() || !enabled) return
         val text = input
+        keyboard?.hide()
         focus.clearFocus()
         input = ""
         vm.send(text)

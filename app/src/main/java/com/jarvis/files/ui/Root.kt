@@ -72,6 +72,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -255,7 +256,7 @@ private fun JarvisBottomBar(vm: MainViewModel) {
         .clip(RoundedCornerShape(30.dp)).background(J.Card).padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
         val tabs = listOf(Tab.HOME to "Home", Tab.FILES to "File", Tab.CHAT to "Jarvis", Tab.CLEAN to "Pulizia", Tab.MORE to "Altro")
         tabs.forEach { (tab, label) ->
-            Column(Modifier.weight(1f).semantics { selected = current == tab }.combinedClickable(
+            Column(Modifier.weight(1f).semantics { selected = current == tab; contentDescription = label }.combinedClickable(
                 role = androidx.compose.ui.semantics.Role.Tab,
                 onClick = { vm.tab = tab; vm.sub = Sub.NONE; if (tab == Tab.FILES) vm.searchResults = null },
                 onLongClick = if (tab == Tab.CHAT) ({ haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress); vm.voiceOpen = true }) else null,
@@ -263,7 +264,7 @@ private fun JarvisBottomBar(vm: MainViewModel) {
                 Box(Modifier.size(48.dp, 30.dp).clip(CircleShape).background(if (current == tab) J.AccentSoft else Color.Transparent), contentAlignment = Alignment.Center) {
                     if (tab == Tab.CHAT) ArcReactor(36.dp, active = vm.busy)
                     else Icon(when (tab) { Tab.HOME -> Icons.Outlined.Home; Tab.FILES -> Icons.Outlined.Description; Tab.CLEAN -> Icons.Outlined.CleaningServices; else -> Icons.Outlined.GridView },
-                        if (allLabels || current == tab) null else label, tint = if (current == tab) J.Blue else J.Muted, modifier = Modifier.size(23.dp))
+                        null, tint = if (current == tab) J.Blue else J.Muted, modifier = Modifier.size(23.dp))
                 }
                 if (allLabels || current == tab) Text(label, color = if (current == tab) J.Blue else J.Muted, style = MaterialTheme.typography.labelMedium,
                     maxLines = 1, overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis)

@@ -33,7 +33,8 @@ class CommandFlowTest {
         TestUtil.screenshot("command_apk_preview")
         rule.onNodeWithText("Esegui").performScrollTo().performClick()
         rule.waitUntil(20_000) { !vm().operationBusy && !Storage.file(path).exists() }
-        rule.onNodeWithText("Home").performClick()
+        rule.waitUntil(10_000) { rule.onAllNodesWithContentDescription("Home").fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithContentDescription("Home").performClick()
         rule.onNodeWithText("Annulla modifiche").performScrollTo().performClick()
         rule.waitUntil(20_000) { !vm().operationBusy && Storage.file(path).exists() }
         assertEquals("apk test", Storage.file(path).readText())
