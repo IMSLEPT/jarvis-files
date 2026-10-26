@@ -35,8 +35,8 @@ for char in 'Jarvis':
         paths.append((orange if is_dot else navy, pen.getCommands()))
     x += glyph.width * scale - 0.75
 width = x + 1
-small_scale = 8.2 / font['OS/2'].sCapHeight
-tracking = 5.2
+small_scale = 10.0 / font['OS/2'].sCapHeight
+tracking = 13.0
 small_width = sum(glyphs[cmap[ord(c)]].width * small_scale for c in 'FILES') + tracking * 4
 x = (width - small_width) / 2
 for char in 'FILES':
