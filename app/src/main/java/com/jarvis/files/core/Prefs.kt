@@ -15,6 +15,12 @@ class Prefs(context: Context) {
     private val sp: SharedPreferences =
         context.applicationContext.getSharedPreferences("jarvis_prefs", Context.MODE_PRIVATE)
 
+    fun applyLocalDefaultOnce() {
+        if (!sp.getBoolean("local_default_v2", false)) {
+            sp.edit().putString("ai_mode", AiMode.LOCAL.name).putBoolean("local_default_v2", true).apply()
+        }
+    }
+
     var userName: String
         get() = sp.getString("user_name", "Alessandro") ?: "Alessandro"
         set(v) = sp.edit().putString("user_name", v).apply()

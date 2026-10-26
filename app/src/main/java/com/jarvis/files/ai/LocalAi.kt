@@ -16,6 +16,7 @@ import com.google.ai.edge.litertlm.ThinkingConfig
 import com.google.ai.edge.litertlm.ResponseFormat
 import com.google.ai.edge.litertlm.Conversation
 import com.jarvis.files.core.Prefs
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -92,6 +93,7 @@ object LocalAi {
                         enableResponseFormat = system.contains("JSON", ignoreCase = true),
                     )
                     e.createConversation(cfg).use { conv ->
+                        kotlinx.coroutines.currentCoroutineContext().ensureActive()
                         activeConversation = conv
                         try {
                             conv.sendMessage(messages.last().text,
@@ -181,6 +183,7 @@ object LocalAi {
         val c = (URL("https://huggingface.co/api/models/$repo/tree/main").openConnection() as HttpURLConnection).apply {
             connectTimeout = 15_000; readTimeout = 30_000
         }
+        try {
         if (c.responseCode !in 200..299) throw AiUnavailable("Modello non raggiungibile (${c.responseCode}).")
         val arr = org.json.JSONArray(c.inputStream.bufferedReader().use { it.readText() })
         val files = (0 until arr.length()).map { arr.getJSONObject(it) }
@@ -192,6 +195,7 @@ object LocalAi {
             Regex("(?i)qualcomm|mediatek|mt6\\d|sm8\\d|npu|web|tensor_g").containsMatchIn(n)
         }
         (generic.ifEmpty { files }).minBy { it.first.length }
+        } finally { c.disconnect() }
     }
 
     /** Avvia il download con il DownloadManager di sistema (riprende da solo, notifica di avanzamento). */

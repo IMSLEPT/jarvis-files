@@ -39,3 +39,21 @@ App Android che mette in ordine il telefono con l'intelligenza artificiale: scri
 - Build: GitHub Actions (`Build APK`) a ogni push su `main`, APK firmato pubblicato in Releases.
 - Test: `Test su emulatore` esegue test strumentati reali (operazioni sui file, annulla, cestino, doppioni, riconoscimento volti e ricerca, tutte le schermate) e pubblica rapporto e screenshot nel branch `test-results`.
 - Licenze di terze parti: FaceNet TFLite da [shubham0204/FaceRecognition_With_FaceNet_Android](https://github.com/shubham0204/FaceRecognition_With_FaceNet_Android) (Apache 2.0); immagini di test da [ageitgey/face_recognition](https://github.com/ageitgey/face_recognition) (MIT).
+
+
+## Aggiornamento qualità interfaccia e AI locale
+
+- Home e navigazione adattive: rispettano dimensioni dello schermo e caratteri di sistema; sfondo bianco, accenti arancione e grafite. Grafico basato sullo spazio reale, categorie sempre raggiungibili da File.
+- Chat: bozza conservata tra schede, invio da tastiera, interruzione, nuova chat, riprova, testo selezionabile. Le richieste ambigue richiedono una scelta prima di mostrare un piano eseguibile.
+- Al primo avvio dell'aggiornamento viene selezionata **Solo telefono**; le credenziali eventualmente presenti restano salvate. La modalità può essere cambiata esplicitamente in Impostazioni.
+- Modello consigliato per qualità: **Gemma 4 E4B**, Apache 2.0, circa 3,7 GB. **E2B** (circa 2,6 GB) resta disponibile per velocità e consumi. Serve internet per il download iniziale; l'inferenza locale non richiede API o abbonamenti. Un modello E2B già scaricato continua a funzionare: non viene sostituito né eliminato automaticamente.
+- Generazione locale con JSON vincolato, budget di contesto e output; la visione viene caricata soltanto quando serve per le immagini. Le operazioni sono validate dall'app e richiedono il tasto Esegui.
+- Protezioni contro doppia esecuzione, percorsi esterni, filtri di gruppo senza cartella e sovrascritture. I file nel cestino continuano a occupare spazio fino allo svuotamento.
+- La cartella segreta richiede lo sblocco anche quando il blocco generale dell'app è disattivato.
+
+Fonti della selezione modello (verificate il 26 ottobre 2026):
+- https://developers.google.com/edge/litert-lm/models/gemma-4
+- https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
+- https://ai.google.dev/gemma/docs/capabilities/text/function-calling-gemma4
+
+Verifica riproducibile: `./gradlew assembleDebug assembleDebugAndroidTest lintDebug` e `./gradlew connectedDebugAndroidTest` su emulatore API 33. Il workflow `Verifica correzioni` conserva report e screenshot nel branch `validation-results/<commit>`. Le regressioni automatiche verificano interfaccia, parser e operazioni reali sui file di prova; la qualità e la velocità del modello E4B vanno misurate sul dispositivo reale. Nessun risultato di benchmark su altri telefoni dimostra quale sia il modello migliore sul Pixel 9 Pro XL.

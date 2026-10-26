@@ -103,6 +103,7 @@ Regole inderogabili:
         val engine = AiRouter.engine(c)
         val p = Prefs(c)
         val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
+        val intentText = if (last.text.contains("\nScelgo:")) history.filter { it.role == "user" }.takeLast(2).joinToString("\n") { it.text } else last.text
         val online = engine is OnlineAi
         val sys = systemPrompt(p.userName)
         val maxOut = if (online) 1500 else 1600
@@ -110,7 +111,7 @@ Regole inderogabili:
         var limit = if (online) p.onlineTokenLimit else 7000
         var lastError: Throwable? = null
         repeat(5) {
-            val ctx = buildContext(c, last.text, budget)
+            val ctx = buildContext(c, intentText, budget)
             val msgs = history.dropLast(1).takeLast(4) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
             val est = tokens(sys) + msgs.sumOf { tokens(it.text) } + maxOut
             if (est > limit && budget > 10) {
@@ -122,7 +123,7 @@ Regole inderogabili:
                 val raw = engine.complete(sys, msgs, maxOut)
                 val json = extractJson(raw) ?: throw AiUnavailable("La risposta AI non è valida: nessun file è stato modificato. Riprova con una richiesta più precisa.")
                 if (!json.has("reply")) throw AiUnavailable("Risposta AI incompleta. Nessun file è stato modificato.")
-                return clean(parse(raw), last.text) to engine.displayName
+                return clean(parse(raw), intentText) to engine.displayName
             } catch (e: TooLarge) {
                 lastError = e
                 limit = (e.limit * 0.9f).toInt()

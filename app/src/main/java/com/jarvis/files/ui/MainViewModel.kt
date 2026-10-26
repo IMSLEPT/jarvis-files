@@ -120,6 +120,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         homeJob?.cancel()
         homeAt = System.currentTimeMillis()
         homeJob = viewModelScope.launch {
+            try {
             val data = withContext(Dispatchers.IO) {
             val entries = FileIndex.ensure()
             val byCat = entries.groupBy { it.category }.map { it.key to it.value.sumOf { e -> e.size } }.sortedByDescending { it.second }
@@ -151,6 +152,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             }
             home = data
             fileCount = FileIndex.entries.size
+            } catch (e: CancellationException) { throw e }
+            catch (e: Exception) { homeAt = 0; toast = "Impossibile aggiornare lo spazio: ${e.message}" }
         }
     }
 

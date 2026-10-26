@@ -10,6 +10,7 @@ import com.jarvis.files.core.Notifier
 class JarvisApp : Application(), ImageLoaderFactory {
     override fun onCreate() {
         super.onCreate()
+        com.jarvis.files.core.Prefs(this).applyLocalDefaultOnce()
         Notifier.createChannels(this)
         Automations.createDefaults(this)
         Automations.scheduleMaintenance(this)
@@ -22,3 +23,4 @@ class JarvisApp : Application(), ImageLoaderFactory {
         .respectCacheHeaders(false)
         .build()
 }
+

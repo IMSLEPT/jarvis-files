@@ -314,6 +314,27 @@ fun TrashScreen(vm: MainViewModel) {
 @Composable
 fun VaultScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
+    var authorized by remember { mutableStateOf(false) }
+    val lifecycle = androidx.lifecycle.compose.LocalLifecycleOwner.current.lifecycle
+    androidx.compose.runtime.DisposableEffect(lifecycle) {
+        val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
+            if (event == androidx.lifecycle.Lifecycle.Event.ON_STOP) authorized = false
+        }
+        lifecycle.addObserver(observer)
+        onDispose { lifecycle.removeObserver(observer) }
+    }
+    if (!authorized) {
+        Column(Modifier.fillMaxSize().statusBarsPadding().padding(20.dp)) {
+            SubHeader("Cartella segreta") { vm.sub = Sub.NONE }
+            Spacer(Modifier.height(24.dp))
+            Text("I tuoi file privati", color = J.Text, style = MaterialTheme.typography.headlineSmall)
+            Text("Usa impronta o PIN per visualizzarli.", color = J.Muted, modifier = Modifier.padding(vertical = 16.dp))
+            GradientButton("Sblocca cartella", Modifier.fillMaxWidth(), icon = Icons.Filled.Lock) {
+                (ctx as? com.jarvis.files.MainActivity)?.authenticateVault { authorized = true }
+            }
+        }
+        return
+    }
     var files by remember { mutableStateOf<List<File>>(emptyList()) }
     var reload by remember { mutableStateOf(0) }
     val scope = rememberCoroutineScope()

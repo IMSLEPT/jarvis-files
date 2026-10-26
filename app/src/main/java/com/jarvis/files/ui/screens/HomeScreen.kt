@@ -59,7 +59,10 @@ fun tipAction(vm: MainViewModel, t: HomeTip) {
 @Composable
 fun HomeScreen(vm: MainViewModel) {
     val ctx = LocalContext.current
-    LaunchedEffect(Unit) { vm.rescan(); vm.refreshHome() }
+    LaunchedEffect(Unit) {
+        if (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 5 * 60_000L) vm.rescan()
+        else vm.refreshHome()
+    }
     val sizes = vm.home.byCat.toMap()
     val total = Storage.totalBytes().coerceAtLeast(1)
     val free = Storage.freeBytes().coerceIn(0, total)
@@ -94,7 +97,8 @@ fun HomeScreen(vm: MainViewModel) {
                     IconButton(onClick = { vm.rescan() }, enabled = !vm.scanning) { Icon(Icons.Filled.Refresh, "Aggiorna file", tint = J.Blue) }
                 }
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(20.dp)) {
-                    val accent = J.Blue
+                    val parts = CAT_STYLES.map { (sizes[it.cat] ?: 0L) to it.colors.last() }
+                    val otherColor = J.Navy
                     Box(Modifier.size(112.dp), contentAlignment = Alignment.Center) {
                         Canvas(Modifier.fillMaxSize()) {
                             val stroke = Stroke(10.dp.toPx(), cap = StrokeCap.Round)
@@ -102,7 +106,15 @@ fun HomeScreen(vm: MainViewModel) {
                             val arcSize = androidx.compose.ui.geometry.Size(size.width - inset * 2, size.height - inset * 2)
                             val origin = androidx.compose.ui.geometry.Offset(inset, inset)
                             drawArc(Color(0xFFF0F2F7), -90f, 360f, false, origin, arcSize, style = stroke)
-                            drawArc(accent, -90f, (used.toDouble() / total * 360).toFloat(), false, origin, arcSize, style = stroke)
+                            var angle = -90f
+                            var remaining = used
+                            for ((bytes, color) in parts + (used to otherColor)) {
+                                val amount = bytes.coerceIn(0, remaining)
+                                val span = (amount.toDouble() / total * 360).toFloat()
+                                if (span > 0.8f) drawArc(color, angle + 1f, (span - 2f).coerceAtLeast(0.6f), false, origin, arcSize, style = stroke)
+                                angle += span
+                                remaining -= amount
+                            }
                         }
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text("${used * 100 / total}%", style = MaterialTheme.typography.headlineSmall, color = J.Text)
