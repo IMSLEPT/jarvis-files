@@ -4,7 +4,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
-from fontTools.pens.recordingPen import RecordingPen
+from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.pens.boundsPen import BoundsPen
 import sys
 
@@ -18,7 +18,7 @@ paths = []
 x = 1.0
 for char in 'Jarvis':
     glyph = glyphs[cmap[ord(char)]]
-    rec = RecordingPen(); glyph.draw(rec)
+    rec = DecomposingRecordingPen(glyphs); glyph.draw(rec)
     contours, current = [], []
     for op, pts in rec.value:
         if op == 'moveTo' and current: contours.append(current); current = []
