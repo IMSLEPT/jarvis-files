@@ -138,7 +138,7 @@ class CommandFlowTest {
     }
 
     @Test fun openingAllResultsPreservesLargestFirstOrder() {
-        repeat(15) { i -> TestUtil.write("JarvisCommandFlow/rank-${i.toString().padStart(2, '0')}.txt", ByteArray((i + 1) * 100)) }
+        repeat(15) { i -> TestUtil.write("JarvisCommandFlow/rank-${i.toString().padStart(2, '0')}.txt", ByteArray((i + 1) * 100), (i + 1L) * 86_400_000) }
         Storage.scanAll()
         val ranked = FileIndex.entries.filter { it.rel.startsWith("JarvisCommandFlow/rank-") }.sortedByDescending { it.size }
         rule.runOnUiThread { vm().messages.add(UiMsg(10001, "assistant", "Elenco file", fileHits = ranked)) }
@@ -148,6 +148,12 @@ class CommandFlowTest {
         val first = rule.onNodeWithText("rank-14.txt").fetchSemanticsNode().boundsInRoot.top
         val second = rule.onNodeWithText("rank-13.txt").fetchSemanticsNode().boundsInRoot.top
         assertTrue(first < second)
+        rule.onNodeWithText("Recenti").performClick()
+        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
+        rule.onNodeWithText("Risultati").performClick()
+        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-14.txt").fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("rank-14.txt").assertIsDisplayed()
         rule.onNodeWithText("Nome").performClick()
         rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
