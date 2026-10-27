@@ -151,7 +151,8 @@ fun CategoryScreen(vm: MainViewModel) {
     val folder = vm.folder
     val search = vm.searchResults
     val searchPaths = remember(search) { search?.map { it.rel }?.toSet() }
-    var sort by remember { mutableStateOf(0) }
+    val searchOrder = remember(search) { search?.mapIndexed { index, e -> e.rel to index }?.toMap().orEmpty() }
+    var sort by remember(cat, folder, search) { mutableStateOf(if (search != null) 3 else 0) }
     var files by remember { mutableStateOf<List<FileEntry>?>(null) }
     val sel = remember(cat, folder, search) { mutableStateListOf<String>() }
     androidx.activity.compose.BackHandler(enabled = sel.isNotEmpty()) { sel.clear() }
@@ -161,7 +162,7 @@ fun CategoryScreen(vm: MainViewModel) {
             FileIndex.ensure().filter { e ->
                 (searchPaths == null || e.rel in searchPaths) && (cat == null || e.category == cat) && (folder == null || e.folder == folder || e.folder.startsWith("$folder/"))
             }.let { l ->
-                when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; else -> l.sortedByDescending { it.modified } }
+                when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; 3 -> l.sortedBy { searchOrder[it.rel] ?: Int.MAX_VALUE }; else -> l.sortedByDescending { it.modified } }
             }
         }
         sel.retainAll(files.orEmpty().map { it.rel }.toSet())
@@ -172,6 +173,7 @@ fun CategoryScreen(vm: MainViewModel) {
             SubHeader(title, files?.let { "${it.size} file · ${Fmt.size(it.sumOf { f -> f.size })}" }) { vm.sub = Sub.NONE; vm.searchResults = null; sel.clear() }
         }
         Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 16.dp, vertical = 6.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            if (search != null) Chip("Risultati", sort == 3) { sort = 3 }
             Chip("Recenti", sort == 0) { sort = 0 }
             Chip("Più grandi", sort == 1) { sort = 1 }
             Chip("Nome", sort == 2) { sort = 2 }

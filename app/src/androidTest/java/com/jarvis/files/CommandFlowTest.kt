@@ -137,5 +137,21 @@ class CommandFlowTest {
         }
     }
 
+    @Test fun openingAllResultsPreservesLargestFirstOrder() {
+        repeat(15) { i -> TestUtil.write("JarvisCommandFlow/rank-${i.toString().padStart(2, '0')}.txt", ByteArray((i + 1) * 100)) }
+        Storage.scanAll()
+        val ranked = FileIndex.entries.filter { it.rel.startsWith("JarvisCommandFlow/rank-") }.sortedByDescending { it.size }
+        rule.runOnUiThread { vm().messages.add(UiMsg(10001, "assistant", "Elenco file", fileHits = ranked)) }
+        rule.onNodeWithText("Vedi tutti i 15 file").performScrollTo().performClick()
+        rule.onNodeWithText("Risultati").assertIsDisplayed()
+        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-14.txt").fetchSemanticsNodes().isNotEmpty() }
+        val first = rule.onNodeWithText("rank-14.txt").fetchSemanticsNode().boundsInRoot.top
+        val second = rule.onNodeWithText("rank-13.txt").fetchSemanticsNode().boundsInRoot.top
+        assertTrue(first < second)
+        rule.onNodeWithText("Nome").performClick()
+        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
+    }
+
 }
 

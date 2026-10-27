@@ -330,7 +330,7 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                             Spacer(Modifier.width(12.dp))
                             Column(Modifier.weight(1f)) {
                                 Text(e.name, color = J.Text, maxLines = 1, overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodyMedium)
-                                Text("${e.folder} · ${Fmt.size(e.size)} · ${Fmt.date(e.modified)}", color = J.Muted, maxLines = 1,
+                                Text("${Fmt.size(e.size)} · ${e.folder} · ${Fmt.date(e.modified)}", color = J.Muted, maxLines = 1,
                                     overflow = TextOverflow.Ellipsis, style = MaterialTheme.typography.bodySmall)
                             }
                         }

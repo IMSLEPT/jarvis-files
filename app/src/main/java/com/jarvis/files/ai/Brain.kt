@@ -131,7 +131,7 @@ Regole inderogabili:
         repeat(5) {
             val ctx = buildContext(c, intentText, budget)
             val prior = history.dropLast(1).takeLast(4).filter {
-                it.text.length <= 3_000 && !ResponseGuard.isRepetitive(it.text)
+                it.role == "user" || (it.text.length <= 3_000 && !ResponseGuard.isRepetitive(it.text))
             }
             val msgs = prior + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
             val est = tokens(sys) + msgs.sumOf { tokens(it.text) } + maxOut
