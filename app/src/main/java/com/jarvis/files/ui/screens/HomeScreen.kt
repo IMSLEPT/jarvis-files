@@ -150,11 +150,12 @@ fun HomeScreen(vm: MainViewModel) {
                     Icon(Icons.Filled.Refresh, "Aggiorna spazio e file", tint = J.Muted)
                 }
             }
-            androidx.compose.foundation.layout.FlowRow(
-                modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            if (largeText) {
                 Text(Fmt.size(free), color = J.Text, fontSize = 34.sp, fontWeight = FontWeight.Bold)
                 Text("liberi", color = J.Muted, style = MaterialTheme.typography.bodyLarge)
+            } else Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(Fmt.size(free), color = J.Text, fontSize = 34.sp, fontWeight = FontWeight.Bold, modifier = Modifier.alignByBaseline())
+                Text("liberi", color = J.Muted, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.alignByBaseline())
             }
             Spacer(Modifier.height(14.dp))
             Box(Modifier.fillMaxWidth().height(12.dp).clip(RoundedCornerShape(6.dp)).background(J.CardHi)

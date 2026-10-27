@@ -118,7 +118,7 @@ fun CleanScreen(vm: MainViewModel) {
                 }
             }
         }
-        val columns = if (LocalDensity.current.fontScale > 1.2f || LocalConfiguration.current.screenWidthDp < 320) 2 else 4
+        val columns = if (LocalDensity.current.fontScale > 1.2f || LocalConfiguration.current.screenWidthDp < 360) 2 else 4
         FlowRow(Modifier.fillMaxWidth().padding(horizontal = 16.dp), maxItemsInEachRow = columns,
             horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             CleanTab.entries.take(4).forEach { t ->

@@ -171,7 +171,7 @@ fun ChatScreen(vm: MainViewModel) {
                     SUGGESTIONS.take(4).chunked(columns).forEach { row ->
                         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                             row.forEach { suggestion ->
-                                SuggestionTile(suggestion, Modifier.weight(1f), enabled) { vm.send(suggestion.prompt) }
+                                SuggestionTile(suggestion, Modifier.weight(1f), enabled, compact = true) { vm.send(suggestion.prompt) }
                             }
                         }
                         Spacer(Modifier.height(10.dp))
@@ -226,15 +226,17 @@ fun ChatScreen(vm: MainViewModel) {
 }
 
 @Composable
-private fun SuggestionTile(suggestion: Suggestion, modifier: Modifier, enabled: Boolean, onClick: () -> Unit) {
+private fun SuggestionTile(suggestion: Suggestion, modifier: Modifier, enabled: Boolean, compact: Boolean = false, onClick: () -> Unit) {
     Row(modifier.clip(RoundedCornerShape(18.dp)).background(J.Card)
         .border(1.dp, J.Stroke, RoundedCornerShape(18.dp)).pressable(onClick, enabled)
         .heightIn(min = 74.dp).padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
         Icon(suggestion.icon, null, tint = J.Blue, modifier = Modifier.size(24.dp))
         Spacer(Modifier.width(10.dp))
         Text(suggestion.title, color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
-        Spacer(Modifier.width(6.dp))
-        Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(16.dp))
+        if (!compact) {
+            Spacer(Modifier.width(6.dp))
+            Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(16.dp))
+        }
     }
 }
 
