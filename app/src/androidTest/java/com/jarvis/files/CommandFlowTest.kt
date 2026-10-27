@@ -21,8 +21,19 @@ class CommandFlowTest {
     @After fun cleanup() { Storage.file("JarvisCommandFlow").deleteRecursively(); Vault.list(TestUtil.ctx).filter { it.name.startsWith("JarvisCommandFlow-") }.forEach { it.delete() }; FileIndex.invalidate() }
     private fun send() {
         rule.onNodeWithTag("chat_input").performTextInput("Cancella gli APK in JarvisCommandFlow")
-        rule.onNodeWithContentDescription("Invia messaggio").performClick()
-        rule.waitUntil(20_000) { !vm().busy && vm().messages.any { it.plan != null } }
+        // The OS keyboard can move the composer after text input. Wait for the real
+        // keyboard layout (navigation hidden) before dispatching a coordinate tap.
+        rule.waitUntil(10_000) { rule.onAllNodesWithContentDescription("Home").fetchSemanticsNodes().isEmpty() }
+        rule.waitForIdle()
+        rule.onNodeWithContentDescription("Invia messaggio").assertIsDisplayed().assertIsEnabled().performClick()
+        try {
+            rule.waitUntil(20_000) { !vm().busy && vm().messages.any { it.plan != null } }
+        } catch (e: Throwable) {
+            rule.runOnUiThread { TestUtil.report("SEND", "input=${vm().chatInput}; busy=${vm().busy}; operationBusy=${vm().operationBusy}; messages=${vm().messages.map { it.role + ":" + it.text }}") }
+            TestUtil.screenshot("command_send_failure")
+            rule.onRoot().printToLog("JarvisTest")
+            throw e
+        }
         rule.waitForIdle()
         rule.onNodeWithTag("chat_input").assertTextEquals("")
         rule.onNodeWithContentDescription("Invia messaggio").assertIsNotEnabled()
@@ -89,6 +100,15 @@ class CommandFlowTest {
             assertTrue(paths.contains(path))
         }
         assertTrue(Storage.file(fresh).exists())
+        assertTrue(Storage.file(path).exists())
+    }
+
+    @Test fun keyboardSendActionBuildsPreviewAndClearsDraft() {
+        rule.onNodeWithTag("chat_input").performTextInput("Cancella gli APK in JarvisCommandFlow")
+        rule.onNodeWithTag("chat_input").performImeAction()
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.any { it.plan != null } }
+        rule.onNodeWithTag("chat_input").assertTextEquals("")
+        rule.onNodeWithContentDescription("Invia messaggio").assertIsNotEnabled()
         assertTrue(Storage.file(path).exists())
     }
 
