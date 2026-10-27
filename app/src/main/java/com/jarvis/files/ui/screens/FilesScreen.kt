@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -154,6 +155,8 @@ fun CategoryScreen(vm: MainViewModel) {
     val searchOrder = remember(search) { search?.mapIndexed { index, e -> e.rel to index }?.toMap().orEmpty() }
     var sort by remember(cat, folder, search) { mutableStateOf(if (search != null) 3 else 0) }
     var files by remember { mutableStateOf<List<FileEntry>?>(null) }
+    val listState = rememberLazyListState()
+    var displayedSort by remember(cat, folder, search) { mutableStateOf(-1) }
     val sel = remember(cat, folder, search) { mutableStateListOf<String>() }
     androidx.activity.compose.BackHandler(enabled = sel.isNotEmpty()) { sel.clear() }
     var reload by remember { mutableStateOf(0) }
@@ -164,6 +167,11 @@ fun CategoryScreen(vm: MainViewModel) {
             }.let { l ->
                 when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; 3 -> l.sortedBy { searchOrder[it.rel] ?: Int.MAX_VALUE }; else -> l.sortedByDescending { it.modified } }
             }
+        }
+        if (displayedSort != sort) {
+            // Un nuovo ordinamento parte dal primo risultato, non dal vecchio file visibile.
+            listState.requestScrollToItem(0)
+            displayedSort = sort
         }
         sel.retainAll(files.orEmpty().map { it.rel }.toSet())
     }
@@ -180,7 +188,7 @@ fun CategoryScreen(vm: MainViewModel) {
             Chip("Chiedi a Jarvis") { vm.openChatWith("Metti in ordine ${folder ?: "i file della categoria $title"}") }
         }
         val list = files
-        LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp)) {
+        LazyColumn(Modifier.weight(1f), state = listState, contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp)) {
             when {
                 list == null -> item { Text("Carico…", color = J.Muted, modifier = Modifier.padding(20.dp)) }
                 list.isEmpty() -> item { EmptyState("Nessun file", "Qui non c'è niente.") }

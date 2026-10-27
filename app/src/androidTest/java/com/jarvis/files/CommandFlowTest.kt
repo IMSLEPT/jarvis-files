@@ -148,13 +148,13 @@ class CommandFlowTest {
         val first = rule.onNodeWithText("rank-14.txt").fetchSemanticsNode().boundsInRoot.top
         val second = rule.onNodeWithText("rank-13.txt").fetchSemanticsNode().boundsInRoot.top
         assertTrue(first < second)
-        rule.onNodeWithText("Recenti").performClick()
+        rule.onNodeWithText("Recenti").performScrollTo().performClick()
         rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
-        rule.onNodeWithText("Risultati").performClick()
+        rule.onNodeWithText("Risultati").performScrollTo().performClick()
         rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-14.txt").fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("rank-14.txt").assertIsDisplayed()
-        rule.onNodeWithText("Nome").performClick()
+        rule.onNodeWithText("Nome").performScrollTo().performClick()
         rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
     }
