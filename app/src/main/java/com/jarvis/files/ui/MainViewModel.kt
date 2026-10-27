@@ -118,20 +118,23 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     var searchResults by mutableStateOf<List<FileEntry>?>(null)
     var browserPath by mutableStateOf("")
+    var browserNotice by mutableStateOf<String?>(null)
+    private fun fileFeedback(message: String) { if (sub == Sub.BROWSER) browserNotice = message else toast = message }
     var browserClipboard by mutableStateOf<FileClipboard?>(null)
         private set
 
     fun openBrowser(path: String = "") {
         val denied = PhoneFiles.restriction(path)
-        if (denied != null) { toast = denied; return }
+        if (denied != null) { fileFeedback(denied); return }
+        browserNotice = null
         browserPath = path; tab = Tab.FILES; sub = Sub.BROWSER
     }
 
     fun prepareFileTransfer(paths: List<String>, cut: Boolean) {
         if (busy || operationBusy || paths.isEmpty()) return
-        if (cut && paths.any { !FileOps.canModifySource(it) }) { toast = "La selezione contiene cartelle principali protette"; return }
+        if (cut && paths.any { !FileOps.canModifySource(it) }) { fileFeedback("La selezione contiene cartelle principali protette"); return }
         browserClipboard = FileClipboard(paths.distinct(), cut)
-        toast = "Scegli la cartella destinazione e premi Incolla qui"
+        browserNotice = null
     }
 
     fun cancelFileTransfer() { if (!operationBusy) browserClipboard = null }
@@ -163,15 +166,15 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         browserJob = viewModelScope.launch {
             try {
                 val r = withContext(Dispatchers.IO) { task() }
-                toast = if (r.result.done == 0 && r.result.failed == 0) "Nessuna modifica necessaria" else
-                    "${r.result.done} elementi completati" + if (r.result.failed > 0) "; ${r.result.failed} non riusciti: ${r.result.errors.take(2).joinToString("; ")}" else ""
+                fileFeedback(if (r.result.done == 0 && r.result.failed == 0) "Nessuna modifica necessaria" else
+                    "${r.result.done} elementi completati" + if (r.result.failed > 0) "; ${r.result.failed} non riusciti: ${r.result.errors.take(2).joinToString("; ")}" else "")
                 after(r)
                 filesChanged()
             } catch (e: CancellationException) {
-                if (copying) { toast = "Copia interrotta. Le copie già completate restano disponibili."; filesChanged() }
+                if (copying) { fileFeedback("Copia interrotta. Le copie già completate restano disponibili."); filesChanged() }
                 throw e
             }
-            catch (e: Exception) { toast = e.message ?: "Operazione non completata" }
+            catch (e: Exception) { fileFeedback(e.message ?: "Operazione non completata") }
             finally { operationBusy = false; browserCopyRunning = false; browserJob = null; refreshStatus() }
         }
     }
@@ -394,9 +397,9 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         viewModelScope.launch {
             try {
                 val (ok, ko) = withContext(Dispatchers.IO) { Undo.undo(ctx) }
-                toast = if (ko == 0) "Annullato: $ok operazioni ripristinate" else "Ripristinate $ok, $ko non riuscite"
+                fileFeedback(if (ko == 0) "Annullato: $ok operazioni ripristinate" else "Ripristinate $ok, $ko non riuscite")
                 filesChanged()
-            } catch (e: Exception) { toast = "Ripristino non riuscito: ${e.message}" }
+            } catch (e: Exception) { fileFeedback("Ripristino non riuscito: ${e.message}") }
             finally { operationBusy = false; refreshStatus() }
         }
     }

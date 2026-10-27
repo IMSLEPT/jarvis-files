@@ -97,7 +97,7 @@ fun BrowserScreen(vm: MainViewModel) {
                     listOf("Nome", "Più recenti", "Dimensione").forEachIndexed { i, label ->
                         DropdownMenuItem(text = { Text(if (sort == i) "✓ $label" else label) }, onClick = { sort = i; menu = false })
                     }
-                    DropdownMenuItem(text = { Text("Limiti di accesso Android") }, onClick = { menu = false; vm.toast = "Sono disponibili i file condivisi del telefono. Android protegge i dati privati delle app, Android/data e Android/obb." })
+                    DropdownMenuItem(text = { Text("Limiti di accesso Android") }, onClick = { menu = false; vm.browserNotice = "Sono disponibili i file condivisi del telefono. Android protegge i dati privati delle app, Android/data e Android/obb." })
                 }
             }
         }
@@ -129,6 +129,12 @@ fun BrowserScreen(vm: MainViewModel) {
                 if (chosen.all { !it.directory }) GhostButton("Condividi", enabled = enabled) { Storage.shareFiles(ctx, chosen.map { Storage.file(it.rel) }) }
             }
         }
+        vm.browserNotice?.let { notice ->
+            Row(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 6.dp).clip(RoundedCornerShape(14.dp)).background(J.AccentSoft).padding(start = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+                Text(notice, color = J.Text, style = MaterialTheme.typography.bodySmall, modifier = Modifier.weight(1f))
+                IconButton(onClick = { vm.browserNotice = null }) { Icon(Icons.Filled.Close, "Chiudi messaggio cartella", tint = J.Muted) }
+            }
+        }
         if (vm.operationBusy) {
             LinearProgressIndicator(Modifier.fillMaxWidth().padding(horizontal = 18.dp, vertical = 6.dp), color = J.Navy)
             if (vm.browserCopyRunning) TextButton(onClick = { vm.stopBrowserCopy() }) { Text("Interrompi copia", color = J.Blue) }
@@ -150,7 +156,7 @@ fun BrowserScreen(vm: MainViewModel) {
                         .combinedClickable(onClick = {
                             when {
                                 node.rel == Storage.TRASH_DIR -> vm.sub = Sub.TRASH
-                                node.blocked != null -> vm.toast = node.blocked
+                                node.blocked != null -> vm.browserNotice = node.blocked
                                 selection.isNotEmpty() -> toggle()
                                 node.directory -> { focus.clearFocus(); vm.browserPath = node.rel }
                                 else -> Storage.openFile(ctx, Storage.file(node.rel))
@@ -193,6 +199,7 @@ fun BrowserScreen(vm: MainViewModel) {
         vm.browserClipboard?.let { clipboard ->
             GlassCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp), padding = PaddingValues(12.dp)) {
                 Text("${clipboard.paths.size} elementi da ${if (clipboard.cut) "spostare" else "copiare"}", color = J.Text, style = MaterialTheme.typography.titleSmall)
+                Text("Apri la cartella destinazione e incolla qui.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                 Text(if (path.isEmpty()) "Destinazione: Memoria interna" else "Destinazione: $path", color = J.Muted, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp)) {
                     GradientButton("Incolla qui", Modifier.weight(1f), enabled = enabled) { focus.clearFocus(); vm.pasteBrowserFiles() }
