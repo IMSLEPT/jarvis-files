@@ -143,7 +143,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
             .pressable(onClick, enabled)
             .clip(RoundedCornerShape(16.dp))
             .border(1.dp, J.Blue.copy(alpha = 0.14f), RoundedCornerShape(16.dp))
-            .background(J.AccentSoft.copy(alpha = 0.45f))
+            .background(J.AccentSoft)
             .heightIn(min = 48.dp)
             .padding(horizontal = 16.dp, vertical = 11.dp),
         verticalAlignment = Alignment.CenterVertically,
