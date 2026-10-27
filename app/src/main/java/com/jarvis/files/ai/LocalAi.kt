@@ -16,6 +16,7 @@ import com.google.ai.edge.litertlm.ThinkingConfig
 import com.google.ai.edge.litertlm.ResponseFormat
 import com.google.ai.edge.litertlm.Conversation
 import com.jarvis.files.core.Prefs
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
@@ -78,7 +79,7 @@ object LocalAi {
         override suspend fun complete(system: String, messages: List<ChatMsg>, maxTokens: Int): String =
             withContext(Dispatchers.Default) {
                 idleJob?.cancel()
-                mutex.withLock {
+                try { mutex.withLock {
                     val e = ensureLoaded(c, withVision = false)
                     val history = messages.dropLast(1).takeLast(6).map {
                         if (it.role == "user") Message.user(it.text) else Message.model(it.text)
@@ -96,12 +97,15 @@ object LocalAi {
                         kotlinx.coroutines.currentCoroutineContext().ensureActive()
                         activeConversation = conv
                         try {
-                            conv.sendMessage(messages.last().text,
-                                responseFormat = if (system.contains("JSON", ignoreCase = true)) ResponseFormat.json("""{"type":"object"}""") else null,
-                            ).toString()
+                            ResponseGuard.collect(
+                                conv.sendMessageAsync(messages.last().text,
+                                    responseFormat = if (system.contains("JSON", ignoreCase = true)) ResponseFormat.json("""{"type":"object"}""") else null,
+                                ).map { it.toString() },
+                                cancel = { conv.cancelProcess() },
+                            )
                         } finally { activeConversation = null }
                     }
-                }.also { scheduleIdleRelease() }
+                } } finally { scheduleIdleRelease() }
             }
     }
 

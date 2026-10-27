@@ -105,21 +105,35 @@ Regole inderogabili:
     /** Stima prudente dei token (italiano + percorsi: circa 3 caratteri per token). */
     private fun tokens(text: String) = text.length / 3 + 4
 
-    suspend fun ask(c: Context, history: List<ChatMsg>): Pair<BrainReply, String> {
+    suspend fun ask(c: Context, history: List<ChatMsg>, previousResults: List<FileEntry>? = null,
+        onModelStart: suspend () -> Unit = {}): Pair<BrainReply, String> {
         val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
-        FileCommands.resolve(last.text)?.let { return it to "Comando locale · verificato sui file" }
+        val entries = FileIndex.ensure()
+        FileFacts.resolve(last.text, entries)?.let { return it to "Dati locali · verificati sui file" }
+        if (FileFacts.isShowFollowUp(last.text)) {
+            previousResults?.let { return FileFacts.followUp(it, entries) to "Dati locali · verificati sui file" }
+            // Recupera anche una vecchia conversazione in cui il modello aveva risposto male.
+            history.dropLast(1).lastOrNull { it.role == "user" }?.let { previous ->
+                FileFacts.resolve(previous.text, entries)?.let { return it to "Dati locali · verificati sui file" }
+            }
+            return BrainReply("Quale elenco vuoi vedere?", listOf(FollowUp("Scegli i file", listOf("Mostra i file più grandi", "Trova gli APK", "Trova i PDF")))) to "Comando locale"
+        }
+        FileCommands.resolve(last.text, entries)?.let { return it to "Comando locale · verificato sui file" }
         val engine = AiRouter.engine(c)
         val p = Prefs(c)
         val intentText = if (last.text.contains("\nScelgo:")) history.filter { it.role == "user" }.takeLast(2).joinToString("\n") { it.text } else last.text
         val online = engine is OnlineAi
         val sys = systemPrompt(p.userName)
-        val maxOut = if (online) 1500 else 1600
+        val maxOut = if (online) 1500 else 768
         var budget = AiRouter.fileBudget(engine)
-        var limit = if (online) p.onlineTokenLimit else 7000
+        var limit = if (online) p.onlineTokenLimit else 5000
         var lastError: Throwable? = null
         repeat(5) {
             val ctx = buildContext(c, intentText, budget)
-            val msgs = history.dropLast(1).takeLast(4) + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
+            val prior = history.dropLast(1).takeLast(4).filter {
+                it.text.length <= 3_000 && !ResponseGuard.isRepetitive(it.text)
+            }
+            val msgs = prior + ChatMsg("user", "$ctx\n=== RICHIESTA ===\n${last.text}")
             val est = tokens(sys) + msgs.sumOf { tokens(it.text) } + maxOut
             if (est > limit && budget > 10) {
                 // Riduci l'elenco dei file prima di inviare, invece di farsi rifiutare la richiesta
@@ -127,6 +141,7 @@ Regole inderogabili:
                 return@repeat
             }
             try {
+                onModelStart()
                 val raw = engine.complete(sys, msgs, maxOut)
                 val reply = validateReply(raw, intentText)
                 return reply to engine.displayName
@@ -145,9 +160,11 @@ Regole inderogabili:
     }
 
     fun validateReply(raw: String, userText: String): BrainReply {
+        ResponseGuard.checkRaw(raw)
         val json = extractJson(raw) ?: throw AiUnavailable("Risposta AI non valida. Nessun file è stato modificato.")
         if (json.opt("reply") !is String || json.getString("reply").isBlank())
             throw AiUnavailable("Risposta AI incompleta. Nessun file è stato modificato.")
+        ResponseGuard.checkReply(json.getString("reply"))
         val reply = clean(parse(raw), userText)
         val mutation = FileCommands.isMutation(userText)
         if (mutation && reply.questions.isEmpty() && reply.plan?.isEmpty != false)
@@ -232,4 +249,5 @@ Regole inderogabili:
         return FileQuery(words - exts.toSet(), exts, null, null, null)
     }
 }
+
 

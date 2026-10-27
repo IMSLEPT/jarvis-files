@@ -34,6 +34,7 @@ object FileCommands {
     fun resolve(text: String, entries: List<FileEntry> = FileIndex.ensure(), now: Long = System.currentTimeMillis()): BrainReply? {
         // Le opzioni dei comandi integrati sono richieste complete, non istruzioni nascoste.
         val request = text.substringAfter("\nScelgo: ", text)
+        FileFacts.resolve(request, entries)?.let { return it }
         val n = commandText(request)
         if (n in setOf("cancella", "elimina", "rimuovi", "cancella i file", "elimina i file", "libera spazio")) {
             return BrainReply("Scegli quali file vuoi controllare. Ti mostrerò l'elenco prima di spostarli nel cestino.",

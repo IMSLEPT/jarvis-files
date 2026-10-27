@@ -112,5 +112,30 @@ class CommandFlowTest {
         assertTrue(Storage.file(path).exists())
     }
 
+    @Test fun largestFilesAndShowThemWorkThroughChatWithoutModel() {
+        rule.onNodeWithTag("chat_input").performTextInput("quali sono i file che occupano maggiormente la memoria")
+        rule.onNodeWithTag("chat_input").performImeAction()
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.fileHits != null }
+        var paths = emptyList<String>()
+        rule.runOnIdle {
+            val answer = vm().messages.last()
+            assertFalse(answer.error)
+            assertTrue(answer.engine.startsWith("Dati locali"))
+            val files = answer.fileHits!!
+            assertTrue(files.isNotEmpty())
+            assertEquals(files.map { it.size }.sortedDescending(), files.map { it.size })
+            paths = files.map { it.rel }
+            assertNull(answer.plan)
+        }
+        TestUtil.screenshot("chat_largest_files")
+        rule.runOnUiThread { vm().send("mostrameli") }
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.size >= 4 }
+        rule.runOnIdle {
+            assertEquals(paths, vm().messages.last().fileHits!!.map { it.rel })
+            assertFalse(vm().messages.last().error)
+            assertNull(vm().messages.last().plan)
+        }
+    }
+
 }
 

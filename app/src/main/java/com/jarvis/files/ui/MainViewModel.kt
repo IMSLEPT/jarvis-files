@@ -192,16 +192,19 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         val generation = ++chatGeneration
         messages.add(UiMsg(nextId++, "user", t))
         busy = true
-        busyText = "Sto analizzando…"
+        busyText = "Controllo i file…"
         chatJob = viewModelScope.launch {
             try {
                 if (!Storage.hasAllFilesAccess()) throw AiUnavailable("Prima concedi l'accesso a tutti i file (Impostazioni → Permessi).")
                 val history = messages.filter { !it.error }.takeLast(10).map {
                     ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
+                val previousResults = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error && it.plan == null }?.fileHits
                 val (reply, engine) = withContext(Dispatchers.IO) {
                     if (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(t)) Storage.scanAll()
-                    Brain.ask(ctx, history)
+                    Brain.ask(ctx, history, previousResults) {
+                        withContext(Dispatchers.Main) { if (generation == chatGeneration) busyText = "L’AI sta preparando la risposta…" }
+                    }
                 }
                 ensureActive()
                 if (generation != chatGeneration) return@launch
