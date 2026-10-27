@@ -47,7 +47,7 @@ private val LightPalette = Palette(
     hairline = Color(0x12000000),
     accent = Color(0xFFBC451C),
     accentSoft = Color(0x1FFF6A2B),
-    text = Color(0xFF12141C),
+    text = Color(0xFF0B192E),
     muted = Color(0xFF6B7080),
     green = Color(0xFF14804B),
     amber = Color(0xFF986000),
@@ -96,13 +96,13 @@ object J {
 
     // Colori delle categorie e del brand (come nel design di riferimento)
     val Info = Color(0xFF2F6BFF)
-    val Navy = Color(0xFF1E3A8A)
+    val Navy = Color(0xFF153258)
     val Purple = Color(0xFF8B5CF6)
     val Pink = Color(0xFFFF4D8D)
     val Orange = Color(0xFFFF6A2B)
     val Peach = Color(0xFFFFF1E8)
-    /** Pulsanti principali: blu → viola → arancio. */
-    val brand = Brush.horizontalGradient(listOf(Color(0xFF2455C6), Color(0xFF7331B8), Color(0xFFBC451C)))
+    /** Pulsanti principali uniformi, con contrasto elevato. */
+    val brand = Brush.horizontalGradient(listOf(Navy, Navy))
     val background: Brush @Composable @ReadOnlyComposable get() = Brush.linearGradient(listOf(p.bg, p.bg))
 }
 
@@ -148,4 +148,5 @@ fun JarvisTheme(content: @Composable () -> Unit) {
         MaterialTheme(colorScheme = scheme, typography = typo, content = content)
     }
 }
+
 

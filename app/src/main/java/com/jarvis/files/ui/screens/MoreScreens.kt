@@ -104,32 +104,32 @@ import java.util.Calendar
 
 @Composable
 fun MoreScreen(vm: MainViewModel) {
-    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).statusBarsPadding().padding(18.dp)) {
+    Column(Modifier.fillMaxSize().statusBarsPadding().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 16.dp)) {
         Text("Altro", style = MaterialTheme.typography.headlineLarge, color = J.Text)
-        Spacer(Modifier.height(10.dp))
-        MoreItem(Icons.Filled.Security, "Sicurezza", "App sospette, APK, impostazioni a rischio") { vm.sub = Sub.SECURITY }
-        MoreItem(Icons.Filled.Schedule, "Automazioni", "Riordini, scansioni e avvisi programmati da te") { vm.sub = Sub.AUTOMATIONS }
-        MoreItem(Icons.Filled.Search, "Trova documenti", "\"la bolletta della luce di marzo\"") { vm.sub = Sub.FIND }
-        MoreItem(Icons.Filled.Face, "Persone", "Dai un nome ai volti nelle foto") { vm.sub = Sub.PEOPLE }
-        MoreItem(Icons.Filled.Lock, "Cartella segreta", "Documenti privati protetti dall'impronta") { vm.sub = Sub.VAULT }
-        MoreItem(Icons.Filled.BatteryChargingFull, "Batteria", "Stato e app più usate") { vm.sub = Sub.BATTERY }
-        MoreItem(Icons.Filled.Delete, "Cestino", "Recupera i file eliminati (30 giorni)") { vm.sub = Sub.TRASH }
-        MoreItem(Icons.Filled.Settings, "Impostazioni", "AI, blocco, soglie, permessi") { vm.sub = Sub.SETTINGS }
-    }
-}
-
-@Composable
-private fun MoreItem(icon: ImageVector, title: String, sub: String, onClick: () -> Unit) {
-    GlassCard(Modifier.fillMaxWidth().padding(bottom = 10.dp), onClick = onClick) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            com.jarvis.files.ui.components.IconBadge(icon)
-            Spacer(Modifier.width(14.dp))
-            Column(Modifier.weight(1f)) {
-                Text(title, color = J.Text, style = MaterialTheme.typography.titleMedium)
-                Text(sub, color = J.Muted, style = MaterialTheme.typography.bodySmall)
-            }
-            Text("›", color = J.Muted, style = MaterialTheme.typography.titleLarge)
+        Text("Strumenti e impostazioni", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
+        SectionTitle("Protezione")
+        GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 4.dp)) {
+            ListRow(Icons.Filled.Security, "Sicurezza", "App e impostazioni a rischio") { vm.sub = Sub.SECURITY }
+            com.jarvis.files.ui.components.RowDivider()
+            ListRow(Icons.Filled.Lock, "Cartella segreta", "File protetti con impronta") { vm.sub = Sub.VAULT }
+            com.jarvis.files.ui.components.RowDivider()
+            ListRow(Icons.Filled.Delete, "Cestino", "Recupera i file eliminati (30 giorni)") { vm.sub = Sub.TRASH }
         }
+        SectionTitle("Strumenti")
+        GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 4.dp)) {
+            ListRow(Icons.Filled.Schedule, "Automazioni", "Attività programmate") { vm.sub = Sub.AUTOMATIONS }
+            com.jarvis.files.ui.components.RowDivider()
+            ListRow(Icons.Filled.Search, "Trova documenti", "Cerca anche con parole tue") { vm.sub = Sub.FIND }
+            com.jarvis.files.ui.components.RowDivider()
+            ListRow(Icons.Filled.Face, "Persone", "Dai un nome ai volti nelle foto") { vm.sub = Sub.PEOPLE }
+            com.jarvis.files.ui.components.RowDivider()
+            ListRow(Icons.Filled.BatteryChargingFull, "Batteria", "Stato e utilizzo") { vm.sub = Sub.BATTERY }
+        }
+        Spacer(Modifier.height(14.dp))
+        GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 4.dp)) {
+            ListRow(Icons.Filled.Settings, "Impostazioni", "AI, blocco e permessi") { vm.sub = Sub.SETTINGS }
+        }
+        Spacer(Modifier.height(20.dp))
     }
 }
 
@@ -555,4 +555,5 @@ private fun AutomationDialog(initial: Automation, isNew: Boolean, onDismiss: () 
         },
     )
 }
+
 

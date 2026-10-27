@@ -11,6 +11,7 @@ import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.border
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -85,7 +86,7 @@ fun Modifier.pressable(onClick: (() -> Unit)?, enabled: Boolean = true): Modifie
     this.scale(s).clickable(interactionSource = src, indication = null, enabled = enabled, role = androidx.compose.ui.semantics.Role.Button, onClick = onClick)
 }
 
-/** Scheda: superficie piena, angoli morbidi, nessun bordo. */
+/** Superficie leggera: bordo sottile, angoli coerenti, senza ombre pesanti. */
 @Composable
 fun GlassCard(
     modifier: Modifier = Modifier,
@@ -97,8 +98,8 @@ fun GlassCard(
     Column(
         modifier
             .pressable(onClick)
-            .shadow(if (J.p.isDark) 0.dp else 10.dp, RoundedCornerShape(24.dp), ambientColor = Color(0x22000000), spotColor = Color(0x1A1E2A4A))
-            .clip(RoundedCornerShape(24.dp))
+            .clip(RoundedCornerShape(22.dp))
+            .border(1.dp, if (highlight) J.Blue.copy(alpha = 0.16f) else J.Stroke, RoundedCornerShape(22.dp))
             .background(if (highlight) J.AccentSoft else J.Card)
             .padding(padding),
         content = content,
@@ -109,9 +110,9 @@ fun GlassCard(
 fun SectionTitle(text: String, modifier: Modifier = Modifier) {
     Text(
         text,
-        style = MaterialTheme.typography.titleSmall,
-        color = J.Muted,
-        modifier = modifier.padding(start = 4.dp, top = 26.dp, bottom = 10.dp),
+        style = MaterialTheme.typography.titleMedium,
+        color = J.Text,
+        modifier = modifier.padding(start = 2.dp, top = 22.dp, bottom = 10.dp),
     )
 }
 
@@ -120,7 +121,7 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
     Row(
         modifier
             .pressable(onClick, enabled)
-            .clip(RoundedCornerShape(50))
+            .clip(RoundedCornerShape(16.dp))
             .background(if (enabled) J.brand else Brush.linearGradient(listOf(J.CardHi, J.CardHi)))
             .heightIn(min = 48.dp)
             .padding(horizontal = 20.dp, vertical = 12.dp),
@@ -131,7 +132,7 @@ fun GradientButton(text: String, modifier: Modifier = Modifier, icon: ImageVecto
             Icon(icon, null, tint = if (enabled) Color.White else J.Muted, modifier = Modifier.size(18.dp))
             Spacer(Modifier.width(8.dp))
         }
-        Text(text, color = if (enabled) Color.White else J.Muted, style = MaterialTheme.typography.titleSmall, overflow = TextOverflow.Ellipsis, maxLines = 1)
+        Text(text, color = if (enabled) Color.White else J.Muted, style = MaterialTheme.typography.titleSmall, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
 
@@ -140,8 +141,9 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
     Row(
         modifier
             .pressable(onClick, enabled)
-            .clip(RoundedCornerShape(50))
-            .background(J.CardHi)
+            .clip(RoundedCornerShape(16.dp))
+            .border(1.dp, J.Blue.copy(alpha = 0.14f), RoundedCornerShape(16.dp))
+            .background(J.AccentSoft.copy(alpha = 0.45f))
             .heightIn(min = 48.dp)
             .padding(horizontal = 16.dp, vertical = 11.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -151,7 +153,7 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
             Icon(icon, null, tint = if (enabled) color else J.Muted, modifier = Modifier.size(16.dp))
             Spacer(Modifier.width(6.dp))
         }
-        Text(text, color = if (enabled) color else J.Muted, style = MaterialTheme.typography.labelLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)
+        Text(text, color = if (enabled) color else J.Muted, style = MaterialTheme.typography.labelLarge, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
 
@@ -159,12 +161,13 @@ fun GhostButton(text: String, modifier: Modifier = Modifier, icon: ImageVector? 
 fun Chip(text: String, selected: Boolean = false, onClick: () -> Unit) {
     Text(
         text,
-        color = if (selected) Color.White else J.Text,
+        color = if (selected) J.Blue else J.Text,
         style = MaterialTheme.typography.labelLarge,
         modifier = Modifier
             .pressable(onClick)
             .clip(RoundedCornerShape(50))
-            .background(if (selected) J.Blue else J.Card)
+            .background(if (selected) J.AccentSoft else J.Card)
+            .heightIn(min = 44.dp)
             .padding(horizontal = 16.dp, vertical = 10.dp),
     )
 }
@@ -307,4 +310,5 @@ fun EmptyState(title: String, text: String, modifier: Modifier = Modifier) {
         Text(text, style = MaterialTheme.typography.bodyMedium, color = J.Muted, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
     }
 }
+
 

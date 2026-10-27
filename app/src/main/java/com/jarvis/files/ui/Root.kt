@@ -252,7 +252,6 @@ private fun JarvisBottomBar(vm: MainViewModel) {
     val scale = androidx.compose.ui.platform.LocalDensity.current.fontScale
     val allLabels = androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp >= 360 || scale <= 1.25f
     Row(Modifier.fillMaxWidth().navigationBarsPadding().padding(horizontal = 12.dp, vertical = 8.dp)
-        .shadow(8.dp, RoundedCornerShape(30.dp), ambientColor = Color(0x16000000), spotColor = Color(0x161E2A4A))
         .clip(RoundedCornerShape(30.dp)).background(J.Card).padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
         val tabs = listOf(Tab.HOME to "Home", Tab.FILES to "File", Tab.CHAT to "Jarvis", Tab.CLEAN to "Pulizia", Tab.MORE to "Altro")
         tabs.forEach { (tab, label) ->
@@ -306,4 +305,5 @@ private fun SharedFilesDialog(vm: MainViewModel) {
         },
     )
 }
+
 

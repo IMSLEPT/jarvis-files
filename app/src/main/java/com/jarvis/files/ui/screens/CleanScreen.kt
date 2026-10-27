@@ -6,6 +6,25 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.border
+import androidx.compose.foundation.background
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.material.icons.filled.CleaningServices
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.OpenInNew
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -76,19 +95,43 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 private enum class CleanTab(val title: String) {
-    CACHE("Cache app"), JUNK("File inutili"), DUP("Doppioni"), WA("WhatsApp"), BIG("Grandi e vecchi"), SHOTS("Screenshot e foto")
+    CACHE("Cache"), JUNK("File inutili"), DUP("Doppioni"), WA("WhatsApp"), BIG("Grandi e vecchi"), SHOTS("Screenshot e foto")
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun CleanScreen(vm: MainViewModel) {
     var tab by remember(vm.cleanSection) { mutableStateOf(CleanTab.entries.firstOrNull { it.name == vm.cleanSection } ?: CleanTab.CACHE) }
+    var more by remember { mutableStateOf(false) }
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
-        Column(Modifier.padding(horizontal = 18.dp, vertical = 10.dp)) {
-            Text("Pulizia", style = MaterialTheme.typography.headlineLarge, color = J.Text)
+        Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text("Pulizia", style = MaterialTheme.typography.headlineLarge, color = J.Text)
+                Text("Più spazio, sotto controllo.", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
+            }
+            Box {
+                IconButton(onClick = { more = true }) { Icon(Icons.Filled.MoreVert, "Altri strumenti di pulizia", tint = J.Muted) }
+                DropdownMenu(expanded = more, onDismissRequest = { more = false }) {
+                    CleanTab.entries.drop(4).forEach { t ->
+                        DropdownMenuItem(text = { Text(t.title) }, onClick = { tab = t; vm.cleanSection = t.name; more = false })
+                    }
+                }
+            }
         }
-        Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 14.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            CleanTab.entries.forEach { t -> Chip(t.title, selected = t == tab) { tab = t; vm.cleanSection = t.name } }
+        val columns = if (LocalDensity.current.fontScale > 1.2f || LocalConfiguration.current.screenWidthDp < 350) 2 else 4
+        FlowRow(Modifier.fillMaxWidth().padding(horizontal = 16.dp), maxItemsInEachRow = columns,
+            horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            CleanTab.entries.take(4).forEach { t ->
+                Box(Modifier.weight(1f).clip(RoundedCornerShape(16.dp)).background(if (t == tab) J.AccentSoft else J.Card)
+                    .border(1.dp, if (t == tab) J.Blue.copy(alpha = 0.2f) else J.Stroke, RoundedCornerShape(16.dp))
+                    .clickable { tab = t; vm.cleanSection = t.name }
+                    .heightIn(min = 44.dp).padding(horizontal = 5.dp, vertical = 12.dp), contentAlignment = Alignment.Center) {
+                    Text(t.title, color = if (t == tab) J.Blue else J.Text, style = MaterialTheme.typography.labelMedium,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                }
+            }
         }
+        if (tab.ordinal >= 4) Text(tab.title, color = J.Text, style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 20.dp, top = 14.dp))
         Spacer(Modifier.height(8.dp))
         Box(Modifier.weight(1f)) {
             when (tab) {
@@ -105,8 +148,10 @@ fun CleanScreen(vm: MainViewModel) {
 
 @Composable
 private fun Loading(text: String) {
-    Row(Modifier.fillMaxWidth().padding(28.dp), verticalAlignment = Alignment.CenterVertically) {
-        ArcReactor(40.dp); Spacer(Modifier.width(14.dp)); Text(text, color = J.Cyan)
+    Row(Modifier.fillMaxWidth().padding(24.dp), verticalAlignment = Alignment.CenterVertically) {
+        CircularProgressIndicator(Modifier.size(22.dp), color = J.Blue, strokeWidth = 2.dp)
+        Spacer(Modifier.width(14.dp))
+        Text(text, color = J.Muted, style = MaterialTheme.typography.bodyMedium)
     }
 }
 
@@ -168,45 +213,70 @@ private fun CacheTab(vm: MainViewModel) {
     }
     LaunchedEffect(reload, hasAccess) { apps = withContext(Dispatchers.IO) { AppCache.list(ctx) } }
     var showGuide by remember { mutableStateOf(false) }
+    var showDetails by remember { mutableStateOf(false) }
 
     LazyColumn(contentPadding = PaddingValues(14.dp)) {
         val list = apps
         val measured = list?.filter { it.cacheBytes >= 0 }.orEmpty()
         val total = measured.sumOf { it.cacheBytes }
-        val safe = measured.filter { it.safety == CacheSafety.SAFE }.sumOf { it.cacheBytes }
         item {
-            GlassCard(Modifier.fillMaxWidth(), highlight = true) {
-                if (hasAccess && list != null) {
-                    Text("Cache totale: ${Fmt.size(total)}", color = J.Text, style = MaterialTheme.typography.titleLarge)
-                    Text("Di cui ${Fmt.size(safe)} sicura da svuotare senza perdere nulla.", color = J.Green, style = MaterialTheme.typography.bodySmall)
-                } else {
-                    Text("Svuota la cache di tutte le app", color = J.Text, style = MaterialTheme.typography.titleLarge)
-                    Text("Funziona anche senza permessi speciali.", color = J.Green, style = MaterialTheme.typography.bodySmall)
+            GlassCard(Modifier.fillMaxWidth()) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Filled.CleaningServices, null, tint = J.Blue, modifier = Modifier.size(36.dp))
+                    Spacer(Modifier.width(14.dp))
+                    Column(Modifier.weight(1f)) {
+                        Text("Pulizia della cache", color = J.Text, style = MaterialTheme.typography.titleLarge)
+                        Text("Apri la richiesta di pulizia di Android.", color = J.Muted, style = MaterialTheme.typography.bodyMedium)
+                    }
                 }
-                Spacer(Modifier.height(10.dp))
-                GradientButton("Svuota tutte le cache", Modifier.fillMaxWidth()) {
+                if (hasAccess && measured.isNotEmpty()) {
+                    Spacer(Modifier.height(10.dp))
+                    Text("Cache misurata: ${Fmt.size(total)}", color = J.Text, style = MaterialTheme.typography.bodyMedium)
+                }
+                Spacer(Modifier.height(18.dp))
+                GradientButton("Gestisci cache", Modifier.fillMaxWidth(), icon = Icons.Filled.OpenInNew) {
                     runCatching { clearAll.launch(AppCache.clearAllIntent()) }.onFailure { vm.toast = "Il telefono non supporta lo svuotamento globale" }
                 }
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    "Android chiede conferma e svuota la cache di tutte le app insieme. La cache sono solo file temporanei: " +
-                        "non perdi foto, chat o accessi. Le app \"Attenzione\" dovranno solo riscaricare contenuti (mappe, musica, video). " +
-                        "Per svuotarne solo alcune, tocca l'app qui sotto e premi \"Svuota cache\".",
-                    color = J.Muted, style = MaterialTheme.typography.bodySmall,
-                )
+                Spacer(Modifier.height(12.dp))
+                Text("Android ti chiederà conferma.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
             }
-        }
-        if (!hasAccess) item {
+            Spacer(Modifier.height(12.dp))
+            GlassCard(Modifier.fillMaxWidth(), onClick = { showDetails = !showDetails }, padding = PaddingValues(16.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Filled.Info, null, tint = J.Blue, modifier = Modifier.size(24.dp))
+                    Spacer(Modifier.width(12.dp))
+                    Column(Modifier.weight(1f)) {
+                        Text("Come funziona", color = J.Text, style = MaterialTheme.typography.titleSmall)
+                        Text("Cosa viene rimosso", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    }
+                    Icon(if (showDetails) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore, null, tint = J.Muted)
+                }
+                if (showDetails) {
+                    Spacer(Modifier.height(12.dp))
+                    Text("La cache contiene file temporanei. Alcuni contenuti offline, come mappe, musica e video, potrebbero dover essere riscaricati. " +
+                        "Il risultato dipende da Android. Per una singola app, aprila dall’elenco e scegli Memoria e cache, poi Svuota cache.",
+                        color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                }
+            }
             Spacer(Modifier.height(10.dp))
-            if (showGuide) com.jarvis.files.ui.components.UsageAccessGuide { usageLauncher.launch(AppCache.usageAccessIntent()) }
-            else GlassCard(Modifier.fillMaxWidth(), onClick = { showGuide = true }) {
-                Text("Vuoi vedere quanto pesa la cache di ogni app?", color = J.Text, style = MaterialTheme.typography.titleSmall)
-                Text("Serve un permesso che Android blocca per le app installate da file. Tocca per la guida (facoltativo).",
-                    color = J.Muted, style = MaterialTheme.typography.bodySmall)
+            GlassCard(Modifier.fillMaxWidth(), onClick = { showGuide = !showGuide }, padding = PaddingValues(16.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f)) {
+                        Text("Dimensioni e permessi", color = J.Text, style = MaterialTheme.typography.titleSmall)
+                        Text(if (hasAccess) "Accesso ai dati di utilizzo attivo" else "Guida facoltativa", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    }
+                    Icon(if (showGuide) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore, null, tint = J.Muted)
+                }
             }
         }
-        if (list == null) { item { Loading("Leggo le app…") }; return@LazyColumn }
-        item { SectionTitle(if (hasAccess) "App per peso della cache" else "Le tue app (tocca per svuotare la cache)") }
+        if (showGuide) item {
+            Spacer(Modifier.height(10.dp))
+            if (!hasAccess) com.jarvis.files.ui.components.UsageAccessGuide { usageLauncher.launch(AppCache.usageAccessIntent()) }
+            else Text("Le dimensioni sono lette da Android. Le app senza dati disponibili restano accessibili dalle impostazioni di sistema.",
+                color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(12.dp))
+        }
+        item { SectionTitle(if (hasAccess) "App per peso della cache" else "App installate") }
+        if (list == null) { item { Loading("Caricamento delle app…") }; return@LazyColumn }
         items(list.filter { !hasAccess || it.cacheBytes > 1_000_000 }, key = { it.pkg }) { a ->
             Row(
                 Modifier.fillMaxWidth().clickable { ctx.startActivity(AppCache.appDetailsIntent(a.pkg)) }.padding(vertical = 8.dp),
@@ -446,4 +516,5 @@ private fun ShotsTab(vm: MainViewModel) {
         TrashBar(vm, sel.mapNotNull { r -> sizes[r]?.let { r to it } }, "Screenshot e foto") { sel.clear(); reload++ }
     }
 }
+
 

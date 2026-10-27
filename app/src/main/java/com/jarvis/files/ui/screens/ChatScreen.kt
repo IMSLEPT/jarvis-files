@@ -12,6 +12,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.border
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -50,6 +51,7 @@ import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.PhoneAndroid
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.AddComment
+import androidx.compose.material.icons.filled.VerifiedUser
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.StopCircle
 import androidx.compose.material3.Icon
@@ -97,8 +99,8 @@ import com.jarvis.files.ui.theme.J
 private data class Suggestion(val icon: ImageVector, val title: String, val prompt: String)
 
 private val SUGGESTIONS = listOf(
-    Suggestion(Icons.Filled.DeleteSweep, "Controlla gli APK da eliminare", "Cancella gli APK"),
-    Suggestion(Icons.Filled.FolderOpen, "Metti in ordine i Download", "Metti in ordine la cartella Download"),
+    Suggestion(Icons.Filled.DeleteSweep, "Controlla gli APK", "Cancella gli APK"),
+    Suggestion(Icons.Filled.FolderOpen, "Riordina Download", "Metti in ordine la cartella Download"),
     Suggestion(Icons.Filled.Search, "Trova i PDF delle bollette", "Trova i PDF delle bollette"),
     Suggestion(Icons.Filled.Landscape, "Foto di montagna", "Mostrami le foto di montagna"),
     Suggestion(Icons.Filled.CleaningServices, "Libera spazio velocemente", "Come libero spazio velocemente?"),
@@ -146,8 +148,8 @@ fun ChatScreen(vm: MainViewModel) {
                 Text("Jarvis", style = MaterialTheme.typography.titleLarge, color = J.Text)
                 Text(if (vm.busy) vm.busyText else engineLabel, style = MaterialTheme.typography.bodySmall, color = J.Muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
             }
-            IconButton(onClick = { vm.sub = com.jarvis.files.ui.Sub.SETTINGS }) { Icon(Icons.Filled.Settings, "Impostazioni AI", tint = J.Muted) }
-            IconButton(onClick = { vm.clearChat() }, enabled = !vm.operationBusy) { Icon(Icons.Filled.AddComment, "Nuova chat", tint = J.Blue) }
+            IconButton(onClick = { vm.sub = com.jarvis.files.ui.Sub.SETTINGS }, modifier = Modifier.border(1.dp, J.Stroke, RoundedCornerShape(14.dp))) { Icon(Icons.Filled.Settings, "Impostazioni AI", tint = J.Muted) }
+            IconButton(onClick = { vm.clearChat() }, enabled = !vm.operationBusy, modifier = Modifier.padding(start = 6.dp).border(1.dp, J.Stroke, RoundedCornerShape(14.dp))) { Icon(Icons.Filled.AddComment, "Nuova chat", tint = J.Blue) }
         }
         LazyColumn(
             Modifier.weight(1f).fillMaxWidth().testTag("chat_messages"), state = list,
@@ -155,22 +157,34 @@ fun ChatScreen(vm: MainViewModel) {
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             if (vm.messages.isEmpty()) item(key = "welcome") {
-                Column(Modifier.fillMaxWidth()) {
-                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) { ArcReactor(112.dp, active = false) }
-                    Spacer(Modifier.height(20.dp))
-                    Text("I tuoi file, in ordine.", style = MaterialTheme.typography.headlineMedium, color = J.Text)
+                Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+                    ArcReactor(76.dp, active = false)
+                    Spacer(Modifier.height(18.dp))
+                    Text("Come posso aiutarti?", style = MaterialTheme.typography.headlineSmall, color = J.Text,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center)
                     Spacer(Modifier.height(8.dp))
-                    Text("Trova un file, riordina i Download o controlla gli APK. Ogni modifica passa da un’anteprima.", style = MaterialTheme.typography.bodyMedium, color = J.Muted)
-                    Spacer(Modifier.height(20.dp))
-                    GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
-                        SUGGESTIONS.forEach { suggestion ->
-                            Row(Modifier.fillMaxWidth().pressable({ vm.send(suggestion.prompt) }, enabled).padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                                IconBadge(suggestion.icon, size = 36.dp)
-                                Spacer(Modifier.width(12.dp))
-                                Text(suggestion.title, color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
-                                Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(18.dp))
+                    Text("Trova e riordina i tuoi file.", style = MaterialTheme.typography.bodyMedium, color = J.Muted,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                    Spacer(Modifier.height(22.dp))
+                    val columns = if (androidx.compose.ui.platform.LocalDensity.current.fontScale > 1.2f ||
+                        androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp < 350) 1 else 2
+                    SUGGESTIONS.take(4).chunked(columns).forEach { row ->
+                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                            row.forEach { suggestion ->
+                                SuggestionTile(suggestion, Modifier.weight(1f), enabled) { vm.send(suggestion.prompt) }
                             }
                         }
+                        Spacer(Modifier.height(10.dp))
+                    }
+                    SUGGESTIONS.drop(4).forEach { suggestion ->
+                        SuggestionTile(suggestion, Modifier.fillMaxWidth(), enabled) { vm.send(suggestion.prompt) }
+                        Spacer(Modifier.height(10.dp))
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(Icons.Filled.VerifiedUser, null, tint = J.Muted, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.width(8.dp))
+                        Text("Controlli l’anteprima prima di ogni modifica.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                     }
                 }
             }
@@ -186,7 +200,7 @@ fun ChatScreen(vm: MainViewModel) {
         if (vm.operationBusy) Text("Operazione sui file in corso…", color = J.Muted, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(horizontal = 20.dp))
         Row(
             Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 10.dp)
-                .clip(RoundedCornerShape(24.dp)).background(J.Card).padding(6.dp),
+                .clip(RoundedCornerShape(24.dp)).background(J.Card).border(1.dp, J.Stroke, RoundedCornerShape(24.dp)).padding(6.dp),
             verticalAlignment = Alignment.Bottom,
         ) {
             IconButton(onClick = { focus.clearFocus(); vm.voiceOpen = true }, enabled = enabled) {
@@ -208,6 +222,19 @@ fun ChatScreen(vm: MainViewModel) {
                 Icon(Icons.Filled.ArrowUpward, "Invia messaggio", tint = if (enabled && input.isNotBlank()) Color.White else J.Muted)
             }
         }
+    }
+}
+
+@Composable
+private fun SuggestionTile(suggestion: Suggestion, modifier: Modifier, enabled: Boolean, onClick: () -> Unit) {
+    Row(modifier.clip(RoundedCornerShape(18.dp)).background(J.Card)
+        .border(1.dp, J.Stroke, RoundedCornerShape(18.dp)).pressable(onClick, enabled)
+        .heightIn(min = 74.dp).padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+        Icon(suggestion.icon, null, tint = J.Blue, modifier = Modifier.size(24.dp))
+        Spacer(Modifier.width(10.dp))
+        Text(suggestion.title, color = J.Text, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.weight(1f))
+        Spacer(Modifier.width(6.dp))
+        Icon(Icons.AutoMirrored.Filled.ArrowForward, null, tint = J.Muted, modifier = Modifier.size(16.dp))
     }
 }
 
@@ -314,4 +341,5 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
         }
     }
 }
+
 

@@ -16,10 +16,11 @@ import com.jarvis.files.R
 
 /** Approved Jarvis / FILES lockup. Text is outlined, so the logo remains sharp at every density. */
 @Composable
-fun JarvisBrand(modifier: Modifier = Modifier) {
+fun JarvisBrand(modifier: Modifier = Modifier, compact: Boolean = false) {
     Row(modifier.height(44.dp).clearAndSetSemantics { contentDescription = "Jarvis Files" },
-        verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Image(painterResource(R.drawable.jarvis_folder_brand), null, Modifier.size(40.dp))
-        Image(painterResource(R.drawable.jarvis_wordmark_brand), null, Modifier.size(110.dp, 41.4.dp))
+        verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(if (compact) 6.dp else 8.dp)) {
+        Image(painterResource(R.drawable.jarvis_folder_brand), null, Modifier.size(if (compact) 36.dp else 40.dp))
+        Image(painterResource(R.drawable.jarvis_wordmark_brand), null, Modifier.size(if (compact) 100.dp else 110.dp, if (compact) 37.6.dp else 41.4.dp))
     }
 }
+

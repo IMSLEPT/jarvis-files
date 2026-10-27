@@ -63,6 +63,10 @@ import com.jarvis.files.core.Vault
 import com.jarvis.files.ui.MainViewModel
 import com.jarvis.files.ui.Sub
 import com.jarvis.files.ui.Tab
+import com.jarvis.files.ui.components.SearchEntry
+import com.jarvis.files.ui.components.CategorySymbol
+import com.jarvis.files.ui.components.RowDivider
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import com.jarvis.files.ui.components.Chip
 import com.jarvis.files.ui.components.EmptyState
 import com.jarvis.files.ui.components.FileThumb
@@ -96,22 +100,27 @@ fun FilesScreen(vm: MainViewModel) {
         }
         LazyColumn(contentPadding = PaddingValues(start = 18.dp, end = 18.dp, bottom = 24.dp)) {
             item {
-                Row(
-                    Modifier.fillMaxWidth().pressable({ vm.sub = Sub.FIND }).clip(RoundedCornerShape(50)).background(J.Card)
-                        .padding(horizontal = 18.dp, vertical = 14.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Icon(Icons.Filled.Search, null, tint = J.Muted)
-                    Spacer(Modifier.width(10.dp))
-                    Text("Cerca un file o un documento…", color = J.Muted)
-                }
+                SearchEntry({ vm.sub = Sub.FIND })
                 SectionTitle("Categorie")
             }
             item {
                 GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
-                    ListRow(Icons.Filled.PhotoLibrary, "Foto e ricerca intelligente", "Persone, luoghi, oggetti") { vm.photoResults = null; vm.tab = Tab.PHOTOS; vm.sub = Sub.NONE }
-                    CAT_STYLES.filter { it.cat != com.jarvis.files.core.FileCategory.IMAGE }.forEach { s ->
-                        ListRow(s.icon, s.title, Fmt.size(sizes[s.cat] ?: 0L)) { openCategory(vm, s.cat) }
+                    val categories = listOf(CAT_STYLES.first { it.cat == com.jarvis.files.core.FileCategory.IMAGE }) + CAT_STYLES.filter { it.cat != com.jarvis.files.core.FileCategory.IMAGE }
+                    categories.forEachIndexed { i, cat ->
+                        if (i > 0) RowDivider()
+                        Row(Modifier.fillMaxWidth().pressable({ openCategory(vm, cat.cat) })
+                            .padding(horizontal = 14.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+                            CategorySymbol(cat.cat)
+                            Spacer(Modifier.width(12.dp))
+                            Column(Modifier.weight(1f)) {
+                                Text(if (cat.cat == com.jarvis.files.core.FileCategory.IMAGE) "Foto" else if (cat.cat == com.jarvis.files.core.FileCategory.OTHER) "Altri file" else cat.title,
+                                    color = J.Text, style = MaterialTheme.typography.titleSmall)
+                                if (cat.cat == com.jarvis.files.core.FileCategory.IMAGE)
+                                    Text("Persone, luoghi, oggetti", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                                else Text(Fmt.size(sizes[cat.cat] ?: 0L), color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                            }
+                            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = J.Muted)
+                        }
                     }
                 }
                 SectionTitle("Cartelle")
@@ -119,9 +128,11 @@ fun FilesScreen(vm: MainViewModel) {
             item {
                 GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 6.dp)) {
                     QUICK_FOLDERS.filter { Storage.file(it.path).isDirectory }.forEach { f ->
-                        ListRow(f.icon, f.title, f.path) { vm.searchResults = null; vm.category = null; vm.folder = f.path; vm.sub = Sub.CATEGORY }
+                        ListRow(f.icon, f.title, "") { openFolder(vm, f.path) }
+                        RowDivider()
                     }
                     ListRow(Icons.Filled.Lock, "Cartella segreta", "Protetta dall'impronta") { vm.sub = Sub.VAULT }
+                    RowDivider()
                     ListRow(Icons.Filled.Delete, "Cestino", "File eliminati negli ultimi 30 giorni") { vm.sub = Sub.TRASH }
                 }
             }
@@ -220,4 +231,5 @@ fun CategoryScreen(vm: MainViewModel) {
         }
     }
 }
+
 
