@@ -128,6 +128,7 @@ fun HomeScreen(vm: MainViewModel) {
     Column(Modifier.fillMaxSize().testTag("home_layout").statusBarsPadding().verticalScroll(rememberScrollState())
         .padding(horizontal = 20.dp, vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
         BoxWithConstraints(Modifier.fillMaxWidth()) {
+            val compact = maxWidth < 330.dp
             // Large system fonts get a separate row; narrow screens keep readable compact branding.
             if (largeText) {
                 Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -135,8 +136,8 @@ fun HomeScreen(vm: MainViewModel) {
                     AssistantEntry(vm)
                 }
             } else Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.SpaceBetween) {
-                JarvisBrand(compact = maxWidth < 330.dp)
-                AssistantEntry(vm, compact = maxWidth < 330.dp)
+                JarvisBrand(compact = compact)
+                AssistantEntry(vm, compact = compact)
             }
         }
         Text("$greeting,\n${Prefs(ctx).userName}", color = J.Text, style = MaterialTheme.typography.headlineLarge,
@@ -172,7 +173,7 @@ fun HomeScreen(vm: MainViewModel) {
             }
         }
         Text("I tuoi file", color = J.Text, style = MaterialTheme.typography.titleLarge)
-        val columns = if (largeText || LocalConfiguration.current.screenWidthDp < 350) 1 else 2
+        val columns = if (largeText || LocalConfiguration.current.screenWidthDp < 320) 1 else 2
         CAT_STYLES.take(6).chunked(columns).forEach { row ->
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 row.forEach { cat ->

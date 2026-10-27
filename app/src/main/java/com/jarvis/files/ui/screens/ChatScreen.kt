@@ -167,7 +167,7 @@ fun ChatScreen(vm: MainViewModel) {
                         textAlign = androidx.compose.ui.text.style.TextAlign.Center)
                     Spacer(Modifier.height(22.dp))
                     val columns = if (androidx.compose.ui.platform.LocalDensity.current.fontScale > 1.2f ||
-                        androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp < 350) 1 else 2
+                        androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp < 320) 1 else 2
                     SUGGESTIONS.take(4).chunked(columns).forEach { row ->
                         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                             row.forEach { suggestion ->
