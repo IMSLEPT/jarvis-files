@@ -40,6 +40,15 @@ class PhoneBrowserFlowTest {
         rule.onNodeWithTag("browser_list").performScrollToNode(hasContentDescription("Azioni per $name"))
         rule.onNodeWithContentDescription("Azioni per $name").performClick()
     }
+    private fun awaitFile(path: String) {
+        try { rule.waitUntil(20_000) { !vm().operationBusy && Storage.file(path).exists() } }
+        catch (e: Throwable) {
+            rule.runOnUiThread { TestUtil.report("BROWSER", "path=" + vm().browserPath + "; notice=" + vm().browserNotice + "; clipboard=" + vm().browserClipboard + "; busy=" + vm().operationBusy) }
+            TestUtil.screenshot("browser_operation_failure")
+            rule.onRoot().printToLog("JarvisTest")
+            throw e
+        }
+    }
     private fun name(value: String) {
         rule.onNodeWithTag("browser_name").performTextReplacement(value)
         rule.onNodeWithText("Salva").performClick()
@@ -69,15 +78,18 @@ class PhoneBrowserFlowTest {
         row("$path/file.pdf").assertIsDisplayed()
         rule.onNodeWithText("Memoria interna").performScrollTo().performClick()
         rule.runOnIdle { assertEquals("", vm().browserPath) }
+        ready()
         TestUtil.screenshot("browser_internal_storage")
     }
 
     @Test fun createRenameTrashAndUndoWorkFromActualButtons() {
         rule.onNodeWithContentDescription("Nuova cartella").performClick(); name("New folder")
-        rule.waitUntil(10_000) { rule.onAllNodesWithTag("browser_row_$root/New folder").fetchSemanticsNodes().isNotEmpty() }
+        rule.waitUntil(10_000) { !vm().operationBusy && Storage.file("$root/New folder").isDirectory }
+        row("$root/New folder").assertIsDisplayed()
         assertTrue(Storage.file("$root/New folder").isDirectory)
         actions("note.txt"); rule.onNodeWithText("Rinomina").performClick(); name("Renamed.txt")
-        rule.waitUntil(10_000) { rule.onAllNodesWithTag("browser_row_$root/Renamed.txt").fetchSemanticsNodes().isNotEmpty() }
+        rule.waitUntil(10_000) { !vm().operationBusy && Storage.file("$root/Renamed.txt").exists() }
+        row("$root/Renamed.txt").assertIsDisplayed()
         assertEquals("testo browser", Storage.file("$root/Renamed.txt").readText())
         actions("Renamed.txt"); rule.onNodeWithText("Nel cestino").performClick()
         assertTrue(Storage.file("$root/Renamed.txt").exists())
@@ -86,6 +98,7 @@ class PhoneBrowserFlowTest {
         rule.onNodeWithText("Annulla ultima modifica").performClick()
         rule.waitUntil(20_000) { !vm().operationBusy && Storage.file("$root/Renamed.txt").exists() }
         assertEquals("testo browser", Storage.file("$root/Renamed.txt").readText())
+        row("$root/Renamed.txt").assertIsDisplayed()
         TestUtil.screenshot("browser_manual_actions")
     }
 
@@ -94,7 +107,7 @@ class PhoneBrowserFlowTest {
         actions("note.txt"); rule.onNodeWithText("Copia").performClick()
         row("$root/Destination").performScrollTo().performClick()
         rule.onNodeWithText("Incolla qui").performClick()
-        rule.waitUntil(20_000) { !vm().operationBusy && Storage.file("$root/Destination/note (1).txt").exists() }
+        awaitFile("$root/Destination/note (1).txt")
         assertEquals("existing", Storage.file("$root/Destination/note.txt").readText())
         assertEquals("testo browser", Storage.file("$root/Destination/note (1).txt").readText())
         assertTrue(Storage.file("$root/note.txt").exists())
@@ -102,7 +115,7 @@ class PhoneBrowserFlowTest {
         actions("note.txt"); rule.onNodeWithText("Sposta").performClick()
         row("$root/Empty").performScrollTo().performClick()
         rule.onNodeWithText("Incolla qui").performClick()
-        rule.waitUntil(20_000) { !vm().operationBusy && Storage.file("$root/Empty/note.txt").exists() }
+        awaitFile("$root/Empty/note.txt")
         assertFalse(Storage.file("$root/note.txt").exists())
         rule.onNodeWithText("Annulla ultima modifica").performClick()
         rule.waitUntil(20_000) { !vm().operationBusy && Storage.file("$root/note.txt").exists() }

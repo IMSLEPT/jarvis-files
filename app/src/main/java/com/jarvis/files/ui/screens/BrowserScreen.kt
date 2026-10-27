@@ -85,8 +85,8 @@ fun BrowserScreen(vm: MainViewModel) {
             IconButton(onClick = { up() }) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "Cartella superiore", tint = J.Text) }
             Column(Modifier.weight(1f)) {
                 Text(if (path.isEmpty()) "Memoria interna" else path.substringAfterLast('/'), color = J.Text,
-                    style = MaterialTheme.typography.titleLarge, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                Text(nodes?.let { "${it.size} elementi" } ?: "Esplora cartelle", color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                    style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Text(nodes?.let { if (it.size == 1) "1 elemento" else "${it.size} elementi" } ?: "Esplora cartelle", color = J.Muted, style = MaterialTheme.typography.bodySmall)
             }
             IconButton(onClick = { edit = null to "" }, enabled = enabled) { Icon(Icons.Filled.CreateNewFolder, "Nuova cartella", tint = J.Blue) }
             Box {
@@ -120,7 +120,7 @@ fun BrowserScreen(vm: MainViewModel) {
         if (selection.isNotEmpty()) {
             val chosen = nodes.orEmpty().filter { it.rel in selection }
             Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 18.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                Chip("${selection.size} selezionati", true) { selection.clear() }
+                Chip(if (selection.size == 1) "1 selezionato" else "${selection.size} selezionati", true) { selection.clear() }
                 Chip("Tutti") { selection.clear(); selection.addAll(nodes.orEmpty().filter { it.blocked == null }.map { it.rel }) }
                 GhostButton("Copia", enabled = enabled) { vm.prepareFileTransfer(selection.toList(), false); selection.clear() }
                 GhostButton("Sposta", enabled = enabled && chosen.all { it.mutable }) { vm.prepareFileTransfer(selection.toList(), true); selection.clear() }
@@ -172,7 +172,7 @@ fun BrowserScreen(vm: MainViewModel) {
                             Text(node.name, color = J.Text, style = MaterialTheme.typography.bodyLarge, maxLines = 2, overflow = TextOverflow.Ellipsis)
                             Text(when {
                                 node.blocked != null -> "Accesso limitato"
-                                node.directory -> (node.childCount?.let { "$it elementi" } ?: "Cartella") + " · " + Fmt.date(node.modified)
+                                node.directory -> (node.childCount?.let { if (it == 1) "1 elemento" else "$it elementi" } ?: "Cartella") + " · " + Fmt.date(node.modified)
                                 else -> Fmt.size(node.bytes) + " · " + Fmt.date(node.modified)
                             }, color = J.Muted, style = MaterialTheme.typography.bodySmall)
                         }
@@ -198,7 +198,7 @@ fun BrowserScreen(vm: MainViewModel) {
         }
         vm.browserClipboard?.let { clipboard ->
             GlassCard(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp), padding = PaddingValues(12.dp)) {
-                Text("${clipboard.paths.size} elementi da ${if (clipboard.cut) "spostare" else "copiare"}", color = J.Text, style = MaterialTheme.typography.titleSmall)
+                Text((if (clipboard.paths.size == 1) "1 elemento" else "${clipboard.paths.size} elementi") + " da " + (if (clipboard.cut) "spostare" else "copiare"), color = J.Text, style = MaterialTheme.typography.titleSmall)
                 Text("Apri la cartella destinazione e incolla qui.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                 Text(if (path.isEmpty()) "Destinazione: Memoria interna" else "Destinazione: $path", color = J.Muted, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 8.dp)) {
@@ -231,7 +231,7 @@ fun BrowserScreen(vm: MainViewModel) {
     deleting?.let { paths ->
         AlertDialog(onDismissRequest = { deleting = null }, containerColor = J.Card,
             title = { Text("Sposta nel cestino?", color = J.Text) },
-            text = { Text("${paths.size} elementi selezionati. Le cartelle includono il loro contenuto. Puoi recuperarli dal Cestino di Jarvis.\n\n" + paths.take(4).joinToString("\n")) },
+            text = { Text((if (paths.size == 1) "1 elemento selezionato." else "${paths.size} elementi selezionati.") + " Le cartelle includono il loro contenuto. Puoi recuperarli dal Cestino di Jarvis.\n\n" + paths.take(4).joinToString("\n")) },
             confirmButton = { TextButton(enabled = enabled, onClick = { vm.trashBrowserItems(paths); deleting = null; selection.clear() }) { Text("Sposta nel cestino", color = J.Blue) } },
             dismissButton = { TextButton(onClick = { deleting = null }) { Text("Annulla") } })
     }

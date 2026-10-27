@@ -167,7 +167,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             try {
                 val r = withContext(Dispatchers.IO) { task() }
                 fileFeedback(if (r.result.done == 0 && r.result.failed == 0) "Nessuna modifica necessaria" else
-                    "${r.result.done} elementi completati" + if (r.result.failed > 0) "; ${r.result.failed} non riusciti: ${r.result.errors.take(2).joinToString("; ")}" else "")
+                    (if (r.result.done == 1) "1 elemento completato" else "${r.result.done} elementi completati") + if (r.result.failed > 0) "; ${r.result.failed} non riusciti: ${r.result.errors.take(2).joinToString("; ")}" else "")
                 after(r)
                 filesChanged()
             } catch (e: CancellationException) {
