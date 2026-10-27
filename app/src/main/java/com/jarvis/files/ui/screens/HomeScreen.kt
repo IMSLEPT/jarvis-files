@@ -97,7 +97,7 @@ fun openCategory(vm: MainViewModel, cat: FileCategory) {
 }
 fun openFolder(vm: MainViewModel, path: String) {
     vm.searchResults = null
-    vm.category = null; vm.folder = path; vm.tab = Tab.FILES; vm.sub = Sub.CATEGORY
+    vm.openBrowser(path)
 }
 fun tipAction(vm: MainViewModel, t: HomeTip) {
     when (t.kind) {

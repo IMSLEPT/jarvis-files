@@ -1,6 +1,6 @@
 # Esplora cartelle del telefono
 
-Accessi: File → Memoria interna oppure Home → Tutte le cartelle. La vista legge direttamente un livello del filesystem condiviso, mostra cartelle vuote e file nascosti, permette di risalire con Indietro e con il percorso visibile. Non dipende dall'indice AI e non ha il precedente limite di profondità dell'elenco cartelle.
+Accessi: File → Memoria interna oppure Home → Tutte le cartelle. Anche le scorciatoie Download, Fotocamera, Screenshot e altre cartelle aprono questa navigazione. La vista legge direttamente un livello del filesystem condiviso, mostra cartelle vuote e file nascosti, permette di risalire con Indietro e con il percorso visibile. Non dipende dall'indice AI e non ha il precedente limite di profondità dell'elenco cartelle.
 
 Comandi manuali: nuova cartella, rinomina di file/cartelle (nome completo ed estensione), copia e spostamento con navigazione della destinazione e Incolla qui, selezione multipla, condivisione dei file, dettagli, ordinamento e ricerca nel livello corrente. Le eliminazioni richiedono un pulsante esplicito e passano dal Cestino di Jarvis. Copie, rinomine, spostamenti e creazioni usano l'annullamento dell'ultima operazione; annullare una copia la sposta nel cestino, mantenendola recuperabile.
 

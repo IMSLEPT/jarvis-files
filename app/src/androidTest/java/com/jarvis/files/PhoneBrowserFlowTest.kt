@@ -25,7 +25,7 @@ class PhoneBrowserFlowTest {
         rule.runOnUiThread { vm().openBrowser(root) }
         row("$root/note.txt").assertIsDisplayed()
     }
-    @After fun cleanup() { Storage.file(root).deleteRecursively(); FileIndex.invalidate() }
+    @After fun cleanup() { Storage.file(root).deleteRecursively(); Storage.file("Download/JarvisBrowserShortcut").deleteRecursively(); FileIndex.invalidate() }
     private fun ready() {
         val ready = hasTestTag("browser_list") and SemanticsMatcher.expectValue(androidx.compose.ui.semantics.SemanticsProperties.StateDescription, "Cartella caricata")
         rule.waitUntil(10_000) { rule.onAllNodes(ready).fetchSemanticsNodes().isNotEmpty() }
@@ -116,4 +116,14 @@ class PhoneBrowserFlowTest {
         rule.onNodeWithContentDescription("Cancella ricerca cartella").performClick()
         row("$root/Empty").assertIsDisplayed()
     }
+    @Test fun homeDownloadShortcutOpensNestedFolders() {
+        TestUtil.write("Download/JarvisBrowserShortcut/Inside/shortcut.txt", "shortcut".toByteArray())
+        rule.runOnUiThread { vm().tab = Tab.HOME; vm().sub = Sub.NONE }
+        rule.onNodeWithText("Download").performScrollTo().performClick()
+        rule.runOnIdle { assertEquals(Sub.BROWSER, vm().sub); assertEquals("Download", vm().browserPath) }
+        row("Download/JarvisBrowserShortcut").performScrollTo().performClick()
+        row("Download/JarvisBrowserShortcut/Inside").performScrollTo().performClick()
+        row("Download/JarvisBrowserShortcut/Inside/shortcut.txt").assertIsDisplayed()
+    }
+
 }
