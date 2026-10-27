@@ -184,7 +184,7 @@ fun HomeScreen(vm: MainViewModel) {
                             Spacer(Modifier.width(10.dp))
                             Column(Modifier.weight(1f)) {
                                 Text(cat.title, color = J.Text, style = MaterialTheme.typography.labelLarge)
-                                Text(Fmt.size(sizes[cat.cat] ?: 0L), color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                                Text(if (vm.homeReady) Fmt.size(sizes[cat.cat] ?: 0L) else "Calcolo…", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                             }
                         }
                     }

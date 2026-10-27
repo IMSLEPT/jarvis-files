@@ -251,7 +251,7 @@ object FileOps {
         if (n.isEmpty()) n = src.name
         val ext = src.extension
         if (src.isFile && ext.isNotEmpty() && !n.endsWith(".$ext", ignoreCase = true)) n = "$n.$ext"
-        return n.take(180)
+        return Storage.fitFileName(n)
     }
 
     fun dirSize(f: File): Long = f.walkTopDown().filter { it.isFile }.sumOf { it.length() }

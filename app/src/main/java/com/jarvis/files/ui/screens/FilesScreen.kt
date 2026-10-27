@@ -117,7 +117,7 @@ fun FilesScreen(vm: MainViewModel) {
                                     color = J.Text, style = MaterialTheme.typography.titleSmall)
                                 if (cat.cat == com.jarvis.files.core.FileCategory.IMAGE)
                                     Text("Persone, luoghi, oggetti", color = J.Muted, style = MaterialTheme.typography.bodySmall)
-                                else Text(Fmt.size(sizes[cat.cat] ?: 0L), color = J.Muted, style = MaterialTheme.typography.bodySmall)
+                                else Text(if (vm.homeReady) Fmt.size(sizes[cat.cat] ?: 0L) else "Calcolo…", color = J.Muted, style = MaterialTheme.typography.bodySmall)
                             }
                             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = J.Muted)
                         }

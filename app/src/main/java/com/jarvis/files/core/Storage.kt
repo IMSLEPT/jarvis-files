@@ -76,6 +76,28 @@ object Storage {
         return clean
     }
 
+    /** Limita i byte del nome, mantenendo estensione e caratteri Unicode completi. */
+    fun fitFileName(name: String, reservedBytes: Int = 0): String {
+        val dot = name.lastIndexOf('.')
+        val suffix = if (dot > 0 && dot < name.lastIndex) name.substring(dot) else ""
+        val suffixBytes = suffix.toByteArray(Charsets.UTF_8).size
+        val limit = maxOf(240, suffixBytes + reservedBytes + 4).coerceAtMost(255) - reservedBytes
+        require(suffixBytes < limit) { "Estensione del nome troppo lunga" }
+        if (name.toByteArray(Charsets.UTF_8).size <= limit) return name
+        val base = name.removeSuffix(suffix)
+        val budget = limit - suffixBytes
+        var end = 0
+        var bytes = 0
+        while (end < base.length) {
+            val cp = Character.codePointAt(base, end)
+            val count = when { cp < 0x80 -> 1; cp < 0x800 -> 2; cp < 0x10000 -> 3; else -> 4 }
+            if (bytes + count > budget) break
+            bytes += count
+            end += Character.charCount(cp)
+        }
+        return base.substring(0, end) + suffix
+    }
+
     fun freeBytes(): Long = StatFs(root.absolutePath).availableBytes
     fun totalBytes(): Long = StatFs(root.absolutePath).totalBytes
 
@@ -163,7 +185,7 @@ object FileIndex {
     }
 
     fun ensure(maxAgeMs: Long = 10 * 60_000L): List<FileEntry> {
-        if (entries.isEmpty() || System.currentTimeMillis() - scannedAt > maxAgeMs) Storage.scanAll()
+        if (scannedAt == 0L || System.currentTimeMillis() - scannedAt >= maxAgeMs) Storage.scanAll()
         return entries
     }
 

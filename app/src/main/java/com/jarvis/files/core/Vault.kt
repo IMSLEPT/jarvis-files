@@ -16,10 +16,18 @@ object Vault {
     fun list(c: Context): List<File> = dir(c).listFiles()?.sortedByDescending { it.lastModified() } ?: emptyList()
 
     private fun unique(d: File, unsafeName: String): File {
-        val name = unsafeName.replace('\\', '/').substringAfterLast('/').replace(Regex("[\\p{Cntrl}]"), "").trim().take(180).takeUnless { it.isEmpty() || it == "." || it == ".." } ?: "file_${System.currentTimeMillis()}"
-        var f = File(d, name)
+        val name = unsafeName.replace('\\', '/').substringAfterLast('/').replace(Regex("[\\p{Cntrl}]"), "").trim().takeUnless { it.isEmpty() || it == "." || it == ".." } ?: "file_${System.currentTimeMillis()}"
+        val fitted = Storage.fitFileName(name)
+        var f = File(d, fitted)
         var n = 1
-        while (f.exists()) { f = File(d, "${name.substringBeforeLast('.')} ($n).${name.substringAfterLast('.', "")}".trimEnd('.')); n++ }
+        while (f.exists()) {
+            val marker = " ($n)"
+            val shorter = Storage.fitFileName(name, marker.toByteArray(Charsets.UTF_8).size)
+            val dot = shorter.lastIndexOf('.')
+            val suffix = if (dot > 0 && dot < shorter.lastIndex) shorter.substring(dot) else ""
+            f = File(d, shorter.removeSuffix(suffix) + marker + suffix)
+            n++
+        }
         return f
     }
 

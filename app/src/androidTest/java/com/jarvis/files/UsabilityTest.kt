@@ -66,4 +66,25 @@ class UsabilityTest {
         rule.onNodeWithText("Sblocca cartella").assertExists()
         rule.onNodeWithText("Aggiungi file").assertDoesNotExist()
     }
+    @Test fun categoriesRefreshWhenExternalFilesChangeWithinCacheWindow() {
+        val path = "JarvisHomeRefresh/new.pdf"
+        try {
+            rule.runOnUiThread { vm().tab = Tab.CHAT; vm().sub = Sub.NONE }
+            rule.waitUntil(10_000) { !vm().scanning }
+            Storage.file("JarvisHomeRefresh").deleteRecursively()
+            Storage.scanAll()
+            val before = FileIndex.entries.filter { it.category == FileCategory.DOCUMENT }.sumOf { it.size }
+            rule.runOnUiThread { vm().refreshHome(force = true) }
+            rule.waitUntil(10_000) { vm().homeReady && (vm().home.byCat.toMap()[FileCategory.DOCUMENT] ?: 0L) == before }
+            TestUtil.write(path, ByteArray(4096) { 1 })
+            Storage.scanAll()
+            rule.runOnUiThread { vm().refreshHome() }
+            rule.waitUntil(10_000) { (vm().home.byCat.toMap()[FileCategory.DOCUMENT] ?: 0L) == before + 4096L }
+        } finally {
+            Storage.file("JarvisHomeRefresh").deleteRecursively()
+            FileIndex.invalidate()
+        }
+    }
+
 }
+

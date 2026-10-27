@@ -107,5 +107,6 @@ object FileCommands {
     }
 
     fun isMutation(text: String) = Regex("^(?:per favore |puoi |potresti )?(?:(?:cancella|elimina|rimuovi|rinomina|sposta|riordina|organizza|pulisci)\\b|metti (?:in ordine|nel cestino)|crea (?:una |la )?cartella)")
-        .containsMatchIn(commandText(text))
+        .containsMatchIn(commandText(text.substringAfter("\nScelgo: ", text)))
 }
+

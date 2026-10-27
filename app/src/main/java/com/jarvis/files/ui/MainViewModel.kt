@@ -114,46 +114,38 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     var home by mutableStateOf(HomeData())
         private set
+    var homeReady by mutableStateOf(false)
+        private set
     private var homeAt = 0L
+    private var homeEntries: List<FileEntry>? = null
 
-    /** Calcola i dati della Home (categorie, suggerimenti, ultime foto) al massimo ogni 5 minuti. */
+    /** Dati leggeri della Home: ricalcola quando cambia lo snapshot dell'indice. */
     fun refreshHome(force: Boolean = false) {
-        if (!force && System.currentTimeMillis() - homeAt < 5 * 60_000 && home.byCat.isNotEmpty()) return
+        if (!force && homeEntries === FileIndex.entries && FileIndex.scannedAt != 0L &&
+            System.currentTimeMillis() - homeAt < 5 * 60_000) return
         homeJob?.cancel()
-        homeAt = System.currentTimeMillis()
         homeJob = viewModelScope.launch {
             try {
-            val data = withContext(Dispatchers.IO) {
-            val entries = FileIndex.ensure()
-            val byCat = entries.groupBy { it.category }.map { it.key to it.value.sumOf { e -> e.size } }.sortedByDescending { it.second }
-            val recent = entries.filter { it.category == com.jarvis.files.core.FileCategory.IMAGE && !it.rel.contains("/.") && it.size > 25_000 }
-                .sortedByDescending { it.modified }.take(12).map { it.rel }
-            val tips = ArrayList<HomeTip>()
-            runCatching {
-                val junk = com.jarvis.files.core.Cleaner.junk(ctx)
-                if (junk.isNotEmpty()) tips += HomeTip("junk", "di file inutili", Fmt.size(junk.sumOf { it.size }),
-                    "File temporanei, cache e residui che puoi rimuovere in sicurezza.")
-            }
-            runCatching {
-                val wa = com.jarvis.files.core.Cleaner.whatsapp().sumOf { it.size }
-                if (wa > 500_000_000) tips += HomeTip("whatsapp", "occupati da WhatsApp", Fmt.size(wa), "Vocali, video dei gruppi e media già inviati.")
-            }
-            val dl = entries.count { it.folder == "Download" }
-            if (dl > 15) tips += HomeTip("download", "file sparsi in Download", "$dl", "Jarvis può metterli in ordine in sottocartelle in un attimo.")
-            runCatching {
-                val trash = com.jarvis.files.core.Trash.totalSize(ctx)
-                if (trash > 200_000_000) tips += HomeTip("trash", "nel cestino", Fmt.size(trash), "Svuotalo per liberare spazio subito.")
-            }
-            val extra = HashMap<String, Long>()
-            extra["whatsapp"] = entries.filter { it.rel.contains("whatsapp", true) }.sumOf { it.size }
-            extra["screenshot"] = entries.filter { it.rel.contains("/Screenshots/", true) }.sumOf { it.size }
-            extra["camera"] = entries.filter { it.rel.startsWith("DCIM/Camera/") }.sumOf { it.size }
-            extra["download"] = entries.filter { it.rel.startsWith("Download/") }.sumOf { it.size }
-            extra["trash"] = runCatching { com.jarvis.files.core.Trash.totalSize(ctx) }.getOrDefault(0L)
-            HomeData(byCat, tips, recent, extra)
-            }
-            home = data
-            fileCount = FileIndex.entries.size
+                val (data, entries) = withContext(Dispatchers.IO) {
+                    val entries = FileIndex.ensure()
+                    val byCat = entries.groupBy { it.category }.map { it.key to it.value.sumOf { e -> e.size } }.sortedByDescending { it.second }
+                    val recent = entries.filter { it.category == com.jarvis.files.core.FileCategory.IMAGE && !it.rel.contains("/.") && it.size > 25_000 }
+                        .sortedByDescending { it.modified }.take(12).map { it.rel }
+                    val extra = mapOf(
+                        "whatsapp" to entries.filter { it.rel.contains("whatsapp", true) }.sumOf { it.size },
+                        "screenshot" to entries.filter { it.rel.contains("/Screenshots/", true) }.sumOf { it.size },
+                        "camera" to entries.filter { it.rel.startsWith("DCIM/Camera/") }.sumOf { it.size },
+                        "download" to entries.filter { it.rel.startsWith("Download/") }.sumOf { it.size },
+                        "trash" to runCatching { com.jarvis.files.core.Trash.totalSize(ctx) }.getOrDefault(0L),
+                    )
+                    // La pulizia approfondita si esegue nella sua scheda: non blocca più le categorie.
+                    HomeData(byCat = byCat, recent = recent, extra = extra) to entries
+                }
+                home = data
+                homeEntries = entries
+                fileCount = entries.size
+                homeReady = true
+                homeAt = System.currentTimeMillis()
             } catch (e: CancellationException) { throw e }
             catch (e: Exception) { homeAt = 0; toast = "Impossibile aggiornare lo spazio: ${e.message}" }
         }
@@ -359,3 +351,4 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         chatInput = ""
     }
 }
+

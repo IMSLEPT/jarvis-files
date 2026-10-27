@@ -118,4 +118,54 @@ class RegressionTest {
         assertEquals("original", Storage.file(original).readText())
     }
 
+    @Test fun emptyIndexIsCachedUntilItIsInvalidated() {
+        FileIndex.update(emptyList())
+        assertTrue(FileIndex.ensure().isEmpty())
+        FileIndex.invalidate()
+        assertTrue(FileIndex.ensure().any { it.rel == "JarvisRegression/Download/a.pdf" })
+    }
+
+    @Test fun longRenameKeepsExtensionAndExecutesWithUnicode() {
+        val path = "JarvisRegression/Download/a.pdf"
+        listOf("a".repeat(300), "🧪".repeat(100)).forEach { name ->
+            val actions = JSONArray().put(JSONObject().put("type", "rename").put("path", path).put("new_name", name))
+            val plan = FileOps.buildPlan(actions)
+            val moved = plan.ops.filterIsInstance<Op.Move>().single()
+            val filename = Storage.file(moved.to).name
+            assertTrue(filename.endsWith(".pdf"))
+            assertTrue(filename.toByteArray(Charsets.UTF_8).size <= 255)
+            assertEquals(0, FileOps.execute(ctx, plan, "Rename regression").failed)
+            assertEquals("original", Storage.file(moved.to).readText())
+            assertEquals(0, Undo.undo(ctx).second)
+            assertEquals("original", Storage.file(path).readText())
+        }
+    }
+
+    @Test fun longVaultNamesKeepExtensionAndHandleCollisions() {
+        val name = "JarvisRegression-vault-" + "a".repeat(224) + ".pdf"
+        val path = "JarvisRegression/$name"
+        val exported = mutableListOf<java.io.File>()
+        try {
+            listOf("first", "second").forEach { text ->
+                TestUtil.write(path, text.toByteArray())
+                assertTrue(Vault.importPath(ctx, path))
+            }
+            val files = Vault.list(ctx).filter { it.name.startsWith("JarvisRegression-vault-") }
+            assertEquals(2, files.size)
+            assertEquals(setOf("first", "second"), files.map { it.readText() }.toSet())
+            files.forEach { file ->
+                assertTrue(file.name.endsWith(".pdf"))
+                assertTrue(file.name.toByteArray(Charsets.UTF_8).size <= 255)
+                val out = Vault.export(ctx, file)
+                assertNotNull(out)
+                exported.add(out!!)
+                assertTrue(out.name.endsWith(".pdf"))
+            }
+        } finally {
+            exported.forEach { it.delete() }
+            Vault.list(ctx).filter { it.name.startsWith("JarvisRegression-vault-") }.forEach { it.delete() }
+        }
+    }
+
 }
+

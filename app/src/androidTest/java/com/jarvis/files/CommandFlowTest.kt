@@ -74,4 +74,23 @@ class CommandFlowTest {
         rule.onNodeWithText("Fine").performClick()
         rule.onNodeWithText("Esegui").performScrollTo().assertIsNotEnabled()
     }
+    @Test fun clarificationChoiceRescansBeforeBuildingDeletionPreview() {
+        rule.waitForIdle()
+        rule.waitUntil(10_000) { !vm().scanning }
+        Storage.scanAll()
+        val fresh = "JarvisCommandFlow/newly-downloaded.apk"
+        TestUtil.write(fresh, "fresh apk".toByteArray())
+        assertFalse(FileIndex.entries.any { it.rel == fresh })
+        rule.runOnUiThread { vm().send("Quali file vuoi controllare?\nScelgo: Cancella gli APK in JarvisCommandFlow") }
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.any { it.plan != null } }
+        rule.runOnIdle {
+            val paths = vm().messages.last { it.plan != null }.plan!!.ops.filterIsInstance<Op.Trash>().map { it.path }
+            assertTrue(paths.contains(fresh))
+            assertTrue(paths.contains(path))
+        }
+        assertTrue(Storage.file(fresh).exists())
+        assertTrue(Storage.file(path).exists())
+    }
+
 }
+
