@@ -231,6 +231,8 @@ object FileOps {
         "Notifications", "Ringtones", "Podcasts", "Audiobooks", "Recordings",
     )
 
+    fun canModifySource(path: String): Boolean = path.isNotEmpty() && path !in protectedTop && Storage.sanitize(path) == path
+
     /** Segnaposto: {data} {nome} {n} {anno} {mese} {ext}. */
     fun applyPattern(pattern: String, e: FileEntry, n: Int): String {
         val base = e.name.substringBeforeLast('.')
@@ -364,6 +366,10 @@ object Undo {
                         !from.exists() && FileOps.moveFile(to, from)
                     }
                     "trash" -> Trash.restore(c, o.getString("id"))
+                    "copy" -> {
+                        val path = o.getString("p")
+                        !Storage.file(path).exists() || Trash.put(c, path) != null
+                    }
                     "mkdir" -> {
                         val d = Storage.file(o.getString("d"))
                         (d.list()?.isEmpty() == true && d.delete()) || !d.exists()
@@ -380,4 +386,5 @@ object Undo {
         return ok to ko
     }
 }
+
 

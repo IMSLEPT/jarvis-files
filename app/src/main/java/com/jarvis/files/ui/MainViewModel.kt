@@ -1,6 +1,9 @@
 package com.jarvis.files.ui
 
 import android.app.Application
+import com.jarvis.files.core.PhoneFiles
+import com.jarvis.files.core.FileClipboard
+import com.jarvis.files.core.BrowserResult
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -48,7 +51,7 @@ data class UiMsg(
 enum class Tab { HOME, FILES, CHAT, CLEAN, PHOTOS, MORE }
 
 /** Schermate secondarie aperte sopra le schede. */
-enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY }
+enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY, BROWSER }
 
 /** Suggerimento mostrato in Home (l'azione è decisa dalla UI in base al tipo). */
 data class HomeTip(val kind: String, val title: String, val big: String, val sub: String)
@@ -96,6 +99,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     private var chatJob: Job? = null
     private var chatGeneration = 0L
     private var homeJob: Job? = null
+    private var browserJob: Job? = null
+    var browserCopyRunning by mutableStateOf(false)
+        private set
+    fun stopBrowserCopy() { if (browserCopyRunning) browserJob?.cancel() }
     private var nextId = 1L
 
     /** Ascolto vocale aperto (sopra qualsiasi schermata). */
@@ -110,6 +117,64 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     var folder by mutableStateOf<String?>(null)
 
     var searchResults by mutableStateOf<List<FileEntry>?>(null)
+    var browserPath by mutableStateOf("")
+    var browserClipboard by mutableStateOf<FileClipboard?>(null)
+        private set
+
+    fun openBrowser(path: String = "") {
+        val denied = PhoneFiles.restriction(path)
+        if (denied != null) { toast = denied; return }
+        browserPath = path; tab = Tab.FILES; sub = Sub.BROWSER
+    }
+
+    fun prepareFileTransfer(paths: List<String>, cut: Boolean) {
+        if (busy || operationBusy || paths.isEmpty()) return
+        if (cut && paths.any { !FileOps.canModifySource(it) }) { toast = "La selezione contiene cartelle principali protette"; return }
+        browserClipboard = FileClipboard(paths.distinct(), cut)
+        toast = "Scegli la cartella destinazione e premi Incolla qui"
+    }
+
+    fun cancelFileTransfer() { if (!operationBusy) browserClipboard = null }
+
+    fun pasteBrowserFiles() {
+        val clipboard = browserClipboard ?: return
+        val destination = browserPath
+        runBrowserTask({
+            val context = kotlinx.coroutines.currentCoroutineContext()
+            PhoneFiles.paste(ctx, clipboard, destination) { context.ensureActive() }
+        }, copying = !clipboard.cut) { result -> browserClipboard = clipboard.copy(paths = result.remaining).takeIf { it.paths.isNotEmpty() } }
+    }
+
+    fun createBrowserFolder(name: String) {
+        val destination = browserPath
+        runBrowserTask({ BrowserResult(FileOps.execute(ctx, PhoneFiles.mkdirPlan(destination, name), "Nuova cartella")) })
+    }
+
+    fun renameBrowserItem(path: String, name: String) =
+        runBrowserTask({ BrowserResult(FileOps.execute(ctx, PhoneFiles.renamePlan(path, name), "Rinomina manuale")) })
+
+    fun trashBrowserItems(paths: List<String>) =
+        runBrowserTask({ BrowserResult(FileOps.execute(ctx, PhoneFiles.trashPlan(paths), "Cestino da esplora cartelle")) })
+
+    private fun runBrowserTask(task: suspend () -> BrowserResult, copying: Boolean = false, after: (BrowserResult) -> Unit = {}) {
+        if (operationBusy || busy) return
+        operationBusy = true
+        browserCopyRunning = copying
+        browserJob = viewModelScope.launch {
+            try {
+                val r = withContext(Dispatchers.IO) { task() }
+                toast = if (r.result.done == 0 && r.result.failed == 0) "Nessuna modifica necessaria" else
+                    "${r.result.done} elementi completati" + if (r.result.failed > 0) "; ${r.result.failed} non riusciti: ${r.result.errors.take(2).joinToString("; ")}" else ""
+                after(r)
+                filesChanged()
+            } catch (e: CancellationException) {
+                if (copying) { toast = "Copia interrotta. Le copie già completate restano disponibili."; filesChanged() }
+                throw e
+            }
+            catch (e: Exception) { toast = e.message ?: "Operazione non completata" }
+            finally { operationBusy = false; browserCopyRunning = false; browserJob = null; refreshStatus() }
+        }
+    }
 
     /** File condivisi da altre app verso Jarvis, in attesa di una scelta. */
     var shared by mutableStateOf<List<android.net.Uri>>(emptyList())
@@ -375,4 +440,5 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         chatInput = ""
     }
 }
+
 

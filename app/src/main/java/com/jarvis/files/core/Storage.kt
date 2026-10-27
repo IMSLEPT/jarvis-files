@@ -50,7 +50,7 @@ object Storage {
     const val TRASH_DIR = ".JarvisCestino"
 
     /** Cartelle che non si scansionano (inaccessibili o interne). */
-    private val skipPrefixes = listOf("Android/data", "Android/obb", TRASH_DIR)
+    private val skipPrefixes = listOf("Android/data", "Android/obb", TRASH_DIR, PhoneFiles.TEMP_DIR)
 
     fun hasAllFilesAccess(): Boolean = Environment.isExternalStorageManager()
 
@@ -207,4 +207,5 @@ object Fmt {
     @Synchronized fun date(ms: Long): String = dateFmt.format(Date(ms))
     @Synchronized fun iso(ms: Long): String = isoFmt.format(Date(ms))
 }
+
 

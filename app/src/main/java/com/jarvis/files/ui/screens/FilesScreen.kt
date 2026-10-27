@@ -25,6 +25,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.Description
@@ -102,6 +103,10 @@ fun FilesScreen(vm: MainViewModel) {
         LazyColumn(contentPadding = PaddingValues(start = 18.dp, end = 18.dp, bottom = 24.dp)) {
             item {
                 SearchEntry({ vm.sub = Sub.FIND })
+                Spacer(Modifier.height(14.dp))
+                GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 4.dp)) {
+                    ListRow(Icons.Filled.Folder, "Memoria interna", "Esplora tutte le cartelle e modifica i file") { vm.openBrowser() }
+                }
                 SectionTitle("Categorie")
             }
             item {
@@ -242,5 +247,6 @@ fun CategoryScreen(vm: MainViewModel) {
         }
     }
 }
+
 
 

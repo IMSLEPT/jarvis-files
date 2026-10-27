@@ -193,10 +193,10 @@ fun HomeScreen(vm: MainViewModel) {
         }
         if (largeText) {
             GhostButton("Download", Modifier.fillMaxWidth(), Icons.Filled.Download) { openFolder(vm, "Download") }
-            GhostButton("Tutte le cartelle", Modifier.fillMaxWidth(), Icons.Filled.Folder) { vm.tab = Tab.FILES; vm.sub = Sub.NONE }
+            GhostButton("Tutte le cartelle", Modifier.fillMaxWidth(), Icons.Filled.Folder) { vm.openBrowser() }
         } else Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             GhostButton("Download", Modifier.weight(1f), Icons.Filled.Download) { openFolder(vm, "Download") }
-            GhostButton("Tutte le cartelle", Modifier.weight(1f), Icons.Filled.Folder) { vm.tab = Tab.FILES; vm.sub = Sub.NONE }
+            GhostButton("Tutte le cartelle", Modifier.weight(1f), Icons.Filled.Folder) { vm.openBrowser() }
         }
         vm.pending?.let { (title, reply, plan) ->
             SectionTitle("Piano in attesa")
@@ -229,3 +229,4 @@ private fun AssistantEntry(vm: MainViewModel, compact: Boolean = false) {
 
 @Composable
 fun ListRow(icon: ImageVector, title: String, sub: String, onClick: () -> Unit) = FeatureRow(icon, title, sub, onClick)
+
