@@ -7,3 +7,5 @@ Le domande strutturate vengono collegate dall’app alla richiesta originale. Il
 La funzione Riprova recupera anche il vecchio formato «domanda\nScelgo: Sì» conservando il perimetro originale. I pulsanti di vecchie domande rimangono disabilitati. Il modello selezionato, la modalità locale, la grafica e le protezioni precedenti rimangono invariati.
 
 Verifica: test su file reali per riconoscimento screenshot, cartella, età, file vicini, altri tipi, ricerca senza cancellazione, nessun risultato, sorgente delle domande e scelte senza modello. Test UI su Sì → anteprima aggiornata → Esegui → Annulla modifiche, No, Riprova del vecchio messaggio e richiesta diretta. Il JSON delle domande è una fixture dei test; questi controlli non misurano l’inferenza di Gemma su un telefono fisico.
+
+Durante la suite è stata corretta anche una condizione di concorrenza dell’elenco: lo scorrimento verso il primo file viene eseguito dopo l’applicazione del nuovo ordinamento alla UI. Il test alterna ripetutamente Recenti, Risultati e Nome e raccoglie una schermata diagnostica in caso di errore.

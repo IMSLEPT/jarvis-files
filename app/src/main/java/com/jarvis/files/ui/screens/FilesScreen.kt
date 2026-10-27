@@ -156,7 +156,7 @@ fun CategoryScreen(vm: MainViewModel) {
     var sort by remember(cat, folder, search) { mutableStateOf(if (search != null) 3 else 0) }
     var files by remember { mutableStateOf<List<FileEntry>?>(null) }
     val listState = rememberLazyListState()
-    var displayedSort by remember(cat, folder, search) { mutableStateOf(-1) }
+    var loadedSort by remember(cat, folder, search) { mutableStateOf(-1) }
     val sel = remember(cat, folder, search) { mutableStateListOf<String>() }
     androidx.activity.compose.BackHandler(enabled = sel.isNotEmpty()) { sel.clear() }
     var reload by remember { mutableStateOf(0) }
@@ -168,12 +168,13 @@ fun CategoryScreen(vm: MainViewModel) {
                 when (sort) { 1 -> l.sortedByDescending { it.size }; 2 -> l.sortedBy { it.name.lowercase() }; 3 -> l.sortedBy { searchOrder[it.rel] ?: Int.MAX_VALUE }; else -> l.sortedByDescending { it.modified } }
             }
         }
-        if (displayedSort != sort) {
-            // Un nuovo ordinamento parte dal primo risultato, non dal vecchio file visibile.
-            listState.requestScrollToItem(0)
-            displayedSort = sort
-        }
+        loadedSort = sort
         sel.retainAll(files.orEmpty().map { it.rel }.toSet())
+    }
+    // Aspetta che la nuova lista sia stata applicata alla UI: un reset prima della
+    // ricomposizione può essere consumato dal vecchio elenco e mantenere il vecchio file.
+    LaunchedEffect(cat, folder, search, loadedSort) {
+        if (loadedSort >= 0) listState.scrollToItem(0)
     }
     val title = if (search != null) "Risultati ricerca" else cat?.let { c -> CAT_STYLES.firstOrNull { it.cat == c }?.title } ?: folder?.substringAfterLast('/') ?: "File"
     Column(Modifier.fillMaxSize().statusBarsPadding()) {

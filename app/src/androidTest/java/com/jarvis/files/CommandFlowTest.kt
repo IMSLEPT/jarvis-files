@@ -148,15 +148,23 @@ class CommandFlowTest {
         val first = rule.onNodeWithText("rank-14.txt").fetchSemanticsNode().boundsInRoot.top
         val second = rule.onNodeWithText("rank-13.txt").fetchSemanticsNode().boundsInRoot.top
         assertTrue(first < second)
-        rule.onNodeWithText("Recenti").performScrollTo().performClick()
-        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
-        rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
-        rule.onNodeWithText("Risultati").performScrollTo().performClick()
-        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-14.txt").fetchSemanticsNodes().isNotEmpty() }
-        rule.onNodeWithText("rank-14.txt").assertIsDisplayed()
-        rule.onNodeWithText("Nome").performScrollTo().performClick()
-        rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
-        rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
+        try {
+            repeat(3) {
+                rule.onNodeWithText("Recenti").performScrollTo().performClick()
+                rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
+                rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
+                rule.onNodeWithText("Risultati").performScrollTo().performClick()
+                rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-14.txt").fetchSemanticsNodes().isNotEmpty() }
+                rule.onNodeWithText("rank-14.txt").assertIsDisplayed()
+                rule.onNodeWithText("Nome").performScrollTo().performClick()
+                rule.waitUntil(10_000) { rule.onAllNodesWithText("rank-00.txt").fetchSemanticsNodes().isNotEmpty() }
+                rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
+            }
+        } catch (e: Throwable) {
+            TestUtil.screenshot("sort_switch_failure")
+            rule.onRoot().printToLog("JarvisTest")
+            throw e
+        }
     }
 
     /** Ricrea il JSON della domanda vista negli screenshot, senza simulare un motore AI. */
