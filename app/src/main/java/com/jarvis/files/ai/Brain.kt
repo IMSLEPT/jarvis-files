@@ -12,7 +12,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.util.Locale
 
-data class FollowUp(val question: String, val options: List<String>)
+data class FollowUp(val question: String, val options: List<String>, val request: String? = null)
 
 data class FileQuery(val keywords: List<String>, val ext: List<String>, val folder: String?, val fromIso: String?, val toIso: String?)
 
@@ -106,9 +106,11 @@ Regole inderogabili:
     private fun tokens(text: String) = text.length / 3 + 4
 
     suspend fun ask(c: Context, history: List<ChatMsg>, previousResults: List<FileEntry>? = null,
-        onModelStart: suspend () -> Unit = {}): Pair<BrainReply, String> {
+        choice: FollowUpChoice? = null, onModelStart: suspend () -> Unit = {}): Pair<BrainReply, String> {
         val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
+        if (ChoiceCommands.declines(choice)) return BrainReply("Operazione annullata. Nessun file è stato modificato.") to "Comando locale"
         val entries = FileIndex.ensure()
+        ChoiceCommands.resolve(choice, entries)?.let { return it to "Comando locale · verificato sui file" }
         FileFacts.resolve(last.text, entries)?.let { return it to "Dati locali · verificati sui file" }
         if (FileFacts.isShowFollowUp(last.text)) {
             previousResults?.let { return FileFacts.followUp(it, entries) to "Dati locali · verificati sui file" }
@@ -186,7 +188,8 @@ Regole inderogabili:
             ?.let { q -> if (q.folder != null && com.jarvis.files.core.Storage.file(q.folder).isDirectory) q else q.copy(folder = null) }
         // Il piano resta visibile anche se Jarvis fa domande: l'anteprima con "Esegui" è già la conferma,
         // e toccare un'opzione rigenera il piano con la scelta fatta.
-        return r.copy(photoSearch = photo, fileQuery = fq, plan = if (r.questions.isNotEmpty()) null else r.plan)
+        return r.copy(photoSearch = photo, fileQuery = fq, questions = r.questions.map { it.copy(request = userText) },
+            plan = if (r.questions.isNotEmpty()) null else r.plan)
     }
 
     fun parse(raw: String): BrainReply {

@@ -10,6 +10,8 @@ import androidx.lifecycle.viewModelScope
 import com.jarvis.files.ai.AiUnavailable
 import com.jarvis.files.ai.Brain
 import com.jarvis.files.ai.ChatMsg
+import com.jarvis.files.ai.ChoiceCommands
+import com.jarvis.files.ai.FollowUpChoice
 import com.jarvis.files.ai.FollowUp
 import com.jarvis.files.automation.PendingPlan
 import com.jarvis.files.core.FileEntry
@@ -181,7 +183,25 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         send(text)
     }
 
+    fun answer(msgId: Long, question: FollowUp, option: String) {
+        val message = messages.lastOrNull() ?: return
+        if (message.id != msgId || message.role != "assistant" || question !in message.questions || option !in question.options) return
+        val text = if (ChoiceCommands.isBinary(question.options)) option else question.question + "\nScelgo: " + option
+        sendMessage(text, FollowUpChoice(question.request, option, question.options))
+    }
+
     fun send(text: String) {
+        val selected = text.substringAfter("\nScelgo: ", text).trim()
+        val prompt = text.substringBefore("\nScelgo: ", "")
+        val question = messages.lastOrNull()?.takeIf { it.role == "assistant" && !it.error }?.questions?.firstOrNull {
+            ChoiceCommands.isBinary(it.options) && (prompt.isEmpty() || prompt == it.question) &&
+                ChoiceCommands.optionFor(selected, it.options) != null
+        }
+        val choice = question?.let { FollowUpChoice(it.request, ChoiceCommands.optionFor(selected, it.options)!!, it.options) }
+        sendMessage(text, choice)
+    }
+
+    private fun sendMessage(text: String, choice: FollowUpChoice?) {
         val t = text.trim()
         if (t.isEmpty()) return
         if (busy || operationBusy) { toast = "Attendi la risposta oppure interrompila prima di inviare un nuovo comando"; return }
@@ -189,20 +209,21 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             if (messages[i].planState == PlanState.PENDING && messages[i].plan != null)
                 messages[i] = messages[i].copy(planState = PlanState.CANCELLED)
         }
+        val declining = ChoiceCommands.declines(choice)
         val generation = ++chatGeneration
         messages.add(UiMsg(nextId++, "user", t))
         busy = true
         busyText = "Controllo i file…"
         chatJob = viewModelScope.launch {
             try {
-                if (!Storage.hasAllFilesAccess()) throw AiUnavailable("Prima concedi l'accesso a tutti i file (Impostazioni → Permessi).")
+                if (!declining && !Storage.hasAllFilesAccess()) throw AiUnavailable("Prima concedi l'accesso a tutti i file (Impostazioni → Permessi).")
                 val history = messages.filter { !it.error }.takeLast(10).map {
                     ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
                 val previousResults = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error && it.plan == null }?.fileHits
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    if (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(t)) Storage.scanAll()
-                    Brain.ask(ctx, history, previousResults) {
+                    if (!declining && (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(choice?.request ?: t))) Storage.scanAll()
+                    Brain.ask(ctx, history, previousResults, choice) {
                         withContext(Dispatchers.Main) { if (generation == chatGeneration) busyText = "L’AI sta preparando la risposta…" }
                     }
                 }

@@ -27,9 +27,16 @@ object FileCommands {
         "video" to setOf("mp4", "mkv", "mov", "3gp", "webm", "avi", "m4v"),
         "foto" to setOf("jpg", "jpeg", "png", "webp", "heic", "heif", "gif", "bmp", "dng", "raw"),
         "immagini" to setOf("jpg", "jpeg", "png", "webp", "heic", "heif", "gif", "bmp", "dng", "raw"),
+        "screenshot" to setOf("jpg", "jpeg", "png", "webp", "heic", "heif"),
+        "screenshots" to setOf("jpg", "jpeg", "png", "webp", "heic", "heif"),
+        "schermate" to setOf("jpg", "jpeg", "png", "webp", "heic", "heif"),
         "audio" to setOf("mp3", "m4a", "aac", "ogg", "opus", "wav", "flac", "amr"),
         "archivi" to setOf("zip", "rar", "7z", "tar", "gz"),
     )
+
+    private fun isScreenshot(e: FileEntry): Boolean =
+        e.folder.split('/').any { it.equals("Screenshots", true) || it.equals("Screenshot", true) } ||
+            Regex("(?i)^(?:screenshot|screen_shot|schermata)(?:[_ .-]|$)").containsMatchIn(e.name)
 
     fun resolve(text: String, entries: List<FileEntry> = FileIndex.ensure(), now: Long = System.currentTimeMillis()): BrainReply? {
         // Le opzioni dei comandi integrati sono richieste complete, non istruzioni nascoste.
@@ -64,9 +71,12 @@ object FileCommands {
         }
         val verb = Regex("^(cancella|elimina|rimuovi|metti nel cestino|sposta nel cestino|trova|trovami|cerca|cercami|mostra|mostrami|elenca)\\s+(.+)$").matchEntire(n) ?: return null
         val deleting = verb.groupValues[1] in setOf("cancella", "elimina", "rimuovi", "metti nel cestino", "sposta nel cestino")
-        var target = verb.groupValues[2].replace(Regex("^(?:(?:tutti|tutte|i|gli|le|il|la|dei|degli|delle|file|miei|mie)\\s+)+"), "")
-        val kind = types.keys.firstOrNull { target == it || target.startsWith("$it ") } ?: return null
-        target = target.removePrefix(kind).trim()
+        val rawTarget = verb.groupValues[2]
+        var target = rawTarget.replace(Regex("^(?:(?:tutti|tutte|i|gli|le|il|la|dei|degli|delle|file|miei|mie)\\s+)+"), "")
+        val kind = types.keys.firstOrNull { target == it || target.startsWith("$it ") }
+            ?: if (Regex("\\bfile\\b").containsMatchIn(rawTarget) &&
+                Regex("^(?:in|da|dalla|della|nella|dentro)(?: la)? cartella .+$").matches(target)) "file" else return null
+        if (kind != "file") target = target.removePrefix(kind).trim()
         var folder: String? = null
         var age: Int? = null
         var nameWords = emptyList<String>()
@@ -90,20 +100,23 @@ object FileCommands {
                     ?: return BrainReply("Non trovo la cartella «$raw» tra quelle accessibili. Controlla il percorso nella scheda File.")
             }
         }
-        val exts = types.getValue(kind)
-        val matched = entries.filter { e -> e.ext in exts &&
+        val exts = types[kind]
+        val screenshots = kind in setOf("screenshot", "screenshots", "schermate")
+        val matched = entries.filter { e -> (exts == null || e.ext in exts) &&
+            (!screenshots || isScreenshot(e)) &&
             (folder == null || e.folder == folder || e.folder.startsWith("$folder/")) &&
             (age == null || now - e.modified >= age.toLong() * 86_400_000L) &&
             nameWords.all { norm(e.name).contains(it) } &&
             Storage.sanitize(e.rel) == e.rel && Storage.file(e.rel).isFile }
         val scope = folder?.let { " in $it e nelle sue sottocartelle" } ?: " nella memoria condivisa accessibile"
         val label = kind.uppercase(Locale.ITALY).takeIf { kind in setOf("apk", "pdf") } ?: kind
-        if (matched.isEmpty()) return BrainReply("Non ho trovato file $label$scope" +
+        val description = if (screenshots) "screenshot" else if (kind == "file") "file" else "file $label"
+        if (matched.isEmpty()) return BrainReply("Non ho trovato $description$scope" +
             (age?.let { " più vecchi di $it giorni" } ?: "") + ". Nessun file è stato modificato.")
-        if (!deleting) return BrainReply("Ho trovato ${matched.size} file $label$scope.",
+        if (!deleting) return BrainReply("Ho trovato ${matched.size} $description$scope.",
             fileResults = matched.sortedByDescending { it.modified })
         val plan = Plan(matched.sortedBy { it.rel }.map { Op.Trash(it.rel, it.size) }, emptyList())
-        return BrainReply("${matched.size} file $label$scope · ${Fmt.size(matched.sumOf { it.size })}." +
+        return BrainReply("${matched.size} $description$scope · ${Fmt.size(matched.sumOf { it.size })}." +
             if (kind == "apk") " Le app installate restano sul telefono." else "", plan = plan)
     }
 

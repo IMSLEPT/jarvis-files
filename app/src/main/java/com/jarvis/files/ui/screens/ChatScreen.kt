@@ -282,7 +282,7 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     q.options.forEach { o ->
                         Row(
-                            Modifier.fillMaxWidth().pressable({ vm.send("${q.question}\nScelgo: $o") }, !vm.busy && !vm.operationBusy && vm.messages.lastOrNull()?.id == m.id).clip(RoundedCornerShape(16.dp)).background(J.Card)
+                            Modifier.fillMaxWidth().pressable({ vm.answer(m.id, q, o) }, !vm.busy && !vm.operationBusy && vm.messages.lastOrNull()?.id == m.id).clip(RoundedCornerShape(16.dp)).background(J.Card)
                                 .padding(horizontal = 16.dp, vertical = 12.dp),
                             verticalAlignment = Alignment.CenterVertically,
                         ) {

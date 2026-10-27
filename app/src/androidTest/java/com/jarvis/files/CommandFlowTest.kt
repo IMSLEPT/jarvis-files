@@ -159,5 +159,93 @@ class CommandFlowTest {
         rule.onNodeWithText("rank-00.txt").assertIsDisplayed()
     }
 
+    /** Ricrea il JSON della domanda vista negli screenshot, senza simulare un motore AI. */
+    private fun screenshotQuestion(): Pair<String, com.jarvis.files.ai.FollowUp> {
+        val folder = "JarvisCommandFlow/Pictures/Screenshots"
+        TestUtil.write("$folder/first.png", ByteArray(100))
+        TestUtil.write("$folder/keep.pdf", ByteArray(10))
+        rule.waitUntil(10_000) { !vm().scanning }
+        Storage.scanAll()
+        val request = "Cancella gli screenshot in $folder"
+        val prompt = "Conferma l'eliminazione di tutti gli screenshot nella cartella '$folder'"
+        val raw = org.json.JSONObject().put("reply", "Conferma")
+            .put("questions", org.json.JSONArray().put(org.json.JSONObject()
+                .put("q", prompt).put("options", org.json.JSONArray(listOf("Sì", "No"))))).toString()
+        val q = com.jarvis.files.ai.Brain.validateReply(raw, request).questions.single()
+        rule.runOnUiThread {
+            vm().messages.add(UiMsg(10020, "user", request))
+            vm().messages.add(UiMsg(10021, "assistant", "Conferma", questions = listOf(q)))
+        }
+        return folder to q
+    }
+
+    @Test fun screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel() {
+        val (folder, _) = screenshotQuestion()
+        TestUtil.write("$folder/fresh.png", ByteArray(150))
+        assertFalse(FileIndex.entries.any { it.rel == "$folder/fresh.png" })
+        rule.onNodeWithText("Sì").performScrollTo().performClick()
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.plan != null }
+        rule.runOnIdle {
+            val answer = vm().messages.last()
+            assertFalse(answer.error)
+            assertEquals(setOf("$folder/first.png", "$folder/fresh.png"),
+                answer.plan!!.ops.filterIsInstance<Op.Trash>().map { it.path }.toSet())
+            assertTrue(vm().messages.last { it.role == "user" }.text == "Sì")
+        }
+        assertTrue(Storage.file("$folder/first.png").exists())
+        assertTrue(Storage.file("$folder/fresh.png").exists())
+        TestUtil.screenshot("chat_screenshot_preview")
+        rule.onNodeWithText("Esegui").performScrollTo().performClick()
+        rule.waitUntil(20_000) { !vm().operationBusy && !Storage.file("$folder/first.png").exists() }
+        assertFalse(Storage.file("$folder/fresh.png").exists())
+        assertTrue(Storage.file("$folder/keep.pdf").exists())
+        rule.runOnUiThread { vm().undo() }
+        rule.waitUntil(20_000) { !vm().operationBusy && Storage.file("$folder/first.png").exists() }
+        assertTrue(Storage.file("$folder/fresh.png").exists())
+        assertEquals(100L, Storage.file("$folder/first.png").length())
+    }
+
+    @Test fun screenshotNoButtonCancelsWithoutModelOrFileChanges() {
+        val (folder, _) = screenshotQuestion()
+        rule.onNodeWithText("No").performScrollTo().performClick()
+        rule.waitUntil(10_000) { !vm().busy && vm().messages.lastOrNull()?.text?.contains("annullata") == true }
+        rule.runOnIdle {
+            assertFalse(vm().messages.last().error)
+            assertNull(vm().messages.last().plan)
+        }
+        assertTrue(Storage.file("$folder/first.png").exists())
+        assertTrue(Storage.file("$folder/keep.pdf").exists())
+    }
+
+    @Test fun retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel() {
+        val (folder, q) = screenshotQuestion()
+        rule.runOnUiThread {
+            vm().messages.add(UiMsg(10022, "user", q.question + "\nScelgo: Sì"))
+            vm().messages.add(UiMsg(10023, "assistant", "Risposta AI incompleta.", error = true))
+        }
+        rule.onNodeWithText("Riprova").performScrollTo().performClick()
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.plan != null }
+        rule.runOnIdle {
+            assertFalse(vm().messages.last().error)
+            assertEquals(setOf("$folder/first.png"), vm().messages.last().plan!!.ops.filterIsInstance<Op.Trash>().map { it.path }.toSet())
+        }
+        assertTrue(Storage.file("$folder/first.png").exists())
+        assertTrue(Storage.file("$folder/keep.pdf").exists())
+    }
+
+    @Test fun directScreenshotCommandDoesNotAskModelForAnotherConfirmation() {
+        val folder = "JarvisCommandFlow/Pictures/Screenshots"
+        TestUtil.write("$folder/shot.png", ByteArray(200)); Storage.scanAll()
+        rule.onNodeWithTag("chat_input").performTextInput("Cancella tutti gli screenshot nella cartella '$folder'")
+        rule.onNodeWithTag("chat_input").performImeAction()
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.plan != null }
+        rule.runOnIdle {
+            assertFalse(vm().messages.last().error)
+            assertTrue(vm().messages.last().questions.isEmpty())
+            assertEquals(setOf("$folder/shot.png"), vm().messages.last().plan!!.ops.filterIsInstance<Op.Trash>().map { it.path }.toSet())
+        }
+        assertTrue(Storage.file("$folder/shot.png").exists())
+    }
+
 }
 
