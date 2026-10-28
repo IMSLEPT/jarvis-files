@@ -1,0 +1,172 @@
+10-28 07:45:02.886  4944  5054 I TestRunner: started: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)
+10-28 07:45:02.887  1824  3146 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-28 07:45:02.887  1158  5850 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:02.888  1824  1824 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-28 07:45:02.893  6647  6647 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-28 07:45:02.894  1158  5849 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:02.896  1824  1824 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+10-28 07:45:02.897  6647  6647 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-28 07:45:02.905  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:45:02.905  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:45:02.905  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:45:02.905  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:45:02.905  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:45:02.906  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:45:02.906  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:45:02.906  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:45:02.906  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:45:02.906  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:45:02.906  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:45:02.906  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:45:02.906  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:45:02.906  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:45:02.906  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:45:02.930  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:02.943  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:02.944  1158  1451 W BpBinder: Large outgoing transaction of 329776 bytes, interface descriptor <uncached descriptor>, code 4
+10-28 07:45:02.947  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-28 07:45:02.948  1824  3006 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-28 07:45:02.955  1824  3007 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 327 seconds.
+10-28 07:45:02.956  1824  3009 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-28 07:45:02.956  1824  3009 I FedAssExpListener: Successfully processed experiments changed.
+10-28 07:45:02.956  1824  3007 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-28 07:45:02.956  1824  3009 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-28 07:45:02.958  1824  3007 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:02.960  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:02.966  1405  2826 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-28 07:45:02.967  1405  3975 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-28 07:45:02.969  1405  4008 W Icing   : No valid account for uploading user actions
+10-28 07:45:02.974  1405  4008 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 07:45:02.976  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:02.977  1405  4008 W Icing   : No valid account for uploading user actions
+10-28 07:45:02.981  1405  4008 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 07:45:02.994  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:02.995  1824  3146 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-28 07:45:03.000  1546  1903 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.dialer
+10-28 07:45:03.002  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.003  1546  1881 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.dialer
+10-28 07:45:03.005  1546  1546 I PhenotypeBackgroundRecv: Skipping com.google.android.dialer which doesn't use ProcessStable flags.
+10-28 07:45:03.008  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.011  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.023  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.024  1158  5849 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:03.038  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 24 uptime_millis: 24 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:03.043  1158  6415 W BpBinder: Large outgoing transaction of 329776 bytes, interface descriptor <uncached descriptor>, code 4
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-28 07:45:03.047  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-28 07:45:03.048  1824  3007 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-28 07:45:03.052  1824  3005 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 327 seconds.
+10-28 07:45:03.054  1824  3006 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-28 07:45:03.054  1824  3006 I FedAssExpListener: Successfully processed experiments changed.
+10-28 07:45:03.054  1824  3005 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-28 07:45:03.055  1824  3009 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-28 07:45:03.059  1824  3005 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:03.060  1546  1903 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-28 07:45:03.061  1546  1546 I PhenotypeBackgroundRecv: Skipping com.google.android.dialer.directboot#com.google.android.dialer which doesn't use ProcessStable flags.
+10-28 07:45:03.063  1405  3975 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-28 07:45:03.067  1405  2826 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-28 07:45:03.074  1405  5895 W Icing   : No valid account for uploading user actions
+10-28 07:45:03.081  1405  5895 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 07:45:03.082  1405  5895 W Icing   : No valid account for uploading user actions
+10-28 07:45:03.089  1405  5895 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-28 07:45:03.089  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:03.090  1727  1959 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000056
+10-28 07:45:03.090  1727  1959 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000056
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:03.090  1727  1959 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:45:03.093  1727  7007 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 1 items in 16ms, 0 inserts 1 updates 0 deletes
+10-28 07:45:03.094  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommands/Download/a.apk to content://media/external_primary/file/1000000056
+10-28 07:45:03.096  1158  2516 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:03.097  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.100  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-28 07:45:03.101  1727  7007 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommands/Download/a.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommands/Download/a.apk
+10-28 07:45:03.103  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:03.107  1727  2041 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:03.113  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:03.114  4944  5054 I TestRunner: finished: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)

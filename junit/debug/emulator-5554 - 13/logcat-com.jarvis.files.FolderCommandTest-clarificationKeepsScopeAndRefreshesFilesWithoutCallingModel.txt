@@ -1,0 +1,46 @@
+10-28 07:45:36.374  4944  5054 I TestRunner: started: clarificationKeepsScopeAndRefreshesFilesWithoutCallingModel(com.jarvis.files.FolderCommandTest)
+10-28 07:45:36.391  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.429  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 48 uptime_millis: 48 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.438  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:36.463  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:36.494  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:36.521  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:36.628  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:36.636  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:36.647  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:36.664  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.677  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.810  1546 10032 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor$WorkerThreadHandler.handleMessage:221 executing task com.android.voicemail.impl.ActivationTask@605be7e [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.811  1546  1546 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_ACTIVATION_STARTED
+10-28 07:45:36.815  1546 10032 I DialerPreOMigrationHandler: com.android.voicemail.impl.PreOMigrationHandler.migrate:76 ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} already migrated [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.826  1546 10032 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.isCarrierAppInstalled:637 carrier app not installed in this device [CONTEXT ratelimit_period="1 MINUTES [skipped: 11]" ]
+10-28 07:45:36.826  1546 10032 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+10-28 07:45:36.832  1546 10032 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+10-28 07:45:36.861  1546  1572 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 365]" ]
+10-28 07:45:36.861  1546  1572 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 200]" ]
+10-28 07:45:36.887  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:36.888  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:36.895  1546  1572 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:45:36.895  1546  1572 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+10-28 07:45:36.896  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:292 VVM content provider configured - vvm_type_cvvm PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.897  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.updateVoicemailsWithIccId:477 conversion disabled [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.898  1546 10032 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_ACTIVATING PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.898  1546 10032 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+10-28 07:45:36.898  1546 10032 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+10-28 07:45:36.922  1546  1572 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:45:36.922  1546  1572 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+10-28 07:45:36.936  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:339 sending an activation request [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:36.943  1068  1392 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+10-28 07:45:36.943  1068  1392 D SmsNumberUtils: destAddr is not formatted.
+10-28 07:45:36.943  1068  1392 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+10-28 07:45:36.951  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.951  1546 10032 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:46 Impression: CVVM_SEND_VVM_SMS
+10-28 07:45:36.957  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:36.971  1546  1546 I DialerStatusSmsFetcher: com.android.voicemail.impl.sms.StatusSmsFetcher.onReceive:106 Request SMS successfully sent [CONTEXT enable_persistent_logger=true ]
+10-28 07:45:37.178  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:37.211  1727  5566 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:37.218  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:37.236  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:37.237  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:37.251  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-28 07:45:37.251  4944  5054 I TestRunner: finished: clarificationKeepsScopeAndRefreshesFilesWithoutCallingModel(com.jarvis.files.FolderCommandTest)

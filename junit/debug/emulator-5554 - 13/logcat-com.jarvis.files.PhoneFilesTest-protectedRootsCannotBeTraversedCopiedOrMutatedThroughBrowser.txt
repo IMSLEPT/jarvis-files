@@ -1,0 +1,21 @@
+10-28 07:46:21.319  4944  5054 I TestRunner: started: protectedRootsCannotBeTraversedCopiedOrMutatedThroughBrowser(com.jarvis.files.PhoneFilesTest)
+10-28 07:46:21.325  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:21.332  8206 11113 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:21.344  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:21.353  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:21.362  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:21.366  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:46:21.366  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:46:21.366  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:46:21.366  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:46:21.366  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:46:21.373  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:21.390  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:21.394  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:21.402  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:21.408  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:21.413  8206 11113 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:21.424  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:21.426  1727  4817 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:46:21.432  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:21.435  4944  5054 I TestRunner: finished: protectedRootsCannotBeTraversedCopiedOrMutatedThroughBrowser(com.jarvis.files.PhoneFilesTest)

@@ -1,0 +1,42 @@
+10-28 07:45:04.304  4944  5054 I TestRunner: started: contextMutationCannotAccidentallyDeleteEveryPdfOnPhone(com.jarvis.files.ConversationContextTest)
+10-28 07:45:04.305  1727  1767 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to scan triggered by reason: REASON_DEMAND
+10-28 07:45:04.306  1727  1767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 1 deletes
+10-28 07:45:04.306  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisConversationContext/Reports/Bolletta Marzo.PDF to null
+10-28 07:45:04.337  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.348  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.360  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.374  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.392  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.399  1824  3146 I BlobLobber: Handling download id 2 (blob odws2_en:us_2019-09-12_270573492_release_signed)
+10-28 07:45:04.400  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.407  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.410  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.414  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.415  2085  2340 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/pending_blobs/odws2_en:us_2019-09-12_270573492_release_signed via provider delete
+10-28 07:45:04.417  1727  1767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:45:04.423  1824  3146 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+10-28 07:45:04.424  1158  1179 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-28 07:45:04.425  1824  3146 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-28 07:45:04.425  1824  3146 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+10-28 07:45:04.426  1824  3146 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:04.428  1824  3146 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:04.431  1824  3146 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-28 07:45:04.433  1158  5850 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.434  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.437  1824  3146 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-28 07:45:04.448  1824  3146 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-28 07:45:04.461  1824  1824 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task ZIP_DOWNLOAD_PROCESSOR.
+10-28 07:45:04.462  1824  3007 I ModelDnldProcssHelpr: #handleDownloadComplete, downloadId=2
+10-28 07:45:04.462  1824  3007 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-28 07:45:04.462  1824  3007 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-28 07:45:04.464  1824  3009 E DownloadManagerWrapper: Can't find downloadId=2
+10-28 07:45:04.465  1824  3007 W LanguagePackUpdateContr: Querying download manager failed for ID : 2
+10-28 07:45:04.474  1824  3146 I BlobLobber: Handling download id 1 (blob brain_en_us_201705_arm32_release_signed)
+10-28 07:45:04.488  1727  2041 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.491  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.492  2085  2340 V DownloadManager: Deleting /storage/emulated/0/Android/data/com.google.android.googlequicksearchbox/files/pending_blobs/brain_en_us_201705_arm32_release_signed via provider delete
+10-28 07:45:04.495  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.496  1727  1767 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-28 07:45:04.498  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.501  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.502  4944  5054 I TestRunner: finished: contextMutationCannotAccidentallyDeleteEveryPdfOnPhone(com.jarvis.files.ConversationContextTest)

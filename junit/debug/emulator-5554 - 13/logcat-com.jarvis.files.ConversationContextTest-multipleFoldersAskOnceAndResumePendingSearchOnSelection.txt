@@ -1,0 +1,144 @@
+10-28 07:45:03.612  4944  5054 I TestRunner: started: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)
+10-28 07:45:03.631  1158  5849 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.633  1158  1580 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.639  1158  6415 W BpBinder: Large outgoing transaction of 336124 bytes, interface descriptor <uncached descriptor>, code 4
+10-28 07:45:03.641  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:03.642  1158  1451 W BpBinder: Large outgoing transaction of 336124 bytes, interface descriptor <uncached descriptor>, code 4
+10-28 07:45:03.642  1158  1451 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 336124)
+10-28 07:45:03.643  1158  1451 E GetConfigurationSnapsho: Configuration snapshot too large com.google.android.apps.messaging#com.google.android.apps.messaging [CONTEXT service_id=51 ]
+10-28 07:45:03.644  1158  1451 E bwfc    : Phenotype API error. Event # edax@d4ae4f72, EventCode: 4 [CONTEXT service_id=51 ]
+10-28 07:45:03.644  1158  1451 E bwfc    : bwdw: 29513: Configuration snapshot too large. See go/ph-configuration-snapshot-too-large. Config package: com.google.android.apps.messaging#com.google.android.apps.messaging
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at bwfq.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:03.644  1158  1451 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: operation=GetConfigurationSnapshotOperationCall, opStatusCode=29513 [CONTEXT service_id=51 ]
+10-28 07:45:03.646  1158  1451 W AsyncOperation: OperationException[Status{statusCode=Configuration snapshot too large. See go/ph-configuration-snapshot-too-large. Config package: com.google.android.apps.messaging#com.google.android.apps.messaging, resolution=null}]
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:03.646  1158  1451 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:03.646  2946  3264 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.apps.messaging#com.google.android.apps.messaging failed
+10-28 07:45:03.649  2946  3264 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-28 07:45:03.650  2946  3313 W BugleAction: Null config in BugleSharedPrefs
+10-28 07:45:03.650  2946  3313 W BugleAction: Failed to get msisdn from Bugle
+10-28 07:45:03.651  2946  3173 I BugleRcsEngine: [44] bejl.run: SystemBindingManager: SystemBinding enabled: false
+10-28 07:45:03.651  2946  3173 I BugleRcsEngine: [44] bejm.b: System Binding updated
+10-28 07:45:03.651  2946  3312 W BugleRcsEngine: [59] bemz.x: Unable to send diagnostic log
+10-28 07:45:03.653  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:03.653  2896  4282 I CarrierServices: [69] fjp.f: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+10-28 07:45:03.654  2946  3313 W BugleRcsEngine: [60] RcsProfileService.g: Result is null when getting value for id:4
+10-28 07:45:03.654  2946  3313 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-28 07:45:03.654  2946  3313 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-28 07:45:03.654  2946  3313 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-28 07:45:03.655  2946  3313 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-28 07:45:03.655  2946  3313 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+10-28 07:45:03.657  2946  3313 W BugleAction: No default number, returning empty msisdn
+10-28 07:45:03.657  2946  3264 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-28 07:45:03.658  2946  3264 I BugleTransport: isChatAvailable: true, enabledTransport: 1
+10-28 07:45:03.659  2896  2933 I CarrierServices: [42] fxv.d: Received Provisioning Event: [Bugle information (100)]
+10-28 07:45:03.659  2896  2933 I CarrierServices: [42] fxv.d: JibeService is running, passing event to provisioning engine.
+10-28 07:45:03.659  2896  2933 I CarrierServices: [42] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+10-28 07:45:03.659  2896  2933 I CarrierServices: [42] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-28 07:45:03.659  1158  6751 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+10-28 07:45:03.660  1158  6751 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+10-28 07:45:03.661  1158  6751 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:03.661  1158  6751 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+10-28 07:45:03.661  1158  6751 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+10-28 07:45:03.662  1158  6751 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+10-28 07:45:03.662  1158  6751 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:03.662  1158  6751 I NamespaceManager: Package 1 name not found! Using module version.
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms [CONTEXT service_id=204 ]
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:03.663  1158  6751 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:03.665  2896  2933 I CarrierServices: [42] fjp.y: Bugle is default SMS app: true
+10-28 07:45:03.665  2896  2933 I CarrierServices: [42] fhf.b: Bugle has minimum required RCS permissions: true
+10-28 07:45:03.666  2896  2933 I CarrierServices: [42] fjp.x: Rcs is enabled from user settings: true
+10-28 07:45:03.669  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:03.670  2896  2933 I CarrierServices: [42] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-28 07:45:03.670  2896  2933 I CarrierServices: [42] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-28 07:45:03.673  1158  6744 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+10-28 07:45:03.674  1158  6744 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+10-28 07:45:03.674  1158  6744 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:03.675  1158  6744 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+10-28 07:45:03.675  1158  6744 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+10-28 07:45:03.675  1158  6744 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+10-28 07:45:03.676  1158  6744 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:03.676  1158  6744 I NamespaceManager: Package 1 name not found! Using module version.
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.dtdi_logging#com.google.android.gms [CONTEXT service_id=204 ]
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.dtdi_logging#com.google.android.gms
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:03.676  1158  6744 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:03.682  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:03.696  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.701   316   316 D Zygote  : Forked child process 7500
+10-28 07:45:03.706  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.709  7500  7500 I ecovery_process: Using CollectorTypeCC GC.
+10-28 07:45:03.710  7500  7500 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+10-28 07:45:03.710  7500  7500 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-28 07:45:03.711  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.715   407   429 I adbd    : jdwp connection from 7500
+10-28 07:45:03.718  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.722  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:03.723  1158  1580 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.731  1158  5850 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.734  7500  7500 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10142; state: ENABLED
+10-28 07:45:03.738  7500  7500 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:03.739  7500  7500 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:03.740  7500  7500 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:03.741  7500  7500 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+10-28 07:45:03.746  7500  7500 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+10-28 07:45:03.746  7500  7500 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+10-28 07:45:03.746  7500  7500 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-28 07:45:03.747  7500  7500 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:03.747  7500  7500 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:03.757  7500  7500 I ecovery_process: System.exit called, status: 0
+10-28 07:45:03.757  7500  7500 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-28 07:45:03.760   316   316 I Zygote  : Process 7500 exited cleanly (0)
+10-28 07:45:03.765   516   553 I libprocessgroup: Successfully killed process cgroup uid 10142 pid 7500 in 5ms
+10-28 07:45:03.779  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.781  1727  2041 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.792  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.792  1824  3151 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-28 07:45:03.800  6647  6647 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-28 07:45:03.801  1824  1824 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-28 07:45:03.802  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.804  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.811  1158  5849 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 89 [CONTEXT service_id=218 ]
+10-28 07:45:03.813  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:03.813  1824  3146 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-28 07:45:03.814  4944  5054 I TestRunner: finished: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)

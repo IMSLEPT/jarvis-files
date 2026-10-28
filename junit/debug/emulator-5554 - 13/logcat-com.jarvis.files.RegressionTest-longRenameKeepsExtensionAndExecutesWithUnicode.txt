@@ -1,0 +1,40 @@
+10-28 07:46:39.884  4944  5054 I TestRunner: started: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)
+10-28 07:46:39.894  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:39.900  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.indexapi.OneoffRebuildIndexService started execution. cause:9 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:39.906  1824  1824 I A       : Received index update request from Icing
+10-28 07:46:39.912  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:39.916  8206 12018 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 27 uptime_millis: 27 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:39.924  8206 12018 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.indexapi.OneoffRebuildIndexService finished executing. cause:9 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:39.925  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:39.935  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:39.946  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:39.958  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:39.958  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:39.959  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:39.964  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:39.965  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:39.984  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:39.986  8206 12019 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:40.002  1727  6682 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-28 07:46:40.003  1727  6682 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:40.003  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+10-28 07:46:40.005  1727  6682 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf
+10-28 07:46:40.006  1727  6682 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:40.007  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf to null
+10-28 07:46:40.010  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to content://media/external_primary/file/1000000224
+10-28 07:46:40.012  1727  6682 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf
+10-28 07:46:40.013  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:40.014  1727  6682 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:40.016  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf to null
+10-28 07:46:40.023  8206 12019 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 185 [CONTEXT service_id=218 ]
+10-28 07:46:40.040  1727  6682 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-28 07:46:40.041  1727  6682 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:40.041  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+10-28 07:46:40.044  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf to content://media/external_primary/file/1000000224
+10-28 07:46:40.046  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to content://media/external_primary/file/1000000224
+10-28 07:46:40.047  1727  6682 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf
+10-28 07:46:40.048  1727  6682 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:40.048  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:40.049  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf to null
+10-28 07:46:40.051  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:40.052  4944  5054 I TestRunner: finished: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)

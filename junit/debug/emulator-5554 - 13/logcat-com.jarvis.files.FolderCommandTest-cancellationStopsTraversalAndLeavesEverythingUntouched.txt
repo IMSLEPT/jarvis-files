@@ -1,0 +1,149 @@
+10-28 07:45:33.761  4944  5054 I TestRunner: started: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)
+10-28 07:45:33.761  1824  3032 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.001S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M26.137S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT44.687S (THIRTY_SECONDS_TO_ONE_MINUTE))
+10-28 07:45:33.762  1824  3032 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+10-28 07:45:33.764  1100  1100 D MainContentCaptureSession: Flushing 20 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:45:33.765  1100  1100 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:45:33.781   516   910 W InputManager-JNI: Input channel object '7c37556 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:45:33.790   833   919 D EGL_emulation: app_time_stats: avg=1204.72ms min=1204.72ms max=1204.72ms count=1
+10-28 07:45:33.792  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:33.792  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:45:33.797  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:45:33.799  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:33.799  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:45:33.799  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:33.801  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:33.813   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c430
+10-28 07:45:33.813   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab10
+10-28 07:45:33.813  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:33.822   516  5600 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-28 07:45:33.822   516  5600 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-28 07:45:33.823   516  5600 D EGL_emulation: eglCreateContext: 0x74f735b9bf90: maj 3 min 0 rcv 3
+10-28 07:45:33.823  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:33.832  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:33.838   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e410
+10-28 07:45:33.838  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:33.840   516  5600 D EGL_emulation: eglMakeCurrent: 0x74f735b9bf90: ver 3 0 (tinfo 0x74f947186100) (first time)
+10-28 07:45:33.858  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_WIFI_CHARGING_TASK.
+10-28 07:45:33.860  1824  3151 E SingleDataFileGroupPop: Failed to add file group
+10-28 07:45:33.860  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.860  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.860  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.860  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.860  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.860  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:33.861  1824  3151 E d       : RuntimeException while executing runnable cb{com.google.apps.tiktok.tracing.ej@4eac351} with executor MoreExecutors.directExecutor()
+10-28 07:45:33.861  1824  3151 E d       : java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.google.android.libraries.mdi.download.ae.b' on a null object reference in method 'void com.google.android.libraries.mdi.download.h.bq.gH(java.lang.Object)'
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.mdi.download.h.bq.gH(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.apps.tiktok.tracing.ej.gH(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.cb.run(PG:7)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.d.i(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.d.iq(PG:5)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.ci.t(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.mdi.download.h.bu.b(PG:26)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.mdi.download.gs.p(PG:3)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.mdi.download.gs.s(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.mdi.download.gs.g(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.apps.gsa.staticplugins.bw.a.a(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.gsa.k.a.i.apply(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.h.e(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.common.util.concurrent.j.run(PG:9)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.i.ae.run(PG:1)
+10-28 07:45:33.861  1824  3151 E d       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:33.861  1824  3151 E d       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.i.i.run(PG:2)
+10-28 07:45:33.861  1824  3151 E d       : 	at com.google.android.libraries.i.p.run(PG:4)
+10-28 07:45:33.861  1824  3151 E d       : 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:33.861  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.861  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.861  1824  3151 E PhFileGroupPop: Failed to add file group
+10-28 07:45:33.862  1824  3151 I A       : Download file group for language pack: en-US
+10-28 07:45:33.862  1824  3151 W A       : Locale en-US is not compatible, please check manifest exists
+10-28 07:45:33.862  1824 10082 I A       : Starting new batch; batchId=2 corpus=1014
+10-28 07:45:33.862  1824 10068 I A       : Joining existing batch; batchId=2 corpus=1015
+10-28 07:45:33.862  1824 10072 D PhFileGroupPop: Added file groups assistant_appintegration_appactions_config
+10-28 07:45:33.863  1824 10072 D PhFileGroupPop: Added file groups fedass_policy_config_group
+10-28 07:45:33.863  1824  3146 I A       : Joining existing batch; batchId=2 corpus=1004
+10-28 07:45:33.863  1824 10072 D PhFileGroupPop: Added file groups tapas_cortex
+10-28 07:45:33.864  1824 10072 I A       : #fetchAndUpdateConfigurationInternal
+10-28 07:45:33.864  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.865  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.865  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.865  1824  3151 I A       : Merging legacy hotword config map with new proto.
+10-28 07:45:33.865  1824  3151 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.865  1824  3151 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-28 07:45:33.865  1824  3151 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-28 07:45:33.865  1824  3151 I A       : Skipping. Expected model: 2 Found: 1
+10-28 07:45:33.865  1824  3151 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.865  1824  3151 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-28 07:45:33.867  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.867  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.880  1824  3151 I A       : Merging legacy hotword config map with new proto.
+10-28 07:45:33.881  1824  3151 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.881  1824  3151 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-28 07:45:33.881  1824  3151 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-28 07:45:33.881  1824  3151 I A       : Skipping. Expected model: 2 Found: 1
+10-28 07:45:33.881  1824  3151 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.881  1824  3151 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-28 07:45:33.882  1824  3151 I A       : Using proto config with mendel
+10-28 07:45:33.882  1824  3151 I A       : Merging legacy hotword config map with new proto.
+10-28 07:45:33.882  1824  3151 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.882  1824  3151 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-28 07:45:33.882  1824  3151 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-28 07:45:33.882  1824  3151 I A       : Skipping. Expected model: 2 Found: 1
+10-28 07:45:33.882  1824  3151 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-28 07:45:33.882  1824  3151 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-28 07:45:33.882  1824 10067 I A       : Joining existing batch; batchId=2 corpus=1008
+10-28 07:45:33.883  1824  3006 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489869]
+10-28 07:45:33.885  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:33.886  1824  3005 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489869]
+10-28 07:45:33.886  1824  3009 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489869]
+10-28 07:45:33.888  1824  3006 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-28 07:45:33.890  1824  3005 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-28 07:45:33.890  1824  3009 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-28 07:45:33.900  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task NGA_PRIORITY_DOWNLOAD_TASK.
+10-28 07:45:33.917  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task NGA_READ_ONLY_LOGS_BASED_TOP_CONTACTS_NGA_PUSH.
+10-28 07:45:33.928  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task PCP_V1_BACKGROUND_REFRESH.
+10-28 07:45:33.938  1824 10072 E PCP.BackgroundTask: Missing PCP TNG entry point binding, or zero state response to PCP is not enabled.
+10-28 07:45:33.943  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_AUTH_TOKENS.
+10-28 07:45:33.950   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:45:33.956  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_NOW_CONFIGURATION.
+10-28 07:45:33.963  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task REFRESH_SEARCH_HISTORY.
+10-28 07:45:33.966  1824 10072 W LocationOracle: getBestLocation(): no location is available
+10-28 07:45:33.981  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.982  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.982  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.982  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.990  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:33.995  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.996  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:33.998  3862 10181 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:34.000  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.000  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.016  8206  9684 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.017  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:34.019  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:34.025  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:34.031  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.048  1824  3032 I sb.r.PDSWriter: Updating TNG suggest bootstrap data
+10-28 07:45:34.057  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task RESTORE_SPEAKER_MODEL.
+10-28 07:45:34.058  1824  3007 I sb.r.PDSWriter: Updated TNG suggest bootstrap data
+10-28 07:45:34.067  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:34.067  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:34.068  1824  3146 I A       : Canceling restore - user account is null
+10-28 07:45:34.072   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:45:34.077  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task SYNC_TAPAS_ZERO_PREFIX_CACHE.
+10-28 07:45:34.078  3862 10187 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:34.084  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task TNG_DISCOVER_CLEANUP.
+10-28 07:45:34.088  1824  3178 I TngDiscoverClean: Trying to cleanup TNG:Discover flag change
+10-28 07:45:34.088  1824  3178 I TngDiscoverClean: Starting FeedSync in TNG:Discover
+10-28 07:45:34.094  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:34.097  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task TNG_MINUS_ONE_SYNC.
+10-28 07:45:34.098  1824  3178 I TngMinusOneSync: Syncing TNG:-1
+10-28 07:45:34.099  1824  3178 W TngMinusOneSync: TNG state changed: FIRST_ENROLLED
+10-28 07:45:34.104  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.105  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task TNG_VOICE_SEARCH_SYNC.
+10-28 07:45:34.106  1824  3178 I TngVoiceSearchSync: Syncing TNG:VoiceSearch
+10-28 07:45:34.114  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.115  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_GSERVICES_CONFIG.
+10-28 07:45:34.116  4944  5054 I TestRunner: finished: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)

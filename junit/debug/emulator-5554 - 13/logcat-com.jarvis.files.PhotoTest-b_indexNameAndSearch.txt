@@ -1,0 +1,439 @@
+10-28 07:46:30.236  4944  5054 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+10-28 07:46:30.238  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:30.239  4944 11849 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-28 07:46:30.239  4944 11849 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-28 07:46:30.242  4944  5054 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-28 07:46:30.242  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:30.244  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:30.251  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:30.253  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:30.292  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:30.292  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:30.300  4944 11899 I native  : I0000 00:00:1793173590.300788   11899 classifier_client_calculator.cc:144] Loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-28 07:46:30.310  4944 11899 I tflite  : Replacing 30 out of 31 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-28 07:46:30.316  4944 11899 I native  : I0000 00:00:1793173590.316289   11899 classifier_client_calculator.cc:151] Finished loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-28 07:46:30.319  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:30.321  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:30.342  4944 11847 V FaceDetectorV2Jni: initialize.start()
+10-28 07:46:30.342  4944 11847 I native  : I0000 00:00:1793173590.342820   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_v5.tflite
+10-28 07:46:30.343  4944 11847 I native  : I0000 00:00:1793173590.343466   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_gray_v5.tflite
+10-28 07:46:30.344  4944 11847 I native  : I0000 00:00:1793173590.344050   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_anchors_v5.pb
+10-28 07:46:30.344  4944 11847 I native  : I0000 00:00:1793173590.344159   11847 face_detector_v2_jni.cc:34] Loading models_bundled/LMprec_600.emd
+10-28 07:46:30.351  4944 11847 I native  : I0000 00:00:1793173590.351008   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLlefteyeclosed_200.emd
+10-28 07:46:30.351  4944 11847 I native  : I0000 00:00:1793173590.351129   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLrighteyeclosed_200.emd
+10-28 07:46:30.351  4944 11847 I native  : I0000 00:00:1793173590.351265   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLjoy_200.emd
+10-28 07:46:30.351  4944 11847 I native  : I0000 00:00:1793173590.351411   11847 face_detector_v2_jni.cc:34] Loading models_bundled/MFT_fssd_accgray.pb
+10-28 07:46:30.351  4944 11847 I native  : I0000 00:00:1793173590.351475   11847 face_detector_v2_jni.cc:34] Loading models_bundled/contours.tfl
+10-28 07:46:30.357  4944 11847 I native  : I0000 00:00:1793173590.357985   11847 face_detector_v2_jni.cc:34] Loading models_bundled/blazeface.tfl
+10-28 07:46:30.364  4944 11847 V FaceDetectorV2Jni: initialize.end()
+10-28 07:46:30.381  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:30.394  1599  1842 I ProtoXDBBufferWrapper: ProtoXDBBufferWrapper.flushToStorage():153 Flushed 18 data item(s) to storage.
+10-28 07:46:30.652  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:30.716  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:30.728  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:30.761  3862 11907 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.149  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.161  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.185  3862 11913 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.316  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.321  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.330  3862 11919 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.432  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.449  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.477  3862 11924 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.766  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.766  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.767  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.773  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.777  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.782  3862 11929 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.964  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.968  3862 11935 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.972  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:31.975  3862 11941 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:31.977  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:32.096  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.097  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.100  3862 11947 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.106  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.114  3862 11953 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.225  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.232  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.232  3862 11958 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.236  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.237  3862 11964 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.331  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.334  1824  3032 W NamedFutures: Timeout future task has been cancelled: 60000 milliseconds
+10-28 07:46:32.334  1824  1824 E A       : Task 255 failed or timed out. Client 8023830009706338 disconnecting from SearchService!
+10-28 07:46:32.334  1824  1824 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-28 07:46:32.334  1824  1824 E A       : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:46:32.334  1824  1824 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:46:32.334  1824  1824 E A       : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:46:32.334  1824  1824 E A       : 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:46:32.334  1824  1824 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:46:32.334  1824  1824 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:46:32.334  1824  1824 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:46:32.336  1824  3146 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task MDD_CELLULAR_CHARGING_TASK.
+10-28 07:46:32.339  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.340  1824  3005 I A       : Starting batch sync for corpora: [1014]
+10-28 07:46:32.341  1824  3006 W A       : Corpus: GDD_APA_LIGHTWEIGHT_TOKENS is disabled
+10-28 07:46:32.343  3862 11970 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: PERIODIC background task MDD_CELLULAR_CHARGING_TASK was cancelled.
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-28 07:46:32.344  1824 10067 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:46:32.349  1824  3007 I A       : Starting batch sync for corpora: [1015]
+10-28 07:46:32.349  1824  3009 I A       : Starting batch sync for corpora: [1004]
+10-28 07:46:32.364  1824  3006 I A       : Setting isLegacySQLite mode to false.
+10-28 07:46:32.401  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:32.409  1824  3146 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.416  1824 10067 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.426  1824 10067 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_SMART_ACTION_MODELS to true.
+10-28 07:46:32.427  1824  3064 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:32.427  1824  3064 I A       : There are 0 elements to delete from the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:32.427  1824  3146 I A       : No previous syncToken for corpus GDD_APA_SMART_ACTION_MODELS found.
+10-28 07:46:32.431  1824 10067 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_BISTO to true.
+10-28 07:46:32.431  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_BISTO.
+10-28 07:46:32.431  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_BISTO.
+10-28 07:46:32.431  1824  3146 I A       : No previous syncToken for corpus GDD_APA_BISTO found.
+10-28 07:46:32.439   312 11976 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10119 0}
+10-28 07:46:32.440   312 11979 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:46:32.440   312 11977 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10119 0}
+10-28 07:46:32.441  1824  3151 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.445  1824  3151 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_HEAD_SUGGEST to true.
+10-28 07:46:32.445  1824  3064 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:32.445  1824  3064 I A       : There are 0 elements to delete from the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:32.446  1824 10067 I A       : No previous syncToken for corpus GDD_APA_HEAD_SUGGEST found.
+10-28 07:46:32.453   312 11978 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:46:32.454   312 11983 I resolv  : GetAddrInfoHandler::run: {100 262244 100 983140 10119 0}
+10-28 07:46:32.454   312 11984 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:46:32.454   312 11984 I resolv  : resolv_cache_lookup: Waiting for previous request
+10-28 07:46:32.457   312 11981 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:46:32.457   312 11981 I resolv  : resolv_cache_lookup: Waiting for previous request
+10-28 07:46:32.457   312 11985 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:46:32.457   312 11985 I resolv  : resolv_cache_lookup: Waiting for previous request
+10-28 07:46:32.461   312 11982 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:46:32.461   312 11982 I resolv  : resolv_cache_lookup: Waiting for previous request
+10-28 07:46:32.478   312 11979 I resolv  : res_nsend: used send_dg 170 terrno: 0
+10-28 07:46:32.478   312 11979 I resolv  : doQuery: rcode=0, ancount=8, return value=170
+10-28 07:46:32.478   312 11982 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796a96ea610
+10-28 07:46:32.478   312 11985 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796a96ea610
+10-28 07:46:32.478   312 11982 I resolv  : doQuery: rcode=0, ancount=8, return value=170
+10-28 07:46:32.478   312 11985 I resolv  : doQuery: rcode=0, ancount=8, return value=170
+10-28 07:46:32.484   312 11978 I resolv  : res_nsend: used send_dg 266 terrno: 0
+10-28 07:46:32.484   312 11978 I resolv  : doQuery: rcode=0, ancount=8, return value=266
+10-28 07:46:32.484   312 11981 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0f90
+10-28 07:46:32.484   312 11984 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0f90
+10-28 07:46:32.484   312 11984 I resolv  : doQuery: rcode=0, ancount=8, return value=266
+10-28 07:46:32.484   312 11981 I resolv  : doQuery: rcode=0, ancount=8, return value=266
+10-28 07:46:32.494  1824 10067 D TrafficStats: tagSocket(193) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.494  1824  3146 D TrafficStats: tagSocket(194) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.494  1824  3151 D TrafficStats: tagSocket(198) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.522  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.530  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.534  3862 11990 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.536  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.549  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.549  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.566  3862 11998 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.617  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:32.630  3862 12004 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:32.640  1824  3154 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:32.648  1824  3154 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:32.665  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:32.665  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:32.665  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:32.665  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:32.665  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:32.665  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:32.665  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:32.665  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:32.679  1824  3154 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_BISTO
+10-28 07:46:32.681  1824  3154 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_BISTO
+10-28 07:46:32.686  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:32.686  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:32.686  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:32.686  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:32.686  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:32.686  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:32.686  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:32.686  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:32.690  1824  3151 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:32.691  1824  3151 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:32.694  1824  3064 W A       : onTaskDone() callback not found; batchId=1
+10-28 07:46:32.694  1824  3154 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task MDD_CELLULAR_CHARGING_TASK.
+10-28 07:46:32.695  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:32.695  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:32.695  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:32.695  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:32.695  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:32.695  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:32.695  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:32.695  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:32.696  1824  3006 I A       : Scheduling a pending sync for corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:32.696  1824  3007 W A       : Corpus: GDD_APA_LIGHTWEIGHT_TOKENS is disabled
+10-28 07:46:32.696  1824  3064 I A       : Starting batch sync for corpora: [1015]
+10-28 07:46:32.697  1824  3009 I A       : Scheduling a pending sync for corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:32.697  1824  3005 I A       : Scheduling a pending sync for corpus: GDD_APA_BISTO
+10-28 07:46:32.697  1824  3064 I A       : Starting batch sync for corpora: [1014]
+10-28 07:46:32.698  1824  3064 I A       : Starting batch sync for corpora: [1004]
+10-28 07:46:32.819  1824  3151 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.821  1824  3151 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_BISTO to true.
+10-28 07:46:32.822  1824  3064 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_BISTO.
+10-28 07:46:32.822  1824  3064 I A       : There are 0 elements to delete from the server for corpus GDD_APA_BISTO.
+10-28 07:46:32.822  1824 10067 I A       : The syncToken for corpus GDD_APA_BISTO is Ei4IwY+TmJzclwPiPiIKIGJjZjkwNDk4ZTNlMjI3Mjc2NTdhYWE3ODQ1YzQ4MmIw.
+10-28 07:46:32.823  1824  3151 D TrafficStats: tagSocket(193) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.824  1824 10072 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.830  1824 10072 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_HEAD_SUGGEST to true.
+10-28 07:46:32.830  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:32.830  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:32.830  1824 10067 I A       : The syncToken for corpus GDD_APA_HEAD_SUGGEST is EgkIqqqSmJzclwM=.
+10-28 07:46:32.831  1824 10072 D TrafficStats: tagSocket(194) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.873  1824  3154 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:32.875  1824  3154 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_SMART_ACTION_MODELS to true.
+10-28 07:46:32.875  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:32.875  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:32.875  1824  3151 I A       : The syncToken for corpus GDD_APA_SMART_ACTION_MODELS is EgkInp+TmJzclwM=.
+10-28 07:46:32.876  1824  3151 D TrafficStats: tagSocket(200) with statsTag=0x0, statsUid=-1
+10-28 07:46:32.941  1824  3151 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_BISTO
+10-28 07:46:32.943  1824  3151 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_BISTO
+10-28 07:46:32.948  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:32.948  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:32.948  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:32.948  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:32.948  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:32.948  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:32.948  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:32.948  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:32.949  1824  3151 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:32.954  1824  3151 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:32.957  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:32.957  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:32.957  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:32.957  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:32.957  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:32.957  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:32.957  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:32.957  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:33.002  1824 10067 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:33.003  1824 10067 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:33.004  1824  3032 W A       : onTaskDone() callback not found; batchId=2
+10-28 07:46:33.005  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:33.005  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:33.005  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:33.005  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:33.005  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:33.005  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:33.005  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:33.005  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:33.005  1824  3146 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task MDD_CELLULAR_CHARGING_TASK.
+10-28 07:46:33.008  1824  3006 I A       : Scheduling a pending sync for corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:33.008  1824  3032 I A       : Starting batch sync for corpora: [1014]
+10-28 07:46:33.008  1824  3005 W A       : Corpus: GDD_APA_LIGHTWEIGHT_TOKENS is disabled
+10-28 07:46:33.010  1824  3006 I A       : Scheduling a pending sync for corpus: GDD_APA_BISTO
+10-28 07:46:33.010  1824  3064 I A       : Starting batch sync for corpora: [1004]
+10-28 07:46:33.011  1824  3007 I A       : Scheduling a pending sync for corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:33.011  1824  3064 I A       : Starting batch sync for corpora: [1015]
+10-28 07:46:33.028  1824  3146 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:33.030  1824  3146 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_BISTO to true.
+10-28 07:46:33.030  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_BISTO.
+10-28 07:46:33.030  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_BISTO.
+10-28 07:46:33.030  1824 10067 I A       : The syncToken for corpus GDD_APA_BISTO is Ei4IwY+TmJzclwPiPiIKIGJjZjkwNDk4ZTNlMjI3Mjc2NTdhYWE3ODQ1YzQ4MmIw.
+10-28 07:46:33.037  1824  3146 D TrafficStats: tagSocket(193) with statsTag=0x0, statsUid=-1
+10-28 07:46:33.051  1824 10068 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:33.053  1824 10068 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_SMART_ACTION_MODELS to true.
+10-28 07:46:33.053  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:33.053  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_SMART_ACTION_MODELS.
+10-28 07:46:33.054  1824 10068 I A       : The syncToken for corpus GDD_APA_SMART_ACTION_MODELS is EgkIxsSpmJzclwM=.
+10-28 07:46:33.055  1824 10068 D TrafficStats: tagSocket(197) with statsTag=0x0, statsUid=-1
+10-28 07:46:33.098  1824  3151 I DeviceCapHelper: Adding surface identity to the device capabilities for surface OPA_AGSA.
+10-28 07:46:33.105  1824  3151 I A       : The GellerConfig is not present, defaulting isUploadEnabled for corpus GDD_APA_HEAD_SUGGEST to true.
+10-28 07:46:33.105  1824  3032 I A       : There are 0 elements to be updated on the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:33.105  1824  3032 I A       : There are 0 elements to delete from the server for corpus GDD_APA_HEAD_SUGGEST.
+10-28 07:46:33.106  1824  3151 I A       : The syncToken for corpus GDD_APA_HEAD_SUGGEST is EgkI0LOmmJzclwM=.
+10-28 07:46:33.107  1824  3146 D TrafficStats: tagSocket(200) with statsTag=0x0, statsUid=-1
+10-28 07:46:33.148  1824 10068 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_BISTO
+10-28 07:46:33.164  1824 10068 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_BISTO
+10-28 07:46:33.168  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:33.168  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:33.168  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:33.168  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:33.168  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:33.168  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:33.168  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:33.168  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:33.172  1824 10067 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:33.175  1824 10067 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_SMART_ACTION_MODELS
+10-28 07:46:33.176  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:33.176  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:33.176  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:33.176  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:33.176  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:33.176  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:33.176  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:33.176  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:33.219  1824 10067 I A       : Writing metadata key: _sync_timestamp_micros, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:33.221  1824 10067 I A       : Writing metadata key: _sync_token, corpus: GDD_APA_HEAD_SUGGEST
+10-28 07:46:33.222  1766  1827 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-28 07:46:33.222  1766  1827 E A       : com.google.common.f.s: MEDIUM
+10-28 07:46:33.222  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.h.a.aq.b(PG:2)
+10-28 07:46:33.222  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.engine.viss.h.v(PG:1)
+10-28 07:46:33.222  1766  1827 E A       : 	at com.google.android.apps.gsa.nga.api.ab.dispatchTransaction(PG:154)
+10-28 07:46:33.222  1766  1827 E A       : 	at com.google.android.a.b.onTransact(PG:2)
+10-28 07:46:33.222  1766  1827 E A       : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-28 07:46:33.222  1766  1827 E A       : 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:33.223  1824  3064 I A       : Batch succeeded; batchId=3 taskId=-1000009
+10-28 07:46:33.237  1824  3151 D t       : Starting download: https://dl.google.com/mdi-serving/agsa-apa-bisto-hotword-models/20023/ed62ea940f5a5958c55577276e8511a01a19ea87
+10-28 07:46:33.237  1824  3151 V t       : Is http uri, downloading (uri: https://dl.google.com/mdi-serving/agsa-apa-bisto-hotword-models/20023/ed62ea940f5a5958c55577276e8511a01a19ea87)
+10-28 07:46:33.239  1824 10067 D t       : Starting download: https://dl.google.com/mdi-serving/agsa-apa-bisto-hotword-models/20023/9ddd15509ef1423e75c283efb4659f475c74ee60
+10-28 07:46:33.239  1824 10067 V t       : Is http uri, downloading (uri: https://dl.google.com/mdi-serving/agsa-apa-bisto-hotword-models/20023/9ddd15509ef1423e75c283efb4659f475c74ee60)
+10-28 07:46:33.272  1824  3151 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489878
+10-28 07:46:33.274  1824  3154 D t       : Starting download: https://dl.google.com/mdi-serving/agsa-apa-head-suggest/13542/4a4841d2932d2e54913c9bdb2c19268dda35e6ed
+10-28 07:46:33.274  1824  3154 V t       : Is http uri, downloading (uri: https://dl.google.com/mdi-serving/agsa-apa-head-suggest/13542/4a4841d2932d2e54913c9bdb2c19268dda35e6ed)
+10-28 07:46:33.317  1824 10067 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489879
+10-28 07:46:33.323  1824  3154 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1793173489877
+10-28 07:46:33.541  1824  3032 I A       : NGA Sync: MDD Task: MDD.CELLULAR.CHARGING.PERIODIC.TASK done.
+10-28 07:46:33.541  1824  3032 I A       : NGA Sync: isNgaSyncEnabled: false; enableFileGroupPopulator: false; requiresMddAssets: false
+10-28 07:46:33.541  1824  3009 I A       : Refresh account policy.
+10-28 07:46:33.859  1824  3032 W NamedFutures: Timeout future task has been cancelled: 60000 milliseconds
+10-28 07:46:33.860  1824  1824 E A       : Task 255 failed or timed out. Client 8023830009706358 disconnecting from SearchService!
+10-28 07:46:33.860  1824  1824 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-28 07:46:33.860  1824  1824 E A       : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:46:33.860  1824  1824 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:46:33.860  1824  1824 E A       : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:46:33.860  1824  1824 E A       : 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:46:33.860  1824  1824 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:46:33.860  1824  1824 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:46:33.860  1824  1824 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: PERIODIC background task MDD_WIFI_CHARGING_TASK was cancelled.
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-28 07:46:33.863  1824 10068 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:46:33.904  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:33.907  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:33.916  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:34.188  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:34.754  2139  2153 D StrictMode: StrictMode policy violation: android.os.strictmode.SqliteObjectLeakedViolation: Finalizing a Cursor that has not been deactivated or closed. database = /data/user/0/com.android.providers.contacts/databases/contacts2.db, table = raw_contacts, query = SELECT contacts_view._id AS _id, contacts_view.display_name AS display_name, contacts_view.photo_thumb_uri AS photo_thumb_uri, data1 AS number, data2 AS type, data3 AS label, contacts_view.lookup AS lookup FROM raw_contacts JOIN view_contacts as contacts_view ON (contacts_view._id = raw_contacts.contact_id) JOIN (SELECT data_id,normalized_number FROM phone_lookup WHERE (phone_lookup.min_match = '7654321')) AS lookup ON lookup.data_id=data._id JOIN data ON data.raw_contact_id=raw_contacts._id WHERE (PHONE_NUMBERS_EQUAL(data.data1, '+15551234567', 0, 7)) ORDER BY  length(lookup.normalized_number) DESC
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at android.os.StrictMode.onSqliteObjectLeaked(StrictMode.java:2185)
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteCursor.finalize(SQLiteCursor.java:282)
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:319)
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:306)
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at java.lang.Daemons$Daemon.run(Daemons.java:140)
+10-28 07:46:34.754  2139  2153 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:46:34.755  2139  2153 D StrictMode: StrictMode policy violation: android.os.strictmode.LeakedClosableViolation: A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.os.StrictMode$AndroidCloseGuardReporter.report(StrictMode.java:1986)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at dalvik.system.CloseGuard.warnIfOpen(CloseGuard.java:336)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.AbstractCursor.finalize(AbstractCursor.java:531)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteCursor.finalize(SQLiteCursor.java:291)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:319)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:306)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at java.lang.Daemons$Daemon.run(Daemons.java:140)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:46:34.755  2139  2153 D StrictMode: Caused by: java.lang.Throwable: Explicit termination method 'AbstractCursor.close' not called
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.AbstractCursor.<init>(AbstractCursor.java:227)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.AbstractWindowedCursor.<init>(AbstractWindowedCursor.java:39)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:98)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:52)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1712)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:592)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.doQuery(ContactsProvider2.java:7249)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryLocal(ContactsProvider2.java:6955)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryCorpLookupIfNecessary(ContactsProvider2.java:7419)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryLookupEnterprise(ContactsProvider2.java:7558)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryPhoneLookupEnterprise(ContactsProvider2.java:7529)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryLocal(ContactsProvider2.java:6878)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryDirectoryIfNecessary(ContactsProvider2.java:5667)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.queryInternal(ContactsProvider2.java:5609)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at com.android.providers.contacts.ContactsProvider2.query(ContactsProvider2.java:5559)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-28 07:46:34.755  2139  2153 D StrictMode: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:35.487  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:35.601  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:36.953  1546 10032 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.954  1546  1546 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCompleted:118 discarding deferred status [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.954  1546  1546 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.prepareStop:371 no more tasks, stopping service if no task are added in 5000 millis [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.955  1546  1546 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_AUTO_RETRY_ACTIVATION
+10-28 07:46:36.957  1546  1546 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:68 task received [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.957  1546  1546 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:73 TaskExecutor already running [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.957  1546  1546 I DialerTasks: com.android.voicemail.impl.scheduling.Tasks.createTask:59 Task.createTask create task:com.android.voicemail.impl.ActivationTask [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.957  1546  1546 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCreate:81 retry #2 for com.android.voicemail.impl.ActivationTask@fb6d24d queued, executing in 5000 [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.959  1546  1546 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.addTask:299 com.android.voicemail.impl.ActivationTask@fb6d24d added [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.959  1546  1546 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.runNextTask:345 minimal wait time:4998 [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:36.959  1546  1546 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.sleep:355 sleep for 4998 millis [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:37.649  8206  8206 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-28 07:46:38.053  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:38.133  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:38.234  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:38.309  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:38.407  4944 11847 W StreamingFormatChecker: ML Kit has detected that you seem to pass camera frames to the detector as a Bitmap object. This is inefficient. Please use YUV_420_888 format for camera2 API or NV21 format for (legacy) camera API and directly pass down the byte array to ML Kit.
+10-28 07:46:38.412  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:38.490  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:38.593  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:38.671  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:38.775  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:38.857  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:38.955  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:39.031  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:39.128  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:39.206  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:39.304  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:39.378  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:39.480  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:39.560  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:39.662  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:39.741  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:39.766  8341 12010 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+10-28 07:46:39.810  4944 11847 V FaceDetectorV2Jni: closeDetector.start()
+10-28 07:46:39.819  4944 11847 V FaceDetectorV2Jni: closeDetector.end()
+10-28 07:46:39.820  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:39.822  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:39.823  4944  5054 I JarvisTest: [Indice] Foto analizzate: 14 · totale db=(14, 0, 5)
+10-28 07:46:39.827  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:39.829  4944  5054 I JarvisTest: [Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+10-28 07:46:39.829  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:39.850  4944  5054 I JarvisTest: [Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+10-28 07:46:39.853  4944  5054 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+10-28 07:46:39.856  4944  5054 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+10-28 07:46:39.858  4944  5054 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+10-28 07:46:39.858  4944  5054 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)

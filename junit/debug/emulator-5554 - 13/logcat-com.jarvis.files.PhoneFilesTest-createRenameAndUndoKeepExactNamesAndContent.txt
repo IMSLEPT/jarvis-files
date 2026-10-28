@@ -1,0 +1,24 @@
+10-28 07:46:21.979  4944  5054 I TestRunner: started: createRenameAndUndoKeepExactNamesAndContent(com.jarvis.files.PhoneFilesTest)
+10-28 07:46:22.001  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:22.010  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:22.019  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:22.028  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:22.044  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:22.049  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:22.060  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:22.066  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:22.068  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 167 [CONTEXT service_id=218 ]
+10-28 07:46:22.079  1727  7007 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/note.txt: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/note.txt
+10-28 07:46:22.080  1727  7007 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:22.080  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/note.txt to null
+10-28 07:46:22.084  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Nota 🧪.md to content://media/external_primary/file/1000000150
+10-28 07:46:22.086  1727  7007 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:22.088  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/note.txt to content://media/external_primary/file/1000000210
+10-28 07:46:22.090  1727  7007 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/Nota 🧪.md: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/Nota 🧪.md
+10-28 07:46:22.091  1727  7007 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to scan triggered by reason: REASON_DEMAND
+10-28 07:46:22.092  1727  7007 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 1 deletes
+10-28 07:46:22.092  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Nota 🧪.md to null
+10-28 07:46:22.095  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:22.098  1727  6021 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:46:22.104  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:22.106  4944  5054 I TestRunner: finished: createRenameAndUndoKeepExactNamesAndContent(com.jarvis.files.PhoneFilesTest)

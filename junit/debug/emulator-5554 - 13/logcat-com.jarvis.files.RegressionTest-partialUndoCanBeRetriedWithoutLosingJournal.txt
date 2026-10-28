@@ -1,0 +1,73 @@
+10-28 07:46:41.046  4944  5054 I TestRunner: started: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+10-28 07:46:41.054  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.059  8206 12019 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.068  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.080  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.089  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.097  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.109  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.113  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.113  8341  8442 D TrafficStats: tagSocket(111) with statsTag=0x30001803, statsUid=-1
+10-28 07:46:41.128  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.130  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.144  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=update uri=content://media/external_primary/file/1000000227 values={instance_id=null, compilation=null, disc_number=null, duration=null, album_artist=null, resolution=null, orientation=null, artist=null, author=null, height=null, is_drm=0, date_modified=1793173601, writer=null, composer=null, _modifier=3, datetaken=null, mime_type=application/pdf, bitrate=null, cd_track_number=null, year=null, _data=/storage/emulated/0/JarvisRegression/Download/a.pdf, _size=11, album=null, genre=null, title=a, width=null, document_id=null, capture_framerate=null, num_tracks=null, original_document_id=null, media_type=6} expectedCount=1 exceptionAllowed)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: android.content.OperationApplicationException: Expected 1 rows but actual 0
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:428)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2485)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.applyBatch(MediaProvider.java:5166)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2476)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2230)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.applyPending(ModernMediaScanner.java:915)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:431)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-28 07:46:41.154  1727  1765 W ModernMediaScanner: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-28 07:46:41.154  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:41.155  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to content://media/external_primary/file/1000000227
+10-28 07:46:41.160  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to content://media/external_primary/file/1000000224
+10-28 07:46:41.160  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.161  1727  1959 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000224
+10-28 07:46:41.161  1727  1959 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000224
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:46:41.161  1727  1959 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:46:41.162  1727  1959 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000224
+10-28 07:46:41.162  1727  1959 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000224
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:46:41.162  1727  1959 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:46:41.168  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:41.169  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to content://media/external_primary/file/1000000227
+10-28 07:46:41.171  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:41.172  4944  5054 I TestRunner: finished: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)

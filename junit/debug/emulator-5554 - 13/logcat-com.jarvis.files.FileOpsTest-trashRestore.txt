@@ -1,0 +1,19 @@
+10-28 07:45:11.726  4944  5054 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+10-28 07:45:11.729  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.733  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.736  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.746  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.750  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.761  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.770  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.773  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:11.785  3862  8661 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:11.788  4944  5054 I JarvisTest: [Cestino] OK sposta e ripristina
+10-28 07:45:11.791  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to content://media/external_primary/file/1000000083
+10-28 07:45:11.796  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.800  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.803  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.807  1727  2041 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.812  1727  5414 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.815  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.818  4944  5054 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)

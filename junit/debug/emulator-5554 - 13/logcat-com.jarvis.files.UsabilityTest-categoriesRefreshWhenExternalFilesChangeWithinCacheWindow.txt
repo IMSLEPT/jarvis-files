@@ -1,0 +1,199 @@
+10-28 07:48:09.763  4944  5054 I TestRunner: started: categoriesRefreshWhenExternalFilesChangeWithinCacheWindow(com.jarvis.files.UsabilityTest)
+10-28 07:48:09.767   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c610
+10-28 07:48:09.767   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c9d0
+10-28 07:48:09.767   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cdf0
+10-28 07:48:09.767   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69370
+10-28 07:48:09.767   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6aed0
+10-28 07:48:09.768   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.768   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.785  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:09.786  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:09.786  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:09.786  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:09.786  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:48:09.790   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.790   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.791  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:09.804   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cf10
+10-28 07:48:09.804   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.804   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.825  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:09.834   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.834   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.836  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:09.850  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:09.850   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.850   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.855  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.857  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.857  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.857  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.857  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.858  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:48:09.858  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:48:09.858  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:48:09.858  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:48:09.867   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.867   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.868  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:09.884   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.884   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.898  4944  5054 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@21ef4c6]
+10-28 07:48:09.900  4944  5054 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:48:09.901   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.901   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.909   833   900 D SplashScreenView: Build android.window.SplashScreenView{d044690 V.E...... ......ID 0,0-0,0}
+10-28 07:48:09.909   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:48:09.909   833   900 D SplashScreenView: Branding: view: android.view.View{bb21b89 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:48:09.910   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:48:09.917   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.917   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.932  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: PRE_ON_CREATE
+10-28 07:48:09.933  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-28 07:48:09.934   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.934   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.942  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: CREATED
+10-28 07:48:09.942  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@2f0beaa
+10-28 07:48:09.943  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: STARTED
+10-28 07:48:09.943  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@2f0beaa
+10-28 07:48:09.945  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:09.945  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: RESUMED
+10-28 07:48:09.945  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@2f0beaa
+10-28 07:48:09.948  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:48:09.952   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.952   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.952   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.962  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:09.967   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.967   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.967   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.967   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.968   334   383 I RanchuHwc: validateDisplay: layer 266 CompositionType 1, fallback to client
+10-28 07:48:09.968   334   383 I RanchuHwc: validateDisplay: layer 265 CompositionType 1, fallback to client
+10-28 07:48:09.983   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69c70
+10-28 07:48:09.983   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ca90
+10-28 07:48:09.984   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:09.984   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.066  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:48:10.066  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:48:10.073   833   919 D EGL_emulation: app_time_stats: avg=126.97ms min=15.06ms max=326.85ms count=8
+10-28 07:48:10.089   516   540 W ziparchive: Unable to open '/data/app/~~z7XqKnO3-9GSOkUL-HT7hQ==/com.jarvis.files-mKOsqefxe-8HLIc32EL4CA==/base.dm': No such file or directory
+10-28 07:48:10.090   516   540 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +183ms
+10-28 07:48:10.091  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:10.091  1100  2284 D OneSearchSuggestProvider: Shut down the binder channel
+10-28 07:48:10.091  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:10.091  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:10.092  1100  1127 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74f6c5becfc0 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-28 07:48:10.094  1824  3186 I PBSessionCacheImpl: Deleted sessionId[8023830009706445] from persistence.
+10-28 07:48:10.099  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:48:10.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:10.108  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:10.108  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:10.108  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:10.108  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:10.110   516  3321 W InputManager-JNI: Input channel object '9d5ccd9 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-28 07:48:10.117   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6dcf0
+10-28 07:48:10.117   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b050
+10-28 07:48:10.134  4944  4944 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:48:10.134  4944  4944 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:48:10.136   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d696d0
+10-28 07:48:10.136   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a3f0
+10-28 07:48:10.136   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d630
+10-28 07:48:10.163  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:48:10.163  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:48:10.183  8206 13457 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+10-28 07:48:10.185  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+10-28 07:48:10.212  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:48:10.214  4944  4954 I om.jarvis.files: Compiler allocated 5419KB to compile void com.jarvis.files.ui.screens.ChatScreenKt.ChatScreen(com.jarvis.files.ui.MainViewModel, androidx.compose.runtime.Composer, int)
+10-28 07:48:10.217   833   900 D SplashScreenView: Build android.window.SplashScreenView{83e73c0 V.E...... ......ID 0,0-0,0}
+10-28 07:48:10.217   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:48:10.217   833   900 D SplashScreenView: Branding: view: android.view.View{5bf8f9 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:48:10.218   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:48:10.225  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: PAUSED
+10-28 07:48:10.225  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@2f0beaa
+10-28 07:48:10.231  8206 13457 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+10-28 07:48:10.233  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+10-28 07:48:10.236   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.236   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.237  5574  5593 W Parcel  : Expecting binder but got null!
+10-28 07:48:10.271   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d630
+10-28 07:48:10.272   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b170
+10-28 07:48:10.272   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b170
+10-28 07:48:10.272   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d630
+10-28 07:48:10.283  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:10.286   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.286   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.287   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:10.288  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: STOPPED
+10-28 07:48:10.288   516  1770 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-28 07:48:10.288  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@2f0beaa
+10-28 07:48:10.289  1100  2284 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=149, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@d930588
+10-28 07:48:10.290  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:10.290  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:10.291  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:10.291  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:10.291  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:10.298  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:48:10.298  1100  1100 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:48:10.299   388  1312 E SurfaceFlinger: Only WindowManager is allowed to use eEarlyWakeup[Start|End] flags
+10-28 07:48:10.307  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:10.307  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:10.309   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d6f0
+10-28 07:48:10.309   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d693d0
+10-28 07:48:10.311   516   543 W InputManager-JNI: Input channel object '5eab847 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+10-28 07:48:10.311  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2f0beaa in: DESTROYED
+10-28 07:48:10.311  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:48:10.312  4944  5054 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@21ef4c6]
+10-28 07:48:10.313   516   598 W InputManager-JNI: Input channel object 'f462902 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:10.317  4944  5054 I TestRunner: finished: categoriesRefreshWhenExternalFilesChangeWithinCacheWindow(com.jarvis.files.UsabilityTest)

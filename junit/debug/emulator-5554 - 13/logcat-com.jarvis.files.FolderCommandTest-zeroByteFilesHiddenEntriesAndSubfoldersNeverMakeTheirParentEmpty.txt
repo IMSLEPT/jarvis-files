@@ -1,0 +1,21 @@
+10-28 07:45:37.256  4944  5054 I TestRunner: started: zeroByteFilesHiddenEntriesAndSubfoldersNeverMakeTheirParentEmpty(com.jarvis.files.FolderCommandTest)
+10-28 07:45:37.263   312   353 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+10-28 07:45:37.265   312   353 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.60ms>
+10-28 07:45:37.266   312   353 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.53ms>
+10-28 07:45:37.306  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:37.334  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:37.365  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:37.402  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:37.493  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:37.500  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:37.513  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:37.520  3862 10555 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:37.530  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:37.540  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:37.547  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:37.580  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-28 07:45:37.592  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 34 uptime_millis: 34 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-28 07:45:37.770  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:37.779  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:37.785  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:37.790  4944  5054 I TestRunner: finished: zeroByteFilesHiddenEntriesAndSubfoldersNeverMakeTheirParentEmpty(com.jarvis.files.FolderCommandTest)

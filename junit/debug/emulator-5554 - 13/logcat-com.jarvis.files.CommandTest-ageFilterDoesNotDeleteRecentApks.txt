@@ -1,0 +1,49 @@
+10-28 07:45:01.382  4944  5054 I TestRunner: started: ageFilterDoesNotDeleteRecentApks(com.jarvis.files.CommandTest)
+10-28 07:45:01.383  1068  1068 D CarrierSvcBindHelper: onPackageModified: com.google.android.gm
+10-28 07:45:01.384  1068  1068 D CarrierSvcBindHelper: No carrier app for: 0
+10-28 07:45:01.385  1068  1068 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gm
+10-28 07:45:01.388  3862  7049 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:01.389  1158  6751 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-28 07:45:01.404  1158  6506 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-28 07:45:01.427  1546  1881 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-28 07:45:01.429  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:01.443  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:01.463  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:01.463  1158  5849 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-28 07:45:01.466  1158  1580 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 53 uptime_millis: 53 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-28 07:45:01.482  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:01.504  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:01.505   316   316 D Zygote  : Forked child process 7090
+10-28 07:45:01.511  7090  7090 I ecovery_process: Using CollectorTypeCC GC.
+10-28 07:45:01.512  7090  7090 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+10-28 07:45:01.512  7090  7090 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-28 07:45:01.514  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:01.523  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:01.525  1100  1919 D EGL_emulation: app_time_stats: avg=43.82ms min=3.46ms max=905.50ms count=25
+10-28 07:45:01.525  1100  1100 D MainContentCaptureSession: Flushing 25 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:45:01.525  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:45:01.531   407   429 I adbd    : jdwp connection from 7090
+10-28 07:45:01.531  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:01.539  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:01.553  7090  7090 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10142; state: ENABLED
+10-28 07:45:01.557  7090  7090 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:01.558  7090  7090 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:01.559  7090  7090 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:01.561  7090  7090 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+10-28 07:45:01.566  7090  7090 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+10-28 07:45:01.567  7090  7090 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+10-28 07:45:01.567  7090  7090 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-28 07:45:01.567  7090  7090 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:01.567  7090  7090 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:01.583  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-28 07:45:01.583  7090  7090 I ecovery_process: System.exit called, status: 0
+10-28 07:45:01.583  7090  7090 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-28 07:45:01.585  1727  5566 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:01.588  1158  1580 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-28 07:45:01.589   316   316 I Zygote  : Process 7090 exited cleanly (0)
+10-28 07:45:01.590   516   553 I libprocessgroup: Successfully killed process cgroup uid 10142 pid 7090 in 0ms
+10-28 07:45:01.591  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:01.596  1727  2041 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:01.600  1727  6296 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:01.606  1727  6021 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:01.608  4944  5054 I TestRunner: finished: ageFilterDoesNotDeleteRecentApks(com.jarvis.files.CommandTest)

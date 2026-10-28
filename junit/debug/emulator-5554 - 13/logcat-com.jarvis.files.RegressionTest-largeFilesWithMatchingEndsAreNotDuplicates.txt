@@ -1,0 +1,68 @@
+10-28 07:46:41.176  4944  5054 I TestRunner: started: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+10-28 07:46:41.177  1727  1765 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/moved.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/moved.pdf
+10-28 07:46:41.178  1727  1765 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:41.178  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to null
+10-28 07:46:41.180  1727  1765 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+10-28 07:46:41.181  1727  1765 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:41.181  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+10-28 07:46:41.183  1727  1765 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/moved.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/moved.pdf
+10-28 07:46:41.184  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 32 uptime_millis: 32 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.184  1727  1765 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:46:41.184  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/moved.pdf to null
+10-28 07:46:41.193  8206  8310 I NetworkScheduler: ignoring stale queue check message
+10-28 07:46:41.200  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.209  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.218  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.226  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:41.239  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.247  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.257  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.259  8206 12019 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.267  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.270  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:41.281  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.283  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 5 uptime_millis: 5 exec_start_elapsed_seconds: 186 [CONTEXT service_id=218 ]
+10-28 07:46:41.498  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-28 07:46:41.505  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:41.701  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-28 07:46:41.708  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:41.904  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-28 07:46:41.909  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:41.961  1546 10032 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor$WorkerThreadHandler.handleMessage:221 executing task com.android.voicemail.impl.ActivationTask@fb6d24d [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:41.962  1546  1546 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_ACTIVATION_STARTED
+10-28 07:46:41.964  1546 10032 I DialerPreOMigrationHandler: com.android.voicemail.impl.PreOMigrationHandler.migrate:76 ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} already migrated [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:41.968  1546 10032 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.isCarrierAppInstalled:637 carrier app not installed in this device [CONTEXT ratelimit_period="1 MINUTES [skipped: 4]" ]
+10-28 07:46:41.968  1546 10032 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+10-28 07:46:41.968  1546 10032 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+10-28 07:46:41.975  1546  1903 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 23]" ]
+10-28 07:46:41.975  1546  1903 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 11]" ]
+10-28 07:46:41.982  1546  1903 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:46:41.983  1546  1903 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+10-28 07:46:41.985  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:292 VVM content provider configured - vvm_type_cvvm PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:41.986  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.updateVoicemailsWithIccId:477 conversion disabled [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:41.987  1546 10032 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_ACTIVATING PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:41.987  1546 10032 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+10-28 07:46:41.988  1546 10032 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+10-28 07:46:42.000  1546  1903 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:46:42.000  1546  1903 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+10-28 07:46:42.002  1546 10032 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:339 sending an activation request [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:42.005  1068  1392 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+10-28 07:46:42.005  1068  1392 D SmsNumberUtils: destAddr is not formatted.
+10-28 07:46:42.005  1068  1392 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+10-28 07:46:42.009  1068  1081 I m.android.phone: JIT allocated 62KB for compiled code of boolean com.android.internal.telephony.ITelephony$Stub.onTransact(int, android.os.Parcel, android.os.Parcel, int)
+10-28 07:46:42.010  1546 10032 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:46 Impression: CVVM_SEND_VVM_SMS
+10-28 07:46:42.015  1546  1546 I DialerStatusSmsFetcher: com.android.voicemail.impl.sms.StatusSmsFetcher.onReceive:106 Request SMS successfully sent [CONTEXT enable_persistent_logger=true ]
+10-28 07:46:42.151  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-28 07:46:42.156  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:42.356  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67366912
+10-28 07:46:42.362  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:42.561  1727  2040 I FuseDaemon: Threshold exceeded - fadvising 67108864
+10-28 07:46:42.566  1727  2040 I FuseDaemon: Threshold now 0
+10-28 07:46:42.597  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:42.600  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:42.606  1727  2041 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:46:42.621  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+10-28 07:46:42.623  8206 12018 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+10-28 07:46:42.633  1727  6021 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:46:42.648  8206 11065 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+10-28 07:46:42.651  4944  5054 I TestRunner: finished: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)

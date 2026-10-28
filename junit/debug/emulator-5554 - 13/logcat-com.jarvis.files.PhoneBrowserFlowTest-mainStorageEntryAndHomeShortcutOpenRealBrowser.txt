@@ -1,0 +1,179 @@
+10-28 07:46:17.816  4944  5054 I TestRunner: started: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)
+10-28 07:46:17.821   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d67210
+10-28 07:46:17.821   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b1d0
+10-28 07:46:17.821   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b1d0
+10-28 07:46:17.821   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.829  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:46:17.829  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:46:17.833  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:46:17.834  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:46:17.834  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:46:17.834  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:46:17.834  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:46:17.857   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:17.858   516  2724 W InputManager-JNI: Input channel object '87927db com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:46:17.874   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a930
+10-28 07:46:17.874   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c6d0
+10-28 07:46:17.874   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d693d0
+10-28 07:46:17.874   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bef0
+10-28 07:46:17.892  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:17.909  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:17.927  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:17.940  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:46:17.966  4944  5054 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@a2bba03]
+10-28 07:46:17.975  4944  5054 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:46:17.981   833   900 D SplashScreenView: Build android.window.SplashScreenView{692eb41 V.E...... ......ID 0,0-0,0}
+10-28 07:46:17.981   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:46:17.981   833   900 D SplashScreenView: Branding: view: android.view.View{58228e6 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:46:17.982   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:46:17.985  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:46:17.990  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: PRE_ON_CREATE
+10-28 07:46:17.990  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-28 07:46:18.007  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: CREATED
+10-28 07:46:18.008  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@584ef57
+10-28 07:46:18.009  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: STARTED
+10-28 07:46:18.009  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@584ef57
+10-28 07:46:18.011  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: RESUMED
+10-28 07:46:18.011  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@584ef57
+10-28 07:46:18.013  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:46:18.024  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:46:18.038  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:46:18.038  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:46:18.114   516   540 W ziparchive: Unable to open '/data/app/~~z7XqKnO3-9GSOkUL-HT7hQ==/com.jarvis.files-mKOsqefxe-8HLIc32EL4CA==/base.dm': No such file or directory
+10-28 07:46:18.115   516   540 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +135ms
+10-28 07:46:18.121  1100  1100 D TaplTarget: sendStateEventToTest: 0
+10-28 07:46:18.121  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:46:18.121  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:46:18.121  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:46:18.121  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:46:18.122  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:46:18.122  1100  2284 D OneSearchSuggestProvider: Shut down the binder channel
+10-28 07:46:18.122  1100  8372 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74f6c5be3d80 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-28 07:46:18.124  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:46:18.125   516  2724 W InputManager-JNI: Input channel object '5d3ab0a Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-28 07:46:18.128  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:46:18.128  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:46:18.128  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:46:18.128  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:46:18.129  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:46:18.129  1824  3186 I PBSessionCacheImpl: Deleted sessionId[8023830009706428] from persistence.
+10-28 07:46:18.131  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:46:18.131  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:46:18.131  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:46:18.137  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:18.134   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e7d0
+10-28 07:46:18.138   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d68d10
+10-28 07:46:18.138   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d0f0
+10-28 07:46:18.144  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:18.152   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c910
+10-28 07:46:18.152   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e290
+10-28 07:46:18.152   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c010
+10-28 07:46:18.152   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c010
+10-28 07:46:18.156  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:46:18.169  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 163 [CONTEXT service_id=218 ]
+10-28 07:46:18.171  4944  4944 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:46:18.171  4944  4944 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:46:18.176  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 163 [CONTEXT service_id=218 ]
+10-28 07:46:18.898   516   598 D ConnectivityService: requestNetwork for uid/pid:10119/1824 activeRequest: null callbackRequest: 153 [NetworkRequest [ REQUEST id=153, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-28 07:46:18.901   312   353 I netd    : networkSetPermissionForNetwork(101, 0) <1.55ms>
+10-28 07:46:18.902   516   775 D ConnectivityService: NetReassign [153 : null → 101] [c 1] [a 2] [i 1]
+10-28 07:46:18.902   516   775 D ConnectivityService: reportNetworkConnectivity(100, false) by 10119
+10-28 07:46:18.906  1014  2316 D NetworkMonitor/100: Forcing reevaluation for UID 10119. Dns signal count: 0
+10-28 07:46:18.907  1014 11394 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.907  1014 11393 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.908  1014 11394 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.908  1014 11393 D TrafficStats: tagSocket(69) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.909   312 11395 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:46:18.909   312 11395 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f4550
+10-28 07:46:18.911   312 11397 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:46:18.911   312 11397 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f6770
+10-28 07:46:18.911  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.912   312 11398 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:46:18.912   312 11398 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796996f61d0
+10-28 07:46:18.912  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.913   312 11396 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:46:18.913  1014 11394 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 5ms OK 142.251.150.120,2001:4860:4826:7800::
+10-28 07:46:18.915   312 11399 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-28 07:46:18.915   312 11400 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:46:18.915   312 11401 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:46:18.915   312 11400 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f4550
+10-28 07:46:18.915   312 11400 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+10-28 07:46:18.915   312 11401 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f6770
+10-28 07:46:18.915   312 11401 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+10-28 07:46:18.916  1014 11394 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.917   312 11396 I resolv  : res_nsend: used send_dg 256 terrno: 0
+10-28 07:46:18.917  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.918  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.919  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.920  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.920  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.921  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.922  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.922  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.923  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.924  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.924  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.924  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.925  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.926  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.926  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.927  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:46:18.928  1014 11393 D NetworkMonitor/100: PROBE_DNS www.google.com 20ms OK 142.251.150.119,142.251.157.119,142.251.154.119,142.251.153.119,142.251.151.119,142.251.155.119,142.251.156.119,142.251.152.119,2001:4860:4827:7700::,2001:4860:482d:7700::,2001:4860:4829:7700::,2001:4860:482c:7700::,2001:4860:4828:7700::,2001:4860:482a:7700::,2001:4860:482b:7700::,2001:4860:4826:7700::
+10-28 07:46:18.928   312 11402 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-28 07:46:18.929   312 11404 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:46:18.929   312 11404 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796996f61d0
+10-28 07:46:18.929   312 11404 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+10-28 07:46:18.929   312 11403 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:46:18.929   312 11403 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0890
+10-28 07:46:18.929   312 11403 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+10-28 07:46:18.930  1014 11393 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-28 07:46:18.948  1014 11394 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=34ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 28 Oct 2026 07:46:19 GMT], X-Android-Received-Millis=[1793173578948], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1793173578932]}
+10-28 07:46:19.096  1014 11393 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 time=167ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 28 Oct 2026 07:46:19 GMT], X-Android-Received-Millis=[1793173579095], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1793173579078]}
+10-28 07:46:19.096  1014 11392 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=189ms
+10-28 07:46:19.097   516   775 D ConnectivityService: [100 WIFI] validation passed
+10-28 07:46:19.229  4944  5543 D EGL_emulation: app_time_stats: avg=44.51ms min=4.44ms max=115.13ms count=24
+10-28 07:46:19.311  4944  4944 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:46:19.311  4944  4944 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:46:19.404  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:19.408  1727  5566 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:46:19.416  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:46:19.424   833   900 D SplashScreenView: Build android.window.SplashScreenView{44c26b1 V.E...... ......ID 0,0-0,0}
+10-28 07:46:19.424   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:46:19.424   833   900 D SplashScreenView: Branding: view: android.view.View{61c9796 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:46:19.424   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:46:19.425  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: PAUSED
+10-28 07:46:19.425  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@584ef57
+10-28 07:46:19.432  8206 11113 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 165 [CONTEXT service_id=218 ]
+10-28 07:46:19.441  5574  5593 W Parcel  : Expecting binder but got null!
+10-28 07:46:19.446  8206 11137 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 165 [CONTEXT service_id=218 ]
+10-28 07:46:19.472   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b290
+10-28 07:46:19.483  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:46:19.486  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:46:19.486  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:46:19.487  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:46:19.487  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:46:19.488   516  1770 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-28 07:46:19.489  1100  2284 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=125, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@4b27404
+10-28 07:46:19.490  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:46:19.491  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:46:19.492  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:46:19.497  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: STOPPED
+10-28 07:46:19.497  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@584ef57
+10-28 07:46:19.502  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:46:19.504  1100  1100 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:46:19.505  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@584ef57 in: DESTROYED
+10-28 07:46:19.505  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:46:19.506  4944  5054 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@a2bba03]
+10-28 07:46:19.511   516  2724 W InputManager-JNI: Input channel object 'a4061ae com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:46:19.514  4944  5054 I TestRunner: finished: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)

@@ -1,0 +1,34 @@
+10-28 07:45:34.122  4944  5054 I TestRunner: started: exactScreenshotDownloadRequestChecksActualDirectoriesNotFileIndex(com.jarvis.files.FolderCommandTest)
+10-28 07:45:34.133  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.172  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LANGUAGE_PACKS.
+10-28 07:45:34.176  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.176  1824 10067 I A       : Skip LanguagePack auto-update because controller is uninitialized.
+10-28 07:45:34.179  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 61 uptime_millis: 61 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.184  1824  3006 I LanguagePackUpdateContr: Queuing language pack download for: en-US
+10-28 07:45:34.188  1824  1824 I LanguagePackUpdateContr: #finishInitRunnable run
+10-28 07:45:34.188  1824  3186 I LanguagePackUpdateContr: Proceeding with download, not active: soda-en-US-v1001
+10-28 07:45:34.190  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.193  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LAUNCHER_SHORTCUT.
+10-28 07:45:34.198  1824  1824 I BgTaskExecutorImpl: Starting PERIODIC background task UPLOAD_HOTWORD_SETTINGS.
+10-28 07:45:34.205  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.215  2085 10218 D DownloadManager: [15] Starting
+10-28 07:45:34.218  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.225  2085 10218 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-28 07:45:34.226  2085 10218 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-28 07:45:34.227   312 10225 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+10-28 07:45:34.227   312 10227 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:34.227   312 10227 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f4710
+10-28 07:45:34.227   312 10227 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+10-28 07:45:34.229   312 10226 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:34.229   312 10226 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796996f86f0
+10-28 07:45:34.229   312 10226 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+10-28 07:45:34.230  2085 10218 D TrafficStats: tagSocket(76) with statsTag=0xffffff01, statsUid=10119
+10-28 07:45:34.253  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.256  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.259  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.277  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.279  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-28 07:45:34.314  1727  6296 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:34.317  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.320  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.323  4944  5054 I TestRunner: finished: exactScreenshotDownloadRequestChecksActualDirectoriesNotFileIndex(com.jarvis.files.FolderCommandTest)

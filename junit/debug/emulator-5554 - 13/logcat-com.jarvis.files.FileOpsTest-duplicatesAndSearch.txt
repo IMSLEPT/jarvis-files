@@ -1,0 +1,61 @@
+10-28 07:45:11.580  4944  5054 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+10-28 07:45:11.580  1727  1959 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000079
+10-28 07:45:11.580  1727  1959 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000079
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:11.580  1727  1959 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:45:11.597  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:11.597  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.601  8206  8543 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 07:45:11.601  8206  8543 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:11.601  8206  8543 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:11.604  3862  8651 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:11.606  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.611  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.618  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.618  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.620  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.638  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.652  8206  8310 I NetworkScheduler: ignoring stale queue check message
+10-28 07:45:11.652  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.653  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.656  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.660  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: Voilatile gRPC failure INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header. [CONTEXT service_id=6 ]
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: enms: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at enmr.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at abxw.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at abxw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):17)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at abxw.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at cyeg.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):27)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at czpd.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:11.668  8206  8544 W GlsClientGrpc: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:11.682  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.691  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.694  4944  5054 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+10-28 07:45:11.696  4944  5054 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+10-28 07:45:11.700  1727  2041 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.703  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.706  1727  6296 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.708  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.712  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.718  1727  2041 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.720  1727  5566 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.723  1727  6296 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.725  4944  5054 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)

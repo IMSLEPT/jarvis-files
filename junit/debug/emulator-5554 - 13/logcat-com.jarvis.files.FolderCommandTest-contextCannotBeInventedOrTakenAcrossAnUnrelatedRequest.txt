@@ -1,0 +1,21 @@
+10-28 07:45:34.492  4944  5054 I TestRunner: started: contextCannotBeInventedOrTakenAcrossAnUnrelatedRequest(com.jarvis.files.FolderCommandTest)
+10-28 07:45:34.502  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-28 07:45:34.508  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-28 07:45:34.532  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.544  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.547  4839  4921 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+10-28 07:45:34.547  4839  4921 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+10-28 07:45:34.547  4839  4921 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+10-28 07:45:34.547  4839  4921 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+10-28 07:45:34.547  4839  4921 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+10-28 07:45:34.555  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.565  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:34.590  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.594  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.598  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:34.605  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-28 07:45:34.612  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-28 07:45:34.619  1727  5414 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:34.623  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.626  1727  4817 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:34.628  4944  5054 I TestRunner: finished: contextCannotBeInventedOrTakenAcrossAnUnrelatedRequest(com.jarvis.files.FolderCommandTest)

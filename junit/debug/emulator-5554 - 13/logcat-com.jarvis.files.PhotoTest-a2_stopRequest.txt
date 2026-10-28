@@ -1,0 +1,29 @@
+10-28 07:46:22.654  4944  5054 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+10-28 07:46:22.690  4944 11847 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-28 07:46:22.690  4944 11847 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-28 07:46:22.697  8206  8206 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-28 07:46:22.697  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-28 07:46:22.705  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.708  4944 11842 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1279581277 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-28 07:46:22.709   516  2237 D ConnectivityService: requestNetwork for uid/pid:1000/516 asUid: 10174 activeRequest: null callbackRequest: 154 [NetworkRequest [ REQUEST id=155, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-28 07:46:22.711   516   768 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=155, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-28 07:46:22.711   516   768 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=155, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-28 07:46:22.711   516   768 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=155, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-28 07:46:22.711   516   768 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=155, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-28 07:46:22.711   516   775 D ConnectivityService: NetReassign [155 : null → 100] [c 1] [a 0] [i 1]
+10-28 07:46:22.716  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.718  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.729  4944 11843 W LibraryVersion: Failed to get app version for libraryName: shared-installation-id
+10-28 07:46:22.745  4944 11843 W LibraryVersion: Failed to get app version for libraryName: shared-acceleration-allowlist
+10-28 07:46:22.747  4944  5054 I TensorFlowLite: Loaded native library: tensorflowlite_jni
+10-28 07:46:22.749  4944  5054 I TensorFlowLite: Didn't load native library: tensorflowlite_jni_gms_client
+10-28 07:46:22.758  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.762  4944 11842 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1274600540 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-28 07:46:22.765  4944  5054 I tflite  : Initialized TensorFlow Lite runtime.
+10-28 07:46:22.776  4944  5054 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-28 07:46:22.777  4944  5054 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-28 07:46:22.786  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:22.788  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.798  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.800  4944  5054 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+10-28 07:46:22.800  4944  5054 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)

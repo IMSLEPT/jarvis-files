@@ -1,0 +1,267 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.jarvis.files"
+    test_package: "com.jarvis.files.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.jarvis.files/additional_test_output"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/debug/app-debug.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+apks_to_install {
+  apk_paths: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+instrumentation_target_package_id: "com.jarvis.files"
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/debug/app-debug.apk] on device emulator-5554.
+INFO: Installing [/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.jarvis.files/additional_test_output to /home/runner/work/jarvis-files/jarvis-files/app/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/emulator-5554 - 13
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.jarvis.files for device emulator-5554.
+INFO: Uninstalling com.jarvis.files.test for device emulator-5554.
+INFO: Execute com.jarvis.files.AiReliabilityTest.screenshotQuestionRanksActualBytesInsteadOfRecentFiles: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.streamingStopsRepeatedCharactersBeforeFinishing: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.userCancellationRemainsCancellation: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.followUpKeepsOrderAndDropsFilesThatHaveDisappeared: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.validJsonCannotHideDegenerateOrOversizedReplies: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.timeoutCancelsTheBackendAndDoesNotReturnPartialText: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.screenshotQuestionAndShowThemNeedNoConfiguredModel: PASSED
+INFO: Execute com.jarvis.files.AiReliabilityTest.rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.clarificationChoiceRescansBeforeBuildingDeletionPreview: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.keyboardSendActionBuildsPreviewAndClearsDraft: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.allPlanEntriesCanBeReviewedBeyondOldLimit: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.vaultImportButtonMovesOnlySelectedFile: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.emptySendIsDisabledAndMicrophoneIsSeparate: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.directScreenshotCommandDoesNotAskModelForAnotherConfirmation: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.largestFilesAndShowThemWorkThroughChatWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.screenshotNoButtonCancelsWithoutModelOrFileChanges: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.openingAllResultsPreservesLargestFirstOrder: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.cancelButtonLeavesFilesUntouched: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.settingsButtonOpensAiSettings: PASSED
+INFO: Execute com.jarvis.files.CommandTest.explicitRenameUsesRealPathAndKeepsExtension: PASSED
+INFO: Execute com.jarvis.files.CommandTest.exactScreenshotCommandFindsApksOutsideDownloadAndNeverExecutes: PASSED
+INFO: Execute com.jarvis.files.CommandTest.politeItalianCommandsKeepTheSameScope: PASSED
+INFO: Execute com.jarvis.files.CommandTest.noResultsAreComputedFromRealIndex: PASSED
+INFO: Execute com.jarvis.files.CommandTest.ageFilterDoesNotDeleteRecentApks: PASSED
+INFO: Execute com.jarvis.files.CommandTest.exclusionsAndCompoundRequestsAreNeverSilentlyIgnored: PASSED
+INFO: Execute com.jarvis.files.CommandTest.vagueDeletionOffersWorkingChoices: PASSED
+INFO: Execute com.jarvis.files.CommandTest.rejectsMalformedReplyAndUnrequestedActions: PASSED
+INFO: Execute com.jarvis.files.CommandTest.keywordSearchWorksWithoutLlm: PASSED
+INFO: Execute com.jarvis.files.CommandTest.folderScopeIncludesChildrenButNotNeighborFolders: PASSED
+INFO: Execute com.jarvis.files.CommandTest.invalidAiSuccessOrNotFoundCannotMasqueradeAsCompletedCommand: PASSED
+INFO: Execute com.jarvis.files.CommandTest.commandExecutionAndUndoPreserveUnselectedFiles: PASSED
+INFO: Execute com.jarvis.files.CommandTest.plainSearchCannotGenerateDeletionPlan: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.multipleFoldersAskOnceAndResumePendingSearchOnSelection: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.ordinalAndUniqueFolderNameCanAnswerTheQuestion: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.contextualRenamePreservesNewNameCapitalizationAndExtension: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.contextMutationCannotAccidentallyDeleteEveryPdfOnPhone: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.removedResultOrFolderIsNotInventedAgain: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.duplicateFolderNamesCannotPickAnArbitraryPath: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.askForFileNameOnceAndKeepFolderAcrossSeveralSearches: PASSED
+INFO: Execute com.jarvis.files.DesignFlowTest.cacheExplanationExpandsWithoutLaunchingCleanup: PASSED
+INFO: Execute com.jarvis.files.DesignFlowTest.extraCleaningToolsRemainReachable: PASSED
+INFO: Execute com.jarvis.files.DesignFlowTest.homeSearchOpensDocumentSearch: PASSED
+INFO: Execute com.jarvis.files.DesignFlowTest.everyGroupedMoreDestinationStillOpens: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.moveWithFullTargetPath: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.duplicatesAndSearch: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.trashRestore: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.cleanSpuriousSearches: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.keyBackupRoundTrip: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.sortDownloadRule: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.parseModelReply: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.collisionsAndPattern: PASSED
+INFO: Execute com.jarvis.files.FileOpsTest.planExecuteAndUndo: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.newChatClearsFolderReferences: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.screenshotClarificationRecoversPriorScopeAndRefreshesDirectoryContents: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.emptyResultDoesNotShowMisleadingNoFilesMessageOrRetry: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.navigatingWhileReplyStartsCannotChangeTheSubmittedFolder: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.continuousMessagesKeepOneFolderWithoutRepeatingItsPath: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.exactScreenshotRequestFindsEmptyDownloadDirectoriesWithoutInstalledModel: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.ambiguousFolderChoiceResumesSearchThroughRealOptionButton: PASSED
+INFO: Execute com.jarvis.files.FolderChatFlowTest.allFolderResultsBeyondTwoHundredAreReachableAndOpenActualFolder: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.cancellationStopsTraversalAndLeavesEverythingUntouched: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.exactScreenshotDownloadRequestChecksActualDirectoriesNotFileIndex: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.protectedOrEscapingScopeNeverProducesAnEmptyResult: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.contextCannotBeInventedOrTakenAcrossAnUnrelatedRequest: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.globalScreenshotRequestShowsAllAccessibleMatchesIncludingDeepAndHidden: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.unsupportedFiltersMutationsAndMixedRequestsCannotBroadenSearch: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.olderFailedConversationRecoversOriginalScopedRequest: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.currentLevelConstraintAndQuotedSpacedPathsArePreserved: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.clarificationKeepsScopeAndRefreshesFilesWithoutCallingModel: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.zeroByteFilesHiddenEntriesAndSubfoldersNeverMakeTheirParentEmpty: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.allResultsRemainAvailableBeyondOldChatAndIndexLimits: PASSED
+INFO: Execute com.jarvis.files.FolderCommandTest.emptyExistingScopeMissingScopeAndFilePathAreDifferentOutcomes: PASSED
+INFO: Execute com.jarvis.files.LlmTest.realModel: IGNORED
+org.junit.AssumptionViolatedException: org.junit.AssumptionViolatedException: Modello non presente: test saltato
+at org.junit.Assume.assumeTrue(Assume.java:68)
+at com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+at com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+
+org.junit.AssumptionViolatedException: Modello non presente: test saltato
+at org.junit.Assume.assumeTrue(Assume.java:68)
+at com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+at com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.copyAndMoveUseDestinationNavigationAndNeverOverwrite: PASSED
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.hiddenFilesDeepFoldersAndBreadcrumbsAreNavigable: PASSED
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.homeDownloadShortcutOpensNestedFolders: PASSED
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.createRenameTrashAndUndoWorkFromActualButtons: PASSED
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.mainStorageEntryAndHomeShortcutOpenRealBrowser: PASSED
+INFO: Execute com.jarvis.files.PhoneBrowserFlowTest.searchFiltersOnlyCurrentFolderAndCanBeCleared: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.browsingIncludesEmptyAndHiddenFoldersWithoutUsingIndexOrDepthLimit: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.sameFolderCutIsNoOpAndSelfCopyAndSelfMoveAreRejected: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.protectedRootsCannotBeTraversedCopiedOrMutatedThroughBrowser: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.folderCopyIncludesEmptyAndHiddenChildrenWithoutOverwritingAndUndoIsRecoverable: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.moveAndTrashDirectoriesAreUndoableWithoutOverwritingNeighbors: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.createRenameAndUndoKeepExactNamesAndContent: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.interruptedProcessStagingIsCleanedWithoutTouchingTheOriginal: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.searchIsImmediateChildrenOnlyAndNeverClaimsAnInaccessibleFolderIsEmpty: PASSED
+INFO: Execute com.jarvis.files.PhoneFilesTest.duplicateCopyNamesKeepLongUnicodeExtensionsAndCancellationCleansStaging: PASSED
+INFO: Execute com.jarvis.files.PhotoTest.a2_stopRequest: PASSED
+INFO: Execute com.jarvis.files.PhotoTest.a_facesAndEmbeddings: PASSED
+INFO: Execute com.jarvis.files.PhotoTest.b_indexNameAndSearch: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.longRenameKeepsExtensionAndExecutesWithUnicode: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.jsonNullIsNotARealFolderOrPhotoSearch: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.pathsCannotEscapeRootOrMatchRootByPrefix: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.cannotMoveStorageRootOrSystemFolders: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.executeValidatesPlansFromEverySource: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.photoMentionsInOrganizationDoNotTriggerPhotoSearch: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.folderSearchDoesNotIncludeSimilarFolderNames: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.moveNeverOverwritesExistingFile: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.emptyIndexIsCachedUntilItIsInvalidated: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.emptyGroupFilterCannotTargetEntirePhone: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.partialUndoCanBeRetriedWithoutLosingJournal: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.largeFilesWithMatchingEndsAreNotDuplicates: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.brandLetterCounterRemainsTransparent: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.longVaultNamesKeepExtensionAndHandleCollisions: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.activeDownloadIsNotSuggestedAsJunk: PASSED
+INFO: Execute com.jarvis.files.RegressionTest.clarificationCannotOfferPrematureExecution: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.screenshotSearchAgeAndUnsupportedExclusionsKeepScope: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.unsupportedOrUnboundYesNeverInventsABroaderDeletion: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.questionSourceIsBoundByAppNotByModelSuppliedRequest: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.noScreenshotResultsCannotProduceAnInventedPlan: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.explicitAllFilesInFolderIncludesAllTypesButNeverNeighbors: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.negativeChoiceNeedsNeitherModelNorFileIndex: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.affirmativeChoiceOnlyReplaysTheOriginalRequest: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.explicitScreenshotFolderKeepsOtherTypesAndNeighbors: PASSED
+INFO: Execute com.jarvis.files.ScreenshotCommandTest.screenshotsAreIdentifiedByFolderOrFileNameNeverEveryImage: PASSED
+INFO: Execute com.jarvis.files.UiTest.allScreens: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.newChatRemovesConversationAndDraft: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.draftSurvivesTabNavigation: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.vaultRequiresUnlockEvenWhenAppLockIsOff: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.categoriesRefreshWhenExternalFilesChangeWithinCacheWindow: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.noExecutionWhenEveryOperationIsExcluded: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.homeAssistantButtonOpensChat: PASSED
+INFO: Execute com.jarvis.files.UsabilityTest.originalHomeRemainsVisibleWithLargeSystemFonts: PASSED

@@ -1,0 +1,757 @@
+10-28 07:48:11.316  4944  5054 I TestRunner: started: originalHomeRemainsVisibleWithLargeSystemFonts(com.jarvis.files.UsabilityTest)
+10-28 07:48:11.319   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ded0
+10-28 07:48:11.319   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b7d0
+10-28 07:48:11.319   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.319   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.327  1824  3178 I A       : Using proto config with mendel
+10-28 07:48:11.330  1824  3178 I A       : Using proto config with mendel
+10-28 07:48:11.336  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:48:11.340  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:48:11.351  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:11.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:11.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:11.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:11.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:11.371  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:11.375   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c6d0
+10-28 07:48:11.376   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.377   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.377   516  3246 W InputManager-JNI: Input channel object 'c1fa96 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.384   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e9b0
+10-28 07:48:11.384   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ddb0
+10-28 07:48:11.384   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b2f0
+10-28 07:48:11.384   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cd90
+10-28 07:48:11.388  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:11.409  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:11.423  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:48:11.441  4944  5054 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@c288538]
+10-28 07:48:11.444  4944  5054 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:48:11.448   833   900 D SplashScreenView: Build android.window.SplashScreenView{2e95a6e V.E...... ......ID 0,0-0,0}
+10-28 07:48:11.448   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:48:11.448   833   900 D SplashScreenView: Branding: view: android.view.View{5fd350f G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:48:11.449   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.450   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.454  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:11.460  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: PRE_ON_CREATE
+10-28 07:48:11.460  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-28 07:48:11.474  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: CREATED
+10-28 07:48:11.474  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@90c47c
+10-28 07:48:11.477  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: STARTED
+10-28 07:48:11.477  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@90c47c
+10-28 07:48:11.479  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: RESUMED
+10-28 07:48:11.479  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@90c47c
+10-28 07:48:11.482  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.496  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:11.500   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.500   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.500   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.517   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c8b0
+10-28 07:48:11.517   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d68b90
+10-28 07:48:11.522  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:48:11.522  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:48:11.547   516   540 W ziparchive: Unable to open '/data/app/~~z7XqKnO3-9GSOkUL-HT7hQ==/com.jarvis.files-mKOsqefxe-8HLIc32EL4CA==/base.dm': No such file or directory
+10-28 07:48:11.548   516   540 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +101ms
+10-28 07:48:11.550  1100  1100 D TaplTarget: sendStateEventToTest: 0
+10-28 07:48:11.551  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:11.551  1100  2284 D OneSearchSuggestProvider: Shut down the binder channel
+10-28 07:48:11.553  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.553  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:11.553  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.554  1100  1120 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74f6c5bdc880 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-28 07:48:11.556   516   762 W InputManager-JNI: Input channel object '8ed0cf4 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.556  1824  3186 I PBSessionCacheImpl: Deleted sessionId[8023830009706448] from persistence.
+10-28 07:48:11.557  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:11.558  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:11.558  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:11.558  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:11.558  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:11.559  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:48:11.567   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69670
+10-28 07:48:11.567   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d681d0
+10-28 07:48:11.567   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a810
+10-28 07:48:11.583   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d67db0
+10-28 07:48:11.608  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.608  1100  1100 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.5 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.210 fontWeightAdjustment=0}
+10-28 07:48:11.608  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.609  1100  1100 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_FONT_SCALE}
+10-28 07:48:11.609  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.609  1100  1100 D b/254119092: DisplayController#onConfigurationChanged: {1.5 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.210 fontWeightAdjustment=0}
+10-28 07:48:11.610  1599  1599 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1557 onConfigurationChanged() : NewConfig = {1.5 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.210 fontWeightAdjustment=0}
+10-28 07:48:11.610  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1575 changedMask : 40000000
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in ebn
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in ebn
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
+10-28 07:48:11.610  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
+10-28 07:48:11.610  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.610  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+10-28 07:48:11.610  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+10-28 07:48:11.610  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:48:11.610  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+10-28 07:48:11.611  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+10-28 07:48:11.611  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214024 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+10-28 07:48:11.611  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 1 ms
+10-28 07:48:11.611  1599  1599 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-28 07:48:11.612  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.612  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.612  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.612  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.612  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.612  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_300_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-28 07:48:11.614  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.615  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:11.615  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-28 07:48:11.615  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+10-28 07:48:11.615  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:11.615  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:11.615  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:48:11.616  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
+10-28 07:48:11.616  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in csi.
+10-28 07:48:11.616  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in ebn.
+10-28 07:48:11.616  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in een.
+10-28 07:48:11.620   516   543 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-28 07:48:11.626  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: PAUSED
+10-28 07:48:11.626  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@90c47c
+10-28 07:48:11.627   833   833 I NoBackGesture: NavbarController: newConfig={1.5 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.280 fontWeightAdjustment=0} mTaskbarDelegate initialized=false willApplyConfigToNavbars=true navBarCount=0
+10-28 07:48:11.628  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: STOPPED
+10-28 07:48:11.628  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@90c47c
+10-28 07:48:11.631  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@90c47c in: DESTROYED
+10-28 07:48:11.631  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:48:11.634   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.634   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: No service published for: ethernet
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1590)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2556)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2530)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:545)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Unknown Source:0)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1192)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$android-app-LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1790)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:11.636  1014  1034 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:48:11.645   516  1414 W InputManager-JNI: Input channel object '4679b24 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.648  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: PRE_ON_CREATE
+10-28 07:48:11.648  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+10-28 07:48:11.650  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ead0
+10-28 07:48:11.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d68110
+10-28 07:48:11.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d68110
+10-28 07:48:11.653  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:11.657  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:11.658  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: CREATED
+10-28 07:48:11.658  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@479d11e
+10-28 07:48:11.658  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: STARTED
+10-28 07:48:11.659  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@479d11e
+10-28 07:48:11.659  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: RESUMED
+10-28 07:48:11.659  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@479d11e
+10-28 07:48:11.662  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.664  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.666  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:11.671  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:11.671  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:11.673   833   833 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:11.677  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.680   833   833 D LockscreenSmartspaceController: Ended smartspace session for lockscreen
+10-28 07:48:11.681  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:11.684  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:11.687  1100  1100 D b/254119092: mActivity onDeviceProfileChanged
+10-28 07:48:11.687  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.689   833  1346 E KeyguardClockSwitch: No clock being shown
+10-28 07:48:11.690  1100  1100 D b/254119092: QuickstepLauncher#onDeviceProfileChanged
+10-28 07:48:11.690  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.692  1100  1100 D b/254119092: destroyExistingTaskbar: null
+10-28 07:48:11.692  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.692  1100  1100 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+10-28 07:48:11.692  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.692  1100  1100 D b/254119092: DisplayInfoChangeListener#CHANGE_DENSITY|CHANGE_SUPPORTED_BOUNDS
+10-28 07:48:11.692  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.692  1100  1100 I TouchInteractionService: preloadOverview: forSUWAllSet=false, isHomeAndOverviewSame=true
+10-28 07:48:11.700  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:48:11.700  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:48:11.703  1100  1100 D b/254119092: clearActivity
+10-28 07:48:11.703  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.705   516   762 W InputManager-JNI: Input channel object 'faf0463 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.707  1824  3127 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.709   516   905 W InputManager-JNI: Input channel object 'e45d197 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.711  1100  1100 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:48:11.711  1100  1100 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:48:11.712   833   833 W AlarmManager: Unrecognized alarm listener com.google.android.systemui.smartspace.KeyguardZenAlarmViewController$showNextAlarm$1@a47c80a
+10-28 07:48:11.712   833   833 W AlarmManager: Unrecognized alarm listener com.google.android.systemui.smartspace.KeyguardZenAlarmViewController$showNextAlarm$1@a47c80a
+10-28 07:48:11.713   833   833 D LockscreenSmartspaceController: Starting smartspace session for lockscreen
+10-28 07:48:11.713  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:11.714  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:11.714  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:11.714  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69970
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69970
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cc70
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69970
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69370
+10-28 07:48:11.717   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cc70
+10-28 07:48:11.725  1100  1100 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:11.725  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:11.726  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:11.726  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:11.726  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:11.727  1100  1100 D DeviceSearchAlg: search timeout = %d200
+10-28 07:48:11.729  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:11.729  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:11.730  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:11.731  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:11.732  1100  1140 I AiAiSuggestUi: Connecting to system intelligence module.
+10-28 07:48:11.734  1100  6215 I AiAiSuggestUi: Successfully connected to system intelligence:
+10-28 07:48:11.739   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:11.739   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:11.739   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:11.740   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:11.741  1100  1100 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-28 07:48:11.741  1100  1100 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+10-28 07:48:11.743  1100  1100 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+10-28 07:48:11.752  1100  1141 D LoaderTask: loadWorkspace: loading default favorites
+10-28 07:48:11.756  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.756  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:11.756  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.758  1100  1100 I ContentCaptureHelper: Setting logging level to DEBUG
+10-28 07:48:11.758  1100  1100 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+10-28 07:48:11.758  1100  1100 D ContentCaptureManager: updateWindowAttributes(): window flags=-2137980672
+10-28 07:48:11.761  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.762  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FINISHED
+10-28 07:48:11.763  1100  1100 D MainContentCaptureSession: Destroying session (ctx=com.google.android.apps.nexuslauncher.NexusLauncherActivity@1c656c5, id=-719793264) with 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false]
+10-28 07:48:11.763  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: Unable to register Doze Always on content observer.
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2900)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2371)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9297)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1231)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer.doFrame(Choreographer.java:832)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: Caused by: android.os.RemoteException: Remote stack trace:
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.app.ContextImpl.enforce(ContextImpl.java:2240)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2268)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at com.android.server.content.ContentService.handleIncomingUser(ContentService.java:1397)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:369)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView: 	at android.content.IContentService$Stub.onTransact(IContentService.java:486)
+10-28 07:48:11.766  1100  1100 W BcSmartspaceView:
+10-28 07:48:11.775  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}
+10-28 07:48:11.779  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}
+10-28 07:48:11.785  1824  3127 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.787  1100  1100 W BcSmartspaceCard: No title view to update
+10-28 07:48:11.787  1100  1100 I BcSmartspaceCard: setFormattedContentDescription: textView=SUBTITLE, text=null, iconDescription=null, contentDescription=null
+10-28 07:48:11.788   516  1361 W InputManager-JNI: Input channel object '582a4aa com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:11.795  1100  1100 D TISBindHelper: TIS service connected
+10-28 07:48:11.795  1100  1100 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@2673646
+10-28 07:48:11.795  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:11.796  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:11.796  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:11.802   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6dbd0
+10-28 07:48:11.802   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6dbd0
+10-28 07:48:11.803   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.804  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.805  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:11.805  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.818  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.819  1100  1116 W System  : A resource failed to call release.
+10-28 07:48:11.835  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.camera2/com.android.camera.CameraLauncher}
+10-28 07:48:11.838  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}
+10-28 07:48:11.858   833   833 D QSPanel : setUsingHorizontalLayout: false, true
+10-28 07:48:11.858   833   833 D QSPanel : Reattaching media host: false, current com.android.systemui.qs.QSPanel{e346d6d IFE...... ......ID 0,48-288,660 #7f0a0596 app:id/quick_settings_panel}, new com.android.systemui.qs.QSPanel{8c2da9d VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}
+10-28 07:48:11.859   833   833 D QSPanel : setUsingHorizontalLayout: false, true
+10-28 07:48:11.859   833   833 D QSPanel : Reattaching media host: false, current com.android.systemui.qs.QSPanel{8c2da9d VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}, new com.android.systemui.qs.QSPanel{8c2da9d VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}
+10-28 07:48:11.861   833   833 D QuickQSPanel: setUsingHorizontalLayout: false, true
+10-28 07:48:11.861   833   833 D QuickQSPanel: Reattaching media host: false, current com.android.systemui.qs.QuickQSPanel{a2a8a33 VFE...... ......ID 0,48-288,200 #7f0a0594 app:id/quick_qs_panel}, new com.android.systemui.qs.QuickQSPanel{26668c5 VFE...... ......I. 0,0-0,0 #7f0a0594 app:id/quick_qs_panel}
+10-28 07:48:11.863   833   833 D QS      : Binding the View implementation of the QS footer actions
+10-28 07:48:11.890  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.892  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:11.892   833   833 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{e858f1 V.E...... ......ID 3,0-18,22 #7f0a0826 app:id/wifi_group} during layout: running second layout pass
+10-28 07:48:11.895   833   833 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{dea1a9a V.E...... ......ID 3,0-18,22 #7f0a0826 app:id/wifi_group} during layout: running second layout pass
+10-28 07:48:11.896  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:11.908  1100  1141 D LoaderTask: loadWorkspace
+10-28 07:48:11.909  1100  1141 D LoaderTask: sanitizeData
+10-28 07:48:11.911  1100  1141 D LoaderTask: bindWorkspace
+10-28 07:48:11.915  1729  1806 I AiAiEcho: AppPredictionInputConnectorImpl#createPredictionSession
+10-28 07:48:11.917   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.917   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: Unable to register Doze Always on content observer.
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.addViewInner(ViewGroup.java:5291)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.addView(ViewGroup.java:5077)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.CellLayout.addViewToCellLayout(Unknown Source:77)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Workspace.bindAndInitFirstWorkspaceScreen(Unknown Source:55)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Workspace.removeAllWorkspaceScreens(Unknown Source:49)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Launcher.startBinding(Unknown Source:34)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at B0.g.execute(Unknown Source:16)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.BaseLauncherBinder$UnifiedWorkspaceBinder.a(Unknown Source:18)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.h.run(Unknown Source:22)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:48:11.917  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:48:11.930   516   544 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-28 07:48:11.931  1729  1911 I AiAiStatsd: Successfully logged feature enablement for ECHO_ALL_APPS.
+10-28 07:48:11.934  1100  1141 D LoaderTask: sendFirstScreenActiveInstallsBroadcast
+10-28 07:48:11.937  1824 13659 I GsaConfigFlagsSyncer: Flags already sync'ed.
+10-28 07:48:11.937  1729  1806 I AiAiEcho: AppPredictionInputConnectorImpl#createPredictionSession
+10-28 07:48:11.938  1100  1141 D LoaderTask: step 1 complete
+10-28 07:48:11.941  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.youtube.music/com.google.android.apps.youtube.music.activities.MusicActivity}
+10-28 07:48:11.942  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:11.942  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:11.942  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:11.942  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:11.943  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:11.948  1729  1806 I AiAiEcho: AppPredictionInputConnectorImpl#createPredictionSession
+10-28 07:48:11.948  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}
+10-28 07:48:11.950   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6adb0
+10-28 07:48:11.951  1729  1911 I AiAiStatsd: Successfully logged feature enablement for HYBRID_HOTSEAT.
+10-28 07:48:11.952  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}
+10-28 07:48:11.953  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}
+10-28 07:48:11.955  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.SearchActivity}
+10-28 07:48:11.957  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:11.957  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:11.958  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:11.958  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:11.959  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.VoiceSearchActivity}
+10-28 07:48:11.960  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:11.960  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:11.961  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:11.961  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.deskclock/com.android.deskclock.DeskClock}
+10-28 07:48:11.961  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:11.963  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:11.964  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:11.966  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a570
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab10
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c7f0
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b1d0
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69e50
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a570
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab10
+10-28 07:48:11.967   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b1d0
+10-28 07:48:11.969   833   833 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{b6b60f5 V.E...... ......ID 3,0-18,22 #7f0a0826 app:id/wifi_group} during layout: running second layout pass
+10-28 07:48:11.972  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.stk/com.android.stk.StkMain}
+10-28 07:48:11.975  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.documentsui/com.android.documentsui.LauncherActivity}
+10-28 07:48:11.976  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}
+10-28 07:48:11.980  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.jarvis.files/com.jarvis.files.MainActivity}
+10-28 07:48:11.986   833   923 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:11.994   833   923 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:11.998   833   923 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:12.006   833   923 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:12.017  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}
+10-28 07:48:12.020  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}
+10-28 07:48:12.022  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}
+10-28 07:48:12.023  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.calendar/com.android.calendar.AllInOneActivity}
+10-28 07:48:12.028  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.google.android.apps.docs/com.google.android.apps.docs.app.NewMainProxyActivity}
+10-28 07:48:12.031  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.camera2/com.android.camera.CameraLauncher}
+10-28 07:48:12.032  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.settings/com.android.settings.Settings}
+10-28 07:48:12.033  1100  1141 I Launcher.IconCache: Database bulk icon loading failed, using fallback bulk icon loading for: ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}
+10-28 07:48:12.035  1100  1141 D LoaderTask: loadAllApps
+10-28 07:48:12.035  1100  1141 D LoaderTask: bindAllApps
+10-28 07:48:12.036  1729  1729 I AiAiEcho: SearchContextManagerImpl::setSearchContext resultTypes=[141151] extras=[Bundle[mParcelledData.dataSize=608]] sessionId=[com.google.android.apps.nexuslauncher:64f7759f-122b-4f75-85e4-fe2bda15ae62,0]
+10-28 07:48:12.042  1100  1141 D LoaderTask: update icon cache
+10-28 07:48:12.042  1100  1141 D LoaderTask: save shortcuts in icon cache
+10-28 07:48:12.042  1100  1141 D LoaderTask: step 2 complete
+10-28 07:48:12.043  1100  1141 D LoaderTask: loadDeepShortcuts
+10-28 07:48:12.043  1100  1141 D LoaderTask: bindDeepShortcuts
+10-28 07:48:12.043  1100  1141 D LoaderTask: save deep shortcuts in icon cache
+10-28 07:48:12.043  1100  1141 D LoaderTask: step 3 complete
+10-28 07:48:12.119  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:48:12.129  3862 13971 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:48:12.133  1100  1141 D LoaderTask: load widgets
+10-28 07:48:12.135  1100  1141 D LoaderTask: bindWidgets
+10-28 07:48:12.135  1100  1141 D LoaderTask: save widgets in icon cache
+10-28 07:48:12.136  1100  1141 D LoaderTask: finish icon update
+10-28 07:48:12.136  1100  1141 D QuickstepModelDelegate: Successfully registered for launcher snapshot logging!
+10-28 07:48:12.151  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:48:12.179  8206 13457 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 277 [CONTEXT service_id=218 ]
+10-28 07:48:12.182  8206 12019 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 277 [CONTEXT service_id=218 ]
+10-28 07:48:12.188  1100  1100 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.285 fontWeightAdjustment=0}
+10-28 07:48:12.188  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.188  1100  1100 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_FONT_SCALE}
+10-28 07:48:12.188  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.189  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.189  1100  1100 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.285 fontWeightAdjustment=0}
+10-28 07:48:12.190  1599  1599 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1557 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.285 fontWeightAdjustment=0}
+10-28 07:48:12.190  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1575 changedMask : 40000000
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in ebn
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in ebn
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
+10-28 07:48:12.190  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
+10-28 07:48:12.190  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.191  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+10-28 07:48:12.191  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:48:12.191  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+10-28 07:48:12.192  1599  1599 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-28 07:48:12.192  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.192  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.192  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.192  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.192  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.192  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_300_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-28 07:48:12.194  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 1 ms
+10-28 07:48:12.194  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214024 -> 0_resource_name_obfuscated : WaitTime = 4 ms : RunTime = 0 ms
+10-28 07:48:12.194  1599  1883 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 4 ms : RunTime = 0 ms
+10-28 07:48:12.195  1599  1891 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 1 ms
+10-28 07:48:12.196  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.197  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:48:12.197  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-28 07:48:12.197  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+10-28 07:48:12.197  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:12.198  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:12.198  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:48:12.198  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
+10-28 07:48:12.198  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in csi.
+10-28 07:48:12.198  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in ebn.
+10-28 07:48:12.198  1599  1599 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in een.
+10-28 07:48:12.204   516   543 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-28 07:48:12.214  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: PAUSED
+10-28 07:48:12.214  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@479d11e
+10-28 07:48:12.215  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: STOPPED
+10-28 07:48:12.215  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@479d11e
+10-28 07:48:12.217   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.217   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.217   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.217   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: No service published for: ethernet
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1590)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2556)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2530)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:545)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Unknown Source:0)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1192)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$android-app-LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1790)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:12.220  1014  1034 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:48:12.225   833   833 I NoBackGesture: NavbarController: newConfig={1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.355 fontWeightAdjustment=0} mTaskbarDelegate initialized=false willApplyConfigToNavbars=true navBarCount=0
+10-28 07:48:12.227  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@479d11e in: DESTROYED
+10-28 07:48:12.228  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:48:12.231  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.233   516   599 W InputManager-JNI: Input channel object '64218a1 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:12.235   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.235   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.235   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.235  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:12.238  8341 13984 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+10-28 07:48:12.239  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:12.240  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: PRE_ON_CREATE
+10-28 07:48:12.240  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+10-28 07:48:12.242  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.243  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:12.245  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: CREATED
+10-28 07:48:12.246  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:12.246  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@2154590
+10-28 07:48:12.248  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: STARTED
+10-28 07:48:12.248  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@2154590
+10-28 07:48:12.250   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a990
+10-28 07:48:12.251   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d3f0
+10-28 07:48:12.251  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: RESUMED
+10-28 07:48:12.251  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@2154590
+10-28 07:48:12.253  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.254  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.255  1100  1919 E OpenGLRenderer: Unable to match the desired swap behavior.
+10-28 07:48:12.256  1100  1919 E FrameEvents: updateAcquireFence: Did not find frame.
+10-28 07:48:12.258  1100  1100 D b/254119092: mActivity onDeviceProfileChanged
+10-28 07:48:12.258  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.258  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: PAUSED
+10-28 07:48:12.258  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@2154590
+10-28 07:48:12.261  1100  1100 D b/254119092: QuickstepLauncher#onDeviceProfileChanged
+10-28 07:48:12.261  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.265   516   599 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+10-28 07:48:12.266   833   833 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-28 07:48:12.273   833   833 D LockscreenSmartspaceController: Ended smartspace session for lockscreen
+10-28 07:48:12.274   833  1346 E KeyguardClockSwitch: No clock being shown
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: Unable to register Doze Always on content observer.
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.addViewInner(ViewGroup.java:5291)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.addView(ViewGroup.java:5077)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.CellLayout.addViewToCellLayout(Unknown Source:77)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Workspace.bindAndInitFirstWorkspaceScreen(Unknown Source:55)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Workspace.removeAllWorkspaceScreens(Unknown Source:49)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Launcher.startBinding(Unknown Source:34)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at B0.g.execute(Unknown Source:16)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.BaseLauncherBinder$UnifiedWorkspaceBinder.a(Unknown Source:18)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.h.run(Unknown Source:22)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.util.LooperExecutor.execute(Unknown Source:12)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.BaseLauncherBinder$UnifiedWorkspaceBinder.executeCallbacksTask(Unknown Source:6)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.BaseLauncherBinder$UnifiedWorkspaceBinder.e(Unknown Source:86)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.model.LauncherBinder.d(Unknown Source:162)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.LauncherModel.startLoader(Unknown Source:95)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.LauncherModel.rebindCallbacks(Unknown Source:9)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.Launcher.onHandleConfigurationChanged(Unknown Source:32)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.google.android.apps.nexuslauncher.NexusLauncherActivity.onIdpChanged(Unknown Source:0)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.InvariantDeviceProfile.onConfigChanged(Unknown Source:39)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.InvariantDeviceProfile.c(Unknown Source:4)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.n.onDisplayInfoChanged(Unknown Source:2)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.util.DisplayController.g(Unknown Source:6)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at V0.c.run(Unknown Source:30)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.util.LooperExecutor.execute(Unknown Source:12)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.util.DisplayController.handleInfoChange(Unknown Source:151)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.launcher3.util.DisplayController.onConfigurationChanged(Unknown Source:77)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.ComponentCallbacksController.lambda$dispatchConfigurationChanged$0(ComponentCallbacksController.java:91)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.ComponentCallbacksController$$ExternalSyntheticLambda2.accept(Unknown Source:4)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.ComponentCallbacksController.forAllComponentCallbacks(ComponentCallbacksController.java:124)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.content.ComponentCallbacksController.dispatchConfigurationChanged(ComponentCallbacksController.java:91)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.window.WindowContext.dispatchConfigurationChanged(WindowContext.java:142)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.window.WindowTokenClient.onConfigurationChanged(WindowTokenClient.java:253)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.window.WindowTokenClient$$ExternalSyntheticLambda1.accept(Unknown Source:16)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.internal.util.function.pooled.PooledLambdaImpl.doInvoke(PooledLambdaImpl.java:295)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.internal.util.function.pooled.PooledLambdaImpl.invoke(PooledLambdaImpl.java:204)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.internal.util.function.pooled.OmniFunction.run(OmniFunction.java:97)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:48:12.276  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:48:12.281  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:12.283   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ce50
+10-28 07:48:12.283   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.283   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.289  5574  5593 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.289   833   833 W AlarmManager: Unrecognized alarm listener com.google.android.systemui.smartspace.KeyguardZenAlarmViewController$showNextAlarm$1@a47c80a
+10-28 07:48:12.289   833   833 W AlarmManager: Unrecognized alarm listener com.google.android.systemui.smartspace.KeyguardZenAlarmViewController$showNextAlarm$1@a47c80a
+10-28 07:48:12.290   833   833 D LockscreenSmartspaceController: Starting smartspace session for lockscreen
+10-28 07:48:12.292  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:12.292  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:12.292  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:12.292  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:12.294  1824  3127 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.294  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:12.294  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:12.295  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:12.295  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:12.295  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:48:12.295  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:48:12.295  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:48:12.295  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:48:12.297   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:12.298   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:12.298   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:12.298   833   833 W ConstraintSet: Unknown attribute 0x39   0
+10-28 07:48:12.299   516  3188 W InputManager-JNI: Input channel object 'baa4662 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:12.300  1100  1100 D b/254119092: destroyExistingTaskbar: null
+10-28 07:48:12.300  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.300  1100  1100 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+10-28 07:48:12.300  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.300  1100  1100 D b/254119092: DisplayInfoChangeListener#CHANGE_DENSITY|CHANGE_SUPPORTED_BOUNDS
+10-28 07:48:12.300  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.301  1100  1100 I TouchInteractionService: preloadOverview: forSUWAllSet=false, isHomeAndOverviewSame=true
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab70
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b2f0
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6f790
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b2f0
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a570
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab10
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69e50
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6f790
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a570
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ab70
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.301   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.302   516  1770 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-28 07:48:12.303  1100  2284 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=161, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@8a9da0b
+10-28 07:48:12.312  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.312  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:12.313  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.314  1100  1100 D b/254119092: clearActivity
+10-28 07:48:12.314  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.319  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.319  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:12.319  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.320   516   540 W ziparchive: Unable to open '/data/app/~~OY4peFGDh1zgiSRcHLXUMQ==/com.jarvis.files.test-AZf7dgs3OZ3t3bPsANYwDg==/base.dm': No such file or directory
+10-28 07:48:12.321   516   540 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +105ms
+10-28 07:48:12.322   516  3188 W InputManager-JNI: Input channel object 'b39875 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:12.323  1824  1824 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+10-28 07:48:12.326  1100  1100 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:48:12.326  1100  1100 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:48:12.333   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b230
+10-28 07:48:12.333   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b230
+10-28 07:48:12.340  1100  1100 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:48:12.341  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:48:12.341  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:48:12.341  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files.test fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:48:12.341  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:48:12.341  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:48:12.343  1100  1100 D DeviceSearchAlg: search timeout = %d200
+10-28 07:48:12.349  1100  1140 I AiAiSuggestUi: Connecting to system intelligence module.
+10-28 07:48:12.352  1100  8372 I AiAiSuggestUi: Successfully connected to system intelligence:
+10-28 07:48:12.352   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69a90
+10-28 07:48:12.353   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a690
+10-28 07:48:12.353   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6da50
+10-28 07:48:12.358  1100  1100 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-28 07:48:12.358  1100  1100 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+10-28 07:48:12.360  1100  1100 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+10-28 07:48:12.366   833   833 D QSPanel : setUsingHorizontalLayout: false, true
+10-28 07:48:12.369   833   833 D QSPanel : Reattaching media host: false, current com.android.systemui.qs.QSPanel{8c2da9d IFE...... ......ID 0,48-288,660 #7f0a0596 app:id/quick_settings_panel}, new com.android.systemui.qs.QSPanel{b62ed6a VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}
+10-28 07:48:12.370   833   833 D QSPanel : setUsingHorizontalLayout: false, true
+10-28 07:48:12.370   833   833 D QSPanel : Reattaching media host: false, current com.android.systemui.qs.QSPanel{b62ed6a VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}, new com.android.systemui.qs.QSPanel{b62ed6a VFE...... ......I. 0,0-0,0 #7f0a0596 app:id/quick_settings_panel}
+10-28 07:48:12.371  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: STOPPED
+10-28 07:48:12.371  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@2154590
+10-28 07:48:12.373   833   833 D QuickQSPanel: setUsingHorizontalLayout: false, true
+10-28 07:48:12.374   833   833 D QuickQSPanel: Reattaching media host: false, current com.android.systemui.qs.QuickQSPanel{26668c5 VFE...... ......ID 0,48-288,200 #7f0a0594 app:id/quick_qs_panel}, new com.android.systemui.qs.QuickQSPanel{cc6f5c3 VFE...... ......I. 0,0-0,0 #7f0a0594 app:id/quick_qs_panel}
+10-28 07:48:12.376   833   833 D QS      : Binding the View implementation of the QS footer actions
+10-28 07:48:12.377  1729  1729 I AiAiEcho: SearchContextManagerImpl::setSearchContext resultTypes=[141151] extras=[Bundle[mParcelledData.dataSize=608]] sessionId=[com.google.android.apps.nexuslauncher:ab9d660a-f655-4a43-be01-27198c817b54,0]
+10-28 07:48:12.382  1100  1100 I ContentCaptureHelper: Setting logging level to DEBUG
+10-28 07:48:12.382  1100  1100 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+10-28 07:48:12.382  1100  1100 D ContentCaptureManager: updateWindowAttributes(): window flags=-2137980672
+10-28 07:48:12.383   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cc10
+10-28 07:48:12.387  1100  1919 W Parcel  : Expecting binder but got null!
+10-28 07:48:12.390  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FINISHED
+10-28 07:48:12.391  1100  1100 D MainContentCaptureSession: Destroying session (ctx=com.google.android.apps.nexuslauncher.NexusLauncherActivity@2673646, id=234810161) with 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false]
+10-28 07:48:12.392  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:48:12.392  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@2154590 in: DESTROYED
+10-28 07:48:12.393  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: Unable to register Doze Always on content observer.
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2900)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2371)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9297)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1231)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer.doFrame(Choreographer.java:832)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:48:12.397  1100  1100 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:48:12.401   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.401   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.401   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.401   388   404 W TransactionTracing: Could not find layer id -1
+10-28 07:48:12.407   516  2237 W InputManager-JNI: Input channel object '6401ac3 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:48:12.412  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.412  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:48:12.412  1100  1100 D TISBindHelper: TIS service connected
+10-28 07:48:12.413  1100  1100 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@f3eeea2
+10-28 07:48:12.413  1100  1100 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+10-28 07:48:12.413  1100  1100 D MainContentCaptureSession: handleScheduleFlush(act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=1 (WAITING_FOR_SERVER), disabled=false], reason=FULL): not a timeout reason because mDirectServiceInterface is not ready yet
+10-28 07:48:12.413  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=CONNECTED
+10-28 07:48:12.413  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:48:12.413  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:12.414  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:48:12.414  4944  5054 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@c288538]
+10-28 07:48:12.415  4944  5054 I TestRunner: finished: originalHomeRemainsVisibleWithLargeSystemFonts(com.jarvis.files.UsabilityTest)

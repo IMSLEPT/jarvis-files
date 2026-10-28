@@ -1,0 +1,111 @@
+10-28 07:46:22.802  4944  5054 I TestRunner: started: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+10-28 07:46:22.804  4944 11849 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+10-28 07:46:22.804  4944 11849 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+10-28 07:46:22.805  4944  5054 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+10-28 07:46:22.806  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.808  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.810  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.813  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.821  4944 11846 I Manager : DeviceManager::DeviceManager
+10-28 07:46:22.825  4944 11846 W ServerFlag: Failed to parse result of GetServerConfigurableFlag, errno=34
+10-28 07:46:22.825  4944 11846 I Manager : findAvailableDevices
+10-28 07:46:22.826  4944 11846 W libc    : Access denied finding property "ro.debuggable"
+10-28 07:46:22.822  4944  4944 W pool-5-thread-1: type=1400 audit(0.0:102): avc: denied { read } for name="u:object_r:userdebug_or_eng_prop:s0" dev="tmpfs" ino=292 scontext=u:r:untrusted_app:s0:c174,c256,c512,c768 tcontext=u:object_r:userdebug_or_eng_prop:s0 tclass=file permissive=0 app=com.jarvis.files
+10-28 07:46:22.837  4944 11846 I Manager : Found interface nnapi-sample_all (version = JUST_AN_EXAMPLE)
+10-28 07:46:22.837  4944 11846 I Manager : Found interface nnapi-sample_float_fast (version = JUST_AN_EXAMPLE)
+10-28 07:46:22.837  4944 11846 I Manager : Found interface nnapi-sample_float_slow (version = JUST_AN_EXAMPLE)
+10-28 07:46:22.837  4944 11846 I Manager : Found interface nnapi-sample_minimal (version = JUST_AN_EXAMPLE)
+10-28 07:46:22.837  4944 11846 I Manager : Found interface nnapi-sample_quant (version = JUST_AN_EXAMPLE)
+10-28 07:46:22.846  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.848  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.848  4944 11846 E native  : E0000 00:00:1793173582.848489   11846 proto_data_store.cc:36] Could not open file /data/user/0/com.jarvis.files/files/com.google.mlkit.acceleration/com.google.perception.acceleration_analytics_storage_v2.: No such file or directory
+10-28 07:46:22.860  4944 11852 I native  : I0000 00:00:1793173582.860198   11852 classifier_client_calculator.cc:144] Loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-28 07:46:22.872  4944 11852 I tflite  : Initialized TensorFlow Lite runtime.
+10-28 07:46:22.874  4944 11852 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-28 07:46:22.875  4944 11852 I tflite  : Replacing 30 out of 31 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+10-28 07:46:22.881  4944 11852 I native  : I0000 00:00:1793173582.881771   11852 classifier_client_calculator.cc:151] Finished loading classifier image_understanding/classifier/mobile_ica_V1/1
+10-28 07:46:22.884  4944 11846 I native  : I0000 00:00:1793173582.884636   11846 scheduler.cc:693] ImageMetadata: 910x1137
+10-28 07:46:22.886  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.888  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.929  4944 11847 V FaceDetectorV2Jni: initialize.start()
+10-28 07:46:22.931  4944 11847 I native  : I0000 00:00:1793173582.930673   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_v5.tflite
+10-28 07:46:22.934  4944 11847 I native  : I0000 00:00:1793173582.934959   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_gray_v5.tflite
+10-28 07:46:22.937  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.938  4944 11847 I native  : I0000 00:00:1793173582.938279   11847 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_anchors_v5.pb
+10-28 07:46:22.938  4944 11847 I native  : I0000 00:00:1793173582.938497   11847 face_detector_v2_jni.cc:34] Loading models_bundled/LMprec_600.emd
+10-28 07:46:22.941  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.945  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.947  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.952  4944 11847 I native  : I0000 00:00:1793173582.952129   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLlefteyeclosed_200.emd
+10-28 07:46:22.952  4944 11847 I native  : I0000 00:00:1793173582.952518   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLrighteyeclosed_200.emd
+10-28 07:46:22.953  4944 11847 I native  : I0000 00:00:1793173582.953157   11847 face_detector_v2_jni.cc:34] Loading models_bundled/BCLjoy_200.emd
+10-28 07:46:22.953  4944 11847 I native  : I0000 00:00:1793173582.953525   11847 face_detector_v2_jni.cc:34] Loading models_bundled/MFT_fssd_accgray.pb
+10-28 07:46:22.953  4944 11847 I native  : I0000 00:00:1793173582.953732   11847 face_detector_v2_jni.cc:34] Loading models_bundled/contours.tfl
+10-28 07:46:22.955  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:22.957  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:22.963  4944 11847 I native  : I0000 00:00:1793173582.963214   11847 face_detector_v2_jni.cc:34] Loading models_bundled/blazeface.tfl
+10-28 07:46:22.966  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:22.966  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:22.966  4944  4957 W System  : A resource failed to call close.
+10-28 07:46:22.972  4944 11847 I tflite  : Initialized TensorFlow Lite runtime.
+10-28 07:46:22.974  4944 11847 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-28 07:46:22.974  4944 11847 W tflite  : Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#137 is a dynamic-sized tensor).
+10-28 07:46:22.977  4944 11847 V FaceDetectorV2Jni: initialize.end()
+10-28 07:46:23.005  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:23.274  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:23.281  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:23.283  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:23.290  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:23.293  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:23.545  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:23.555  3862 11860 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:23.581  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:23.582  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:23.597  3862 11865 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:24.500  4944  5054 I JarvisTest: [Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 1665 ms
+10-28 07:46:24.552  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:24.677  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:24.682  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:24.683  3862 11873 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:24.687  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:24.690  3862 11879 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:24.958  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:25.700  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-28 07:46:25.706  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-28 07:46:26.157  4944  5054 I JarvisTest: [Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 1645 ms
+10-28 07:46:26.202  4944 11847 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:26.471  4944 11847 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:27.656  4944  5054 I JarvisTest: [Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 1485 ms
+10-28 07:46:27.703  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:27.708  4944 11849 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+10-28 07:46:27.710  8206  8206 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-28 07:46:27.711  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:27.726  3862 11886 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:27.830  4944 11849 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+10-28 07:46:28.655  8341 11868 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-28 07:46:28.680  8341 11868 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
+10-28 07:46:28.686  8341 11868 I GmsDebugLogger: [73] 1801
+10-28 07:46:28.692  8341 11868 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+10-28 07:46:28.692  8341 11868 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitOcrCommon.optional:231818100800]
+10-28 07:46:28.700  8341 11868 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+10-28 07:46:28.701  8341 11868 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-28 07:46:28.706  8341 11869 W Vision  : Request for optional module download of ocr failed. Request again.
+10-28 07:46:28.707  8341 11869 W Vision  : Would have logged:
+10-28 07:46:28.707  8341 11869 W Vision  : # dsae@37884fe7
+10-28 07:46:28.707  8341 11869 I Vision  : Schedule retrying download ocr at 174394 with backoff 20 seconds
+10-28 07:46:29.416  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:29.425  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:46:29.446  3862 11897 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:46:29.497  2946  3160 I Bugle   : CountryCodeDetector: updateMainDeviceCountry from default subscription network country. detected country: us
+10-28 07:46:29.505  2946  3160 I BugleDataModel: ParticipantFullRefresh: Start participant refresh. refreshMode: SELF_ONLY
+10-28 07:46:29.705  2946  3160 W BugleDataModel: SelfParticipantsData: Failed to update self participants' subscription info. updateCount: 0
+10-28 07:46:29.889  2946  3160 W BugleDataModel: SelfParticipantsData: Failed to update self participants' subscription info. updateCount: 0
+10-28 07:46:29.913  2946  3160 I BugleDataModel: ParticipantFullRefresh: Number of participants refreshed: 0
+10-28 07:46:30.219  4944  5054 I JarvisTest: [Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 2549 ms
+10-28 07:46:30.220  4944 11847 V FaceDetectorV2Jni: closeDetector.start()
+10-28 07:46:30.228  4944 11847 V FaceDetectorV2Jni: closeDetector.end()
+10-28 07:46:30.230  4944 11842 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-28 07:46:30.231  4944 11842 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-28 07:46:30.232  4944  5054 I JarvisTest: [Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+10-28 07:46:30.234  4944  5054 I JarvisTest: [Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+10-28 07:46:30.234  4944  5054 I TestRunner: finished: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)

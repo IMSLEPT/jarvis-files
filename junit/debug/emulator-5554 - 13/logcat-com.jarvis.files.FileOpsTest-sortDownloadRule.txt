@@ -1,0 +1,32 @@
+10-28 07:45:13.970  4944  5054 I TestRunner: started: sortDownloadRule(com.jarvis.files.FileOpsTest)
+10-28 07:45:13.975  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:13.978  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+10-28 07:45:13.981  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:13.990  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:13.993  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:13.998  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:14.016  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+10-28 07:45:14.021  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+10-28 07:45:14.025  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:14.029  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:14.033  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:14.043  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+10-28 07:45:14.051  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:14.053  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 13 uptime_millis: 13 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+10-28 07:45:14.057  3862  8754 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:14.067  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:14.070  4944  5054 I JarvisTest: [Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+10-28 07:45:14.072  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:14.074  3862  8760 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:14.076  1727  6021 I MediaProvider: Deleted 0 0 1 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:14.078  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:14.084  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:14.084  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:14.087  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:14.089  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:14.090  3862  8766 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:14.092  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:14.092  1727  5414 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:14.095  1727  5566 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:14.097  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:14.099  4944  5054 I TestRunner: finished: sortDownloadRule(com.jarvis.files.FileOpsTest)

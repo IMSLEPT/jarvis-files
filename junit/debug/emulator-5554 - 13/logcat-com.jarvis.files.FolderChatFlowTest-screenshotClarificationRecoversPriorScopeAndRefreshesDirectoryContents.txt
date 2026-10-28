@@ -1,0 +1,579 @@
+10-28 07:45:16.644  4944  5054 I TestRunner: started: screenshotClarificationRecoversPriorScopeAndRefreshesDirectoryContents(com.jarvis.files.FolderChatFlowTest)
+10-28 07:45:16.645   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b410
+10-28 07:45:16.650  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:16.666  3862  9066 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:16.675  8341  9024 W ZappDownloader: No successful module downloads for requested features [tflite_dynamite].
+10-28 07:45:16.675  8341  9024 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:264010405100800]
+10-28 07:45:16.677  8341  8850 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+10-28 07:45:16.677  8341  9024 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+10-28 07:45:16.677  8341  9024 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-28 07:45:16.679  8341  8850 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+10-28 07:45:16.679  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:16.680  1824  3178 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+10-28 07:45:16.680  3063  3089 D TrafficStats: tagSocket(109) with statsTag=0x1809, statsUid=-1
+10-28 07:45:16.681  1824  3064 I A       : group apa_head_suggest not present without account in *
+10-28 07:45:16.682  1824  3032 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.004S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M9.055S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT27.605S (TEN_SECONDS_TO_THIRTY_SECONDS))
+10-28 07:45:16.682  1824  3032 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+10-28 07:45:16.688  8341  8850 I TrustedTime: Skip initializing when trusted time feature disabled. [CONTEXT service_id=326 ]
+10-28 07:45:16.689  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:16.690  3063  3089 D TrafficStats: tagSocket(109) with statsTag=0x1809, statsUid=-1
+10-28 07:45:16.690  3063  3089 D TrafficStats: tagSocket(109) with statsTag=0x1809, statsUid=-1
+10-28 07:45:16.691  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:16.694  8341  9024 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+10-28 07:45:16.694  8341  9024 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+10-28 07:45:16.694  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:45:16.695  1100  1100 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:45:16.706  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:16.714   833   919 D EGL_emulation: app_time_stats: avg=283.40ms min=0.88ms max=1328.97ms count=7
+10-28 07:45:16.715  8341  9024 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at vws.p(PG:5)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at vws.b(PG:2)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at xuv.d(PG:4)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvk.c(PG:51)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvk.i(PG:4)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvk.c(PG:80)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvk.j(PG:38)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvk.d(PG:3)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at qhq.run(PG:2)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at qic.run(PG:4)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at xtk.k(PG:5)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at wfa.f(PG:17)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at wfa.c(PG:1)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at wdz.run(PG:21)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at vvz.run(PG:11)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	... 1 more
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: Caused by: dlh
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	at wdz.run(PG:14)
+10-28 07:45:16.724  1818  2346 W YouTubeMusic: 	... 4 more
+10-28 07:45:16.731  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:16.755  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:45:16.755  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:16.756  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:16.756  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:45:16.756  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:16.757  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:16.757   516  1412 W InputManager-JNI: Input channel object 'ce5eb47 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:45:16.763  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:45:16.763  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:16.769   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69a30
+10-28 07:45:16.769   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d691f0
+10-28 07:45:16.769   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d691f0
+10-28 07:45:16.785  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
+10-28 07:45:16.800  4944  5054 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@fa1079f]
+10-28 07:45:16.804  4944  5054 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:45:16.811  8341  9024 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-28 07:45:16.811  8341  9024 I Wear_Controller: onStartup - Wear is not available on this device.
+10-28 07:45:16.813   833   900 D SplashScreenView: Build android.window.SplashScreenView{5fd5830 V.E...... ......ID 0,0-0,0}
+10-28 07:45:16.813   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:45:16.813   833   900 D SplashScreenView: Branding: view: android.view.View{2dd5ca9 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:45:16.815  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:45:16.817  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: PRE_ON_CREATE
+10-28 07:45:16.818  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.820  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.821  1100  1116 W System  : A resource failed to call release.
+10-28 07:45:16.822  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: CREATED
+10-28 07:45:16.822  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@59a0a33
+10-28 07:45:16.822  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: STARTED
+10-28 07:45:16.822  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@59a0a33
+10-28 07:45:16.825   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:45:16.827  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: RESUMED
+10-28 07:45:16.827  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@59a0a33
+10-28 07:45:16.830  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:45:16.845  8341  9027 I Vision  : Supported ABIS: [x86_64]
+10-28 07:45:16.857  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:45:16.886  8206  8310 W .gms.persistent: Long monitor contention with owner lowpool[7] (8544) at void bytb.n(byps, byps, int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6) waiters=0 in int bytb.l(bysm, aphn) for 161ms
+10-28 07:45:16.911  8341  9026 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-28 07:45:16.929  8341  8428 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+10-28 07:45:16.937  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:45:16.938  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:45:16.944   516  1412 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-28 07:45:16.962  8341  9026 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
+10-28 07:45:16.979  8341  9026 I GmsDebugLogger: [73] 1801
+10-28 07:45:16.982  8341  9026 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+10-28 07:45:16.983  8341  9026 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitOcrCommon.optional:231818100800]
+10-28 07:45:16.999  8341  9026 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+10-28 07:45:17.001  3063  3089 W SystemServiceRegistry: No service published for: persistent_data_block
+10-28 07:45:17.003   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ae70
+10-28 07:45:17.007  4924  5048 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-28 07:45:17.009   516   628 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-28 07:45:17.010   516   540 W ziparchive: Unable to open '/data/app/~~z7XqKnO3-9GSOkUL-HT7hQ==/com.jarvis.files-mKOsqefxe-8HLIc32EL4CA==/base.dm': No such file or directory
+10-28 07:45:17.011   516   540 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +202ms
+10-28 07:45:17.011   516   618 I RoleService: Granting default roles...
+10-28 07:45:17.013  1100  1100 D TaplTarget: sendStateEventToTest: 0
+10-28 07:45:17.014  1037  1037 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-28 07:45:17.014  1037  1037 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-28 07:45:17.014  1037  1037 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-28 07:45:17.014  1037  1037 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-28 07:45:17.015   833   833 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-28 07:45:17.017  2946  3295 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@d43f5c6
+10-28 07:45:17.024  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:17.024  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:45:17.024  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:45:17.024  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:45:17.025  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:17.025  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:45:17.025  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:17.025  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:17.027  3063  3089 D EGL_emulation: eglCreateContext: 0x74f735b6d850: maj 3 min 0 rcv 3
+10-28 07:45:17.031   516   537 W InputManager-JNI: Input channel object 'd607b85 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-28 07:45:17.034  1824  3383 I PBSessionCacheImpl: Deleted sessionId[8023830009706287] from persistence.
+10-28 07:45:17.041  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:45:17.042  3862  9116 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:17.042  1100  2284 D OneSearchSuggestProvider: Shut down the binder channel
+10-28 07:45:17.043  1100  1120 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74f6c5bc7580 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-28 07:45:17.047  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:45:17.050   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b410
+10-28 07:45:17.050   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d69af0
+10-28 07:45:17.051   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6b110
+10-28 07:45:17.054  4924  4969 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-28 07:45:17.068  1068  1068 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-28 07:45:17.068  1068  1068 D CarrierSvcBindHelper: No carrier app for: 0
+10-28 07:45:17.068  1068  1068 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-28 07:45:17.083  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:17.094  8206  8994 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-28 07:45:17.099  8206  8301 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-28 07:45:17.100  8206  8301 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-28 07:45:17.107  8206  8994 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-28 07:45:17.118  1727  6021 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:17.125  8341  9057 I PeopleGalProvider: Gal directories started.
+10-28 07:45:17.125  8341  9026 I GmsDebugLogger: [83] 1 [vision.ocr]
+10-28 07:45:17.125  8341  8399 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+10-28 07:45:17.126  8341  9027 W Vision  : Request for optional module download of ocr failed. Request again.
+10-28 07:45:17.129  8341  9027 W Vision  : Would have logged:
+10-28 07:45:17.129  8341  9027 W Vision  : # dsae@44f943d5
+10-28 07:45:17.129  8341  9027 I Vision  : Schedule retrying download ocr at 102815 with backoff 10 seconds
+10-28 07:45:17.133  8341  9057 I PeopleGalProvider: Method 1 completed.
+10-28 07:45:17.133  8341  9057 I PeopleGalProvider: Method 1 finished successfully.
+10-28 07:45:17.134  4944  4944 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:45:17.134  4944  4944 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:45:17.173  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 524 uptime_millis: 524 exec_start_elapsed_seconds: 101 [CONTEXT service_id=218 ]
+10-28 07:45:17.202  8341  8399 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-28 07:45:17.203  8341  8399 I Icing   : Indexing done com.google.android.gms-apps
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.ClearcutInitChimeraIntentService.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.DefaultPriorityClearcutInitChimeraIntentService.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:17.234  8341  8851 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:17.250  8206  8994 W SystemServiceRegistry: No service published for: contexthub
+10-28 07:45:17.262  8206  8994 W ChimeraUtils: Module com.google.android.gms.location__nonwearable missing resource location_module_display_name(0)
+10-28 07:45:17.277  8206  8290 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-28 07:45:17.279  3063  3089 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-28 07:45:17.279  3063  3089 W libc    : Access denied finding property "service.adb.tls.port"
+10-28 07:45:17.274  3063  3063 W binder:3063_3: type=1400 audit(0.0:96): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-28 07:45:17.274  3063  3063 W binder:3063_3: type=1400 audit(0.0:97): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-28 07:45:17.299  8206  8290 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-28 07:45:17.317  8341  8360 I gle.android.gms: Background concurrent copying GC freed 496090(23MB) AllocSpace objects, 309(10MB) LOS objects, 49% free, 16MB/32MB, paused 9.174ms,20us total 787.345ms
+10-28 07:45:17.318  8206  8290 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-28 07:45:17.321  8206  8290 I GCoreUlr: Unbound from all signal providers.
+10-28 07:45:17.324   312  9127 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-28 07:45:17.325   312  9128 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:17.325   312  9129 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:17.325   312  9129 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796a96ecb30
+10-28 07:45:17.325   312  9129 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+10-28 07:45:17.326   312  9128 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96efe10
+10-28 07:45:17.326   312  9128 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+10-28 07:45:17.328  8341  8400 D TrafficStats: tagSocket(132) with statsTag=0x30003000, statsUid=-1
+10-28 07:45:17.328  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 102 [CONTEXT service_id=218 ]
+10-28 07:45:17.328  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 102 [CONTEXT service_id=218 ]
+10-28 07:45:17.332  8206  8206 I GCoreUlr: Unbound from all signal providers.
+10-28 07:45:17.332  8206  8206 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-28 07:45:17.334   312  9131 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-28 07:45:17.334   312  9132 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:17.334   312  9132 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0a50
+10-28 07:45:17.334   312  9132 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-28 07:45:17.337   312  9133 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:17.337   312  9133 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796a96ed0b0
+10-28 07:45:17.337   312  9133 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-28 07:45:17.338  8341  8428 D TrafficStats: tagSocket(133) with statsTag=0x30000408, statsUid=-1
+10-28 07:45:17.342  8341  8400 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-28 07:45:17.342  8341  8400 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-28 07:45:17.342  8341  8400 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+10-28 07:45:17.345  8341  8400 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 07:45:17.346  8341  8400 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.346  8341  8400 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.352  8206  8544 D TrafficStats: tagSocket(154) with statsTag=0x30000407, statsUid=-1
+10-28 07:45:17.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:17.357  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:17.358  4944  4944 D InsetsController: show(ime(), fromIme=false)
+10-28 07:45:17.358  4944  4944 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{f4c929e VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+10-28 07:45:17.359  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+10-28 07:45:17.359  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:17.360  8341  8428 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 07:45:17.360  8341  8428 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.360  8341  8428 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.369  8206  8544 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 663055]
+10-28 07:45:17.370  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:17.371  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+10-28 07:45:17.371  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:17.371  4944  4944 I AssistStructure: Flattened final assist data: 512 bytes, containing 1 windows, 3 views
+10-28 07:45:17.371  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:17.372  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:45:17.372  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+10-28 07:45:17.373  1599  1842 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:17.378  4944  4944 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{f4c929e VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-28 07:45:17.379  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:17.379  1599  1599 W ModuleManager: ModuleManager.loadModule():450 Module erj is not available
+10-28 07:45:17.381  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.381  8206  8206 W AutofillChimeraService: Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+10-28 07:45:17.384  8341  8400 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 07:45:17.384  8341  8400 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.384  8341  8400 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.385  1603  1603 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:675442999
+10-28 07:45:17.397  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 45 uptime_millis: 45 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.400  4944  4944 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+10-28 07:45:17.400  4944  4944 D Autofill Status:
+10-28 07:45:17.400  4944  4944 D Autofill Status: Did you set up autofill?
+10-28 07:45:17.400  4944  4944 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+10-28 07:45:17.400  4944  4944 D Autofill Status: 2. Pick a service
+10-28 07:45:17.400  4944  4944 D Autofill Status:
+10-28 07:45:17.400  4944  4944 D Autofill Status: Did you add an account?
+10-28 07:45:17.400  4944  4944 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+10-28 07:45:17.400  4944  4944 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+10-28 07:45:17.400  4944  4944 D Autofill Status: 3. Add your account
+10-28 07:45:17.403  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-28 07:45:17.404  1599  1599 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+10-28 07:45:17.404  1599  1599 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+10-28 07:45:17.405  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+10-28 07:45:17.405  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+10-28 07:45:17.406  8341  8428 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-28 07:45:17.406  8341  8428 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:17.406  8341  8428 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.409  1599  5681 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():205 maybeScheduleAutoPackDownloadForFallback()
+10-28 07:45:17.409  1599  5681 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():195 maybeScheduleAutoPackDownload() for language tag en-US
+10-28 07:45:17.410  1599  1599 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1003 inline flag updated to:false
+10-28 07:45:17.411  6750  8208 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10106; state: ENABLED
+10-28 07:45:17.414  1599  1599 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-28 07:45:17.418  8206  8290 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 663105]
+10-28 07:45:17.419  8206  8290 W WakeLock: GCM_CONN_ALARM counter does not exist
+10-28 07:45:17.422  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+10-28 07:45:17.422  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:17.422  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_OPTIONAL
+10-28 07:45:17.422  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:17.423  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = BODY, shownType = SHOW_MANDATORY
+10-28 07:45:17.423  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:17.423  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = FLOATING_CANDIDATES, shownType = HIDE
+10-28 07:45:17.423  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = false
+10-28 07:45:17.423  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+10-28 07:45:17.424  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:17.424  8206  8290 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 663111]
+10-28 07:45:17.425  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:17.425  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+10-28 07:45:17.426  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:17.426  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:17.427  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+10-28 07:45:17.428  1599  1599 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():383 No private IME option set to start voice input.
+10-28 07:45:17.433  8341  8341 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.433  8341  8341 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.437  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.456  4944  4944 D InsetsController: show(ime(), fromIme=true)
+10-28 07:45:17.462  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.465  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 32 uptime_millis: 32 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.475  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:17.482  8341  8341 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.482  8341  8341 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.488  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:17.488  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.493  1599  2360 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():457 setKeyboardLayout()
+10-28 07:45:17.495  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_MANDATORY_WITH_ANIMATION
+10-28 07:45:17.495  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:17.496  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 13 uptime_millis: 13 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.528  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.529  8206  8290 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+10-28 07:45:17.529  8206  8290 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:154)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at cdoy.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:17.529  8206  8290 W TapAndPay: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:17.545  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 3 elapsed_millis: 24 uptime_millis: 24 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.557  8341  8428 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-28 07:45:17.560  8341  8428 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-28 07:45:17.580  8341  8428 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 103267.
+10-28 07:45:17.581  8206  8542 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (max-target-p, reflection, denied)
+10-28 07:45:17.584  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.586  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 24 uptime_millis: 24 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.611  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.617  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.642  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.658  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:17.658  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:17.658  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:17.667  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 36 uptime_millis: 36 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.674  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+10-28 07:45:17.675  1599  1599 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+10-28 07:45:17.678  1599  1599 I InputBundle: InputBundle.consumeEvent():923 Skip consuming an event as keyboard status is 0
+10-28 07:45:17.679  1599  1599 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-28 07:45:17.679  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+10-28 07:45:17.680  1599  1599 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-28 07:45:17.681  1599  1842 W ModuleManager: ModuleManager.loadModule():450 Module jjj is not available
+10-28 07:45:17.683  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+10-28 07:45:17.683  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:17.683  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:17.687  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:45:17.729   833   919 D EGL_emulation: app_time_stats: avg=253.03ms min=51.77ms max=619.63ms count=4
+10-28 07:45:17.784  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.788  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.805  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.805  8206  8290 W ChimeraUtils: Module com.google.android.gms.tapandpay missing resource null(0)
+10-28 07:45:17.813  8341  8415 E Pay     : [SeTosMigration] payCapabilities gating flag: enabled [CONTEXT service_id=198 ]
+10-28 07:45:17.813  8341  8415 E Pay     : [SeTosMigration] payCapabilities RoW use_wallet: true, use_wallet_jp: false [CONTEXT service_id=198 ]
+10-28 07:45:17.813  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.846  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.847  8341  8415 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-28 07:45:17.847  8341  8415 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-28 07:45:17.848  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.873  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.874  8341  8399 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-28 07:45:17.875  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.891  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.898  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.901   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ba70
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at vws.p(PG:5)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at vws.b(PG:2)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at xuv.d(PG:4)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvk.c(PG:51)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvk.i(PG:4)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvk.c(PG:80)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvk.j(PG:38)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvk.d(PG:3)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at qhq.run(PG:2)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at qic.run(PG:4)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at xtk.k(PG:5)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at wfa.f(PG:17)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at wfa.c(PG:1)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at wdz.run(PG:21)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at vvz.run(PG:11)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	... 1 more
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: Caused by: dlh
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	at wdz.run(PG:14)
+10-28 07:45:17.912  1818  2346 W YouTubeMusic: 	... 4 more
+10-28 07:45:17.933  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.939  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.949  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:17.968  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:17.968  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:17.971  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:17.983  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:18.001  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:18.014  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:18.026  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:18.028  8206  8543 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-28 07:45:18.054  3862  3862 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+10-28 07:45:18.063  3862  9152 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-28 07:45:18.084  4944  4944 D InsetsController: show(ime(), fromIme=false)
+10-28 07:45:18.084  4944  4944 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{f4c929e VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+10-28 07:45:18.084  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+10-28 07:45:18.084  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:18.085  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:18.085  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:45:18.086  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+10-28 07:45:18.087  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:18.087  1599  1599 W ModuleManager: ModuleManager.loadModule():450 Module erj is not available
+10-28 07:45:18.088  1599  1842 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:18.098  4944  4944 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{f4c929e VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-28 07:45:18.100  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+10-28 07:45:18.100  1599  1599 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+10-28 07:45:18.101  1599  1599 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+10-28 07:45:18.101  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+10-28 07:45:18.101  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+10-28 07:45:18.101  1599  5681 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():205 maybeScheduleAutoPackDownloadForFallback()
+10-28 07:45:18.101  1599  5681 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():195 maybeScheduleAutoPackDownload() for language tag en-US
+10-28 07:45:18.101  1599  1599 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1003 inline flag updated to:false
+10-28 07:45:18.105  1599  1599 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-28 07:45:18.107  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+10-28 07:45:18.107  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:18.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_OPTIONAL
+10-28 07:45:18.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:18.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = BODY, shownType = SHOW_MANDATORY
+10-28 07:45:18.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:18.107  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = FLOATING_CANDIDATES, shownType = HIDE
+10-28 07:45:18.108  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = false
+10-28 07:45:18.108  1599  1599 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+10-28 07:45:18.108  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:18.109  1599  1599 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+10-28 07:45:18.109  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+10-28 07:45:18.109  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:18.109  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:18.109  1599  1599 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+10-28 07:45:18.110  1599  1599 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():383 No private IME option set to start voice input.
+10-28 07:45:18.123  8341  8341 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.123  8341  8341 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.125  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.132  4944  4944 D InsetsController: show(ime(), fromIme=true)
+10-28 07:45:18.132  1599  1599 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+10-28 07:45:18.134  1599  2360 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():457 setKeyboardLayout()
+10-28 07:45:18.142  8341  8341 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.142  8341  8341 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.144  8341  8341 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-28 07:45:18.158  8341  8399 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-28 07:45:18.160  8341  8399 I Icing   : Indexing done com.google.android.gms-apps
+10-28 07:45:18.165  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_MANDATORY_WITH_ANIMATION
+10-28 07:45:18.165  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+10-28 07:45:18.202  4944  5543 D EGL_emulation: app_time_stats: avg=50.06ms min=7.51ms max=222.31ms count=23
+10-28 07:45:18.315  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:18.315  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:18.316  1729  1896 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-28 07:45:18.335  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+10-28 07:45:18.336  1599  1599 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+10-28 07:45:18.337  1599  1599 I InputBundle: InputBundle.consumeEvent():923 Skip consuming an event as keyboard status is 0
+10-28 07:45:18.337  1599  1599 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+10-28 07:45:18.337  1599  1599 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+10-28 07:45:18.338  1599  1599 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+10-28 07:45:18.338  1599  1842 W ModuleManager: ModuleManager.loadModule():450 Module jjj is not available
+10-28 07:45:18.338  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+10-28 07:45:18.338  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:18.338  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:18.338  1599  1599 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+10-28 07:45:18.521  1727  5566 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:18.528  1727  2046 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:18.529   516  3246 D ConnectivityService: requestNetwork for uid/pid:10119/1824 activeRequest: null callbackRequest: 146 [NetworkRequest [ REQUEST id=146, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-28 07:45:18.531  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:18.532   312   353 I netd    : networkSetPermissionForNetwork(101, 0) <1.95ms>
+10-28 07:45:18.536   516   775 D ConnectivityService: NetReassign [146 : null → 101] [c 1] [a 6] [i 0]
+10-28 07:45:18.537   516   775 D ConnectivityService: reportNetworkConnectivity(100, false) by 10119
+10-28 07:45:18.537  1014  2316 D NetworkMonitor/100: Forcing reevaluation for UID 10119. Dns signal count: 0
+10-28 07:45:18.543   833   900 D SplashScreenView: Build android.window.SplashScreenView{d507e52 V.E...... ......ID 0,0-0,0}
+10-28 07:45:18.543   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:45:18.543   833   900 D SplashScreenView: Branding: view: android.view.View{72ef523 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:45:18.544   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:45:18.547  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: PAUSED
+10-28 07:45:18.547  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@59a0a33
+10-28 07:45:18.567   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ead0
+10-28 07:45:18.570  8206  8542 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-28 07:45:18.570  1014  9158 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.571  1014  9158 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.572  1014  9157 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.572   312  9160 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:45:18.572   312  9160 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f4550
+10-28 07:45:18.574  1014  9157 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.576   312  9161 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:45:18.576   312  9161 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f6770
+10-28 07:45:18.577  8206  8544 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-28 07:45:18.579   312  9163 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:45:18.579   312  9163 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0890
+10-28 07:45:18.579  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.580  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.580  1014  9158 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 23ms OK 142.251.150.120,2001:4860:4826:7800::
+10-28 07:45:18.586   312  9164 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-28 07:45:18.587   312  9166 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:18.587   312  9166 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f4550
+10-28 07:45:18.587   312  9166 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+10-28 07:45:18.588   312  9165 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-28 07:45:18.588   312  9167 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:18.588   312  9167 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796896f6770
+10-28 07:45:18.588   312  9167 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+10-28 07:45:18.589   312  9165 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796996f61d0
+10-28 07:45:18.589  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.591  1014  1014 D TrafficStats: tagSocket(68) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.592  5574  5593 W Parcel  : Expecting binder but got null!
+10-28 07:45:18.593  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.594  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.594  1014  9158 D TrafficStats: tagSocket(69) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.595  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.596  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.597  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.597  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.598  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.599  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.603  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.604  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.609  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.610  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.611  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: STOPPED
+10-28 07:45:18.612  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@59a0a33
+10-28 07:45:18.612  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.614  1014  1014 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-28 07:45:18.615   516   540 W ziparchive: Unable to open '/data/app/~~OY4peFGDh1zgiSRcHLXUMQ==/com.jarvis.files.test-AZf7dgs3OZ3t3bPsANYwDg==/base.dm': No such file or directory
+10-28 07:45:18.615   516   540 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +75ms
+10-28 07:45:18.616  1014  9157 D NetworkMonitor/100: PROBE_DNS www.google.com 43ms OK 142.251.150.119,142.251.157.119,142.251.154.119,142.251.153.119,142.251.151.119,142.251.155.119,142.251.156.119,142.251.152.119,2001:4860:482b:7700::,2001:4860:482c:7700::,2001:4860:4828:7700::,2001:4860:482d:7700::,2001:4860:4827:7700::,2001:4860:4829:7700::,2001:4860:4826:7700::,2001:4860:482a:7700::
+10-28 07:45:18.624   312  9169 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-28 07:45:18.625   312  9171 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:18.625   312  9171 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f0890
+10-28 07:45:18.625   312  9171 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+10-28 07:45:18.625   312  9172 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:18.625   312  9172 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796996f61d0
+10-28 07:45:18.625   312  9172 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+10-28 07:45:18.626  4944  4944 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+10-28 07:45:18.628  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@59a0a33 in: DESTROYED
+10-28 07:45:18.628  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:45:18.628  1014  9157 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+10-28 07:45:18.631  1014  9158 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=49ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Wed, 28 Oct 2026 07:45:18 GMT], X-Android-Received-Millis=[1793173518630], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1793173518613]}
+10-28 07:45:18.631  4944  5054 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@fa1079f]
+10-28 07:45:18.643   516  3246 W InputManager-JNI: Input channel object '6e228e8 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:45:18.644  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:45:18.646   516  1770 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-28 07:45:18.646  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:45:18.646  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode 1
+10-28 07:45:18.646  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:45:18.646  1729  1806 I AiAiEcho: Predicting[0]:
+10-28 07:45:18.646  1729  1806 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-28 07:45:18.647  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-28 07:45:18.647  1729  1806 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-28 07:45:18.648  1100  2284 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=81, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@ae99fff
+10-28 07:45:18.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bfb0
+10-28 07:45:18.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e2f0
+10-28 07:45:18.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6cdf0
+10-28 07:45:18.651   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6e2f0
+10-28 07:45:18.651  4944  5054 I TestRunner: finished: screenshotClarificationRecoversPriorScopeAndRefreshesDirectoryContents(com.jarvis.files.FolderChatFlowTest)

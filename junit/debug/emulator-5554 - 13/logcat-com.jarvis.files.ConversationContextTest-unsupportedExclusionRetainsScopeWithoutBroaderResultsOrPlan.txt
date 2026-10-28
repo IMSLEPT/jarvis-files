@@ -1,0 +1,44 @@
+10-28 07:45:04.503  4944  5054 I TestRunner: started: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
+10-28 07:45:04.513  1158  2517 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.522  1158  2516 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.542  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.555  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.558  1824  1824 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task ZIP_DOWNLOAD_PROCESSOR.
+10-28 07:45:04.560  1824  3005 I ModelDnldProcssHelpr: #handleDownloadComplete, downloadId=1
+10-28 07:45:04.560  1824  3005 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-28 07:45:04.560  1824  3005 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-28 07:45:04.562  1824  3009 E DownloadManagerWrapper: Can't find downloadId=1
+10-28 07:45:04.567  1824  3005 W LanguagePackUpdateContr: Querying download manager failed for ID : 1
+10-28 07:45:04.572  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.584  1627  1751 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+10-28 07:45:04.585  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:04.601  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.602  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-28 07:45:04.604  1824  3159 I A       : Refusing EXCLUSIVE task 75, it is already pending. Try again in 659 seconds.
+10-28 07:45:04.605  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.609  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.611  1727  5566 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.614  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:04.615  2896  3838 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.ims
+10-28 07:45:04.616  2896  2896 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.ims which doesn't use ProcessStable flags.
+10-28 07:45:04.623  1158  2516 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.625  2896  3838 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.ims
+10-28 07:45:04.628  1158  5850 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.637  1075  1075 I PhenotypeBackgroundRecv: Skipping com.google.android.setupwizard which doesn't use ProcessStable flags.
+10-28 07:45:04.648  1075  2817 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.setupwizard
+10-28 07:45:04.656  1850  2107 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.deskclock
+10-28 07:45:04.662  1158  6507 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+10-28 07:45:04.666  1158  6507 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+10-28 07:45:04.667  1727  2041 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.670  1158  6507 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:04.670  1158  6507 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+10-28 07:45:04.671  1158  6507 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+10-28 07:45:04.671  1158  6507 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+10-28 07:45:04.671  1158  6507 I NamespaceManager: Package com.android.media name not found! Using module version.
+10-28 07:45:04.673  1158  6507 I NamespaceManager: Package 1 name not found! Using module version.
+10-28 07:45:04.680  1727  6021 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.685  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.688  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.692  1158  5850 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 90 [CONTEXT service_id=218 ]
+10-28 07:45:04.701  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:04.703  4944  5054 I TestRunner: finished: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)

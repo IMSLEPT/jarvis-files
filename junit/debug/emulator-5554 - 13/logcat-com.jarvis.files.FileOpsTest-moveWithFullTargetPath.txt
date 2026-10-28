@@ -1,0 +1,33 @@
+10-28 07:45:11.443  4944  5054 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+10-28 07:45:11.449  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.450  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.450  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.458  8206  8310 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10120; state: ENABLED
+10-28 07:45:11.460  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.465  1727  2046 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.476  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.479  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.504  8206  8547 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.525  8206  8545 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 44 uptime_millis: 44 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.535  1727  6296 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:45:11.537  4944  5054 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+10-28 07:45:11.549  4944  5054 I JarvisTest: [FileOps] OK destinazione come percorso completo
+10-28 07:45:11.551  1727  5921 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+10-28 07:45:11.551  1727  5921 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:45:11.553  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+10-28 07:45:11.553  8206  8290 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.555  1727  2041 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.561  8206  8545 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 97 [CONTEXT service_id=218 ]
+10-28 07:45:11.562  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf to content://media/external_primary/file/1000000080
+10-28 07:45:11.563  1727  2041 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:45:11.566  1727  5921 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf
+10-28 07:45:11.567  1727  5921 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-28 07:45:11.567  1727  2046 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.567  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/bolletta_enel_marzo.pdf to null
+10-28 07:45:11.572  4944  6052 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/Bolletta Enel marzo.pdf to content://media/external_primary/file/1000000079
+10-28 07:45:11.573  8206  8533 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-28 07:45:11.574  1727  6296 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.574  8206  8533 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+10-28 07:45:11.575  8206  8533 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+10-28 07:45:11.577  1727  5414 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:45:11.578  4944  5054 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)

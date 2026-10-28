@@ -1,0 +1,22 @@
+10-28 07:44:35.209  4944  5054 I TestRunner: started: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)
+10-28 07:44:35.250  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:44:35.265  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:44:35.289  1729  2411 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 2565038 bytes from https://storage.googleapis.com/captions/sound_recognition_v1.zip.
+10-28 07:44:35.290  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:44:35.290  1729  2117 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 18481 ms. elapsed since start
+10-28 07:44:35.290  1729  2117 I SP.AiAi : Download stopped: captions_i18n_v0_mandatory:sound_recognition_v1, succeeded, size: 2565038
+10-28 07:44:35.302  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:44:35.325  1727  2041 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:44:35.326  1729  2117 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-28 07:44:35.331  1727  4817 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:44:35.351  1727  5414 W MediaProvider: isAppCloneUserPair for user 0: false
+10-28 07:44:35.356  1729  2117 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-28 07:44:35.359  1729  2117 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 5 candidates
+10-28 07:44:35.362  1729  1729 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+10-28 07:44:35.377  1729  2117 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 7 scheduled, 7 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:actions-ranking-table-211005 * {W:b:u:l, bg}, manifests:text-classifier-annotator-1687347939 * {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 * {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 * {W:b:u:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 * {W:b:u:l, bg}
+10-28 07:44:35.381  4998  5028 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-28 07:44:35.387  1727  5414 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:44:35.398  1727  2041 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+10-28 07:44:35.401  1727  4817 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+10-28 07:44:35.403  1729  2117 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-28 07:44:35.404  4944  5054 I TestRunner: finished: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)

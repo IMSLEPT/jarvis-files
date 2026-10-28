@@ -1,0 +1,575 @@
+10-28 07:45:08.156  4944  5054 I TestRunner: started: homeSearchOpensDocumentSearch(com.jarvis.files.DesignFlowTest)
+10-28 07:45:08.158  1824  1824 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+10-28 07:45:08.166  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:08.192   516   543 W InputManager-JNI: Input channel object 'cbb5fc2 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+10-28 07:45:08.194  1824  3178 I A       : Using proto config with mendel
+10-28 07:45:08.196   833   919 D EGL_emulation: app_time_stats: avg=257.86ms min=12.99ms max=956.37ms count=7
+10-28 07:45:08.206  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:08.206  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:08.206  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:45:08.206  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:08.206  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:08.207  1100  1100 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+10-28 07:45:08.208   516  3319 W InputManager-JNI: Input channel object '30c7b41 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:45:08.210  1729  1729 W ContentCaptureService: handleSendEvents() received empty list of events
+10-28 07:45:08.210   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bbf0
+10-28 07:45:08.210   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c490
+10-28 07:45:08.210   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6c490
+10-28 07:45:08.211  1405  4008 I ChimeraCfgMgr: Updating module config: container:2318189190800 -> container:2318189190800
+10-28 07:45:08.212  1405  4008 E DowngradeHelper: isModuleDowngradeRequired false
+10-28 07:45:08.218   516  5600 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-28 07:45:08.220   516  5600 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-28 07:45:08.221   516  5600 D EGL_emulation: eglCreateContext: 0x74f735b8de90: maj 3 min 0 rcv 3
+10-28 07:45:08.224   516  5600 D EGL_emulation: eglMakeCurrent: 0x74f735b8de90: ver 3 0 (tinfo 0x74f947186100) (first time)
+10-28 07:45:08.225   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a870
+10-28 07:45:08.225   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d67b10
+10-28 07:45:08.229  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:08.231  1824  3032 I A       : group apa_head_suggest not present without account in *
+10-28 07:45:08.237  1824  3032 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.069S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M0.539S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT19.089S (TEN_SECONDS_TO_THIRTY_SECONDS))
+10-28 07:45:08.238  1824  3032 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+10-28 07:45:08.259  1405  4008 I GmsDebugLogger: [46] container:2318189190800
+10-28 07:45:08.261  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:08.263  1405  4008 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.rcs
+10-28 07:45:08.263  1405  4008 I Process : Sending signal. PID: 1405 SIG: 9
+10-28 07:45:08.265  1158  3581 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.rcs
+10-28 07:45:08.265  1158  3581 I Process : Sending signal. PID: 1158 SIG: 9
+10-28 07:45:08.270  5204  5204 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.core_download
+10-28 07:45:08.270  5204  5204 I Process : Sending signal. PID: 5204 SIG: 9
+10-28 07:45:08.308   516   553 I libprocessgroup: Successfully killed process cgroup uid 10120 pid 5204 in 0ms
+10-28 07:45:08.309   316   316 I Zygote  : Process 5204 exited due to signal 9 (Killed)
+10-28 07:45:08.321   316   316 I Zygote  : Process 1158 exited due to signal 9 (Killed)
+10-28 07:45:08.327  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:08.350   516   553 I libprocessgroup: Successfully killed process cgroup uid 10120 pid 1158 in 0ms
+10-28 07:45:08.350   316   316 I Zygote  : Process 1405 exited due to signal 9 (Killed)
+10-28 07:45:08.362  4944  5054 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+10-28 07:45:08.371   316   316 D Zygote  : Forked child process 8206
+10-28 07:45:08.376   516   540 I ServiceWatcher: [GeocoderProxy] disconnected from 10120/com.google.android.gms/.location.geocode.GeocodeService@2
+10-28 07:45:08.376   516   540 I ServiceWatcher: [network] disconnected from 10120/com.google.android.gms/com.google.android.location.network.NetworkLocationService@2
+10-28 07:45:08.376   516   540 I ServiceWatcher: [HardwareActivityRecognitionProxy] disconnected from 10120/com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService@1
+10-28 07:45:08.377   516   540 I ServiceWatcher: [GeofenceProxy] disconnected from 10120/com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService@1
+10-28 07:45:08.377   516   540 I ServiceWatcher: [RealLocationTimeZoneProviderProxy] disconnected from 10120/com.google.android.gms/.geotimezone.GeoTimeZoneService@1
+10-28 07:45:08.377  8206  8206 I .gms.persistent: Using CollectorTypeCC GC.
+10-28 07:45:08.378  8206  8206 W .gms.persistent: Unexpected CPU variant for x86: x86_64.
+10-28 07:45:08.378  8206  8206 W .gms.persistent: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-28 07:45:08.379   516   540 I ServiceWatcher: [fused] disconnected from 10120/com.google.android.gms/com.google.android.location.fused.FusedLocationService@1
+10-28 07:45:08.381  1037  1506 D BtGatt.GattService: Binder is dead - unregistering scanner (2)!
+10-28 07:45:08.381  1037  1110 D BtGatt.GattService: Binder is dead - unregistering scanner (1)!
+10-28 07:45:08.381   516   775 D ConnectivityService: releasing NetworkRequest [ REQUEST id=127, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ] (release request)
+10-28 07:45:08.383  1037  1110 D BtGatt.GattService: stopScan() - queue size =2
+10-28 07:45:08.383  1037  1506 D BtGatt.GattService: stopScan() - queue size =2
+10-28 07:45:08.383  1037  1110 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-28 07:45:08.383  1037  1110 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-28 07:45:08.383  1037  1381 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10120]]
+10-28 07:45:08.384  1037  1381 D BtGatt.ScanManager: stop gattClientScanNative
+10-28 07:45:08.384  1037  1381 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-28 07:45:08.384  1037  1381 D BtGatt.ScanManager: app died, unregister scanner - 1
+10-28 07:45:08.384  1037  1387 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+10-28 07:45:08.384  1037  1381 D BtGatt.GattService: unregisterScanner() - scannerId=1
+10-28 07:45:08.384  1037  1381 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:1
+10-28 07:45:08.385  4944  5054 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@e00408c]
+10-28 07:45:08.389   407   429 I adbd    : jdwp connection from 8206
+10-28 07:45:08.389  4944  5054 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-28 07:45:08.396  1037  1506 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-28 07:45:08.396  1037  1506 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-28 07:45:08.397  1037  1381 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+10-28 07:45:08.397  1037  1381 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10120]]
+10-28 07:45:08.397  1037  1381 D BtGatt.ScanManager: stop gattClientScanNative
+10-28 07:45:08.397  1037  1381 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-28 07:45:08.397  1037  1387 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+10-28 07:45:08.399  1037  1381 D BtGatt.ScanManager: app died, unregister scanner - 2
+10-28 07:45:08.401   516   553 I libprocessgroup: Successfully killed process cgroup uid 10120 pid 1405 in 0ms
+10-28 07:45:08.406   833   900 D SplashScreenView: Build android.window.SplashScreenView{2205b5f V.E...... ......ID 0,0-0,0}
+10-28 07:45:08.406   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:45:08.406   833   900 D SplashScreenView: Branding: view: android.view.View{e1809ac G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:45:08.410   516   772 W WificondScannerImpl: stopBatchedScan() is not supported
+10-28 07:45:08.412  1037  1381 D BtGatt.GattService: unregisterScanner() - scannerId=2
+10-28 07:45:08.412   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:45:08.413  1037  1381 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:2
+10-28 07:45:08.415  4553  4553 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10105; state: ENABLED
+10-28 07:45:08.430  8206  8206 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10120; state: ENABLED
+10-28 07:45:08.443  8206  8206 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:08.444  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: PRE_ON_CREATE
+10-28 07:45:08.444  4944  4944 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+10-28 07:45:08.445  8206  8206 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:08.445   316   316 D Zygote  : Forked child process 8230
+10-28 07:45:08.446  1100  1100 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+10-28 07:45:08.446  8206  8206 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:08.448  8206  8206 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:08.450  8206  8206 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-28 07:45:08.455  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: CREATED
+10-28 07:45:08.455  4944  4944 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@fb75f90
+10-28 07:45:08.458  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: STARTED
+10-28 07:45:08.458  8230  8230 I ecovery_process: Using CollectorTypeCC GC.
+10-28 07:45:08.458  4944  4944 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@fb75f90
+10-28 07:45:08.458  8230  8230 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+10-28 07:45:08.458  8230  8230 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-28 07:45:08.460  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: RESUMED
+10-28 07:45:08.460  4944  4944 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@fb75f90
+10-28 07:45:08.462   407   429 I adbd    : jdwp connection from 8230
+10-28 07:45:08.463  4944  5543 W Parcel  : Expecting binder but got null!
+10-28 07:45:08.470   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d570
+10-28 07:45:08.470   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d697f0
+10-28 07:45:08.472  8230  8230 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10142; state: ENABLED
+10-28 07:45:08.473  8206  8206 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-28 07:45:08.473  4944  4944 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+10-28 07:45:08.480  8230  8230 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:08.481  8230  8230 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:08.482  8230  8230 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+10-28 07:45:08.485  8230  8230 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+10-28 07:45:08.489  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-28 07:45:08.489  1100  1100 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-28 07:45:08.492  8230  8230 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+10-28 07:45:08.492  8230  8230 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+10-28 07:45:08.492  8230  8230 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-28 07:45:08.493  8230  8230 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.493  8230  8230 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.498  8206  8206 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.gms' set to: 'default'
+10-28 07:45:08.498  8206  8206 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+10-28 07:45:08.498  8206  8206 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-28 07:45:08.499  8206  8206 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-28 07:45:08.499  8206  8206 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-28 07:45:08.506  8230  8230 I ecovery_process: System.exit called, status: 0
+10-28 07:45:08.506  8230  8230 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-28 07:45:08.515  8206  8206 I Safeboot: Checking safeboot...
+10-28 07:45:08.516   516   553 I libprocessgroup: Successfully killed process cgroup uid 10142 pid 8230 in 0ms
+10-28 07:45:08.521   316   316 I Zygote  : Process 8230 exited cleanly (0)
+10-28 07:45:08.525  1729  1729 I AiAi    : onTrimMemory() with level 5
+10-28 07:45:08.536  1599  1599 I AppBase : AppBase.onTrimMemory():497 onTrimMemory(): 5
+10-28 07:45:08.536  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onTrimMemory():4406 onTrimMemory(): 5
+10-28 07:45:08.537  4553  5696 I ConfigUpdater: Update started
+10-28 07:45:08.540  8206  8206 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10120; state: ENABLED
+10-28 07:45:08.549   516   762 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-28 07:45:08.550   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bb30
+10-28 07:45:08.570   516   540 W ziparchive: Unable to open '/data/app/~~z7XqKnO3-9GSOkUL-HT7hQ==/com.jarvis.files-mKOsqefxe-8HLIc32EL4CA==/base.dm': No such file or directory
+10-28 07:45:08.571   516   540 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +176ms
+10-28 07:45:08.572  8206  8206 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-28 07:45:08.573  8206  8206 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-28 07:45:08.573  8206  8206 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+10-28 07:45:08.576  8206  8206 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-28 07:45:08.576  1100  2284 D OneSearchSuggestProvider: Shut down the binder channel
+10-28 07:45:08.577  1100  1244 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74f6c5bd99d0 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-28 07:45:08.579  1824  3186 I PBSessionCacheImpl: Deleted sessionId[8023830009706278] from persistence.
+10-28 07:45:08.583  1824  3178 W SearchServiceCore: Abort, client detached.
+10-28 07:45:08.583  8206  8206 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-28 07:45:08.591  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+10-28 07:45:08.592  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+10-28 07:45:08.592  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+10-28 07:45:08.592  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+10-28 07:45:08.592  1599  1599 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+10-28 07:45:08.593   516   762 W InputManager-JNI: Input channel object '38a2b92 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+10-28 07:45:08.609  8206  8261 I GmsApplication: Registering the BackgroundBroadcastReceiverSupport receiver.
+10-28 07:45:08.615   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6a510
+10-28 07:45:08.615   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d68770
+10-28 07:45:08.627  2085  8265 D DownloadManager: [6] Starting
+10-28 07:45:08.629  8206  8268 I ProcessStableCheckInFix: Running fixer!
+10-28 07:45:08.629  4553  5696 I ConfigUpdater: Update started
+10-28 07:45:08.632  8206  8268 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.test_process_stable, using defaults.
+10-28 07:45:08.640   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6d4b0
+10-28 07:45:08.640   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d67f30
+10-28 07:45:08.640   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bcb0
+10-28 07:45:08.640   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6bcb0
+10-28 07:45:08.640   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6aab0
+10-28 07:45:08.642  8206  8266 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phenotype, using defaults.
+10-28 07:45:08.643  8206  8206 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10120; state: ENABLED
+10-28 07:45:08.643  8206  8206 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 94187, Startup latency (ms): 143, Is system user: true
+10-28 07:45:08.643  2085  8265 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.644  2085  8265 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.644  8206  8261 I GmsReceiverSupport: Registered Receiver for 15+1 IntentFilters
+10-28 07:45:08.644  8206  8206 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+10-28 07:45:08.644  8206  8261 I Watchcat: Started
+10-28 07:45:08.646   312  8273 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+10-28 07:45:08.646   312  8275 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-28 07:45:08.646   312  8275 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796a96ecdf0
+10-28 07:45:08.646   312  8275 I resolv  : doQuery: rcode=0, ancount=8, return value=161
+10-28 07:45:08.646  8206  8261 I GMS_MM_Logger: Start time: 196651
+10-28 07:45:08.646  8206  8261 I GMS_MM_Logger: Started.
+10-28 07:45:08.647   312  8274 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-28 07:45:08.647   312  8274 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7796b96f3290
+10-28 07:45:08.647   312  8274 I resolv  : doQuery: rcode=0, ancount=8, return value=257
+10-28 07:45:08.648  2085  8265 D TrafficStats: tagSocket(75) with statsTag=0xffffff01, statsUid=10105
+10-28 07:45:08.650  2085  8278 D DownloadManager: [7] Starting
+10-28 07:45:08.650  8206  8266 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+10-28 07:45:08.650  8206  8266 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+10-28 07:45:08.662  8206  8266 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/database/sqlite/SQLiteDatabase;->getThreadSession()Landroid/database/sqlite/SQLiteSession;
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2098)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2081)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at bwdd.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at bwdv.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at com.google.android.gms.phenotype.provider.ConfigurationChimeraProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):26)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at hfr.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1219)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1151)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1107)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvdf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvdk.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvdh.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvdh.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvep.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):33)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at cvep.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at ehbu.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at ehbr.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at com.google.android.chimera.BoundService.getStartIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at abnq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at abnp.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at abmq.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at abmq.x(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at aava.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at aave.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at aave.handleMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):61)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at avye.ll(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at avye.dispatchMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.662  8206  8266 D StrictMode: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:45:08.665  8206  8266 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/database/sqlite/SQLiteSession;->beginTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2098)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at java.lang.Class.getDeclaredMethod(Class.java:2081)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at bwdd.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at bwdv.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at com.google.android.gms.phenotype.provider.ConfigurationChimeraProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):26)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at zde.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at hfr.superQuery(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at hfr.query(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1219)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1151)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1107)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvdf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvdk.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvdh.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvdh.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvep.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):33)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at cvep.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at ehbu.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at ehbr.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at com.google.android.chimera.BoundService.getStartIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at abnq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at abnp.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at abmq.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at abmq.x(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at aava.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at aave.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at aave.handleMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):61)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at avye.ll(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at avye.dispatchMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.665  8206  8266 D StrictMode: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-28 07:45:08.666  4553  5696 I ConfigUpdater: Update started
+10-28 07:45:08.667  2085  8278 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.667  2085  8278 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.671  4944  4944 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+10-28 07:45:08.671  4944  4944 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-28 07:45:08.673  2085  8278 D TrafficStats: tagSocket(78) with statsTag=0xffffff01, statsUid=10105
+10-28 07:45:08.685  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/UserHandle;->getUserId(I)I
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at achx.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.685  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.687  8206  8206 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.account.data.service.START pkg=com.google.android.gms }
+10-28 07:45:08.687  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.account.data.service.START pkg=com.google.android.gms }
+10-28 07:45:08.688  2946  3139 W Bugle   : TextClassifierLibManagerImpl: Reclaiming memory at level: 40
+10-28 07:45:08.694  8206  8206 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.694  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.696  8206  8206 D BoundBrokerSvc: onBind: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.696  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.701  8206  8206 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-28 07:45:08.701  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-28 07:45:08.709  8206  8206 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+10-28 07:45:08.709  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+10-28 07:45:08.710  8206  8206 D BoundBrokerSvc: onBind: Intent { act=android.net.action.RECOMMEND_NETWORKS cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.710  8206  8206 D BoundBrokerSvc: Loading bound service for intent: Intent { act=android.net.action.RECOMMEND_NETWORKS cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-28 07:45:08.711  8206  8206 I ChimeraSrvcProxy: com.google.android.gms.chimera.PersistentBoundBrokerService returning NullBinder for action android.net.action.RECOMMEND_NETWORKS
+10-28 07:45:08.717  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/app/AlarmManager;->WINDOW_EXACT:J
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at acah.p(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at acah.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.717  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/app/AlarmManager;->WINDOW_HEURISTIC:J
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at acah.p(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at acah.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.717  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.718  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/app/AlarmManager;->FLAG_STANDALONE:I
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at acah.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at acah.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.718  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.721  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/app/AlarmManager;->FLAG_WAKE_FROM_IDLE:I
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredField(Native Method)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at acah.r(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at acah.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.721  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.725  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/WorkSource;->add(I)Z
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at acjj.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at acjj.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at acah.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.725  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.729  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/WorkSource;->add(ILjava/lang/String;)Z
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at acjj.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at acjj.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at acah.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.729  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.731  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/WorkSource;->get(I)I
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at acjj.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at acjj.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at acah.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.731  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.732  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/WorkSource;->getName(I)Ljava/lang/String;
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at acjj.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at acjj.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at acah.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at com.google.android.gms.nearby.exposurenotification.service.ExposureNotificationInternalChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.732  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.745  2085  8265 D DownloadManager: [6] Finished with status SUCCESS
+10-28 07:45:08.758   833   900 D SplashScreenView: Build android.window.SplashScreenView{40735dc V.E...... ......ID 0,0-0,0}
+10-28 07:45:08.758   833   900 D SplashScreenView: Icon: view: null drawable: null size: 0
+10-28 07:45:08.758   833   900 D SplashScreenView: Branding: view: android.view.View{da326e5 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+10-28 07:45:08.759  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: PAUSED
+10-28 07:45:08.759   833   919 W Parcel  : Expecting binder but got null!
+10-28 07:45:08.759  4944  4944 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@fb75f90
+10-28 07:45:08.762  2085  8293 D DownloadManager: [8] Starting
+10-28 07:45:08.762  8206  8280 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-28 07:45:08.766  8206  8280 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-28 07:45:08.776   516   540 I ServiceWatcher: [fused] connected to {com.google.android.gms/com.google.android.location.fused.FusedLocationService}
+10-28 07:45:08.778  8206  8206 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360094464 windowMillis: -1 intervalMillis: 0]
+10-28 07:45:08.779  8206  8206 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360094466 windowMillis: -1 intervalMillis: 0]
+10-28 07:45:08.780  8206  8206 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360094467 windowMillis: -1 intervalMillis: 0]
+10-28 07:45:08.782  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/os/UserManager;->getProfiles(I)Ljava/util/List;
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at java.lang.Class.getDeclaredMethodInternal(Native Method)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at java.lang.Class.getPublicMethodRecursive(Class.java:2110)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:2097)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at java.lang.Class.getMethod(Class.java:1724)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at achy.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at achx.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at acfz.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at acfz.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at czhr.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at czkl.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at com.google.android.location.internal.server.GoogleLocationChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.782  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.783  8206  8206 D StrictMode: StrictMode policy violation: android.os.strictmode.NonSdkApiUsedViolation: Landroid/content/pm/UserInfo;->id:I
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.os.StrictMode.lambda$static$1(StrictMode.java:419)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.os.StrictMode$$ExternalSyntheticLambda2.accept(Unknown Source:2)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at java.lang.Class.getPublicFieldRecursive(Native Method)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at java.lang.Class.getField(Class.java:1633)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at achy.<clinit>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at achx.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at acfz.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at acfz.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at czhr.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at czkl.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at com.google.android.location.internal.server.GoogleLocationChimeraService.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at hhn.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at zdg.onCreate(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4486)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2161)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-28 07:45:08.783  8206  8206 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-28 07:45:08.786  8206  8206 W SystemServiceRegistry: No service published for: contexthub
+10-28 07:45:08.788   516  1412 I LocationManagerService: fused provider loaded extra attribution tags: [activity_recognition_provider, awareness_provider, current_semantic_location, fused_location_provider, geofencer_provider, network_location_calibration, network_location_provider, wearable_flp_shim]
+10-28 07:45:08.790  2085  8293 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.790  2085  8293 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-28 07:45:08.790  8206  8206 E GCM     : Compat called without init
+10-28 07:45:08.792  2085  8293 D TrafficStats: tagSocket(76) with statsTag=0xffffff01, statsUid=10105
+10-28 07:45:08.794  8206  8291 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z (max-target-p, reflection, denied)
+10-28 07:45:08.794  8206  8291 W .gms.persistent: Accessing hidden method Landroid/os/PowerManager;->isLightDeviceIdleMode()Z (max-target-s, reflection, denied)
+10-28 07:45:08.794  5574  5593 W Parcel  : Expecting binder but got null!
+10-28 07:45:08.797   516   540 I ServiceWatcher: [GeocoderProxy] connected to {com.google.android.gms/com.google.android.gms.location.geocode.GeocodeService}
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6aed0
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ae70
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ae70
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6ae70
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6aed0
+10-28 07:45:08.806   388   404 W TransactionTracing: Could not find layer handle 0x7ca7a8d6aed0
+10-28 07:45:08.810  2085  8278 D DownloadManager: [7] Finished with status SUCCESS
+10-28 07:45:08.815  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: STOPPED
+10-28 07:45:08.816  4944  4944 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@fb75f90
+10-28 07:45:08.820  4944  4944 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@fb75f90 in: DESTROYED
+10-28 07:45:08.820  4944  4944 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+10-28 07:45:08.823   516  1725 W InputManager-JNI: Input channel object '859cf89 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+10-28 07:45:08.825  4944  5054 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@e00408c]
+10-28 07:45:08.826  4944  5054 I TestRunner: finished: homeSearchOpensDocumentSearch(com.jarvis.files.DesignFlowTest)
