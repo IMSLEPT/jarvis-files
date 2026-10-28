@@ -123,17 +123,13 @@ class FolderChatFlowTest {
         send("Trova le cartelle in '$root'")
         send("dentro cercami il file Bill.pdf")
         rule.runOnIdle { assertNotNull(vm().conversationContext!!.pending); assertNull(vm().messages.last().fileHits) }
-        val paths = vm().messages.last().questions.single().options
-        // All real candidates are selectable, including one beyond the first four buttons.
-        if ("$root/Two" in paths) rule.onNodeWithText("$root/Two", substring = false).performScrollTo().performClick()
-        else {
-            rule.onNodeWithTag("chat_input").performTextInput("$root/Two")
-            rule.onNodeWithTag("chat_input").performImeAction()
-        }
+        val message = vm().messages.last()
+        assertTrue("$root/One" in message.questions.single().options)
+        rule.onNodeWithTag("chat_choice_${message.id}_$root/One").performScrollTo().performClick()
         rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.fileHits != null }
         rule.runOnIdle {
             assertFalse(vm().messages.last().error)
-            assertEquals(listOf("$root/Two/Bill.pdf"), vm().messages.last().fileHits!!.map { it.rel })
+            assertEquals(listOf("$root/One/Bill.pdf"), vm().messages.last().fileHits!!.map { it.rel })
         }
     }
 
