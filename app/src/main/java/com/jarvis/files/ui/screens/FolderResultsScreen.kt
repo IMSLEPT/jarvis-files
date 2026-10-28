@@ -50,7 +50,7 @@ fun FolderResultsScreen(vm: MainViewModel) {
             IconButton(onClick = { back() }) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "Torna alla chat", tint = J.Text) }
             Column(Modifier.weight(1f)) {
                 Text(if (result?.emptyOnly != false) "Cartelle vuote" else "Cartelle", style = MaterialTheme.typography.titleLarge, color = J.Text)
-                Text("${result?.paths?.size ?: 0} risultati · ${result?.scope?.ifEmpty { "Memoria interna" } ?: ""}",
+                Text((if (result?.paths?.size == 1) "1 risultato" else "${result?.paths?.size ?: 0} risultati") + " · ${result?.scope?.ifEmpty { "Memoria interna" } ?: ""}",
                     color = J.Muted, style = MaterialTheme.typography.bodySmall, maxLines = 2, overflow = TextOverflow.Ellipsis)
             }
         }

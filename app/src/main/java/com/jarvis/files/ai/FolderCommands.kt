@@ -112,9 +112,10 @@ object FolderCommands {
         val where = if (scope.isEmpty()) "nella memoria condivisa accessibile" else "in «$scope»"
         val depth = if (query.recursive) ", comprese le sottocartelle" else ", solo al primo livello"
         val summary = if (result.paths.isEmpty()) "Non ho trovato cartelle vuote $where$depth." else
-            "Ho trovato ${result.paths.size} cartelle vuote $where$depth. Tocca una cartella per aprirla."
-        return BrainReply(summary + " Una cartella è vuota se non contiene file, file nascosti o sottocartelle. " +
-            "${result.checked} cartelle controllate." + if (result.skipped > 0) " ${result.skipped} cartelle protette o non leggibili escluse: la verifica non comprende quelle aree." else "",
+            (if (result.paths.size == 1) "Ho trovato una cartella vuota" else "Ho trovato ${result.paths.size} cartelle vuote") + " $where$depth. Tocca una cartella per aprirla."
+        return BrainReply(summary + " Anche file nascosti e sottocartelle contano come contenuto. " +
+            (if (result.checked == 1) "1 cartella controllata." else "${result.checked} cartelle controllate.") +
+            if (result.skipped > 0) " Aree escluse perché protette o non leggibili: ${result.skipped}." else "",
             folderResults = result)
     }
 }

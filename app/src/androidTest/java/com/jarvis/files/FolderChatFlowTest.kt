@@ -53,6 +53,7 @@ class FolderChatFlowTest {
         } else row("$download/Empty")
         rule.onNodeWithTag("folder_result_$download/Empty").performClick()
         rule.waitUntil(10_000) { vm().sub == Sub.BROWSER && vm().browserPath == "$download/Empty" }
+        rule.waitUntil(10_000) { rule.onAllNodesWithText("Cartella vuota").fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("Cartella vuota").assertExists()
         assertTrue(Storage.file("$download/Empty").isDirectory)
     }
@@ -139,5 +140,15 @@ class FolderChatFlowTest {
         rule.runOnIdle { assertNull(vm().conversationContext); assertTrue(vm().messages.isEmpty()) }
         send("dentro cercami Report.pdf")
         rule.runOnIdle { assertNull(vm().messages.last().fileHits); assertNull(vm().messages.last().plan) }
+    }
+
+    @Test fun navigatingWhileReplyStartsCannotChangeTheSubmittedFolder() {
+        TestUtil.write("$root/Report.pdf", "report".toByteArray())
+        TestUtil.write("$download/Report.pdf", "neighbor".toByteArray())
+        Storage.scanAll()
+        send("Trova la cartella '$root'")
+        rule.runOnUiThread { vm().send("dentro cerca Report.pdf"); vm().openBrowser(download) }
+        rule.waitUntil(20_000) { !vm().busy && vm().messages.lastOrNull()?.fileHits != null }
+        rule.runOnIdle { assertEquals(listOf("$root/Report.pdf"), vm().messages.last().fileHits!!.map { it.rel }) }
     }
 }

@@ -284,8 +284,9 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 messages[i] = messages[i].copy(planState = PlanState.CANCELLED)
         }
         val declining = ChoiceCommands.declines(choice)
+        val requestContext = conversationContext
         val generation = ++chatGeneration
-        messages.add(UiMsg(nextId++, "user", t, conversation = conversationContext))
+        messages.add(UiMsg(nextId++, "user", t, conversation = requestContext))
         busy = true
         busyText = "Controllo i file…"
         chatJob = viewModelScope.launch {
@@ -297,8 +298,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 val previousResults = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error && it.plan == null }?.fileHits
                 val previousFolders = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error }?.folderHits
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    if (!declining && !com.jarvis.files.ai.FolderCommands.handles(t, previousFolders) && !com.jarvis.files.ai.ContextCommands.handles(t, conversationContext) && (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(choice?.request ?: t))) Storage.scanAll()
-                    Brain.ask(ctx, history, previousResults, choice, previousFolders, conversationContext) {
+                    if (!declining && !com.jarvis.files.ai.FolderCommands.handles(t, previousFolders) && !com.jarvis.files.ai.ContextCommands.handles(t, requestContext) && (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(choice?.request ?: t))) Storage.scanAll()
+                    Brain.ask(ctx, history, previousResults, choice, previousFolders, requestContext) {
                         withContext(Dispatchers.Main) { if (generation == chatGeneration) busyText = "L’AI sta preparando la risposta…" }
                     }
                 }

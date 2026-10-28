@@ -77,11 +77,11 @@ object ContextCommands {
             context.files?.let { previous ->
                 val fresh = FileIndex.ensure(30_000).associateBy { it.rel }
                 val files = previous.mapNotNull { fresh[it.rel]?.takeIf { e -> Storage.file(e.rel).isFile } }
-                return BrainReply("Ecco i ${files.size} file dell’ultimo elenco.", fileResults = files, conversation = context.copy(files = files, pending = null))
+                return BrainReply(if (files.size == 1) "Ecco il file dell’ultimo elenco." else "Ecco i ${files.size} file dell’ultimo elenco.", fileResults = files, conversation = context.copy(files = files, pending = null))
             }
             if (context.folders.isNotEmpty()) {
                 val paths = context.folders.filter { PhoneFiles.restriction(it) == null && Storage.file(it).isDirectory }
-                return BrainReply("Ecco le ${paths.size} cartelle dell’ultimo elenco.", folderResults = FolderMatches(context.scope ?: "", false, paths, 0, 0, false),
+                return BrainReply(if (paths.size == 1) "Ecco la cartella dell’ultimo elenco." else "Ecco le ${paths.size} cartelle dell’ultimo elenco.", folderResults = FolderMatches(context.scope ?: "", false, paths, 0, 0, false),
                     conversation = context.copy(folders = paths, pending = null))
             }
         }
@@ -155,7 +155,7 @@ object ContextCommands {
         FolderCommands.scan(scope, recursive = false, emptyOnly = false, checkActive = checkActive))
 
     private fun folderReply(found: FolderMatches) = BrainReply(
-        "${found.paths.size} cartelle trovate ${if (found.scope.isEmpty()) "nella memoria interna" else "in «${found.scope}»"}. " +
+        (if (found.paths.size == 1) "Una cartella trovata" else "${found.paths.size} cartelle trovate") + " ${if (found.scope.isEmpty()) "nella memoria interna" else "in «${found.scope}»"}. " +
             (if (found.paths.size == 1) "Puoi continuare con «dentro cerca…»." else "Tocca una cartella per aprirla; se vuoi cercare dentro una delle cartelle, indica quale.") +
             if (found.skipped > 0) " ${found.skipped} cartelle protette o non leggibili escluse." else "",
         folderResults = found, conversation = ConversationContext.from(found))
@@ -181,7 +181,7 @@ object ContextCommands {
                     Regex("(?i)^(?:screenshot|screen_shot|schermata)(?:[_ .-]|$)").containsMatchIn(e.name)) &&
                 Storage.sanitize(e.rel) == e.rel && Storage.file(e.rel).isFile
         }.sortedWith(compareByDescending<FileEntry> { it.modified }.thenBy { it.rel })
-        return BrainReply("${files.size} file trovati in «${scope.ifEmpty { "Memoria interna" }}» e nelle sottocartelle.",
+        return BrainReply((if (files.size == 1) "Un file trovato" else "${files.size} file trovati") + " in «${scope.ifEmpty { "Memoria interna" }}» e nelle sottocartelle.",
             fileResults = files, conversation = base.copy(files = files))
     }
 }
