@@ -261,7 +261,7 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
             Spacer(Modifier.width(8.dp))
             Text("Jarvis", style = MaterialTheme.typography.titleSmall, color = J.Text)
             Spacer(Modifier.width(8.dp))
-            Text(if (m.engine.startsWith("Comando locale")) "FILE VERIFICATI" else if (m.error) "DA RIPROVARE" else "ASSISTENTE",
+            Text(if (m.error) "DA RIPROVARE" else if (m.engine.startsWith("Comando locale") || m.engine.startsWith("Dati locali")) "DATI VERIFICATI" else "ASSISTENTE",
                 style = MaterialTheme.typography.labelSmall, color = J.Muted)
         }
         Spacer(Modifier.height(12.dp))
@@ -320,6 +320,18 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
                 }
             }
 
+            m.folderHits?.let { result ->
+                if (result.paths.isNotEmpty()) {
+                    Spacer(Modifier.height(12.dp))
+                    result.paths.take(8).forEach { path ->
+                        FolderResultRow(path) { vm.openBrowser(path) }
+                    }
+                    if (result.paths.size > 8) com.jarvis.files.ui.components.GhostButton("Vedi tutte le ${result.paths.size} cartelle", Modifier.fillMaxWidth()) {
+                        vm.folderResults = result; vm.tab = Tab.FILES; vm.sub = com.jarvis.files.ui.Sub.FOLDERS
+                    }
+                }
+            }
+
             m.fileHits?.let { files ->
                 Spacer(Modifier.height(12.dp))
                 if (files.isEmpty()) Text("Nessun file trovato.", color = J.Muted, style = MaterialTheme.typography.bodySmall)
@@ -343,5 +355,6 @@ private fun MessageView(vm: MainViewModel, m: UiMsg) {
         }
     }
 }
+
 
 

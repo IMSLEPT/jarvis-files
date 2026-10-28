@@ -221,6 +221,7 @@ private fun MainShell(vm: MainViewModel) {
                         Sub.PEOPLE -> PeopleScreen(vm)
                         Sub.FIND -> FindScreen(vm)
                         Sub.BROWSER -> com.jarvis.files.ui.screens.BrowserScreen(vm)
+                        Sub.FOLDERS -> com.jarvis.files.ui.screens.FolderResultsScreen(vm)
                         Sub.CATEGORY -> com.jarvis.files.ui.screens.CategoryScreen(vm)
                         Sub.NONE -> when (tab) {
                             Tab.HOME -> HomeScreen(vm)
@@ -248,7 +249,7 @@ private fun MainShell(vm: MainViewModel) {
 @OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
 @Composable
 private fun JarvisBottomBar(vm: MainViewModel) {
-    val current = if (vm.tab == Tab.PHOTOS || vm.sub == Sub.CATEGORY || vm.sub == Sub.BROWSER) Tab.FILES else vm.tab
+    val current = if (vm.tab == Tab.PHOTOS || vm.sub == Sub.CATEGORY || vm.sub == Sub.BROWSER || vm.sub == Sub.FOLDERS) Tab.FILES else vm.tab
     val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
     val scale = androidx.compose.ui.platform.LocalDensity.current.fontScale
     val allLabels = androidx.compose.ui.platform.LocalConfiguration.current.screenWidthDp >= 360 || scale <= 1.25f

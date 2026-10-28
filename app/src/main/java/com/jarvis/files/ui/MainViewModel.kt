@@ -46,12 +46,14 @@ data class UiMsg(
     val fileHits: List<FileEntry>? = null,
     val engine: String = "",
     val error: Boolean = false,
+    val folderHits: com.jarvis.files.ai.FolderMatches? = null,
+    val conversation: com.jarvis.files.ai.ConversationContext? = null,
 )
 
 enum class Tab { HOME, FILES, CHAT, CLEAN, PHOTOS, MORE }
 
 /** Schermate secondarie aperte sopra le schede. */
-enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY, BROWSER }
+enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY, BROWSER, FOLDERS }
 
 /** Suggerimento mostrato in Home (l'azione è decisa dalla UI in base al tipo). */
 data class HomeTip(val kind: String, val title: String, val big: String, val sub: String)
@@ -104,6 +106,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         private set
     fun stopBrowserCopy() { if (browserCopyRunning) browserJob?.cancel() }
     private var nextId = 1L
+    var conversationContext by mutableStateOf<com.jarvis.files.ai.ConversationContext?>(null)
+        private set
 
     /** Ascolto vocale aperto (sopra qualsiasi schermata). */
     var voiceOpen by mutableStateOf(false)
@@ -117,6 +121,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     var folder by mutableStateOf<String?>(null)
 
     var searchResults by mutableStateOf<List<FileEntry>?>(null)
+    var folderResults by mutableStateOf<com.jarvis.files.ai.FolderMatches?>(null)
     var browserPath by mutableStateOf("")
     var browserNotice by mutableStateOf<String?>(null)
     private fun fileFeedback(message: String) { if (sub == Sub.BROWSER) browserNotice = message else toast = message }
@@ -127,6 +132,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         val denied = PhoneFiles.restriction(path)
         if (denied != null) { fileFeedback(denied); return }
         browserNotice = null
+        conversationContext = com.jarvis.files.ai.ConversationContext(scope = path)
         browserPath = path; tab = Tab.FILES; sub = Sub.BROWSER
     }
 
@@ -279,7 +285,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         }
         val declining = ChoiceCommands.declines(choice)
         val generation = ++chatGeneration
-        messages.add(UiMsg(nextId++, "user", t))
+        messages.add(UiMsg(nextId++, "user", t, conversation = conversationContext))
         busy = true
         busyText = "Controllo i file…"
         chatJob = viewModelScope.launch {
@@ -289,9 +295,10 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                     ChatMsg(if (it.role == "user") "user" else "assistant", it.text + if (it.questions.isEmpty()) "" else it.questions.joinToString(prefix = "\n", separator = "\n") { q -> q.question + " " + q.options.joinToString(" / ") })
                 }
                 val previousResults = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error && it.plan == null }?.fileHits
+                val previousFolders = messages.dropLast(1).lastOrNull()?.takeIf { it.role == "assistant" && !it.error }?.folderHits
                 val (reply, engine) = withContext(Dispatchers.IO) {
-                    if (!declining && (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(choice?.request ?: t))) Storage.scanAll()
-                    Brain.ask(ctx, history, previousResults, choice) {
+                    if (!declining && !com.jarvis.files.ai.FolderCommands.handles(t, previousFolders) && !com.jarvis.files.ai.ContextCommands.handles(t, conversationContext) && (FileIndex.scannedAt == 0L || System.currentTimeMillis() - FileIndex.scannedAt > 30_000 || com.jarvis.files.ai.FileCommands.isMutation(choice?.request ?: t))) Storage.scanAll()
+                    Brain.ask(ctx, history, previousResults, choice, previousFolders, conversationContext) {
                         withContext(Dispatchers.Main) { if (generation == chatGeneration) busyText = "L’AI sta preparando la risposta…" }
                     }
                 }
@@ -306,11 +313,13 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 reply.fileQuery?.let { q -> fileHits = withContext(Dispatchers.IO) { Brain.searchFiles(q) } }
                 ensureActive()
                 if (generation != chatGeneration) return@launch
+                conversationContext = reply.conversation ?: reply.folderResults?.let { com.jarvis.files.ai.ConversationContext.from(it) }
+                    ?: fileHits?.let { com.jarvis.files.ai.ConversationContext(files = it) }
                 messages.add(
                     UiMsg(
                         nextId++, "assistant", reply.reply, reply.questions,
                         plan = reply.plan?.takeIf { !it.isEmpty || it.warnings.isNotEmpty() },
-                        photoHits = photoHits, fileHits = fileHits, engine = engine,
+                        photoHits = photoHits, fileHits = fileHits, engine = engine, folderHits = reply.folderResults, conversation = conversationContext,
                     )
                 )
             } catch (e: CancellationException) {
@@ -432,6 +441,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         val i = messages.indexOfLast { it.role == "user" }
         if (i < 0) return
         val text = messages[i].text
+        conversationContext = messages[i].conversation
         while (messages.size > i) messages.removeAt(messages.lastIndex)
         send(text)
     }
@@ -440,6 +450,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         if (operationBusy) { toast = "Attendi il completamento dell'operazione"; return }
         stopReply()
         messages.clear()
+        conversationContext = null
         chatInput = ""
     }
 }

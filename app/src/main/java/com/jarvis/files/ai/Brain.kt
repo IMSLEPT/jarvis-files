@@ -11,6 +11,7 @@ import com.jarvis.files.core.Prefs
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.Locale
+import kotlinx.coroutines.ensureActive
 
 data class FollowUp(val question: String, val options: List<String>, val request: String? = null)
 
@@ -24,6 +25,8 @@ data class BrainReply(
     val photoSearch: String? = null,
     val fileQuery: FileQuery? = null,
     val fileResults: List<FileEntry>? = null,
+    val folderResults: FolderMatches? = null,
+    val conversation: ConversationContext? = null,
 )
 
 /** Costruisce il contesto per l'AI e interpreta la risposta. */
@@ -63,7 +66,7 @@ Regole inderogabili:
 
     /** Riassunto cartelle + elenco file pertinenti, entro un budget di righe. */
     fun buildContext(c: Context, userText: String, fileBudget: Int): String {
-        val entries = FileIndex.ensure()
+        val entries = FileIndex.ensure(30_000)
         val sb = StringBuilder()
         sb.appendLine("Oggi: ${Fmt.iso(System.currentTimeMillis())}")
         sb.appendLine("=== STATO TELEFONO ===")
@@ -106,10 +109,16 @@ Regole inderogabili:
     private fun tokens(text: String) = text.length / 3 + 4
 
     suspend fun ask(c: Context, history: List<ChatMsg>, previousResults: List<FileEntry>? = null,
-        choice: FollowUpChoice? = null, onModelStart: suspend () -> Unit = {}): Pair<BrainReply, String> {
+        choice: FollowUpChoice? = null, previousFolders: FolderMatches? = null, conversation: ConversationContext? = null,
+        onModelStart: suspend () -> Unit = {}): Pair<BrainReply, String> {
         val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
         if (ChoiceCommands.declines(choice)) return BrainReply("Operazione annullata. Nessun file è stato modificato.") to "Comando locale"
-        val entries = FileIndex.ensure()
+        val coroutine = kotlinx.coroutines.currentCoroutineContext()
+        FolderCommands.resolve(history, previousFolders) { coroutine.ensureActive() }?.let {
+            return it.copy(conversation = it.folderResults?.let { folders -> ConversationContext.from(folders) }) to "Dati locali · cartelle verificate"
+        }
+        ContextCommands.resolve(last.text, conversation) { coroutine.ensureActive() }?.let { return it to "Comando locale · contesto verificato" }
+        val entries = FileIndex.ensure(30_000)
         ChoiceCommands.resolve(choice, entries)?.let { return it to "Comando locale · verificato sui file" }
         FileFacts.resolve(last.text, entries)?.let { return it to "Dati locali · verificati sui file" }
         if (FileFacts.isShowFollowUp(last.text)) {
@@ -131,7 +140,7 @@ Regole inderogabili:
         var limit = if (online) p.onlineTokenLimit else 5000
         var lastError: Throwable? = null
         repeat(5) {
-            val ctx = buildContext(c, intentText, budget)
+            val ctx = buildContext(c, intentText, budget) + ContextCommands.modelContext(conversation)
             val prior = history.dropLast(1).takeLast(4).filter {
                 it.role == "user" || (it.text.length <= 3_000 && !ResponseGuard.isRepetitive(it.text))
             }
@@ -252,5 +261,6 @@ Regole inderogabili:
         return FileQuery(words - exts.toSet(), exts, null, null, null)
     }
 }
+
 
 
