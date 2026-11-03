@@ -1,0 +1,109 @@
+11-03 18:23:19.099  5034  5170 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.103  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.107  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.108  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:19.108  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.112  3854  9804 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:19.116  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.121  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:19.124  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.124  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:19.129  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.131  3854  9810 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:19.134  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:19.139  3854  9815 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:19.144  8690  9556 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 44 uptime_millis: 44 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.158  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.158  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.162  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.162  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.171  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.197  8690  8752 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.204  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 13 uptime_millis: 13 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.214  5034  5170 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-31 Vacanza 001.jpg, JarvisTest/Foto/2026-11-01 Vacanza 002.jpg]
+11-03 18:23:19.236  1682  1695 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+11-03 18:23:19.237  1682  1695 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:19.237  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+11-03 18:23:19.239  5034  5170 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+11-03 18:23:19.241  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim (1).pdf to content://media/external_primary/file/1000000087
+11-03 18:23:19.244  1682  1695 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/a.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/a.jpg
+11-03 18:23:19.245  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.246  1682  1695 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:19.246  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/a.jpg to null
+11-03 18:23:19.249  1682  1695 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+11-03 18:23:19.249  1682  1695 W ExifInterface: java.io.IOException: Invalid byte order: 0
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:4000)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:23:19.249  1682  1695 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:23:19.249  1682  1695 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:23:19.249  1682  1695 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:23:19.249  1682  1695 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisTest/Foto/2026-10-31 Vacanza 001.jpg: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+11-03 18:23:19.251  1682  2336 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.254  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-10-31 Vacanza 001.jpg to content://media/external_primary/images/media/1000000099
+11-03 18:23:19.256  1682  1695 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Foto/b.jpg: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Foto/b.jpg
+11-03 18:23:19.259  1682  1695 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:19.260  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/b.jpg to null
+11-03 18:23:19.261  1682  1695 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+11-03 18:23:19.261  1682  1695 W ExifInterface: java.io.IOException: Invalid byte order: 0
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:4000)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:23:19.261  1682  1695 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:23:19.261  1682  1695 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:23:19.261  1682  1695 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:23:19.262  1682  1695 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisTest/Foto/2026-11-01 Vacanza 002.jpg: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+11-03 18:23:19.263  1682  7381 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.267  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Foto/2026-11-01 Vacanza 002.jpg to content://media/external_primary/images/media/1000000100
+11-03 18:23:19.269  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.273  1682  7503 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.275  8690  9556 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-03 18:23:19.277  8690  8752 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 131 [CONTEXT service_id=218 ]
+11-03 18:23:19.277  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.281  1682  5362 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.287  1682  7503 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.289  5034  5170 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)

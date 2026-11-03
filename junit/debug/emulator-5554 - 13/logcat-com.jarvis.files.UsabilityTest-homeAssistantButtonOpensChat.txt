@@ -1,0 +1,152 @@
+11-03 18:26:26.628  5034  5170 I TestRunner: started: homeAssistantButtonOpensChat(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.628   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.629   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.637  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:26.637  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:26.637  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:26.637  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:26.644  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:26.646  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:26:26.646  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:26:26.647   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f970
+11-03 18:26:26.656   516  2682 W InputManager-JNI: Input channel object '5be09bf com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:26.663   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80750
+11-03 18:26:26.663   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f970
+11-03 18:26:26.663   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.663   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80e70
+11-03 18:26:26.663   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.665  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:26.679  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.692  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.701  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.710  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.721  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@9b4dcfc]
+11-03 18:26:26.724  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:26:26.734   835   913 D SplashScreenView: Build android.window.SplashScreenView{4042ab2 V.E...... ......ID 0,0-0,0}
+11-03 18:26:26.734   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:26:26.734   835   913 D SplashScreenView: Branding: view: android.view.View{2749a03 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:26:26.734   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.737  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:26.740  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: PRE_ON_CREATE
+11-03 18:26:26.740  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:26:26.746  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: CREATED
+11-03 18:26:26.746  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@4ee5100
+11-03 18:26:26.750  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: STARTED
+11-03 18:26:26.750  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@4ee5100
+11-03 18:26:26.752  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: RESUMED
+11-03 18:26:26.753  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@4ee5100
+11-03 18:26:26.754  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.773  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:26.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd823d0
+11-03 18:26:26.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f6d0
+11-03 18:26:26.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f6d0
+11-03 18:26:26.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd823d0
+11-03 18:26:26.780   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.802  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:26:26.802  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:26:26.829   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.862   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:26:26.863   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +136ms
+11-03 18:26:26.865   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fb50
+11-03 18:26:26.865   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.866   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.866   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.869  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:26:26.869  1115  1131 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293affe50 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:26:26.872  1803  3012 I PBSessionCacheImpl: Deleted sessionId[7931471589631457] from persistence.
+11-03 18:26:26.873  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:26.873  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:26.873   516  1167 W InputManager-JNI: Input channel object '317d376 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:26:26.874  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:26.874  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:26.874  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:26.875  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:26:26.876  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.876  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:26.876  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd805d0
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d3f0
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fb50
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fb50
+11-03 18:26:26.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.937  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:26.937  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:27.020   835   913 D SplashScreenView: Build android.window.SplashScreenView{14009f3 V.E...... ......ID 0,0-0,0}
+11-03 18:26:27.020   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:26:27.020   835   913 D SplashScreenView: Branding: view: android.view.View{3e76b0 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:26:27.021   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:26:27.022  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: PAUSED
+11-03 18:26:27.023  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@4ee5100
+11-03 18:26:27.029   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.029   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.029   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.034  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.046   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.062  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:27.070   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:26:27.071  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:27.071  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:27.071  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:27.072   516  2172 W InputManager-JNI: Input channel object '22afea4 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:27.072  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=165, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@96b8dfa
+11-03 18:26:27.082   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80db0
+11-03 18:26:27.082   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd805d0
+11-03 18:26:27.082   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e710
+11-03 18:26:27.082   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd805d0
+11-03 18:26:27.087   516  1167 W InputManager-JNI: Input channel object 'a49a299 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:26:27.088  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:26:27.089  1115  1115 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:26:27.091  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:27.091  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:27.091  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:26:27.091  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:27.092  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fc10
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fc10
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.096   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.101  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:27.108  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:27.120   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:26:27.123   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd803f0
+11-03 18:26:27.126   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e530
+11-03 18:26:27.126   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.130   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.130   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:27.132  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:26:27.133  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:26:27.133  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:27.135  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:27.136  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:27.136  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:27.136  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:27.137  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: STOPPED
+11-03 18:26:27.137  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@4ee5100
+11-03 18:26:27.141  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@4ee5100 in: DESTROYED
+11-03 18:26:27.141  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:27.143  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@9b4dcfc]
+11-03 18:26:27.143   516  2169 W InputManager-JNI: Input channel object '121c649 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:27.145  5034  5170 I TestRunner: finished: homeAssistantButtonOpensChat(com.jarvis.files.UsabilityTest)

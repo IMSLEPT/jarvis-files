@@ -1,0 +1,96 @@
+11-03 18:23:08.623  5034  5170 I TestRunner: started: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.633  8690  8690 I CastSocket: Adding new CastClientAuthKeyManager. [CONTEXT service_id=161 ]
+11-03 18:23:08.636  8765  8765 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10119; state: ENABLED
+11-03 18:23:08.640  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.640  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.641  8765  8765 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.643  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+11-03 18:23:08.643  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+11-03 18:23:08.644  8765  8765 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.648  8765  8765 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.649  8765  8765 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.650  8765  8765 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.653  8765  8765 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-03 18:23:08.653  8690  8690 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10119; state: ENABLED
+11-03 18:23:08.658   516   541 I ServiceWatcher: [RealLocationTimeZoneProviderProxy] connected to {com.google.android.gms/com.google.android.gms.geotimezone.GeoTimeZoneService}
+11-03 18:23:08.658  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.665  8765  8765 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.gms' set to: 'default'
+11-03 18:23:08.665  8765  8765 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+11-03 18:23:08.665  8765  8765 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:08.667  8765  8765 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-03 18:23:08.667  8765  8765 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-03 18:23:08.672  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.674  8690  8744 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-03 18:23:08.675  8690  8690 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-03 18:23:08.676  8690  8770 I SQLiteCastDBHelper: Creating cast database
+11-03 18:23:08.677  8690  8690 W ChimeraUtils: Module com.google.android.gms.nearby missing resource null(0)
+11-03 18:23:08.682  8690  8690 I NearbySharing: ReceiveSurfaceService created [CONTEXT service_id=194 ]
+11-03 18:23:08.683  8690  8690 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-03 18:23:08.690  8690  8690 I Fido    : [CableAuthenticatorChimeraService] Registering broadcast receiver.
+11-03 18:23:08.690  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.703  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.705  8690  8690 W SystemServiceRegistry: No service published for: contexthub
+11-03 18:23:08.710  8765  8765 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:23:08.710  8765  8765 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:23:08.710  8765  8765 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:23:08.714  8765  8765 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-03 18:23:08.723  8690  8690 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120527 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.723  8765  8765 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-03 18:23:08.728  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.728  8690  8690 W SystemServiceRegistry: No service published for: contexthub
+11-03 18:23:08.732  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.738  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.739  8690  8690 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:23:08.742  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.744  8690  8690 E NanoAppLogging: Failed to begin contexthub communication
+11-03 18:23:08.746  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.747  8765  8838 I Watchcat: Started
+11-03 18:23:08.748   516   541 I ServiceWatcher: [GeofenceProxy] connected to {com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService}
+11-03 18:23:08.748  8765  8765 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10119; state: ENABLED
+11-03 18:23:08.748  8765  8765 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 120473, Startup latency (ms): 80, Is system user: true
+11-03 18:23:08.749  8765  8765 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-03 18:23:08.752  8765  8838 I GMS_MM_Logger: Start time: 89072
+11-03 18:23:08.753  8765  8838 I GMS_MM_Logger: Started.
+11-03 18:23:08.756  8690  8690 W ctxmgr  : [ContextManagerPersistentService]Received null intent [CONTEXT service_id=47 ]
+11-03 18:23:08.773  8690  8690 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+11-03 18:23:08.774  8765  8845 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10119; state: ENABLED
+11-03 18:23:08.776  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:23:08.776  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:23:08.779   516   541 I ServiceWatcher: [GeocoderProxy] connected to {com.google.android.gms/com.google.android.gms.location.geocode.GeocodeService}
+11-03 18:23:08.784   516   541 I ServiceWatcher: [network] connected to {com.google.android.gms/com.google.android.location.network.NetworkLocationService}
+11-03 18:23:08.786  8690  8741 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120590 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.786   516  1186 I LocationManagerService: network provider loaded extra attribution tags: [activity_recognition_provider, awareness_provider, current_semantic_location, fused_location_provider, geofencer_provider, network_location_calibration, network_location_provider, wearable_flp_shim]
+11-03 18:23:08.792  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.usagereporting.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+11-03 18:23:08.792  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.usagereporting.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+11-03 18:23:08.794  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-03 18:23:08.794  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.usagereporting.service.START pkg=com.google.android.gms }
+11-03 18:23:08.795  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.clearcut.service.START pkg=com.google.android.gms }
+11-03 18:23:08.795  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.clearcut.service.START pkg=com.google.android.gms }
+11-03 18:23:08.803   516   541 I ServiceWatcher: [fused] connected to {com.google.android.gms/com.google.android.location.fused.FusedLocationService}
+11-03 18:23:08.804   516  2172 I LocationManagerService: fused provider loaded extra attribution tags: [activity_recognition_provider, awareness_provider, current_semantic_location, fused_location_provider, geofencer_provider, network_location_calibration, network_location_provider, wearable_flp_shim]
+11-03 18:23:08.806  8690  8690 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120611 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.808  8690  8690 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120612 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.810  8690  8690 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120615 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.820   516   541 I ServiceWatcher: [HardwareActivityRecognitionProxy] connected to {com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService}
+11-03 18:23:08.828  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+11-03 18:23:08.828  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+11-03 18:23:08.832  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+11-03 18:23:08.832  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.languageprofile.service.START pkg=com.google.android.gms }
+11-03 18:23:08.837  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:23:08.839  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:08.840  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mobstore.service.START pkg=com.google.android.gms }
+11-03 18:23:08.840  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mobstore.service.START pkg=com.google.android.gms }
+11-03 18:23:08.841  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to null
+11-03 18:23:08.847  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.852  8690  8690 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120656 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.855  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:23:08.856  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:08.857  1682  6699 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.857  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to null
+11-03 18:23:08.860  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.861  8690  8770 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360120666 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:08.864  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.866  8690  8690 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z (max-target-p, reflection, denied)
+11-03 18:23:08.866  8690  8690 W .gms.persistent: Accessing hidden method Landroid/os/PowerManager;->isLightDeviceIdleMode()Z (max-target-s, reflection, denied)
+11-03 18:23:08.868  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.870  5034  5170 I TestRunner: finished: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)

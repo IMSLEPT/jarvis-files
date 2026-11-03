@@ -1,0 +1,1293 @@
+11-03 18:25:00.655  5034  5170 I TestRunner: started: allScreens(com.jarvis.files.UiTest)
+11-03 18:25:00.657  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 232 [CONTEXT service_id=218 ]
+11-03 18:25:00.660  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 232 [CONTEXT service_id=218 ]
+11-03 18:25:00.679  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:25:00.688  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:25:00.697  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:25:00.706  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:25:00.717  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@eff7b49]
+11-03 18:25:00.719  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:25:00.724   835   913 D SplashScreenView: Build android.window.SplashScreenView{849231b V.E...... ......ID 0,0-0,0}
+11-03 18:25:00.724   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:25:00.724   835   913 D SplashScreenView: Branding: view: android.view.View{1b85cb8 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:25:00.725   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:25:00.729  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:25:00.737  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: PRE_ON_CREATE
+11-03 18:25:00.737  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:25:00.745  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: CREATED
+11-03 18:25:00.745  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@73c0dbd
+11-03 18:25:00.749  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: STARTED
+11-03 18:25:00.749  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@73c0dbd
+11-03 18:25:00.750  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: RESUMED
+11-03 18:25:00.750  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@73c0dbd
+11-03 18:25:00.754  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:25:00.758  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:25:00.774  1115  1861 D EGL_emulation: app_time_stats: avg=8057.46ms min=8.80ms max=32153.11ms count=4
+11-03 18:25:00.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ee30
+11-03 18:25:00.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ed10
+11-03 18:25:00.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ed10
+11-03 18:25:00.780   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ee30
+11-03 18:25:00.803  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:25:00.803  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:25:00.836   516  5898 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:25:00.836   516  5898 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-03 18:25:00.837   516  5898 D EGL_emulation: eglCreateContext: 0x702303ac4010: maj 3 min 0 rcv 3
+11-03 18:25:00.839   516  5898 D EGL_emulation: eglMakeCurrent: 0x702303ac4010: ver 3 0 (tinfo 0x70250f0cb180) (first time)
+11-03 18:25:00.845   516  2685 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.864   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.868   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:25:00.869   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +147ms
+11-03 18:25:00.872  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:25:00.872  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:25:00.872  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:25:00.872  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:25:00.873  1115  1224 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293b09b70 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:25:00.876  1803  3103 I PBSessionCacheImpl: Deleted sessionId[7931471589631444] from persistence.
+11-03 18:25:00.879  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:25:00.886  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:25:00.888  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:25:00.888  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:25:00.888  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:25:00.889  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:25:00.892   516  2682 W InputManager-JNI: Input channel object '4ed8058 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:25:00.892  5034 12768 D TransportRuntime.CctTransportBackend: Making request to: https://firebaselogging.googleapis.com/v0cc/log/batch?format=json_proto3
+11-03 18:25:00.897   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f670
+11-03 18:25:00.906   312 13875 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10174 0}
+11-03 18:25:00.906   312 13876 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:25:00.906   312 13877 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:25:00.911  5034  5034 I ActivityThread: Schedule relaunch activity: com.jarvis.files.MainActivity
+11-03 18:25:00.914  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: PAUSED
+11-03 18:25:00.915  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@73c0dbd
+11-03 18:25:00.915  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: STOPPED
+11-03 18:25:00.915  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@73c0dbd
+11-03 18:25:00.919   312 13876 I resolv  : res_nsend: used send_dg 272 terrno: 0
+11-03 18:25:00.919   312 13876 I resolv  : doQuery: rcode=0, ancount=8, return value=272
+11-03 18:25:00.924  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@73c0dbd in: DESTROYED
+11-03 18:25:00.924  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:25:00.927  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: PRE_ON_CREATE
+11-03 18:25:00.927  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+11-03 18:25:00.927   312 13877 I resolv  : res_nsend: used send_dg 176 terrno: 0
+11-03 18:25:00.927   312 13877 I resolv  : doQuery: rcode=0, ancount=8, return value=176
+11-03 18:25:00.933   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.933   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.933   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.933   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.933   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:25:00.933  5034 12768 D TrafficStats: tagSocket(96) with statsTag=0xffffffff, statsUid=-1
+11-03 18:25:00.936  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:25:00.942  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: CREATED
+11-03 18:25:00.942  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@170bdd8
+11-03 18:25:00.945  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: STARTED
+11-03 18:25:00.945  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@170bdd8
+11-03 18:25:00.946  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: RESUMED
+11-03 18:25:00.947  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@170bdd8
+11-03 18:25:01.489  5034 12768 I TransportRuntime.CctTransportBackend: Status Code: 200
+11-03 18:25:01.489  5034 12768 I TransportRuntime.CctTransportBackend: Content-Type: application/json; charset=UTF-8
+11-03 18:25:01.489  5034 12768 I TransportRuntime.CctTransportBackend: Content-Encoding: gzip
+11-03 18:25:05.682  1682  2011 D PickerSyncController: syncAllMedia
+11-03 18:25:05.682  1682  2011 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
+11-03 18:25:05.682  1682  2011 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
+11-03 18:25:05.683  1682  2011 D PickerSyncController:    Latest ID/Gen=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary/2279
+11-03 18:25:05.683  1682  2011 D PickerSyncController:    Cached ID/Gen=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary/1452
+11-03 18:25:05.683  1682  2011 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_INCREMENTAL, gen=1452, latest=Bundle[{last_media_sync_generation=2279, media_collection_id=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary}]}
+11-03 18:25:05.683  1682  2011 I PickerSyncController: Executing SyncAdd. isLocal: true. authority: com.android.providers.media.photopicker
+11-03 18:25:05.684  1682  2011 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=1452}]. Result count: 0. Cursor count: 0
+11-03 18:25:05.685  1682  2011 I PickerSyncController: Executing SyncRemove. isLocal: true. authority: com.android.providers.media.photopicker
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000226
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000227
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000228
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000229
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000236
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000237
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000248
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000250
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000253
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000255
+11-03 18:25:05.686  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000256
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=1452}]. Result count: 0. Cursor count: 11
+11-03 18:25:05.686  1682  2011 D PickerSyncController: syncAllMediaFromProvider() CLOUD, auth=null, retry=true
+11-03 18:25:05.686  1682  2011 D PickerSyncController: getSyncRequestParams() CLOUD, auth=null
+11-03 18:25:05.686  1682  2011 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_RESET, gen=0, latest=null}
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Executing SyncReset. isLocal: false. authority: null
+11-03 18:25:05.686  1682  2011 I PickerSyncController: SyncReset. isLocal:false. authority: null. result count: 0
+11-03 18:25:05.686  1682  2011 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Executing SyncAlbumReset. isLocal: true. authority: com.android.providers.media.photopicker. albumId: null
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Successfully executed SyncResetAlbum. authority: com.android.providers.media.photopicker. albumId: null. Result count: 0
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Executing SyncAlbumReset. isLocal: false. authority: null. albumId: null
+11-03 18:25:05.686  1682  2011 I PickerSyncController: Successfully executed SyncResetAlbum. authority: null. albumId: null. Result count: 0
+11-03 18:25:05.742  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.746  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.747  3854 13884 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:05.749  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.751  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.757  3854 13891 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:05.952  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.956  3854 13897 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:05.960  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:05.964  3854 13903 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.034   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:06.068  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.069  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.076  3854 13915 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.172  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.175  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.177  3854 13921 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.282  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.286  3854 13927 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.287  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.347  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:06.361  5034  5170 I JarvisTest: [UI] Schermata 01_home OK
+11-03 18:25:06.369  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.371  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.380  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:06.392  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.395  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.400  3854 13934 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.401  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.415  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.494  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.497  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.498  3854 13940 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.502  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:06.519  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.521  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 238 [CONTEXT service_id=218 ]
+11-03 18:25:06.554  5034  5688 D EGL_emulation: app_time_stats: avg=1897.13ms min=20.51ms max=5550.00ms count=3
+11-03 18:25:06.555  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:25:06.555  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:25:06.602  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.603  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.609  3854 13946 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.709  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.713  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.713  3854 13952 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.842  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.845  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.847  3854 13958 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:06.955  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.958  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:06.960  3854 13964 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:07.079  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:07.084  3854 13970 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:07.090  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:07.094  3854 13976 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:07.097  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:07.101  3854 13981 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:07.197  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:07.202  3854 13987 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.616  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.618  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.622  3854 13999 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.625  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.629  3854 14005 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.650  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.656  3854 14011 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.774  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.776  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.779  3854 14017 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.900  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.902  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.905  3854 14023 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:08.909  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.912  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:08.913  3854 14029 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.021  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.026  3854 14035 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.036  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.042  3854 14041 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.058  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.062  3854 14047 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.063  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.067  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.069  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.071  3854 14053 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.177   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:09.248  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.252  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.252  3854 14065 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.352  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.353  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.356  3854 14071 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.428  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.432  3854 14077 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.489  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:09.490  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.496  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.496  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.505  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.508  3854 14084 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.508  5034  5170 I JarvisTest: [UI] Schermata 02_chat_vuota OK
+11-03 18:25:09.511  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.513  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.523  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 241 [CONTEXT service_id=218 ]
+11-03 18:25:09.527  3854 14091 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.527  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 241 [CONTEXT service_id=218 ]
+11-03 18:25:09.540  5034  5688 D EGL_emulation: app_time_stats: avg=740.51ms min=5.70ms max=2874.34ms count=4
+11-03 18:25:09.629  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.632  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.634  3854 14096 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.635  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.639  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.642  3854 14102 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.644  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.647  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.656  3854 14108 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.769  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.773  3854 14114 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.773  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.779  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.780  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.782  3854 14120 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.789  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.791  3854 14126 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.792  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.909  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.912  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.915  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.916  3854 14132 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.920  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.927  3854 14138 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:09.929  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.931  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:09.933  3854 14144 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.067  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.070  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.071  3854 14150 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.074  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.078  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.078  3854 14156 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.081  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.084  3854 14162 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.085  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.207  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.211  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.213  3854 14168 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.216  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.219  3854 14174 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.219  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.225  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.229  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.229  3854 14180 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.350  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.353  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.355  3854 14186 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.356  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.361  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.364  3854 14192 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.368  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.372  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.376  3854 14198 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.486  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.489  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.490  3854 14204 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.492  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.495  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.498  3854 14210 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.499  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.504  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.507  3854 14216 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.634  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.636  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.640  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.641  3854 14222 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.646  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.649  3854 14228 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:10.651  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.657  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:10.661  3854 14234 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:12.091   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:12.402  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:12.417  5034  5170 I JarvisTest: [UI] Schermata 03_chat_senza_ai OK
+11-03 18:25:12.430  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 244 [CONTEXT service_id=218 ]
+11-03 18:25:12.433  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 244 [CONTEXT service_id=218 ]
+11-03 18:25:12.453  5034  5688 D EGL_emulation: app_time_stats: avg=1454.03ms min=10.41ms max=2897.64ms count=2
+11-03 18:25:14.991   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:15.302  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:15.317  5034  5170 I JarvisTest: [UI] Schermata 04_chat_anteprima OK
+11-03 18:25:15.319  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 247 [CONTEXT service_id=218 ]
+11-03 18:25:15.325  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 247 [CONTEXT service_id=218 ]
+11-03 18:25:15.362  5034  5947 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/JarvisTest/Pictures/biden.jpg: open failed: ENOENT (No such file or directory)
+11-03 18:25:15.362  5034  7256 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/JarvisTest/Pictures/obama.jpg: open failed: ENOENT (No such file or directory)
+11-03 18:25:15.399  5034  5688 D EGL_emulation: app_time_stats: avg=2945.88ms min=2945.88ms max=2945.88ms count=1
+11-03 18:25:15.531   835   924 D EGL_emulation: app_time_stats: avg=3877.35ms min=16.86ms max=14608.26ms count=4
+11-03 18:25:16.355  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:16.363  3854 14257 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:16.506  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:16.512  3854 14263 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:17.941   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:18.252  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:18.268  5034  5170 I JarvisTest: [UI] Schermata 05_foto OK
+11-03 18:25:18.272  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 250 [CONTEXT service_id=218 ]
+11-03 18:25:18.278  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 250 [CONTEXT service_id=218 ]
+11-03 18:25:18.288  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 250 [CONTEXT service_id=218 ]
+11-03 18:25:18.289  8690 12886 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+11-03 18:25:18.289  8690 12886 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:154)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at cdoy.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:25:18.289  8690 12886 W TapAndPay: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:25:18.294  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:9 result: 3 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 250 [CONTEXT service_id=218 ]
+11-03 18:25:18.316  5034  5688 D EGL_emulation: app_time_stats: avg=2917.41ms min=2917.41ms max=2917.41ms count=1
+11-03 18:25:19.503  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:19.509  3854 14277 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:22.419  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:22.424  3854 14283 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:23.341   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:23.654  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:23.670  5034  5170 I JarvisTest: [UI] Schermata 06_pulizia_cache OK
+11-03 18:25:23.672  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 255 [CONTEXT service_id=218 ]
+11-03 18:25:23.673  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 255 [CONTEXT service_id=218 ]
+11-03 18:25:23.720  5034  5688 D EGL_emulation: app_time_stats: avg=1801.23ms min=15.77ms max=5283.97ms count=3
+11-03 18:25:25.769  8765 14293 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+11-03 18:25:26.407   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:26.719  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:26.732  5034  5170 I JarvisTest: [UI] Schermata 07_pulizia_whatsapp OK
+11-03 18:25:26.741  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 258 [CONTEXT service_id=218 ]
+11-03 18:25:26.743  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 258 [CONTEXT service_id=218 ]
+11-03 18:25:26.769  5034  5688 D EGL_emulation: app_time_stats: avg=500.20ms min=4.09ms max=2869.76ms count=6
+11-03 18:25:28.261  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:28.267  3854 14306 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:29.278  1803  2828 I WorkerManager: dispose()
+11-03 18:25:29.278  1803  2828 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:25:29.391   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:29.702  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:29.717  5034  5170 I JarvisTest: [UI] Schermata 08_pulizia_inutili OK
+11-03 18:25:29.720  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 261 [CONTEXT service_id=218 ]
+11-03 18:25:29.721  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 261 [CONTEXT service_id=218 ]
+11-03 18:25:29.753  5034  5688 D EGL_emulation: app_time_stats: avg=497.32ms min=10.33ms max=2882.98ms count=6
+11-03 18:25:32.026  8765 14317 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-03 18:25:32.036  8765 14317 I ChimeraConfigurator: Detected pending changes for urgent request: [vision.ocr]. Pending module sets: container:2318189190800+mlkit.ocr.common,tflite_dynamite:2640104055100800+tflite_dynamite,vision_ocr:2316024025100000+vision.ocr
+11-03 18:25:32.041  8765 14317 I GmsDebugLogger: [73] 1801
+11-03 18:25:32.043  8765 14317 W ZappDownloader: No successful module downloads for requested features [vision.ocr].
+11-03 18:25:32.043  8765 14317 I GmsDebugLogger: [30] [VisionOcrDynamite.integ:231602402100000],[TfliteDynamiteDynamite.integ:264010405100800],[MlkitOcrCommon.optional:231818100800]
+11-03 18:25:32.044  8765 14317 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-03 18:25:32.044  8765 14317 I GmsDebugLogger: [83] 1 [vision.ocr]
+11-03 18:25:32.044  8765 14316 W Vision  : Request for optional module download of ocr failed. Request again.
+11-03 18:25:32.044  8765 14316 W Vision  : Would have logged:
+11-03 18:25:32.044  8765 14316 W Vision  : # dsae@37884fe7
+11-03 18:25:32.044  8765 14316 I Vision  : Schedule retrying download ocr at 263849 with backoff 80 seconds
+11-03 18:25:32.055  8765  8776 I gle.android.gms: Compiler allocated 4729KB to compile boolean zec.j(int, zdr, java.util.List, zeb)
+11-03 18:25:32.291   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:32.602  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:32.617  5034  5170 I JarvisTest: [UI] Schermata 09_altro OK
+11-03 18:25:32.632  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 264 [CONTEXT service_id=218 ]
+11-03 18:25:32.638  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 264 [CONTEXT service_id=218 ]
+11-03 18:25:32.680  5034  5688 D EGL_emulation: app_time_stats: avg=2927.11ms min=2927.11ms max=2927.11ms count=1
+11-03 18:25:33.667  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:33.675  3854 14329 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:39.705  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:39.710  3854 14335 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:40.741   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:41.052  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:41.068  5034  5170 I JarvisTest: [UI] Schermata 10_sicurezza OK
+11-03 18:25:41.069  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 272 [CONTEXT service_id=218 ]
+11-03 18:25:41.073  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 272 [CONTEXT service_id=218 ]
+11-03 18:25:41.104  5034  5688 D EGL_emulation: app_time_stats: avg=2801.74ms min=3.83ms max=8388.79ms count=3
+11-03 18:25:42.732  8690 12893 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+11-03 18:25:43.641   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:43.952  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:43.966  5034  5170 I JarvisTest: [UI] Schermata 11_automazioni OK
+11-03 18:25:43.978  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+11-03 18:25:43.980  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 275 [CONTEXT service_id=218 ]
+11-03 18:25:44.001  5034  5688 D EGL_emulation: app_time_stats: avg=2897.78ms min=2897.78ms max=2897.78ms count=1
+11-03 18:25:46.541   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:46.689   345   345 E android.hardware.power.stats@1.0-service-mock: Failed to getEnergyData
+11-03 18:25:46.852  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:46.867  5034  5170 I JarvisTest: [UI] Schermata 12_batteria OK
+11-03 18:25:46.882  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 278 [CONTEXT service_id=218 ]
+11-03 18:25:46.885  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 278 [CONTEXT service_id=218 ]
+11-03 18:25:46.973  5034  5688 D EGL_emulation: app_time_stats: avg=2971.88ms min=2971.88ms max=2971.88ms count=1
+11-03 18:25:49.508   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:49.647   516   536 D ConnectivityService: requestNetwork for uid/pid:10110/1536 activeRequest: null callbackRequest: 155 [NetworkRequest [ REQUEST id=156, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:25:49.648   516   775 D ConnectivityService: NetReassign [156 : null → 100] [c 0] [a 1] [i 0]
+11-03 18:25:49.648   516   768 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=156, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:25:49.648   516   768 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=156, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:25:49.648   516   768 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=156, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:25:49.648   516   768 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=156, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:25:49.650  1536  1536 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+11-03 18:25:49.650  1536  1566 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+11-03 18:25:49.650  1536  1566 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+11-03 18:25:49.658  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:25:49.658  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:25:49.659  8765  8765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:25:49.659  8765  8873 E constellation: [api_verify_phone_operation] Failed to generate Client Signature
+11-03 18:25:49.659  8765  8873 E constellation: acwp: Stored private key deleted
+11-03 18:25:49.659  8765  8873 E constellation: 	at acos.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:25:49.659  8765  8873 E constellation: 	at acos.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:25:49.659  8765  8873 E constellation: 	at acoa.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:25:49.659  8765  8873 E constellation: 	at acoa.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+11-03 18:25:49.659  8765  8873 E constellation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:25:49.659  8765  8873 E constellation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:25:49.659  8765  8873 E constellation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:25:49.659  8765  8873 E constellation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:25:49.659  8765  8873 E constellation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:25:49.659  8765  8873 E constellation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:25:49.659  8765  8873 E constellation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:25:49.659  8765  8873 E constellation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:25:49.659  8765  8873 E constellation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: nkq: 5004:
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:25:49.660  1536  1566 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:25:49.661  1536  1566 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5004
+11-03 18:25:49.661  1536  1567 I WM-WorkerWrapper: Worker result RETRY for Work [ id=2702aedd-e62c-4a2b-ac0c-ca7f0a33b2c2, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
+11-03 18:25:49.819  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:49.832  5034  5170 I JarvisTest: [UI] Schermata 13_impostazioni OK
+11-03 18:25:49.840  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 281 [CONTEXT service_id=218 ]
+11-03 18:25:49.842  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 13 uptime_millis: 13 exec_start_elapsed_seconds: 281 [CONTEXT service_id=218 ]
+11-03 18:25:49.859  5034  7256 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/JarvisTest/Pictures/obama.jpg: open failed: ENOENT (No such file or directory)
+11-03 18:25:49.859  5034 14251 E BitmapFactory: Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/JarvisTest/Pictures/biden.jpg: open failed: ENOENT (No such file or directory)
+11-03 18:25:49.883  5034  5688 D EGL_emulation: app_time_stats: avg=2910.02ms min=2910.02ms max=2910.02ms count=1
+11-03 18:25:51.062  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:25:51.067  3854 14369 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:25:53.282  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.282  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCompleted:118 discarding deferred status [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.283  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.prepareStop:371 no more tasks, stopping service if no task are added in 5000 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.283  1536  1536 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_AUTO_RETRY_ACTIVATION
+11-03 18:25:53.284  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:68 task received [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.284  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:73 TaskExecutor already running [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.284  1536  1536 I DialerTasks: com.android.voicemail.impl.scheduling.Tasks.createTask:59 Task.createTask create task:com.android.voicemail.impl.ActivationTask [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.284  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCreate:81 retry #3 for com.android.voicemail.impl.ActivationTask@c558060 queued, executing in 5000 [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.286  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.addTask:299 com.android.voicemail.impl.ActivationTask@c558060 added [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.286  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.runNextTask:345 minimal wait time:4998 [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:53.287  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.sleep:355 sleep for 4998 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:54.924   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:55.236  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:55.251  5034  5170 I JarvisTest: [UI] Schermata 14_persone OK
+11-03 18:25:55.252  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 287 [CONTEXT service_id=218 ]
+11-03 18:25:55.253  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 6 uptime_millis: 6 exec_start_elapsed_seconds: 287 [CONTEXT service_id=218 ]
+11-03 18:25:55.316  5034  5688 D EGL_emulation: app_time_stats: avg=5432.87ms min=5432.87ms max=5432.87ms count=1
+11-03 18:25:56.747  8765 14380 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+11-03 18:25:57.841   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:25:58.152  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:25:58.167  5034  5170 I JarvisTest: [UI] Schermata 15_cestino OK
+11-03 18:25:58.171  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 289 [CONTEXT service_id=218 ]
+11-03 18:25:58.173  8690 14379 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 289 [CONTEXT service_id=218 ]
+11-03 18:25:58.190  5034  5688 D EGL_emulation: app_time_stats: avg=2873.98ms min=2873.98ms max=2873.98ms count=1
+11-03 18:25:58.290  1536 11019 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor$WorkerThreadHandler.handleMessage:221 executing task com.android.voicemail.impl.ActivationTask@c558060 [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.291  1536  1536 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_ACTIVATION_STARTED
+11-03 18:25:58.292  1536 11019 I DialerPreOMigrationHandler: com.android.voicemail.impl.PreOMigrationHandler.migrate:76 ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} already migrated [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.295  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.isCarrierAppInstalled:637 carrier app not installed in this device [CONTEXT ratelimit_period="1 MINUTES [skipped: 4]" ]
+11-03 18:25:58.295  1536 11019 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+11-03 18:25:58.297  1536 11019 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+11-03 18:25:58.300  1536 14389 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 23]" ]
+11-03 18:25:58.300  1536 14389 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 11]" ]
+11-03 18:25:58.308  1536 14389 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:25:58.308  1536 14389 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+11-03 18:25:58.309  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:292 VVM content provider configured - vvm_type_cvvm PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.310  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.updateVoicemailsWithIccId:477 conversion disabled [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.311  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_ACTIVATING PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.311  1536 11019 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+11-03 18:25:58.312  1536 11019 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+11-03 18:25:58.322  1536 14389 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:25:58.322  1536 14389 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+11-03 18:25:58.324  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:339 sending an activation request [CONTEXT enable_persistent_logger=true ]
+11-03 18:25:58.326  1077  1577 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-03 18:25:58.326  1077  1577 D SmsNumberUtils: destAddr is not formatted.
+11-03 18:25:58.326  1077  1577 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-03 18:25:58.329  1536 11019 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:46 Impression: CVVM_SEND_VVM_SMS
+11-03 18:25:58.333  1536  1536 I DialerStatusSmsFetcher: com.android.voicemail.impl.sms.StatusSmsFetcher.onReceive:106 Request SMS successfully sent [CONTEXT enable_persistent_logger=true ]
+11-03 18:26:00.003  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:00.003  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:00.003  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:00.003  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:00.016   835   924 D EGL_emulation: app_time_stats: avg=44485.09ms min=44485.09ms max=44485.09ms count=1
+11-03 18:26:00.725   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:01.036  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.036  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.036  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.036  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.036  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.036  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.036  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.036  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.036  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.036  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.036  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.036  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.036  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.036  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:01.037  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:01.037  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:01.037  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:01.037  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:01.055  5034  5170 I JarvisTest: [UI] Schermata 16_cassaforte OK
+11-03 18:26:01.059  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 292 [CONTEXT service_id=218 ]
+11-03 18:26:01.061  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 292 [CONTEXT service_id=218 ]
+11-03 18:26:01.085  5034  5688 D EGL_emulation: app_time_stats: avg=2894.55ms min=2894.55ms max=2894.55ms count=1
+11-03 18:26:03.625   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:03.939  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:03.954  5034  5170 I JarvisTest: [UI] Schermata 17_trova OK
+11-03 18:26:03.956  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 295 [CONTEXT service_id=218 ]
+11-03 18:26:03.963  8690 14302 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 295 [CONTEXT service_id=218 ]
+11-03 18:26:03.993  5034  5688 D EGL_emulation: app_time_stats: avg=2907.79ms min=2907.79ms max=2907.79ms count=1
+11-03 18:26:05.240  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:26:05.245  3854 14407 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:26:06.524   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:06.838  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:06.854  5034  5170 I JarvisTest: [UI] Schermata 18_file OK
+11-03 18:26:06.858  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 298 [CONTEXT service_id=218 ]
+11-03 18:26:06.861  8690 14379 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 298 [CONTEXT service_id=218 ]
+11-03 18:26:06.885  5034  5688 D EGL_emulation: app_time_stats: avg=2892.51ms min=2892.51ms max=2892.51ms count=1
+11-03 18:26:09.424   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:09.736  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:09.750  5034  5170 I JarvisTest: [UI] Schermata 18b_categoria OK
+11-03 18:26:09.752  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 301 [CONTEXT service_id=218 ]
+11-03 18:26:09.754  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 301 [CONTEXT service_id=218 ]
+11-03 18:26:09.851  1701  1701 I AiAi    : AiAiSpeechRecognitionService#onStartListening
+11-03 18:26:09.856  1701  1701 I RecognitionServiceImpl: RecognitionService#onStartListening
+11-03 18:26:09.857  1701  1701 I IntentParsingUtil: Using language specified in RecognizerIntent: it-IT
+11-03 18:26:09.857  1701  1701 I AiAiSpeechRecognition: [AiAi RecognitionService] session start logged
+11-03 18:26:09.858  1701  1701 I IntentParsingUtil: Using language specified in RecognizerIntent: it-IT
+11-03 18:26:09.861  1701  1701 I IntentParsingUtil: Using language specified in RecognizerIntent: it-IT
+11-03 18:26:09.862  1701  1701 W Bundle  : Key android.speech.extras.SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS expected Integer but value was a java.lang.Long.  The default value 0 was returned.
+11-03 18:26:09.865  1701  1701 W Bundle  : Attempt to cast generated internal exception:
+11-03 18:26:09.865  1701  1701 W Bundle  : java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.os.BaseBundle.getInt(BaseBundle.java:1255)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.content.Intent.getIntExtra(Intent.java:8844)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at hwn.c(PG:1)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at hwn.a(PG:99)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at gya.d(PG:19)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at bwd.accept(PG:22)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at j$.util.Optional.ifPresent(Unknown Source:4)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService.onStartListening(Unknown Source:35)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.speech.RecognitionService.dispatchStartListening(RecognitionService.java:141)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.speech.RecognitionService.-$$Nest$mdispatchStartListening(Unknown Source:0)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.speech.RecognitionService$1.handleMessage(RecognitionService.java:104)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:26:09.865  1701  1701 W Bundle  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:26:09.866  1701  1701 I AiAiSpeechRecognition: [AiAi RecognitionService] prefer offline logged
+11-03 18:26:09.870  1701  2133 I AiAiAudio: #startListening
+11-03 18:26:09.870  1701  1701 I SodaSpeechRecognizer: Offline recognizer - start listening
+11-03 18:26:09.870  1701  1701 I SodaSpeechRecognizer: Initialize Soda [locale: it-IT]
+11-03 18:26:09.870  1701  1701 I AiAiSpeechRecognition: Get language pack path for it-IT
+11-03 18:26:09.870  1701  1701 I AiAiCaptions: isAsrResourceAvailableOnDevice(): check ASR resource availability on device in it_IT for RECOGNITION_SERVICE
+11-03 18:26:09.877  1701  1701 I AiAiCaptions: onServiceConnected(): Connected to Superpacks Service
+11-03 18:26:09.879  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:26:09.882  1701  2775 I AiAiCaptions: isResourceAvailable(): pack asr, is not available on device
+11-03 18:26:09.944   360   474 W ServiceManager: Permission failure: android.permission.CALL_AUDIO_INTERCEPTION from uid=10118 pid=1701
+11-03 18:26:09.944   360   474 D PermissionCache: checking android.permission.CALL_AUDIO_INTERCEPTION for uid=10118 => denied (152 us)
+11-03 18:26:09.983   360 14425 I AudioFlinger: AudioFlinger's thread 0x7b4b84078bb0 tid=14425 ready to run
+11-03 18:26:10.022  1701 14426 I AiAiAudio: run(): Tee read loop starting
+11-03 18:26:10.026  1701  2133 E AiAiSpeechRecognition: Failed to get language pack from Captions Superpacks for [it-IT]. Error: 13; message: The required language pack is not available on device
+11-03 18:26:10.029  1701  2133 W AiAiSpeechRecognition: No sysimg language pack for backup
+11-03 18:26:10.030  1701  2135 I AiAiCaptions: closeResources(RECOGNITION_SERVICE)
+11-03 18:26:10.030  1701  2135 E SodaSpeechRecognizer: Failed to get language pack of required locale: error 13
+11-03 18:26:10.031  1701  2135 W RecognitionClient: #onError space agsa_transcription_LANGUAGE_PACK_ERROR code 13!
+11-03 18:26:10.032  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:26:10.033  1701  2775 I AiAiCaptions: closeResources(): Successfully closed captions superpacks for client: RECOGNITION_SERVICE
+11-03 18:26:10.034  1701  2775 I AiAiCaptions: unbindService(): Successfully disconnected from service
+11-03 18:26:10.034  1701  2135 I AiAiSpeechRecognition: [AiAi RecognitionService] mic close logged
+11-03 18:26:10.034  1701  2135 I AiAiAudio: #stopListeningAndCleanUpSession
+11-03 18:26:10.034  1701  2135 I AiAiAudio: stop(): Stopping AudioTee
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: [AiAi RecognitionService] session end logged
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: hvf: The required language pack is not available on device
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at clu.a(PG:83)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at lrx.e(PG:2)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at lrz.run(PG:9)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at dum.run(PG:65)
+11-03 18:26:10.040  1701  2133 I AiAiSpeechRecognition: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:26:10.054   360   474 D AudioFlinger: Client defaulted notificationFrames to 3500 for frameCount 7000
+11-03 18:26:10.056   360   474 D AF::TrackHandle: OpPlayAudio: track:56 usage:10 not muted
+11-03 18:26:10.067   318   484 E android.hardware.audio@7.1-impl.ranchu: device/generic/goldfish/audio/stream_in.cpp:updateSinkMetadata:364 failure: Result::NOT_SUPPORTED
+11-03 18:26:10.072   318   491 E android.hardware.audio@7.1-impl.ranchu: device/generic/goldfish/audio/stream_in.cpp:setMicrophoneDirection:428 failure: Result::NOT_SUPPORTED
+11-03 18:26:10.072   318   491 E android.hardware.audio@7.1-impl.ranchu: device/generic/goldfish/audio/stream_in.cpp:setMicrophoneFieldDimension:433 failure: Result::NOT_SUPPORTED
+11-03 18:26:10.073  1701 14427 I AudioPlayer: Playing beep com.google.android.as:raw/failure (size 14000 bytes)
+11-03 18:26:10.082  5034  5688 D EGL_emulation: app_time_stats: avg=3195.82ms min=3195.82ms max=3195.82ms count=1
+11-03 18:26:10.089   835   924 D EGL_emulation: app_time_stats: avg=10073.29ms min=10073.29ms max=10073.29ms count=1
+11-03 18:26:10.109   318   484 E android.hardware.audio@7.1-impl.ranchu: device/generic/goldfish/audio/stream_in.cpp:updateSinkMetadata:364 failure: Result::NOT_SUPPORTED
+11-03 18:26:10.114  1701 14426 I AiAiAudio: run(): Tee read loop finishing
+11-03 18:26:10.166   360   475 D AudioFlinger: mixer(0x7b4b8419a9a0) throttle end: throttle time(35)
+11-03 18:26:10.198   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ff70
+11-03 18:26:10.199   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:10.199   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:10.296   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:10.296   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:10.486  1701  1701 I AudioPlayer: Audio track end of file reached
+11-03 18:26:10.486  1701  1701 D AudioTrack: stop(17): called with 7000 frames delivered
+11-03 18:26:12.875   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:13.188  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:13.205  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 305 [CONTEXT service_id=218 ]
+11-03 18:26:13.207  8690 14379 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 305 [CONTEXT service_id=218 ]
+11-03 18:26:13.216   835   924 D EGL_emulation: app_time_stats: avg=197.44ms min=0.91ms max=2550.51ms count=15
+11-03 18:26:13.218  5034  5170 I JarvisTest: [UI] Schermata 19_voce OK
+11-03 18:26:13.225  1701  4235 I AiAiEcho: Settings cha with uri: content://settings/secure/ui_night_mode
+11-03 18:26:13.225  1701  4235 I AiAiEcho: Settings cha with uri: content://settings/secure/ui_night_mode_custom_type
+11-03 18:26:13.226  1701  4235 I AiAiEcho: Settings cha with uri: content://settings/secure/dark_theme_custom_start_time
+11-03 18:26:13.226  1701  4235 I AiAiEcho: Settings cha with uri: content://settings/secure/dark_theme_custom_end_time
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.226  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.227  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.228  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.228  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.228  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:13.228  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:13.228  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.228  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.229  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.229  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.229  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.229  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.229  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.230  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.230  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.231  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.231  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.231  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.232  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.232  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.232  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:13.232  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:13.238  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.239  1115  1115 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.60 fontWeightAdjustment=0}
+11-03 18:26:13.241  1621  1621 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1557 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.60 fontWeightAdjustment=0}
+11-03 18:26:13.241  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1575 changedMask : 200
+11-03 18:26:13.244  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
+11-03 18:26:13.245  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
+11-03 18:26:13.245  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in ebn
+11-03 18:26:13.245  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in ebn
+11-03 18:26:13.245  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
+11-03 18:26:13.245  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
+11-03 18:26:13.246  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
+11-03 18:26:13.246  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
+11-03 18:26:13.246  1621  1790 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+11-03 18:26:13.246  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.246  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+11-03 18:26:13.246  1621  1789 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214024 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 0 ms
+11-03 18:26:13.246  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:26:13.247  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+11-03 18:26:13.249  1621  1789 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 4 ms
+11-03 18:26:13.249  1621  1790 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 4 ms
+11-03 18:26:13.251  1621  1621 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [true], cacheKey: [overlay_builtin_dynamic_color_dark_base.binarypb:dynamic-dark-ff1b1b1f-ffdae2ff-df4533e8e2f96d83d874257890a90573]
+11-03 18:26:13.251  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.251  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.251  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.251  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.251  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.251  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_phone_300_overlay_builtin_dynamic_color_dark_base.binarypb:dynamic-dark-ff1b1b1f-ffdae2ff-df4533e8e2f96d83d874257890a90573_port
+11-03 18:26:13.253  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.256  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:13.257  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: No service published for: ethernet
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1590)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2556)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2530)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:545)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Unknown Source:0)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1192)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$android-app-LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1790)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:26:13.263  1017  1040 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:26:13.274  1621  1621 W StyleResolver: StyleResolver.resolveValue():233 Invalid variable: color_silk_surface_background
+11-03 18:26:13.276  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+11-03 18:26:13.276  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:13.284  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:13.284  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:26:13.302   516   536 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-03 18:26:13.322  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: PAUSED
+11-03 18:26:13.322  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@170bdd8
+11-03 18:26:13.325  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in een.
+11-03 18:26:13.325  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in ebn.
+11-03 18:26:13.325  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
+11-03 18:26:13.325  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in csi.
+11-03 18:26:13.325  1115  1115 I TouchInteractionService: preloadOverview: forSUWAllSet=false, isHomeAndOverviewSame=true
+11-03 18:26:13.325  1115  1115 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.60 fontWeightAdjustment=0}
+11-03 18:26:13.325  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.325  1115  1115 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_UI_MODE}
+11-03 18:26:13.325  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.325  1115  1115 D b/254119092: destroyExistingTaskbar: null
+11-03 18:26:13.325  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.325  1115  1115 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+11-03 18:26:13.325  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.325  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: STOPPED
+11-03 18:26:13.325  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@170bdd8
+11-03 18:26:13.325   835   835 I NoBackGesture: NavbarController: newConfig={1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.131 fontWeightAdjustment=0} mTaskbarDelegate initialized=false willApplyConfigToNavbars=true navBarCount=0
+11-03 18:26:13.336  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@170bdd8 in: DESTROYED
+11-03 18:26:13.336  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:13.346   516  2002 W InputManager-JNI: Input channel object '34aaba5 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:13.347  1115  1115 D b/254119092: clearActivity
+11-03 18:26:13.347  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.352   516   536 W InputManager-JNI: Input channel object '584247 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:13.354  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: PRE_ON_CREATE
+11-03 18:26:13.354  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+11-03 18:26:13.355   835   835 D Tonal   : Tonal Palette - index: 4. Main color: ff343e65
+11-03 18:26:13.355   835   835 D Tonal   : Colors: ff0b0c16, ff141627, ff1d2138, ff272d4c, ff343e65, ff41477e, ff4e5597, ff8184a4, ff898cc3, ff9e9ecd, ffb7b6d9, ffd9d7eb, ffefeef7
+11-03 18:26:13.355   835   835 D Tonal   : Gradients:
+11-03 18:26:13.355   835   835 D Tonal   : 	Normal GradientColors(ff343e65, ff343e65)
+11-03 18:26:13.355   835   835 D Tonal   : 	Dark GradientColors(ff272d4c, ff272d4c)
+11-03 18:26:13.355   835   835 D Tonal   : 	Extra dark: GradientColors(ff1d2138, ff1d2138)
+11-03 18:26:13.355   835   835 D Tonal   : Tonal Palette - index: 4. Main color: ff343e65
+11-03 18:26:13.355   835   835 D Tonal   : Colors: ff0b0c16, ff141627, ff1d2138, ff272d4c, ff343e65, ff41477e, ff4e5597, ff8184a4, ff898cc3, ff9e9ecd, ffb7b6d9, ffd9d7eb, ffefeef7
+11-03 18:26:13.355   835   835 D Tonal   : Gradients:
+11-03 18:26:13.355   835   835 D Tonal   : 	Normal GradientColors(ff343e65, ff343e65)
+11-03 18:26:13.355   835   835 D Tonal   : 	Dark GradientColors(ff272d4c, ff272d4c)
+11-03 18:26:13.355   835   835 D Tonal   : 	Extra dark: GradientColors(ff1d2138, ff1d2138)
+11-03 18:26:13.358  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: CREATED
+11-03 18:26:13.358  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@c6d146e
+11-03 18:26:13.358  1115  1115 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:13.358  1115  1115 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:13.360  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: STARTED
+11-03 18:26:13.360  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@c6d146e
+11-03 18:26:13.361  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: RESUMED
+11-03 18:26:13.361  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@c6d146e
+11-03 18:26:13.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fe50
+11-03 18:26:13.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fe50
+11-03 18:26:13.364  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:26:13.369  5034  5034 E SpeechRecognizer: not connected to the recognition service
+11-03 18:26:13.372  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:13.386  1115  1115 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:13.388  1115  1115 D DeviceSearchAlg: search timeout = %d200
+11-03 18:26:13.411  1115  1151 I AiAiSuggestUi: Connecting to system intelligence module.
+11-03 18:26:13.417  1115  7033 I AiAiSuggestUi: Successfully connected to system intelligence:
+11-03 18:26:13.423   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.424  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:13.425  1115  1115 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-03 18:26:13.425  1115  1115 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+11-03 18:26:13.427   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:13.429  1115  1115 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-03 18:26:13.430   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:13.435   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:13.444  1701  1701 I AiAiEcho: SearchContextManagerImpl::setSearchContext resultTypes=[141151] extras=[Bundle[mParcelledData.dataSize=608]] sessionId=[com.google.android.apps.nexuslauncher:99efee4c-f109-4cb8-a88a-80770b6dd1db,0]
+11-03 18:26:13.453  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:13.453  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:13.453  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:13.453  1115  1115 I ContentCaptureHelper: Setting logging level to DEBUG
+11-03 18:26:13.453  1115  1115 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+11-03 18:26:13.453  1115  1115 D ContentCaptureManager: updateWindowAttributes(): window flags=-2137980672
+11-03 18:26:13.455  1115  1861 W Parcel  : Expecting binder but got null!
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: Unable to register Doze Always on content observer.
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2900)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2371)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9297)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1231)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doFrame(Choreographer.java:832)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: Caused by: android.os.RemoteException: Remote stack trace:
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforce(ContextImpl.java:2240)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2268)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.handleIncomingUser(ContentService.java:1397)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:369)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub.onTransact(IContentService.java:486)
+11-03 18:26:13.469  1115  1115 W BcSmartspaceView:
+11-03 18:26:13.484  1115  1115 W BcSmartspaceCard: No title view to update
+11-03 18:26:13.484  1115  1115 I BcSmartspaceCard: setFormattedContentDescription: textView=SUBTITLE, text=null, iconDescription=null, contentDescription=null
+11-03 18:26:13.496  5034  5034 I ActivityThread: Schedule relaunch activity: com.jarvis.files.MainActivity
+11-03 18:26:13.502  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: PAUSED
+11-03 18:26:13.502  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@c6d146e
+11-03 18:26:13.502  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: STOPPED
+11-03 18:26:13.503  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@c6d146e
+11-03 18:26:13.503   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.503   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.507  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c6d146e in: DESTROYED
+11-03 18:26:13.507  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:13.514   516   545 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-03 18:26:13.528  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FINISHED
+11-03 18:26:13.528  1115  1115 D MainContentCaptureSession: Destroying session (ctx=com.google.android.apps.nexuslauncher.NexusLauncherActivity@71fa017, id=-1340837081) with 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false]
+11-03 18:26:13.528  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:26:13.529  1115  1115 D TISBindHelper: TIS service connected
+11-03 18:26:13.529  1115  1115 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@2d486ef
+11-03 18:26:13.529  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:13.530  1115  1115 D MainContentCaptureSession: handleScheduleFlush(act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=1 (WAITING_FOR_SERVER), disabled=false], reason=FULL): not a timeout reason because mDirectServiceInterface is not ready yet
+11-03 18:26:13.532  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: PRE_ON_CREATE
+11-03 18:26:13.533  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+11-03 18:26:13.536  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=CONNECTED
+11-03 18:26:13.537  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:13.537  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:13.537  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:13.537  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:13.538  1803  2815 W Parcel  : Expecting binder but got null!
+11-03 18:26:13.549  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80f90
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d3f0
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7eb90
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7edd0
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd809f0
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.554   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:13.560   516   905 W InputManager-JNI: Input channel object '52628d8 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:13.563   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80cf0
+11-03 18:26:13.563   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80cf0
+11-03 18:26:13.566  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: CREATED
+11-03 18:26:13.566  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@8ad2ce2
+11-03 18:26:13.566  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: STARTED
+11-03 18:26:13.567  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@8ad2ce2
+11-03 18:26:13.568  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: RESUMED
+11-03 18:26:13.568  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@8ad2ce2
+11-03 18:26:13.708  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:13.708  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:13.708  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:13.708  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:13.708  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:13.713   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd800f0
+11-03 18:26:13.713   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f070
+11-03 18:26:15.213   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81ef0
+11-03 18:26:15.359  8690  9018 I NearbyDiscovery: FastPair: isDestroyable: Scanner is alive. [CONTEXT service_id=265 ]
+11-03 18:26:15.359  8690  9018 I NearbyDiscovery: DiscoveryService: Skip stopSelf(), fast pair controller is not destroyable. [CONTEXT service_id=265 ]
+11-03 18:26:15.587   516   544 I system_server: Explicit concurrent copying GC freed 371676(16MB) AllocSpace objects, 2(32KB) LOS objects, 49% free, 21MB/42MB, paused 28us,35us total 59.653ms
+11-03 18:26:15.591   516   533 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.wm.ActivityRecord$$ExternalSyntheticLambda0
+11-03 18:26:15.591   516   533 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+11-03 18:26:15.591   516   533 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.wm.ActivityRecord$$ExternalSyntheticLambda0
+11-03 18:26:15.591   516   533 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+11-03 18:26:16.847  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:26:16.857  3854 14471 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:26:17.758   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:18.070  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:18.085  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 309 [CONTEXT service_id=218 ]
+11-03 18:26:18.085  5034  5170 I JarvisTest: [UI] Schermata 20_home_scuro OK
+11-03 18:26:18.087  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 309 [CONTEXT service_id=218 ]
+11-03 18:26:18.094  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:18.094  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:18.141  5034  5688 D EGL_emulation: app_time_stats: avg=2323.39ms min=204.88ms max=4441.91ms count=2
+11-03 18:26:20.674   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:20.985  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:21.006  8690 12975 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 312 [CONTEXT service_id=218 ]
+11-03 18:26:21.007  8690 14481 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 7 uptime_millis: 7 exec_start_elapsed_seconds: 312 [CONTEXT service_id=218 ]
+11-03 18:26:21.057  5034  5170 I JarvisTest: [UI] Schermata 21_chat_scura OK
+11-03 18:26:21.128  5034  5688 D EGL_emulation: app_time_stats: avg=2986.08ms min=2986.08ms max=2986.08ms count=1
+11-03 18:26:23.119  1803  2466 I BistoDBWrapper: Close DB
+11-03 18:26:23.657   835   835 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+11-03 18:26:23.968  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:26:23.983  5034  5170 I JarvisTest: [UI] Schermata 22_pulizia_scura OK
+11-03 18:26:23.991  1701  1760 I AiAiEcho: Settings cha with uri: content://settings/secure/ui_night_mode
+11-03 18:26:23.992  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:23.992  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:23.993  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:23.995  1115  1115 I TouchInteractionService: preloadOverview: forSUWAllSet=false, isHomeAndOverviewSame=true
+11-03 18:26:23.995  1115  1115 D b/254119092: TaskbarManager#mComponentCallbacks.onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.136 fontWeightAdjustment=0}
+11-03 18:26:23.995  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:23.996  1115  1115 D b/254119092: ComponentCallbacks#onConfigurationChanged() configDiffForRecreate={CONFIG_UI_MODE}
+11-03 18:26:23.996  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:23.996  1115  1115 D b/254119092: destroyExistingTaskbar: null
+11-03 18:26:23.996  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:23.996  1621  1621 W GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1557 onConfigurationChanged() : NewConfig = {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.136 fontWeightAdjustment=0}
+11-03 18:26:23.996  1115  1115 D b/254119092: recreateTaskbar: isTaskbarEnabled=false [dp != null (i.e. mUserUnlocked)]=true FLAG_HIDE_NAVBAR_WINDOW=false dp.isTaskbarPresent=false
+11-03 18:26:23.996  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:23.996  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onConfigurationChanged():1575 changedMask : 200
+11-03 18:26:23.996  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
+11-03 18:26:23.996  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
+11-03 18:26:23.996  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in ebn
+11-03 18:26:23.996  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in ebn
+11-03 18:26:23.996  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
+11-03 18:26:23.997  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
+11-03 18:26:23.997  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
+11-03 18:26:23.997  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
+11-03 18:26:23.997  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:23.997  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+11-03 18:26:23.997  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:26:23.997  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+11-03 18:26:24.000  1621  1790 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 0 ms
+11-03 18:26:24.000  1621  1789 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214024 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 0 ms
+11-03 18:26:24.000  1621  1790 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 1 ms
+11-03 18:26:24.000  1621  1789 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 3 ms : RunTime = 1 ms
+11-03 18:26:24.002  1115  1115 D b/254119092: DisplayController#onConfigurationChanged: {1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.136 fontWeightAdjustment=0}
+11-03 18:26:24.002  1621  1621 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff2f0f4-ffb2c5ff-4dcb274d24a97050f1ef9dca14616c3a]
+11-03 18:26:24.002  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.003  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.003  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.003  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.003  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.003  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_stylesheet_noshadow_gsans_pillkey_silkpopup_refinedkp_materiallight_phone_300_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff2f0f4-ffb2c5ff-4dcb274d24a97050f1ef9dca14616c3a_port
+11-03 18:26:24.005  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.006   516   905 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-03 18:26:24.006  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:26:24.007  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-03 18:26:24.013  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: PAUSED
+11-03 18:26:24.013  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@8ad2ce2
+11-03 18:26:24.016  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: STOPPED
+11-03 18:26:24.016  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@8ad2ce2
+11-03 18:26:24.016  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:24.016  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:24.017  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:24.017  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:24.017  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:24.017  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:24.021  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@8ad2ce2 in: DESTROYED
+11-03 18:26:24.021  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:24.023   516  2169 W InputManager-JNI: Input channel object '5035887 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:24.027  1621  1621 W StyleResolver: StyleResolver.resolveValue():233 Invalid variable: color_silk_surface_background
+11-03 18:26:24.027  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: PRE_ON_CREATE
+11-03 18:26:24.027  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: No service published for: ethernet
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1590)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2556)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2530)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:545)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Unknown Source:0)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1192)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0$android-app-LoadedApk$ReceiverDispatcher$Args(LoadedApk.java:1790)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:26:24.028  1017  1040 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:26:24.030  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+11-03 18:26:24.030  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:24.030  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:24.030  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:26:24.031  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in een.
+11-03 18:26:24.031  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in ebn.
+11-03 18:26:24.031  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
+11-03 18:26:24.031  1621  1621 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in csi.
+11-03 18:26:24.034  1803  1803 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+11-03 18:26:24.037  1115  1115 D b/254119092: clearActivity
+11-03 18:26:24.037  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:24.039  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: CREATED
+11-03 18:26:24.039  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@69f269b
+11-03 18:26:24.041  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: STARTED
+11-03 18:26:24.041  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@69f269b
+11-03 18:26:24.042   835   835 I NoBackGesture: NavbarController: newConfig={1.0 310mcc260mnc [en_US] ldltr sw320dp w320dp h616dp 160dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mMaxBounds=Rect(0, 0 - 320, 640) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.207 fontWeightAdjustment=0} mTaskbarDelegate initialized=false willApplyConfigToNavbars=true navBarCount=0
+11-03 18:26:24.043  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: RESUMED
+11-03 18:26:24.043  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@69f269b
+11-03 18:26:24.044  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:26:24.044   516  2684 W InputManager-JNI: Input channel object 'b55c1e4 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:24.052  1803  3103 W LocationOracle: getBestLocation(): no location is available
+11-03 18:26:24.052  1803  9962 I NetworkRecognitionRnr: Using pair HTTP connection
+11-03 18:26:24.053  1803  3012 I A       : [Upload] Connected
+11-03 18:26:24.053  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.053  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.054  1803  2413 W LocationOracle: No location returned by GMS core getLastLocation()
+11-03 18:26:24.054  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:24.054  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.055  1803  2828 I A       : Merging legacy hotword config map with new proto.
+11-03 18:26:24.055  1803  2828 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:26:24.055  1803  2828 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:26:24.055  1803  2828 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:26:24.055  1803  2828 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:26:24.055  1803  2828 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:26:24.055  1115  1115 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:24.055  1115  1115 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:24.056  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.056  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.056  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:24.062  1803  3012 I NetworkRecognitionRnr: Using pair HTTP connection
+11-03 18:26:24.062  1803  3103 I A       : [Upload] Connected
+11-03 18:26:24.062  1803  1803 E A       : onError
+11-03 18:26:24.062  1803  1803 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+11-03 18:26:24.062  1803  1803 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:26:24.062  1803  1803 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:26:24.062  1803  1803 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:26:24.062  1803  1803 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:26:24.062  1803  1803 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+11-03 18:26:24.062  1803  1803 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+11-03 18:26:24.062  1803  1803 E A       : 	... 15 more
+11-03 18:26:24.062  1803  1803 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+11-03 18:26:24.062  1803  1803 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+11-03 18:26:24.062  1803  1803 E A       : 	... 12 more
+11-03 18:26:24.063  1803  2828 I MicroDetectionState: Should stop hotword detection immediately - true
+11-03 18:26:24.065   835   835 D Tonal   : Tonal Palette - index: 4. Main color: ff343e65
+11-03 18:26:24.065   835   835 D Tonal   : Colors: ff0b0c16, ff141627, ff1d2138, ff272d4c, ff343e65, ff41477e, ff4e5597, ff8184a4, ff898cc3, ff9e9ecd, ffb7b6d9, ffd9d7eb, ffefeef7
+11-03 18:26:24.066   835   835 D Tonal   : Gradients:
+11-03 18:26:24.066   835   835 D Tonal   : 	Normal GradientColors(ff343e65, ff343e65)
+11-03 18:26:24.066   835   835 D Tonal   : 	Dark GradientColors(ff272d4c, ff272d4c)
+11-03 18:26:24.066   835   835 D Tonal   : 	Extra dark: GradientColors(ff1d2138, ff1d2138)
+11-03 18:26:24.066   835   835 D Tonal   : Tonal Palette - index: 4. Main color: ff343e65
+11-03 18:26:24.066   835   835 D Tonal   : Colors: ff0b0c16, ff141627, ff1d2138, ff272d4c, ff343e65, ff41477e, ff4e5597, ff8184a4, ff898cc3, ff9e9ecd, ffb7b6d9, ffd9d7eb, ffefeef7
+11-03 18:26:24.066   835   835 D Tonal   : Gradients:
+11-03 18:26:24.066   835   835 D Tonal   : 	Normal GradientColors(ff343e65, ff343e65)
+11-03 18:26:24.066   835   835 D Tonal   : 	Dark GradientColors(ff272d4c, ff272d4c)
+11-03 18:26:24.066   835   835 D Tonal   : 	Extra dark: GradientColors(ff1d2138, ff1d2138)
+11-03 18:26:24.066  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:24.066  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:24.070  1803  1803 W A       : Failed to sync device settings.
+11-03 18:26:24.070  1115  1115 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:24.070  1803  1803 I A       : Retrying to sync device settings.
+11-03 18:26:24.072  1115  1115 D DeviceSearchAlg: search timeout = %d200
+11-03 18:26:24.079  1115  1151 I AiAiSuggestUi: Connecting to system intelligence module.
+11-03 18:26:24.080  1115  1131 I AiAiSuggestUi: Successfully connected to system intelligence:
+11-03 18:26:24.081  8690 14481 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 315 [CONTEXT service_id=218 ]
+11-03 18:26:24.083  1115  1115 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-03 18:26:24.083  1115  1115 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+11-03 18:26:24.089  8690 14379 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 98 uptime_millis: 98 exec_start_elapsed_seconds: 315 [CONTEXT service_id=218 ]
+11-03 18:26:24.091  1115  1115 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-03 18:26:24.098   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80030
+11-03 18:26:24.098   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.108  1701  1701 I AiAiEcho: SearchContextManagerImpl::setSearchContext resultTypes=[141151] extras=[Bundle[mParcelledData.dataSize=608]] sessionId=[com.google.android.apps.nexuslauncher:6508965e-f259-4c2c-9c20-988df3651f7c,0]
+11-03 18:26:24.111   835   924 D EGL_emulation: app_time_stats: avg=570.05ms min=4.07ms max=10395.86ms count=19
+11-03 18:26:24.121  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.121  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:24.121  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.130  1115  1115 I ContentCaptureHelper: Setting logging level to DEBUG
+11-03 18:26:24.130  1115  1115 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+11-03 18:26:24.130  1115  1115 D ContentCaptureManager: updateWindowAttributes(): window flags=-2137980672
+11-03 18:26:24.133  1115  1861 W Parcel  : Expecting binder but got null!
+11-03 18:26:24.136  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FINISHED
+11-03 18:26:24.136  1115  1115 D MainContentCaptureSession: Destroying session (ctx=com.google.android.apps.nexuslauncher.NexusLauncherActivity@2d486ef, id=-1439326972) with 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false]
+11-03 18:26:24.136  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.136  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:24.136  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.138  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: Unable to register Doze Always on content observer.
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2900)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2371)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9297)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1231)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doFrame(Choreographer.java:832)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: Caused by: android.os.RemoteException: Remote stack trace:
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforce(ContextImpl.java:2240)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2268)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.handleIncomingUser(ContentService.java:1397)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:369)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub.onTransact(IContentService.java:486)
+11-03 18:26:24.138  1115  1115 W BcSmartspaceView:
+11-03 18:26:24.144  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: PAUSED
+11-03 18:26:24.144  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@69f269b
+11-03 18:26:24.156   516  2170 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+11-03 18:26:24.166   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:24.170  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:24.171  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:24.171  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:24.171  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:24.171  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:24.174  1803  2815 W Parcel  : Expecting binder but got null!
+11-03 18:26:24.179   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:24.185   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d510
+11-03 18:26:24.187   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:24.187  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:26:24.191   516  2169 W InputManager-JNI: Input channel object '31429ac com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:24.192  1115  1115 W BcSmartspaceCard: No title view to update
+11-03 18:26:24.192  1115  1115 I BcSmartspaceCard: setFormattedContentDescription: textView=SUBTITLE, text=null, iconDescription=null, contentDescription=null
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80150
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ef50
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ef50
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.198   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.201  1115  1115 D TISBindHelper: TIS service connected
+11-03 18:26:24.201  1115  1115 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@199b7e2
+11-03 18:26:24.201  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:26:24.201  1115  1115 D MainContentCaptureSession: handleScheduleFlush(act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=1 (WAITING_FOR_SERVER), disabled=false], reason=FULL): not a timeout reason because mDirectServiceInterface is not ready yet
+11-03 18:26:24.201  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=CONNECTED
+11-03 18:26:24.207  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:24.210  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:24.211  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:24.211  1115  1128 W System  : A resource failed to call release.
+11-03 18:26:24.237   835   928 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:26:24.242   516   541 W ziparchive: Unable to open '/data/app/~~HawZCzduhnt4sBodJcyKJw==/com.jarvis.files.test-mv8XfHEr_0abW4_Qhb-XbA==/base.dm': No such file or directory
+11-03 18:26:24.243   516   541 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +96ms
+11-03 18:26:24.257  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:24.257  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:24.257  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:24.257  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files.test fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:24.257  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:24.259   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:26:24.259  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:24.260  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=141, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@558057a
+11-03 18:26:24.263   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd82250
+11-03 18:26:24.263   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd809f0
+11-03 18:26:24.263   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.263   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.264   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.264   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.264   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:24.267  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.267  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:24.267  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:24.273  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:24.274  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:24.274  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:24.274  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:24.275  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: STOPPED
+11-03 18:26:24.275  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@69f269b
+11-03 18:26:24.279  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@69f269b in: DESTROYED
+11-03 18:26:24.279  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:24.281  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@eff7b49]
+11-03 18:26:24.285   516   536 W InputManager-JNI: Input channel object 'b13c534 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:24.287  5034  5170 I TestRunner: finished: allScreens(com.jarvis.files.UiTest)

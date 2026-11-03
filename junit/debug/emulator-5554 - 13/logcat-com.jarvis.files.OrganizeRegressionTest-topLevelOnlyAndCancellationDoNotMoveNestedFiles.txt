@@ -1,0 +1,30 @@
+11-03 18:24:16.422  5034  5170 I TestRunner: started: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.423  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/b.png: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/b.png
+11-03 18:24:16.423  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.424  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/b.png to null
+11-03 18:24:16.425  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png
+11-03 18:24:16.426  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.426  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png to null
+11-03 18:24:16.427  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:24:16.428  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.429  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/a.pdf to null
+11-03 18:24:16.430  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf
+11-03 18:24:16.431  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.431  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf to null
+11-03 18:24:16.447  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.458  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.466  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.474  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.488  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.498  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.511  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.515  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.519  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.524  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.552  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.556  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.593  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.598  1682  3746 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:16.603  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.607  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.608  5034  5170 I TestRunner: finished: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)

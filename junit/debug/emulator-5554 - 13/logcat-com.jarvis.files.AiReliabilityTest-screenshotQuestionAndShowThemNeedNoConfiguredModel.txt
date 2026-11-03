@@ -1,0 +1,124 @@
+11-03 18:22:27.188  5034  5170 I TestRunner: started: screenshotQuestionAndShowThemNeedNoConfiguredModel(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.191  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:27.207  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:27.209  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:27.220  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:27.221  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:27.240  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.254   433  5437 I GenericSource: start
+11-03 18:22:27.254  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:27.257  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:27.259   835   835 D MediaRouter: onRestoreRoute() : route=RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-03 18:22:27.259   835   835 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+11-03 18:22:27.267  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.268   433  3507 D NuPlayerDriver: stop(0x75d7e5cffdd0)
+11-03 18:22:27.270  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:27.271   835  5419 V MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-03 18:22:27.271   835  5419 V MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-03 18:22:27.271   433   433 D NuPlayerDriver: reset(0x75d7e5cffdd0) at state 8
+11-03 18:22:27.273   433  5504 D CCodec  : allocate(c2.android.vorbis.decoder)
+11-03 18:22:27.274  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:27.277   433  5504 I CCodec  : setting up 'default' as default (vendor) store
+11-03 18:22:27.281   437   925 V C2Store : in init
+11-03 18:22:27.281   437   925 V C2Store : loading dll
+11-03 18:22:27.296  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.304  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:27.308  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:27.309   433  5504 I CCodec  : Created component [c2.android.vorbis.decoder]
+11-03 18:22:27.309   433  5504 D CCodecConfig: read media type: audio/vorbis
+11-03 18:22:27.317  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:27.317   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.max-count.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: output.subscribed-indices.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: input.buffers.allocator-ids.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.allocator-ids.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.allocator-ids.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: output.buffers.pool-ids.values
+11-03 18:22:27.318   433  5504 D ReflectedParamUpdater: extent() != 1 for single value type: algo.buffers.pool-ids.values
+11-03 18:22:27.318   433  5504 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-03 18:22:27.319   433  5504 D CCodecConfig: c2 config diff is Dict {
+11-03 18:22:27.319   433  5504 D CCodecConfig:   c2::u32 coded.bitrate.value = 64000
+11-03 18:22:27.319   433  5504 D CCodecConfig:   c2::u32 input.buffers.max-size.value = 32768
+11-03 18:22:27.319   433  5504 D CCodecConfig:   c2::u32 input.delay.value = 0
+11-03 18:22:27.319   433  5504 D CCodecConfig:   string input.media-type.value = "audio/vorbis"
+11-03 18:22:27.319   433  5504 D CCodecConfig:   string output.media-type.value = "audio/raw"
+11-03 18:22:27.319   433  5504 D CCodecConfig:   c2::u32 raw.channel-count.value = 1
+11-03 18:22:27.319   433  5504 D CCodecConfig:   c2::u32 raw.sample-rate.value = 48000
+11-03 18:22:27.319   433  5504 D CCodecConfig: }
+11-03 18:22:27.319  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:27.319   433  5504 D MediaCodec: flushMediametrics
+11-03 18:22:27.320   433  5504 D CCodec  : [c2.android.vorbis.decoder] buffers are bound to CCodec for this session
+11-03 18:22:27.320   433  5504 D CCodecConfig: no c2 equivalents for durationUs
+11-03 18:22:27.320   433  5504 D CCodecConfig: no c2 equivalents for csd-1
+11-03 18:22:27.320   433  5504 D CCodecConfig: no c2 equivalents for flags
+11-03 18:22:27.320   433  5504 D CCodecConfig: c2 config diff is   c2::u32 coded.bitrate.value = 70000
+11-03 18:22:27.321   433  5504 W Codec2Client: query -- param skipped: index = 1107298332.
+11-03 18:22:27.321   433  5504 D CCodec  : encoding statistics level = 0
+11-03 18:22:27.321   433  5504 D CCodec  : setup formats input: AMessage(what = 0x00000000) = {
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t bitrate = 70000
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t channel-count = 1
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t max-input-size = 32768
+11-03 18:22:27.321   433  5504 D CCodec  :   string mime = "audio/vorbis"
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t sample-rate = 48000
+11-03 18:22:27.321   433  5504 D CCodec  : }
+11-03 18:22:27.321   433  5504 D CCodec  : setup formats output: AMessage(what = 0x00000000) = {
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t channel-count = 1
+11-03 18:22:27.321   433  5504 D CCodec  :   string mime = "audio/raw"
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t sample-rate = 48000
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t channel-mask = 1
+11-03 18:22:27.321   433  5504 D CCodec  :   int32_t android._config-pcm-encoding = 2
+11-03 18:22:27.321   433  5504 D CCodec  : }
+11-03 18:22:27.321   433  5504 I CCodecConfig: query failed after returning 7 values (BAD_INDEX)
+11-03 18:22:27.323   433  5504 I MediaCodec: MediaCodec will operate in async mode
+11-03 18:22:27.323   433  5503 D MediaCodec: keep callback message for reclaim
+11-03 18:22:27.324   433  5504 W Codec2Client: query -- param skipped: index = 1342179345.
+11-03 18:22:27.324   433  5504 W Codec2Client: query -- param skipped: index = 2415921170.
+11-03 18:22:27.324   433  5504 D C2Store : Using DMABUF Heaps
+11-03 18:22:27.326   433  5504 D CCodecBufferChannel: [c2.android.vorbis.decoder#64] Created input block pool with allocatorID 16 => poolID 17 - OK (0)
+11-03 18:22:27.327   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b37588 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/18 (fetch/transfer)
+11-03 18:22:27.329  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: bufferpool2 0x702353aac298 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/38 (fetch/transfer)
+11-03 18:22:27.330   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b37588 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 18, 72% unfetched
+11-03 18:22:27.330   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b3f4b8 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/24 (fetch/transfer)
+11-03 18:22:27.330   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b3f4b8 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 24, 79% unfetched
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353aac298 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 38, 84% unfetched
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: bufferpool2 0x702353ab23b8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/36 (fetch/transfer)
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353ab23b8 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 36, 83% unfetched
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: bufferpool2 0x702353ab1138 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/18 (fetch/transfer)
+11-03 18:22:27.330   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b37338 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/24 (fetch/transfer)
+11-03 18:22:27.330   835  1205 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353ab1138 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 18, 67% unfetched
+11-03 18:22:27.330   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b37338 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 24, 75% unfetched
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b3af58 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/26 (fetch/transfer)
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b3af58 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 26, 81% unfetched
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b33028 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/34 (fetch/transfer)
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b33028 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 34, 82% unfetched
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: bufferpool2 0x702353b369f8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/34 (fetch/transfer)
+11-03 18:22:27.331   516   907 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x702353b369f8 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 34, 82% unfetched
+11-03 18:22:27.338  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:27.339   433  5504 I CCodecBufferChannel: [c2.android.vorbis.decoder#64] Created output block pool with allocatorID 16 => poolID 26 - OK
+11-03 18:22:27.340   433  5504 D CCodecBufferChannel: [c2.android.vorbis.decoder#64] Configured output block pool ids 26 => OK
+11-03 18:22:27.340   433  5504 I DMABUFHEAPS: Using DMA-BUF heap named: system
+11-03 18:22:27.341  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:27.344   437  5515 D SimpleC2Component: Using output block pool with poolID 26 => got 26 - 0
+11-03 18:22:27.347   312  4548 I netd    : tetherGetStats() -> {[]} <0.33ms>
+11-03 18:22:27.349   433  5504 D CCodecBufferChannel: [c2.android.vorbis.decoder#64] Discard frames from previous generation.
+11-03 18:22:27.350   437  5515 D SimpleC2Component: work form old generation: was 1 now 0
+11-03 18:22:27.354   437   925 D BufferPoolAccessor2.0: Destruction - bufferpool2 0x77ce406bea08 cached: 0/0M, 0/0% in use; allocs: 0, 0% recycled; transfers: 0, 0% unfetched
+11-03 18:22:27.354   433  5503 D MediaCodec: flushMediametrics
+11-03 18:22:27.355   433  5437 D NuPlayerDriver: notifyResetComplete(0x75d7e5cffdd0)
+11-03 18:22:27.356   433   433 W AMessage: failed to post message as target looper for handler 0 is gone.
+11-03 18:22:27.356   437   925 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-03 18:22:27.356   437   925 V C2Store : in ~ComponentModule
+11-03 18:22:27.356   437   925 V C2Store : unloading dll
+11-03 18:22:27.356   433  5525 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+11-03 18:22:27.358   312  4548 I netd    : bandwidthSetGlobalAlert(2097152) <0.10ms>
+11-03 18:22:27.359   516  2101 I MediaFocusControl: abandonAudioFocus() from uid/pid 10157/835 clientId=android.media.AudioManager@9203d69
+11-03 18:22:27.363  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:27.368  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:27.380  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.390  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:27.405  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.415  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.551  1682  2336 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.556  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:22:27.561  1682  3746 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.562  5034  5170 I TestRunner: finished: screenshotQuestionAndShowThemNeedNoConfiguredModel(com.jarvis.files.AiReliabilityTest)

@@ -1,0 +1,88 @@
+11-03 18:22:25.991  5034  5170 I TestRunner: started: followUpKeepsOrderAndDropsFilesThatHaveDisappeared(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.993   312  4548 I netd    : tetherGetStats() -> {[]} <0.61ms>
+11-03 18:22:25.996   312  4548 I netd    : bandwidthSetGlobalAlert(2097152) <0.14ms>
+11-03 18:22:26.001   312  4548 I netd    : bandwidthRemoveInterfaceQuota(eth0) <1.35ms>
+11-03 18:22:26.001   312  4548 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.60ms>
+11-03 18:22:26.011   516   832 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:516/1000(android) for DataUsageRequest [ requestId=12, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3548261 ] accessLevel:3
+11-03 18:22:26.011   516   766 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:516/1000(android) for DataUsageRequest [ requestId=13, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3545027 ] accessLevel:3
+11-03 18:22:26.043   312  4548 I netd    : tetherGetStats() -> {[]} <0.65ms>
+11-03 18:22:26.053  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.058   312  4548 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.44ms>
+11-03 18:22:26.059   312  4548 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.37ms>
+11-03 18:22:26.090  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.124  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.150  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.155  2308  5301 D DownloadManager: [2] Finished with status SUCCESS
+11-03 18:22:26.186  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:26.193  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:26.202  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:26.223  1803  1803 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+11-03 18:22:26.227  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.228  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.228  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.229  1803  2841 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+11-03 18:22:26.232  1803  2841 I A       : New OK_HEY model config map hash: reinitializing config map.
+11-03 18:22:26.234  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.234  1803  2841 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.234  1803  2841 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.234  1803  2841 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:22:26.234  1803  2841 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:22:26.235  1803  2841 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:22:26.236  1803  2841 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.237  1803  2841 I ModelDownloadController: #maybeDownloadHotwordModelWithMDD with locale: en-US, modelType: 2.
+11-03 18:22:26.238  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.238  1803  2456 I ModelDownloadController: Hotword models associated with downloaded MDD filegroups: [], pending groups: []
+11-03 18:22:26.239  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.239  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.239  1803  2841 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.239  1803  2841 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.239  1803  2841 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.239  1803  2841 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.239  1803  2841 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-03 18:22:26.240  1803  2841 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.241  1803  2841 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okg, raw locale: en-US, locale: en-US
+11-03 18:22:26.242  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.242  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.242  1803  2841 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.242  1803  2841 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.242  1803  2841 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:22:26.242  1803  2841 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:22:26.242  1803  2841 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:22:26.245  1803  2841 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.246  1803  2841 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+11-03 18:22:26.247  1803  2841 I A       : Using proto config with mendel
+11-03 18:22:26.247  1803  2841 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.247  1803  2841 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.248  1803  2841 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:22:26.248  1803  2841 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:22:26.248  1803  2841 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:22:26.249  1803  2841 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:22:26.249  1803  2841 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+11-03 18:22:26.266  1682  5362 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:26.280  1803  2839 I ModelDownloadController: Fetching and maybe downloading FileGroup with name: hotword_model_en-US_okhey, locale: en-US
+11-03 18:22:26.280  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.280  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.281  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.281  1803  2839 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.281  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.281  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.281  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.283  1803  2839 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-03 18:22:26.284  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.284  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.284  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.285  1803  2839 I A       : Using proto config with mendel
+11-03 18:22:26.285  1803  2839 I A       : Merging legacy hotword config map with new proto.
+11-03 18:22:26.285  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.285  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.285  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.285  1803  2839 I A       : Adding from config to map. Locale: ro-RO modelPrefix: okgoogle Location:b051c93dce7bb4dcb5d9ddcbbb2ca760Test isSpeakerIdSupported: false
+11-03 18:22:26.285  1803  2839 I A       : Skipping. Expected model: 1 Found: 2
+11-03 18:22:26.287  1803  2413 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okg' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+11-03 18:22:26.302  1803  2413 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+11-03 18:22:26.308  1803  2415 E HotwordModelPopulator: Failed to add hotword file group for 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+11-03 18:22:26.319  1803  2841 D t       : Starting download: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data
+11-03 18:22:26.319  1803  2841 V t       : Is http uri, downloading (uri: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data)
+11-03 18:22:26.390  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:22:26.396  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:26.399  5034  5170 I TestRunner: finished: followUpKeepsOrderAndDropsFilesThatHaveDisappeared(com.jarvis.files.AiReliabilityTest)

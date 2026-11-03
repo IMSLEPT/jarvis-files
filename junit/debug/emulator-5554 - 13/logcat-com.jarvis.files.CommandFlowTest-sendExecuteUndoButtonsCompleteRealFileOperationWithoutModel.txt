@@ -1,0 +1,1019 @@
+11-03 18:22:46.028  5034  5170 I TestRunner: started: sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:46.035   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd808d0
+11-03 18:22:46.035   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:46.042  1621  1883 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():72 Finished loading emoji shortcuts
+11-03 18:22:46.052   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f130
+11-03 18:22:46.052   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7eef0
+11-03 18:22:46.091  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:46.093  1621  1882 I SP      : Sync for kc_tflite_model succeeded in 1349 ms: {added: [tflite-kc-en_us_secagg-20220805_235142], metadata: false
+11-03 18:22:46.108  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:46.124  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:46.128  1621  1882 I SP      : GC for 'kc_tflite_model' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:46.140  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:46.157  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@5325a9b]
+11-03 18:22:46.160  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:22:46.167   835   913 D SplashScreenView: Build android.window.SplashScreenView{bff2f76 V.E...... ......ID 0,0-0,0}
+11-03 18:22:46.167   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:22:46.167   835   913 D SplashScreenView: Branding: view: android.view.View{7615977 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:22:46.169   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:22:46.172  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: PRE_ON_CREATE
+11-03 18:22:46.173  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:22:46.179  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: CREATED
+11-03 18:22:46.180  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@e2e2c6f
+11-03 18:22:46.180  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: STARTED
+11-03 18:22:46.180  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@e2e2c6f
+11-03 18:22:46.186  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: RESUMED
+11-03 18:22:46.186  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@e2e2c6f
+11-03 18:22:46.191  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:22:46.207  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:22:46.237  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.clearcut_client#com.google.android.setupwizard
+11-03 18:22:46.267  1115  1115 W FrameTracker: Missed App frame:UNKNOWN: 24, 9964, 50167048, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:22:46.267  1115  1115 W FrameTracker: Missed SF frame:UNKNOWN: 24, 9964, 50167048, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:22:46.267  1115  1115 W FrameTracker: Missing SF jank callback for vsyncId: 10006, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:22:46.292   516  1188 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:22:46.325  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.setupwizard
+11-03 18:22:46.361  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle#com.google.android.setupwizard
+11-03 18:22:46.361  1615  1705 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.366   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:22:46.367   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +203ms
+11-03 18:22:46.368  1615  1705 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.369  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.setupwizard
+11-03 18:22:46.370  1090  1090 I PhenotypeBackgroundRecv: Skipping com.google.android.setupwizard which doesn't use ProcessStable flags.
+11-03 18:22:46.381  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:46.381  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:46.391  1803  3056 I PBSessionCacheImpl: Deleted sessionId[7931471589631064] from persistence.
+11-03 18:22:46.395  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:22:46.396  1115  6434 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293b18ea0 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:22:46.398   516   762 W InputManager-JNI: Input channel object 'b9a6119 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:22:46.401  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:46.403  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:22:46.404  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:22:46.406  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:22:46.406  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:22:46.406  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:46.406  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:46.407  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.setupwizard
+11-03 18:22:46.410  1803  2841 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd807b0
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80c90
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fc70
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7de70
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80150
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7de70
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:46.413   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80150
+11-03 18:22:46.428  1803  2869 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.441  3026  3291 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.441  3026  3291 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.445  3026  3291 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.446  3026  3291 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.450  1712  3229 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.472  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.472  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.474  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.474  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.474  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.474  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.474  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.475  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.480  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:22:46.480  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:22:46.513  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.513  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.517  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.517  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.517  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.518  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.518  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.518  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.518  1536  1563 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.555  1536  1782 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:46.560  1682  6432 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10163; state: ENABLED
+11-03 18:22:46.569  1682  2011 I MediaProvider: Changed PhotoPickerGetContentActivity component state to STATE_DISABLED ( 2 )
+11-03 18:22:46.570  1682  2011 I MediaProvider: Changed PhotoPickerUserSelectActivity component state to STATE_DISABLED ( 2 )
+11-03 18:22:46.572  1682  2011 I MediaApplication: Changed PhotoPickerSettingsActivity component state to STATE_DISABLED ( 2 )
+11-03 18:22:46.572  1682  2011 I TranscodeHelper: Empty transcode compat stale
+11-03 18:22:46.573  1682  2011 I TranscodeHelper: Parsed 0 packages from resource
+11-03 18:22:46.573  1682  2011 I TranscodeHelper: Parsed 8 packages from device config
+11-03 18:22:46.577  1621  1621 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:22:46.577  1621  1621 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():166 maybeFetchAndUpdate: start new task to fetch
+11-03 18:22:46.578  1621  1621 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:22:46.578  1621  1621 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:22:46.584  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 98 [CONTEXT service_id=218 ]
+11-03 18:22:46.592  1166  1573 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 72 uptime_millis: 72 exec_start_elapsed_seconds: 98 [CONTEXT service_id=218 ]
+11-03 18:22:46.596  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.596  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.597  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.598  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.598  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.599  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.599  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.600  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.615  1166  1570 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1793730166615) [CONTEXT service_id=51 ]
+11-03 18:22:46.621  1166  1570 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+11-03 18:22:46.654  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.658  1621  1896 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():268 Get empty configurations.
+11-03 18:22:46.659  1621  1896 I PhenotypeModule: PhenotypeModule.lambda$fetchAndUpdate$2():220 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-11-03 18:22:46{reason=2, isFullFetch=false, success=true, isEmpty=true, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, updatedFlagsCount=0, totalTime=81}
+11-03 18:22:46.661  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.662  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.665  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.665  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.669  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.669  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.669  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.684  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.684  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.685  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.718  1166  6702 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.718  1166  6702 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.719  1166  6702 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.736  1166  6702 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.736  1166  6702 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.736  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.736  1166  6702 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.736  1166  6702 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.737  1166  6702 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.737  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.737  1166  6702 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.743  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator finished executing. cause:5 result: 1 elapsed_millis: 3574 uptime_millis: 3574 exec_start_elapsed_seconds: 94 [CONTEXT service_id=218 ]
+11-03 18:22:46.750  1166  6703 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.750  1166  6703 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.752  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.752  1166  6703 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.753  1166  6703 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.753  1166  6703 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.754  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.754  1166  6703 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.770  1166  6703 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.770  1166  6703 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.771  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.771  1166  6703 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.772  1166  6703 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.772  1166  6703 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.772  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.772  1166  6703 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.781  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:22:46.782  5034  5034 D InsetsController: show(ime(), fromIme=false)
+11-03 18:22:46.782  5034  5034 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{279427b VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+11-03 18:22:46.783  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:22:46.785  5034  5034 I AssistStructure: Flattened final assist data: 512 bytes, containing 1 windows, 3 views
+11-03 18:22:46.794  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+11-03 18:22:46.794  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:46.794  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:46.796  5034  5034 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{279427b VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+11-03 18:22:46.798  1166  6703 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.798  1166  6703 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.798  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.798  1166  6703 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.799  1166  6703 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.799  1166  6703 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.799  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.799  1166  6703 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.800  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+11-03 18:22:46.803  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:46.804  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:46.804  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:22:46.806  1166  6703 I bwir    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-03 18:22:46.807  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+11-03 18:22:46.808  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:46.808  1621  1784 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:22:46.808  1621  1621 W ModuleManager: ModuleManager.loadModule():450 Module erj is not available
+11-03 18:22:46.821  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-03 18:22:46.822  1621  1621 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+11-03 18:22:46.823  1621  1621 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+11-03 18:22:46.823  1621  1621 I Delight5Facilitator: Delight5Facilitator.resetDecoder():954 resetDecoder() : Locale = [en_US]
+11-03 18:22:46.826  1621  1621 I Delight5Decoder: Delight5DecoderWrapper.createOrResetDecoder():341 Decoder reset
+11-03 18:22:46.828  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.829  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.829  1166  1166 W AutofillChimeraService: Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+11-03 18:22:46.830  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.830  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.830  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.831  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.832  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.833  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.836  1599  1599 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:637498192
+11-03 18:22:46.846  5034  5034 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+11-03 18:22:46.846  5034  5034 D Autofill Status:
+11-03 18:22:46.846  5034  5034 D Autofill Status: Did you set up autofill?
+11-03 18:22:46.846  5034  5034 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+11-03 18:22:46.846  5034  5034 D Autofill Status: 2. Pick a service
+11-03 18:22:46.846  5034  5034 D Autofill Status:
+11-03 18:22:46.846  5034  5034 D Autofill Status: Did you add an account?
+11-03 18:22:46.846  5034  5034 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+11-03 18:22:46.846  5034  5034 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+11-03 18:22:46.846  5034  5034 D Autofill Status: 3. Add your account
+11-03 18:22:46.861  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.862  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.863  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.863  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.864  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.864  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.864  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.864  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.869  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+11-03 18:22:46.874  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+11-03 18:22:46.875  1621  1621 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1003 inline flag updated to:false
+11-03 18:22:46.879  1621  1621 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:22:46.882  1621  1883 I MainLanguageModelLoader: MainLanguageModelLoader.call():145 Running LM loader for [en_US]
+11-03 18:22:46.882  1621  6010 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():205 maybeScheduleAutoPackDownloadForFallback()
+11-03 18:22:46.882  1621  1883 I DelightDataFileManagerLanguageModelProvider: DelightDataFileManagerLanguageModelProvider.fetchLanguageModel():73 find data en-US delight
+11-03 18:22:46.883  1621  6010 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():195 maybeScheduleAutoPackDownload() for language tag en-US
+11-03 18:22:46.884  1621  1883 I LmManager: LmManager.asyncUpdateEnabledLanguageModels():90 asyncUpdateEnabledLanguageModels()
+11-03 18:22:46.884  1621  1883 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
+11-03 18:22:46.884  1621  1883 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2023020919 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
+11-03 18:22:46.885  1621  1883 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
+11-03 18:22:46.885  1621  1883 I SuperDelight: SuperDelightManager.initializeOverridesSuperpacks():402 initializeOverridesSuperpacks()
+11-03 18:22:46.885  1621  1883 I DelightDataFileManagerLanguageModelProvider: DelightDataFileManagerLanguageModelProvider.fetchLanguageModel():73 find data en-US delight
+11-03 18:22:46.887  1621  1789 I SuperDelight: SuperDelightManager.initializeBundledDelightSuperpacks():376 initializeBundledDelightSuperpacks()
+11-03 18:22:46.888  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:22:46.889  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:22:46.889  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_OPTIONAL
+11-03 18:22:46.889  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:22:46.889  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = BODY, shownType = SHOW_MANDATORY
+11-03 18:22:46.889  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:22:46.890  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = FLOATING_CANDIDATES, shownType = HIDE
+11-03 18:22:46.890  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = false
+11-03 18:22:46.890  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:22:46.891  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:22:46.892  1621  1789 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2023020919, required 2023020919
+11-03 18:22:46.892  1166  1573 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 98 [CONTEXT service_id=218 ]
+11-03 18:22:46.892  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:22:46.893  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+11-03 18:22:46.893  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:22:46.893  1621  1882 I SP      : Registering bundled_delight.2022101700, url: null, constraints: *:*:*:*, flags: *, requested: 2022101700, current: 2022101700
+11-03 18:22:46.895  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:22:46.896  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+11-03 18:22:46.898  1621  1621 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():383 No private IME option set to start voice input.
+11-03 18:22:46.906  1621  1883 I LmManager: LmManager.asyncUpdateEnabledLanguageModels():90 asyncUpdateEnabledLanguageModels()
+11-03 18:22:46.906  1621  1883 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
+11-03 18:22:46.906  1621  1645 I putmethod.latin: JIT allocated 52KB for compiled code of mzo hod.d(java.util.List)
+11-03 18:22:46.906  1621  1883 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2023020919 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
+11-03 18:22:46.906  1621  1883 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
+11-03 18:22:46.906  1621  1883 I SuperDelight: SuperDelightManager.initializeOverridesSuperpacks():402 initializeOverridesSuperpacks()
+11-03 18:22:46.906  1621  1883 I MainLanguageModelLoader: MainLanguageModelLoader.updateLmAvailableState():392 updateLmAvailableState(): locale? en_US prevState? AVAILABLE
+11-03 18:22:46.906  1621  1883 I MainLanguageModelLoader: MainLanguageModelLoader.updateLmAvailableState():428 updateLmAvailableState(): locale? en_US newState? AVAILABLE
+11-03 18:22:46.906  1621  1883 I Delight5Facilitator: BlocklistLoader.call():37 Running blocklist loader
+11-03 18:22:46.907  1621  1883 I Delight5Facilitator: ContactsLanguageModelLoader.call():35 Running contacts language model loader
+11-03 18:22:46.907  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncOverridesLanguageModels$14():689 SuperDelightManager#syncOverridesLanguageModels(): Superpack delight_overrides not found or negative version provided
+11-03 18:22:46.907  1621  1789 I SuperDelight: SuperDelightManager.initializeBundledDelightSuperpacks():376 initializeBundledDelightSuperpacks()
+11-03 18:22:46.907  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():649 loadLanguageModel() : 1, version [2022101700]
+11-03 18:22:46.909  1621  1883 I Delight5Facilitator: ContactsLanguageModelLoader.call():47 Contacts language model is unloaded: preferences=false, deviceLocked=false
+11-03 18:22:46.909  1621  1883 I Delight5Facilitator: PersonalLanguageModelLoader.call():44 Running personal language model loader
+11-03 18:22:46.910  1621  1883 I Delight5Facilitator: UserHistoryLanguageModelLoader.call():82 Running user history language model loader
+11-03 18:22:46.917  1621  1883 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():117 Reading en_US emoji shortcuts
+11-03 18:22:46.922  1621  1882 I SP      : Registering bundled_delight.2022101700, url: null, constraints: *:*:*:*, flags: *, requested: 2022101700, current: 2022101700
+11-03 18:22:46.943  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.943  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.943  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.944  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.944  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.944  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.944  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.944  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.946  1378  1378 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:46.946  1378  1378 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:46.947  1621  2338 E native  : E0000 00:00:1793730166.923176    2338 scoped-file.cc:106] open() failed for /data/user/0/com.google.android.inputmethod.latin/files/personal/adapt_state.en.dat: No such file or directory [2]
+11-03 18:22:46.948  1621  1789 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2023020919, required 2023020919
+11-03 18:22:46.948  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncDownloadableLanguageModels$8():568 SuperDelightManager#syncDownloadableLanguageModels(delight): [OnDevice] Syncing for version 2023020919
+11-03 18:22:46.948  1621  1789 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight_overrides sync success, adding to data file manager
+11-03 18:22:46.948  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncBundledLanguageModels$16():774 SuperDelightManager#syncBundledLanguageModels(): Syncing for version 2022101700
+11-03 18:22:46.949  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncOverridesLanguageModels$14():689 SuperDelightManager#syncOverridesLanguageModels(): Superpack delight_overrides not found or negative version provided
+11-03 18:22:46.950  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():671 Loaded main LM 1.en
+11-03 18:22:46.950  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():649 loadLanguageModel() : 7, version [n/a]
+11-03 18:22:46.951  1621  2338 I native  : I0000 00:00:1793730166.951803    2338 blocklist-assembly.cc:121] LoadBlocklist en
+11-03 18:22:46.952  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():690 Loaded dynamic LM 7.en
+11-03 18:22:46.952  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():649 loadLanguageModel() : 4, version [n/a]
+11-03 18:22:46.952  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():690 Loaded dynamic LM 4.en
+11-03 18:22:46.954  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():649 loadLanguageModel() : 3, version [n/a]
+11-03 18:22:46.955  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():690 Loaded dynamic LM 3.en
+11-03 18:22:46.955  1378  1378 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:46.958  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncBundledLanguageModels$16():774 SuperDelightManager#syncBundledLanguageModels(): Syncing for version 2022101700
+11-03 18:22:46.959  1621  1789 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight_overrides sync success, adding to data file manager
+11-03 18:22:46.959  1621  1789 I SuperDelight: SuperDelightManager.lambda$syncDownloadableLanguageModels$8():568 SuperDelightManager#syncDownloadableLanguageModels(delight): [OnDevice] Syncing for version 2023020919
+11-03 18:22:46.959  1621  1882 I SuperDelight: SuperDelightBundledSlicingStrategy.getSlices():39 BundledSlicing#getSlices() : Locale = [en_US]
+11-03 18:22:46.959  1621  1882 I SuperDelight: SuperDelightBundledSlicingStrategy.getSlices():65 BundledSlicing#getSlices(): result {slices=[bundled_delight:main_en_us_2022051700_2], last batch=true, sync metadata=false}
+11-03 18:22:46.960  1621  1882 I SP      : Syncing bundled_delight (2022101700) with slices: [main_en_us_2022051700_2], metadata: false
+11-03 18:22:46.964  1166  1180 I .gms.persistent: Background young concurrent copying GC freed 418765(14MB) AllocSpace objects, 27(1368KB) LOS objects, 42% free, 20MB/35MB, paused 41us,53us total 115.516ms
+11-03 18:22:46.976  5034  5034 D InsetsController: show(ime(), fromIme=true)
+11-03 18:22:46.976  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:46.976  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:46.976  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.976  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:46.976  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:46.977  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:46.977  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:46.977  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:46.986  1621  1646 I putmethod.latin: NativeAlloc concurrent copying GC freed 194476(8718KB) AllocSpace objects, 10(460KB) LOS objects, 49% free, 13MB/26MB, paused 142us,40us total 198.564ms
+11-03 18:22:46.993  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: tflite-nwp-be541314788c7304827a9710c3ac4edb[3]
+11-03 18:22:46.993  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: tflite-nwp-be541314788c7304827a9710c3ac4edb[3]
+11-03 18:22:46.993  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[10]
+11-03 18:22:46.994  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[8]
+11-03 18:22:46.994  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[10]
+11-03 18:22:46.994  1621  1648 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[8]
+11-03 18:22:46.999  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:22:47.006  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.006  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.006  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.006  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.007  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.007  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.007  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.007  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.008  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():457 setKeyboardLayout()
+11-03 18:22:47.012  1378  1378 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:47.012  1378  1378 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:47.026  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.027  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.028  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.032  1621  1883 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():134 Read en_US emoji shortcuts successfully.
+11-03 18:22:47.036  1621  2338 W Delight5Decoder: Delight5DecoderWrapper.shouldAbandonMessage():1983 Detected old [FetchSuggestions] request in background: 13<14
+11-03 18:22:47.041  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.041  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.042  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.042  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.042  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.042  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.043  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.044  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.049  1378  1378 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:22:47.050  1621  1882 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():68 DownloadSlicing#getSlices() : Locale = [en_US]
+11-03 18:22:47.057  1621  1882 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():125 DownloadSlicing#getSlices(): result {slices=[{delight:main_en_840_2022102600_1, m:*:*:*, fg}], last batch=true, sync metadata=false}
+11-03 18:22:47.060  1621  1883 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():63 1 emoji shortcut maps loaded.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.062  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.072  1621  1882 I SP      : Syncing delight (2023020919) with slices: [{main_en_840_2022102600_1, m:*:*:*, fg}], metadata: false
+11-03 18:22:47.072  1621  1882 I SuperDelight: SuperDelightBundledSlicingStrategy.getSlices():39 BundledSlicing#getSlices() : Locale = [en_US]
+11-03 18:22:47.072  1621  1882 I SuperDelight: SuperDelightBundledSlicingStrategy.getSlices():65 BundledSlicing#getSlices(): result {slices=[bundled_delight:main_en_us_2022051700_2], last batch=true, sync metadata=false}
+11-03 18:22:47.072  1621  1882 I SP      : Syncing bundled_delight (2022101700) with slices: [main_en_us_2022051700_2], metadata: false
+11-03 18:22:47.079  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.080  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.080  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.081  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.081  1621  1883 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():72 Finished loading emoji shortcuts
+11-03 18:22:47.081  1621  1883 I Delight5Facilitator: EmailLanguageModelLoader.call():30 Running email language model loader
+11-03 18:22:47.081  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.082  1621  1883 I Delight5Facilitator: KeyCorrectionTfliteModelLoader.call():29 Running Key Correction Tflite Model loader
+11-03 18:22:47.082  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.083  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():649 loadLanguageModel() : 29, version [n/a]
+11-03 18:22:47.083  1621  2338 W Delight5Decoder: Delight5DecoderWrapper.getTimerTypeForLoadLanguageModule():800 Cannot find timer type for loading language model 29
+11-03 18:22:47.083  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.083  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.084  1621  1883 I Delight5Facilitator: RankingModelLoader.call():28 Running Ranking Model loader
+11-03 18:22:47.085  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.loadLanguageModel():690 Loaded dynamic LM 29.en
+11-03 18:22:47.099  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.099  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.100  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.100  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.101  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.101  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.102  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.102  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.103   516  6715 E StatsCompanionService: Could not get installer for package: com.google.android.trichromelibrary
+11-03 18:22:47.103   516  6715 E StatsCompanionService: android.content.pm.PackageManager$NameNotFoundException: com.google.android.trichromelibrary
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.app.ApplicationPackageManager.getInstallSourceInfo(ApplicationPackageManager.java:2541)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at com.android.server.stats.StatsCompanionService.getInstallerPackageName(Unknown Source:1)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at com.android.server.stats.StatsCompanionService.lambda$informAllUids$0(Unknown Source:107)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at com.android.server.stats.StatsCompanionService.$r8$lambda$VOiYvFUkZmZjyfB0dWDMf-akDT0(Unknown Source:0)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at com.android.server.stats.StatsCompanionService$$ExternalSyntheticLambda1.run(Unknown Source:6)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:22:47.103   516  6715 E StatsCompanionService: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:22:47.114  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.115  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.115  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.115  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.115  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.116  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.116  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.116  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.127  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:22:47.129  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:22:47.130  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:22:47.138   835   924 D EGL_emulation: app_time_stats: avg=305.91ms min=10.44ms max=689.08ms count=5
+11-03 18:22:47.158  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.159  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.160  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.166  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+11-03 18:22:47.167  1621  1621 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+11-03 18:22:47.169  1621  1621 I InputBundle: InputBundle.consumeEvent():923 Skip consuming an event as keyboard status is 0
+11-03 18:22:47.169  1621  1621 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:22:47.169  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+11-03 18:22:47.169  1621  1621 E native  : E0000 00:00:1793730167.169627    1621 key-correction-manager.cc:322] User feature cache is not ready for key correction!
+11-03 18:22:47.169  1621  1621 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+11-03 18:22:47.171  1621  1784 W ModuleManager: ModuleManager.loadModule():450 Module jjj is not available
+11-03 18:22:47.175  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+11-03 18:22:47.175  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:47.176  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:47.176  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:22:47.186  2596  4277 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10115; state: ENABLED
+11-03 18:22:47.204  1701  2428 I AiAiCaptions: turnCaptionsOff() turning off captions because: Setting changed.
+11-03 18:22:47.204  1701  2428 I AiAiCaptions: maybeUpdateComponentsManagerAndRegisterListeners(): should not be enabled
+11-03 18:22:47.204  1701  2428 I AiAiCaptions: ComponentsManagerImpl::update()
+11-03 18:22:47.204  1701  2428 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+11-03 18:22:47.205  1701  2428 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity (reason: Captions is disabled in device config)
+11-03 18:22:47.208  1701  2428 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity (reason: Captions is disabled in device config)
+11-03 18:22:47.212  1701  2428 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService (reason: Captions is disabled in device config)
+11-03 18:22:47.218  1701  2775 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService (reason: Captions is disabled in device config)
+11-03 18:22:47.219  1701  2775 I AiAiCaptions: Would disable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS (reason: Captions is disabled in device config) but already disabled
+11-03 18:22:47.220  1701  2775 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService (reason: Captions is disabled in device config)
+11-03 18:22:47.222  1701  2775 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver (reason: Captions is disabled in device config)
+11-03 18:22:47.229  1701  2775 I AiAiCaptions: Disable com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService (reason: Captions is disabled in device config)
+11-03 18:22:47.239  1701  2775 I AiAiCaptions: setVolumeControlEnabled() changing volume control state to disabled because: Captions is disabled in device config
+11-03 18:22:47.240  1701  2775 I AiAiCaptions: updateAndLogResult(): updated components
+11-03 18:22:47.240  1701  1760 I AiAiEcho: Settings cha with uri: content://settings/secure/odi_captions_volume_ui_enabled
+11-03 18:22:47.240  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:47.241  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:47.241  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:47.241  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:47.241  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:47.242  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:47.242  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:47.242  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:47.280  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.281  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.283  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.283  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.283  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.283  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.284  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.285  1621  1882 I SP      : GC for 'delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:47.286  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.286  1621  1882 I SP      : GC for 'bundled_delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:47.286  1621  1790 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): delight.sync cancelled; expected if new request supersedes pending one.
+11-03 18:22:47.286  1621  1882 I LmManager: LmManager$1.onFailure():81 Bundled delight sync failed
+11-03 18:22:47.286  1621  1882 I LmManager: java.util.concurrent.CancellationException: Task was cancelled.
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mrp.s(PG:3)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mrp.get(PG:4)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mgr.Q(PG:1)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mfu.V(PG:2)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mtg.run(PG:4)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at msq.execute(PG:1)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mrp.q(PG:1)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mrp.k(PG:12)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mrp.p(PG:5)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at msm.c(PG:2)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mso.e(PG:2)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at mtr.run(PG:8)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at hbs.run(PG:2)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:47.286  1621  1882 I LmManager: 	at hbf.run(PG:2)
+11-03 18:22:47.286  1621  1882 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():68 DownloadSlicing#getSlices() : Locale = [en_US]
+11-03 18:22:47.291  1017  2607 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 1073; state: ENABLED
+11-03 18:22:47.296  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.296  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.296  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.299  1621  1882 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():125 DownloadSlicing#getSlices(): result {slices=[{delight:main_en_840_2022102600_1, m:*:*:*, fg}], last batch=true, sync metadata=false}
+11-03 18:22:47.299  1621  1882 I SP      : Syncing delight (2023020919) with slices: [{main_en_840_2022102600_1, m:*:*:*, fg}], metadata: false
+11-03 18:22:47.300  1621  1882 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): delight.sync cancelled; expected if new request supersedes pending one.
+11-03 18:22:47.300  1621  1882 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): bundled_delight.sync cancelled; expected if new request supersedes pending one.
+11-03 18:22:47.302  1621  1790 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+11-03 18:22:47.302  1621  1790 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:22:47.302  1621  1789 I SuperDelight: SuperDelightManager$2.onSuccess():635 bundled_delight sync success, adding to data file manager
+11-03 18:22:47.303  1621  1789 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:22:47.304  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.304  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.320  5034  5045 I om.jarvis.files: Background young concurrent copying GC freed 268704(8608KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 11MB/19MB, paused 31us,13us total 163.425ms
+11-03 18:22:47.340  1599  6722 W ConnectivityManager.CallbackHandler: callback not found for CALLBACK_AVAILABLE message
+11-03 18:22:47.343   516   775 D ConnectivityService: NetReassign [no changes] [c 1] [a 4] [i 2]
+11-03 18:22:47.349  5228  5228 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+11-03 18:22:47.353  1803  1803 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-03 18:22:47.371  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.373  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.381  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.383  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.383  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.388  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.389  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.394  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.408  1701  2135 I AiAiNowPlaying: Now Playing config changed. Refreshing FA controller
+11-03 18:22:47.413  1621  1882 I SP      : GC for 'delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:47.414  1621  1790 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): delight.sync cancelled; expected if new request supersedes pending one.
+11-03 18:22:47.414  1621  1882 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): delight.sync cancelled; expected if new request supersedes pending one.
+11-03 18:22:47.415  1621  1882 I SP      : Sync for bundled_delight succeeded in 447 ms: no changes
+11-03 18:22:47.415  1621  1882 I SP      : GC for 'bundled_delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:47.415  1621  1882 I LmManager: LmManager$1.onSuccess():76 Bundled delight sync success
+11-03 18:22:47.416  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:47.424  1621  1789 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+11-03 18:22:47.424  1621  1789 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:22:47.425  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.435  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:47.435  1701  2135 I ModelReloader: Cancelled all jobs.
+11-03 18:22:47.436  1701  2135 I AmbientMusicServiceMana: Unloading model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+11-03 18:22:47.436  1701  2135 I SoundTriggerManagerComp: Unloading model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+11-03 18:22:47.450   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: Cancelling training failed [population=aiai/sense/ambientmusic/, session=ambientmusic]
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: kg: 17: InAppTraining API not enabled!
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at vi.e(PG:2)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at b.C(PG:1)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at te.b(PG:2)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at avn.run(PG:6)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:47.459  2596  3164 W TrainerGrpcBindableService: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:47.460  1701  3027 W AiAiFed : [Now Playing Recognitions FA] Canceling training failed [mode=FEDERATION, population=aiai/sense/ambientmusic/, session=ambientmusic]
+11-03 18:22:47.460  1701  3027 W AiAiFed : npd: UNKNOWN
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at nzw.D(PG:2)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at nrm.a(PG:3)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at nse.run(PG:2)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at nwz.run(PG:2)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:47.460  1701  3027 W AiAiFed : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:47.465  1621  1790 I SuperDelight: SuperDelightManager$2.onSuccess():635 bundled_delight sync success, adding to data file manager
+11-03 18:22:47.469  1621  1790 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:22:47.469  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@ecde9d0
+11-03 18:22:47.470  3026  3026 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+11-03 18:22:47.478  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.483  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.484  1621  1882 I SuperDelight: SuperDelightMergingStrategy.merge():55 SuperDelightMergingStrategy#merge(): selected[[main_en_us_2022101700_1]] synced[[main_en_840_2022102600_1]]
+11-03 18:22:47.485  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.486  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.487  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.488  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.489  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.489  1621  1882 I SP      : Sync for delight succeeded in 204 ms: {added: [main_en_840_2022102600_1], metadata: false
+11-03 18:22:47.490  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.492  1701  1760 I AiAiEcho: Settings cha with uri: content://settings/secure/now_playing_enabled
+11-03 18:22:47.492  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:47.493  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:47.493  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:47.493  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:47.494  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:47.494  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:47.497  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:47.497  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:47.533   313   313 W Zygote  : forkRepeatedly terminated due to non-simple command
+11-03 18:22:47.533   313   313 D Zygote  : mbuffer starts with 1 , nice name is , mEnd = 35, mNext = 35, mLinesLeft = 0, mFd = 6
+11-03 18:22:47.538  1621  1883 I CrankEngineLocales: CrankEngineLocales.getLocaleToUseForCrankEngine():66 Using locale en_US for emoji prediction
+11-03 18:22:47.542  3026  3130 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:47.545  3026  3185 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+11-03 18:22:47.545  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@19d37da
+11-03 18:22:47.548  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.550  3026  3026 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+11-03 18:22:47.551  1621  1882 I SP      : GC for 'delight' (10) with ttl of 0 ms took 1 ms (0/1/0)
+11-03 18:22:47.552  1621  1789 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+11-03 18:22:47.552  1621  1789 I DataFileManager: DataFileManager.addDataWithoutNotify():166 adding data en-840 delight
+11-03 18:22:47.552  1621  1789 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:22:47.554  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.557  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.557  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.557  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.558  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.558  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.558  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.566  1701  2135 I AiAiStatsd: Usage metrics: 0 features enabled, 0 features used for date 2026-11-02.
+11-03 18:22:47.566  1701  2135 I AiAiStatsd: AiAi is used for the day (2026-11-02): true, the week: true
+11-03 18:22:47.567  1701  2135 I AiAiStatsd: Uploading atoms for date: 2026-11-02.
+11-03 18:22:47.567  1701  2135 I AiAiStatsd: Total days uploaded: 1 days.
+11-03 18:22:47.610  1166  1391 W BpBinder: Large outgoing transaction of 330712 bytes, interface descriptor <uncached descriptor>, code 4
+11-03 18:22:47.634  1166  1391 W BpBinder: Large outgoing transaction of 330712 bytes, interface descriptor <uncached descriptor>, code 4
+11-03 18:22:47.671  1166  2625 W BpBinder: Large outgoing transaction of 329784 bytes, interface descriptor <uncached descriptor>, code 4
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+11-03 18:22:47.675  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+11-03 18:22:47.676  1803  2413 W A       : Can't format flag bindle_flags__velour_jar to integer.
+11-03 18:22:47.687  1803  2412 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 331 seconds.
+11-03 18:22:47.688  1803  2414 I FedAssExpListener: Fed-ass not supported for signed out users.
+11-03 18:22:47.688  1803  2414 I FedAssExpListener: Successfully processed experiments changed.
+11-03 18:22:47.689  1803  2412 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-03 18:22:47.691  1803  2414 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:22:47.693  1803  2412 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:47.701  1378  4001 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+11-03 18:22:47.704  1378  5763 W Icing   : No valid account for uploading user actions
+11-03 18:22:47.704  1378  3442 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+11-03 18:22:47.717  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.718  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.718  3026  3291 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+11-03 18:22:47.722  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.722  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.722  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.722  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.722  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.723  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.724  1378  5763 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:22:47.734  3026  3130 W BugleAction: Null config in BugleSharedPrefs
+11-03 18:22:47.734  3026  3130 W BugleAction: Failed to get msisdn from Bugle
+11-03 18:22:47.735  3026  3230 W BugleRcsEngine: [61] bgdi.e: RcsProvisioningManager: ProvisioningEngineAdapter not found for SIM redacted-pii:sim_id[chars:20,last3:897]
+11-03 18:22:47.735  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:47.738  1378  5763 W Icing   : No valid account for uploading user actions
+11-03 18:22:47.738  3026  3134 I BugleRcsEngine: [43] bejl.run: SystemBindingManager: SystemBinding enabled: false
+11-03 18:22:47.739  3026  3134 I BugleRcsEngine: [43] bejm.b: System Binding updated
+11-03 18:22:47.739  3026  3230 W BugleRcsEngine: [61] bemz.x: Unable to send diagnostic log
+11-03 18:22:47.743  2444  3650 I CarrierServices: [65] fjp.f: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+11-03 18:22:47.743  3026  3130 W BugleRcsEngine: [42] RcsProfileService.g: Result is null when getting value for id:4
+11-03 18:22:47.743  3026  3130 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:22:47.743  3026  3130 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:22:47.744  3026  3130 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:22:47.744  1378  5763 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:22:47.746  3026  3130 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:22:47.746  3026  3130 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+11-03 18:22:47.748  3026  3130 W BugleAction: No default number, returning empty msisdn
+11-03 18:22:47.752  3026  3184 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:47.752  3026  3184 I BugleTransport: isChatAvailable: true, enabledTransport: 1
+11-03 18:22:47.753  1166  1166 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:22:47.761  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@7621f5
+11-03 18:22:47.771  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+11-03 18:22:47.774  2444  4398 I CarrierServices: [70] fxv.d: Received Provisioning Event: [Bugle information (100)]
+11-03 18:22:47.774  2444  4398 I CarrierServices: [70] fxv.d: JibeService is running, passing event to provisioning engine.
+11-03 18:22:47.775  2444  4398 I CarrierServices: [70] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+11-03 18:22:47.775  2444  4398 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+11-03 18:22:47.777  2444  4398 I CarrierServices: [70] fjp.y: Bugle is default SMS app: true
+11-03 18:22:47.777  2444  4398 I CarrierServices: [70] fhf.b: Bugle has minimum required RCS permissions: true
+11-03 18:22:47.778  2444  4398 I CarrierServices: [70] fjp.x: Rcs is enabled from user settings: true
+11-03 18:22:47.782  2444  4398 I CarrierServices: [70] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+11-03 18:22:47.782  2444  4398 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-03 18:22:47.783  1166  1573 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+11-03 18:22:47.804  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:22:47.806  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:22:47.811  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:47.811  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.811  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:47.812  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.813  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.813  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.814  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.814  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.814  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.816  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.822  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.823  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.823  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.823  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.823  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.824  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.824  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.824  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.839  5034  5688 D EGL_emulation: app_time_stats: avg=84.37ms min=6.71ms max=362.81ms count=17
+11-03 18:22:47.840  3854  6737 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:22:47.849  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.850  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.854  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.854  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.854  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.854  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.854  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.855  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.865  3026  3291 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.clearcut_client#com.google.android.apps.messaging
+11-03 18:22:47.866  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk
+11-03 18:22:47.869  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@a261cb7
+11-03 18:22:47.872  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.873  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.873  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.874  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.874  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 0 deletes
+11-03 18:22:47.874  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.875  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.875  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.875  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.876  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk to null
+11-03 18:22:47.889  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.889  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.890  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.890  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.890  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.890  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.891  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.891  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.897  1166  3463 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+11-03 18:22:47.899  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.899  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.899  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.899  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.900  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.900  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.900  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.900  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.909  3026  3130 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.apps.messaging.onboarding#com.google.android.apps.messaging
+11-03 18:22:47.917  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.917  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.917  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.919  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.919  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.919  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.920  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.921  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.924  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@b9e478e
+11-03 18:22:47.930  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 99 [CONTEXT service_id=218 ]
+11-03 18:22:47.931  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.932  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.932  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.936  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.938  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.938  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.938  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.939  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.954  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.955  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.956  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.956  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.956  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.956  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.968  3026  3230 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.messaging
+11-03 18:22:47.971  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.971  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:47.975  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@45dd2c1
+11-03 18:22:47.982  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:47.983  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:47.983  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.986  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:47.986  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:47.986  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:47.986  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:47.986  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.000  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.015  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.015  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.015  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.015  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.016  1166  6705 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.016  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.016  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.016  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.031  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.031  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.032  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.048  3026  3230 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging
+11-03 18:22:48.052  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@ccc13c0
+11-03 18:22:48.059  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.076  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.079  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.079  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.080  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.081  3026  3291 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.abuse.hades.moirai#com.google.android.apps.messaging
+11-03 18:22:48.081  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.087  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.091  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.092  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@fd105bb
+11-03 18:22:48.100  3026  3230 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.internal.growth.growthkit#com.google.android.apps.messaging
+11-03 18:22:48.110  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@1804297
+11-03 18:22:48.133  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.134  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.134  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.135  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.135  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.135  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.135  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.135  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.142  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.143  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.144  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.155  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.155  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.155  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.156  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.156  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.156  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.156  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.157  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.163  3026  3291 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle#com.google.android.apps.messaging
+11-03 18:22:48.165  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.166  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.167  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.167  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.168  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.168  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.169  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.169  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.172  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@208a4ee
+11-03 18:22:48.175  3026  3130 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.messaging
+11-03 18:22:48.181  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@45e21fa
+11-03 18:22:48.185  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.187  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.189  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.189  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.189  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.189  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.190  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.192  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.196  3026  3130 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.apps.messaging
+11-03 18:22:48.200  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@4a1add
+11-03 18:22:48.201  3026  3026 I PhenotypeBackgroundRecv: Skipping com.google.lighter.android#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+11-03 18:22:48.203  1166  6704 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.204  1166  6704 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.204  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.205  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@5d287d9
+11-03 18:22:48.206  1166  6704 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.206  1166  6704 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.206  3026  3026 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.icing.mdd#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+11-03 18:22:48.207  1166  6704 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.208  1166  6704 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.208  1166  6704 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.209  1044  1044 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:22:48.210  1044  1044 D MediaPlayerList: Name of package changed: com.google.android.as
+11-03 18:22:48.210  1044  1044 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:22:48.210  1044  1044 D MediaPlayerList: Name of package changed: com.google.android.as
+11-03 18:22:48.214  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@4114d95
+11-03 18:22:48.215  4863  5244 I PermissionControllerServiceImpl: Updating user sensitive for uid 10118
+11-03 18:22:48.219  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@982fdaa
+11-03 18:22:48.220  3026  3184 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.apps.messaging
+11-03 18:22:48.220   835   835 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:22:48.226  3854  6745 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:22:48.227   516   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:22:48.228  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@1eb4a76
+11-03 18:22:48.233   516   617 I RoleService: Granting default roles...
+11-03 18:22:48.234  1077  1077 D CarrierSvcBindHelper: onPackageModified: com.google.android.as
+11-03 18:22:48.234  1077  1077 D CarrierSvcBindHelper: No carrier app for: 0
+11-03 18:22:48.238  1077  1077 D ImsResolver: maybeAddedImsService, packageName: com.google.android.as
+11-03 18:22:48.246  1166  6708 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-03 18:22:48.263  1166  6703 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-03 18:22:48.266  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.268  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.269  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.270  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.272  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.272  4863  5004 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:22:48.272  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.273  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.274  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.282  1115  1115 I ActivityThread: Schedule relaunch activity: com.google.android.apps.nexuslauncher.NexusLauncherActivity
+11-03 18:22:48.286  1115  1115 D b/254119092: clearActivity
+11-03 18:22:48.286  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:22:48.323  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.326  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.336  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.336  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.337   516   536 W InputManager-JNI: Input channel object '8a3fb52 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:48.339  1115  1115 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:22:48.339  1115  1115 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:22:48.346   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e710
+11-03 18:22:48.350  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.350  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.351  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.352  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.384  3026  3184 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.messaging
+11-03 18:22:48.388  3026  3255 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@dd81949
+11-03 18:22:48.390  3026  3130 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+11-03 18:22:48.391  1115  1115 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:22:48.391  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.393  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.394  1115  1115 D DeviceSearchAlg: search timeout = %d200
+11-03 18:22:48.395  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.395  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.397  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.397  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.398  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.399  1115  1151 I AiAiSuggestUi: Connecting to system intelligence module.
+11-03 18:22:48.402   313   313 I Zygote  : Entering forkRepeatedly native zygote loop
+11-03 18:22:48.404  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.408   313   313 D Zygote  : Forked child process 6758
+11-03 18:22:48.409  1701  1701 I AiAiOverview: Created AiAiContentSuggestionsService.
+11-03 18:22:48.415  1115  1131 I AiAiSuggestUi: Successfully connected to system intelligence:
+11-03 18:22:48.417  6758  6758 I android.webview: Using CollectorTypeCC GC.
+11-03 18:22:48.418  6758  6758 W android.webview: Unexpected CPU variant for x86: x86_64.
+11-03 18:22:48.418  6758  6758 W android.webview: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:22:48.430  1115  1115 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+11-03 18:22:48.430  1115  1115 W BcSmartspaceView: Current card is not present in the Adapter; cannot log.
+11-03 18:22:48.436  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk to content://media/external_primary/file/1000000028
+11-03 18:22:48.440   399   423 I adbd    : jdwp connection from 6758
+11-03 18:22:48.444  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:48.451  1115  1115 I OverviewComponentObserver: updateOverviewTargets: mIsHomeDisabled=false, isDefaultHomeNull=false, mIsDefaultHome=true
+11-03 18:22:48.452  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: PAUSED
+11-03 18:22:48.452  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@e2e2c6f
+11-03 18:22:48.453   835   913 D SplashScreenView: Build android.window.SplashScreenView{3ac4236 V.E...... ......ID 0,0-0,0}
+11-03 18:22:48.453   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:22:48.453   835   913 D SplashScreenView: Branding: view: android.view.View{848d537 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:22:48.455   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.460  6758  6758 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10124; state: ENABLED
+11-03 18:22:48.467  6758  6758 W ziparchive: Unable to open '/data/app/~~xjgOmS1hsn-yvbLGDMfPlA==/com.google.android.trichromelibrary_541412337-NK3_9YS3Y52lOYsijaGKCw==/TrichromeLibrary.dm': No such file or directory
+11-03 18:22:48.467  6758  6758 W ziparchive: Unable to open '/data/app/~~xjgOmS1hsn-yvbLGDMfPlA==/com.google.android.trichromelibrary_541412337-NK3_9YS3Y52lOYsijaGKCw==/TrichromeLibrary.dm': No such file or directory
+11-03 18:22:48.468  6758  6758 W android.webview: Entry not found
+11-03 18:22:48.468  6758  6758 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~xjgOmS1hsn-yvbLGDMfPlA==/com.google.android.trichromelibrary_541412337-NK3_9YS3Y52lOYsijaGKCw==/TrichromeLibrary.apk. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~dp8C1jxTVBg8gd6gX5Hf3Q==/com.google.android.webview-ZcKncYLibG9jrf_LIt0Dzg==/lib/x86_64:/data/app/~~dp8C1jxTVBg8gd6gX5Hf3Q==/com.google.android.webview-ZcKncYLibG9jrf_LIt0Dzg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xjgOmS1hsn-yvbLGDMfPlA==/com.google.android.trichromelibrary_541412337-NK3_9YS3Y52lOYsijaGKCw==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+11-03 18:22:48.471  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.478  6758  6758 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~dp8C1jxTVBg8gd6gX5Hf3Q==/com.google.android.webview-ZcKncYLibG9jrf_LIt0Dzg==/WebViewGoogle.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~dp8C1jxTVBg8gd6gX5Hf3Q==/com.google.android.webview-ZcKncYLibG9jrf_LIt0Dzg==/lib/x86_64:/data/app/~~dp8C1jxTVBg8gd6gX5Hf3Q==/com.google.android.webview-ZcKncYLibG9jrf_LIt0Dzg==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~xjgOmS1hsn-yvbLGDMfPlA==/com.google.android.trichromelibrary_541412337-NK3_9YS3Y52lOYsijaGKCw==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+11-03 18:22:48.486  6758  6758 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.webview' set to: 'default'
+11-03 18:22:48.486  6758  6758 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.webview: false
+11-03 18:22:48.486  6758  6758 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:22:48.488  6758  6758 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+11-03 18:22:48.489  6758  6758 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:22:48.489  6758  6758 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:22:48.490  6758  6758 I cr_WebViewApkApp: Launched version=109.0.5414.123 minSdkVersion=29 isBundle=false processName=com.google.android.webview
+11-03 18:22:48.512  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.515   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:48.515   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ed10
+11-03 18:22:48.515   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f9d0
+11-03 18:22:48.515   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ed10
+11-03 18:22:48.515   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ebf0
+11-03 18:22:48.518   516   541 W ziparchive: Unable to open '/data/app/~~HawZCzduhnt4sBodJcyKJw==/com.jarvis.files.test-mv8XfHEr_0abW4_Qhb-XbA==/base.dm': No such file or directory
+11-03 18:22:48.519  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.519   516   541 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +71ms
+11-03 18:22:48.524  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.524  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.526  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.527  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.527  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.534  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:48.534  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:48.540  1701  1701 I AiAiEcho: SearchContextManagerImpl::setSearchContext resultTypes=[141151] extras=[Bundle[mParcelledData.dataSize=608]] sessionId=[com.google.android.apps.nexuslauncher:d5635427-182e-4bcb-b928-bce9291236b7,0]
+11-03 18:22:48.541   516   762 W InputManager-JNI: Input channel object '3ef519a Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:22:48.554  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: STOPPED
+11-03 18:22:48.554  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@e2e2c6f
+11-03 18:22:48.555  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:22:48.556  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:22:48.556  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files.test fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:22:48.556  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:48.557  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:48.561  5808  5808 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:22:48.562  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 100 [CONTEXT service_id=218 ]
+11-03 18:22:48.562  1115  1115 I ContentCaptureHelper: Setting logging level to DEBUG
+11-03 18:22:48.562  1115  1115 D ContentCaptureManager: setFlushViewTreeAppearingEventDisabled(): setting to false
+11-03 18:22:48.562  1115  1115 D ContentCaptureManager: updateWindowAttributes(): window flags=-2137980672
+11-03 18:22:48.563   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f5b0
+11-03 18:22:48.563   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fd30
+11-03 18:22:48.563   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80d50
+11-03 18:22:48.568  1115  1861 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.571  5034  5034 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+11-03 18:22:48.572  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@e2e2c6f in: DESTROYED
+11-03 18:22:48.572  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:22:48.574  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@5325a9b]
+11-03 18:22:48.577   516   762 W InputManager-JNI: Input channel object '7fea442 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:48.580   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ec50
+11-03 18:22:48.580   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80990
+11-03 18:22:48.580   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80990
+11-03 18:22:48.580  5034  5170 I TestRunner: finished: sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel(com.jarvis.files.CommandFlowTest)

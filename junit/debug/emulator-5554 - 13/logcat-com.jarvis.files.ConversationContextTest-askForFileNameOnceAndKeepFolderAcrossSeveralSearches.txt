@@ -1,0 +1,261 @@
+11-03 18:23:09.409  5034  5170 I TestRunner: started: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.412  8690  8741 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-03 18:23:09.413  8690  8867 I NearbyMessages: OfflineCache: old scanner cache is not enabled [CONTEXT service_id=62 ]
+11-03 18:23:09.425  8690  8690 D BluetoothAdapter: registerBluetoothConnectionCallback()
+11-03 18:23:09.433  8690  8690 I NearbyShared: BTConnStateMgr: BluetoothConnectionCallback registered.
+11-03 18:23:09.444  8690  8690 I NearbyFastPair: NearbyAppHelper: Check Mainline Tethering module version code. [CONTEXT service_id=265 ]
+11-03 18:23:09.446  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.findmydevice.spot.service.management.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.446  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.findmydevice.spot.service.management.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.449  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:09.450  8690  8690 I NearbyFastPair: NearbyAppHelper: Tethering package version code: 331711040 [CONTEXT service_id=265 ]
+11-03 18:23:09.453  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.findmydevice.spot.service.locationreport.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.453  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.findmydevice.spot.service.locationreport.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.458  8690  8743 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate start [CONTEXT service_id=265 ]
+11-03 18:23:09.459  8690  8738 W GmsClient: unable to connect to service: com.google.android.gms.home.service.START on com.google.android.gms
+11-03 18:23:09.460  8690  9010 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+11-03 18:23:09.463  8690  8757 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-03 18:23:09.465  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.466  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:09.466  8690  8757 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-03 18:23:09.467  8690  9008 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360121271 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:09.468  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:09.471  8690  9018 I NearbyDiscovery: FastPairScanner: isScreenOn=true, scanWithScreenOff=false, isLocationEnabled=true, disableLocationRequirement=true, isDiscoveryScanningEnabled=true, during24GhzWifiWarmingUpPeriod=false [CONTEXT service_id=265 ]
+11-03 18:23:09.476  8690  9018 D BluetoothAdapter: isLeEnabled(): ON
+11-03 18:23:09.477  8690  9018 I NearbyDiscovery: FastPairScanner: eventType=SERVICE_INITIALIZE, intReq=false, scanning=false, scanAllowed=true, bleEnabled=true, bleScanAvailable=false, lockScanRate=false, startScanningByLowPowerMode=false [CONTEXT service_id=265 ]
+11-03 18:23:09.478  8690  9018 I NearbyDiscovery: FastPairScanner: register location ble observer [CONTEXT service_id=265 ]
+11-03 18:23:09.479  8765  8957 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.479  8765  8957 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.480  8765  8976 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.480  8765  8899 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.481  8765  8976 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.483  8765  8976 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.483  8765  8976 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.483  8690  9010 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-03 18:23:09.483  8765  8976 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.auth_account [CONTEXT service_id=340 ]
+11-03 18:23:09.483  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:09.484  8765  8957 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.484  8765  8901 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.com.google.android.gms.mlbenchmark#com.google.android.gms.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.484  8765  8901 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.mlbenchmark#com.google.android.gms [CONTEXT service_id=340 ]
+11-03 18:23:09.485  8765  8901 I MlBenchmarkInstaller: Phenotype configuration committed. [CONTEXT service_id=340 ]
+11-03 18:23:09.485  8765  8986 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.487  8765  8986 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.488  8765  8986 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.488  8765  8976 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.490  8765  8901 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+11-03 18:23:09.498  8765  8765 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+11-03 18:23:09.502  8690  9016 I PhenotypeIntentOp: Blockstore feature flags are updated. [CONTEXT service_id=258 ]
+11-03 18:23:09.502  8690  9016 I PhenotypeIntentOp: Scheduling periodic backup task to reflect the config changes from feature flags. [CONTEXT service_id=258 ]
+11-03 18:23:09.502  8690  9016 I CloudSyncBpTkSvc: scheduling a periodic backup task. [CONTEXT service_id=258 ]
+11-03 18:23:09.503  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.503  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.506  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:09.506  8765  8950 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.506  8765  8950 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.506  8765  8950 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.508  8765  8992 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.508  8765  8992 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.508  8765  8992 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.family [CONTEXT service_id=340 ]
+11-03 18:23:09.509  8690  9018 I NearbyDiscovery: FastPairScanner: isScreenOn=true, scanWithScreenOff=false, isLocationEnabled=true, disableLocationRequirement=true, isDiscoveryScanningEnabled=true, during24GhzWifiWarmingUpPeriod=false [CONTEXT service_id=265 ]
+11-03 18:23:09.510  8765  8958 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.510  8765  8987 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.511  8765  8958 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.512  8765  8958 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.513  8765  8958 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.514  8765  8958 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.515  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.520  8690  8743 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate end [CONTEXT service_id=265 ]
+11-03 18:23:09.520  8690  8743 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate start [CONTEXT service_id=265 ]
+11-03 18:23:09.521  8690  8743 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate end [CONTEXT service_id=265 ]
+11-03 18:23:09.522   137   137 E prng_seeder: main: Launch terminated: Err(hwrng.read_exact in reseed
+11-03 18:23:09.522   137   137 E prng_seeder:
+11-03 18:23:09.522   137   137 E prng_seeder: Caused by:
+11-03 18:23:09.522   137   137 E prng_seeder:     Try again (os error 11))
+11-03 18:23:09.522  8765  8950 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.523  8765  8950 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.524  8765  8987 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.525  8765  8976 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.525  8765  8899 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.525  8765  8899 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.smart_profile [CONTEXT service_id=340 ]
+11-03 18:23:09.526  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.526  8765  8899 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.527  8765  8899 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.527  8765  8976 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.528  8765  8899 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.540  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.540  8765  8901 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.540  8765  8899 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.540  8765  8901 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.542  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.542  8765  8898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.542  8765  8898 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.542  8765  8898 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.543  8765  8898 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.location [CONTEXT service_id=340 ]
+11-03 18:23:09.547  8765  8901 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.548  8765  8898 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.548  8765  8901 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.548  8765  8901 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.549  8765  8901 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.549  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.550  6937  7367 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10107; state: ENABLED
+11-03 18:23:09.555  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.561  8765  8987 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:23:09.562  8765  8987 I NearbyFastPair: TSS cancel footprints recon sync [CONTEXT service_id=265 ]
+11-03 18:23:09.562  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.566  8690  9016 I NearbyConnections: Runtime state initialization complete. Nearby connections setting is disabled [CONTEXT service_id=54 ]
+11-03 18:23:09.568  8765  8987 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_RECON_SYNC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:23:09.569  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.576  8765  8894 I NearbySharing: Runtime state initialization complete. Sharing is enabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.585  8765  8838 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+11-03 18:23:09.599  8765  8987 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.600  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.600  8765  8899 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.600  8765  8899 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.601  8690  8690 I NearbyFastPair: DynamicSupportModule: doReceive update intent [CONTEXT service_id=265 ]
+11-03 18:23:09.601  8765  8899 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.601  8690  8690 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-03 18:23:09.601  8765  8899 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.601  8765  8899 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.notifications [CONTEXT service_id=340 ]
+11-03 18:23:09.602  8690  9058 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate start [CONTEXT service_id=265 ]
+11-03 18:23:09.602  8690  9058 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate end [CONTEXT service_id=265 ]
+11-03 18:23:09.603  8765  8894 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.603  8765  8987 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.604  8765  8894 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.605  9075  9075 I prng_seeder: main: Starting listen loop
+11-03 18:23:09.605  8765  8987 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.608  8765  8987 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.610  8765  8987 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.611  8765  8958 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.611  8765  8899 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.611  8765  8988 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.612  8765  8988 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.612  8765  8988 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.613  8765  8987 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.614  8765  8988 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.614  8765  8988 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.tapandpay [CONTEXT service_id=340 ]
+11-03 18:23:09.615  8765  8989 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.615  8765  8988 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.615  8765  8989 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.616  8765  8989 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.616  8765  8989 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.618  8690  9010 I GCoreUlr: Unbound from all signal providers.
+11-03 18:23:09.621  8690  8744 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:09.625  8690  9010 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction android.location.PROVIDERS_CHANGED
+11-03 18:23:09.625  8765  8989 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.626  8765  8989 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.627  8690  9010 I GCoreUlr: WorldUpdater:android.location.PROVIDERS_CHANGED: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+11-03 18:23:09.629  8690  9010 I GCoreUlr: Unbound from all signal providers.
+11-03 18:23:09.629  8765  8958 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.629  8765  8899 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.630  8765  8958 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.632  8690  9010 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+11-03 18:23:09.633  8765  8958 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.633  8690  9018 I NearbyDiscovery: FastPairScanner: isScreenOn=true, scanWithScreenOff=false, isLocationEnabled=true, disableLocationRequirement=true, isDiscoveryScanningEnabled=true, during24GhzWifiWarmingUpPeriod=false [CONTEXT service_id=265 ]
+11-03 18:23:09.634  8765  8958 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.634  8765  8958 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.places [CONTEXT service_id=340 ]
+11-03 18:23:09.635  8765  8989 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.636  8765  8958 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.637  8765  8958 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.637  8765  8958 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.638  8765  8899 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.639  8765  8838 I NearbySharing: Granted slice and Uri permissions to android [CONTEXT service_id=194 ]
+11-03 18:23:09.643  8765  9070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.643  8765  9070 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.644  8765  9070 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.644  8765  8898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.644  8765  8958 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.645  8765  8894 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.645  8765  8901 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.645  8765  8901 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.nnapi.drivermanager [CONTEXT service_id=340 ]
+11-03 18:23:09.646  8765  8976 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.646  8765  8976 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.647  8765  8988 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.647  8765  8988 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.648  8765  8988 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.649  8690  8690 I GCoreUlr: Unbound from all signal providers.
+11-03 18:23:09.649  8690  8690 I GCoreUlr: Stopping handler for UlrDispSvcFast
+11-03 18:23:09.651  8690  9018 I NearbyDiscovery: FastPairScanner: Start scanning internally in LOW_LATENCY_SCANNING [CONTEXT service_id=265 ]
+11-03 18:23:09.651  8690  9018 D BluetoothAdapter: isLeEnabled(): ON
+11-03 18:23:09.655  8765  8976 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.655  8765  8976 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.658  8765  8976 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:09.658  8765  8901 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.658  8765  8992 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:09.659  8765  8992 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:09.659  8765  8992 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.signin [CONTEXT service_id=340 ]
+11-03 18:23:09.662  8765  9073 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.662  8765  8958 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:09.663  8765  8958 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:09.665  8765  8958 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:09.665  8765  9073 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:09.665  8765  8901 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:09.666  8765  8958 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.phenotype.com.google.android.gms.update.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+11-03 18:23:09.675  8690  8744 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:09.684  8690  8743 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore default scan mode. [CONTEXT service_id=54 ]
+11-03 18:23:09.686   313   313 D Zygote  : Forked child process 9084
+11-03 18:23:09.688  1044  1477 D BtGatt.GattService: registerScanner() - UUID=2e9495cf-08cf-4d4f-a0f7-17464db7abec
+11-03 18:23:09.689  1044  1477 I bt_stack: [INFO:le_scanning_manager.cc(141)] RegisterScanner in shim layer
+11-03 18:23:09.690  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.690  1044  1307 D BtGatt.GattService: onScannerRegistered() - UUID=2e9495cf-08cf-4d4f-a0f7-17464db7abec, scannerId=2, status=0
+11-03 18:23:09.690  8690  8708 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+11-03 18:23:09.692  1044  1477 D BtGatt.GattService: start scan with filters
+11-03 18:23:09.693  1044  1477 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=0000fff6-0000-1000-8000-00805f9b34fb, mServiceData=[0], mServiceDataMask=[0], mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=0000fe2c-0000-1000-8000-00805f9b34fb, mServiceData=[0], mServiceDataMask=[0], mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null]])
+11-03 18:23:09.693  9084  9084 I ecovery_process: Using CollectorTypeCC GC.
+11-03 18:23:09.694  9084  9084 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:09.694  9084  9084 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:09.694  1044  1477 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10119]]
+11-03 18:23:09.694  1044  1477 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-03 18:23:09.694  1044  1477 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+11-03 18:23:09.694  1044  1354 D BtGatt.ScanManager: handling starting scan
+11-03 18:23:09.694  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(238)] ScanFilterEnable in shim layer
+11-03 18:23:09.694  1044  1307 D BtGatt.GattService: onScanFilterEnableDisabled() - clientIf=2, status=0, action=1
+11-03 18:23:09.694  1044  1307 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-03 18:23:09.694  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+11-03 18:23:09.694  1044  1307 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+11-03 18:23:09.694  1044  1307 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-03 18:23:09.694  1044  1354 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+11-03 18:23:09.694  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+11-03 18:23:09.695  1044  1307 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-03 18:23:09.695  1044  1307 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-03 18:23:09.695  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+11-03 18:23:09.695  1044  1307 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+11-03 18:23:09.695  1044  1307 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-03 18:23:09.695  1044  1354 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+11-03 18:23:09.695  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+11-03 18:23:09.695  1044  1307 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+11-03 18:23:09.695  1044  1307 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+11-03 18:23:09.695  1044  1354 D BtGatt.ScanManager: start gattClientScanNative from startRegularScan()
+11-03 18:23:09.695  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer started
+11-03 18:23:09.695  1044  1354 D BtGatt.ScanManager: configureRegularScanParams() - queue=2
+11-03 18:23:09.695  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+11-03 18:23:09.695  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:172 register_client: Scheduled address rotation for first client registered
+11-03 18:23:09.695  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:175 register_client: Client registered
+11-03 18:23:09.696  8690  9018 I NearbyDiscovery: FastPairScanner: Starting LOW_LATENCY_SCANNING scan for 6 seconds [CONTEXT service_id=265 ]
+11-03 18:23:09.696  8690  9018 I NearbyDiscovery: OffloadFastPairScanner: Starts to obtain nearby nano app version. [CONTEXT service_id=265 ]
+11-03 18:23:09.697  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+11-03 18:23:09.697  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:190 unregister_client: Client unregistered
+11-03 18:23:09.697  1044  1354 D BtGatt.ScanManager: Start gattClientScanNative with old scanMode -1 new scanMode 2 ( in MS: 100 / 100, in scan unit: 160 / 160 ) [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10119]]
+11-03 18:23:09.697  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(250)] SetScanParameters in shim layer
+11-03 18:23:09.697  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer started
+11-03 18:23:09.697  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:194 unregister_client: Cancelled address rotation alarm
+11-03 18:23:09.697  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+11-03 18:23:09.697  1044  1354 D BtGatt.ScanManager: apply scan timeout (300000)to scannerId 2
+11-03 18:23:09.697  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:172 register_client: Scheduled address rotation for first client registered
+11-03 18:23:09.697  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:175 register_client: Client registered
+11-03 18:23:09.697  1044  1307 D BtGatt.GattService: onScanParamSetupCompleted : 0
+11-03 18:23:09.697  8690  8743 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore device name [CONTEXT service_id=54 ]
+11-03 18:23:09.697  8690  9018 W SystemServiceRegistry: No service published for: contexthub
+11-03 18:23:09.697  8690  9018 I NearbyFastPair: NearbyAppHelper: Not supports because contextHubManager is null [CONTEXT service_id=265 ]
+11-03 18:23:09.697  8690  9018 I NearbyDiscovery: OffloadFastPairScanner: Nano app version obtained, version = -1, total time = 2. [CONTEXT service_id=265 ]
+11-03 18:23:09.698  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+11-03 18:23:09.700  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+11-03 18:23:09.703  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.709   399   423 I adbd    : jdwp connection from 9084
+11-03 18:23:09.712  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.716  8690  8690 I ProximityAuth: [MessageProcessorManager] MessageProcessorManager instantiated for user UserHandle{0}
+11-03 18:23:09.719  8690  9016 I ProximityAuth: [FeatureLoader] auth_easyunlock module load status: 2, auth_magictether module load status: 2
+11-03 18:23:09.723  8690  8690 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+11-03 18:23:09.724  8690  9001 I TetheringManager: registerTetheringEventCallback:com.google.android.gms
+11-03 18:23:09.726  8765  9073 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+11-03 18:23:09.730  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.733  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.734  5034  5170 I TestRunner: finished: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)

@@ -1,0 +1,164 @@
+11-03 18:23:08.871  5034  5170 I TestRunner: started: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.871  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.asterism.service.START pkg=com.google.android.gms }
+11-03 18:23:08.871  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.asterism.service.START pkg=com.google.android.gms }
+11-03 18:23:08.873  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:08.873  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:08.881   516  2002 D ConnectivityService: requestNetwork for uid/pid:10119/8690 activeRequest: null callbackRequest: 146 [NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:23:08.882   516   775 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+11-03 18:23:08.883   516   775 D ConnectivityService: NetReassign [146 : null → 100] [c 1] [a 0] [i 0]
+11-03 18:23:08.884   516   768 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-03 18:23:08.884   516   768 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-03 18:23:08.884   516   768 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-03 18:23:08.884   516   768 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=146, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+11-03 18:23:08.890  8765  8872 I Icing   : Storage manager: low false usage 1.60MB avail 4.73GB capacity 5.80GB
+11-03 18:23:08.911  8765  8872 W native  : W0000 00:00:1793730188.911356    8872 model-utils.cc:16] No CRC32, most likely an old model; skip CRC32 check
+11-03 18:23:08.912  8765  8872 I native  : I0000 00:00:1793730188.912070    8872 permission-checker.cc:82] Creating PermissionChecker based on ACL with config_version 1 having 10 permissions defined.
+11-03 18:23:08.912  8765  8872 W native  : W0000 00:00:1793730188.912422    8872 words-map.cc:36] INVALID_ARGUMENT: Empty URI
+11-03 18:23:08.912  8765  8872 W native  : W0000 00:00:1793730188.912526    8872 words-map.cc:40] WordsMap was not properly initialized
+11-03 18:23:08.913  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.917  8690  8862 D CompatibilityChangeReporter: Compat change id reported: 150935354; UID 10119; state: ENABLED
+11-03 18:23:08.922  8690  8862 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:23:08.929  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.931  8690  8862 W SystemServiceRegistry: No service published for: wifirtt
+11-03 18:23:08.944  8765  8895 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phenotype, using defaults.
+11-03 18:23:08.947  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.958  8690  8862 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:23:08.961  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.963  8690  8862 W SystemServiceRegistry: No service published for: wifirtt
+11-03 18:23:08.968  8765  8895 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+11-03 18:23:08.973  8765  8895 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
+11-03 18:23:08.974  8765  8895 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.cast [CONTEXT service_id=231 ]
+11-03 18:23:08.975  8765  8895 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+11-03 18:23:08.978  8765  8895 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+11-03 18:23:08.979  8690  8812 I NetworkScheduler: Using standalone scheduling engine [CONTEXT service_id=218 ]
+11-03 18:23:08.981  8690  8690 I Fido    : [AuthenticatorChimeraService] Unregistered the broadcast receiver [CONTEXT service_id=287 ]
+11-03 18:23:08.985  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.985  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.986  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.987   312  8930 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:08.987  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.987  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:08.988   312  8931 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:23:08.988   312  8931 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706716c26070
+11-03 18:23:08.988   312  8931 I resolv  : doQuery: rcode=0, ancount=2, return value=91
+11-03 18:23:08.989  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.clearcut.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+11-03 18:23:08.991  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.clearcut.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+11-03 18:23:08.992  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.992   312  8932 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:23:08.992   312  8932 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706716c25270
+11-03 18:23:08.992   312  8932 I resolv  : doQuery: rcode=0, ancount=2, return value=79
+11-03 18:23:08.995  8690  8770 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:23:08.995  8690  8770 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:23:08.997  1803  3103 W A       : [Download] response code: 400
+11-03 18:23:08.997  8690  8770 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:23:09.001  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-03 18:23:09.001  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.sharing.START_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+11-03 18:23:09.001  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.002  8690  8690 I NearbySharing: NearbySharingService onCreate [CONTEXT service_id=194 ]
+11-03 18:23:09.003  8690  8744 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-03 18:23:09.003  8690  8837 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-03 18:23:09.005  8690  8770 D TrafficStats: tagSocket(-1) with statsTag=0x30000407, statsUid=-1
+11-03 18:23:09.005  8690  8770 I TrafficStats: tagSocketFd(-1, 805307399, -1) failed with errno-9
+11-03 18:23:09.005  8690  8770 D TrafficStats: tagSocket(146) with statsTag=0x30000407, statsUid=-1
+11-03 18:23:09.008  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.010  8690  8690 I NearbySharing: NearbySharingService created [CONTEXT service_id=194 ]
+11-03 18:23:09.013  8690  8837 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-03 18:23:09.013  8765  8872 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-03 18:23:09.013  8765  8872 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-03 18:23:09.016  8690  8837 I GoogleLocationManager: loading FLP PI cache [CONTEXT service_id=6 ]
+11-03 18:23:09.018  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:09.021  8690  8741 I NearbySharing: Removed active account [CONTEXT service_id=194 ]
+11-03 18:23:09.022  8690  8741 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-03 18:23:09.029  8690  8690 I Wear_Controller: Wearable module requires a companion app to be installed.
+11-03 18:23:09.029  8690  8690 I WearableService: onCreate: Wearable Services not starting. Wear is not available on this device.
+11-03 18:23:09.030  8690  8741 W Nearby  : Failed to open content://com.android.contacts/profile because the Cursor was empty [CONTEXT service_id=49 ]
+11-03 18:23:09.033  8690  8741 W NearbySharing: Cannot set visibility on DisabledNearbySharingProvider. [CONTEXT service_id=194 ]
+11-03 18:23:09.036  8690  8741 I NearbySharing: Broadcasting NearbySharing state change. [CONTEXT service_id=194 ]
+11-03 18:23:09.036  8690  8741 I NearbySharing: Screen is unlocked [CONTEXT service_id=194 ]
+11-03 18:23:09.038  8690  8741 I NearbySharing: Stopping scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.038  8690  8741 I NearbySharing: Failed to stop scanning because we're not scanning. [CONTEXT service_id=194 ]
+11-03 18:23:09.038  8690  8741 I NearbySharing: Can't stop advertising FastInitiation. Not advertising. [CONTEXT service_id=194 ]
+11-03 18:23:09.038  8690  8741 I NearbySharing: Stopping Fast Init advertisement because Bluetooth is off. [CONTEXT service_id=194 ]
+11-03 18:23:09.038  8690  8741 I NearbySharing: Stopping advertising because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.039  8690  8937 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_api_phone
+11-03 18:23:09.040  8690  8741 I NearbySharing: Can't stop scanning for FastInitiation. Not scanning. [CONTEXT service_id=194 ]
+11-03 18:23:09.041  8690  8741 I NearbySharing: Cancelling in use notification [CONTEXT service_id=194 ]
+11-03 18:23:09.042  8690  8741 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-03 18:23:09.043  8690  8741 I NearbySharing: Stopping FastInitiation scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.044  8690  8741 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-03 18:23:09.044  8690  8741 I NearbySharing: Cancelling in use notification [CONTEXT service_id=194 ]
+11-03 18:23:09.045  8690  8741 I NearbySharing: Location is enabled [CONTEXT service_id=194 ]
+11-03 18:23:09.045  8690  8741 I NearbySharing: Stopping scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.045  8690  8741 I NearbySharing: Failed to stop scanning because we're not scanning. [CONTEXT service_id=194 ]
+11-03 18:23:09.046  8690  8741 I NearbySharing: Can't stop advertising FastInitiation. Not advertising. [CONTEXT service_id=194 ]
+11-03 18:23:09.046  8690  8741 I NearbySharing: Stopping Fast Init advertisement because Bluetooth is off. [CONTEXT service_id=194 ]
+11-03 18:23:09.046  8690  8741 I NearbySharing: Stopping advertising because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.048  8690  8690 D CompatibilityChangeReporter: Compat change id reported: 148180766; UID 10119; state: ENABLED
+11-03 18:23:09.048  8690  8741 I NearbySharing: Can't stop scanning for FastInitiation. Not scanning. [CONTEXT service_id=194 ]
+11-03 18:23:09.049  8690  8741 I NearbySharing: Cancelling in use notification [CONTEXT service_id=194 ]
+11-03 18:23:09.049  8690  8741 I NearbySharing: Fast Initiation Scanning has stopped [CONTEXT service_id=194 ]
+11-03 18:23:09.049  8690  8741 I NearbySharing: Stopping FastInitiation scanning because Bluetooth is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.050  8690  8741 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-03 18:23:09.050  8690  8741 I NearbySharing: Cancelling in use notification [CONTEXT service_id=194 ]
+11-03 18:23:09.055  8690  8741 I NearbySharing: Bluetooth is enabled [CONTEXT service_id=194 ]
+11-03 18:23:09.055  8690  8741 I NearbySharing: Stopping scanning because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.055  8690  8741 I NearbySharing: Failed to stop scanning because we're not scanning. [CONTEXT service_id=194 ]
+11-03 18:23:09.057  8690  8741 I NearbySharing: Can't stop advertising FastInitiation. Not advertising. [CONTEXT service_id=194 ]
+11-03 18:23:09.057  8690  8741 I NearbySharing: Stopping Fast Init advertisement because we're not scanning in the foreground. [CONTEXT service_id=194 ]
+11-03 18:23:09.058  8690  8936 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:23:09.058  8690  8741 I NearbySharing: Stopping advertising because Nearby Sharing is disabled. [CONTEXT service_id=194 ]
+11-03 18:23:09.059  8690  8936 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:23:09.059  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.061  8690  8741 I NearbySharing: Starting scanning for Fast Initiation. [CONTEXT service_id=194 ]
+11-03 18:23:09.062  8690  8936 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:09.062  8690  8936 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:23:09.062  8690  8936 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:23:09.063  8690  8936 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:09.064  8690  8936 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:23:09.064  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.064  8690  8936 I NamespaceManager: Package rkpd name not found! Using module version.
+11-03 18:23:09.064  8690  8936 I NamespaceManager: Package com.google.android.devicelockcontroller name not found! Using module version.
+11-03 18:23:09.065  8690  8936 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:09.065  8690  8936 I NamespaceManager: Package android.companion name not found! Using module version.
+11-03 18:23:09.065  8690  8936 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:09.067  8690  8936 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
+11-03 18:23:09.069  8690  8936 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
+11-03 18:23:09.069  8690  8741 D BluetoothAdapter: isLeEnabled(): ON
+11-03 18:23:09.070  8690  8936 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:09.070  8690  8936 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
+11-03 18:23:09.071  8690  8936 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
+11-03 18:23:09.072  8690  8936 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
+11-03 18:23:09.073  8690  8936 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
+11-03 18:23:09.073  1044  1477 D BtGatt.GattService: registerScanner() - UUID=707ce327-dfa0-4f84-acd8-8ca1b459babd
+11-03 18:23:09.073  8690  8936 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
+11-03 18:23:09.075  8765  8941 I NearbySharing: Create pesudo logger. [CONTEXT service_id=194 ]
+11-03 18:23:09.076  1044  1477 I bt_stack: [INFO:le_scanning_manager.cc(141)] RegisterScanner in shim layer
+11-03 18:23:09.076  1044  1307 D BtGatt.GattService: onScannerRegistered() - UUID=707ce327-dfa0-4f84-acd8-8ca1b459babd, scannerId=1, status=0
+11-03 18:23:09.076  8690  8722 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=1 mScannerId=0
+11-03 18:23:09.076  8690  8936 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
+11-03 18:23:09.076  8690  8936 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
+11-03 18:23:09.076  1044  1477 D BtGatt.GattService: start scan with filters
+11-03 18:23:09.077  8690  8936 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
+11-03 18:23:09.077  8690  8936 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
+11-03 18:23:09.078  1044  1477 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=0000fe2c-0000-1000-8000-00805f9b34fb, mServiceData=[-4, 18, -114], mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fe2c-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=9, mAdvertisingData=[95, 66, 75, 79, 0], mAdvertisingDataMask=[-1, -1, -1, -1, 0]]])
+11-03 18:23:09.079  8765  8765 I NearbySharing: SharingTileService created. [CONTEXT service_id=194 ]
+11-03 18:23:09.084  1044  1477 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10119]]
+11-03 18:23:09.084  1044  1477 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-03 18:23:09.084  1044  1477 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+11-03 18:23:09.084  1044  1354 D BtGatt.ScanManager: handling starting scan
+11-03 18:23:09.085  8765  8901 W ConfigFileUtils: Failed to read asset ChimeraModuleSetList.pb: java.io.FileNotFoundException: ChimeraModuleSetList.pb
+11-03 18:23:09.092  8690  8741 I NearbySharing: Started scanning for FastInitiation with mode: SCAN_MODE_OPPORTUNISTIC [CONTEXT service_id=194 ]
+11-03 18:23:09.100  8765  8898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.100  8765  8898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:09.101  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:09.102  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:23:09.102  8690  8862 W SystemServiceRegistry: No service published for: wifirtt
+11-03 18:23:09.105  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.106  8690  8741 I NearbySharing: Fast Initiation Scanning has started [CONTEXT service_id=194 ]
+11-03 18:23:09.107  8690  8741 I NearbySharing: Dismissing HUN as there's no device nearby. [CONTEXT service_id=194 ]
+11-03 18:23:09.108  8690  8741 I NearbySharing: Cancelling in use notification [CONTEXT service_id=194 ]
+11-03 18:23:09.110  1682  6699 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.113  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:09.119  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.clearcut.bootcount.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:09.119  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:09.121  5034  5170 I TestRunner: finished: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)

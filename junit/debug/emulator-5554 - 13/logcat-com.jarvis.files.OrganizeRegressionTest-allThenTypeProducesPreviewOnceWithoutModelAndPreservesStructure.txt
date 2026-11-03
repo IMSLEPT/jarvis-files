@@ -1,0 +1,93 @@
+11-03 18:24:16.118  5034  5170 I TestRunner: started: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.132  8690  9218 D TrafficStats: tagSocket(140) with statsTag=0x1065fff, statsUid=10140
+11-03 18:24:16.141  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService finished executing. cause:5 result: 1 elapsed_millis: 35 uptime_millis: 35 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.157  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.168  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.169  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.171  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.184  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.199  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.215  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.219  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.225  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.229  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.235   312 11827 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:24:16.235  3378 11747 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-03 18:24:16.237  3378 11747 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-03 18:24:16.238  3378 11747 D TrafficStats: tagSocket(116) with statsTag=0x1809, statsUid=-1
+11-03 18:24:16.240  8690  9218 D TrafficStats: tagSocket(138) with statsTag=0x1065fff, statsUid=10112
+11-03 18:24:16.248  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.264  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.362  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:24:16.363  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.364  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.370  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/a.pdf to null
+11-03 18:24:16.377  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf to content://media/external_primary/file/1000000130
+11-03 18:24:16.383  1682  7511 W ExifInterface: Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.
+11-03 18:24:16.383  1682  7511 W ExifInterface: java.io.EOFException
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface$ByteOrderedDataInputStream.readShort(ExifInterface.java:5035)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.readByteOrder(ExifInterface.java:3987)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.parseTiffHeaders(ExifInterface.java:4007)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.getRawAttributes(ExifInterface.java:2973)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.loadAttributes(ExifInterface.java:2022)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1639)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.media.ExifInterface.<init>(ExifInterface.java:1590)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItemImage(ModernMediaScanner.java:1334)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanItem(ModernMediaScanner.java:996)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.-$$Nest$smscanItem(Unknown Source:0)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:794)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:311)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:430)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:24:16.383  1682  7511 W ExifInterface: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:24:16.383  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 188 [CONTEXT service_id=218 ]
+11-03 18:24:16.384  1682  7511 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:24:16.384  1682  7511 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+11-03 18:24:16.384  1682  7511 W ModernMediaScanner: Trouble scanning /storage/emulated/0/JarvisOrganizeRegression/b.png: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equalsIgnoreCase(java.lang.String)' on a null object reference
+11-03 18:24:16.390  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/b.png to content://media/external_primary/images/media/1000000131
+11-03 18:24:16.392  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png
+11-03 18:24:16.394  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.394  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png to null
+11-03 18:24:16.396  1682  2011 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000130
+11-03 18:24:16.396  1682  2011 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000130
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onUpdate$1(MediaProvider.java:915)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$3D2OHltIfecN7CvhaLyqtkV--uY(Unknown Source:0)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda1.run(Unknown Source:10)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:24:16.396  1682  2011 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:24:16.397  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.403  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to content://media/external_primary/file/1000000133
+11-03 18:24:16.404  1682  7503 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:16.404  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf
+11-03 18:24:16.405  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.406  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf to null
+11-03 18:24:16.408  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:24:16.413  1682  7511 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:16.413  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 6ms, 0 inserts 0 updates 1 deletes
+11-03 18:24:16.414  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to null
+11-03 18:24:16.415  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.418  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf
+11-03 18:24:16.419  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.419  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:16.419  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf to null
+11-03 18:24:16.421  5034  5170 I TestRunner: finished: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)

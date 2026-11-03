@@ -1,0 +1,41 @@
+11-03 18:23:41.178  5034  5170 I TestRunner: started: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.179  1803  2456 I A       : group apa_head_suggest not present without account in *
+11-03 18:23:41.179  1803  2456 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.002S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M52.901S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT1M7.099S (ONE_TO_FIVE_MINUTES))
+11-03 18:23:41.187  1803  2456 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:23:41.187   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f490
+11-03 18:23:41.187   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80c90
+11-03 18:23:41.187   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e770
+11-03 18:23:41.195  1803  2828 I A       : Using proto config with mendel
+11-03 18:23:41.196   516  1184 W InputManager-JNI: Input channel object 'f9e01d9 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:23:41.209  1803  2828 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e2f0
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81290
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:23:41.213   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:23:41.214   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:23:41.224  1803  2828 I A       : Using proto config with mendel
+11-03 18:23:41.236   516  5898 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:23:41.237   516  5898 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-03 18:23:41.238   516  5898 D EGL_emulation: eglCreateContext: 0x702303abed90: maj 3 min 0 rcv 3
+11-03 18:23:41.239   516  5898 D EGL_emulation: eglMakeCurrent: 0x702303abed90: ver 3 0 (tinfo 0x70250f0cb180) (first time)
+11-03 18:23:41.242  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:41.245   516   536 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:23:41.256  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:41.268  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:41.277  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:41.306  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.306  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.307  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.307  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.313  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.313  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.318  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.318  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:41.342  8690 10354 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 153 [CONTEXT service_id=218 ]
+11-03 18:23:41.352  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 153 [CONTEXT service_id=218 ]
+11-03 18:23:41.358  1682  5362 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:41.362  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:41.364  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:41.368  5034  5170 I TestRunner: finished: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)

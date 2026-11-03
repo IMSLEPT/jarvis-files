@@ -1,0 +1,194 @@
+11-03 18:23:05.945  5034  5170 I TestRunner: started: plainSearchCannotGenerateDeletionPlan(com.jarvis.files.CommandTest)
+11-03 18:23:05.948  1378  7514 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:23:05.953  1378  7514 D EGL_emulation: eglCreateContext: 0x702303a8e3d0: maj 3 min 0 rcv 3
+11-03 18:23:05.954  1378  7514 D EGL_emulation: eglMakeCurrent: 0x702303a8e3d0: ver 3 0 (tinfo 0x70253e96d080) (first time)
+11-03 18:23:05.955  1682  7524 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommands/Download/a.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommands/Download/a.apk
+11-03 18:23:05.959  1378  7514 I NnApiDriverManager: Registering application with GPU 'Android Emulator OpenGL ES Translator (Google SwiftShader)' by 'Google (Google Inc.)' [CONTEXT service_id=301 ]
+11-03 18:23:05.967  1166  6049 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:05.968  1166  6049 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:05.971  1682  7524 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 29ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:05.971  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommands/Download/a.apk to null
+11-03 18:23:05.972  1166  2625 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.nnapi.drivermanager) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:23:05.974  3703  4424 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+11-03 18:23:05.976  3703  4424 I RemoteProvisioner: Pool status 6, 5, 0, 6
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: Pool status.
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: Total: 6
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: Attested: 6
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: Unassigned: 5
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: Expiring: 0
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+11-03 18:23:05.976  3703  4424 I RemoteProvisioningService: No provisioning needed.
+11-03 18:23:05.979  8251  8251 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-03 18:23:05.979  8251  8251 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+11-03 18:23:05.979  8251  8251 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:05.983  8251  8251 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.983  8251  8251 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.985  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.987  1378  7249 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.dynamite.ocr not found.
+11-03 18:23:05.987  1378  7249 W ProviderHelper: Unknown dynamite feature vision.dynamite.ocr
+11-03 18:23:05.987  1378  7249 I DynamiteModule: Considering local module com.google.android.gms.vision.dynamite.ocr:0 and remote module com.google.android.gms.vision.dynamite.ocr:0
+11-03 18:23:05.987  1378  7249 W ProviderHelper: Ignoring optional dynamite feature vision.ocr
+11-03 18:23:05.988  1378  7249 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.ocr not found.
+11-03 18:23:05.988  1378  7249 I DynamiteModule: Considering local module com.google.android.gms.vision.ocr:0 and remote module com.google.android.gms.vision.ocr:0
+11-03 18:23:05.988  1378  7249 W Vision  : Error loading optional module com.google.android.gms.vision.ocr: ahbb: No acceptable module com.google.android.gms.vision.ocr found. Local version is 0 and remote version is 0.
+11-03 18:23:05.992  1378  7249 W TextNativeHandle: Native handle not yet available. Reverting to no-op handle.
+11-03 18:23:05.995  1378  7249 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.dynamite.ocr not found.
+11-03 18:23:05.995  1378  7249 W ProviderHelper: Unknown dynamite feature vision.dynamite.ocr
+11-03 18:23:05.996  1378  7249 I DynamiteModule: Considering local module com.google.android.gms.vision.dynamite.ocr:0 and remote module com.google.android.gms.vision.dynamite.ocr:0
+11-03 18:23:05.996  1378  7249 W ProviderHelper: Ignoring optional dynamite feature vision.ocr
+11-03 18:23:05.996  1378  7249 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.ocr not found.
+11-03 18:23:05.996  1378  7249 I DynamiteModule: Considering local module com.google.android.gms.vision.ocr:0 and remote module com.google.android.gms.vision.ocr:0
+11-03 18:23:05.996  1378  7249 W Vision  : Error loading optional module com.google.android.gms.vision.ocr: ahbb: No acceptable module com.google.android.gms.vision.ocr found. Local version is 0 and remote version is 0.
+11-03 18:23:06.002  8251  8251 I ecovery_process: System.exit called, status: 0
+11-03 18:23:06.002  8251  8251 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:06.003  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:06.008  1378  7249 I OcrModelUpStIntentOp: Downloading text recognizer
+11-03 18:23:06.010  1378  1378 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:06.012   313   313 I Zygote  : Process 8251 exited cleanly (0)
+11-03 18:23:06.013   516   556 I libprocessgroup: Successfully killed process cgroup uid 10138 pid 8251 in 0ms
+11-03 18:23:06.017  1378  1378 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+11-03 18:23:06.017  1378  1378 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+11-03 18:23:06.020  1166  2625 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+11-03 18:23:06.020  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:06.022  1166  2625 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-03 18:23:06.023  1166  2625 W SyntheticOperationsLogg: SyntheticOperationsLogger unable to log "com.google.android.gms.tapandpay"'s use of "change_component_enabled_state" because installOperationsCollector never executed [CONTEXT service_id=238 ]
+11-03 18:23:06.025  1166  2625 I TapAndPay: Enabling Google Pay [CONTEXT service_id=79 ]
+11-03 18:23:06.025  1166  2625 I TapAndPay: Initialize tapandpay [CONTEXT service_id=79 ]
+11-03 18:23:06.025  1166  2625 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+11-03 18:23:06.025  1166  2625 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-03 18:23:06.025  1166  2625 W SyntheticOperationsLogg: SyntheticOperationsLogger unable to log "com.google.android.gms.tapandpay"'s use of "change_component_enabled_state" because installOperationsCollector never executed [CONTEXT service_id=238 ]
+11-03 18:23:06.037  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:06.037  1166  6701 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360117842 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:06.043  1166  6701 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-03 18:23:06.052  1166  6701 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-03 18:23:06.052  1615  1615 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+11-03 18:23:06.057  1166  6701 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-03 18:23:06.059  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:06.065  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:06.073  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:06.078  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:06.079  1378  3540 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-03 18:23:06.080  1378  3540 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-03 18:23:06.080  1378  3540 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+11-03 18:23:06.080  1615  1850 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:23:06.084  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:06.093   312  8313 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:06.093  3378  8223 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+11-03 18:23:06.094  3378  8223 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+11-03 18:23:06.095  1615  2077 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+11-03 18:23:06.096  3378  8223 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+11-03 18:23:06.101  1378  3540 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-03 18:23:06.101  1378  3540 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-03 18:23:06.102  1378  3540 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+11-03 18:23:06.114  1615  1615 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+11-03 18:23:06.119  1378  7249 W PeoplePU: getServiceInfo failed.
+11-03 18:23:06.119  1378  7249 W PeoplePU: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gms/com.google.android.gms.people.sync.focus.ContactsSyncAdapterService}
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:613)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:596)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:06.119  1378  7249 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:06.121  1378  7249 W PeoplePU: getComponentEnabledSetting failed.
+11-03 18:23:06.121  1378  7249 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:06.121  1378  7249 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5234)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5216)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:387)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:2953)
+11-03 18:23:06.121  1378  7249 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:5980)
+11-03 18:23:06.121  1378  7249 W PeoplePU:
+11-03 18:23:06.123  1378  7249 I FsaEntryPointSwitcher: setting component enabled=1 for com.google.android.gms.people.sync.focus.ContactsSyncAdapterService
+11-03 18:23:06.124  1378  7249 I FsaEntryPointSwitcher: Setting component enabled succeeds.
+11-03 18:23:06.124  1378  7249 W PeoplePU: getComponentEnabledSetting failed.
+11-03 18:23:06.124  1378  7249 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at bvgq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):29)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:06.124  1378  7249 W PeoplePU: getComponentEnabledSetting failed.
+11-03 18:23:06.124  1378  7249 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:06.124  1378  7249 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:06.128  3378  8223 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:23:06.130  3378  8223 D EGL_emulation: eglCreateContext: 0x702303a97a90: maj 3 min 0 rcv 3
+11-03 18:23:06.132  3378  8223 D EGL_emulation: eglMakeCurrent: 0x702303a97a90: ver 3 0 (tinfo 0x70252a1fe380) (first time)
+11-03 18:23:06.144  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:06.147  1378  7249 I PeopleGalProvider: Gal directories started.
+11-03 18:23:06.148  1378  7249 I PeopleGalProvider: Method 1 completed.
+11-03 18:23:06.148  1378  7249 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:23:06.151  1615  1850 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+11-03 18:23:06.156  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:06.159  2444  2444 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.ims which doesn't use ProcessStable flags.
+11-03 18:23:06.171  1682  5362 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:06.173  1044  1044 D BluetoothPbapService:  onChange on contact uri
+11-03 18:23:06.173  1378  7249 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+11-03 18:23:06.174  1378  7249 I GalProviderController: Setting component enabled succeeds.
+11-03 18:23:06.180  1044  8314 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-03 18:23:06.183  1378  7249 I PeopleGalProvider: Gal directories started.
+11-03 18:23:06.184  1378  7249 I PeopleGalProvider: Method 1 completed.
+11-03 18:23:06.184  1378  7249 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:23:06.200  1378  7249 I DeletedNullContactsCleanup: Scheduling the service.
+11-03 18:23:06.201  1378  7249 I BackupAndSyncValidation: Scheduling the service.
+11-03 18:23:06.201  1682  2336 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:06.208  1378  7249 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+11-03 18:23:06.215  2444  3621 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.ims
+11-03 18:23:06.223  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:06.224  1378  7249 I HeterodyneSyncScheduler: Cancel all previously scheduled polling [CONTEXT service_id=51 ]
+11-03 18:23:06.224  5034  5170 I TestRunner: finished: plainSearchCannotGenerateDeletionPlan(com.jarvis.files.CommandTest)

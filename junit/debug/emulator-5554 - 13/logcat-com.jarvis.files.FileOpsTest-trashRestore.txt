@@ -1,0 +1,70 @@
+11-03 18:23:15.372  5034  5170 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.380  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.384  8765  8957 I NnApiDriverManager: Registering application with GPU 'Android Emulator OpenGL ES Translator (Google SwiftShader)' by 'Google (Google Inc.)' [CONTEXT service_id=301 ]
+11-03 18:23:15.388  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.391  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.397  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.402  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.411  8765  8957 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+11-03 18:23:15.416   312  9562 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:15.417   312  9563 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:23:15.417   312  9563 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706746c21850
+11-03 18:23:15.417   312  9563 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+11-03 18:23:15.418   312  9564 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:23:15.418   312  9564 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706736c1e450
+11-03 18:23:15.418   312  9564 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+11-03 18:23:15.419  8765  8957 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+11-03 18:23:15.420  8765  8901 D TrafficStats: tagSocket(162) with statsTag=0x30000408, statsUid=-1
+11-03 18:23:15.422  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:15.432  8765  8901 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:23:15.432  8690  8744 I TapAndPay: Initialize tapandpay [CONTEXT service_id=79 ]
+11-03 18:23:15.432  8765  8901 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:23:15.432  8765  8901 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:23:15.432  8690  8744 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+11-03 18:23:15.432  8690  8744 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+11-03 18:23:15.436  8765  8901 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-03 18:23:15.437  8765  8901 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:15.437  8765  8901 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:15.439  3854  9569 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:15.445  8690  8938 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360127249 windowMillis: -1 intervalMillis: 0]
+11-03 18:23:15.448  8690  8938 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+11-03 18:23:15.451  8690  9001 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+11-03 18:23:15.453  8690  9001 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+11-03 18:23:15.464  8765  8957 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-03 18:23:15.464  8765  8957 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-03 18:23:15.465  5034  5170 I JarvisTest: [Cestino] OK sposta e ripristina
+11-03 18:23:15.470  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/note.txt to content://media/external_primary/file/1000000084
+11-03 18:23:15.471  8765  8957 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+11-03 18:23:15.471  8765  8957 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+11-03 18:23:15.473  1682  6699 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.476  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.477  8765  8957 W PeoplePU: getComponentEnabledSetting failed.
+11-03 18:23:15.477  8765  8957 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:15.477  8765  8957 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:15.481  1682  6540 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.486  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.490  8765  8957 I PeopleGalProvider: Gal directories started.
+11-03 18:23:15.491  8765  8957 I PeopleGalProvider: Method 1 completed.
+11-03 18:23:15.491  8765  8957 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:23:15.493  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.494  1044  1044 D BluetoothPbapService:  onChange on contact uri
+11-03 18:23:15.494  8765  9528 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10119; state: ENABLED
+11-03 18:23:15.496  8765  8957 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+11-03 18:23:15.497  5034  5170 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)

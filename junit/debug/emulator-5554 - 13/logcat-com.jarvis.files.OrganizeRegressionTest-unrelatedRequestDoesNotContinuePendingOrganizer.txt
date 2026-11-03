@@ -1,0 +1,33 @@
+11-03 18:24:15.911  5034  5170 I TestRunner: started: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:15.955  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:15.973  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:15.993  8690  9218 D TrafficStats: tagSocket(128) with statsTag=0x1065fff, statsUid=10144
+11-03 18:24:15.993  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.010  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:16.030  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.031  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.036  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.039  3378 11747 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-03 18:24:16.039  3378 11747 W libc    : Access denied finding property "service.adb.tls.port"
+11-03 18:24:16.049  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.050  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.034  3378  3378 W IntentService[D: type=1400 audit(0.0:100): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:24:16.053  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.053  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:16.034  3378  3378 W IntentService[D: type=1400 audit(0.0:101): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:24:16.067  3378 11747 W SystemServiceRegistry: No service published for: persistent_data_block
+11-03 18:24:16.080  8690  9218 D TrafficStats: tagSocket(135) with statsTag=0x1065fff, statsUid=10138
+11-03 18:24:16.084  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.088  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.101  1682  3746 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.106  1682 10625 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:16.110  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.112  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.telephonyspam.sync.SpamListSyncTaskService started execution. cause:5 exec_start_elapsed_seconds: 187 [CONTEXT service_id=218 ]
+11-03 18:24:16.113  8765  9147 I TelephonySpamChimeraSer: Running Telephony Spam Chimera Service [CONTEXT service_id=150 ]
+11-03 18:24:16.113  8765  9147 I TelephonySpamChimeraSer: Cleaning SIP Header local table of old entries [CONTEXT service_id=150 ]
+11-03 18:24:16.115  1682  3746 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:16.115  8765  9147 I SpamListSync: Call spam module disabled. Skipping cleaning cache sip header table. [CONTEXT service_id=150 ]
+11-03 18:24:16.115  8765  9147 I TelephonySpamChimeraSer: Syncing Call Spam List [CONTEXT service_id=150 ]
+11-03 18:24:16.116  8765  9147 I SpamListSync: SpamListSyncChimeraService.syncSpamList called with tag: telephonyspam.SpamListSyncOneOffTask, extras: Bundle[{SpamList Type=0, Action=1.0}] [CONTEXT service_id=150 ]
+11-03 18:24:16.116  8765  9147 I SpamListSync: Call spam module disabled. Skipping spam list syncing. [CONTEXT service_id=150 ]
+11-03 18:24:16.116  5034  5170 I TestRunner: finished: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)

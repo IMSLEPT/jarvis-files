@@ -1,0 +1,118 @@
+11-03 18:24:41.910  5034  5170 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+11-03 18:24:41.913  5034 12775 I DynamiteModule: Considering local module com.google.mlkit.dynamite.face:10000 and remote module com.google.mlkit.dynamite.face:0
+11-03 18:24:41.913  5034 12775 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.face
+11-03 18:24:41.915  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:41.918  5034  5170 I tflite  : Replacing 49 out of 181 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 92 partitions for the whole graph.
+11-03 18:24:41.920  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:41.936  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:41.938  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:41.944  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:41.946  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:41.971  5034 12879 I native  : I0000 00:00:1793730281.971187   12879 classifier_client_calculator.cc:144] Loading classifier image_understanding/classifier/mobile_ica_V1/1
+11-03 18:24:41.979  5034 12879 I tflite  : Replacing 30 out of 31 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 3 partitions for the whole graph.
+11-03 18:24:41.985  5034  5047 W System  : A resource failed to call close.
+11-03 18:24:41.985  5034  5047 W System  : A resource failed to call close.
+11-03 18:24:41.987  5034 12879 I native  : I0000 00:00:1793730281.987356   12879 classifier_client_calculator.cc:151] Finished loading classifier image_understanding/classifier/mobile_ica_V1/1
+11-03 18:24:41.989  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:41.991  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:42.015  5034 12773 V FaceDetectorV2Jni: initialize.start()
+11-03 18:24:42.015  5034 12773 I native  : I0000 00:00:1793730282.015922   12773 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_v5.tflite
+11-03 18:24:42.016  5034 12773 I native  : I0000 00:00:1793730282.016563   12773 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_medium_8bit_gray_v5.tflite
+11-03 18:24:42.017  5034 12773 I native  : I0000 00:00:1793730282.017181   12773 face_detector_v2_jni.cc:34] Loading models_bundled/fssd_anchors_v5.pb
+11-03 18:24:42.017  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:42.017  5034 12773 I native  : I0000 00:00:1793730282.017297   12773 face_detector_v2_jni.cc:34] Loading models_bundled/LMprec_600.emd
+11-03 18:24:42.019  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:42.025  5034 12773 I native  : I0000 00:00:1793730282.025220   12773 face_detector_v2_jni.cc:34] Loading models_bundled/BCLlefteyeclosed_200.emd
+11-03 18:24:42.025  5034 12773 I native  : I0000 00:00:1793730282.025328   12773 face_detector_v2_jni.cc:34] Loading models_bundled/BCLrighteyeclosed_200.emd
+11-03 18:24:42.025  5034 12773 I native  : I0000 00:00:1793730282.025515   12773 face_detector_v2_jni.cc:34] Loading models_bundled/BCLjoy_200.emd
+11-03 18:24:42.025  5034 12773 I native  : I0000 00:00:1793730282.025705   12773 face_detector_v2_jni.cc:34] Loading models_bundled/MFT_fssd_accgray.pb
+11-03 18:24:42.025  5034 12773 I native  : I0000 00:00:1793730282.025748   12773 face_detector_v2_jni.cc:34] Loading models_bundled/contours.tfl
+11-03 18:24:42.032  5034 12773 I native  : I0000 00:00:1793730282.032139   12773 face_detector_v2_jni.cc:34] Loading models_bundled/blazeface.tfl
+11-03 18:24:42.038  5034 12773 V FaceDetectorV2Jni: initialize.end()
+11-03 18:24:42.064  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:42.329  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:44.435  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:44.832  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:45.292  8690  8690 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:24:45.535   835   924 D EGL_emulation: app_time_stats: avg=16959.62ms min=16959.62ms max=16959.62ms count=1
+11-03 18:24:46.104  8765 12884 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+11-03 18:24:46.943  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:47.215  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:48.062  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.062  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCompleted:118 discarding deferred status [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.063  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.prepareStop:371 no more tasks, stopping service if no task are added in 5000 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.063  1536  1536 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_AUTO_RETRY_ACTIVATION
+11-03 18:24:48.065  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:68 task received [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.065  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:73 TaskExecutor already running [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.065  1536  1536 I DialerTasks: com.android.voicemail.impl.scheduling.Tasks.createTask:59 Task.createTask create task:com.android.voicemail.impl.ActivationTask [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.065  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCreate:81 retry #2 for com.android.voicemail.impl.ActivationTask@2f333a0 queued, executing in 5000 [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.067  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.addTask:299 com.android.voicemail.impl.ActivationTask@2f333a0 added [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.067  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.runNextTask:345 minimal wait time:4998 [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.068  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.sleep:355 sleep for 4998 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:48.120  1621  1784 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdownVoiceInternal():95 shutdownVoiceInternal()
+11-03 18:24:49.318  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:49.435  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:50.844  8690  8690 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+11-03 18:24:53.068  1536 11019 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor$WorkerThreadHandler.handleMessage:221 executing task com.android.voicemail.impl.ActivationTask@2f333a0 [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.068  1536  1536 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_ACTIVATION_STARTED
+11-03 18:24:53.069  1536 11019 I DialerPreOMigrationHandler: com.android.voicemail.impl.PreOMigrationHandler.migrate:76 ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} already migrated [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.072  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.isCarrierAppInstalled:637 carrier app not installed in this device [CONTEXT ratelimit_period="1 MINUTES [skipped: 4]" ]
+11-03 18:24:53.072  1536 11019 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+11-03 18:24:53.072  1536 11019 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+11-03 18:24:53.079  1536  1563 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 23]" ]
+11-03 18:24:53.079  1536  1563 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 11]" ]
+11-03 18:24:53.089  1536  1563 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:24:53.090  1536  1563 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+11-03 18:24:53.090  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:292 VVM content provider configured - vvm_type_cvvm PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.091  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.updateVoicemailsWithIccId:477 conversion disabled [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.092  1536 11019 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_ACTIVATING PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.092  1536 11019 I DialerVoicemailStatus: com.android.voicemail.impl.VoicemailStatus$Editor.apply:112 enter
+11-03 18:24:53.093  1536 11019 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.insertOrUpdateVoicemailStatus:196 enter
+11-03 18:24:53.273  1536  1563 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:24:53.273  1536  1563 I DialerVoicemailStatusDataServiceImpl: com.android.dialer.voicemailstatus.dataservice.impl.VoicemailStatusDataServiceImpl.lambda$insertOrUpdateVoicemailStatus$5:213 merged status: # kee@6600c263
+11-03 18:24:53.275  1536 11019 I DialerActivationTask: com.android.voicemail.impl.ActivationTask.onExecuteInBackgroundThread:339 sending an activation request [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.277  1077  1577 D SmsNumberUtils: enter filterDestAddr. destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-03 18:24:53.277  1077  1577 D SmsNumberUtils: destAddr is not formatted.
+11-03 18:24:53.277  1077  1577 D SmsNumberUtils: leave filterDestAddr, new destAddr="[BajqU4K5_YhSYbs-7QUn0dOwcmI]"
+11-03 18:24:53.280  1536 11019 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:46 Impression: CVVM_SEND_VVM_SMS
+11-03 18:24:53.286  1536  1536 I DialerStatusSmsFetcher: com.android.voicemail.impl.sms.StatusSmsFetcher.onReceive:106 Request SMS successfully sent [CONTEXT enable_persistent_logger=true ]
+11-03 18:24:53.491  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:53.493  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:53.498  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:53.579  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:53.685  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:53.767  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:53.869  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:53.949  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.046  5034 12775 W StreamingFormatChecker: ML Kit has detected that you seem to pass camera frames to the detector as a Bitmap object. This is inefficient. Please use YUV_420_888 format for camera2 API or NV21 format for (legacy) camera API and directly pass down the byte array to ML Kit.
+11-03 18:24:54.052  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:54.133  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.235  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:54.316  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.421  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:54.509  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.613  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:54.694  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.796  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:54.877  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:54.980  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:55.062  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:55.165  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:55.248  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:55.350  5034 12773 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:55.432  5034 12773 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:55.535  5034 12775 V FaceDetectorV2Jni: detectFacesImageByteBuffer.start()
+11-03 18:24:55.615  5034 12775 V FaceDetectorV2Jni: %s detectFacesImageByteBuffer.end()
+11-03 18:24:55.683  5034 12773 V FaceDetectorV2Jni: closeDetector.start()
+11-03 18:24:55.693  5034 12773 V FaceDetectorV2Jni: closeDetector.end()
+11-03 18:24:55.695  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:55.697  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:55.698  5034  5170 I JarvisTest: [Indice] Foto analizzate: 16 · totale db=(16, 0, 5)
+11-03 18:24:55.703  5034 12768 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+11-03 18:24:55.705  5034  5170 I JarvisTest: [Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+11-03 18:24:55.705  5034 12768 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+11-03 18:24:55.727  5034  5170 I JarvisTest: [Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+11-03 18:24:55.729  5034  5170 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+11-03 18:24:55.730  5034  5170 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+11-03 18:24:55.732  5034  5170 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+11-03 18:24:55.732  5034  5170 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)

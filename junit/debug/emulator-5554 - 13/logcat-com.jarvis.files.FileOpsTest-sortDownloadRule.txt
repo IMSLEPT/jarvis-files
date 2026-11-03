@@ -1,0 +1,26 @@
+11-03 18:23:18.872  5034  5170 I TestRunner: started: sortDownloadRule(com.jarvis.files.FileOpsTest)
+11-03 18:23:18.878  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.885  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.886  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:18.890  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:18.891  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:18.892  8690  8752 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 35 uptime_millis: 35 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:18.893  3854  9792 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:18.893  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.901  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.906  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.929  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.933  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.936  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:18.952  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:18.973  8690  8752 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:18.977  5034  5170 I JarvisTest: [Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+11-03 18:23:18.979  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:18.986  1682  6540 I MediaProvider: Deleted 0 0 1 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:18.989  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:18.996  1682  3746 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.000  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.003  1682  5362 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.007  1682  5362 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.012  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.014  5034  5170 I TestRunner: finished: sortDownloadRule(com.jarvis.files.FileOpsTest)

@@ -1,0 +1,33 @@
+11-03 18:23:15.499  5034  5170 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.503  1044  9573 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-03 18:23:15.506  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.507  8765  8957 I PeopleGalProvider: Gal directories started.
+11-03 18:23:15.507  8765  8957 I PeopleGalProvider: Method 1 completed.
+11-03 18:23:15.507  8765  8957 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:23:15.512  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.513  8765  8957 I DeletedNullContactsCleanup: Scheduling the service.
+11-03 18:23:15.516  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.525  8765  8957 I BackupAndSyncValidation: Scheduling the service.
+11-03 18:23:15.526  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.535  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.536  8765  8957 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+11-03 18:23:15.544  8765  8957 W ChimeraUtils: Module com.google.android.gms.phonesky_recovery missing resource null(0)
+11-03 18:23:15.548  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.548  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.550  8765  8765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.554  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.554  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.555  8765  8765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:15.564  8765  8987 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
+11-03 18:23:15.573  5034  5170 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+11-03 18:23:15.581  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.587  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.591  8765  8987 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2318189190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2640104055100800+tflite_dynamite
+11-03 18:23:15.591  8765  8957 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:15.592  8765  8957 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:15.592  8765  8957 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:15.593  1682  2336 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.596  8765  9073 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1793750400000]
+11-03 18:23:15.598  1682  6540 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.600  1682  7503 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.603  5034  5170 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)

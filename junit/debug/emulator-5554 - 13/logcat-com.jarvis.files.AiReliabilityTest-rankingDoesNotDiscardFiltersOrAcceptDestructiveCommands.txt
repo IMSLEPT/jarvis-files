@@ -1,0 +1,70 @@
+11-03 18:22:27.564  5034  5170 I TestRunner: started: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.568  1701  2146 I SP.AiAi : Sync for captions_i18n_v0_en-US succeeded in 16979 ms: {added: [asr_en-US_v3003], metadata: false
+11-03 18:22:27.597  1701  2146 I SP.AiAi : GC for 'captions_i18n_v0_en-US' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.597  1701  2146 I SP.AiAi : Sync for captions_i18n_v0_mandatory succeeded in 17008 ms: {added: [sound_recognition_v1], metadata: false
+11-03 18:22:27.601  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.610  1701  2936 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 2452263 bytes from https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip.
+11-03 18:22:27.610  1701  2331 I SP.AiAi : Download stopped: text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9, succeeded, size: 2452263
+11-03 18:22:27.617  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.617  1701  2146 I SP.AiAi : Sync for kg_collections_table succeeded in 17028 ms: {added: [collections_table_main_21980965fbd997111d89f86c16e9e090], metadata: false
+11-03 18:22:27.632  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.645  1701  2331 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:22:27.647  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:27.648  1701  2146 I SP.AiAi : Sync for actions-ranking-table succeeded in 17057 ms: {added: [table_5f787033cc44fc7a8804e0030b2bf848], metadata: false
+11-03 18:22:27.648  1701  2936 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip'
+11-03 18:22:27.663  1701  2331 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ {W:b:u:l, bg}
+11-03 18:22:27.684  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.690  1701  2146 I SP.AiAi : Sync for text-classifier-annotator succeeded in 17101 ms: {added: [tc_model_19e9928974f9d8742ad3b10f52373dea], metadata: false
+11-03 18:22:27.697  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.702  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.710  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.713  1701  2936 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 335528 bytes from https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.
+11-03 18:22:27.714  1701  2331 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 1022 ms. elapsed since start
+11-03 18:22:27.714  1701  2331 I SP.AiAi : Download stopped: text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea, succeeded, size: 335528
+11-03 18:22:27.718  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.718  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.732  1701  2146 I SP.AiAi : GC for 'captions_i18n_v0_mandatory' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.732  1701  3948 I AiAiCaptions: downloadSuperpack(): Successfully downloaded superpack 'captions_i18n_v0_en-US' version 20210623.
+11-03 18:22:27.732  1701  2146 I SP.AiAi : GC for 'kg_collections_table' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.733  1701  2146 I SP.AiAi : GC for 'actions-ranking-table' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.733  1701  2146 I SP.AiAi : GC for 'text-classifier-annotator' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.733  1701  2331 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:22:27.740  1701  2331 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}
+11-03 18:22:27.746  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.746  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.748  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.748  1701  3948 I AiAiCaptions: downloadSuperpack(): Successfully downloaded superpack 'captions_i18n_v0_mandatory' version 20210623.
+11-03 18:22:27.748  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.748  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.749  1701  4093 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'kg_collections_table', download version 21051103.
+11-03 18:22:27.749  1682  2316 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.749  1701  4093 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-annotator', download version 1687347939.
+11-03 18:22:27.750  1701  5567 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'actions-ranking-table', download version 211005.
+11-03 18:22:27.751  1701  2775 I AiAiCaptions: ComponentsManagerImpl::update()
+11-03 18:22:27.751  1701  2775 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+11-03 18:22:27.752  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.753  1701  2775 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity but already enabled
+11-03 18:22:27.753  1701  2775 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity but already enabled
+11-03 18:22:27.754  1701  2775 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService but already enabled
+11-03 18:22:27.755  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:22:27.755  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:22:27.756  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.757  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.757  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.757  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.758  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.758  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.759  1701  2135 I AiAiTextClassifier: [KnowledgeGraphCollectionsTableDownloaderImpl] reading KnowledgeGraphCollectionsTable from path /data/user/0/com.google.android.as/files/superpacks/kg_collections_table/collections_table_main_21980965fbd997111d89f86c16e9e090/collections_table.
+11-03 18:22:27.759  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/superpacks_manifest.zip
+11-03 18:22:27.760  1701  2775 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+11-03 18:22:27.762  1701  5568 I tflite  : Initialized TensorFlow Lite runtime.
+11-03 18:22:27.766  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:22:27.768  1701  2775 I AiAiCaptions: Would disable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS (reason: Captions for calls is disabled in device config) but already disabled
+11-03 18:22:27.768  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-annotator/tc_model_19e9928974f9d8742ad3b10f52373dea/en.fb.
+11-03 18:22:27.770  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:22:27.771  1701  2775 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+11-03 18:22:27.773  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:22:27.775  1701  2775 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+11-03 18:22:27.776  1701  2775 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:22:27.777  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.778  5034  5170 I TestRunner: finished: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)

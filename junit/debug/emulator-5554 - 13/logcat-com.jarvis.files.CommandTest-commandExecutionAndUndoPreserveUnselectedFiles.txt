@@ -1,0 +1,160 @@
+11-03 18:23:05.637  5034  5170 I TestRunner: started: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)
+11-03 18:23:05.640  8163  8163 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-03 18:23:05.640  8163  8163 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+11-03 18:23:05.640  8163  8163 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:05.641  1378  3540 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Device Discovery. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:23:05.641  1378  3540 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Spatial Orchestration. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:23:05.641  1378  3540 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Media Transfer. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:23:05.642  8163  8163 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.643  8163  8163 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.643  1378  5715 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.enpromo.PromoModuleInitIntentOperation for action com.google.android.chimera.IntentOperation.NEW_MODULE (3540) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 35.050s
+11-03 18:23:05.654   312  8184 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:05.655   312  8185 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:23:05.655   312  8185 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706746c214d0
+11-03 18:23:05.655   312  8185 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-03 18:23:05.657   312  8186 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:23:05.657   312  8186 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706736c1f630
+11-03 18:23:05.657   312  8186 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-03 18:23:05.660  8163  8163 I ecovery_process: System.exit called, status: 0
+11-03 18:23:05.660  8163  8163 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.662  1378  3540 I EnterpriseLoader: [ConditionsChecker] ZT config not present. [CONTEXT service_id=225 ]
+11-03 18:23:05.664  1378  3540 I EsimModuleInit: onHandleIntent action: com.google.android.chimera.IntentOperation.NEW_MODULE [CONTEXT service_id=333 ]
+11-03 18:23:05.669  1378  5715 D TrafficStats: tagSocket(68) with statsTag=0x30001803, statsUid=-1
+11-03 18:23:05.669  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:05.669   312   376 E BpfHandler: Unsupported protocol: 1
+11-03 18:23:05.669  1378  5715 I TrafficStats: tagSocketFd(68, 805312515, -1) failed with errno-93
+11-03 18:23:05.674  1378  3540 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=12
+11-03 18:23:05.677   313   313 I Zygote  : Process 8163 exited cleanly (0)
+11-03 18:23:05.677   516   556 I libprocessgroup: Successfully killed process cgroup uid 10138 pid 8163 in 0ms
+11-03 18:23:05.689  1166  1166 I Fido    : [CableAuthenticatorChimeraService] Unregistering receiver.
+11-03 18:23:05.689  1166  1166 I Fido    : [CableAuthenticatorChimeraService] Registering broadcast receiver.
+11-03 18:23:05.689  3854  8196 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:05.692  1166  1166 I Fido    : [AuthenticatorChimeraService] Unregistered the broadcast receiver [CONTEXT service_id=287 ]
+11-03 18:23:05.693  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.693  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.701   313   313 D Zygote  : Forked child process 8208
+11-03 18:23:05.706  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 40 uptime_millis: 40 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.706  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.707  8208  8208 I ecovery_process: Using CollectorTypeCC GC.
+11-03 18:23:05.708  8208  8208 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:05.708  8208  8208 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:05.714   399   423 I adbd    : jdwp connection from 8208
+11-03 18:23:05.721  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.724  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.droidguard.DroidGuardGcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.725  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.droidguard.DroidGuardGcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.734  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.737  1166  1401 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 147543]
+11-03 18:23:05.740  8208  8208 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10138; state: ENABLED
+11-03 18:23:05.744  8208  8208 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.745  8208  8208 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.745  8208  8208 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.748  8208  8208 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+11-03 18:23:05.751   312  8246 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:05.751   312  8248 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:23:05.751   312  8248 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706736c1f630
+11-03 18:23:05.751   312  8247 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:23:05.751   312  8247 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706746c214d0
+11-03 18:23:05.752   312  8247 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-03 18:23:05.751   312  8248 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-03 18:23:05.753  3378  3596 D TrafficStats: tagSocket(104) with statsTag=0x1803, statsUid=10119
+11-03 18:23:05.754  8208  8208 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-03 18:23:05.755  1378  7514 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:23:05.756  8208  8208 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+11-03 18:23:05.756  8208  8208 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:05.757  8208  8208 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.758  8208  8208 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.759  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.763  1378  7514 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:23:05.777  1378  3540 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.inappreach#com.google.android.gms, using defaults.
+11-03 18:23:05.779  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.782  8208  8208 I ecovery_process: System.exit called, status: 0
+11-03 18:23:05.782  8208  8208 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.783  1166  6701 I Herrevad: [376] aqwl.a: updateListenState
+11-03 18:23:05.789   313   313 I Zygote  : Process 8208 exited cleanly (0)
+11-03 18:23:05.789  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.790   516   556 I libprocessgroup: Successfully killed process cgroup uid 10138 pid 8208 in 0ms
+11-03 18:23:05.794  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.804   313   313 D Zygote  : Forked child process 8251
+11-03 18:23:05.805  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.811  1378  3998 I Icing   : MaintenanceDriver: Registering all GCM Tasks.
+11-03 18:23:05.812  1378  3540 I NewModuleOp: Enable component: com.google.android.gms.languageprofile.GcmReceiverService [CONTEXT service_id=167 ]
+11-03 18:23:05.813  1378  3540 I NewModuleOp: Enable component: com.google.android.gms.languageprofile.GcmTaskService [CONTEXT service_id=167 ]
+11-03 18:23:05.814  1378  3540 I NewModuleOp: Schedule LanguageProfileGcmTaskChimeraService tasks. [CONTEXT service_id=167 ]
+11-03 18:23:05.817  1378  3540 I LPGcmTaskChimeraService: Scheduling sync task. [CONTEXT service_id=167 ]
+11-03 18:23:05.818  1378  3540 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:05.819  1378  3540 I GmsSyncPolicyEngine: Periodic sync 6 disabled
+11-03 18:23:05.830  8251  8251 I ecovery_process: Using CollectorTypeCC GC.
+11-03 18:23:05.834  8251  8251 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:05.834  8251  8251 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:05.837   399   423 I adbd    : jdwp connection from 8251
+11-03 18:23:05.853  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.854  1378  3540 I LSRModuleInit: New Geofences: [] [CONTEXT service_id=277 ]
+11-03 18:23:05.854  1378  3540 I LSRModuleInit: Attempting to change container components state to enabled: true [CONTEXT service_id=277 ]
+11-03 18:23:05.859  8251  8251 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10138; state: ENABLED
+11-03 18:23:05.861  1166  6701 I LSR     : Handling LSR module init in persistent process [CONTEXT service_id=277 ]
+11-03 18:23:05.861  1166  6701 I LSR     : Refreshing periodic location reporting state [CONTEXT service_id=277 ]
+11-03 18:23:05.862  1166  1401 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+11-03 18:23:05.862  1166  3465 I LSR     : Reporting should be enabled: false [CONTEXT service_id=277 ]
+11-03 18:23:05.862  1166  3465 I LSR     : Stopping periodic location reporting [CONTEXT service_id=277 ]
+11-03 18:23:05.867  1166  1401 I LockboxIntentOp: Completed task: true [CONTEXT service_id=26 ]
+11-03 18:23:05.867  1378  3540 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:23:05.868  1378  3540 I Google Maps Android API: Is maps_core feature installed? 2 [CONTEXT service_id=71 ]
+11-03 18:23:05.868  1378  3540 I Google Maps Android API: cutoffSize=2147483648, internalFreeBytes=5076451328
+11-03 18:23:05.868  1378  3540 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:23:05.870  1378  3540 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+11-03 18:23:05.873  1166  1401 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+11-03 18:23:05.874  1378  3540 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+11-03 18:23:05.879  8251  8251 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.880  8251  8251 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.883  1166  3465 W MagicTether: [TetherListenerService] Invalid account list. [CONTEXT service_id=276 ]
+11-03 18:23:05.889  8251  8251 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.889  1378  3540 I MdiSyncModule: initializing module...
+11-03 18:23:05.892  1378  3540 I MdiSyncModule: module initialization completed
+11-03 18:23:05.893  1378  7249 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: maps_core:-1
+11-03 18:23:05.893  1166  2625 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.icing.mdd) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:23:05.896  1166  1166 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-03 18:23:05.898  1166  6704 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-03 18:23:05.901  1378  1378 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:23:05.901  1378  1378 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:23:05.901  1378  1378 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:23:05.904  1378  3540 W MDM     : [124] aywf.d: Q+ devices does not need device admin.
+11-03 18:23:05.906  1682  7524 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommands/Download/a.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommands/Download/a.apk
+11-03 18:23:05.906  1378  7514 I MlBenchmarkInstaller: Intent: com.google.android.chimera.IntentOperation.NEW_MODULE [CONTEXT service_id=340 ]
+11-03 18:23:05.906  1378  7514 I MlBenchmarkInstaller: onInitRuntimeState(), intent action=com.google.android.chimera.IntentOperation.NEW_MODULE [CONTEXT service_id=340 ]
+11-03 18:23:05.909  1378  7514 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+11-03 18:23:05.911  1378  1378 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+11-03 18:23:05.913  1378  7514 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+11-03 18:23:05.913  1378  7249 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2318189190800+maps_core
+11-03 18:23:05.924  1682  6166 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.926  1682  7524 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 22ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:05.927  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommands/Download/a.apk to null
+11-03 18:23:05.928  1682  7503 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:05.930  1378  7249 I GmsDebugLogger: [73] 1801
+11-03 18:23:05.933  1378  7249 W ZappDownloader: No successful module downloads for requested features [maps_core].
+11-03 18:23:05.933  1378  7249 I GmsDebugLogger: [30] [MapsCoreDynamite.integ:231112103100800]
+11-03 18:23:05.933  1378  7514 W libc    : Access denied finding property "ro.hardware.chipname"
+11-03 18:23:05.934  1378  7514 W ChipsetHelper: Unknown chipset! [CONTEXT service_id=301 ]
+11-03 18:23:05.934  1378  7514 I NnApiDriverManager: Registering application with chipset 'unknown' [CONTEXT service_id=301 ]
+11-03 18:23:05.934  1682  6540 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.938  1378  1378 W MdmInitializer: SPOT API unavailable. [CONTEXT service_id=247 ]
+11-03 18:23:05.938  1378  1378 W MdmInitializer: aare: None of the queried APIs are available. Spot.API: ConnectionResult{statusCode=API_UNAVAILABLE, resolution=null, message=null}
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at aasq.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at aava.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at aava.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at aava.onConnectionFailed(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at abnk.gU(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at abmo.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at abmf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at abmi.handleMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):29)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at avye.ll(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at avye.dispatchMessage(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:23:05.938  1378  1378 W MdmInitializer: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:23:05.939  1682  7503 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.939  1378  7249 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+11-03 18:23:05.940  1378  7249 I GmsDebugLogger: [83] 1 [maps_core]
+11-03 18:23:05.940  8251  8251 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+11-03 18:23:05.943  1682  5362 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.944  5034  5170 I TestRunner: finished: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)

@@ -1,0 +1,455 @@
+--------- beginning of main
+11-03 18:21:20.044   313   313 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-03 18:21:20.059   313   313 I AndroidRuntime: Using default boot image
+11-03 18:21:20.059   313   313 I AndroidRuntime: Leaving lock profiling enabled
+11-03 18:21:43.322   948   948 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:22.326  4990  4990 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-03 18:22:22.388  4990  4990 I AndroidRuntime: Using default boot image
+11-03 18:22:22.388  4990  4990 I AndroidRuntime: Leaving lock profiling enabled
+11-03 18:22:22.638  4990  4990 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-03 18:22:24.547  5034  5170 I TestRunner: run started: 144 tests
+11-03 18:22:24.549  5034  5170 I TestRunner: started: screenshotQuestionRanksActualBytesInsteadOfRecentFiles(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.178  5034  5170 I TestRunner: finished: screenshotQuestionRanksActualBytesInsteadOfRecentFiles(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.193  5034  5170 I TestRunner: started: streamingStopsRepeatedCharactersBeforeFinishing(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.559  5034  5170 I TestRunner: finished: streamingStopsRepeatedCharactersBeforeFinishing(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.560  5034  5170 I TestRunner: started: userCancellationRemainsCancellation(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.982  5034  5170 I TestRunner: finished: userCancellationRemainsCancellation(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:25.991  5034  5170 I TestRunner: started: followUpKeepsOrderAndDropsFilesThatHaveDisappeared(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:26.399  5034  5170 I TestRunner: finished: followUpKeepsOrderAndDropsFilesThatHaveDisappeared(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:26.401  5034  5170 I TestRunner: started: validJsonCannotHideDegenerateOrOversizedReplies(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:26.824  5034  5170 I TestRunner: finished: validJsonCannotHideDegenerateOrOversizedReplies(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:26.825  5034  5170 I TestRunner: started: timeoutCancelsTheBackendAndDoesNotReturnPartialText(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.185  5034  5170 I TestRunner: finished: timeoutCancelsTheBackendAndDoesNotReturnPartialText(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.188  5034  5170 I TestRunner: started: screenshotQuestionAndShowThemNeedNoConfiguredModel(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.562  5034  5170 I TestRunner: finished: screenshotQuestionAndShowThemNeedNoConfiguredModel(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.564  5034  5170 I TestRunner: started: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.778  5034  5170 I TestRunner: finished: rankingDoesNotDiscardFiltersOrAcceptDestructiveCommands(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:27.780  5034  5170 I TestRunner: started: classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(com.jarvis.files.AppInsightsTest)
+11-03 18:22:27.785  5034  5170 I TestRunner: finished: classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(com.jarvis.files.AppInsightsTest)
+11-03 18:22:27.786  5034  5170 I TestRunner: started: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)
+11-03 18:22:28.207  5034  5170 I TestRunner: finished: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)
+11-03 18:22:28.208  5034  5170 I TestRunner: started: realInventoryProvidesRequestedDatesAndSeparatesMissingHistory(com.jarvis.files.AppInsightsTest)
+11-03 18:22:28.619  5034  5170 I TestRunner: finished: realInventoryProvidesRequestedDatesAndSeparatesMissingHistory(com.jarvis.files.AppInsightsTest)
+11-03 18:22:28.620  5034  5170 I TestRunner: started: organizerChoiceButtonCarriesContextToExecutablePreview(com.jarvis.files.AppsFlowTest)
+11-03 18:22:33.803  5034  5170 I TestRunner: finished: organizerChoiceButtonCarriesContextToExecutablePreview(com.jarvis.files.AppsFlowTest)
+11-03 18:22:33.805  5034  5170 I TestRunner: started: moreOpensSearchableInventoryAndPerAppChart(com.jarvis.files.AppsFlowTest)
+11-03 18:22:38.409  5034  5170 I TestRunner: finished: moreOpensSearchableInventoryAndPerAppChart(com.jarvis.files.AppsFlowTest)
+11-03 18:22:38.413  5034  5170 I TestRunner: started: clarificationChoiceRescansBeforeBuildingDeletionPreview(com.jarvis.files.CommandFlowTest)
+11-03 18:22:38.955  4469  4469 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:39.145  6121  6121 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:39.454  6147  6147 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:39.581  6169  6169 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:39.800  6190  6190 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:40.217  5034  5170 I TestRunner: finished: clarificationChoiceRescansBeforeBuildingDeletionPreview(com.jarvis.files.CommandFlowTest)
+11-03 18:22:40.218  5034  5170 I TestRunner: started: keyboardSendActionBuildsPreviewAndClearsDraft(com.jarvis.files.CommandFlowTest)
+11-03 18:22:40.485  6236  6236 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:40.683  6277  6277 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:40.836  6297  6297 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:41.057  6317  6317 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:42.246  6340  6340 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:42.344  5034  5170 I TestRunner: finished: keyboardSendActionBuildsPreviewAndClearsDraft(com.jarvis.files.CommandFlowTest)
+11-03 18:22:42.346  5034  5170 I TestRunner: started: retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:42.751  6368  6368 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:42.920  6439  6439 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:43.099  6463  6463 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:43.436  6495  6495 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:43.700  6515  6515 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:43.924  6534  6534 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:44.030  5034  5170 I TestRunner: finished: retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:44.031  5034  5170 I TestRunner: started: allPlanEntriesCanBeReviewedBeyondOldLimit(com.jarvis.files.CommandFlowTest)
+11-03 18:22:44.083  6558  6558 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:44.473  6617  6617 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:46.025  5034  5170 I TestRunner: finished: allPlanEntriesCanBeReviewedBeyondOldLimit(com.jarvis.files.CommandFlowTest)
+11-03 18:22:46.028  5034  5170 I TestRunner: started: sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:48.580  5034  5170 I TestRunner: finished: sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:48.584  5034  5170 I TestRunner: started: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)
+11-03 18:22:49.688  5034  5170 I TestRunner: finished: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)
+11-03 18:22:49.690  5034  5170 I TestRunner: started: emptySendIsDisabledAndMicrophoneIsSeparate(com.jarvis.files.CommandFlowTest)
+11-03 18:22:51.179  5034  5170 I TestRunner: finished: emptySendIsDisabledAndMicrophoneIsSeparate(com.jarvis.files.CommandFlowTest)
+11-03 18:22:51.197  5034  5170 I TestRunner: started: screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:52.692  5034  5170 I TestRunner: finished: screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:52.702  5034  5170 I TestRunner: started: directScreenshotCommandDoesNotAskModelForAnotherConfirmation(com.jarvis.files.CommandFlowTest)
+11-03 18:22:53.890  7105  7105 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:54.084  7135  7135 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:54.226  5034  5170 I TestRunner: finished: directScreenshotCommandDoesNotAskModelForAnotherConfirmation(com.jarvis.files.CommandFlowTest)
+11-03 18:22:54.227  7156  7156 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:54.228  5034  5170 I TestRunner: started: largestFilesAndShowThemWorkThroughChatWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:54.526  7221  7221 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:22:56.407  5034  5170 I TestRunner: finished: largestFilesAndShowThemWorkThroughChatWithoutModel(com.jarvis.files.CommandFlowTest)
+11-03 18:22:56.408  5034  5170 I TestRunner: started: screenshotNoButtonCancelsWithoutModelOrFileChanges(com.jarvis.files.CommandFlowTest)
+11-03 18:22:57.395  5034  5170 I TestRunner: finished: screenshotNoButtonCancelsWithoutModelOrFileChanges(com.jarvis.files.CommandFlowTest)
+11-03 18:22:57.404  5034  5170 I TestRunner: started: openingAllResultsPreservesLargestFirstOrder(com.jarvis.files.CommandFlowTest)
+11-03 18:23:00.058  7391  7391 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:00.147  5034  5170 I TestRunner: finished: openingAllResultsPreservesLargestFirstOrder(com.jarvis.files.CommandFlowTest)
+11-03 18:23:00.158  5034  5170 I TestRunner: started: cancelButtonLeavesFilesUntouched(com.jarvis.files.CommandFlowTest)
+11-03 18:23:00.319  7423  7423 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:00.498  7478  7478 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:01.866  5034  5170 I TestRunner: finished: cancelButtonLeavesFilesUntouched(com.jarvis.files.CommandFlowTest)
+11-03 18:23:01.872  5034  5170 I TestRunner: started: settingsButtonOpensAiSettings(com.jarvis.files.CommandFlowTest)
+11-03 18:23:02.894  7628  7628 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:03.174  5034  5170 I TestRunner: finished: settingsButtonOpensAiSettings(com.jarvis.files.CommandFlowTest)
+11-03 18:23:03.175  5034  5170 I TestRunner: started: explicitRenameUsesRealPathAndKeepsExtension(com.jarvis.files.CommandTest)
+11-03 18:23:03.194  7665  7665 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:03.372  7726  7726 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:03.420  5034  5170 I TestRunner: finished: explicitRenameUsesRealPathAndKeepsExtension(com.jarvis.files.CommandTest)
+11-03 18:23:03.422  5034  5170 I TestRunner: started: exactScreenshotCommandFindsApksOutsideDownloadAndNeverExecutes(com.jarvis.files.CommandTest)
+11-03 18:23:03.458  7754  7754 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:03.649  5034  5170 I TestRunner: finished: exactScreenshotCommandFindsApksOutsideDownloadAndNeverExecutes(com.jarvis.files.CommandTest)
+11-03 18:23:03.651  5034  5170 I TestRunner: started: politeItalianCommandsKeepTheSameScope(com.jarvis.files.CommandTest)
+11-03 18:23:03.918  5034  5170 I TestRunner: finished: politeItalianCommandsKeepTheSameScope(com.jarvis.files.CommandTest)
+11-03 18:23:03.920  5034  5170 I TestRunner: started: noResultsAreComputedFromRealIndex(com.jarvis.files.CommandTest)
+11-03 18:23:04.166  5034  5170 I TestRunner: finished: noResultsAreComputedFromRealIndex(com.jarvis.files.CommandTest)
+11-03 18:23:04.168  5034  5170 I TestRunner: started: ageFilterDoesNotDeleteRecentApks(com.jarvis.files.CommandTest)
+11-03 18:23:04.366  5034  5170 I TestRunner: finished: ageFilterDoesNotDeleteRecentApks(com.jarvis.files.CommandTest)
+11-03 18:23:04.367  5034  5170 I TestRunner: started: exclusionsAndCompoundRequestsAreNeverSilentlyIgnored(com.jarvis.files.CommandTest)
+11-03 18:23:04.520  5034  5170 I TestRunner: finished: exclusionsAndCompoundRequestsAreNeverSilentlyIgnored(com.jarvis.files.CommandTest)
+11-03 18:23:04.521  5034  5170 I TestRunner: started: vagueDeletionOffersWorkingChoices(com.jarvis.files.CommandTest)
+11-03 18:23:04.721  5034  5170 I TestRunner: finished: vagueDeletionOffersWorkingChoices(com.jarvis.files.CommandTest)
+11-03 18:23:04.723  5034  5170 I TestRunner: started: rejectsMalformedReplyAndUnrequestedActions(com.jarvis.files.CommandTest)
+11-03 18:23:04.949  5034  5170 I TestRunner: finished: rejectsMalformedReplyAndUnrequestedActions(com.jarvis.files.CommandTest)
+11-03 18:23:04.950  5034  5170 I TestRunner: started: keywordSearchWorksWithoutLlm(com.jarvis.files.CommandTest)
+11-03 18:23:05.204  5034  5170 I TestRunner: finished: keywordSearchWorksWithoutLlm(com.jarvis.files.CommandTest)
+11-03 18:23:05.206  5034  5170 I TestRunner: started: folderScopeIncludesChildrenButNotNeighborFolders(com.jarvis.files.CommandTest)
+11-03 18:23:05.446  5034  5170 I TestRunner: finished: folderScopeIncludesChildrenButNotNeighborFolders(com.jarvis.files.CommandTest)
+11-03 18:23:05.449  5034  5170 I TestRunner: started: invalidAiSuccessOrNotFoundCannotMasqueradeAsCompletedCommand(com.jarvis.files.CommandTest)
+11-03 18:23:05.570  8132  8132 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.636  5034  5170 I TestRunner: finished: invalidAiSuccessOrNotFoundCannotMasqueradeAsCompletedCommand(com.jarvis.files.CommandTest)
+11-03 18:23:05.637  5034  5170 I TestRunner: started: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)
+11-03 18:23:05.660  8163  8163 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.782  8208  8208 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.944  5034  5170 I TestRunner: finished: commandExecutionAndUndoPreserveUnselectedFiles(com.jarvis.files.CommandTest)
+11-03 18:23:05.945  5034  5170 I TestRunner: started: plainSearchCannotGenerateDeletionPlan(com.jarvis.files.CommandTest)
+11-03 18:23:06.002  8251  8251 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:06.224  5034  5170 I TestRunner: finished: plainSearchCannotGenerateDeletionPlan(com.jarvis.files.CommandTest)
+11-03 18:23:06.227  5034  5170 I TestRunner: started: emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible(com.jarvis.files.ConversationContextTest)
+11-03 18:23:06.689  5034  5170 I TestRunner: finished: emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible(com.jarvis.files.ConversationContextTest)
+11-03 18:23:06.691  5034  5170 I TestRunner: started: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.013  5034  5170 I TestRunner: finished: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.015  5034  5170 I TestRunner: started: ordinalAndUniqueFolderNameCanAnswerTheQuestion(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.305  5034  5170 I TestRunner: finished: ordinalAndUniqueFolderNameCanAnswerTheQuestion(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.307  5034  5170 I TestRunner: started: contextualRenamePreservesNewNameCapitalizationAndExtension(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.625  5034  5170 I TestRunner: finished: contextualRenamePreservesNewNameCapitalizationAndExtension(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.626  5034  5170 I TestRunner: started: contextMutationCannotAccidentallyDeleteEveryPdfOnPhone(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.885  5034  5170 I TestRunner: finished: contextMutationCannotAccidentallyDeleteEveryPdfOnPhone(com.jarvis.files.ConversationContextTest)
+11-03 18:23:07.886  5034  5170 I TestRunner: started: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.089  5034  5170 I TestRunner: finished: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.090  5034  5170 I TestRunner: started: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.342  5034  5170 I TestRunner: finished: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.347  5034  5170 I TestRunner: started: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.621  5034  5170 I TestRunner: finished: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.623  5034  5170 I TestRunner: started: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.870  5034  5170 I TestRunner: finished: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.871  5034  5170 I TestRunner: started: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.121  5034  5170 I TestRunner: finished: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.122  5034  5170 I TestRunner: started: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.408  5034  5170 I TestRunner: finished: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.409  5034  5170 I TestRunner: started: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.734  5034  5170 I TestRunner: finished: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)
+11-03 18:23:09.736  5034  5170 I TestRunner: started: cacheExplanationExpandsWithoutLaunchingCleanup(com.jarvis.files.DesignFlowTest)
+11-03 18:23:09.832  9084  9084 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:10.010  9145  9145 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:10.809  5034  5170 I TestRunner: finished: cacheExplanationExpandsWithoutLaunchingCleanup(com.jarvis.files.DesignFlowTest)
+11-03 18:23:10.811  5034  5170 I TestRunner: started: extraCleaningToolsRemainReachable(com.jarvis.files.DesignFlowTest)
+11-03 18:23:12.124  5034  5170 I TestRunner: finished: extraCleaningToolsRemainReachable(com.jarvis.files.DesignFlowTest)
+11-03 18:23:12.127  5034  5170 I TestRunner: started: homeSearchOpensDocumentSearch(com.jarvis.files.DesignFlowTest)
+11-03 18:23:12.714  5034  5170 I TestRunner: finished: homeSearchOpensDocumentSearch(com.jarvis.files.DesignFlowTest)
+11-03 18:23:12.716  5034  5170 I TestRunner: started: everyGroupedMoreDestinationStillOpens(com.jarvis.files.DesignFlowTest)
+11-03 18:23:14.846  5034  5170 I TestRunner: finished: everyGroupedMoreDestinationStillOpens(com.jarvis.files.DesignFlowTest)
+11-03 18:23:15.021  5034  5170 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.114  5034  5170 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+11-03 18:23:15.136  5034  5170 I JarvisTest: [FileOps] OK destinazione come percorso completo
+11-03 18:23:15.164  5034  5170 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.166  5034  5170 I TestRunner: started: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.312  5034  5170 I JarvisTest: [Doppioni] Gruppi: [[uno.jpg, copia di uno.jpg]]
+11-03 18:23:15.317  5034  5170 I JarvisTest: [Cerca] bolletta enel → [JarvisTest/Download/bolletta_enel_marzo.pdf]
+11-03 18:23:15.371  5034  5170 I TestRunner: finished: duplicatesAndSearch(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.372  5034  5170 I TestRunner: started: trashRestore(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.465  5034  5170 I JarvisTest: [Cestino] OK sposta e ripristina
+11-03 18:23:15.497  5034  5170 I TestRunner: finished: trashRestore(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.499  5034  5170 I TestRunner: started: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.573  5034  5170 I JarvisTest: [AI] OK pulizia di ricerche e date non richieste
+11-03 18:23:15.603  5034  5170 I TestRunner: finished: cleanSpuriousSearches(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.604  5034  5170 I TestRunner: started: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+11-03 18:23:18.844  5034  5170 I JarvisTest: [Backup] OK backup cifrato delle chiavi: esporta, password errata rifiutata, ripristino
+11-03 18:23:18.870  5034  5170 I TestRunner: finished: keyBackupRoundTrip(com.jarvis.files.FileOpsTest)
+11-03 18:23:18.872  5034  5170 I TestRunner: started: sortDownloadRule(com.jarvis.files.FileOpsTest)
+11-03 18:23:18.977  5034  5170 I JarvisTest: [Riordino] Download: {Download/jt_doc.pdf=Download/PDF/jt_doc.pdf, Download/jt_song.mp3=Download/Audio/jt_song.mp3}
+11-03 18:23:19.014  5034  5170 I TestRunner: finished: sortDownloadRule(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.015  5034  5170 I TestRunner: started: parseModelReply(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.079  5034  5170 I JarvisTest: [AI] OK interpretazione risposta del modello (JSON, domande, piano)
+11-03 18:23:19.098  5034  5170 I TestRunner: finished: parseModelReply(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.099  5034  5170 I TestRunner: started: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.214  5034  5170 I JarvisTest: [FileOps] Destinazioni: [JarvisTest/Download/PDF/fattura_tim (1).pdf, JarvisTest/Foto/2026-10-31 Vacanza 001.jpg, JarvisTest/Foto/2026-11-01 Vacanza 002.jpg]
+11-03 18:23:19.239  5034  5170 I JarvisTest: [FileOps] OK nomi duplicati e rinomina con schema
+11-03 18:23:19.289  5034  5170 I TestRunner: finished: collisionsAndPattern(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.291  5034  5170 I TestRunner: started: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.355  5034  5170 I JarvisTest: [FileOps] Piano: 1 cartelle nuove · 3 file spostati · 1 rinominati · 1 nel cestino (2 B) · avvisi: [Cartella di sistema protetta: Download]
+11-03 18:23:19.397  5034  5170 I JarvisTest: [FileOps] Eseguito: 6 ok, 0 falliti []
+11-03 18:23:19.437  5034  5170 I JarvisTest: [FileOps] Annulla: 6 ripristinati, 0 falliti
+11-03 18:23:19.442  5034  5170 I JarvisTest: [FileOps] OK sposta/rinomina/cestino/annulla
+11-03 18:23:19.488  5034  5170 I TestRunner: finished: planExecuteAndUndo(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.489  5034  5170 I TestRunner: started: newChatClearsFolderReferences(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:21.562  5034  5170 I TestRunner: finished: newChatClearsFolderReferences(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:21.568  5034  5170 I TestRunner: started: screenshotClarificationRecoversPriorScopeAndRefreshesDirectoryContents(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:24.208  5034  5170 I TestRunner: finished: screenshotClarificationRecoversPriorScopeAndRefreshesDirectoryContents(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:24.239  5034  5170 I TestRunner: started: emptyResultDoesNotShowMisleadingNoFilesMessageOrRetry(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:25.902  5034  5170 I TestRunner: finished: emptyResultDoesNotShowMisleadingNoFilesMessageOrRetry(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:25.908  5034  5170 I TestRunner: started: navigatingWhileReplyStartsCannotChangeTheSubmittedFolder(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:28.340  5034  5170 I TestRunner: finished: navigatingWhileReplyStartsCannotChangeTheSubmittedFolder(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:28.341  5034  5170 I TestRunner: started: continuousMessagesKeepOneFolderWithoutRepeatingItsPath(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:32.063  5034  5170 I TestRunner: finished: continuousMessagesKeepOneFolderWithoutRepeatingItsPath(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:32.065  5034  5170 I TestRunner: started: exactScreenshotRequestFindsEmptyDownloadDirectoriesWithoutInstalledModel(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:33.685  5034  5170 I TestRunner: finished: exactScreenshotRequestFindsEmptyDownloadDirectoriesWithoutInstalledModel(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:33.686  5034  5170 I TestRunner: started: ambiguousFolderChoiceResumesSearchThroughRealOptionButton(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:35.626  5034  5170 I TestRunner: finished: ambiguousFolderChoiceResumesSearchThroughRealOptionButton(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:35.628  5034  5170 I TestRunner: started: allFolderResultsBeyondTwoHundredAreReachableAndOpenActualFolder(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:37.591 10571 10571 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:37.668 10591 10591 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:41.177  5034  5170 I TestRunner: finished: allFolderResultsBeyondTwoHundredAreReachableAndOpenActualFolder(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:41.178  5034  5170 I TestRunner: started: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.368  5034  5170 I TestRunner: finished: cancellationStopsTraversalAndLeavesEverythingUntouched(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.369  5034  5170 I TestRunner: started: exactScreenshotDownloadRequestChecksActualDirectoriesNotFileIndex(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.554  5034  5170 I TestRunner: finished: exactScreenshotDownloadRequestChecksActualDirectoriesNotFileIndex(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.555  5034  5170 I TestRunner: started: protectedOrEscapingScopeNeverProducesAnEmptyResult(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.722  5034  5170 I TestRunner: finished: protectedOrEscapingScopeNeverProducesAnEmptyResult(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.723  5034  5170 I TestRunner: started: contextCannotBeInventedOrTakenAcrossAnUnrelatedRequest(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.857  5034  5170 I TestRunner: finished: contextCannotBeInventedOrTakenAcrossAnUnrelatedRequest(com.jarvis.files.FolderCommandTest)
+11-03 18:23:41.858  5034  5170 I TestRunner: started: globalScreenshotRequestShowsAllAccessibleMatchesIncludingDeepAndHidden(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.018 10829 10829 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:42.194  5034  5170 I TestRunner: finished: globalScreenshotRequestShowsAllAccessibleMatchesIncludingDeepAndHidden(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.195  5034  5170 I TestRunner: started: unsupportedFiltersMutationsAndMixedRequestsCannotBroadenSearch(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.223 10855 10855 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:42.388  5034  5170 I TestRunner: finished: unsupportedFiltersMutationsAndMixedRequestsCannotBroadenSearch(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.389  5034  5170 I TestRunner: started: olderFailedConversationRecoversOriginalScopedRequest(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.714  5034  5170 I TestRunner: finished: olderFailedConversationRecoversOriginalScopedRequest(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.715  5034  5170 I TestRunner: started: currentLevelConstraintAndQuotedSpacedPathsArePreserved(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.990  5034  5170 I TestRunner: finished: currentLevelConstraintAndQuotedSpacedPathsArePreserved(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.991  5034  5170 I TestRunner: started: clarificationKeepsScopeAndRefreshesFilesWithoutCallingModel(com.jarvis.files.FolderCommandTest)
+11-03 18:23:43.486  5034  5170 I TestRunner: finished: clarificationKeepsScopeAndRefreshesFilesWithoutCallingModel(com.jarvis.files.FolderCommandTest)
+11-03 18:23:43.488  5034  5170 I TestRunner: started: zeroByteFilesHiddenEntriesAndSubfoldersNeverMakeTheirParentEmpty(com.jarvis.files.FolderCommandTest)
+11-03 18:23:43.839  5034  5170 I TestRunner: finished: zeroByteFilesHiddenEntriesAndSubfoldersNeverMakeTheirParentEmpty(com.jarvis.files.FolderCommandTest)
+11-03 18:23:43.841  5034  5170 I TestRunner: started: allResultsRemainAvailableBeyondOldChatAndIndexLimits(com.jarvis.files.FolderCommandTest)
+11-03 18:23:45.543  5034  5170 I TestRunner: finished: allResultsRemainAvailableBeyondOldChatAndIndexLimits(com.jarvis.files.FolderCommandTest)
+11-03 18:23:45.545  5034  5170 I TestRunner: started: emptyExistingScopeMissingScopeAndFilePathAreDifferentOutcomes(com.jarvis.files.FolderCommandTest)
+11-03 18:23:45.748  5034  5170 I TestRunner: finished: emptyExistingScopeMissingScopeAndFilePathAreDifferentOutcomes(com.jarvis.files.FolderCommandTest)
+11-03 18:23:45.749  5034  5170 I TestRunner: started: realModel(com.jarvis.files.LlmTest)
+11-03 18:23:47.111 11264 11264 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:47.194 11283 11283 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:47.248 11302 11302 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:47.316 11321 11321 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:47.394 11340 11340 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:47.475 11359 11359 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:49.381 11409 11409 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:49.459 11428 11428 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:49.549 11450 11450 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:49.635 11469 11469 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:49.708 11490 11490 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:59.614 11640 11640 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:59.678 11661 11661 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:59.748 11686 11686 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:24:15.907  5034  5170 I JarvisTest: [LLM] Modello: null (null byte), accesso file=true
+11-03 18:24:15.908  5034  5170 E TestRunner: assumption failed: realModel(com.jarvis.files.LlmTest)
+11-03 18:24:15.909  5034  5170 E TestRunner: ----- begin exception -----
+11-03 18:24:15.909  5034  5170 E TestRunner: org.junit.AssumptionViolatedException: Modello non presente: test saltato
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.Assume.assumeTrue(Assume.java:68)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at com.jarvis.files.LlmTest$realModel$1.invokeSuspend(LlmTest.kt:34)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at com.jarvis.files.LlmTest.realModel(LlmTest.kt:24)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+11-03 18:24:15.909  5034  5170 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+11-03 18:24:15.909  5034  5170 E TestRunner: ----- end exception -----
+11-03 18:24:15.910  5034  5170 I TestRunner: finished: realModel(com.jarvis.files.LlmTest)
+11-03 18:24:15.911  5034  5170 I TestRunner: started: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.116  5034  5170 I TestRunner: finished: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.118  5034  5170 I TestRunner: started: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.421  5034  5170 I TestRunner: finished: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.422  5034  5170 I TestRunner: started: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.608  5034  5170 I TestRunner: finished: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.609  5034  5170 I TestRunner: started: missingScopeAsksOnceAndRetainsChosenMode(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.786  5034  5170 I TestRunner: finished: missingScopeAsksOnceAndRetainsChosenMode(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.788  5034  5170 I TestRunner: started: explicitTypeIsNotLostByFollowingChoice(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.951  5034  5170 I TestRunner: finished: explicitTypeIsNotLostByFollowingChoice(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:16.952  5034  5170 I TestRunner: started: filenamesAndUnrecognizedRestrictionsNeverBroadenThePlan(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:17.076  5034  5170 I TestRunner: finished: filenamesAndUnrecognizedRestrictionsNeverBroadenThePlan(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:24:17.078  5034  5170 I TestRunner: started: copyAndMoveUseDestinationNavigationAndNeverOverwrite(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:19.062  5034  5170 I TestRunner: finished: copyAndMoveUseDestinationNavigationAndNeverOverwrite(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:19.063  5034  5170 I TestRunner: started: hiddenFilesDeepFoldersAndBreadcrumbsAreNavigable(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:20.738  5034  5170 I TestRunner: finished: hiddenFilesDeepFoldersAndBreadcrumbsAreNavigable(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:20.740  5034  5170 I TestRunner: started: homeDownloadShortcutOpensNestedFolders(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:21.875  5034  5170 I TestRunner: finished: homeDownloadShortcutOpensNestedFolders(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:21.878  5034  5170 I TestRunner: started: createRenameTrashAndUndoWorkFromActualButtons(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:25.726  5034  5170 I TestRunner: finished: createRenameTrashAndUndoWorkFromActualButtons(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:25.731  5034  5170 I TestRunner: started: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:27.278  5034  5170 I TestRunner: finished: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:27.279  5034  5170 I TestRunner: started: searchFiltersOnlyCurrentFolderAndCanBeCleared(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:28.525  5034  5170 I TestRunner: finished: searchFiltersOnlyCurrentFolderAndCanBeCleared(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:28.527  5034  5170 I TestRunner: started: browsingIncludesEmptyAndHiddenFoldersWithoutUsingIndexOrDepthLimit(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.735  5034  5170 I TestRunner: finished: browsingIncludesEmptyAndHiddenFoldersWithoutUsingIndexOrDepthLimit(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.736  5034  5170 I TestRunner: started: sameFolderCutIsNoOpAndSelfCopyAndSelfMoveAreRejected(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.858  5034  5170 I TestRunner: finished: sameFolderCutIsNoOpAndSelfCopyAndSelfMoveAreRejected(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.860  5034  5170 I TestRunner: started: protectedRootsCannotBeTraversedCopiedOrMutatedThroughBrowser(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.985  5034  5170 I TestRunner: finished: protectedRootsCannotBeTraversedCopiedOrMutatedThroughBrowser(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.986  5034  5170 I TestRunner: started: folderCopyIncludesEmptyAndHiddenChildrenWithoutOverwritingAndUndoIsRecoverable(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.357  5034  5170 I TestRunner: finished: folderCopyIncludesEmptyAndHiddenChildrenWithoutOverwritingAndUndoIsRecoverable(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.358  5034  5170 I TestRunner: started: moveAndTrashDirectoriesAreUndoableWithoutOverwritingNeighbors(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.573  5034  5170 I TestRunner: finished: moveAndTrashDirectoriesAreUndoableWithoutOverwritingNeighbors(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.574  5034  5170 I TestRunner: started: createRenameAndUndoKeepExactNamesAndContent(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.714  5034  5170 I TestRunner: finished: createRenameAndUndoKeepExactNamesAndContent(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.715  5034  5170 I TestRunner: started: interruptedProcessStagingIsCleanedWithoutTouchingTheOriginal(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.864  5034  5170 I TestRunner: finished: interruptedProcessStagingIsCleanedWithoutTouchingTheOriginal(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.865  5034  5170 I TestRunner: started: searchIsImmediateChildrenOnlyAndNeverClaimsAnInaccessibleFolderIsEmpty(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.980  5034  5170 I TestRunner: finished: searchIsImmediateChildrenOnlyAndNeverClaimsAnInaccessibleFolderIsEmpty(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.981  5034  5170 I TestRunner: started: duplicateCopyNamesKeepLongUnicodeExtensionsAndCancellationCleansStaging(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:30.187  5034  5170 I TestRunner: finished: duplicateCopyNamesKeepLongUnicodeExtensionsAndCancellationCleansStaging(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:30.295  5034  5170 I TestRunner: started: a2_stopRequest(com.jarvis.files.PhotoTest)
+11-03 18:24:30.421  5034  5170 I JarvisTest: [Stop] Analisi con stop richiesto: 0 foto elaborate · caldo=false
+11-03 18:24:30.421  5034  5170 I TestRunner: finished: a2_stopRequest(com.jarvis.files.PhotoTest)
+11-03 18:24:30.422  5034  5170 I TestRunner: started: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+11-03 18:24:32.982  5034  5170 I JarvisTest: [Visione] obama.jpg: 1 volti, etichette=[Flag 0.92, Tie 0.92, Outerwear 0.85, Jacket 0.84, Blazer 0.69, Event 0.69], luminosità=79, nitidezza=1334, 2520 ms
+11-03 18:24:35.426  5034  5170 I JarvisTest: [Visione] obama2.jpg: 1 volti, etichette=[Tie 0.93, Event 0.71, Jacket 0.70, Flag 0.61, Pattern 0.60], luminosità=72, nitidezza=843, 2432 ms
+11-03 18:24:37.739  5034  5170 I JarvisTest: [Visione] biden.jpg: 1 volti, etichette=[Tie 0.79, Jacket 0.75, Event 0.63], luminosità=64, nitidezza=375, 2298 ms
+11-03 18:24:41.894  5034  5170 I JarvisTest: [Visione] two_people.jpg: 2 volti, etichette=[Jacket 0.80, Event 0.77, Blazer 0.63, Tie 0.63], luminosità=95, nitidezza=2244, 4138 ms
+11-03 18:24:41.907  5034  5170 I JarvisTest: [Volti] Obama-Obama2=0.783  Obama-Biden=0.065  Obama2-Biden=0.004
+11-03 18:24:41.909  5034  5170 I JarvisTest: [Volti] Foto con 2 persone vs Obama=[0.056, 0.704] vs Biden=[0.986, 0.177]
+11-03 18:24:41.909  5034  5170 I TestRunner: finished: a_facesAndEmbeddings(com.jarvis.files.PhotoTest)
+11-03 18:24:41.910  5034  5170 I TestRunner: started: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+11-03 18:24:55.698  5034  5170 I JarvisTest: [Indice] Foto analizzate: 16 · totale db=(16, 0, 5)
+11-03 18:24:55.705  5034  5170 I JarvisTest: [Indice] Gruppi di volti: [[obama.jpg, obama2.jpg, two_people.jpg], [biden.jpg, two_people.jpg]]
+11-03 18:24:55.727  5034  5170 I JarvisTest: [Ricerca] foto di Obama → [obama.jpg, obama2.jpg, two_people.jpg]
+11-03 18:24:55.729  5034  5170 I JarvisTest: [Ricerca] foto di Biden → [biden.jpg, two_people.jpg]
+11-03 18:24:55.730  5034  5170 I JarvisTest: [Ricerca] foto di Obama e Biden insieme → [two_people.jpg]
+11-03 18:24:55.732  5034  5170 I JarvisTest: [Ricerca] Interpretazione senza AI di "tutte le foto di Obama": persone=[Obama]
+11-03 18:24:55.732  5034  5170 I TestRunner: finished: b_indexNameAndSearch(com.jarvis.files.PhotoTest)
+11-03 18:24:55.751  5034  5170 I TestRunner: started: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)
+11-03 18:24:55.960  5034  5170 I TestRunner: finished: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)
+11-03 18:24:55.961  5034  5170 I TestRunner: started: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+11-03 18:24:56.068  5034  5170 I TestRunner: finished: jsonNullIsNotARealFolderOrPhotoSearch(com.jarvis.files.RegressionTest)
+11-03 18:24:56.069  5034  5170 I TestRunner: started: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+11-03 18:24:56.174  5034  5170 I TestRunner: finished: pathsCannotEscapeRootOrMatchRootByPrefix(com.jarvis.files.RegressionTest)
+11-03 18:24:56.176  5034  5170 I TestRunner: started: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+11-03 18:24:56.287  5034  5170 I TestRunner: finished: cannotMoveStorageRootOrSystemFolders(com.jarvis.files.RegressionTest)
+11-03 18:24:56.288  5034  5170 I TestRunner: started: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+11-03 18:24:56.393  5034  5170 I TestRunner: finished: executeValidatesPlansFromEverySource(com.jarvis.files.RegressionTest)
+11-03 18:24:56.395  5034  5170 I TestRunner: started: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+11-03 18:24:56.496  5034  5170 I TestRunner: finished: photoMentionsInOrganizationDoNotTriggerPhotoSearch(com.jarvis.files.RegressionTest)
+11-03 18:24:56.497  5034  5170 I TestRunner: started: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+11-03 18:24:56.603  5034  5170 I TestRunner: finished: folderSearchDoesNotIncludeSimilarFolderNames(com.jarvis.files.RegressionTest)
+11-03 18:24:56.604  5034  5170 I TestRunner: started: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+11-03 18:24:56.713  5034  5170 I TestRunner: finished: moveNeverOverwritesExistingFile(com.jarvis.files.RegressionTest)
+11-03 18:24:56.714  5034  5170 I TestRunner: started: emptyIndexIsCachedUntilItIsInvalidated(com.jarvis.files.RegressionTest)
+11-03 18:24:56.845  5034  5170 I TestRunner: finished: emptyIndexIsCachedUntilItIsInvalidated(com.jarvis.files.RegressionTest)
+11-03 18:24:56.848  5034  5170 I TestRunner: started: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+11-03 18:24:56.959  5034  5170 I TestRunner: finished: emptyGroupFilterCannotTargetEntirePhone(com.jarvis.files.RegressionTest)
+11-03 18:24:56.960  5034  5170 I TestRunner: started: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+11-03 18:24:57.094  5034  5170 I TestRunner: finished: partialUndoCanBeRetriedWithoutLosingJournal(com.jarvis.files.RegressionTest)
+11-03 18:24:57.095  5034  5170 I TestRunner: started: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+11-03 18:24:58.674  5034  5170 I TestRunner: finished: largeFilesWithMatchingEndsAreNotDuplicates(com.jarvis.files.RegressionTest)
+11-03 18:24:58.676  5034  5170 I TestRunner: started: brandLetterCounterRemainsTransparent(com.jarvis.files.RegressionTest)
+11-03 18:24:58.775  5034  5170 I TestRunner: finished: brandLetterCounterRemainsTransparent(com.jarvis.files.RegressionTest)
+11-03 18:24:58.776  5034  5170 I TestRunner: started: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+11-03 18:24:58.912  5034  5170 I TestRunner: finished: repeatedTrashRestoreCreatesUniqueNamesAndRefreshesIndex(com.jarvis.files.RegressionTest)
+11-03 18:24:58.913  5034  5170 I TestRunner: started: longVaultNamesKeepExtensionAndHandleCollisions(com.jarvis.files.RegressionTest)
+11-03 18:24:59.070  5034  5170 I TestRunner: finished: longVaultNamesKeepExtensionAndHandleCollisions(com.jarvis.files.RegressionTest)
+11-03 18:24:59.071  5034  5170 I TestRunner: started: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+11-03 18:24:59.253  5034  5170 I TestRunner: finished: activeDownloadIsNotSuggestedAsJunk(com.jarvis.files.RegressionTest)
+11-03 18:24:59.254  5034  5170 I TestRunner: started: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+11-03 18:24:59.355  5034  5170 I TestRunner: finished: clarificationCannotOfferPrematureExecution(com.jarvis.files.RegressionTest)
+11-03 18:24:59.356  5034  5170 I TestRunner: started: screenshotSearchAgeAndUnsupportedExclusionsKeepScope(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.513  5034  5170 I TestRunner: finished: screenshotSearchAgeAndUnsupportedExclusionsKeepScope(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.514  5034  5170 I TestRunner: started: unsupportedOrUnboundYesNeverInventsABroaderDeletion(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.644  5034  5170 I TestRunner: finished: unsupportedOrUnboundYesNeverInventsABroaderDeletion(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.645  5034  5170 I TestRunner: started: questionSourceIsBoundByAppNotByModelSuppliedRequest(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.790  5034  5170 I TestRunner: finished: questionSourceIsBoundByAppNotByModelSuppliedRequest(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.792  5034  5170 I TestRunner: started: noScreenshotResultsCannotProduceAnInventedPlan(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.932  5034  5170 I TestRunner: finished: noScreenshotResultsCannotProduceAnInventedPlan(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:24:59.933  5034  5170 I TestRunner: started: explicitAllFilesInFolderIncludesAllTypesButNeverNeighbors(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.085  5034  5170 I TestRunner: finished: explicitAllFilesInFolderIncludesAllTypesButNeverNeighbors(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.086  5034  5170 I TestRunner: started: negativeChoiceNeedsNeitherModelNorFileIndex(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.227  5034  5170 I TestRunner: finished: negativeChoiceNeedsNeitherModelNorFileIndex(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.228  5034  5170 I TestRunner: started: affirmativeChoiceOnlyReplaysTheOriginalRequest(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.366  5034  5170 I TestRunner: finished: affirmativeChoiceOnlyReplaysTheOriginalRequest(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.368  5034  5170 I TestRunner: started: explicitScreenshotFolderKeepsOtherTypesAndNeighbors(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.503  5034  5170 I TestRunner: finished: explicitScreenshotFolderKeepsOtherTypesAndNeighbors(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.505  5034  5170 I TestRunner: started: screenshotsAreIdentifiedByFolderOrFileNameNeverEveryImage(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.654  5034  5170 I TestRunner: finished: screenshotsAreIdentifiedByFolderOrFileNameNeverEveryImage(com.jarvis.files.ScreenshotCommandTest)
+11-03 18:25:00.655  5034  5170 I TestRunner: started: allScreens(com.jarvis.files.UiTest)
+11-03 18:25:06.361  5034  5170 I JarvisTest: [UI] Schermata 01_home OK
+11-03 18:25:09.508  5034  5170 I JarvisTest: [UI] Schermata 02_chat_vuota OK
+11-03 18:25:12.417  5034  5170 I JarvisTest: [UI] Schermata 03_chat_senza_ai OK
+11-03 18:25:15.317  5034  5170 I JarvisTest: [UI] Schermata 04_chat_anteprima OK
+11-03 18:25:18.268  5034  5170 I JarvisTest: [UI] Schermata 05_foto OK
+11-03 18:25:23.670  5034  5170 I JarvisTest: [UI] Schermata 06_pulizia_cache OK
+11-03 18:25:26.732  5034  5170 I JarvisTest: [UI] Schermata 07_pulizia_whatsapp OK
+11-03 18:25:29.717  5034  5170 I JarvisTest: [UI] Schermata 08_pulizia_inutili OK
+11-03 18:25:32.617  5034  5170 I JarvisTest: [UI] Schermata 09_altro OK
+11-03 18:25:41.068  5034  5170 I JarvisTest: [UI] Schermata 10_sicurezza OK
+11-03 18:25:43.966  5034  5170 I JarvisTest: [UI] Schermata 11_automazioni OK
+11-03 18:25:46.867  5034  5170 I JarvisTest: [UI] Schermata 12_batteria OK
+11-03 18:25:49.832  5034  5170 I JarvisTest: [UI] Schermata 13_impostazioni OK
+11-03 18:25:55.251  5034  5170 I JarvisTest: [UI] Schermata 14_persone OK
+11-03 18:25:58.167  5034  5170 I JarvisTest: [UI] Schermata 15_cestino OK
+11-03 18:26:01.055  5034  5170 I JarvisTest: [UI] Schermata 16_cassaforte OK
+11-03 18:26:03.954  5034  5170 I JarvisTest: [UI] Schermata 17_trova OK
+11-03 18:26:06.854  5034  5170 I JarvisTest: [UI] Schermata 18_file OK
+11-03 18:26:09.750  5034  5170 I JarvisTest: [UI] Schermata 18b_categoria OK
+11-03 18:26:13.218  5034  5170 I JarvisTest: [UI] Schermata 19_voce OK
+11-03 18:26:18.085  5034  5170 I JarvisTest: [UI] Schermata 20_home_scuro OK
+11-03 18:26:21.057  5034  5170 I JarvisTest: [UI] Schermata 21_chat_scura OK
+11-03 18:26:23.983  5034  5170 I JarvisTest: [UI] Schermata 22_pulizia_scura OK
+11-03 18:26:24.287  5034  5170 I TestRunner: finished: allScreens(com.jarvis.files.UiTest)
+11-03 18:26:24.293  5034  5170 I TestRunner: started: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+11-03 18:26:24.870  5034  5170 I TestRunner: finished: newChatRemovesConversationAndDraft(com.jarvis.files.UsabilityTest)
+11-03 18:26:24.871  5034  5170 I TestRunner: started: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+11-03 18:26:25.294  5034  5170 I TestRunner: finished: draftSurvivesTabNavigation(com.jarvis.files.UsabilityTest)
+11-03 18:26:25.296  5034  5170 I TestRunner: started: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+11-03 18:26:25.660  5034  5170 I TestRunner: finished: vaultRequiresUnlockEvenWhenAppLockIsOff(com.jarvis.files.UsabilityTest)
+11-03 18:26:25.661  5034  5170 I TestRunner: started: categoriesRefreshWhenExternalFilesChangeWithinCacheWindow(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.112  5034  5170 I TestRunner: finished: categoriesRefreshWhenExternalFilesChangeWithinCacheWindow(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.120  5034  5170 I TestRunner: started: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.624  5034  5170 I TestRunner: finished: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.628  5034  5170 I TestRunner: started: homeAssistantButtonOpensChat(com.jarvis.files.UsabilityTest)
+11-03 18:26:27.145  5034  5170 I TestRunner: finished: homeAssistantButtonOpensChat(com.jarvis.files.UsabilityTest)
+11-03 18:26:27.146  5034  5170 I TestRunner: started: originalHomeRemainsVisibleWithLargeSystemFonts(com.jarvis.files.UsabilityTest)
+11-03 18:26:28.344  5034  5170 I TestRunner: finished: originalHomeRemainsVisibleWithLargeSystemFonts(com.jarvis.files.UsabilityTest)
+11-03 18:26:28.351  5034  5170 I TestRunner: run finished: 144 tests, 0 failed, 0 ignored
+11-03 18:26:28.395  4990  4990 I AndroidRuntime: VM exiting with result code 0.

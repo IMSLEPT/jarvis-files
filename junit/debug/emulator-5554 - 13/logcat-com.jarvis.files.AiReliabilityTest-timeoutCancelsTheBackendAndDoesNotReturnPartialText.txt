@@ -1,0 +1,47 @@
+11-03 18:22:26.825  5034  5170 I TestRunner: started: timeoutCancelsTheBackendAndDoesNotReturnPartialText(com.jarvis.files.AiReliabilityTest)
+11-03 18:22:26.828   516   536 D WifiNl80211Manager: Scan result ready event
+11-03 18:22:26.828   516   536 D WifiNative: Scan result ready event
+11-03 18:22:26.847  1701  2331 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 5 started, 0 paused, 1 scheduled, 6 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ * {W:b:u:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ * {W:b:u:l, bg}
+11-03 18:22:26.849  1701  2331 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip to collections_table_main_21980965fbd997111d89f86c16e9e090.zip.fetched (constraints: W:b:u:l)
+11-03 18:22:26.849  1701  2331 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip to table_5f787033cc44fc7a8804e0030b2bf848.zip.fetched (constraints: W:b:u:l)
+11-03 18:22:26.850  1701  2331 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip to tc_model_19e9928974f9d8742ad3b10f52373dea.zip.fetched (constraints: W:b:u:l)
+11-03 18:22:26.850  1701  2331 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip to tc_model_e202592534082c01f9642f709a627dd9.zip.fetched (constraints: W:b:u:l)
+11-03 18:22:26.850  1701  2331 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip to tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.fetched (constraints: W:b:u:l)
+11-03 18:22:26.869  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:26.871  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:26.876  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:26.879  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:26.899  1701  2936 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip'
+11-03 18:22:26.899  1701  2936 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 613 bytes from https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip.
+11-03 18:22:26.901  1701  2331 I SP.AiAi : Download stopped: kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090, succeeded, size: 613
+11-03 18:22:26.902  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:26.904  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:26.912  3026  3225 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:22:26.912  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.913  3026  3225 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+11-03 18:22:26.935  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.936  3026  3225 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:22:26.952  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.954  1701  2331 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:22:26.958  1701  2331 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 5 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ {W:b:u:l, bg}
+11-03 18:22:26.965  1701  2936 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip'
+11-03 18:22:26.965  1701  2936 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 309 bytes from https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip.
+11-03 18:22:26.968  1701  2331 I SP.AiAi : Download stopped: actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848, succeeded, size: 309
+11-03 18:22:26.969  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:26.998  1701  2331 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:22:27.005  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.009  1701  2331 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 4 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ {W:b:u:l, bg}
+11-03 18:22:27.018  2308  5309 D DownloadManager: [1] Finished with status SUCCESS
+11-03 18:22:27.019  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.025  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:27.052  1701  2936 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip'
+11-03 18:22:27.113  1701  2936 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 350999 bytes from https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip.
+11-03 18:22:27.114  1701  2331 I SP.AiAi : Download stopped: text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea, succeeded, size: 350999
+11-03 18:22:27.127  1701  2331 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:22:27.131  1701  2331 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 3 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ {W:b:u:l, bg}
+11-03 18:22:27.146  1701  2936 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip'
+11-03 18:22:27.168  3026  3225 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+11-03 18:22:27.170  1682  2336 I MediaProvider: Deleted 0 0 0 1 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.177  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:22:27.183  1682  2336 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:27.185  5034  5170 I TestRunner: finished: timeoutCancelsTheBackendAndDoesNotReturnPartialText(com.jarvis.files.AiReliabilityTest)

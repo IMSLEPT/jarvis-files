@@ -1,0 +1,486 @@
+11-03 18:23:25.908  5034  5170 I TestRunner: started: navigatingWhileReplyStartsCannotChangeTheSubmittedFolder(com.jarvis.files.FolderChatFlowTest)
+11-03 18:23:25.909  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:23:25.909  1115  1115 D MainContentCaptureSession: Flushing 16 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:23:25.911  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:23:25.917   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd805d0
+11-03 18:23:25.917   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f130
+11-03 18:23:25.918   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fbb0
+11-03 18:23:25.927  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:23:25.934  1803  2466 I A       : group apa_head_suggest not present without account in *
+11-03 18:23:25.943  1803  2466 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.018S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M37.65S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT51.847S (THIRTY_SECONDS_TO_ONE_MINUTE))
+11-03 18:23:25.944  1803  2466 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:23:25.946   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd807b0
+11-03 18:23:25.967  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:23:25.967  1115  1115 D MainContentCaptureSession: Flushing 15 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:23:25.967  1803  2828 I A       : Using proto config with mendel
+11-03 18:23:25.974  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:23:25.995   516   544 W InputManager-JNI: Input channel object '3eb9624 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:23:25.995  1803  2828 I A       : Using proto config with mendel
+11-03 18:23:26.007   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd800f0
+11-03 18:23:26.007   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd800f0
+11-03 18:23:26.010  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:26.011   835   924 D EGL_emulation: app_time_stats: avg=170.94ms min=5.89ms max=630.37ms count=8
+11-03 18:23:26.026   516   536 W InputManager-JNI: Input channel object 'f1741a8 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:23:26.028   312  4548 I netd    : tetherGetStats() -> {[]} <0.41ms>
+11-03 18:23:26.030  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:23:26.034  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:23:26.034  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:23:26.034  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:26.036  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:26.037  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:23:26.038  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:26.038  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:23:26.044   312  4548 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+11-03 18:23:26.046   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd809f0
+11-03 18:23:26.046   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81770
+11-03 18:23:26.048   312  4548 I netd    : bandwidthRemoveInterfaceQuota(eth0) <2.01ms>
+11-03 18:23:26.048   312  4548 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.38ms>
+11-03 18:23:26.065   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81e90
+11-03 18:23:26.090  1803  1859 I earchbox:search: Background young concurrent copying GC freed 288260(11MB) AllocSpace objects, 48(7592KB) LOS objects, 43% free, 24MB/43MB, paused 61us,30us total 121.314ms
+11-03 18:23:26.098  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:26.126  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:26.170  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@a6a715a]
+11-03 18:23:26.173  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:23:26.186   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:23:26.188   835   913 D SplashScreenView: Build android.window.SplashScreenView{7ba1c5a V.E...... ......ID 0,0-0,0}
+11-03 18:23:26.188   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:23:26.188   835   913 D SplashScreenView: Branding: view: android.view.View{67dae8b G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:23:26.193  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:23:26.204  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: PRE_ON_CREATE
+11-03 18:23:26.205  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:23:26.216  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: CREATED
+11-03 18:23:26.216  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@23b56fe
+11-03 18:23:26.218  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: STARTED
+11-03 18:23:26.218  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@23b56fe
+11-03 18:23:26.221  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: RESUMED
+11-03 18:23:26.221  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@23b56fe
+11-03 18:23:26.235  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:23:26.262  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:23:26.263   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80bd0
+11-03 18:23:26.263   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80b10
+11-03 18:23:26.272  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:23:26.272  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:23:26.462   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:23:26.470  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:23:26.471  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:23:26.471  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:23:26.471  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:23:26.472  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:23:26.472  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:23:26.472  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:26.472  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:26.474   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +286ms
+11-03 18:23:26.477  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:23:26.479  1115  7033 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293b058b0 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:23:26.488  1803  3103 I PBSessionCacheImpl: Deleted sessionId[7931471589631311] from persistence.
+11-03 18:23:26.498   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f370
+11-03 18:23:26.498   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81a10
+11-03 18:23:26.501   516  1795 W InputManager-JNI: Input channel object 'bd6d56b Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:23:26.502  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.502  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.502  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.502  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.503  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.503  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.503  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:23:26.505  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:26.518  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:26.518   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e710
+11-03 18:23:26.518   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd807b0
+11-03 18:23:26.518   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f5b0
+11-03 18:23:26.518   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd807b0
+11-03 18:23:26.547  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:26.556  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:26.556  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:26.559  8690  9556 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 138 [CONTEXT service_id=218 ]
+11-03 18:23:26.586  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 38 uptime_millis: 38 exec_start_elapsed_seconds: 138 [CONTEXT service_id=218 ]
+11-03 18:23:26.672  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:23:26.672  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:23:26.949  5034  5034 D InsetsController: show(ime(), fromIme=false)
+11-03 18:23:26.949  5034  5034 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{2488ac8 VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+11-03 18:23:26.951  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:23:26.953  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:23:26.956  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+11-03 18:23:26.956  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:26.957  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:26.957  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+11-03 18:23:26.957  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:26.957  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:26.957  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:23:26.960  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+11-03 18:23:26.961  5034  5034 I AssistStructure: Flattened final assist data: 512 bytes, containing 1 windows, 3 views
+11-03 18:23:26.961  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:26.961  1621  1621 W ModuleManager: ModuleManager.loadModule():450 Module erj is not available
+11-03 18:23:26.963  1621  1784 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:23:26.975  5034  5034 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{2488ac8 VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+11-03 18:23:26.979  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-03 18:23:26.979  1621  1621 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+11-03 18:23:26.979  1621  1621 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+11-03 18:23:26.982  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+11-03 18:23:26.982  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+11-03 18:23:26.982  1621  6010 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():205 maybeScheduleAutoPackDownloadForFallback()
+11-03 18:23:26.982  1621  6010 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():195 maybeScheduleAutoPackDownload() for language tag en-US
+11-03 18:23:26.982  1621  1621 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1003 inline flag updated to:false
+11-03 18:23:26.986  1621  1621 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:23:26.989  8690  8690 W AutofillChimeraService: Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+11-03 18:23:27.002  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:23:27.002  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:23:27.003  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_OPTIONAL
+11-03 18:23:27.003  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:23:27.005  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = BODY, shownType = SHOW_MANDATORY
+11-03 18:23:27.005  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:23:27.005  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = FLOATING_CANDIDATES, shownType = HIDE
+11-03 18:23:27.005  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = false
+11-03 18:23:27.006  1621  1621 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:23:27.007  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:23:27.008  1621  1621 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:23:27.008  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+11-03 18:23:27.009  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:23:27.009  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:23:27.009  1621  1621 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=true_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+11-03 18:23:27.011  1621  1621 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():383 No private IME option set to start voice input.
+11-03 18:23:27.022  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.022  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.029  8765  8765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.057  1621  1621 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:23:27.058  1621  2338 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():457 setKeyboardLayout()
+11-03 18:23:27.062  5034  5034 D InsetsController: show(ime(), fromIme=true)
+11-03 18:23:27.063  5034  5034 D InsetsController: show(ime(), fromIme=true)
+11-03 18:23:27.072  8765  8765 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.072  8765  8765 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.076  8765  8765 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:23:27.100  1599  1599 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1842027744
+11-03 18:23:27.102  8690  9672 I .gms.persistent: oneway function results for code 1 on binder at 0x702293b08df0 will be dropped but finished with status UNKNOWN_TRANSACTION and reply parcel size 80
+11-03 18:23:27.127  5034  5034 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+11-03 18:23:27.127  5034  5034 D Autofill Status:
+11-03 18:23:27.127  5034  5034 D Autofill Status: Did you set up autofill?
+11-03 18:23:27.127  5034  5034 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+11-03 18:23:27.127  5034  5034 D Autofill Status: 2. Pick a service
+11-03 18:23:27.127  5034  5034 D Autofill Status:
+11-03 18:23:27.127  5034  5034 D Autofill Status: Did you add an account?
+11-03 18:23:27.127  5034  5034 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+11-03 18:23:27.127  5034  5034 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+11-03 18:23:27.127  5034  5034 D Autofill Status: 3. Add your account
+11-03 18:23:27.221  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:23:27.227  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:23:27.243   835   924 D EGL_emulation: app_time_stats: avg=307.77ms min=16.81ms max=720.15ms count=4
+11-03 18:23:27.263  1701  2133 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:23:27.268  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+11-03 18:23:27.269  1621  1621 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltips():159 Tooltip with id spell_check_add_to_dictionary not found in tooltipManager.
+11-03 18:23:27.270  1621  1621 I InputBundle: InputBundle.consumeEvent():923 Skip consuming an event as keyboard status is 0
+11-03 18:23:27.271  1621  1621 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:23:27.271  1621  1621 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+11-03 18:23:27.271  1621  1621 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+11-03 18:23:27.272  1621  1784 W ModuleManager: ModuleManager.loadModule():450 Module jjj is not available
+11-03 18:23:27.277   835  6042 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:23:27.278   835  6042 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-03 18:23:27.280  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+11-03 18:23:27.280  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:27.281  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:27.281  1621  1621 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:23:27.285   835  6042 D EGL_emulation: eglCreateContext: 0x702303b033d0: maj 3 min 0 rcv 3
+11-03 18:23:27.292   835  6042 D EGL_emulation: eglMakeCurrent: 0x702303b033d0: ver 3 0 (tinfo 0x70252a000100) (first time)
+11-03 18:23:27.409   312  4548 I netd    : tetherGetStats() -> {[]} <0.62ms>
+11-03 18:23:27.415   312  4548 I netd    : bandwidthSetGlobalAlert(2097152) <0.11ms>
+11-03 18:23:27.496   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80270
+11-03 18:23:27.663  8690  8837 E bwfc    : Phenotype API error. Event # edax@e6d69136, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:27.663  8690  8837 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.dtdi#com.google.android.gms(change count changed - expected 3  but was 1)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:27.663  8690  8837 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:27.667  8690  8837 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.dtdi#com.google.android.gms(change count changed - expected 3  but was 1), resolution=null}]
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:27.667  8690  8837 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:27.668  8765  8838 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.dtdi#com.google.android.gms, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:27.908  5034  5688 D EGL_emulation: app_time_stats: avg=69.83ms min=7.05ms max=367.86ms count=20
+11-03 18:23:27.995  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:28.004  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:28.008  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:28.018  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:28.029   835   913 D SplashScreenView: Build android.window.SplashScreenView{e4a5e4b V.E...... ......ID 0,0-0,0}
+11-03 18:23:28.029   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:23:28.029   835   913 D SplashScreenView: Branding: view: android.view.View{7673028 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:23:28.032   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:23:28.036  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: PAUSED
+11-03 18:23:28.036  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@23b56fe
+11-03 18:23:28.060  8690  8844 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:23:28.068  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:23:28.113   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd813b0
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d990
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d990
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d990
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd813b0
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd813b0
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d990
+11-03 18:23:28.114   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd813b0
+11-03 18:23:28.131  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 108 uptime_millis: 108 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:23:28.138   516   541 W ziparchive: Unable to open '/data/app/~~HawZCzduhnt4sBodJcyKJw==/com.jarvis.files.test-mv8XfHEr_0abW4_Qhb-XbA==/base.dm': No such file or directory
+11-03 18:23:28.142  8690  8757 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-03 18:23:28.143   516   541 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +113ms
+11-03 18:23:28.164  8690  8837 E bwfc    : Phenotype API error. Event # edax@108f13a, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.164  8690  8837 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.magictether(change count changed - expected 1  but was 0)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.164  8690  8837 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.171  8690  8837 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.magictether(change count changed - expected 1  but was 0), resolution=null}]
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.171  8690  8837 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.172  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.magictether, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.182  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:23:28.182  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:23:28.182  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:23:28.185  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:23:28.193   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:23:28.194  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=97, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@904552a
+11-03 18:23:28.201   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd813b0
+11-03 18:23:28.231  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: STOPPED
+11-03 18:23:28.231  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@23b56fe
+11-03 18:23:28.235  8690  8742 E bwfc    : Phenotype API error. Event # edax@6ea21564, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.235  8690  8742 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.maps#com.google.android.gms(change count changed - expected 3  but was 1)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.235  8690  8742 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.236  8690  8742 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.maps#com.google.android.gms(change count changed - expected 3  but was 1), resolution=null}]
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.236  8690  8742 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.238  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:23:28.238  1115  1115 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:23:28.240  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.maps#com.google.android.gms, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.241  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:23:28.247  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:23:28.247  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:23:28.253  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:23:28.253  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:23:28.253  8690  8701 I .gms.persistent: Compiler allocated 4811KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+11-03 18:23:28.258  8690  8742 E bwfc    : Phenotype API error. Event # edax@be78197, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.258  8690  8742 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.personalsafety(change count changed - expected 1  but was 0)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.258  8690  8742 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.258  1803  2466 I A       : group apa_head_suggest not present without account in *
+11-03 18:23:28.258  1803  2466 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.002S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M39.98S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT54.178S (THIRTY_SECONDS_TO_ONE_MINUTE))
+11-03 18:23:28.263  1803  2456 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:23:28.268   516   606 W InputManager-JNI: Input channel object 'b1beda9 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:23:28.270  8690  8742 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.270  8690  8742 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.personalsafety(change count changed - expected 1  but was 0), resolution=null}]
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.270  8690  8742 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.272   835   924 D EGL_emulation: app_time_stats: avg=252.47ms min=4.29ms max=916.07ms count=4
+11-03 18:23:28.272  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.personalsafety, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.276  8690  8702 I .gms.persistent: Background concurrent copying GC freed 352919(17MB) AllocSpace objects, 2(148KB) LOS objects, 50% free, 15MB/31MB, paused 120us,400us total 257.546ms
+11-03 18:23:28.278  1803  2828 I A       : Using proto config with mendel
+11-03 18:23:28.278  1803  2828 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:23:28.278  5034  5034 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+11-03 18:23:28.288  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@23b56fe in: DESTROYED
+11-03 18:23:28.288  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:23:28.289   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f130
+11-03 18:23:28.289   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f3d0
+11-03 18:23:28.291  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@a6a715a]
+11-03 18:23:28.292  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:23:28.292  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:23:28.292  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:23:28.292  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:23:28.292  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:23:28.292  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:23:28.297  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:23:28.302  8690  8742 E bwfc    : Phenotype API error. Event # edax@a17657c4, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.302  8690  8742 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.phonesky_recovery(change count changed - expected 1  but was 0)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.302  8690  8742 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.302  8690  8742 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.phonesky_recovery(change count changed - expected 1  but was 0), resolution=null}]
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.302  8690  8742 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.303  8690  8837 E bwfc    : Phenotype API error. Event # edax@52dfecd5, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.303  8690  8837 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.vision(change count changed - expected 1  but was 0)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.303  8690  8837 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.304  8690  8837 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.vision(change count changed - expected 1  but was 0), resolution=null}]
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.304  8690  8837 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.305  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.phonesky_recovery, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.305  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.vision, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.307   516   606 W InputManager-JNI: Input channel object '515d663 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:23:28.318   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd807b0
+11-03 18:23:28.318   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e7d0
+11-03 18:23:28.318   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e7d0
+11-03 18:23:28.321  8690  8742 E bwfc    : Phenotype API error. Event # edax@78a86ed7, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.321  8690  8742 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms(change count changed - expected 3  but was 1)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.321  8690  8742 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.323  8690  8742 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms(change count changed - expected 3  but was 1), resolution=null}]
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.323  8690  8742 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.328  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.329   516  2645 W InputManager-JNI: Input channel object 'bb930c com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:23:28.331  8690  8837 E bwfc    : Phenotype API error. Event # edax@f22c0b7e, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:28.331  8690  8837 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.libraries.consentverifier#com.google.android.gms(change count changed - expected 6  but was 0)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.331  8690  8837 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:28.331  8690  8837 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.libraries.consentverifier#com.google.android.gms(change count changed - expected 6  but was 0), resolution=null}]
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:28.331  8690  8837 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:28.338  8765  8941 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.libraries.consentverifier#com.google.android.gms, triggering flag update. Experiments may be delayed til next app start.
+11-03 18:23:28.340  5034  5170 I TestRunner: finished: navigatingWhileReplyStartsCannotChangeTheSubmittedFolder(com.jarvis.files.FolderChatFlowTest)

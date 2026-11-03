@@ -1,0 +1,118 @@
+11-03 18:23:08.347  5034  5170 I TestRunner: started: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.349  2308  8670 D DownloadManager: [9] Starting
+11-03 18:23:08.351  1378  4012 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.rcs
+11-03 18:23:08.351  1378  4012 I Process : Sending signal. PID: 1378 SIG: 9
+11-03 18:23:08.352   516   556 I libprocessgroup: Successfully killed process cgroup uid 10119 pid 5085 in 0ms
+11-03 18:23:08.353   313   313 I Zygote  : Process 5085 exited due to signal 9 (Killed)
+11-03 18:23:08.369  2308  8670 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.369  2308  8670 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.371   313   313 I Zygote  : Process 1166 exited due to signal 9 (Killed)
+11-03 18:23:08.390  2308  8670 D TrafficStats: tagSocket(77) with statsTag=0xffffff01, statsUid=10104
+11-03 18:23:08.394   516   556 I libprocessgroup: Successfully killed process cgroup uid 10119 pid 1166 in 0ms
+11-03 18:23:08.405   313   313 I Zygote  : Process 1378 exited due to signal 9 (Killed)
+11-03 18:23:08.418  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.439   516   541 I ServiceWatcher: [HardwareActivityRecognitionProxy] disconnected from 10119/com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService@1
+11-03 18:23:08.440   516   541 I ServiceWatcher: [network] disconnected from 10119/com.google.android.gms/com.google.android.location.network.NetworkLocationService@2
+11-03 18:23:08.440   516   541 I ServiceWatcher: [GeocoderProxy] disconnected from 10119/com.google.android.gms/.location.geocode.GeocodeService@2
+11-03 18:23:08.440   516   541 I ServiceWatcher: [fused] disconnected from 10119/com.google.android.gms/com.google.android.location.fused.FusedLocationService@1
+11-03 18:23:08.440   516   541 I ServiceWatcher: [GeofenceProxy] disconnected from 10119/com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService@1
+11-03 18:23:08.440   516   541 I ServiceWatcher: [RealLocationTimeZoneProviderProxy] disconnected from 10119/com.google.android.gms/.geotimezone.GeoTimeZoneService@1
+11-03 18:23:08.442   313   313 D Zygote  : Forked child process 8690
+11-03 18:23:08.444  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.445  1044  1477 D BtGatt.GattService: Binder is dead - unregistering scanner (1)!
+11-03 18:23:08.446  1044  1404 D BtGatt.GattService: Binder is dead - unregistering scanner (2)!
+11-03 18:23:08.446  1044  1477 D BtGatt.GattService: stopScan() - queue size =2
+11-03 18:23:08.448   516   775 D ConnectivityService: releasing NetworkRequest [ REQUEST id=98, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ] (release request)
+11-03 18:23:08.448  1044  1404 D BtGatt.GattService: stopScan() - queue size =2
+11-03 18:23:08.452  1044  1477 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-03 18:23:08.452  1044  1477 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+11-03 18:23:08.453  1044  1354 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10119]]
+11-03 18:23:08.453  1044  1354 D BtGatt.ScanManager: stop gattClientScanNative
+11-03 18:23:08.453  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+11-03 18:23:08.453  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+11-03 18:23:08.453  1044  1354 D BtGatt.ScanManager: app died, unregister scanner - 1
+11-03 18:23:08.454  8690  8690 I .gms.persistent: Using CollectorTypeCC GC.
+11-03 18:23:08.454  8690  8690 W .gms.persistent: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:08.454  8690  8690 W .gms.persistent: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:08.457  1044  1354 D BtGatt.GattService: unregisterScanner() - scannerId=1
+11-03 18:23:08.457  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:1
+11-03 18:23:08.457   399   423 I adbd    : jdwp connection from 8690
+11-03 18:23:08.457  2308  8661 D DownloadManager: [8] Finished with status SUCCESS
+11-03 18:23:08.457   516   556 I libprocessgroup: Successfully killed process cgroup uid 10119 pid 1378 in 0ms
+11-03 18:23:08.461  1044  1404 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+11-03 18:23:08.461  1044  1404 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+11-03 18:23:08.461  1044  1354 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10119]]
+11-03 18:23:08.461  1044  1354 D BtGatt.ScanManager: stop gattClientScanNative
+11-03 18:23:08.461  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+11-03 18:23:08.461  1044  1354 D BtGatt.ScanManager: app died, unregister scanner - 2
+11-03 18:23:08.461  1044  1360 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+11-03 18:23:08.462  1044  1354 D BtGatt.GattService: unregisterScanner() - scannerId=2
+11-03 18:23:08.462  1044  1354 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:2
+11-03 18:23:08.463   516   772 W WificondScannerImpl: stopBatchedScan() is not supported
+11-03 18:23:08.467  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.477  2308  8670 D DownloadManager: [9] Finished with status SUCCESS
+11-03 18:23:08.483  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.489  8690  8690 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10119; state: ENABLED
+11-03 18:23:08.493  8690  8690 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.494  8690  8690 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.495  8690  8690 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.496  8690  8690 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.497  8690  8690 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:23:08.500  8690  8690 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-03 18:23:08.500  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.503  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.505  8690  8690 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.gms' set to: 'default'
+11-03 18:23:08.505  8690  8690 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+11-03 18:23:08.505  8690  8690 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:08.506  8690  8690 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-03 18:23:08.506  8690  8690 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+11-03 18:23:08.508  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.511  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.515  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.523  8690  8690 I Safeboot: Checking safeboot...
+11-03 18:23:08.538  8690  8690 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:23:08.538  8690  8690 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:23:08.538  8690  8690 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:23:08.544  8690  8690 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-03 18:23:08.545  8690  8737 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+11-03 18:23:08.545  8690  8737 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+11-03 18:23:08.554  8690  8738 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phenotype, using defaults.
+11-03 18:23:08.555  1682  7503 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.560  8690  8690 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-03 18:23:08.565  8690  8744 I GmsApplication: Registering the BackgroundBroadcastReceiverSupport receiver.
+11-03 18:23:08.571  8690  8690 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10119; state: ENABLED
+11-03 18:23:08.571  8690  8690 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 120311, Startup latency (ms): 64, Is system user: true
+11-03 18:23:08.573  8690  8690 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+11-03 18:23:08.575  8690  8744 I GmsReceiverSupport: Registered Receiver for 15+1 IntentFilters
+11-03 18:23:08.576  8690  8753 I ProcessStableCheckInFix: Running fixer!
+11-03 18:23:08.577  8690  8744 I Watchcat: Started
+11-03 18:23:08.579  8690  8753 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.test_process_stable, using defaults.
+11-03 18:23:08.583  8690  8744 I GMS_MM_Logger: Start time: 154149
+11-03 18:23:08.583  8690  8744 I GMS_MM_Logger: Started.
+11-03 18:23:08.587  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.589  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.account.data.service.START pkg=com.google.android.gms }
+11-03 18:23:08.589  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.account.data.service.START pkg=com.google.android.gms }
+11-03 18:23:08.592  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.592  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.593  8690  8690 D BoundBrokerSvc: onBind: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.593  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.595  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+11-03 18:23:08.595  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+11-03 18:23:08.596  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+11-03 18:23:08.596  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+11-03 18:23:08.597  8690  8690 D BoundBrokerSvc: onBind: Intent { act=android.net.action.RECOMMEND_NETWORKS cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.597  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=android.net.action.RECOMMEND_NETWORKS cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+11-03 18:23:08.599  8690  8690 I ChimeraSrvcProxy: com.google.android.gms.chimera.PersistentBoundBrokerService returning NullBinder for action android.net.action.RECOMMEND_NETWORKS
+11-03 18:23:08.605  8690  8690 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.cast.service.BIND_CAST_DEVICE_CONTROLLER_SERVICE pkg=com.google.android.gms }
+11-03 18:23:08.605  8690  8690 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.cast.service.BIND_CAST_DEVICE_CONTROLLER_SERVICE pkg=com.google.android.gms }
+11-03 18:23:08.607  1682  7503 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.610   313   313 D Zygote  : Forked child process 8765
+11-03 18:23:08.612  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.613   516   775 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 1]
+11-03 18:23:08.615  8765  8765 I gle.android.gms: Using CollectorTypeCC GC.
+11-03 18:23:08.617  8765  8765 W gle.android.gms: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:08.617  8765  8765 W gle.android.gms: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:08.618  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.619   399   423 I adbd    : jdwp connection from 8765
+11-03 18:23:08.620  8690  8770 I CastDatabase: Opening the database
+11-03 18:23:08.621  5034  5170 I TestRunner: finished: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)

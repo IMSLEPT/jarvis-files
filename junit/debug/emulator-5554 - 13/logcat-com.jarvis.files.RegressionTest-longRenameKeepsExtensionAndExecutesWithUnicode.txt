@@ -1,0 +1,128 @@
+11-03 18:24:55.751  5034  5170 I TestRunner: started: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)
+11-03 18:24:55.762  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.772  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 17 uptime_millis: 17 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.779  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:55.788  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:55.789  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.801  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:55.812   312 12919 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:24:55.812  3378  3587 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+11-03 18:24:55.813  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:55.821  3378  3587 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-03 18:24:55.821  3378  3587 W libc    : Access denied finding property "service.adb.tls.port"
+11-03 18:24:55.826  8690  8742 W GmsUrlRequestImpl: Content-Type header is overwritten.
+11-03 18:24:55.827   312 12926 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:24:55.828   312 12927 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:24:55.828   312 12927 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706746c21850
+11-03 18:24:55.828   312 12927 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+11-03 18:24:55.818  3378  3378 W binder:3378_4: type=1400 audit(0.0:103): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:24:55.832   312 12928 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706736c1e450
+11-03 18:24:55.832   312 12928 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+11-03 18:24:55.833  8690  9218 D TrafficStats: tagSocket(87) with statsTag=0x401, statsUid=10119
+11-03 18:24:55.818  3378  3378 W binder:3378_4: type=1400 audit(0.0:104): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:24:55.847  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.847  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.848  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.852  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.853  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.868  8690  8742 W GLSUser : [AppCertManager] Exception while requesting key:
+11-03 18:24:55.868  8690  8742 W GLSUser : java.util.concurrent.ExecutionException: avvw: Parse Proto Exception.
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dlnv.s(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dlnv.get(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at oub.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):78)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at otz.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at otu.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at otx.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at lzq.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:24:55.868  8690  8742 W GLSUser : Caused by: avvw: Parse Proto Exception.
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at avxk.onSucceeded(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at jf.onSucceeded(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at ie.run(:com.google.android.gms.dynamite_cronetdynamite@231818047@23.18.18 (190800-0):4)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	... 6 more
+11-03 18:24:55.868  8690  8742 W GLSUser : Caused by: dzfz: Protocol message contained an invalid tag (zero).
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzdb.k(:com.google.android.gms@231818047@23.18.18 (190800-535401451):13)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzha.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):47)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzha.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):45)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzfd.A(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzex.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzcx.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzcx.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at dzcx.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at avwn.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	at avwn.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:24:55.868  8690  8742 W GLSUser : 	... 9 more
+11-03 18:24:55.877  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 92 uptime_millis: 92 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.883  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.883  8690 12893 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.896  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+11-03 18:24:55.897  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:55.899  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+11-03 18:24:55.900  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf
+11-03 18:24:55.901  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:55.901  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf to null
+11-03 18:24:55.905  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to content://media/external_primary/file/1000000232
+11-03 18:24:55.907  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf
+11-03 18:24:55.908  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:55.908  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.pdf to null
+11-03 18:24:55.924  8690 12886 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.929  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 227 [CONTEXT service_id=218 ]
+11-03 18:24:55.941  1682  1704 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:55.948  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=insert uri=content://media/external_primary/file values={instance_id=null, compilation=null, disc_number=null, duration=null, album_artist=null, resolution=null, orientation=null, artist=null, author=null, height=null, is_drm=0, date_modified=1793730295, writer=null, composer=null, _modifier=3, datetaken=null, mime_type=application/pdf, bitrate=null, cd_track_number=null, year=null, _data=/storage/emulated/0/JarvisRegression/Download/a.pdf, _size=8, album=null, genre=null, title=a, width=null, document_id=null, capture_framerate=null, num_tracks=null, original_document_id=null, media_type=6} exceptionAllowed)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:961)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.DatabaseUtils.executeInsert(DatabaseUtils.java:456)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:611)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$insert$1(SQLiteQueryBuilder.java:575)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.$r8$lambda$J8sHyRt4f9G-jpErUkeO-jG4Hmw(Unknown Source:0)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder$$ExternalSyntheticLambda2.apply(Unknown Source:6)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:935)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:574)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.lambda$insertAllowingUpsert$21(MediaProvider.java:4679)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.$r8$lambda$zUZ633S1gYcQeuZJqLm8-gCBez4(Unknown Source:0)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda51.apply(Unknown Source:13)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:935)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertAllowingUpsert(MediaProvider.java:4669)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertFile(MediaProvider.java:4651)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertInternal(MediaProvider.java:5114)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insert(MediaProvider.java:4813)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:375)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2485)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.applyBatch(MediaProvider.java:5166)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2476)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2230)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.applyPending(ModernMediaScanner.java:915)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:431)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:393)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:382)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner.scanFile(ModernMediaScanner.java:254)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1873)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanFile(MediaProvider.java:1869)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.callInternal(MediaProvider.java:6235)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.call(MediaProvider.java:6174)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:24:55.949  1682  1704 W ModernMediaScanner: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:24:55.950  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+11-03 18:24:55.952  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf
+11-03 18:24:55.953  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:55.954  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪🧪.pdf to null
+11-03 18:24:55.955  1682  1704 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisRegression/Download/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisRegression/Download/a.pdf
+11-03 18:24:55.956  1682  1704 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:55.957  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisRegression/Download/a.pdf to null
+11-03 18:24:55.958  1682 10625 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:55.960  5034  5170 I TestRunner: finished: longRenameKeepsExtensionAndExecutesWithUnicode(com.jarvis.files.RegressionTest)

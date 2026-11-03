@@ -1,0 +1,224 @@
+11-03 18:23:04.521  5034  5170 I TestRunner: started: vagueDeletionOffersWorkingChoices(com.jarvis.files.CommandTest)
+11-03 18:23:04.547  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:04.559  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:04.572  1166  1391 E bwfc    : Phenotype API error. Event # edax@2c4718e2, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:04.572  1166  1391 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.572  1166  1391 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.572  1166  6931 E bwfc    : Phenotype API error. Event # edax@78c1cc87, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:23:04.572  1166  6931 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.googlequicksearchbox(change count changed - expected 8  but was 7)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.572  1166  6931 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:04.573  1166  6931 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.googlequicksearchbox(change count changed - expected 8  but was 7), resolution=null}]
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.573  1166  6931 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.574  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:04.574  1803  2414 E A       : Failed to commit flags to Phenotype. Stale snapshot for com.google.android.googlequicksearchbox(change count changed - expected 8  but was 7) (29501)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:23:04.574  1166  1391 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5), resolution=null}]
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.574  1166  1391 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: Committing snapshot for com.google.android.location failed, retrying
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: java.util.concurrent.ExecutionException: aard: 29501: Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at cfsz.p(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at abfh.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at com.google.android.gms.common.config.PhenotypeUpdateOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: Caused by: aard: 29501: Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at abmc.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at aawv.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at aawv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at bwen.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at bwff.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeFlagCommitter: 	... 1 more
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: At PhenotypeCommitHelper commitConfiguration failed com.google.android.location, retrying=[INVALID: format=%b, type=dnyo, value=true] [CONTEXT service_id=256 ]
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: java.util.concurrent.ExecutionException: aard: 29501: Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at cfsz.p(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at abfh.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at com.google.android.gms.common.config.PhenotypeUpdateOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: Caused by: aard: 29501: Stale snapshot for com.google.android.location(change count changed - expected 6  but was 5)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at abmc.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at aawv.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at aawv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at bwen.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at bwff.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:04.575  1166  6704 W PhenotypeCommitHelper: 	... 1 more
+11-03 18:23:04.575  1803  2869 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-03 18:23:04.587  1803  2869 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:23:04.594  5228  5228 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+11-03 18:23:04.595  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:04.596  1803  1803 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+11-03 18:23:04.600  5228  5228 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+11-03 18:23:04.604  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:23:04.605  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:23:04.605  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:23:04.605  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:23:04.605  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:23:04.605  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:23:04.605  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:23:04.605  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:23:04.605  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:23:04.605  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:23:04.605  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:23:04.605  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:23:04.605  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:23:04.605  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:23:04.605  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:23:04.605  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:23:04.614  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:04.619  1803  2869 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:23:04.620  1803  1803 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+11-03 18:23:04.624  5228  5228 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+11-03 18:23:04.626  1803  1803 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+11-03 18:23:04.628  5228  5228 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.icing.mdd#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+11-03 18:23:04.628  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:04.632  1803  1803 I A       : Refusing EXCLUSIVE task 21, it is already pending. Try again in 359 seconds.
+11-03 18:23:04.633  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:04.638  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:04.647  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:04.661  1166  6709 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+11-03 18:23:04.667  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+11-03 18:23:04.672  1166  1391 W BpBinder: Large outgoing transaction of 329784 bytes, interface descriptor <uncached descriptor>, code 4
+11-03 18:23:04.676  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+11-03 18:23:04.677  1803  2415 W A       : Can't format flag bindle_flags__velour_jar to integer.
+11-03 18:23:04.685  1803  2413 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 314 seconds.
+11-03 18:23:04.688  1803  2413 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:23:04.689  1803  2413 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:04.691  1803  2414 I FedAssExpListener: Fed-ass not supported for signed out users.
+11-03 18:23:04.692  1803  2412 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-03 18:23:04.692  1803  2412 I FedAssExpListener: Successfully processed experiments changed.
+11-03 18:23:04.695  1378  3350 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+11-03 18:23:04.698  1378  3350 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+11-03 18:23:04.701  1682  5362 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:04.703  1378  5763 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:23:04.705  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:04.708  1682  2336 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:04.709  1378  5763 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:23:04.714  1682  6540 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:04.720  1682  6540 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:04.721  5034  5170 I TestRunner: finished: vagueDeletionOffersWorkingChoices(com.jarvis.files.CommandTest)

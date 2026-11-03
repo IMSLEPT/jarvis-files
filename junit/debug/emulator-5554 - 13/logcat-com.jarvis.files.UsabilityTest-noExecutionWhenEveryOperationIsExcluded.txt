@@ -1,0 +1,180 @@
+11-03 18:26:26.120  5034  5170 I TestRunner: started: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)
+11-03 18:26:26.120  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.122  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.128  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.129  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.129  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:26.132  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.133  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.133  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.135  1017 14715 D NetworkMonitor/100: PROBE_DNS www.google.com 34ms OK 142.251.157.119,142.251.153.119,142.251.155.119,142.251.150.119,142.251.151.119,142.251.152.119,142.251.154.119,142.251.156.119,2001:4860:482a:7700::,2001:4860:4826:7700::,2001:4860:4828:7700::,2001:4860:4827:7700::,2001:4860:482d:7700::,2001:4860:4829:7700::,2001:4860:482b:7700::,2001:4860:482c:7700::
+11-03 18:26:26.135  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.139  1017  1017 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+11-03 18:26:26.140  1017 14716 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 37ms OK 192.178.155.94,2607:f8b0:4004:c0b::5e
+11-03 18:26:26.141   312 14732 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+11-03 18:26:26.142   312 14734 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142   312 14734 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706716c247f0
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142   312 14734 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.142  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:26:26.142  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:26:26.142  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:26:26.142  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:26:26.144   312 14727 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+11-03 18:26:26.152   312 14736 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:26:26.152   312 14736 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706746c22b90
+11-03 18:26:26.152   312 14736 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+11-03 18:26:26.152   835   924 D EGL_emulation: app_time_stats: avg=103.27ms min=12.98ms max=249.76ms count=10
+11-03 18:26:26.154  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:26:26.154  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:26:26.155  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:26.156  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:26.156  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:26.156  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:26.156  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:26.156   312 14733 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:26:26.156   312 14733 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706716c24010
+11-03 18:26:26.156   312 14733 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+11-03 18:26:26.157  1017 14716 D TrafficStats: tagSocket(6) with statsTag=0xffffff81, statsUid=-1
+11-03 18:26:26.159   312 14737 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:26:26.159   312 14737 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706726c27890
+11-03 18:26:26.159   312 14737 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+11-03 18:26:26.160  1017 14715 D TrafficStats: tagSocket(68) with statsTag=0xffffff81, statsUid=-1
+11-03 18:26:26.161   516  2168 W InputManager-JNI: Input channel object '601770a com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:26.165   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81a10
+11-03 18:26:26.165   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80f90
+11-03 18:26:26.165   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80f90
+11-03 18:26:26.166   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7d9f0
+11-03 18:26:26.172  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.176  1803  2828 I A       : Using proto config with mendel
+11-03 18:26:26.177  1017 14716 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=37ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 03 Nov 2026 18:26:26 GMT], X-Android-Received-Millis=[1793730386177], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1793730386167]}
+11-03 18:26:26.184   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80270
+11-03 18:26:26.184   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ec50
+11-03 18:26:26.191  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.196  1017 14715 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 time=60ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 03 Nov 2026 18:26:26 GMT], X-Android-Received-Millis=[1793730386196], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1793730386185]}
+11-03 18:26:26.200  1017 14714 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=100ms
+11-03 18:26:26.202  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.202   516   775 D ConnectivityService: [100 WIFI] validation passed
+11-03 18:26:26.213  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:26:26.225  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@ef81768]
+11-03 18:26:26.227  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:26:26.233   835   913 D SplashScreenView: Build android.window.SplashScreenView{a3d4e23 V.E...... ......ID 0,0-0,0}
+11-03 18:26:26.233   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:26:26.233   835   913 D SplashScreenView: Branding: view: android.view.View{bfb1f20 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:26:26.233   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.236  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:26.239  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: PRE_ON_CREATE
+11-03 18:26:26.239  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:26:26.244  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: CREATED
+11-03 18:26:26.244  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@544bfac
+11-03 18:26:26.244  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: STARTED
+11-03 18:26:26.244  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@544bfac
+11-03 18:26:26.246  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: RESUMED
+11-03 18:26:26.246  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@544bfac
+11-03 18:26:26.250  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.256  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:26:26.279   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80150
+11-03 18:26:26.280   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ab0
+11-03 18:26:26.280   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ab0
+11-03 18:26:26.280   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80150
+11-03 18:26:26.303  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:26:26.304  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:26:26.313   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81050
+11-03 18:26:26.313   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.320   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:26:26.321   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +91ms
+11-03 18:26:26.323  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.323  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:26.323  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.327  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:26:26.327  1115  6823 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293b1a760 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:26:26.330   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.330   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.330   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.335  1803  3103 I PBSessionCacheImpl: Deleted sessionId[7931471589631456] from persistence.
+11-03 18:26:26.339  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:26:26.340   516  2682 W InputManager-JNI: Input channel object '1814e34 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:26:26.345  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:26:26.345  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:26:26.347   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd823d0
+11-03 18:26:26.347   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:26:26.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fb50
+11-03 18:26:26.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e530
+11-03 18:26:26.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.363   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80a50
+11-03 18:26:26.386  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:26:26.386  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:26:26.386  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:26:26.386  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:26:26.387  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:26:26.398   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd76070
+11-03 18:26:26.513   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.540   835   913 D SplashScreenView: Build android.window.SplashScreenView{52e0613 V.E...... ......ID 0,0-0,0}
+11-03 18:26:26.540   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:26:26.540   835   913 D SplashScreenView: Branding: view: android.view.View{249050 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:26:26.541   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.543  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: PAUSED
+11-03 18:26:26.543  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@544bfac
+11-03 18:26:26.546   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.546   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.561  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:26:26.580   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81590
+11-03 18:26:26.580   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81ef0
+11-03 18:26:26.580   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.580   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.588  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:26:26.590  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.590  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:26:26.590  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:26:26.592   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:26:26.593  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=161, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@aa6f38e
+11-03 18:26:26.595  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: STOPPED
+11-03 18:26:26.595  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@544bfac
+11-03 18:26:26.597   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd805d0
+11-03 18:26:26.604  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:26:26.605  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:26:26.606  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:26:26.606  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@544bfac in: DESTROYED
+11-03 18:26:26.606  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:26:26.606  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:26:26.608  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@ef81768]
+11-03 18:26:26.611  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:26:26.612   516  2172 W InputManager-JNI: Input channel object '22cd959 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:26:26.619  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:26:26.619  1115  1115 D MainContentCaptureSession: Flushing 30 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:26:26.622   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81290
+11-03 18:26:26.622   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80c30
+11-03 18:26:26.622   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e230
+11-03 18:26:26.622   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80c30
+11-03 18:26:26.622   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:26:26.624  5034  5170 I TestRunner: finished: noExecutionWhenEveryOperationIsExcluded(com.jarvis.files.UsabilityTest)

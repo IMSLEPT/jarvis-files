@@ -1,0 +1,91 @@
+11-03 18:23:08.090  5034  5170 I TestRunner: started: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)
+11-03 18:23:08.106  1378  8382 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.106  1378  8382 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.114  1378  7514 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.117  1378  3540 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:08.118  1378  3540 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:08.120  1166  6708 I PTCommittedOperation: Receive new configuration for com.google.android.gms.learning#com.google.android.gms
+11-03 18:23:08.123  1378  7514 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:08.123  1378  8382 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:08.124  1378  8382 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.learning#com.google.android.gms [CONTEXT service_id=340 ]
+11-03 18:23:08.125  1378  3540 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.126  1378  3540 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:08.127  1378  7249 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:08.127  1378  7249 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:08.128  1378  7249 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:08.128  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.129  1166  6705 I PTCommittedOperation: Receive new configuration for com.google.android.libraries.surveys#com.google.android.gms
+11-03 18:23:08.133  1378  7517 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.com.google.android.gms.mlbenchmark#com.google.android.gms.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:08.133  1378  7517 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.mlbenchmark#com.google.android.gms [CONTEXT service_id=340 ]
+11-03 18:23:08.133  1378  7517 I MlBenchmarkInstaller: Phenotype configuration committed. [CONTEXT service_id=340 ]
+11-03 18:23:08.134  1378  7249 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.134  1378  8382 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.135  1378  8383 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.135  1378  7515 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:08.136   835   924 D EGL_emulation: app_time_stats: avg=2588.54ms min=2588.54ms max=2588.54ms count=1
+11-03 18:23:08.138  1378  7517 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+11-03 18:23:08.138  1378  8382 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:08.140  1378  7517 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:08.140  1378  8382 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:08.140  1378  1378 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+11-03 18:23:08.140  1378  7517 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.libraries.surveys#com.google.android.gms [CONTEXT service_id=340 ]
+11-03 18:23:08.141  1166  6705 I PTCommittedOperation: Receive new configuration for com.google.android.gms
+11-03 18:23:08.141  1166  6705 I PTCommittedOperation: Running Fixer Framework for com.google.android.gms
+11-03 18:23:08.142  1378  7517 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:08.143  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.143  1378  8382 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:08.147  1378  7517 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:08.152  1378  7517 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:08.159  1378  7517 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:08.160  1166  1573 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+11-03 18:23:08.163  1166  3465 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 66 uptime_millis: 66 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+11-03 18:23:08.163  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.168  4563  4563 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10104; state: ENABLED
+11-03 18:23:08.171  1378  8628 I ThreadNetworkModuleInit: phenotype flags updated [CONTEXT service_id=305 ]
+11-03 18:23:08.176  1378  8628 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+11-03 18:23:08.176  1378  8628 W SyntheticOperationsLogg: SyntheticOperationsLogger unable to log "com.google.android.gms.threadnetwork"'s use of "change_component_enabled_state" because installOperationsCollector never executed [CONTEXT service_id=238 ]
+11-03 18:23:08.177  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:08.177  1378  8628 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+11-03 18:23:08.181  4563  5702 I ConfigUpdater: Update started
+11-03 18:23:08.184  1378  4012 I GmsModuleFndr: Beginning GMS chimera module scan
+11-03 18:23:08.186  1378  4012 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:231004600100000], [Cronetdynamite:231818190800], [Dynamiteloader:231818190000], [Dynamitemodulesa:231818190000], [Dynamitemodulesc:231818190000], [Googlecertificates:231818190000], [Mapsdynamite:231818190000], [Measurementdynamite:231818190000]]
+11-03 18:23:08.200  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.202  1378  4012 I ModuleSetMgr: Pending container module APKs: []
+11-03 18:23:08.202  1378  4012 I ModuleSetMgr: Pending non-container module APKs: []
+11-03 18:23:08.205  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.217  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.221  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.224  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:08.228  2308  8653 D DownloadManager: [7] Starting
+11-03 18:23:08.240  2308  8653 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.240  2308  8653 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.242   312  8654 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+11-03 18:23:08.242   312  8656 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:23:08.244   312  8656 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706706c25250
+11-03 18:23:08.244   312  8656 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+11-03 18:23:08.244   312  8655 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:23:08.244   312  8655 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x706706c26210
+11-03 18:23:08.244   312  8655 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+11-03 18:23:08.244  2308  8653 D TrafficStats: tagSocket(75) with statsTag=0xffffff01, statsUid=10104
+11-03 18:23:08.245  4563  5702 I ConfigUpdater: Update started
+11-03 18:23:08.250  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+11-03 18:23:08.261  1166  3465 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+11-03 18:23:08.274  2308  8661 D DownloadManager: [8] Starting
+11-03 18:23:08.288  2308  8661 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.288  2308  8661 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:08.290  2308  8661 D TrafficStats: tagSocket(76) with statsTag=0xffffff01, statsUid=10104
+11-03 18:23:08.293  4563  5702 I ConfigUpdater: Update started
+11-03 18:23:08.303  1378  4012 I ChimeraCfgMgr: Updating module config: container:2318189190800 -> container:2318189190800
+11-03 18:23:08.303  1378  4012 E DowngradeHelper: isModuleDowngradeRequired false
+11-03 18:23:08.310  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.316  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.322  2308  8653 D DownloadManager: [7] Finished with status SUCCESS
+11-03 18:23:08.323  1378  4012 I GmsDebugLogger: [46] container:2318189190800
+11-03 18:23:08.327  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.329  1166  1166 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.rcs
+11-03 18:23:08.329  1166  1166 I Process : Sending signal. PID: 1166 SIG: 9
+11-03 18:23:08.335  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.339  5085  5085 I ChimeraModuleLdr: Module config changed, forcing restart due to module com.google.android.gms.core_download
+11-03 18:23:08.339  5085  5085 I Process : Sending signal. PID: 5085 SIG: 9
+11-03 18:23:08.341  1682  3746 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:08.342  5034  5170 I TestRunner: finished: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)

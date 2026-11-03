@@ -1,0 +1,17 @@
+11-03 18:23:19.015  5034  5170 I TestRunner: started: parseModelReply(com.jarvis.files.FileOpsTest)
+11-03 18:23:19.019  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.021  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.027  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.031  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.035  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.043  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:19.052  8690  8752 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+11-03 18:23:19.063  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:23:19.075  3854  9798 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:23:19.079  5034  5170 I JarvisTest: [AI] OK interpretazione risposta del modello (JSON, domande, piano)
+11-03 18:23:19.083  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.087  1682  6699 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.089  1682  3746 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.093  1682  7381 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:19.096  1682  2336 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:19.098  5034  5170 I TestRunner: finished: parseModelReply(com.jarvis.files.FileOpsTest)

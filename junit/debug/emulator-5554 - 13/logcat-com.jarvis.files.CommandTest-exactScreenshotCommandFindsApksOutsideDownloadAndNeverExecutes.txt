@@ -1,0 +1,155 @@
+11-03 18:23:03.422  5034  5170 I TestRunner: started: exactScreenshotCommandFindsApksOutsideDownloadAndNeverExecutes(com.jarvis.files.CommandTest)
+11-03 18:23:03.429  7754  7754 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10138; state: ENABLED
+11-03 18:23:03.433  7754  7754 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:03.434  7754  7754 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:03.435  7754  7754 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:03.437  7754  7754 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+11-03 18:23:03.442  7754  7754 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-03 18:23:03.443  7754  7754 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+11-03 18:23:03.443  7754  7754 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:03.445  7754  7754 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:03.445  7754  7754 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:03.455  1166  1570 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+11-03 18:23:03.458  7754  7754 I ecovery_process: System.exit called, status: 0
+11-03 18:23:03.458  7754  7754 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:03.460  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:03.465   516   556 I libprocessgroup: Successfully killed process cgroup uid 10138 pid 7754 in 0ms
+11-03 18:23:03.465   313   313 I Zygote  : Process 7754 exited cleanly (0)
+11-03 18:23:03.475  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:03.477  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 50 uptime_millis: 50 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+11-03 18:23:03.483  1615  2077 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+11-03 18:23:03.488  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:03.493  1615  1615 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+11-03 18:23:03.501  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:03.510  1615  1850 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+11-03 18:23:03.512  2444  2444 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.ims which doesn't use ProcessStable flags.
+11-03 18:23:03.521  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:03.528  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:03.532  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:03.536  1166  3465 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-03 18:23:03.539  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:03.543  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:03.552  7598  7620 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10112; state: ENABLED
+11-03 18:23:03.555  1166  6702 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:23:03.555  1166  6702 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:23:03.556  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.556  1166  6702 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:23:03.557  1166  6702 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:23:03.557  1166  6702 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.557  1166  6702 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:23:03.558  1166  6702 I NamespaceManager: Package rkpd name not found! Using module version.
+11-03 18:23:03.558  1166  6702 I NamespaceManager: Package com.google.android.devicelockcontroller name not found! Using module version.
+11-03 18:23:03.558  1166  6702 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.558  1166  6702 I NamespaceManager: Package android.companion name not found! Using module version.
+11-03 18:23:03.559  1166  6702 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.559  1166  6702 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
+11-03 18:23:03.560  1166  6702 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
+11-03 18:23:03.560  1166  6702 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.560  1166  6702 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
+11-03 18:23:03.561  1166  6702 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
+11-03 18:23:03.562  1166  6702 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
+11-03 18:23:03.562  1166  6702 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
+11-03 18:23:03.563  1166  6702 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
+11-03 18:23:03.563  1166  6702 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
+11-03 18:23:03.563  1166  6702 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
+11-03 18:23:03.563  1166  6702 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
+11-03 18:23:03.564  1166  6702 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.clearcut.public [CONTEXT service_id=204 ]
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.clearcut.public
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:03.564  1166  6702 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:03.566  1166  6709 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+11-03 18:23:03.582  2444  3621 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.ims
+11-03 18:23:03.587  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 38 uptime_millis: 38 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+11-03 18:23:03.605  1090  1090 I PhenotypeBackgroundRecv: Skipping com.google.android.setupwizard which doesn't use ProcessStable flags.
+11-03 18:23:03.614  1682  2336 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:03.617  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:23:03.617  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:23:03.617  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package rkpd name not found! Using module version.
+11-03 18:23:03.618  1166  6705 I NamespaceManager: Package com.google.android.devicelockcontroller name not found! Using module version.
+11-03 18:23:03.619  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.619  1166  6705 I NamespaceManager: Package android.companion name not found! Using module version.
+11-03 18:23:03.619  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.619  1166  6705 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
+11-03 18:23:03.619  1166  6705 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
+11-03 18:23:03.620  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.620  1166  6705 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
+11-03 18:23:03.620  1166  6705 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
+11-03 18:23:03.620  1166  6705 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
+11-03 18:23:03.620  1166  6705 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
+11-03 18:23:03.621  1166  6705 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
+11-03 18:23:03.621  1166  6705 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
+11-03 18:23:03.621  1166  6705 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
+11-03 18:23:03.621  1166  6705 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
+11-03 18:23:03.621  1166  6705 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms [CONTEXT service_id=204 ]
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:03.622  1166  6705 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:03.627  1682  7381 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:03.627  1090  2443 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.setupwizard
+11-03 18:23:03.629  1166  6705 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:23:03.630  1166  6705 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:23:03.632  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:03.632  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.632  1166  6705 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:23:03.632  1166  6705 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:23:03.633  1166  6705 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:23:03.633  1166  6705 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:23:03.633  1166  6705 I NamespaceManager: Package rkpd name not found! Using module version.
+11-03 18:23:03.633  1166  6705 I NamespaceManager: Package com.google.android.devicelockcontroller name not found! Using module version.
+11-03 18:23:03.633  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.634  1166  6705 I NamespaceManager: Package android.companion name not found! Using module version.
+11-03 18:23:03.634  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.634  1166  6705 I NamespaceManager: Package com.google.android.aicore name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.audioproxy name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.healthfitness name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.apps.pixel.psi name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.apps.safetycore name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.crashrecovery name not found! Using module version.
+11-03 18:23:03.635  1166  6705 I NamespaceManager: Package com.google.android.profiling name not found! Using module version.
+11-03 18:23:03.636  1166  6705 I NamespaceManager: Package com.google.android.bt name not found! Using module version.
+11-03 18:23:03.636  1166  6705 I NamespaceManager: Package com.google.android.nfcservices name not found! Using module version.
+11-03 18:23:03.636  1166  6705 I NamespaceManager: Package com.google.android.webapp name not found! Using module version.
+11-03 18:23:03.636  1166  6705 I NamespaceManager: Package com.google.android.telephonycore name not found! Using module version.
+11-03 18:23:03.636  1166  6705 I NamespaceManager: Package com.google.android.uprobestats name not found! Using module version.
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.trustlet_place [CONTEXT service_id=204 ]
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: bwix: No package exists for config package: com.google.android.gms.trustlet_place
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:03.636  1166  6705 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:03.638  1854  2050 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.deskclock
+11-03 18:23:03.641  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:03.648  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:03.649  5034  5170 I TestRunner: finished: exactScreenshotCommandFindsApksOutsideDownloadAndNeverExecutes(com.jarvis.files.CommandTest)

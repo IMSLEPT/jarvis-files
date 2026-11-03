@@ -1,0 +1,546 @@
+11-03 18:22:48.584  5034  5170 I TestRunner: started: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)
+11-03 18:22:48.587  1701  2135 I AiAiStatsd: Successfully logged feature usage for VISUAL_CORTEX.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.591  1115  1128 W System  : A resource failed to call release.
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: Unable to register Doze Always on content observer.
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: java.lang.SecurityException: No access to content://settings/secure/doze_always_on: Neither user 10152 nor current process has android.permission.INTERACT_ACROSS_USERS_FULL.
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1032)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2712)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at com.google.android.systemui.smartspace.BcSmartspaceView.onAttachedToWindow(Unknown Source:222)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.View.dispatchAttachedToWindow(View.java:21357)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3491)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3498)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2900)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2371)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9297)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1231)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1239)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doCallbacks(Choreographer.java:899)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer.doFrame(Choreographer.java:832)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1214)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: Caused by: android.os.RemoteException: Remote stack trace:
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforce(ContextImpl.java:2240)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2268)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.handleIncomingUser(ContentService.java:1397)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:369)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView: 	at android.content.IContentService$Stub.onTransact(IContentService.java:486)
+11-03 18:22:48.593  1115  1115 W BcSmartspaceView:
+11-03 18:22:48.596   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80cf0
+11-03 18:22:48.596   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7eef0
+11-03 18:22:48.596   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80510
+11-03 18:22:48.604  1115  1115 D TISBindHelper: TIS service connected
+11-03 18:22:48.604  1115  1115 D b/254119092: Set mActivity=com.google.android.apps.nexuslauncher.NexusLauncherActivity@71fa017
+11-03 18:22:48.604  1115  1115 D b/254119092: mActivity and mContext agree taskbarIsPresent=false
+11-03 18:22:48.607  1115  1115 D MainContentCaptureSession: handleScheduleFlush(act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=1 (WAITING_FOR_SERVER), disabled=false], reason=FULL): not a timeout reason because mDirectServiceInterface is not ready yet
+11-03 18:22:48.607  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=CONNECTED
+11-03 18:22:48.629  1115  1115 W BcSmartspaceCard: No title view to update
+11-03 18:22:48.629  1115  1115 I BcSmartspaceCard: setFormattedContentDescription: textView=SUBTITLE, text=null, iconDescription=null, contentDescription=null
+11-03 18:22:48.630  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.643  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:48.647  1166  3465 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 143 uptime_millis: 143 exec_start_elapsed_seconds: 100 [CONTEXT service_id=218 ]
+11-03 18:22:48.650  1166  1180 I .gms.persistent: Background young concurrent copying GC freed 171235(8145KB) AllocSpace objects, 0(0B) LOS objects, 16% free, 29MB/35MB, paused 57us,23us total 236.518ms
+11-03 18:22:48.665  1115  1115 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10152; state: ENABLED
+11-03 18:22:48.666  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.666  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.666  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.667  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:22:48.672   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:22:48.673  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:48.674  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=29, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@27021d3
+11-03 18:22:48.678  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:48.678  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:48.679  1803  2815 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.681   516  1188 W InputManager-JNI: Input channel object 'b76433e com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:48.701  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:48.701  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:48.706   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e050
+11-03 18:22:48.706   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f730
+11-03 18:22:48.706   835   924 D EGL_emulation: app_time_stats: avg=307.07ms min=4.28ms max=1482.46ms count=5
+11-03 18:22:48.707  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.707  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.707  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.707  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.707  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.708  1803  1803 W PhoneWindow: Previously focused view reported id 2131435089 during save, but can't be found during restore.
+11-03 18:22:48.708  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.708  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.708  1115  1115 W TextView: onProvideContentCaptureStructure(): calling assumeLayout()
+11-03 18:22:48.709  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:22:48.710   516  2682 W InputManager-JNI: Input channel object 'a63c208 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:48.710  1115  1115 D MainContentCaptureSession: Flushing 62 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:22:48.716  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.717   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fc10
+11-03 18:22:48.717   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fc10
+11-03 18:22:48.718  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:22:48.718  1115  1115 D MainContentCaptureSession: Flushing 19 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:22:48.719  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:22:48.724  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:22:48.725  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.725  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.725  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.725  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.725  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.725  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:48.726  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.758  1166  6710 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.758  1166  6710 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.758  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.758  1166  6710 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.758  1166  6710 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.759  1166  6710 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.759  1166  6710 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.760  1166  6710 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.763  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:48.778  1682  2011 D PickerSyncController: syncAllMedia
+11-03 18:22:48.778  1682  2011 D PickerSyncController: syncAllMediaFromProvider() LOCAL, auth=com.android.providers.media.photopicker, retry=true
+11-03 18:22:48.778  1682  2011 D PickerSyncController: getSyncRequestParams() LOCAL, auth=com.android.providers.media.photopicker
+11-03 18:22:48.791  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@dad4fe0]
+11-03 18:22:48.793  1682  2011 D PickerSyncController:    Latest ID/Gen=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary/140
+11-03 18:22:48.793  1682  2011 D PickerSyncController:    Cached ID/Gen=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary/105
+11-03 18:22:48.793  1682  2011 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_INCREMENTAL, gen=105, latest=Bundle[{last_media_sync_generation=140, media_collection_id=1405:b8c93ef7-6a22-4395-b9d5-87230878883d:external_primary}]}
+11-03 18:22:48.793  1682  2011 I PickerSyncController: Executing SyncAdd. isLocal: true. authority: com.android.providers.media.photopicker
+11-03 18:22:48.795  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox, using defaults.
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.b(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at f.a.a.ab.a.a.c.a(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.libraries.search.n.a.e.g.x.d(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.avz.b(PG:11)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at dagger.a.e.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.awa.e(Unknown Source:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.search.googleapp.discover.streamui.f.a.a(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.c(Unknown Source:2416)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at dagger.a.e.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.c(Unknown Source:2427)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at dagger.a.e.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.c(Unknown Source:2511)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mw.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at dagger.a.e.b(PG:1)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.binaries.velvet.app.mx.as(PG:33)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.search.googleapp.discover.streamui.impl.l.onAttach(PG:11)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.Fragment.performAttach(PG:5)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.by.e(PG:144)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.ap(PG:112)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.ar(PG:10)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.D(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.a.d(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.search.googleapp.launcher.minusone.e.onCreateView(PG:40)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.Fragment.performCreateView(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.by.c(PG:17)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.by.e(PG:181)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.ap(PG:112)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.ar(PG:10)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.FragmentManager.D(PG:3)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.support.v4.app.a.d(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.android.apps.gsa.nowoverlayservice.d.j.run(PG:29)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.google.apps.tiktok.tracing.ei.run(PG:2)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:22:48.811  1803  1803 W SnapshotHandler: 	... 50 more
+11-03 18:22:48.816  1682  2011 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=105}]. Result count: 0. Cursor count: 0
+11-03 18:22:48.816  1682  2011 I PickerSyncController: Executing SyncRemove. isLocal: true. authority: com.android.providers.media.photopicker
+11-03 18:22:48.826  1682  2011 W PickerDbFacade: Unable to promote cloud media with localId: 1000000032
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Paged sync successful. QueryArgs: Bundle[{android.provider.extra.SYNC_GENERATION=105}]. Result count: 0. Cursor count: 1
+11-03 18:22:48.826  1682  2011 D PickerSyncController: syncAllMediaFromProvider() CLOUD, auth=null, retry=true
+11-03 18:22:48.826  1682  2011 D PickerSyncController: getSyncRequestParams() CLOUD, auth=null
+11-03 18:22:48.826  1682  2011 D PickerSyncController:    RESULT=SyncRequestParams{type=MEDIA_RESET, gen=0, latest=null}
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Executing SyncReset. isLocal: false. authority: null
+11-03 18:22:48.826  1682  2011 I PickerSyncController: SyncReset. isLocal:false. authority: null. result count: 0
+11-03 18:22:48.826  1682  2011 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Executing SyncAlbumReset. isLocal: true. authority: com.android.providers.media.photopicker. albumId: null
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Successfully executed SyncResetAlbum. authority: com.android.providers.media.photopicker. albumId: null. Result count: 0
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Executing SyncAlbumReset. isLocal: false. authority: null. albumId: null
+11-03 18:22:48.826  1682  2011 I PickerSyncController: Successfully executed SyncResetAlbum. authority: null. albumId: null. Result count: 0
+11-03 18:22:48.826   835   913 D SplashScreenView: Build android.window.SplashScreenView{d70d741 V.E...... ......ID 0,0-0,0}
+11-03 18:22:48.826   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:22:48.826   835   913 D SplashScreenView: Branding: view: android.view.View{7e7a4e6 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:22:48.827   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.827  1166  6703 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.830  1166  6703 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.831  1803  1803 I A       : Constructor was called
+11-03 18:22:48.834  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.834  1166  6703 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.834  1166  6703 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.834  1166  6703 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.835  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.836  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:22:48.838  1803  1803 I A       : No savedInstanceState.
+11-03 18:22:48.838  1803  1803 I A       : makeRequest: subscribing to new source
+11-03 18:22:48.841  1803  2869 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:22:48.842  1166  6703 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.846  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: PRE_ON_CREATE
+11-03 18:22:48.846  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:22:48.856  1803  1803 I A       : OnCreate Was Called
+11-03 18:22:48.857  1803  1803 I A       : getMinusOnePromotion
+11-03 18:22:48.858  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:48.860  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: CREATED
+11-03 18:22:48.861  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@730ea4
+11-03 18:22:48.862  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: STARTED
+11-03 18:22:48.862  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@730ea4
+11-03 18:22:48.868  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:48.869  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.869  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:48.869  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:48.870  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:48.870  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:48.873  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:48.876  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: RESUMED
+11-03 18:22:48.876  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@730ea4
+11-03 18:22:48.878  1803  2413 W A       : Couldn't calculate ClientInstanceId, no account name
+11-03 18:22:48.880  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:22:48.896  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:22:48.902  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:22:48.902  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:22:48.905   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e3b0
+11-03 18:22:48.905   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80bd0
+11-03 18:22:48.905   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80bd0
+11-03 18:22:48.905   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e3b0
+11-03 18:22:48.912  4956  4956 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10107; state: ENABLED
+11-03 18:22:48.936  1803  2466 I A       : #enqueuePeriodicJob: running = false
+11-03 18:22:48.947  1803  1803 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=24, right=0, bottom=0}
+11-03 18:22:48.947  1803  1803 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=24, right=0, bottom=0}
+11-03 18:22:48.951  1803  1803 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=24, right=0, bottom=0}
+11-03 18:22:48.951  1803  1803 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=24, right=0, bottom=0}
+11-03 18:22:48.955  1803  2466 I A       : loading data on surface MinusOne.
+11-03 18:22:48.956  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:22:48.959  1803  2456 I A       : #scheduledRefresh: enable_prod_refresh is true but we have no valid refresh schedule
+11-03 18:22:49.007  1166  1187 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+11-03 18:22:49.007  1166  1187 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:22:49.009  1166  1187 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:22:49.010  1166  1187 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+11-03 18:22:49.011  1166  1187 I FontLog : Pulling font file for id = 14, cache size = 14 [CONTEXT service_id=132 ]
+11-03 18:22:49.024  1166  1187 I FontLog : Received query Google Sans:500, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+11-03 18:22:49.024  1166  1187 I FontLog : Query [Google Sans:500] resolved to {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:22:49.029   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:22:49.035  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:49.035  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:49.035   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +228ms
+11-03 18:22:49.037  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:22:49.037  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:22:49.037  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:22:49.037  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:49.037  1803  1803 W A       : Could not collect restore state: The DisplayCoordinator's controller has not taken over yet.
+11-03 18:22:49.038  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:22:49.040  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:49.043   516  2682 W InputManager-JNI: Input channel object 'c64d05c Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:22:49.044  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:22:49.046   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80630
+11-03 18:22:49.064   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80390
+11-03 18:22:49.067   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f910
+11-03 18:22:49.067   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd803f0
+11-03 18:22:49.067   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f3d0
+11-03 18:22:49.084  1166  1187 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:22:49.086  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:22:49.086  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:22:49.087  1166  1187 I FontLog : Fetch {Google Sans, wdth 100.0, wght 500, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+11-03 18:22:49.092  1166  1187 I FontLog : Pulling font file for id = 15, cache size = 15 [CONTEXT service_id=132 ]
+11-03 18:22:49.111  1803  2466 I A       : group apa_head_suggest not present without account in *
+11-03 18:22:49.112  1803  2466 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.008S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M0.829S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT15.026S (TEN_SECONDS_TO_THIRTY_SECONDS))
+11-03 18:22:49.113  1115  1131 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293adef40 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:22:49.113  1803  2456 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:22:49.117  1166  1180 I .gms.persistent: Background concurrent copying GC freed 524327(20MB) AllocSpace objects, 1(28KB) LOS objects, 50% free, 17MB/35MB, paused 119us,26us total 220.501ms
+11-03 18:22:49.118  1803  2828 I A       : Using proto config with mendel
+11-03 18:22:49.123  1803  2828 I A       : Using proto config with mendel
+11-03 18:22:49.128  1803  3056 I PBSessionCacheImpl: Deleted sessionId[7931471589631071] from persistence.
+11-03 18:22:49.133  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:22:49.139  1166  1570 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 100 [CONTEXT service_id=218 ]
+11-03 18:22:49.141  1166  3465 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 52 uptime_millis: 52 exec_start_elapsed_seconds: 100 [CONTEXT service_id=218 ]
+11-03 18:22:49.153  1803  2412 W SQLiteLog: (28) double-quoted string literal: "MAIN_FEED"
+11-03 18:22:49.153  1803  2412 W SQLiteLog: (28) double-quoted string literal: "Session::Current"
+11-03 18:22:49.153  1803  2412 W SQLiteLog: (28) double-quoted string literal: "MAIN_FEED"
+11-03 18:22:49.153  1803  2412 W SQLiteLog: (28) double-quoted string literal: "Session::Current"
+11-03 18:22:49.159  1803  2412 W A       : Didn't find the session (MAIN_FEED, true)
+11-03 18:22:49.160  1803  2412 W A       : Didn't find the session (MAIN_FEED, false)
+11-03 18:22:49.171  1803  2456 W A       : RenderableStreamDataSource#loadData - failed precheck
+11-03 18:22:49.171  1803  2456 W A       : DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@74695b6)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.d(PG:16)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ap.invokeSuspend(PG:5)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ap.invoke(PG:1)
+11-03 18:22:49.171  1803  2456 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+11-03 18:22:49.171  1803  2456 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.v.bb.f(PG:2)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.v.bb.d(PG:15)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.apps.search.googleapp.discover.v.an.invokeSuspend(PG:1)
+11-03 18:22:49.171  1803  2456 W A       : 	at i.c.b.a.a.resumeWith(PG:4)
+11-03 18:22:49.171  1803  2456 W A       : 	at kotlinx.coroutines.bk.run(PG:14)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.apps.tiktok.coroutines.f.run(PG:1)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+11-03 18:22:49.171  1803  2456 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:49.171  1803  2456 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.libraries.i.k.run(PG:2)
+11-03 18:22:49.171  1803  2456 W A       : 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:22:49.171  1803  2456 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:49.175  1166  1166 W SystemServiceRegistry: No service published for: persistent_data_block
+11-03 18:22:49.178  1166  3377 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-03 18:22:49.192  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.193  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.194  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.215  4863  4878 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10170; state: ENABLED
+11-03 18:22:49.218  1801  1900 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 1000; state: ENABLED
+11-03 18:22:49.218  1599  6752 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10164; state: ENABLED
+11-03 18:22:49.220  1729  3489 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10119; state: ENABLED
+11-03 18:22:49.221  5085  5115 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10119; state: ENABLED
+11-03 18:22:49.221  1221  1261 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 1002; state: ENABLED
+11-03 18:22:49.222  2056  2076 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10070; state: ENABLED
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.239  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.240  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.240  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.262  1166  6700 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.267  4956  4956 W CardCollectorJobService: refreshJob, cancel job.
+11-03 18:22:49.267  4956  4956 W BatteryWidgetPhenotypeCommitListener: Phenotype flag updated = true
+11-03 18:22:49.267  4956  4956 W BatteryPhenotypeCommitListener: pheotype flag is update success=true
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: dump configurations:
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: 	isFeatureEnabled:true
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: 	dataFetchInterval:60
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: 	dataRetentionDays:9
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: 	grantExactAlarmPermission:true
+11-03 18:22:49.268  4956  4956 W BatteryPhenotypeCommitListener: has 2 listeners
+11-03 18:22:49.275   516   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:22:49.276  1166  6700 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.276  3026  3185 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@4114d95
+11-03 18:22:49.278  1044  1044 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:22:49.278  1044  1044 D MediaPlayerList: Name of package changed: com.google.android.settings.intelligence
+11-03 18:22:49.278  1044  1044 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:22:49.278  1044  1044 D MediaPlayerList: Name of package changed: com.google.android.settings.intelligence
+11-03 18:22:49.282  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.283  1166  6700 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.297  1077  1077 D CarrierSvcBindHelper: onPackageModified: com.google.android.settings.intelligence
+11-03 18:22:49.298  1077  1077 D CarrierSvcBindHelper: No carrier app for: 0
+11-03 18:22:49.300  1378  5763 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-03 18:22:49.301  1077  1077 D ImsResolver: maybeAddedImsService, packageName: com.google.android.settings.intelligence
+11-03 18:22:49.301  1166  6700 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.302  1166  6701 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-03 18:22:49.304  4863  4878 I PermissionControllerServiceImpl: Updating user sensitive for uid 10107
+11-03 18:22:49.310  1166  6703 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-03 18:22:49.313  1166  6700 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.315  1166  6700 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.316  3854  6834 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:22:49.317  1166  6700 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.322   835   835 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:22:49.323  1378  5763 I Icing   : Indexing done com.google.android.gms-apps
+11-03 18:22:49.327   516   617 I RoleService: Granting default roles...
+11-03 18:22:49.345  1682  6166 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:22:49.353  1682  1695 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk
+11-03 18:22:49.354  1682  1695 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:22:49.362  4863  5004 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:22:49.368  1166  6703 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.372  1166  6703 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.376   835   913 D SplashScreenView: Build android.window.SplashScreenView{b49a3c7 V.E...... ......ID 0,0-0,0}
+11-03 18:22:49.376   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:22:49.376   835   913 D SplashScreenView: Branding: view: android.view.View{12b8df4 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:22:49.376   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:22:49.376  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.376  1166  6703 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.379  1166  6703 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.379  1166  6703 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.380  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: PAUSED
+11-03 18:22:49.380  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@730ea4
+11-03 18:22:49.383  1166  6703 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.387  1166  6703 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.413  1226  5154 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+11-03 18:22:49.414   313   313 I Zygote  : Process 4956 exited due to signal 9 (Killed)
+11-03 18:22:49.415  1226  1226 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+11-03 18:22:49.422   516   556 I libprocessgroup: Successfully killed process cgroup uid 10107 pid 4956 in 151ms
+11-03 18:22:49.425   516   762 D ConnectivityService: requestNetwork for uid/pid:10110/1536 activeRequest: null callbackRequest: 133 [NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:22:49.426   516   768 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:22:49.426   516   768 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:22:49.427   516   775 D ConnectivityService: NetReassign [134 : null → 100] [c 0] [a 0] [i 1]
+11-03 18:22:49.427   516   768 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:22:49.428  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:22:49.432   516   768 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10110 RequestorUid: 10110 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:22:49.433  1536  1536 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+11-03 18:22:49.433  1536  1565 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+11-03 18:22:49.434  1536  1565 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+11-03 18:22:49.435   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ffd0
+11-03 18:22:49.446  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: STOPPED
+11-03 18:22:49.451  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@730ea4
+11-03 18:22:49.462  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk to null
+11-03 18:22:49.466  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.470  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.473  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:49.473  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:22:49.474  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.475  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.476  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.476  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.476  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.478  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.486  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:22:49.488  1803  1803 I A       : StreamFragmentPeer#onPending
+11-03 18:22:49.488  1803  1803 I A       : #fetchAndStoreData() on surface MinusOne.
+11-03 18:22:49.490   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:22:49.491  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=33, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@7194c81
+11-03 18:22:49.492  1803  2466 W A       : Fetch failed. Renderable stream failure reason: USER_SIGNED_OUT
+11-03 18:22:49.492  1803  2466 W A       : DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@74695b6)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.d(PG:16)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invokeSuspend(PG:5)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invoke(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.c(PG:2)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:5)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invoke(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.apps.search.googleapp.discover.v.al.invokeSuspend(PG:4)
+11-03 18:22:49.492  1803  2466 W A       : 	at i.c.b.a.a.resumeWith(PG:4)
+11-03 18:22:49.492  1803  2466 W A       : 	at kotlinx.coroutines.bk.run(PG:14)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.apps.tiktok.coroutines.f.run(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+11-03 18:22:49.492  1803  2466 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:49.492  1803  2466 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.libraries.i.k.run(PG:2)
+11-03 18:22:49.492  1803  2466 W A       : 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:22:49.492  1803  2466 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:49.494  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@730ea4 in: DESTROYED
+11-03 18:22:49.494  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:22:49.501  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:22:49.502  1115  1115 D MainContentCaptureSession: Flushing 16 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: nkq: 5005:
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:22:49.503  1536  1566 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:22:49.514  1536  1566 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5005
+11-03 18:22:49.515  1536  1567 I WM-WorkerWrapper: Worker result RETRY for Work [ id=2702aedd-e62c-4a2b-ac0c-ca7f0a33b2c2, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
+11-03 18:22:49.520  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:49.521  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:49.521  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:49.521  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:49.527  1803  1803 W A       : Failed RenderableStream callback; SubscriptionCallbacks#onError(Throwable) called.
+11-03 18:22:49.527  1803  1803 W A       : com.google.android.apps.search.googleapp.discover.v.i: DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@74695b6)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.v.ak.a(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:17)
+11-03 18:22:49.527  1803  1803 W A       : 	at i.c.b.a.a.resumeWith(PG:4)
+11-03 18:22:49.527  1803  1803 W A       : 	at kotlinx.coroutines.bk.run(PG:14)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.apps.tiktok.coroutines.f.run(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:22:49.527  1803  1803 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.libraries.i.k.run(PG:2)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:22:49.527  1803  1803 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:22:49.527  1803  1803 W A       : Caused by: DiscoverPrecheckException(precheckFailureReason=com.google.android.apps.search.googleapp.discover.w.a.c@74695b6)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.d(PG:16)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invokeSuspend(PG:5)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.w.ax.invoke(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.w.bb.c(PG:2)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invokeSuspend(PG:5)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.v.am.invoke(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at kotlinx.coroutines.f.b.a(PG:1)
+11-03 18:22:49.527  1803  1803 W A       : 	at kotlinx.coroutines.m.a(PG:11)
+11-03 18:22:49.527  1803  1803 W A       : 	at com.google.android.apps.search.googleapp.discover.v.al.invokeSuspend(PG:4)
+11-03 18:22:49.527  1803  1803 W A       : 	... 9 more
+11-03 18:22:49.540  1166  6701 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
+11-03 18:22:49.541  1166  6701 I NamespaceManager: Package com.google.oslo name not found! Using module version.
+11-03 18:22:49.542  5101  6845 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10145; state: ENABLED
+11-03 18:22:49.550  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.550  1166  6701 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
+11-03 18:22:49.553  1166  6701 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
+11-03 18:22:49.554  1166  6701 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
+11-03 18:22:49.555  1166  6701 I NamespaceManager: Package com.android.media name not found! Using module version.
+11-03 18:22:49.557  1166  6701 I NamespaceManager: Package 1 name not found! Using module version.
+11-03 18:22:49.561  1166  6701 I bwir    : updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+11-03 18:22:49.573   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7f5b0
+11-03 18:22:49.573  1803  1803 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:22:49.576  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:22:49.576  1115  1115 D MainContentCaptureSession: Flushing 15 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:22:49.583  1803  2466 I A       : group apa_head_suggest not present without account in *
+11-03 18:22:49.585  1803  2456 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.005S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M1.304S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT15.502S (TEN_SECONDS_TO_THIRTY_SECONDS))
+11-03 18:22:49.586  1803  2456 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:22:49.590  1803  2828 I A       : Using proto config with mendel
+11-03 18:22:49.591   516   544 W InputManager-JNI: Input channel object '20fc075 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:22:49.604   516   541 I GnssBlocklistHelper: Update GNSS satellite blocklist:
+11-03 18:22:49.604   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80270
+11-03 18:22:49.604   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80270
+11-03 18:22:49.609  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:22:49.610  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:22:49.610  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:22:49.610  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:22:49.611  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:22:49.614   516   541 E GnssUtilsJni: IGnssConfiguration setBlocklist() failed.
+11-03 18:22:49.638   516  2101 W InputManager-JNI: Input channel object '79b443c com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:49.640  1803  1803 W View    : requestLayout() improperly called by android.widget.FrameLayout{f0c2b44 V.E...... ......ID 0,0-320,200 #7f0b0fee app:id/googleapp_discover_header_container} during layout: running second layout pass
+11-03 18:22:49.641  1115  1115 D MainContentCaptureSession: Flushing 0 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_ROOT
+11-03 18:22:49.644  1701  1701 W ContentCaptureService: handleSendEvents() received empty list of events
+11-03 18:22:49.646  1803  1803 I A       : Successfully updated last shown time for signed out error.
+11-03 18:22:49.655   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81830
+11-03 18:22:49.655   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd810b0
+11-03 18:22:49.655   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81830
+11-03 18:22:49.659  1803  2828 I A       : Using proto config with mendel
+11-03 18:22:49.662   516  2002 W InputManager-JNI: Input channel object '975cb08 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:22:49.686  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@dad4fe0]
+11-03 18:22:49.688  5034  5170 I TestRunner: finished: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)

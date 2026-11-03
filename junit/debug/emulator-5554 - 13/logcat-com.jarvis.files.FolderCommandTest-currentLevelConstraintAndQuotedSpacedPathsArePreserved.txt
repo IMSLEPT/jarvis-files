@@ -1,0 +1,156 @@
+11-03 18:23:42.715  5034  5170 I TestRunner: started: currentLevelConstraintAndQuotedSpacedPathsArePreserved(com.jarvis.files.FolderCommandTest)
+11-03 18:23:42.745  1536  1563 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:23:42.746  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 45 uptime_millis: 45 exec_start_elapsed_seconds: 154 [CONTEXT service_id=218 ]
+11-03 18:23:42.756  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:42.768  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:42.780  4912  4912 I PhenotypeBackgroundRecv: Skipping com.google.android.projection.gearhead which doesn't use ProcessStable flags.
+11-03 18:23:42.783  1621  1621 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.icing.mdd#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+11-03 18:23:42.783  1621  1621 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+11-03 18:23:42.784  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:42.796  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:42.825  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:42.830  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:42.837  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:42.847  2056  2056 V ContactsProvider: Scheduled notifyChange started.
+11-03 18:23:42.852  1044  1044 D BluetoothPbapService:  onChange on contact uri
+11-03 18:23:42.857  1044 11006 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-03 18:23:42.865  8690 10558 I NearbyConnections: Runtime state initialization complete. Nearby connections setting is disabled [CONTEXT service_id=54 ]
+11-03 18:23:42.868  8765 10910 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:23:42.868  8765 10910 I NearbyFastPair: TSS cancel footprints recon sync [CONTEXT service_id=265 ]
+11-03 18:23:42.869  8690  8743 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore default scan mode. [CONTEXT service_id=54 ]
+11-03 18:23:42.869  8765 10910 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_RECON_SYNC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:23:42.872  8765 10909 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.872  8765 10909 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.872  8765 10902 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.872  8765 10898 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:42.872  8765 10902 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:42.873  8690  8690 I NearbyFastPair: DynamicSupportModule: doReceive update intent [CONTEXT service_id=265 ]
+11-03 18:23:42.874  8765 10901 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:42.874  8765 10900 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:42.874  8765 10900 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.wearable [CONTEXT service_id=340 ]
+11-03 18:23:42.876  8690 10570 I PTCommittedOperation: Receive new configuration for com.google.android.gms.wearable
+11-03 18:23:42.877  8765 10900 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.878  8765 10900 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:42.879  8765 10900 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:42.880  8765 10900 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:42.881  8690  8743 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore device name [CONTEXT service_id=54 ]
+11-03 18:23:42.881  8765 10900 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:42.882  8690  8837 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate start [CONTEXT service_id=265 ]
+11-03 18:23:42.883  8690  8837 I NearbyFastPair: DynamicSupportModule: onSupportStateUpdate end [CONTEXT service_id=265 ]
+11-03 18:23:42.886  8765 10215 I NearbySharing: Runtime state initialization complete. Sharing is enabled. [CONTEXT service_id=194 ]
+11-03 18:23:42.887  8765  8838 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+11-03 18:23:42.888  8765  8838 I NearbySharing: Granted slice and Uri permissions to android [CONTEXT service_id=194 ]
+11-03 18:23:42.892  8690  8690 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-03 18:23:42.897  8690  8742 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:42.899  8765 10215 I Pay     : A Phenotype flag has been updated. [CONTEXT service_id=198 ]
+11-03 18:23:42.899  8765 10215 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+11-03 18:23:42.901  8765 10914 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.dynamite.ocr not found.
+11-03 18:23:42.902  8765 10914 W ProviderHelper: Unknown dynamite feature vision.dynamite.ocr
+11-03 18:23:42.902  8765 10914 I DynamiteModule: Considering local module com.google.android.gms.vision.dynamite.ocr:0 and remote module com.google.android.gms.vision.dynamite.ocr:0
+11-03 18:23:42.902  8765 10914 W ProviderHelper: Ignoring optional dynamite feature vision.ocr
+11-03 18:23:42.902  8765 10914 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.ocr not found.
+11-03 18:23:42.903  8765 10914 I DynamiteModule: Considering local module com.google.android.gms.vision.ocr:0 and remote module com.google.android.gms.vision.ocr:0
+11-03 18:23:42.903  8765 10914 W Vision  : Error loading optional module com.google.android.gms.vision.ocr: ahbb: No acceptable module com.google.android.gms.vision.ocr found. Local version is 0 and remote version is 0.
+11-03 18:23:42.904  8765 10914 W TextNativeHandle: Native handle not yet available. Reverting to no-op handle.
+11-03 18:23:42.904  8765 10914 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.dynamite.ocr not found.
+11-03 18:23:42.905  8765 10914 W ProviderHelper: Unknown dynamite feature vision.dynamite.ocr
+11-03 18:23:42.905  8765 10914 I DynamiteModule: Considering local module com.google.android.gms.vision.dynamite.ocr:0 and remote module com.google.android.gms.vision.dynamite.ocr:0
+11-03 18:23:42.905  8765 10914 W ProviderHelper: Ignoring optional dynamite feature vision.ocr
+11-03 18:23:42.905  8765 10914 W DynamiteModule: Local module descriptor class for com.google.android.gms.vision.ocr not found.
+11-03 18:23:42.905  8765 10914 I DynamiteModule: Considering local module com.google.android.gms.vision.ocr:0 and remote module com.google.android.gms.vision.ocr:0
+11-03 18:23:42.905  8765 10914 W Vision  : Error loading optional module com.google.android.gms.vision.ocr: ahbb: No acceptable module com.google.android.gms.vision.ocr found. Local version is 0 and remote version is 0.
+11-03 18:23:42.906  8765 10914 I OcrModelUpStIntentOp: Downloading text recognizer
+11-03 18:23:42.909  8765 10215 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.909  8765 10902 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.910  8765 10913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.910  8765 10215 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:42.910  8765  8976 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:42.911  8765  8976 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:42.911  8765  8976 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:42.911  8765  8976 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.clearcut.public [CONTEXT service_id=340 ]
+11-03 18:23:42.912  8765 10913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.913  8765 10909 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:42.913  8765 10913 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:42.914  8765 10913 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:42.914  8765 10913 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:42.904  8690  8742 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:23:42.916  8690 10570 I PTCommittedOperation: Receive new configuration for com.google.android.gms.clearcut.public
+11-03 18:23:42.926  8690 10569 I PTCommittedOperation: Receive new configuration for com.google.android.gms
+11-03 18:23:42.926  8690 10569 I PTCommittedOperation: Running Fixer Framework for com.google.android.gms
+11-03 18:23:42.930  8690 10560 I PTCommittedOperation: Receive new configuration for com.google.android.gms.common.download
+11-03 18:23:42.932  8690 10569 I PTCommittedOperation: Receive new configuration for com.google.android.gms.chromesync
+11-03 18:23:42.934  8690 10568 I PTCommittedOperation: Receive new configuration for com.google.android.gms.autofill
+11-03 18:23:42.936  8765  8838 E MDD     : FileGroupManager: Trying to add expired group enpromo-state-config.
+11-03 18:23:42.937  8765  8838 W MDD     : MDDManager class cqfz
+11-03 18:23:42.940  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:68 task received [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.941  1536  1536 I DialerTaskReceiver: com.android.voicemail.impl.scheduling.TaskReceiver.onReceive:88 scheduling new job [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.941  1536  1536 I DialerTaskSchedulerJobService: com.android.voicemail.impl.scheduling.TaskSchedulerJobService.scheduleJob:139 scheduling job with 1 tasks [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.941  8690 10201 I PTCommittedOperation: Receive new configuration for com.google.android.gms.smartdevice
+11-03 18:23:42.942  1536  1536 I DialerTaskSchedulerJobService: com.android.voicemail.impl.scheduling.TaskSchedulerJobService.scheduleJob:182 running job instantly. [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.944  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 154 [CONTEXT service_id=218 ]
+11-03 18:23:42.945  1536  1536 I DialerTaskSchedulerJobService: com.android.voicemail.impl.scheduling.TaskSchedulerJobService.scheduleJob:185 job 1 scheduled [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.955  1536  1536 I DialerTaskSchedulerJobService: com.android.voicemail.impl.scheduling.TaskSchedulerJobService.onStartJob:99 starting 1 [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.955  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.onStartJob:400 onStartJob [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.956  1536  1536 I DialerTasks: com.android.voicemail.impl.scheduling.Tasks.createTask:59 Task.createTask create task:com.android.voicemail.impl.ActivationTask [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: The extras of the task (com.google.android.gms.ocr.service.ModelCleanUpTaskService:type_[4]) are not valid to be persisted so that the task is not persisted [CONTEXT service_id=218 ]
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: java.lang.IllegalArgumentException: Only the following extra parameter types are supported: Integer, Long, Double, String, Boolean, and nested Bundles with the same restrictions.
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at awaz.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at byui.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):44)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at bytb.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at bytb.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):20)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at bytb.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at byot.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:23:42.957  8690  8812 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:23:42.957  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCreate:81 retry #1 for com.android.voicemail.impl.ActivationTask@4227484 queued, executing in 5000 [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.959  8765 10914 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.959  8765 10914 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.960  8765 10914 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.961  8765 10914 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:42.961  8765 10902 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:42.961  8765 10902 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:42.961  8765 10902 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:42.962  8765 10902 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.common.download [CONTEXT service_id=340 ]
+11-03 18:23:42.963  8765  8976 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.963  8765 10902 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:42.963  8765  8976 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:42.964  8765  8976 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:42.967  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:42.969  8765  8976 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:42.970  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.runNextTask:345 minimal wait time:4988 [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.970  8765 10900 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.970  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.sleep:355 sleep for 4988 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:42.970  8765 10914 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.972  8765 10910 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.972  8765 10910 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:42.972  8765 10910 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:42.973  8765 10900 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:42.973  8765 10900 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:42.974  8765 10900 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.chromesync [CONTEXT service_id=340 ]
+11-03 18:23:42.975  8765 10898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.975  8765 10910 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:42.975  8765 10898 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:42.976  8765 10898 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:42.976  8765 10898 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:42.976  8765 10898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.976  8765 10898 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.977  8765 10913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.977  8765 10898 V Backup  : [PhenotypeConfigIO] Phenotype broadcast received for different package
+11-03 18:23:42.977  8765 10913 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-03 18:23:42.977  8765 10910 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-03 18:23:42.977  8765 10910 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+11-03 18:23:42.977  8765 10910 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.autofill [CONTEXT service_id=340 ]
+11-03 18:23:42.979  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:42.979  8765 10910 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-03 18:23:42.979  8765 10902 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+11-03 18:23:42.979  8765 10910 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+11-03 18:23:42.980  8765 10910 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:42.980  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 117 uptime_millis: 117 exec_start_elapsed_seconds: 154 [CONTEXT service_id=218 ]
+11-03 18:23:42.982  8765 10910 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+11-03 18:23:42.984  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:42.989  8765  8873 I GmsSyncPolicyEngine: Periodic sync 4 disabled by policy, cancelled.
+11-03 18:23:42.990  5034  5170 I TestRunner: finished: currentLevelConstraintAndQuotedSpacedPathsArePreserved(com.jarvis.files.FolderCommandTest)

@@ -1,0 +1,31 @@
+11-03 18:22:27.786  5034  5170 I TestRunner: started: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)
+11-03 18:22:27.787  1701  2775 I AiAiCaptions: stop(): stop is called but CaptionsTriggerImpl already stopped
+11-03 18:22:27.788  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:27.788  1701  2121 I AiAiEcho: Predicting[0]:
+11-03 18:22:27.788  1701  2121 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:22:27.788  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:27.789  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:27.789  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:22:27.789  1701  2121 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:22:27.916  1701  2146 I SP.AiAi : Sync for text-classifier-actions succeeded in 16007 ms: {added: [tc_model_e202592534082c01f9642f709a627dd9], metadata: false
+11-03 18:22:27.925  1701  2146 I SP.AiAi : Sync for text-classifier-langid succeeded in 15799 ms: {added: [tc_model_436dc3fd14049b93d75788a8c0cc8eea], metadata: false
+11-03 18:22:27.932  1701  2146 I SP.AiAi : GC for 'text-classifier-actions' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.933  1701  2146 I SP.AiAi : GC for 'text-classifier-langid' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:22:27.933  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.933  1701  2146 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:22:27.934  1701  4093 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-langid', download version 1941001461.
+11-03 18:22:27.934  1701  5567 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-actions', download version 1140547708.
+11-03 18:22:27.935  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.935  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.936  1701  2578 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:22:27.936  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip
+11-03 18:22:27.936  1701  2578 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:22:27.936  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip
+11-03 18:22:27.942  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-langid/tc_model_436dc3fd14049b93d75788a8c0cc8eea/model.smfb.
+11-03 18:22:27.945  1701  2135 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-actions/tc_model_e202592534082c01f9642f709a627dd9/en.model.
+11-03 18:22:28.163  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:28.168  5101  5113 W System  : A resource failed to call AbstractCursor.close.
+11-03 18:22:28.174  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:28.185  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:28.197  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:22:28.207  5034  5170 I TestRunner: finished: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)

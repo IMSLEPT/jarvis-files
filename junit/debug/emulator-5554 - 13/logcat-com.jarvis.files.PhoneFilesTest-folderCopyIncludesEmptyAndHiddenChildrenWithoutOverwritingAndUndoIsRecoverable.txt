@@ -1,0 +1,86 @@
+11-03 18:24:28.986  5034  5170 I TestRunner: started: folderCopyIncludesEmptyAndHiddenChildrenWithoutOverwritingAndUndoIsRecoverable(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:28.993  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.000  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.014  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.017  4990  5029 W System  : A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+11-03 18:24:29.017  4990  5029 W System  : java.lang.Throwable: Explicit termination method 'HardwareBuffer.close' not called
+11-03 18:24:29.017  4990  5029 W System  : 	at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+11-03 18:24:29.017  4990  5029 W System  : 	at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+11-03 18:24:29.017  4990  5029 W System  : 	at android.hardware.HardwareBuffer.<init>(HardwareBuffer.java:272)
+11-03 18:24:29.025  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.034  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.043  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.058  1682  3746 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.062  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.071  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.078  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.078  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.078  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.079  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.094  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.129  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.129  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.129  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.130  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.130  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.130  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.130  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.130  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.136  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.141  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.149  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.159  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.164  1682  2316 W ModernMediaScanner: Failed to visit /storage/emulated/0/.JarvisTrasferimenti/d373f0fb-a305-4f63-8d1a-3dbe6e80a064: java.nio.file.NoSuchFileException: /storage/emulated/0/.JarvisTrasferimenti/d373f0fb-a305-4f63-8d1a-3dbe6e80a064
+11-03 18:24:29.167  1682  2316 I MediaProvider: Deleted 7 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.168  1682  2316 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 7 deletes
+11-03 18:24:29.184  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.185  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 5 uptime_millis: 5 exec_start_elapsed_seconds: 200 [CONTEXT service_id=218 ]
+11-03 18:24:29.199  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.200  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.201  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.202  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.202  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.203  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.204  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.208  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.211  1682  2316 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 11 items in 41ms, 8 inserts 3 updates 0 deletes
+11-03 18:24:29.229  1682  6432 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 11 items in 14ms, 0 inserts 3 updates 0 deletes
+11-03 18:24:29.229  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Destination/Source (1) to content://media/external_primary/file/1000000180
+11-03 18:24:29.232  1682 10625 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Destination/Source (1): java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Destination/Source (1)
+11-03 18:24:29.235  1682 10625 I MediaProvider: Deleted 8 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.236  1682 10625 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 8 deletes
+11-03 18:24:29.241  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.242  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.242  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.243  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.244  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.245  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.246  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.249  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.251  1682 10625 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 11 items in 15ms, 8 inserts 0 updates 0 deletes
+11-03 18:24:29.261  1682  6540 W ModernMediaScanner: Failed to visit /storage/emulated/0/.JarvisCestino/1793730269219_8009_Source (1): java.nio.file.NoSuchFileException: /storage/emulated/0/.JarvisCestino/1793730269219_8009_Source (1)
+11-03 18:24:29.265  1682  6540 I MediaProvider: Deleted 8 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.266  1682  6540 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 5ms, 0 inserts 0 updates 8 deletes
+11-03 18:24:29.271  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.272  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.273  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.273  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.274  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.275  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.275  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.280  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.282  1682  6540 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 11 items in 16ms, 8 inserts 3 updates 0 deletes
+11-03 18:24:29.291  1682  6432 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 11 items in 6ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.292  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Destination/Source (1) to content://media/external_primary/file/1000000196
+11-03 18:24:29.304  1682  2316 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.308  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.314  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 15 uptime_millis: 15 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.316  1682  7503 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:29.322  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.330  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.344  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.346  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.348  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.352  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:29.355  1682  6699 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.357  5034  5170 I TestRunner: finished: folderCopyIncludesEmptyAndHiddenChildrenWithoutOverwritingAndUndoIsRecoverable(com.jarvis.files.PhoneFilesTest)

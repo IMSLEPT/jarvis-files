@@ -1,0 +1,60 @@
+11-03 18:23:15.021  5034  5170 I TestRunner: started: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)
+11-03 18:23:15.026  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.026  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.027  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.033  8690  8690 I Fido    : [CableAuthenticatorChimeraService] Unregistering receiver.
+11-03 18:23:15.034  8690  8690 I Fido    : [CableAuthenticatorChimeraService] Registering broadcast receiver.
+11-03 18:23:15.036  8690  8690 I Fido    : [AuthenticatorChimeraService] Unregistered the broadcast receiver [CONTEXT service_id=287 ]
+11-03 18:23:15.036  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.040  1682  2316 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.043  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.049  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.059  8765  8987 W gle.android.gms: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z (max-target-p, reflection, denied)
+11-03 18:23:15.059  8765  8987 W gle.android.gms: Accessing hidden method Landroid/os/PowerManager;->isLightDeviceIdleMode()Z (max-target-s, reflection, denied)
+11-03 18:23:15.061  8690  9008 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 136805]
+11-03 18:23:15.068  8765  8895 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:23:15.074  8765  8895 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:23:15.080  3378  3587 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-03 18:23:15.080  3378  3587 W libc    : Access denied finding property "service.adb.tls.port"
+11-03 18:23:15.078  3378  3378 W binder:3378_4: type=1400 audit(0.0:96): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:23:15.078  3378  3378 W binder:3378_4: type=1400 audit(0.0:97): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:23:15.105  8690  9061 I NearbySharing: FastInitiation warming period has ended [CONTEXT service_id=194 ]
+11-03 18:23:15.109  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:15.113  8765  8895 I NewModuleOp: Schedule LanguageProfileGcmTaskChimeraService tasks. [CONTEXT service_id=167 ]
+11-03 18:23:15.113  8765  8895 I LPGcmTaskChimeraService: Scheduling sync task. [CONTEXT service_id=167 ]
+11-03 18:23:15.114  5034  5170 I JarvisTest: [FileOps] Destinazione completa: [Sposta  JarvisTest/Download/fattura_tim.pdf  →  JarvisTest/Download/PDF/, Sposta  JarvisTest/Download/bolletta_enel_marzo.pdf  →  JarvisTest/Download/PDF/]
+11-03 18:23:15.114   312  9526 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+11-03 18:23:15.115  8765  8895 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+11-03 18:23:15.117  8765  8895 I GmsSyncPolicyEngine: Periodic sync 6 disabled
+11-03 18:23:15.119  3378  3587 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+11-03 18:23:15.126  8690  8690 W SystemServiceRegistry: No service published for: persistent_data_block
+11-03 18:23:15.131  8765  8901 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 1 Force : false UserId : 0 Start time : 126936
+11-03 18:23:15.135  8765  8895 I LSRModuleInit: Attempting to change container components state to enabled: true [CONTEXT service_id=277 ]
+11-03 18:23:15.136  5034  5170 I JarvisTest: [FileOps] OK destinazione come percorso completo
+11-03 18:23:15.136  8690  8702 I .gms.persistent: Background concurrent copying GC freed 374187(17MB) AllocSpace objects, 9(180KB) LOS objects, 49% free, 12MB/25MB, paused 38us,22us total 115.661ms
+11-03 18:23:15.140  1682  7381 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.144  8690  9001 I LSR     : Handling LSR module init in persistent process [CONTEXT service_id=277 ]
+11-03 18:23:15.144  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:15.145  8765  8895 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:23:15.146  8765  8895 I Google Maps Android API: Is maps_core feature installed? 2 [CONTEXT service_id=71 ]
+11-03 18:23:15.146  8765  8895 I Google Maps Android API: cutoffSize=2147483648, internalFreeBytes=5075963904
+11-03 18:23:15.146  8765  8895 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:23:15.147  8690  9077 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+11-03 18:23:15.147  8690  9001 I LSR     : Refreshing periodic location reporting state [CONTEXT service_id=277 ]
+11-03 18:23:15.149  1682  3746 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.152  8690  9077 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+11-03 18:23:15.152  8690  8844 I LSR     : Reporting should be enabled: false [CONTEXT service_id=277 ]
+11-03 18:23:15.152  8690  8844 I LSR     : Stopping periodic location reporting [CONTEXT service_id=277 ]
+11-03 18:23:15.153  1682  7524 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf
+11-03 18:23:15.154  1682  7524 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:15.155  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/fattura_tim.pdf to null
+11-03 18:23:15.156  8765  8987 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: maps_core:-1
+11-03 18:23:15.158  8765  8895 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+11-03 18:23:15.158  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.159  1682  7524 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf
+11-03 18:23:15.160  8765  8901 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+11-03 18:23:15.161  1682  7524 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+11-03 18:23:15.162  1682  5362 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:15.163  8690  9008 W MagicTether: [TetherListenerService] Invalid account list. [CONTEXT service_id=276 ]
+11-03 18:23:15.163  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisTest/Download/PDF/fattura_tim.pdf to null
+11-03 18:23:15.164  5034  5170 I TestRunner: finished: moveWithFullTargetPath(com.jarvis.files.FileOpsTest)

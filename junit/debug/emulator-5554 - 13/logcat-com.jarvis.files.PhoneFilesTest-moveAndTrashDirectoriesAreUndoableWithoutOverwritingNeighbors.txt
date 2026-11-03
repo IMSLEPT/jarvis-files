@@ -1,0 +1,63 @@
+11-03 18:24:29.358  5034  5170 I TestRunner: started: moveAndTrashDirectoriesAreUndoableWithoutOverwritingNeighbors(com.jarvis.files.PhoneFilesTest)
+11-03 18:24:29.382  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.392  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.401  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.410  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:29.425  1682  6699 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.428  1682  6540 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.439  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.448  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.450  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 8 uptime_millis: 8 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.461  1682  7381 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/Empty: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/Empty
+11-03 18:24:29.462  1682  7381 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.464  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.466  1682  7381 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 1 items in 3ms, 1 inserts 0 updates 0 deletes
+11-03 18:24:29.470  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/Empty: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/Empty
+11-03 18:24:29.471  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.472  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Empty to null
+11-03 18:24:29.473  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1): java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1)
+11-03 18:24:29.475  1682  6166 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1): java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1)
+11-03 18:24:29.475  1682  7511 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.475  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 1 deletes
+11-03 18:24:29.475  1682  6166 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.476  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1) to null
+11-03 18:24:29.477  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.479  1682  6166 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 1 items in 3ms, 1 inserts 0 updates 0 deletes
+11-03 18:24:29.482  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 1 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.483  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Empty to content://media/external_primary/file/1000000205
+11-03 18:24:29.484  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1): java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1)
+11-03 18:24:29.484  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.485  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Destination/Empty (1) to null
+11-03 18:24:29.487  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.488  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.508  1682  2336 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/Deep: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/Deep
+11-03 18:24:29.510  1682  2336 I MediaProvider: Deleted 6 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.510  1682  2336 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 6 deletes
+11-03 18:24:29.513  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.514  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.515  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.515  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.516  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.517  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.520  1682  2336 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 7 items in 9ms, 6 inserts 1 updates 0 deletes
+11-03 18:24:29.524  1682  7511 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisPhoneBrowser/Source/Deep: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisPhoneBrowser/Source/Deep
+11-03 18:24:29.525  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:24:29.526  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Deep to null
+11-03 18:24:29.533  1682 10625 W ModernMediaScanner: Failed to visit /storage/emulated/0/.JarvisCestino/1793730269501_3340_Deep: java.nio.file.NoSuchFileException: /storage/emulated/0/.JarvisCestino/1793730269501_3340_Deep
+11-03 18:24:29.536  1682 10625 I MediaProvider: Deleted 6 0 0 0 0 0 0 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:24:29.537  1682 10625 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 6 deletes
+11-03 18:24:29.542  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.543  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.543  8690  8812 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.544  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.545  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.545  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 201 [CONTEXT service_id=218 ]
+11-03 18:24:29.546  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.547  1682 10625 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:29.550  1682 10625 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 7 items in 12ms, 6 inserts 1 updates 0 deletes
+11-03 18:24:29.559  1682 10625 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.560  1682  7511 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 7 items in 8ms, 0 inserts 1 updates 0 deletes
+11-03 18:24:29.561  5034  6741 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisPhoneBrowser/Source/Deep to content://media/external_primary/file/1000000212
+11-03 18:24:29.562  1682  3746 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:29.569  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:29.573  5034  5170 I TestRunner: finished: moveAndTrashDirectoriesAreUndoableWithoutOverwritingNeighbors(com.jarvis.files.PhoneFilesTest)

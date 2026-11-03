@@ -1,0 +1,56 @@
+11-03 18:23:05.449  5034  5170 I TestRunner: started: invalidAiSuccessOrNotFoundCannotMasqueradeAsCompletedCommand(com.jarvis.files.CommandTest)
+11-03 18:23:05.467  1166  1401 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.476  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.487  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.497  1536  3759 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.handleEvent:527 OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT PhoneAccountHandle: [ComponentName: com.android.phone/com.android.services.telephony.TelephonyConnectionService subId: 1] [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:05.498  1536  1536 I DialerRetryPolicy: com.android.voicemail.impl.scheduling.RetryPolicy.onCompleted:118 discarding deferred status [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:05.500  1536  1536 I DialerTaskExecutor: com.android.voicemail.impl.scheduling.TaskExecutor.prepareStop:371 no more tasks, stopping service if no task are added in 5000 millis [CONTEXT enable_persistent_logger=true ]
+11-03 18:23:05.500  1536  1536 I DialerLogcatLoggingBindings: com.android.dialer.logging.logcat.LogcatLoggingBindings.logImpression:41 Impression: VVM_AUTO_RETRY_ACTIVATION
+11-03 18:23:05.501  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.507  6937  6937 W rules.WifiRx: FenceState currentState is not true
+11-03 18:23:05.515   313   313 D Zygote  : Forked child process 8132
+11-03 18:23:05.517  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.521  8132  8132 I ecovery_process: Using CollectorTypeCC GC.
+11-03 18:23:05.521  8132  8132 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:05.521  8132  8132 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:05.524   399   423 I adbd    : jdwp connection from 8132
+11-03 18:23:05.529  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:23:05.540  8132  8132 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10138; state: ENABLED
+11-03 18:23:05.542  8132  8132 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.543  8132  8132 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.544  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.544  8132  8132 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.546  8132  8132 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+11-03 18:23:05.548   835   924 D EGL_emulation: app_time_stats: avg=1075.32ms min=18.39ms max=2505.20ms count=3
+11-03 18:23:05.551  1682  5362 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.551  8132  8132 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.apps.maps' set to: 'default'
+11-03 18:23:05.552  8132  8132 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.apps.maps: false
+11-03 18:23:05.552  8132  8132 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:23:05.553  8132  8132 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.553  8132  8132 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:23:05.557  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.563  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.570  8132  8132 I ecovery_process: System.exit called, status: 0
+11-03 18:23:05.570  8132  8132 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-03 18:23:05.572  1682  6166 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:23:05.577   516   556 I libprocessgroup: Successfully killed process cgroup uid 10138 pid 8132 in 0ms
+11-03 18:23:05.578   313   313 I Zygote  : Process 8132 exited cleanly (0)
+11-03 18:23:05.578  1166  3465 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.587  1166  3377 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 18 uptime_millis: 18 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+11-03 18:23:05.589   313   313 D Zygote  : Forked child process 8163
+11-03 18:23:05.593  8163  8163 I ecovery_process: Using CollectorTypeCC GC.
+11-03 18:23:05.594  8163  8163 W ecovery_process: Unexpected CPU variant for x86: x86_64.
+11-03 18:23:05.594  8163  8163 W ecovery_process: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:23:05.597   399   423 I adbd    : jdwp connection from 8163
+11-03 18:23:05.609  1378  1378 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.api.phone.service.SmsRetrieverApiService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:23:05.617  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.619  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:23:05.622  1682  7381 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.627  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.628  8163  8163 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10138; state: ENABLED
+11-03 18:23:05.632  8163  8163 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.632  8163  8163 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.633  8163  8163 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps
+11-03 18:23:05.634  1682  6699 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:23:05.635  8163  8163 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/Maps/Maps.apk. target_sdk_version=35, uses_libraries=, library_path=/product/app/Maps/lib/x86_64:/product/app/Maps/Maps.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.apps.maps:/product/lib64:/system/product/lib64
+11-03 18:23:05.636  5034  5170 I TestRunner: finished: invalidAiSuccessOrNotFoundCannotMasqueradeAsCompletedCommand(com.jarvis.files.CommandTest)

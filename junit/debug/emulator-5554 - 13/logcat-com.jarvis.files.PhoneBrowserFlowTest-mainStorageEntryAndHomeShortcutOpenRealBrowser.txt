@@ -1,0 +1,153 @@
+11-03 18:24:25.731  5034  5170 I TestRunner: started: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)
+11-03 18:24:25.731   516  1167 W InputManager-JNI: Input channel object '3376368 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:24:25.746   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7db10
+11-03 18:24:25.746   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ec50
+11-03 18:24:25.747   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7e530
+11-03 18:24:25.747  1803  2466 I A       : group apa_head_suggest present without account in *
+11-03 18:24:25.747   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fd30
+11-03 18:24:25.750   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80e10
+11-03 18:24:25.750   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80d50
+11-03 18:24:25.750   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81350
+11-03 18:24:25.750   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fd90
+11-03 18:24:25.754  1803  2466 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.064S, appVersion = 13.17.16.23, status = OK, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT2M37.415S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT1M51.612S (ONE_TO_FIVE_MINUTES))
+11-03 18:24:25.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:25.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:25.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:25.763   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:25.773  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:25.782  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:25.791  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:25.801  5034  5170 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:24:25.811  5034  5170 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@3b636ed]
+11-03 18:24:25.813  5034  5170 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:24:25.818   835   913 D SplashScreenView: Build android.window.SplashScreenView{2b65a84 V.E...... ......ID 0,0-0,0}
+11-03 18:24:25.818   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:24:25.818   835   913 D SplashScreenView: Branding: view: android.view.View{d50f26d G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:24:25.819   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:24:25.824  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:24:25.827  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: PRE_ON_CREATE
+11-03 18:24:25.827  5034  5034 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:24:25.832  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: CREATED
+11-03 18:24:25.832  5034  5034 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@310b821
+11-03 18:24:25.833  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: STARTED
+11-03 18:24:25.833  5034  5034 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@310b821
+11-03 18:24:25.835  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: RESUMED
+11-03 18:24:25.835  5034  5034 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@310b821
+11-03 18:24:25.837  5034  5688 W Parcel  : Expecting binder but got null!
+11-03 18:24:25.852  5034  5034 D AutofillManager: Fill dialog is enabled:false, hints=[password, passwordAuto, creditCardNumber, creditCardSecurityCode, creditCardExpirationDate]
+11-03 18:24:25.869  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:24:25.869  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:24:25.920  1115  1115 W FrameTracker: Missing SF jank callback for vsyncId: 38367, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:24:25.920  1115  1115 W FrameTracker: Missing SF jank callback for vsyncId: 38419, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:24:25.947   516   541 W ziparchive: Unable to open '/data/app/~~bPL3vQ_XYJMq8ah52lYnuQ==/com.jarvis.files-0aQAERs5hpmUBXKYYp1Ung==/base.dm': No such file or directory
+11-03 18:24:25.948   516   541 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +131ms
+11-03 18:24:25.952  1682  7381 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:25.953  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:24:25.954  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:24:25.954  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:24:25.954  1115  2180 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:24:25.954  1115  2093 I s.nexuslauncher: oneway function results for code 2 on binder at 0x702293b004e0 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:24:25.958  1803  3056 I PBSessionCacheImpl: Deleted sessionId[7931471589631442] from persistence.
+11-03 18:24:25.959  1682  2336 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:25.961  1803  2828 W SearchServiceCore: Abort, client detached.
+11-03 18:24:25.967  1682  7503 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:24:25.973   516  1167 W InputManager-JNI: Input channel object '19184b1 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:24:25.975  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:24:25.975  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:24:25.975  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:24:25.975  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:24:25.975  1621  1621 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:24:25.979   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd81290
+11-03 18:24:25.997  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:24:25.997  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:24:26.001   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7fd30
+11-03 18:24:26.001   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80f90
+11-03 18:24:26.001   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd7ead0
+11-03 18:24:26.011  8690 11056 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 197 [CONTEXT service_id=218 ]
+11-03 18:24:26.016   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:26.018  8690 10334 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 13 uptime_millis: 13 exec_start_elapsed_seconds: 197 [CONTEXT service_id=218 ]
+11-03 18:24:26.052  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.059  3854 12261 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.104  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.108  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.111  3854 12266 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.115  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.119  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.124  3854 12272 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.400  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.407  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.410  3854 12277 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.416  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.420  3854 12283 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.422  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.463   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:26.595  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.600  3854 12289 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.600  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.606  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.608  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.610  3854 12295 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.778  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.779  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.781  3854 12301 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.783  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.787  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.790  3854 12307 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.849   516  2684 D WifiNl80211Manager: Scan result ready event
+11-03 18:24:26.849   516  2684 D WifiNative: Scan result ready event
+11-03 18:24:26.940  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.945  3854 12313 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:26.945  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.946  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.952  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:26.957  3854 12319 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:27.051  5034  5688 D EGL_emulation: app_time_stats: avg=42.54ms min=4.14ms max=103.01ms count=25
+11-03 18:24:27.069  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:27.070  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:27.073  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:27.075  3854 12325 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:24:27.077  3854  3854 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:24:27.090  5034  5034 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:24:27.090  5034  5034 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:24:27.184  1682  6540 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:27.187  1682  2316 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:24:27.193  1682  6166 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:24:27.201   835   913 D SplashScreenView: Build android.window.SplashScreenView{e2050dd V.E...... ......ID 0,0-0,0}
+11-03 18:24:27.201   835   913 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:24:27.201   835   913 D SplashScreenView: Branding: view: android.view.View{453f452 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:24:27.202   835   924 W Parcel  : Expecting binder but got null!
+11-03 18:24:27.202  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: PAUSED
+11-03 18:24:27.202  5034  5034 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@310b821
+11-03 18:24:27.217  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 199 [CONTEXT service_id=218 ]
+11-03 18:24:27.219  5808  5828 W Parcel  : Expecting binder but got null!
+11-03 18:24:27.229  8690  8757 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 28 uptime_millis: 28 exec_start_elapsed_seconds: 199 [CONTEXT service_id=218 ]
+11-03 18:24:27.233   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.234   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.234   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80570
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80570
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80570
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer handle 0x7fcaefd80ff0
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.246   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.259  1115  1115 D MainContentCaptureSession: Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=FULL
+11-03 18:24:27.260   516  1709 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:24:27.261  1115  2180 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=133, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@68f1e9f
+11-03 18:24:27.267   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.267   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.267   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.267   364   410 W TransactionTracing: Could not find layer id -1
+11-03 18:24:27.268  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:24:27.268  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode 1
+11-03 18:24:27.268  1044  1354 D BtGatt.ScanManager: uid 10119 isForeground true scanMode -1
+11-03 18:24:27.268  1115  1115 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+11-03 18:24:27.268  1115  1115 D MainContentCaptureSession: Flushing 16 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+11-03 18:24:27.269  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: STOPPED
+11-03 18:24:27.269  5034  5034 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@310b821
+11-03 18:24:27.274  5034  5034 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@310b821 in: DESTROYED
+11-03 18:24:27.274  5034  5034 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:24:27.276  5034  5170 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@3b636ed]
+11-03 18:24:27.276   516  2168 W InputManager-JNI: Input channel object '7dd53b3 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:24:27.278  5034  5170 I TestRunner: finished: mainStorageEntryAndHomeShortcutOpenRealBrowser(com.jarvis.files.PhoneBrowserFlowTest)
