@@ -1,0 +1,63 @@
+11-03 18:07:11.658  4395  4511 I TestRunner: started: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:07:11.690  1589  1628 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf
+11-03 18:07:11.700  1589  1628 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 29ms, 0 inserts 0 updates 0 deletes
+11-03 18:07:11.726  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:11.746  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:11.769  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:11.803  1686  1686 W YT.MDX.yxq: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-03 18:07:11.804  1686  1686 W YT.MDX.yxq: CastAppId for type 0 not found. Defaulting to mainCastAppId.
+11-03 18:07:11.805  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:11.837  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf to null
+11-03 18:07:11.842  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:11.855   483  1822 D ConnectivityService: requestNetwork for uid/pid:10124/1686 activeRequest: null callbackRequest: 121 [NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:07:11.858  1686  2560 W YouTubeMusic: Unknown task tag mdx_background_scanner; aborting...
+11-03 18:07:11.860   483   713 D ConnectivityService: NetReassign [122 : null → 100] [c 1] [a 0] [i 1]
+11-03 18:07:11.860   483   706 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+11-03 18:07:11.860   483   706 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+11-03 18:07:11.860   483   706 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+11-03 18:07:11.860   483   706 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 10124 RequestorPkg: com.google.android.apps.youtube.music UnderlyingNetworks: Null] ]
+11-03 18:07:11.870  1493  1510 I .apps.wellbeing: Background young concurrent copying GC freed 24576(1288KB) AllocSpace objects, 0(0B) LOS objects, 12% free, 9056KB/10MB, paused 41us,21us total 150.531ms
+11-03 18:07:11.889  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:11.893  3877  3877 W GnpSdk  : Failed to get GrowthKitJobScheduler in GrowthKitBootCompletedBroadcastReceiver So GrowthKit failed to schedule jobs after package replaced / boot completed.
+11-03 18:07:11.893  3877  3877 W GnpSdk  : java.lang.NullPointerException: Unable to get GrowthKit Component from host app: com.google.android.calendar
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at cal.ufr.a(PG:15)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at com.google.android.libraries.internal.growth.growthkit.inject.GrowthKitBootCompletedBroadcastReceiver.onReceive(PG:1)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:07:11.893  3877  3877 W GnpSdk  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:07:11.902  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:11.922   483  1822 D ConnectivityService: requestNetwork for uid/pid:1000/483 asUid: 10122 activeRequest: null callbackRequest: 123 [NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10122 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:07:11.925   483   713 D ConnectivityService: NetReassign [124 : null → 100] [c 1] [a 1] [i 0]
+11-03 18:07:11.926   483   706 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10122 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:07:11.926   483   706 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10122 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:07:11.927   483   706 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10122 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:07:11.927   483   706 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=124, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10122 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:07:11.928  1388  1388 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+11-03 18:07:11.930  1493  1558 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=a460475c-e877-4a4e-9aba-97ac93e0c0a4, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.wellbeing.widget.WidgetFlagCheckWorker } ]
+11-03 18:07:11.931  1388  4644 D CellBroadcastContentProvider: database changed: notifying observers...
+11-03 18:07:11.933  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:11.944   282   282 D Zygote  : Forked child process 4646
+11-03 18:07:11.965  4646  4646 I d.configupdater: Using CollectorTypeCC GC.
+11-03 18:07:11.966  4646  4646 W d.configupdater: Unexpected CPU variant for x86: x86_64.
+11-03 18:07:11.966  4646  4646 W d.configupdater: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:07:11.971   380   393 I adbd    : jdwp connection from 4646
+11-03 18:07:12.018  4646  4646 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10105; state: ENABLED
+11-03 18:07:12.023  4646  4646 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/ConfigUpdater/ConfigUpdater.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/ConfigUpdater/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.configupdater:/product/lib64:/system/product/lib64
+11-03 18:07:12.031  4646  4646 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.configupdater' set to: 'default'
+11-03 18:07:12.031  4646  4646 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.configupdater: false
+11-03 18:07:12.031  4646  4646 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:07:12.031  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:12.033  1589  2113 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:07:12.034  4646  4646 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:12.034  4646  4646 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:12.038  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:12.041  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:12.042  4646  4646 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10105; state: ENABLED
+11-03 18:07:12.042  4395  4511 I TestRunner: finished: topLevelOnlyAndCancellationDoNotMoveNestedFiles(com.jarvis.files.OrganizeRegressionTest)

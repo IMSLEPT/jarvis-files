@@ -1,0 +1,330 @@
+11-03 18:07:53.814  4395  4511 I TestRunner: started: settingsButtonOpensAiSettings(com.jarvis.files.CommandFlowTest)
+11-03 18:07:53.842  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:53.858  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:53.870  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:53.872  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:53.884  3614  7235 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:53.884  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:53.898  1292  5581 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:07:53.903  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:53.911  1048  7116 I SemanticLocation: [MDD] ModelBundleMetadata: File not found [CONTEXT service_id=173 ]
+11-03 18:07:53.911  1048  7116 I SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:714)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at bzxt.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at bzxd.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at bzxd.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at cadn.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at cadn.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):36)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at cadn.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.k(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):17)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at cacs.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:53.911  1048  7116 I SemanticLocation: 	... 22 more
+11-03 18:07:53.915   281  7258 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:53.916   281  7261 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:53.917   281  7261 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301bf6a3f50
+11-03 18:07:53.917   281  7261 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+11-03 18:07:53.918   281  7262 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:53.918   281  7262 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301af6a4df0
+11-03 18:07:53.918   281  7262 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+11-03 18:07:53.919  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:53.924  1048  3534 D TrafficStats: tagSocket(269) with statsTag=0x1203, statsUid=10119
+11-03 18:07:53.945  4395  4511 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@b738f3]
+11-03 18:07:53.948  4395  4511 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:07:53.965   770   823 D SplashScreenView: Build android.window.SplashScreenView{5b28dcf V.E...... ......ID 0,0-0,0}
+11-03 18:07:53.965   770   823 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:07:53.965   770   823 D SplashScreenView: Branding: view: android.view.View{155a35c G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:07:53.966   770   832 W Parcel  : Expecting binder but got null!
+11-03 18:07:53.967  1292  1354 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+11-03 18:07:53.982  1292  7056 W Icing   : No valid account for uploading user actions
+11-03 18:07:53.991  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: PRE_ON_CREATE
+11-03 18:07:53.991  4395  4395 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:07:54.001  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: CREATED
+11-03 18:07:54.001  4395  4395 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@7d53b47
+11-03 18:07:54.002  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: STARTED
+11-03 18:07:54.003  4395  4395 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@7d53b47
+11-03 18:07:54.007  1048  1062 I .gms.persistent: Compiler allocated 4803KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+11-03 18:07:54.009  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: RESUMED
+11-03 18:07:54.010  4395  4395 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@7d53b47
+11-03 18:07:54.023  1048  7116 I SemanticLocation: [MDD] ModelBundleMetadata: File not found [CONTEXT service_id=173 ]
+11-03 18:07:54.023  1048  7116 I SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:714)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at bzxt.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at bzxd.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at cadb.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:54.023  1048  7116 I SemanticLocation: 	... 14 more
+11-03 18:07:54.032  4395  5129 W Parcel  : Expecting binder but got null!
+11-03 18:07:54.051  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.051  1474  1474 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():166 maybeFetchAndUpdate: start new task to fetch
+11-03 18:07:54.053  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.054  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.056  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.060   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d4f90
+11-03 18:07:54.060   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d49f0
+11-03 18:07:54.060   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d49f0
+11-03 18:07:54.060   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d4f90
+11-03 18:07:54.069  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.078  4395  4395 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:07:54.118  1292  1305 W gle.android.gms: Cleared Reference was only reachable from finalizer (only reported once)
+11-03 18:07:54.123  1292  1305 I gle.android.gms: Background concurrent copying GC freed 163434(7732KB) AllocSpace objects, 68(4348KB) LOS objects, 49% free, 12MB/25MB, paused 2.222ms,21us total 768.104ms
+11-03 18:07:54.148  1474  1474 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:07:54.158  1292  7056 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+11-03 18:07:54.162  1029  1029 W FrameTracker: Missed SF frame:UNKNOWN: 80, 17951, 27884818, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:54.162  1029  1029 W FrameTracker: Missing SF jank callback for vsyncId: 17968, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:54.162  1029  1029 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 18108, 15310151, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:54.162  1029  1029 W FrameTracker: Missing SF jank callback for vsyncId: 18123, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:54.224  1048  1345 E bwfc    : Phenotype API error. Event # edax@80e8c557, EventCode: 5 [CONTEXT service_id=51 ]
+11-03 18:07:54.224  1048  1345 E bwfc    : bwdx: 29501: Stale snapshot for com.google.android.apps.messaging#com.google.android.apps.messaging(change count changed - expected 1  but was 0)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at bwfg.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):16)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at bwff.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.224  1048  1345 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+11-03 18:07:54.224  1048  1345 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.apps.messaging#com.google.android.apps.messaging(change count changed - expected 1  but was 0), resolution=null}]
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.224  1048  1345 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:54.230  3157  3962 W PhenotypeFlagCommitter: Committing snapshot for com.google.android.apps.messaging#com.google.android.apps.messaging failed, retrying
+11-03 18:07:54.261  1048  2908 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1793729274260) [CONTEXT service_id=51 ]
+11-03 18:07:54.287   483   493 I system_server: Background concurrent copying GC freed 555345(20MB) AllocSpace objects, 22(868KB) LOS objects, 50% free, 22MB/44MB, paused 59us,41us total 463.063ms
+11-03 18:07:54.309   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d4ff0
+11-03 18:07:54.329  1048  1063 I .gms.persistent: Background young concurrent copying GC freed 415794(14MB) AllocSpace objects, 6(264KB) LOS objects, 18% free, 40MB/49MB, paused 623us,33us total 1.294s
+11-03 18:07:54.367  1048  2908 I HeterodyneSyncScheduler: Scheduling a periodic sync task every 14400 seconds, with flex of 1800 seconds [CONTEXT service_id=51 ]
+11-03 18:07:54.376  1048  2908 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+11-03 18:07:54.404   483   502 W ziparchive: Unable to open '/data/app/~~c6WVq5OzVSBYuY3P0bsrdw==/com.jarvis.files-x3MJwrZN9acR7OdNiED7Vg==/base.dm': No such file or directory
+11-03 18:07:54.422  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:54.430  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:07:54.432  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:07:54.432  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:07:54.432  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:07:54.433  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:07:54.441   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:54.442   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:54.445   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d5170
+11-03 18:07:54.445   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d5170
+11-03 18:07:54.445   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d5170
+11-03 18:07:54.445   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d5170
+11-03 18:07:54.448   483  1781 W InputManager-JNI: Input channel object '21b0ce6 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:07:54.449  1048  3411 W .gms.persistent: Long monitor contention with owner lowpool[16] (5564) at void bytb.n(byps, byps, int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6) waiters=0 in int bytb.l(bysm, aphn) for 276ms
+11-03 18:07:54.481   483   502 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +447ms
+11-03 18:07:54.492  1048  1345 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.platform.adservices) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:07:54.498  1029  1992 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:07:54.500  1029  6115 I s.nexuslauncher: oneway function results for code 2 on binder at 0x7bae084e6800 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:07:54.517   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d41b0
+11-03 18:07:54.517   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d4b10
+11-03 18:07:54.518  1792  2539 I PBSessionCacheImpl: Deleted sessionId[7883093077091400] from persistence.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.521  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:54.549  4395  4395 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:07:54.549  4395  4395 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:07:54.559   483   580 I RoleService: Granting default roles...
+11-03 18:07:54.560  5021  5035 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+11-03 18:07:54.567  5021  5153 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:07:54.568   483   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:07:54.576   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:54.576   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:54.577   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:54.577   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:54.580   991   991 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+11-03 18:07:54.580   770   770 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:07:54.581   991   991 D CarrierSvcBindHelper: No carrier app for: 0
+11-03 18:07:54.581   991   991 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+11-03 18:07:54.591  3157  3283 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c8d2c4a
+11-03 18:07:54.604  1292  2337 I PeopleGalProvider: Gal directories started.
+11-03 18:07:54.614  1292  2337 I PeopleGalProvider: Method 1 completed.
+11-03 18:07:54.614  1292  2337 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:07:54.629  1048  7127 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-03 18:07:54.643  3614  7283 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:54.648  1048  2339 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-03 18:07:54.652  1048  3411 W .gms.persistent: Long monitor contention with owner lowpool[16] (5564) at void bytb.n(byps, byps, int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6) waiters=0 in int bytb.l(bysm, aphn) for 109ms
+11-03 18:07:54.675  1048  5564 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.droidguard.DroidGuardGcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 1430 uptime_millis: 1430 exec_start_elapsed_seconds: 135 [CONTEXT service_id=218 ]
+11-03 18:07:54.707  1493  1919 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:07:54.741  1493  1577 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:07:54.775  1048  7126 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] idle (4791) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 1.967s
+11-03 18:07:54.798  1048  1063 I .gms.persistent: Background young concurrent copying GC freed 122134(5367KB) AllocSpace objects, 15(2292KB) LOS objects, 10% free, 44MB/49MB, paused 25us,36us total 107.581ms
+11-03 18:07:54.844  1048  3411 I NetworkScheduler: ignoring stale queue check message
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: The extras of the task (com.google.android.gms.ocr.service.ModelCleanUpTaskService:type_[4]) are not valid to be persisted so that the task is not persisted [CONTEXT service_id=218 ]
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: java.lang.IllegalArgumentException: Only the following extra parameter types are supported: Integer, Long, Double, String, Boolean, and nested Bundles with the same restrictions.
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at awaz.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at byui.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):44)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at bytb.n(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at bytb.u(:com.google.android.gms@231818047@23.18.18 (190800-535401451):20)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at bytb.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at byot.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.855  1048  5564 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.phenotype failed
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: java.lang.InterruptedException
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1081)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1369)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:278)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at bwel.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):77)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at com.google.android.gms.phenotype.sync.HeterodyneSyncTaskChimeraService.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at avzs.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:54.874  1048  2908 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:54.883  3157  3962 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+11-03 18:07:54.888  3157  3271 I BugleRcsEngine: [46] bejl.run: SystemBindingManager: SystemBinding enabled: false
+11-03 18:07:54.888  3157  3271 I BugleRcsEngine: [46] bejm.b: System Binding updated
+11-03 18:07:54.889  3157  3964 W BugleRcsEngine: [117] bemz.x: Unable to send diagnostic log
+11-03 18:07:54.891  3157  3295 W BugleAction: Null config in BugleSharedPrefs
+11-03 18:07:54.891  3157  3295 W BugleAction: Failed to get msisdn from Bugle
+11-03 18:07:54.901  3157  3962 W BugleRcsEngine: [115] bgdi.e: RcsProvisioningManager: ProvisioningEngineAdapter not found for SIM redacted-pii:sim_id[chars:20,last3:897]
+11-03 18:07:54.908  1292  5581 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-03 18:07:54.915  3157  3967 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:07:54.919  3157  3963 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:07:54.922  3055  3817 I CarrierServices: [64] fxv.d: Received Provisioning Event: [Bugle information (100)]
+11-03 18:07:54.922  3055  3817 I CarrierServices: [64] fxv.d: JibeService is running, passing event to provisioning engine.
+11-03 18:07:54.923  3055  3817 I CarrierServices: [64] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+11-03 18:07:54.923  3055  3817 I CarrierServices: [64] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+11-03 18:07:54.953  3055  3817 I CarrierServices: [64] fjp.y: Bugle is default SMS app: true
+11-03 18:07:54.961  3055  3898 I CarrierServices: [69] fjp.f: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+11-03 18:07:54.962  3157  3295 W BugleRcsEngine: [62] RcsProfileService.g: Result is null when getting value for id:4
+11-03 18:07:54.963  3157  3295 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:07:54.965  3055  3817 I CarrierServices: [64] fhf.b: Bugle has minimum required RCS permissions: true
+11-03 18:07:54.967  3055  3817 I CarrierServices: [64] fjp.x: Rcs is enabled from user settings: true
+11-03 18:07:54.968  3157  3164 I .apps.messaging: Method exceeds compiler instruction limit: 21884 in java.lang.Object uwq.i()
+11-03 18:07:54.975  3157  3295 I Bugle   : TelephonyManagerFactory: Returning per-subscription TelephonyManager (>= N) subscription{id:-1}
+11-03 18:07:54.978  3157  3963 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:07:54.978  3157  3295 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:07:54.978  3157  3295 I BugleBackup: Registering preference change listener for "buglesub_-1".
+11-03 18:07:54.979  3157  3295 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:07:54.983  3157  3295 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+11-03 18:07:54.983  3157  3295 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+11-03 18:07:54.987  3157  3295 W BugleAction: No default number, returning empty msisdn
+11-03 18:07:54.991  3157  3963 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+11-03 18:07:54.997  3157  3963 I BugleTransport: isChatAvailable: true, enabledTransport: 1
+11-03 18:07:54.999  1292  5581 I Icing   : Indexing done com.google.android.gms-apps
+11-03 18:07:55.003  3055  3817 I CarrierServices: [64] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+11-03 18:07:55.004  3055  3817 I CarrierServices: [64] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-03 18:07:55.014  1292  5581 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+11-03 18:07:55.055  1292  5581 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+11-03 18:07:55.055  1292  5581 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-03 18:07:55.057  1292  5581 I Icing   : Indexing done com.google.android.gms-apps
+11-03 18:07:55.105  1048  5564 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:9 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:07:55.109  1048  5564 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:9 result: 1 elapsed_millis: 53 uptime_millis: 53 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:07:55.114  1589  2097 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:07:55.115  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:55.126   770   823 D SplashScreenView: Build android.window.SplashScreenView{2769b8c V.E...... ......ID 0,0-0,0}
+11-03 18:07:55.126   770   823 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:07:55.126   770   823 D SplashScreenView: Branding: view: android.view.View{a2d12d5 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:07:55.130   770   832 W Parcel  : Expecting binder but got null!
+11-03 18:07:55.132  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: PAUSED
+11-03 18:07:55.132  4395  4395 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@7d53b47
+11-03 18:07:55.151  3614  7291 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:55.174  5343  5369 W Parcel  : Expecting binder but got null!
+11-03 18:07:55.183  1048  5564 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:07:55.200   483   502 W ziparchive: Unable to open '/data/app/~~RhBi2oKriadimrVtZafYHg==/com.jarvis.files.test-Hvw0-5mXi1Gnk6j6r89Deg==/base.dm': No such file or directory
+11-03 18:07:55.201   483   502 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +82ms
+11-03 18:07:55.216  1048  2908 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 78 uptime_millis: 78 exec_start_elapsed_seconds: 139 [CONTEXT service_id=218 ]
+11-03 18:07:55.229   483  1632 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:07:55.230   483   841 W InputManager-JNI: Input channel object 'dc2659f Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:07:55.232  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: STOPPED
+11-03 18:07:55.233  4395  4395 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@7d53b47
+11-03 18:07:55.234  1029  1992 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=61, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@70179a5
+11-03 18:07:55.235  1587  1843 I AiAiEcho: Predicting[0]:
+11-03 18:07:55.237   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:55.237   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:55.238  1587  1843 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:07:55.249   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d6190
+11-03 18:07:55.249   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d4b10
+11-03 18:07:55.249   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d49f0
+11-03 18:07:55.250   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d6190
+11-03 18:07:55.272  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@7d53b47 in: DESTROYED
+11-03 18:07:55.272  4395  4395 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:07:55.279  1792  1792 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:07:55.290  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:07:55.303  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:55.304   770   832 D EGL_emulation: app_time_stats: avg=351.77ms min=39.66ms max=773.53ms count=5
+11-03 18:07:55.305  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:07:55.308  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:55.322  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:07:55.323  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:07:55.323  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:07:55.323  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:07:55.324  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:07:55.325   483  1781 W InputManager-JNI: Input channel object 'f5e8317 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:07:55.337  1792  2286 I A       : group apa_head_suggest not present without account in *
+11-03 18:07:55.341  1792  2285 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.009S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M25.319S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT54.151S (THIRTY_SECONDS_TO_ONE_MINUTE))
+11-03 18:07:55.349   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d1e70
+11-03 18:07:55.349   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d3970
+11-03 18:07:55.349   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d18d0
+11-03 18:07:55.350  4395  4511 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@b738f3]
+11-03 18:07:55.355  1792  2285 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:07:55.358  4395  4511 I TestRunner: finished: settingsButtonOpensAiSettings(com.jarvis.files.CommandFlowTest)

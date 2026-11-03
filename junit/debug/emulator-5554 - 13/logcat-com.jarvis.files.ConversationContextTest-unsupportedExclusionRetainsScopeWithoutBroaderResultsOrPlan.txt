@@ -1,0 +1,99 @@
+11-03 18:07:24.371  4395  4511 I TestRunner: started: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
+11-03 18:07:24.404  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:24.404  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:24.405  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.420  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.421  1292  1292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:24.433  1292  5520 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+11-03 18:07:24.436  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.442  1292  5520 W ChimeraUtils: Module com.google.android.gms.dck_stub missing resource null(0)
+11-03 18:07:24.446  1292  5520 I DckStubModuleInit: Loading stub module components [CONTEXT service_id=289 ]
+11-03 18:07:24.448  1292  5520 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:1, deviceWccOverride:false [CONTEXT service_id=289 ]
+11-03 18:07:24.449  1292  5520 I Dck     : isDckModuleEligible: isAtLeastR:true, hasWccSupport:false, downloadAllowed:false [CONTEXT service_id=289 ]
+11-03 18:07:24.449  1292  5520 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+11-03 18:07:24.456  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.471  3757  3770 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+11-03 18:07:24.473  3757  3770 I RemoteProvisioner: Pool status 6, 5, 0, 6
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: Pool status.
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: Total: 6
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: Attested: 6
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: Unassigned: 5
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: Expiring: 0
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+11-03 18:07:24.473  3757  3770 I RemoteProvisioningService: No provisioning needed.
+11-03 18:07:24.484  1292  5520 I AlarmManager: set [name: ApiService type: 2 triggerAtMillis: 120000 windowMillis: -1 intervalMillis: 0]
+11-03 18:07:24.490  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.497  2925  3349 W SystemServiceRegistry: No service published for: persistent_data_block
+11-03 18:07:24.504  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.510  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.513  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.517  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.518  1292  5527 I RecoverableKeyStoreGms: [EnrollmentManager] Successfully downloaded certificates. [CONTEXT service_id=172 ]
+11-03 18:07:24.529   483  1530 D RecoverableKeyStoreMgr: Root of trust for recovery agent + 10120 is assigned for the first time to GoogleCloudKeyVaultServiceV1
+11-03 18:07:24.544   483  1530 I RecoverableKeyStoreMgr: Updating the certificate with the new serial number 10020
+11-03 18:07:24.545   483  1530 D RecoverableKeyStoreMgr: Getting and validating a random endpoint certificate
+11-03 18:07:24.554   483  1530 D RecoverableKeyStoreMgr: Saving the randomly chosen endpoint certificate to database
+11-03 18:07:24.574   483  1530 I RecoverableKeyStoreMgr: This is a certificate change. Snapshot didn't exist
+11-03 18:07:24.575  1292  5527 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:24.582   483   890 E RecoverySnapshotStorage: 	... 8 more
+11-03 18:07:24.585   483   890 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+11-03 18:07:24.595  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.598  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.601  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.604  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.610   281  5697 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:24.611  2925  3349 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+11-03 18:07:24.613  2925  3349 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+11-03 18:07:24.616  2925  3349 D TrafficStats: tagSocket(114) with statsTag=0x1809, statsUid=-1
+11-03 18:07:24.617  5021  5035 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+11-03 18:07:24.624   483   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:07:24.626   483   580 I RoleService: Granting default roles...
+11-03 18:07:24.629  3157  3294 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c8d2c4a
+11-03 18:07:24.630   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:24.632   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:24.632   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:24.633   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:24.635   770   770 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: [WrappingKeyManager] InternalRecoveryServiceException during wrapping key generation [CONTEXT service_id=172 ]
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: android.security.keystore.recovery.InternalRecoveryServiceException: Failed to import secret key.
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.wrapUnexpectedServiceSpecificException(RecoveryController.java:773)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:562)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at qiw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at qiw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at qfw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at com.google.android.gms.auth.folsom.operation.FolsomModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: Caused by: android.os.ServiceSpecificException: Failed to import secret key. (code 22)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3025)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at com.android.internal.widget.ILockSettings$Stub$Proxy.generateKey(ILockSettings.java:1574)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:549)
+11-03 18:07:24.638  1292  5527 W RecoverableKeyStoreGms: 	... 13 more
+11-03 18:07:24.639  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.640  4395  4511 I TestRunner: finished: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)

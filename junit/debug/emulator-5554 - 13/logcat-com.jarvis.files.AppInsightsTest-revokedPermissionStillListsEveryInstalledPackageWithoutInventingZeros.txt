@@ -1,0 +1,690 @@
+11-03 18:07:12.976  4395  4511 I TestRunner: started: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.VerifiedNumberProvider.lambda$getConstellationResponse$1:155 Failed to get constellation token.
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: nkq: 5005:
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at nov.au(PG:1)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at nnf.g(PG:2)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at npo.a(Unknown Source:2)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at npy.dm(PG:9)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at ncz.onTransact(PG:4)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:07:13.007  1437  1532 W DialerVerifiedNumberProvider: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:13.038  4738  4738 W iss     : AccountUtils: For b/73513912, load account content://com.google.android.gm.sapi/account.-2137146394 from MailAppProvider. Is account valid result: 1. [CONTEXT android_log_tag="AccountUtils" ]
+11-03 18:07:13.038  4738  4738 W iss     : AccountUtils: For b/73513912, load account content://com.google.android.gm.email.provider/account.-437561172?suppress_combined%3Dtrue from MailAppProvider. Is account valid result: 1. [CONTEXT android_log_tag="AccountUtils" ]
+11-03 18:07:13.042  1437  1531 W DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.lambda$syncConstellation$2:110 Constellation api request failed, status code: 5005
+11-03 18:07:13.048  4738  4738 W iss     : [Gmail] PhenotypeManagerImpl: Account is null, skip calling setAccount.
+11-03 18:07:13.058  1437  1459 I WM-WorkerWrapper: Worker result RETRY for Work [ id=2c52a8a4-8b78-42d6-84fd-4b31ae7ddb19, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker } ]
+11-03 18:07:13.059  4738  4820 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10145; state: ENABLED
+11-03 18:07:13.089  4738  4817 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10145; state: ENABLED
+11-03 18:07:13.125  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/a.pdf to set project id.: No such file or directory
+11-03 18:07:13.130  4738  4852 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+11-03 18:07:13.146  1048  1072 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:07:13.170  1589  1628 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png
+11-03 18:07:13.171  1589  1628 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+11-03 18:07:13.187  4738  4852 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+11-03 18:07:13.189  1587  1604 I ogle.android.as: Background young concurrent copying GC freed 88578(4372KB) AllocSpace objects, 0(0B) LOS objects, 7% free, 43MB/46MB, paused 1.757ms,20us total 582.368ms
+11-03 18:07:13.192  4738  4852 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:07:13.193  4738  4852 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:07:13.196  4738  4852 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-03 18:07:13.205  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:07:13.205  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.205  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.206  4738  4852 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-03 18:07:13.224  4738  4852 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-03 18:07:13.247  1048  2760 E AuthPII : [GoogleAccountDataServiceImpl] getToken() -> BAD_AUTHENTICATION. App: com.google.android.gms, Service: oauth2:https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/account.capabilities https://www.googleapis.com/auth/account.service_flags
+11-03 18:07:13.247  1048  2760 E AuthPII : abcp: Long live credential not available.
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:13.247  1048  2760 E AuthPII : Message is Long live credential not available.
+11-03 18:07:13.247  1048  2760 E AuthPII : abcp: Long live credential not available.
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:07:13.247  1048  2760 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:13.250  1048  2760 W Auth    : [AccountStateSyncher] Unable to look up account state from server: couldn't fetch accessToken [CONTEXT service_id=153 ]
+11-03 18:07:13.251  1048  2760 W Auth    : [GaiaServicesFlagManager] Services not available! [CONTEXT service_id=153 ]
+11-03 18:07:13.273  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000023
+11-03 18:07:13.273  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000023
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.273  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.285  1048  4791 I WakefulBroadcastRcvr: Processing wakeful broadcast: BootOrGmsUpdated
+11-03 18:07:13.291  1048  4791 I NearbyConnections: Runtime state initialization complete. Nearby connections setting is disabled [CONTEXT service_id=54 ]
+11-03 18:07:13.292  1792  1792 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-03 18:07:13.293  1792  1792 I CalRefreshTaskCtrl: #onDeviceInstallOrBoot(): Starting calendar refresh task.
+11-03 18:07:13.293  1792  1792 I CalRefreshTaskCtrl: PCP migration is enabled for calendar, skip the refresh.
+11-03 18:07:13.293  1792  1792 I CalWorkerScheduler: Scheduling calendar refresh task status check worker at device reboot or app install.
+11-03 18:07:13.301  1792  1792 I A       : Setting OMP browser to 2.
+11-03 18:07:13.303  1792  1792 I A       : Scheduling growth periodic tasks
+11-03 18:07:13.304  1792  1792 I WeatherWorkerScheduler: Scheduling weather workers.
+11-03 18:07:13.305  1792  1792 I PcpLocalCalendarStartup: #onDeviceInstallOrBoot(): Starting PCP calendar tasks.
+11-03 18:07:13.315  1792  2254 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-03 18:07:13.318  1048  1320 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore default scan mode. [CONTEXT service_id=54 ]
+11-03 18:07:13.318  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.318  1792  1792 I HotwordUpgradeTask: App version upgraded to 301194889: running speaker ID model upgrade tasks v2.
+11-03 18:07:13.319  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.319  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.319  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.319  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.319  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.320  1792  1792 I A       : Merging legacy hotword config map with new proto.
+11-03 18:07:13.320  1792  1792 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.320  1792  1792 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:07:13.320  1792  1792 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:07:13.320  1792  1792 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:07:13.321  1792  1792 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.321  1792  3030 I A       : Core Geller initializer successfully triggered.
+11-03 18:07:13.322  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.322  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.323  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.324  1792  1792 I A       : Merging legacy hotword config map with new proto.
+11-03 18:07:13.324  1792  1792 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.324  1792  1792 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:07:13.324  1792  1792 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:07:13.325  1792  1792 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:07:13.325  1792  1792 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.326  1792  1792 I HotwordUpgradeTask: #shouldShowNotificationForUserUpgrade - false [isUserSpeakerIdEnabled: false, isUserUpgraded: true]
+11-03 18:07:13.326  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.327  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.327  1792  1792 I A       : Using proto config with mendel
+11-03 18:07:13.327  1792  1792 I A       : Merging legacy hotword config map with new proto.
+11-03 18:07:13.328  1792  1792 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.328  1792  1792 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+11-03 18:07:13.328  1792  1792 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+11-03 18:07:13.328  1792  1792 I A       : Skipping. Expected model: 2 Found: 1
+11-03 18:07:13.328  1792  1792 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+11-03 18:07:13.329  1792  1792 I HotwordUpgradeTask: #shouldShowNotificationForModelDownload - false [shouldCheckHotwordModel: false, xGoogleHotwordModelPresent: true, isUserSpeakerIdEnabled: false]
+11-03 18:07:13.329  1292  3840 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+11-03 18:07:13.329  1792  1792 I HotwordUpgradeTask: Notification requirements not met. Do not show notification.
+11-03 18:07:13.333  1048  1320 I NearbyMediums: BluetoothAdapter's name was not set by Nearby Connections, ignoring call to restore device name [CONTEXT service_id=54 ]
+11-03 18:07:13.335  1792  2443 I A       : Using proto config with mendel
+11-03 18:07:13.341  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000018
+11-03 18:07:13.341  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000018
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.341  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.345  1792  1792 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+11-03 18:07:13.348  1792  1792 I A       : Util.isLowRamDevice: false, canUsePreemptibleAudioSource: true
+11-03 18:07:13.353   483   580 I RoleService: Granting default roles...
+11-03 18:07:13.358  1792  2443 I A       : Using proto config with mendel
+11-03 18:07:13.358  1792  2443 I A       : #Utterance files for modelType-2 found-0
+11-03 18:07:13.359  1792  1792 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [android.intent.action.BOOT_COMPLETED] package [com.google.android.googlequicksearchbox].
+11-03 18:07:13.359  1792  1792 I GnpSdk  : [ChimeBroadcastReceiver] Phenotype initialized.
+11-03 18:07:13.360  1792  2443 I A       : Utterances rename task completed.
+11-03 18:07:13.360  1792  1792 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [android.intent.action.BOOT_COMPLETED].
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications#com.google.android.googlequicksearchbox, using defaults.
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at f.a.a.e.a.c.c(PG:1)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.onReceive(PG:25)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:13.361  1792  1792 W SnapshotHandler: 	... 21 more
+11-03 18:07:13.362  1792  1792 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Submitting Broadcast execution [49004970] to tiktok executor.
+11-03 18:07:13.362  4738  4824 W ymo     : Toggling Chat components off.
+11-03 18:07:13.362  1792  2440 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [android.intent.action.BOOT_COMPLETED].
+11-03 18:07:13.367  1792  3030 E BistoWorker: Couldn't get logged in Google account.
+11-03 18:07:13.371  1792  2446 I NetworkRecognitionRnr: Using pair HTTP connection
+11-03 18:07:13.372  1048  2132 E AuthPII : [GoogleAccountDataServiceImpl] getToken() -> BAD_AUTHENTICATION. App: com.google.android.gms, Service: oauth2:https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/account.capabilities https://www.googleapis.com/auth/account.service_flags
+11-03 18:07:13.372  1048  2132 E AuthPII : abcp: Long live credential not available.
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:07:13.372  1048  2132 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:13.376  1048  2132 E AuthPII : Message is Long live credential not available.
+11-03 18:07:13.376  1048  2132 E AuthPII : abcp: Long live credential not available.
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at mbt.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at mca.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at lzx.m(:com.google.android.gms@231818047@23.18.18 (190800-535401451):48)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at lyz.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at lze.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at mcs.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at mcs.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at lye.hasFeatures(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.accounts.AbstractAccountAuthenticator$Transport.hasFeatures(AbstractAccountAuthenticator.java:313)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:288)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at aumo.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.os.Binder.transact(Binder.java:1164)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at aoey.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+11-03 18:07:13.376  1048  2132 E AuthPII : 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:13.379  1048  2132 W Auth    : [AccountStateSyncher] Unable to look up account state from server: couldn't fetch accessToken [CONTEXT service_id=153 ]
+11-03 18:07:13.380  1792  2524 I A       : [Upload] Connected
+11-03 18:07:13.386  1048  2132 W Auth    : [GaiaServicesFlagManager] Services not available! [CONTEXT service_id=153 ]
+11-03 18:07:13.414  1292  2825 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+11-03 18:07:13.416  1792  2398 W LocationOracle: getBestLocation(): no location is available
+11-03 18:07:13.418  1292  2825 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
+11-03 18:07:13.424  1292  2825 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.cast [CONTEXT service_id=231 ]
+11-03 18:07:13.424  1792  2254 W CronetNetworkRqstWrppr: Upload request without a content type.
+11-03 18:07:13.425  1292  2825 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+11-03 18:07:13.426  1292  2825 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+11-03 18:07:13.432   783   952 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox, using defaults.
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at f.a.a.i.a.i.b(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at f.a.a.i.a.g.c(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.f(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.a(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.o.a(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.o.a.a.b(PG:5)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.restart.a.b(PG:14)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.b(PG:3)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.b.run(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.apps.tiktok.tracing.ei.run(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.common.util.concurrent.dy.a(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.common.util.concurrent.cv.run(PG:4)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.common.util.concurrent.dz.run(PG:1)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.i.i.run(PG:2)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at com.google.android.libraries.i.p.run(PG:4)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:13.439  1792  2440 W SnapshotHandler: 	... 28 more
+11-03 18:07:13.461  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Immagini/b.png to null
+11-03 18:07:13.464  1792  1800 I earchbox:search: JIT allocated 77KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.amm.d()
+11-03 18:07:13.472  1792  2252 W LocationOracle: No location returned by GMS core getLastLocation()
+11-03 18:07:13.475  1792  1792 E A       : onError
+11-03 18:07:13.475  1792  1792 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+11-03 18:07:13.475  1792  1792 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:07:13.475  1792  1792 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:07:13.475  1792  1792 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:13.475  1792  1792 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:13.475  1792  1792 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+11-03 18:07:13.475  1792  1792 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+11-03 18:07:13.475  1792  1792 E A       : 	... 15 more
+11-03 18:07:13.475  1792  1792 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+11-03 18:07:13.475  1792  1792 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+11-03 18:07:13.475  1792  1792 E A       : 	... 12 more
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: Exception in upload method
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: com.google.android.apps.gsa.shared.r.d: Error code: 262182
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.ab.bk.d(PG:5)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.ar.d(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.bo.b(PG:5)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.e.a(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.libraries.gsa.c.a.a.run(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bu.cancel(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:17)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.bk.b.h.run(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.bf.execute(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.i(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:12)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.j.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.aj.a(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.m(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.c.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.l(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.common.util.concurrent.d.cancel(PG:8)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.c(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.r.a(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.e(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.c.c(PG:3)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:5)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.cd.g.a.f.e(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:13.477  1792  2286 E cr_CronetUrlRequestContext: 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+11-03 18:07:13.483  1792  2524 I NetworkRecognitionRnr: Using pair HTTP connection
+11-03 18:07:13.484  1792  2523 I A       : [Upload] Connected
+11-03 18:07:13.492  1792  1792 W A       : Failed to sync device settings.
+11-03 18:07:13.492  1792  1792 I A       : Retrying to sync device settings.
+11-03 18:07:13.508  1792  2440 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Finished Broadcast execution [49004970].
+11-03 18:07:13.510  1792  1792 I A       : Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.platform.contexttrigger.impl.ContextTriggerBroadcastReceiver_Receiver (has extras) }
+11-03 18:07:13.512  1792  2286 W A       : No value provided for the places model index flag.
+11-03 18:07:13.533  1589  1628 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:07:13.534  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/b.png to set project id.: No such file or directory
+11-03 18:07:13.534  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/b.png
+11-03 18:07:13.534  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/b.png
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:847)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.534  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.537  1048  1048 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+11-03 18:07:13.537  1048  1048 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+11-03 18:07:13.541  1792  2271 I A       : Cobalt: try to find ProjectConfig for given tags
+11-03 18:07:13.542  1792  2271 W A       : Cobalt: couldn't find ProjectConfig for given tags
+11-03 18:07:13.554  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000020
+11-03 18:07:13.554  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000020
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.554  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.555  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to set project id.: No such file or directory
+11-03 18:07:13.555  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:07:13.555  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.555  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.557  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf to set project id.: No such file or directory
+11-03 18:07:13.557  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:07:13.557  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.557  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.558  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000022
+11-03 18:07:13.558  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000022
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.558  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.560  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:07:13.565  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:07:13.566  1792  1792 I o       : processValidityUpdateForAllData
+11-03 18:07:13.575  1792  2271 I A       : Cobalt: try to find ProjectConfig for given tags
+11-03 18:07:13.575  1792  2271 W A       : Cobalt: couldn't find ProjectConfig for given tags
+11-03 18:07:13.579  1792  2271 I A       : Cobalt: try to find ProjectConfig for given tags
+11-03 18:07:13.579  1792  2271 W A       : Cobalt: couldn't find ProjectConfig for given tags
+11-03 18:07:13.580  1792  1792 I A       : Start work
+11-03 18:07:13.597  1792  2271 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=ed9f7549-08a9-4f57-9ef0-f9e6dab56bb9, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.chime.registration.tasks.PeriodicChimeRegistrationWorker } ]
+11-03 18:07:13.614  1792  2271 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1f0282af-1f79-4129-b008-1944521537f6, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.opa.worker.nudgeui.ResetOpaNgaQueryCounterTask } ]
+11-03 18:07:13.621  1589  1628 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 88ms, 0 inserts 0 updates 0 deletes
+11-03 18:07:13.629  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/a.pdf to null
+11-03 18:07:13.636  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:07:13.652  1792  2271 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f984e2cb-0c93-43a4-a8d3-73e5f0ae90e4, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.smartspace.task.LoggerTask } ]
+11-03 18:07:13.653  3055  3055 I CarrierServices: [2] CarrierServicesBaseApp.initialize:126 Initialized already, return.
+11-03 18:07:13.654  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:07:13.685  1792  1792 I BgTaskExecutorImpl: Starting EXCLUSIVE background task GELLER_OPA_REFRESH_TASK.
+11-03 18:07:13.689  1792  2443 I A       : Attempting to cache the data for corpora [21, 36].
+11-03 18:07:13.697  3055  3055 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.BOOT_COMPLETED
+11-03 18:07:13.699  1792  1792 I BgTaskExecutorImpl: Starting EXCLUSIVE background task OPA_NOTIFICATION_DELAYED_TRIGGER_SYNC.
+11-03 18:07:13.706  1589  1628 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf
+11-03 18:07:13.707  1292  3081 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=AMBIENT_ASSISTANT serviceId=32
+11-03 18:07:13.709  3055  3055 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+11-03 18:07:13.727  3157  3157 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+11-03 18:07:13.739  1792  1792 V ClearcutMetricXmitter: Transmission is done.
+11-03 18:07:13.748  3157  3479 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.756  1474  1591 I LauncherIconVisibilityInitializerBase: LauncherIconVisibilityInitializerBase.lambda$doUpdate$1():69 doUpdate() : Visible = false
+11-03 18:07:13.763   282   282 D Zygote  : Forked child process 4883
+11-03 18:07:13.791  4883  4883 I timeinitializer: Using CollectorTypeCC GC.
+11-03 18:07:13.798  4883  4883 W timeinitializer: Unexpected CPU variant for x86: x86_64.
+11-03 18:07:13.798  4883  4883 W timeinitializer: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:07:13.800  1048  1048 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:07:13.800  1048  1048 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:07:13.810   380   393 I adbd    : jdwp connection from 4883
+11-03 18:07:13.825   483   512 E system_server: No package ID 7f found for ID 0x7f0805a7.
+11-03 18:07:13.825   483   512 E system_server: No package ID 7f found for ID 0x7f150421.
+11-03 18:07:13.844  4883  4883 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10109; state: ENABLED
+11-03 18:07:13.846  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/a.pdf to set project id.: No such file or directory
+11-03 18:07:13.847  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:07:13.847  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.847  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.852  4883  4883 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/GoogleOneTimeInitializer/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.onetimeinitializer:/product/lib64:/system/product/lib64
+11-03 18:07:13.856  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000023
+11-03 18:07:13.856  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000023
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.856  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f080097.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0094.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0095.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f080096.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0093.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0093.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f080094.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0091.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0091.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f080095.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0092.
+11-03 18:07:13.857   483   512 E system_server: No package ID 7f found for ID 0x7f0f0092.
+11-03 18:07:13.863  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/b.png to set project id.: No such file or directory
+11-03 18:07:13.863  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/b.png
+11-03 18:07:13.863  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/b.png
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:847)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.863  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000018
+11-03 18:07:13.863  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000018
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.863  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.867  1589  1628 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 144ms, 0 inserts 0 updates 0 deletes
+11-03 18:07:13.868  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/PDF/a.pdf to null
+11-03 18:07:13.876  4883  4883 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.onetimeinitializer' set to: 'default'
+11-03 18:07:13.876  4883  4883 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.onetimeinitializer: false
+11-03 18:07:13.876  4883  4883 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:07:13.878  4883  4883 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:13.879  4883  4883 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:13.879  4883  4883 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+11-03 18:07:13.881  4883  4900 V OneTimeInitializer: OneTimeInitializer.initialize
+11-03 18:07:13.887  4883  4900 V OneTimeInitializer: Device Policy is not installed, doing nothing.
+11-03 18:07:13.898   282   282 D Zygote  : Forked child process 4902
+11-03 18:07:13.907  4902  4902 I ackageinstaller: Using CollectorTypeCC GC.
+11-03 18:07:13.908  4902  4902 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+11-03 18:07:13.908  4902  4902 W ackageinstaller: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:07:13.912   380   393 I adbd    : jdwp connection from 4902
+11-03 18:07:13.918  1029  1733 D EGL_emulation: app_time_stats: avg=1618.93ms min=1618.93ms max=1618.93ms count=1
+11-03 18:07:13.955  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to set project id.: No such file or directory
+11-03 18:07:13.955  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:07:13.955  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:13.955  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:13.958  3157  3479 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-03 18:07:13.971  1292  3840 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+11-03 18:07:13.990   281  4927 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:13.993   281  4929 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:13.993   281  4929 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301af6a45b0
+11-03 18:07:13.993   281  4929 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+11-03 18:07:13.993   281  4928 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:13.994   281  4928 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301bf6a2350
+11-03 18:07:13.994   281  4928 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+11-03 18:07:14.000  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:14.001  4902  4902 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10080; state: ENABLED
+11-03 18:07:14.010  4902  4902 D nativeloader: Configuring classloader-namespace-shared for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=33, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+11-03 18:07:14.025  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000020
+11-03 18:07:14.025  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000020
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:14.025  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:14.027  4902  4902 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.packageinstaller' set to: 'default'
+11-03 18:07:14.028  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:14.028  4902  4902 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.packageinstaller: false
+11-03 18:07:14.028  4902  4902 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:07:14.029  4902  4902 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:14.030  4902  4902 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: dhwp: FULL
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:14.044  1048  3409 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:14.053  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:14.056  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf to set project id.: No such file or directory
+11-03 18:07:14.061   281  4945 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:14.070   281  4951 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:14.070   281  4950 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:14.076  2765  2765 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10104; state: ENABLED
+11-03 18:07:14.079  3055  3817 I CarrierServices: [64] RcsStateSaver.saveRcsState:57 Saving RCS State
+11-03 18:07:14.080  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:14.081  3055  3817 I CarrierServices: [64] RcsStateSaver.saveRcsState:66 Old operation mode: 2
+11-03 18:07:14.083  1292  2826 D TrafficStats: tagSocket(89) with statsTag=0x30000408, statsUid=-1
+11-03 18:07:14.087   281  4950 I resolv  : res_nsend: used send_dg 93 terrno: 0
+11-03 18:07:14.087   281  4950 I resolv  : doQuery: rcode=0, ancount=2, return value=93
+11-03 18:07:14.088   281  4951 I resolv  : res_nsend: used send_dg 81 terrno: 0
+11-03 18:07:14.088   281  4951 I resolv  : doQuery: rcode=0, ancount=2, return value=81
+11-03 18:07:14.093  3055  3817 I CarrierServices: [64] RcsStateSaver.saveRcsState:71 New operation mode: 2
+11-03 18:07:14.096  1048  3409 D TrafficStats: tagSocket(225) with statsTag=0x30000407, statsUid=-1
+11-03 18:07:14.097  3055  3055 I CarrierServices: [2] RcsStateFetcher$1.onPostExecute:189 Finalizing migration for RCS state: Operation mode FULL STACK
+11-03 18:07:14.103  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:07:14.103  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:14.103  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:14.115   483   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:07:14.118   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:14.119   962   962 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+11-03 18:07:14.119   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:14.119   962   962 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+11-03 18:07:14.121  4395  4511 I TestRunner: finished: revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros(com.jarvis.files.AppInsightsTest)

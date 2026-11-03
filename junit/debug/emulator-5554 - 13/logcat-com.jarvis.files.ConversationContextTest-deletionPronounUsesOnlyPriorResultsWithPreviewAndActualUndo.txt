@@ -1,0 +1,120 @@
+11-03 18:07:25.132  4395  4511 I TestRunner: started: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)
+11-03 18:07:25.168  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.169  1292  5519 I MobileDataHub: Scheduling periodic tasks
+11-03 18:07:25.187  1292  5519 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+11-03 18:07:25.188  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.195  1048  2909 W .gms.persistent: Long monitor contention with owner netscheduler-queue-handler (3411) at void bytb.o(int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4) waiters=0 in void bytb.t(boolean, awbu) for 708ms
+11-03 18:07:25.207  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.208  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:07:25.208  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:07:25.208  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.208  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.222  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.249  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.253  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.258  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.263  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.276  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.294   483   493 I system_server: Background young concurrent copying GC freed 668654(17MB) AllocSpace objects, 60(1200KB) LOS objects, 39% free, 25MB/42MB, paused 54us,44us total 363.513ms
+11-03 18:07:25.330  1292  1354 I Icing   : MaintenanceDriver: Registering all GCM Tasks.
+11-03 18:07:25.361  1292  5527 I LSRModuleInit: Attempting to change container components state to enabled: true [CONTEXT service_id=277 ]
+11-03 18:07:25.368  2925  4238 D EGL_emulation: eglCreateContext: 0x7bae78492490: maj 3 min 0 rcv 3
+11-03 18:07:25.377  1048  4290 I LSR     : Handling LSR module init in persistent process [CONTEXT service_id=277 ]
+11-03 18:07:25.389  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.389  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.394  1292  5519 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.magictether, using defaults.
+11-03 18:07:25.397  1292  5519 W MagicTether: [MagicTetherInitializer] Invalid account list. [CONTEXT service_id=276 ]
+11-03 18:07:25.406  1292  5519 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.maps#com.google.android.gms, using defaults.
+11-03 18:07:25.408  1048  1048 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.magictether, using defaults.
+11-03 18:07:25.413  1048  5564 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+11-03 18:07:25.416  1292  5519 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:07:25.419  1292  5519 I Google Maps Android API: Is maps_core feature installed? 1 [CONTEXT service_id=71 ]
+11-03 18:07:25.420  1589  1628 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:07:25.421  1292  5519 I Google Maps Android API: cutoffSize=2147483648, internalFreeBytes=5207130112
+11-03 18:07:25.421  1292  5519 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+11-03 18:07:25.424  1292  5581 I LSR     : Empty geofences. [CONTEXT service_id=277 ]
+11-03 18:07:25.431  1292  5520 I GmsDebugLogger: [53] +maps_core:-1
+11-03 18:07:25.443  1292  5519 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+11-03 18:07:25.446  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:25.464  3614  5848 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:25.464  1048  4290 I LSR     : Refreshing periodic location reporting state [CONTEXT service_id=277 ]
+11-03 18:07:25.467  1292  5520 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+11-03 18:07:25.470  1048  5564 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+11-03 18:07:25.471  1048  3409 I LSR     : Reporting should be enabled: false [CONTEXT service_id=277 ]
+11-03 18:07:25.472  1048  3409 I LSR     : Stopping periodic location reporting [CONTEXT service_id=277 ]
+11-03 18:07:25.481  1048  5604 I TetheringManager: registerTetheringEventCallback:com.google.android.gms
+11-03 18:07:25.487  1048  5564 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+11-03 18:07:25.489  1292  1292 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+11-03 18:07:25.489  1292  1292 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+11-03 18:07:25.489  1292  1292 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+11-03 18:07:25.490  1292  5519 I MS_RegisterService: Tachyon host: www.google.com, Tachyon port: 443
+11-03 18:07:25.498  1048  2909 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:7 exec_start_elapsed_seconds: 109 [CONTEXT service_id=218 ]
+11-03 18:07:25.499  1048  2909 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:7 result: 3 elapsed_millis: 395 uptime_millis: 395 exec_start_elapsed_seconds: 109 [CONTEXT service_id=218 ]
+11-03 18:07:25.508  1048  5604 W MagicTether: [TetherListenerService] Invalid account list. [CONTEXT service_id=276 ]
+11-03 18:07:25.525  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:07:25.536  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.537  1589  1628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to scan triggered by reason: REASON_DEMAND
+11-03 18:07:25.541  1292  5527 I MdiSyncModule: initializing module...
+11-03 18:07:25.543  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.543  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:07:25.543  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.543  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.545  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000026
+11-03 18:07:25.545  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000026
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.545  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.547  1589  1628 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 121ms, 0 inserts 0 updates 1 deletes
+11-03 18:07:25.550  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.552  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to null
+11-03 18:07:25.552  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000027
+11-03 18:07:25.552  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000027
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.552  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.559  1292  5527 I MdiSyncModule: module initialization completed
+11-03 18:07:25.564  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf to set project id.: No such file or directory
+11-03 18:07:25.567  1292  5519 I MS_RegUtils: checking registration with Lighter
+11-03 18:07:25.572  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.578  1048  1048 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-03 18:07:25.579  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.583  1048  4792 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+11-03 18:07:25.586  4395  4511 I TestRunner: finished: deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo(com.jarvis.files.ConversationContextTest)

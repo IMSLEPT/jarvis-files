@@ -1,0 +1,169 @@
+11-03 18:07:38.602  4395  4511 I TestRunner: started: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)
+11-03 18:07:38.603  1083  5416 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+11-03 18:07:38.617  1083  5416 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+11-03 18:07:38.629  3614  6599 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:38.643  1083  3613 D SlicesIndexer: Slices already indexed - returning.
+11-03 18:07:38.643  1083  3613 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+11-03 18:07:38.644  1083  3613 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 2
+11-03 18:07:38.649  1048  1063 I .gms.persistent: Background concurrent copying GC freed 561483(20MB) AllocSpace objects, 6(1400KB) LOS objects, 47% free, 26MB/50MB, paused 1.883ms,19us total 1.288s
+11-03 18:07:38.657  1083  1350 D SlicesIndexer: Slices already indexed - returning.
+11-03 18:07:38.659  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:38.667  1083  1350 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen) in: 10
+11-03 18:07:38.668  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:38.671  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:38.675  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:38.676  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:38.691  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:38.695  3614  6618 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:38.696  1083  3613 D SlicesIndexer: Slices already indexed - returning.
+11-03 18:07:38.699  1083  3613 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+11-03 18:07:38.701  1083  3613 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 5
+11-03 18:07:38.704  1083  1350 D SlicesIndexer: Slices already indexed - returning.
+11-03 18:07:38.705  1083  1350 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 1
+11-03 18:07:38.716  1048  1065 W System  : A resource failed to call close.
+11-03 18:07:38.718  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:38.719  1083  3613 D SlicesIndexer: Slices already indexed - returning.
+11-03 18:07:38.722  1587  1957 I SP.AiAi : Download stopped: captions_i18n_v0_mandatory:sound_recognition_v1, succeeded, size: 2565038
+11-03 18:07:38.726  1048  1065 W System  : A resource failed to call end.
+11-03 18:07:38.737  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:38.737  1083  3613 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 18
+11-03 18:07:38.738  1083  1091 I ndroid.settings: Background young concurrent copying GC freed 18810(857KB) AllocSpace objects, 0(0B) LOS objects, 15% free, 4574KB/5403KB, paused 46us,11us total 123.108ms
+11-03 18:07:38.760  4395  4511 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@266f3ad]
+11-03 18:07:38.763  4395  4511 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:07:38.770   770   823 D SplashScreenView: Build android.window.SplashScreenView{7e51dd5 V.E...... ......ID 0,0-0,0}
+11-03 18:07:38.770   770   823 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:07:38.770   770   823 D SplashScreenView: Branding: view: android.view.View{362c9ea G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:07:38.774   770   832 W Parcel  : Expecting binder but got null!
+11-03 18:07:38.783  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: PRE_ON_CREATE
+11-03 18:07:38.783  4395  4395 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:07:38.806  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: CREATED
+11-03 18:07:38.817  4395  4395 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@88d8e1
+11-03 18:07:38.818  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: STARTED
+11-03 18:07:38.819  4395  4395 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@88d8e1
+11-03 18:07:38.821  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: RESUMED
+11-03 18:07:38.823  4395  4395 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@88d8e1
+11-03 18:07:38.848  4395  5129 W Parcel  : Expecting binder but got null!
+11-03 18:07:38.856  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:38.858  4395  4395 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:07:38.869   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d3010
+11-03 18:07:38.869   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d3910
+11-03 18:07:38.892  3614  6650 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:38.909  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:38.926  3614  6656 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:38.951  1029  1029 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 10554, 8722436, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:38.951  1029  1029 W FrameTracker: Missing SF jank callback for vsyncId: 10688, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:07:38.969  1587  1957 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+11-03 18:07:39.017  1587  1957 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:07:39.085   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:39.085   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:39.089   483   502 W ziparchive: Unable to open '/data/app/~~c6WVq5OzVSBYuY3P0bsrdw==/com.jarvis.files-x3MJwrZN9acR7OdNiED7Vg==/base.dm': No such file or directory
+11-03 18:07:39.098  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:07:39.099  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:07:39.099  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:07:39.099  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:07:39.100  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:07:39.104  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:39.105   483  1844 W InputManager-JNI: Input channel object '32eccf6 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:07:39.117   483   502 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +322ms
+11-03 18:07:39.123  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:39.129  1029  1992 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:07:39.130  1029  6115 I s.nexuslauncher: oneway function results for code 2 on binder at 0x7bae085035a0 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:07:39.123  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:39.132  1792  2539 I PBSessionCacheImpl: Deleted sessionId[7883093077091388] from persistence.
+11-03 18:07:39.132  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:39.133  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:39.133  1792  2367 W SearchServiceCore: Abort, client detached.
+11-03 18:07:39.146   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d3f10
+11-03 18:07:39.170  4395  4395 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:07:39.170  4395  4395 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:07:39.174  1587  1957 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 5 candidates
+11-03 18:07:39.217  1587  1587 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: Could not register for notifications with InnerTube:
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: xvd: wrv: Precondition check failed.
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at vws.p(PG:5)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at vws.b(PG:2)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at xuv.d(PG:4)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at acvk.c(PG:51)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at acvk.j(PG:38)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at acvk.d(PG:3)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at qhq.run(PG:2)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at qic.run(PG:4)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at xtk.k(PG:5)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at wfa.f(PG:17)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at wfa.c(PG:1)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at wdz.run(PG:21)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at vvz.run(PG:11)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	... 1 more
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: Caused by: dlh
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	at wdz.run(PG:14)
+11-03 18:07:39.239  1686  2567 W YouTubeMusic: 	... 4 more
+11-03 18:07:39.290  1048  5601 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+11-03 18:07:39.295  1048  6091 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+11-03 18:07:39.379  1587  1957 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 7 scheduled, 7 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 * {W:b:u:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea * {W:b:u:l, bg}
+11-03 18:07:39.402  1292  1292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+11-03 18:07:39.438  1587  1957 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+11-03 18:07:39.441  1587  1957 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:07:39.600  1589  4650 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:07:39.617  4395  4407 I om.jarvis.files: Background concurrent copying GC freed 193052(8038KB) AllocSpace objects, 9(216KB) LOS objects, 49% free, 10MB/21MB, paused 22us,8us total 114.981ms
+11-03 18:07:39.626  1589  3647 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk
+11-03 18:07:39.635   770   823 D SplashScreenView: Build android.window.SplashScreenView{eea2645 V.E...... ......ID 0,0-0,0}
+11-03 18:07:39.635   770   823 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:07:39.635   770   823 D SplashScreenView: Branding: view: android.view.View{fb9819a G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:07:39.638  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: PAUSED
+11-03 18:07:39.638   770   832 W Parcel  : Expecting binder but got null!
+11-03 18:07:39.638  4395  4395 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@88d8e1
+11-03 18:07:39.647   483   493 I system_server: Background young concurrent copying GC freed 588547(16MB) AllocSpace objects, 25(564KB) LOS objects, 35% free, 27MB/42MB, paused 68us,44us total 188.613ms
+11-03 18:07:39.675  5343  5369 W Parcel  : Expecting binder but got null!
+11-03 18:07:39.685  1587  1957 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 5 started, 0 paused, 2 scheduled, 7 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ * {W:b:u:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ * {W:b:u:l, bg}
+11-03 18:07:39.686  1587  1957 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip to collections_table_main_21980965fbd997111d89f86c16e9e090.zip.fetched (constraints: W:b:u:l)
+11-03 18:07:39.690  1587  1957 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip to table_5f787033cc44fc7a8804e0030b2bf848.zip.fetched (constraints: W:b:u:l)
+11-03 18:07:39.691  1587  1957 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip to tc_model_19e9928974f9d8742ad3b10f52373dea.zip.fetched (constraints: W:b:u:l)
+11-03 18:07:39.692  1587  1957 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip to tc_model_e202592534082c01f9642f709a627dd9.zip.fetched (constraints: W:b:u:l)
+11-03 18:07:39.692  1587  1957 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip to tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.fetched (constraints: W:b:u:l)
+11-03 18:07:39.713   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d2950
+11-03 18:07:39.714  1589  3647 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 53ms, 0 inserts 0 updates 0 deletes
+11-03 18:07:39.715   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d6070
+11-03 18:07:39.752   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:39.755   962  1254 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:07:39.758   483  1632 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:07:39.763  1029  1992 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=29, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@77d7c44
+11-03 18:07:39.781  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: STOPPED
+11-03 18:07:39.783  1587  2627 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip'
+11-03 18:07:39.786  1587  2627 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 613 bytes from https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip.
+11-03 18:07:39.790   483   505 W InputManager-JNI: Input channel object '1a833af Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:07:39.802   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d57d0
+11-03 18:07:39.802   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d57d0
+11-03 18:07:39.802  4395  4395 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@88d8e1
+11-03 18:07:39.809  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:07:39.817  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:07:39.817  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:07:39.817  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:07:39.820  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:07:39.821   770   832 D EGL_emulation: app_time_stats: avg=321.36ms min=20.59ms max=671.71ms count=4
+11-03 18:07:39.829   483   834 W InputManager-JNI: Input channel object 'a7a183e com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:07:39.851  1792  1792 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:07:39.854  1587  1843 I AiAiEcho: Predicting[0]:
+11-03 18:07:39.854  1587  1843 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:07:39.862  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:07:39.867  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:07:39.873  4395  4600 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisCommandFlow/JarvisCommandFlow-test.apk to null
+11-03 18:07:39.888  4395  4395 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@88d8e1 in: DESTROYED
+11-03 18:07:39.903  1792  2285 I A       : group apa_head_suggest not present without account in *
+11-03 18:07:39.907  4395  4395 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:07:39.908  1792  2285 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.006S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M9.89S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT38.721S (THIRTY_SECONDS_TO_ONE_MINUTE))
+11-03 18:07:39.910  4395  4511 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@266f3ad]
+11-03 18:07:39.911  1792  2285 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:07:39.916  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:39.917  1792  2367 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:07:39.918   483  1545 W InputManager-JNI: Input channel object 'e0b7de7 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:07:39.922  4395  4511 I TestRunner: finished: vaultImportButtonMovesOnlySelectedFile(com.jarvis.files.CommandFlowTest)

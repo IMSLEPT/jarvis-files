@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.jarvis.files.OrganizeRegressionTest" tests="35" failures="2" errors="0" skipped="0" time="46.192" timestamp="2026-11-03T18:07:56" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="unrelatedRequestDoesNotContinuePendingOrganizer" classname="com.jarvis.files.OrganizeRegressionTest" time="0.382" />
+  <testcase name="allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure" classname="com.jarvis.files.OrganizeRegressionTest" time="0.652" />
+  <testcase name="topLevelOnlyAndCancellationDoNotMoveNestedFiles" classname="com.jarvis.files.OrganizeRegressionTest" time="0.378" />
+  <testcase name="missingScopeAsksOnceAndRetainsChosenMode" classname="com.jarvis.files.OrganizeRegressionTest" time="0.534" />
+  <testcase name="explicitTypeIsNotLostByFollowingChoice" classname="com.jarvis.files.OrganizeRegressionTest" time="0.372" />
+  <testcase name="classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted" classname="com.jarvis.files.AppInsightsTest" time="0.031">
+    <failure>java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+</failure>
+  </testcase>
+  <testcase name="revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros" classname="com.jarvis.files.AppInsightsTest" time="1.129" />
+  <testcase name="realInventoryProvidesRequestedDatesAndSeparatesMissingHistory" classname="com.jarvis.files.AppInsightsTest" time="0.78" />
+  <testcase name="moreOpensSearchableInventoryAndPerAppChart" classname="com.jarvis.files.AppsFlowTest" time="7.189">
+    <failure>java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape&#64;cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+</failure>
+  </testcase>
+  <testcase name="emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible" classname="com.jarvis.files.ConversationContextTest" time="0.728" />
+  <testcase name="multipleFoldersAskOnceAndResumePendingSearchOnSelection" classname="com.jarvis.files.ConversationContextTest" time="0.53" />
+  <testcase name="ordinalAndUniqueFolderNameCanAnswerTheQuestion" classname="com.jarvis.files.ConversationContextTest" time="0.306" />
+  <testcase name="contextualRenamePreservesNewNameCapitalizationAndExtension" classname="com.jarvis.files.ConversationContextTest" time="0.331" />
+  <testcase name="contextMutationCannotAccidentallyDeleteEveryPdfOnPhone" classname="com.jarvis.files.ConversationContextTest" time="0.353" />
+  <testcase name="unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan" classname="com.jarvis.files.ConversationContextTest" time="0.283" />
+  <testcase name="oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel" classname="com.jarvis.files.ConversationContextTest" time="0.205" />
+  <testcase name="removedResultOrFolderIsNotInventedAgain" classname="com.jarvis.files.ConversationContextTest" time="0.277" />
+  <testcase name="deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo" classname="com.jarvis.files.ConversationContextTest" time="0.459" />
+  <testcase name="duplicateFolderNamesCannotPickAnArbitraryPath" classname="com.jarvis.files.ConversationContextTest" time="0.201" />
+  <testcase name="explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess" classname="com.jarvis.files.ConversationContextTest" time="0.258" />
+  <testcase name="askForFileNameOnceAndKeepFolderAcrossSeveralSearches" classname="com.jarvis.files.ConversationContextTest" time="0.275" />
+  <testcase name="clarificationChoiceRescansBeforeBuildingDeletionPreview" classname="com.jarvis.files.CommandFlowTest" time="2.771" />
+  <testcase name="keyboardSendActionBuildsPreviewAndClearsDraft" classname="com.jarvis.files.CommandFlowTest" time="2.349" />
+  <testcase name="retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="1.516" />
+  <testcase name="allPlanEntriesCanBeReviewedBeyondOldLimit" classname="com.jarvis.files.CommandFlowTest" time="1.921" />
+  <testcase name="sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="3.67" />
+  <testcase name="vaultImportButtonMovesOnlySelectedFile" classname="com.jarvis.files.CommandFlowTest" time="1.311" />
+  <testcase name="emptySendIsDisabledAndMicrophoneIsSeparate" classname="com.jarvis.files.CommandFlowTest" time="1.974" />
+  <testcase name="screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="1.89" />
+  <testcase name="directScreenshotCommandDoesNotAskModelForAnotherConfirmation" classname="com.jarvis.files.CommandFlowTest" time="1.544" />
+  <testcase name="largestFilesAndShowThemWorkThroughChatWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="2.136" />
+  <testcase name="screenshotNoButtonCancelsWithoutModelOrFileChanges" classname="com.jarvis.files.CommandFlowTest" time="1.029" />
+  <testcase name="openingAllResultsPreservesLargestFirstOrder" classname="com.jarvis.files.CommandFlowTest" time="2.841" />
+  <testcase name="cancelButtonLeavesFilesUntouched" classname="com.jarvis.files.CommandFlowTest" time="2.413" />
+  <testcase name="settingsButtonOpensAiSettings" classname="com.jarvis.files.CommandFlowTest" time="1.538" />
+</testsuite>

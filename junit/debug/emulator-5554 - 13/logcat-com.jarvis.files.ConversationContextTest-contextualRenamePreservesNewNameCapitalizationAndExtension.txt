@@ -1,0 +1,86 @@
+11-03 18:07:23.683  4395  4511 I TestRunner: started: contextualRenamePreservesNewNameCapitalizationAndExtension(com.jarvis.files.ConversationContextTest)
+11-03 18:07:23.692  1048  1337 W VerdictProvider: response is invalid [4] [CONTEXT service_id=257 ]
+11-03 18:07:23.731  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.747  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.768  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.772  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:23.791  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.800  3614  5598 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:23.812  1292  5518 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 1.
+11-03 18:07:23.817  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.819  1292  5527 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+11-03 18:07:23.826  1292  5518 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-03 18:07:23.827  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.832   483  1530 I RecoverableKeyStoreMgr: Initialized server params.
+11-03 18:07:23.832  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.835  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.840  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:23.842  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:23.847  3614  5615 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:23.847  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.859  1292  5518 I SystemUpdate: [Control,InstallationControl] Installation progress updated to (0x000, -1.000).
+11-03 18:07:23.863  1292  2825 I Ads     : Initialized AdMob in container 23.18.18 (190800-535401451)
+11-03 18:07:23.869  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.869  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.875  1292  1292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.877  1292  2825 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+11-03 18:07:23.880  1292  2825 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+11-03 18:07:23.880  1292  2825 V Backup  : [G1ModuleInitIntentOperation] BbG1 notifications disabled by flag
+11-03 18:07:23.881  1292  2825 V Backup  : [SettingsModuleInit] onInitRuntimeState
+11-03 18:07:23.881  1292  2825 V Backup  : [NoBackupNotification] Disabled, not scheduling
+11-03 18:07:23.886  1292  2825 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+11-03 18:07:23.905  1292  2825 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-03 18:07:23.908  1048  4288 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:07:23.910   483  1530 E RecoverySnapshotStorage: 	... 8 more
+11-03 18:07:23.912   483  2159 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10120
+11-03 18:07:23.920  1048  4288 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-03 18:07:23.928   281  5618 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:23.930   281  5619 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:23.930   281  5619 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73017f6a7a50
+11-03 18:07:23.930   281  5619 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+11-03 18:07:23.932  1292  2825 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+11-03 18:07:23.932   281  5620 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:23.933   281  5620 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73017f6a69d0
+11-03 18:07:23.933   281  5620 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+11-03 18:07:23.934  1292  5527 D TrafficStats: tagSocket(107) with statsTag=0x30004800, statsUid=-1
+11-03 18:07:23.938  1292  2825 V Backup  : [AccountChangedIO] currentDestinationString: null
+11-03 18:07:23.940  1048  4288 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+11-03 18:07:23.946  1292  2826 I Backup  : [TargetEnabler] Setting target components to enabled = false
+11-03 18:07:23.951  1292  2826 I Backup  : [TargetEnabler] Enabling D2dMigrateHelperService on non-Pixel on P+
+11-03 18:07:23.954  1048  4288 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+11-03 18:07:23.957  1292  2826 I Backup  : [SourceEnabler] Setting source components to enabled = true
+11-03 18:07:23.958  1292  2826 V Backup  : [MigrateUtil] Using O+ select transport api
+11-03 18:07:23.959  1292  2826 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.CloudRestoreFlowActivity' to enabled=true
+11-03 18:07:23.960  1292  2826 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.RestoreSessionV0Service' to enabled=true
+11-03 18:07:23.960  1292  2826 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.D2dMigrateFlowActivity' to enabled=false
+11-03 18:07:23.962  1292  2826 V Backup  : [GmsBackupScheduler] Disabled, not scheduling.
+11-03 18:07:23.962  1292  2826 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 30, event: # dirw@b5357b6b
+11-03 18:07:23.968  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.972  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.972  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.977  1292  1292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.990  1292  1292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.991  1292  1292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.997  1292  1292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+11-03 18:07:23.998  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.000  1292  2826 V Backup  : [MmsBackupScheduler] Scheduled task to run in 1440 minutes, while idle: true, require charging: true, require wifi: true
+11-03 18:07:24.003  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.007  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.014  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.016  4395  4511 I TestRunner: finished: contextualRenamePreservesNewNameCapitalizationAndExtension(com.jarvis.files.ConversationContextTest)

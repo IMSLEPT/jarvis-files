@@ -1,0 +1,95 @@
+11-03 18:07:26.042  4395  4511 I TestRunner: started: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)
+11-03 18:07:26.077  1048  4792 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-03 18:07:26.081  1048  4288 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-03 18:07:26.093  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:26.108  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:26.115  1048  3410 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-03 18:07:26.116  1048  3410 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+11-03 18:07:26.116  1048  3410 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+11-03 18:07:26.119  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:26.119  1048  2945 I NearbyShared: FastPairSlice: enableBindServiceForDiscoveryItem called, isBind = false
+11-03 18:07:26.126  1292  2924 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
+11-03 18:07:26.139  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:26.157  3614  5988 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:26.160  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.ClearcutInitChimeraIntentService.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.DefaultPriorityClearcutInitChimeraIntentService.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:26.161  1292  2826 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:26.183  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.205  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.209  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.213  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.215  1048  5960 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+11-03 18:07:26.216  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.242  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:26.243  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:26.244  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:26.258  3614  6018 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:26.277  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.280  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.283  1292  2826 W PeoplePU: getComponentEnabledSetting failed.
+11-03 18:07:26.283  1292  2826 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:26.283  1292  2826 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5234)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5216)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:387)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:2953)
+11-03 18:07:26.283  1292  2826 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:5980)
+11-03 18:07:26.283  1292  2826 W PeoplePU:
+11-03 18:07:26.293  1292  5519 W PeoplePU: getServiceInfo failed.
+11-03 18:07:26.293  1292  5519 W PeoplePU: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gms/com.google.android.gms.people.sync.focus.ContactsSyncAdapterService}
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:613)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:596)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at com.google.android.gms.people.sync.focus.ContactsSyncIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):43)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:26.293  1292  5519 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:26.294  1292  5519 I FSA2_ContactsSyncIntentOp: Sync is disabled. Skip prepareToSync
+11-03 18:07:26.298  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.307  1292  2826 I PeopleGalProvider: Gal directories started.
+11-03 18:07:26.307  1292  2826 I PeopleGalProvider: Method 1 completed.
+11-03 18:07:26.307  1292  2826 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:07:26.312   962   962 D BluetoothPbapService:  onChange on contact uri
+11-03 18:07:26.315  1292  2826 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+11-03 18:07:26.316  1292  2826 I GalProviderController: Setting component enabled succeeds.
+11-03 18:07:26.319  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.329  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.331  4395  4511 I TestRunner: finished: askForFileNameOnceAndKeepFolderAcrossSeveralSearches(com.jarvis.files.ConversationContextTest)

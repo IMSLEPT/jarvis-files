@@ -1,0 +1,592 @@
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+com.jarvis.files.OrganizeRegressionTest:
+INSTRUMENTATION_STATUS: test=unrelatedRequestDoesNotContinuePendingOrganizer
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=unrelatedRequestDoesNotContinuePendingOrganizer
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=topLevelOnlyAndCancellationDoNotMoveNestedFiles
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=topLevelOnlyAndCancellationDoNotMoveNestedFiles
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=missingScopeAsksOnceAndRetainsChosenMode
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=missingScopeAsksOnceAndRetainsChosenMode
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=explicitTypeIsNotLostByFollowingChoice
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.OrganizeRegressionTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=explicitTypeIsNotLostByFollowingChoice
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+com.jarvis.files.AppInsightsTest:
+INSTRUMENTATION_STATUS: test=classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stack=java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+
+INSTRUMENTATION_STATUS: stream=
+Error in classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(com.jarvis.files.AppInsightsTest):
+java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+
+INSTRUMENTATION_STATUS: test=classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=realInventoryProvidesRequestedDatesAndSeparatesMissingHistory
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppInsightsTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=realInventoryProvidesRequestedDatesAndSeparatesMissingHistory
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppsFlowTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+com.jarvis.files.AppsFlowTest:
+INSTRUMENTATION_STATUS: test=moreOpensSearchableInventoryAndPerAppChart
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.AppsFlowTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+
+INSTRUMENTATION_STATUS: stream=
+Error in moreOpensSearchableInventoryAndPerAppChart(com.jarvis.files.AppsFlowTest):
+java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+
+INSTRUMENTATION_STATUS: test=moreOpensSearchableInventoryAndPerAppChart
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+com.jarvis.files.ConversationContextTest:
+INSTRUMENTATION_STATUS: test=emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=multipleFoldersAskOnceAndResumePendingSearchOnSelection
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=11
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=multipleFoldersAskOnceAndResumePendingSearchOnSelection
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=ordinalAndUniqueFolderNameCanAnswerTheQuestion
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=12
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=ordinalAndUniqueFolderNameCanAnswerTheQuestion
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=contextualRenamePreservesNewNameCapitalizationAndExtension
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=13
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=contextualRenamePreservesNewNameCapitalizationAndExtension
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=contextMutationCannotAccidentallyDeleteEveryPdfOnPhone
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=14
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=contextMutationCannotAccidentallyDeleteEveryPdfOnPhone
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=15
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=16
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=removedResultOrFolderIsNotInventedAgain
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=17
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=removedResultOrFolderIsNotInventedAgain
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=18
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=duplicateFolderNamesCannotPickAnArbitraryPath
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=19
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=duplicateFolderNamesCannotPickAnArbitraryPath
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=20
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=askForFileNameOnceAndKeepFolderAcrossSeveralSearches
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.ConversationContextTest
+INSTRUMENTATION_STATUS: current=21
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=askForFileNameOnceAndKeepFolderAcrossSeveralSearches
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+com.jarvis.files.CommandFlowTest:
+INSTRUMENTATION_STATUS: test=clarificationChoiceRescansBeforeBuildingDeletionPreview
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=22
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=clarificationChoiceRescansBeforeBuildingDeletionPreview
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=keyboardSendActionBuildsPreviewAndClearsDraft
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=23
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=keyboardSendActionBuildsPreviewAndClearsDraft
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=24
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=allPlanEntriesCanBeReviewedBeyondOldLimit
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=25
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=allPlanEntriesCanBeReviewedBeyondOldLimit
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel
+INSTRUMENTATION_STATUS_CODE: 1
+s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=26
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=vaultImportButtonMovesOnlySelectedFile
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=27
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=vaultImportButtonMovesOnlySelectedFile
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=28
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=emptySendIsDisabledAndMicrophoneIsSeparate
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=28
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=emptySendIsDisabledAndMicrophoneIsSeparate
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=29
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=29
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=30
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=directScreenshotCommandDoesNotAskModelForAnotherConfirmation
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=30
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=directScreenshotCommandDoesNotAskModelForAnotherConfirmation
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=31
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=largestFilesAndShowThemWorkThroughChatWithoutModel
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=31
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=largestFilesAndShowThemWorkThroughChatWithoutModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=32
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=screenshotNoButtonCancelsWithoutModelOrFileChanges
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=32
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=screenshotNoButtonCancelsWithoutModelOrFileChanges
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=33
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=openingAllResultsPreservesLargestFirstOrder
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=33
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=openingAllResultsPreservesLargestFirstOrder
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=34
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=cancelButtonLeavesFilesUntouched
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=34
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=cancelButtonLeavesFilesUntouched
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=35
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=settingsButtonOpensAiSettings
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.jarvis.files.CommandFlowTest
+INSTRUMENTATION_STATUS: current=35
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=35
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=settingsButtonOpensAiSettings
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 44.925
+There were 2 failures:
+1) classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(com.jarvis.files.AppInsightsTest)
+java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+2) moreOpensSearchableInventoryAndPerAppChart(com.jarvis.files.AppsFlowTest)
+java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+
+FAILURES!!!
+Tests run: 35,  Failures: 2
+
+
+INSTRUMENTATION_CODE: -1
+

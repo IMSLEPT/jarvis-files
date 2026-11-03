@@ -1,0 +1,68 @@
+11-03 18:07:10.445  4395  4511 I TestRunner: started: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:07:10.545  1587  4152 I AiAiEcho: Settings cha with uri: content://settings/secure/accessibility_enabled
+11-03 18:07:10.549  1587  1843 I AiAiEcho: Predicting[0]:
+11-03 18:07:10.550  1587  1843 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:07:10.550  1587  1843 I AiAiEcho: Predicting[0]:
+11-03 18:07:10.551  1587  1843 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:07:10.580  1792  2187 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+11-03 18:07:10.581  1792  2187 I A       : Nga state changed to NgaStateDetails{state=DISABLED, isSpecialExperience=false}
+11-03 18:07:10.591  3157  4498 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@c81b453
+11-03 18:07:10.594  1631  1700 I A       : APA or Classic session decision: SessionDecision(sessionVariance=CLASSIC, platformVariance=CLASSIC, justification=CURRENT_PLATFORM_VARIANCE).
+11-03 18:07:10.595  1631  1700 I A       : [Memory] eligibility: StashEligibility{4}
+11-03 18:07:10.597  1631  2490 I A       : Unsubscribed to apa or classic variant change.
+11-03 18:07:10.611  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:07:10.621  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:07:10.626  4395  4516 V UiAutomation: Init UiAutomation@7c43d47[id=1, flags=0]
+11-03 18:07:10.628  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:07:10.646  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:07:10.659  3157  3283 W BugleNetwork: RegistrationProvider: Failed to register with Tachyon
+11-03 18:07:10.659  3157  3283 W BugleNetwork: cnkq: INVALID_ARGUMENT: Request contains an invalid argument.
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at io.grpc.Status.g(PG:1)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at cogc.a(PG:6)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at cnps.a(PG:3)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at cnqp.run(PG:2)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at cnzq.run(PG:2)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:10.659  3157  3283 W BugleNetwork: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: RegistrationProvider: Got error in StatusRuntimeException. Notifying tachyon registration error listeners, error: 1, status: INVALID_ARGUMENT
+11-03 18:07:10.661  3157  3283 W BugleNetwork: cnkq: INVALID_ARGUMENT: Request contains an invalid argument.
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at io.grpc.Status.g(PG:1)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at cogc.a(PG:6)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at cnps.a(PG:3)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at cnqp.run(PG:2)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at cnzq.run(PG:2)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:10.661  3157  3283 W BugleNetwork: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:10.662  3157  3963 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+11-03 18:07:10.685  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:10.706  4395  4514 W om.jarvis.files: Verification of void kotlinx.coroutines.channels.BufferedChannel.setReceiveSegment$volatile(java.lang.Object) took 206.073ms (14.56 bytecodes/s) (1304B approximate peak alloc)
+11-03 18:07:10.718  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:10.726   281   281 I netd    : tetherGetStats() -> {[]} <0.51ms>
+11-03 18:07:10.732   281   281 I netd    : bandwidthSetGlobalAlert(2097152) <0.15ms>
+11-03 18:07:10.738  3157  3273 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+11-03 18:07:10.742  3157  3273 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+11-03 18:07:10.745  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:10.748   281   281 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.57ms>
+11-03 18:07:10.756   281   281 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.82ms>
+11-03 18:07:10.769  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:10.780  3157  3294 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+11-03 18:07:10.813  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.814  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.822  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.828  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.828  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.834  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.834  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:10.900   483   512 E system_server: No package ID 7f found for ID 0x7f0802b0.
+11-03 18:07:10.901   483   512 E system_server: No package ID 7f found for ID 0x7f150a40.
+11-03 18:07:10.901   483   512 E system_server: No package ID 7f found for ID 0x7f150a40.
+11-03 18:07:10.901   483   512 E system_server: No package ID 7f found for ID 0x7f150a3f.
+11-03 18:07:10.904   770   770 D TileServices: Couldn't find tile for ComponentInfo{com.google.android.apps.wellbeing/com.google.android.apps.wellbeing.focusmode.quicksettings.FocusModeTileService}
+11-03 18:07:10.914  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:10.918  1589  2097 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:07:10.924  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:10.937  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:10.947  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/a.pdf to set project id.: No such file or directory
+11-03 18:07:10.952  4395  4511 I TestRunner: finished: unrelatedRequestDoesNotContinuePendingOrganizer(com.jarvis.files.OrganizeRegressionTest)

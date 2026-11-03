@@ -1,0 +1,64 @@
+11-03 18:07:23.375  4395  4511 I TestRunner: started: ordinalAndUniqueFolderNameCanAnswerTheQuestion(com.jarvis.files.ConversationContextTest)
+11-03 18:07:23.416  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: Phenotype bulk registration failed [CONTEXT service_id=231 ]
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: java.util.concurrent.TimeoutException: Timed out waiting for Task
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at com.google.android.gms.common.config.PhenotypeRegistrationOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):19)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:07:23.435  1292  2825 W PhenotypeRegOp: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:07:23.442  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.453  1292  4319 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+11-03 18:07:23.470  1048  2760 I Auth    : [WorkAccountServiceImpl] init work authenticator
+11-03 18:07:23.475  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.478  1292  2826 W SystemServiceRegistry: No service published for: persistent_data_block
+11-03 18:07:23.484  1292  2826 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-03 18:07:23.492  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:23.499  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:23.500  1292  5527 I Auth    : [FRP,FrpUpdateIntentOperation] FRP is not supported for this device / user
+11-03 18:07:23.524  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.530  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.534  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.544   770   832 D EGL_emulation: app_time_stats: avg=301.03ms min=7.35ms max=879.59ms count=4
+11-03 18:07:23.551  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.555  1292  4319 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+11-03 18:07:23.556  1292  4319 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+11-03 18:07:23.556  1292  4319 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+11-03 18:07:23.566  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:23.567  3614  5549 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:23.604  1292  5527 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+11-03 18:07:23.606  1292  5527 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Enabling com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService.
+11-03 18:07:23.610  1292  5527 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Enabling com.google.android.gms.auth.folsom.service.GcmReceiverService.
+11-03 18:07:23.611  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-03 18:07:23.611  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-03 18:07:23.612  1474  1730 I SP      : Sync for next-word-predictor succeeded in 916 ms: {added: [tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be], metadata: false
+11-03 18:07:23.614  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-03 18:07:23.614  1292  4319 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+11-03 18:07:23.614  1292  4319 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+11-03 18:07:23.616  1048  4288 W EasyUnlock: [EasyUnlockSupportReporterIntentOperation] Invalid account list. [CONTEXT service_id=234 ]
+11-03 18:07:23.617  1292  4319 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+11-03 18:07:23.618  1292  4319 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+11-03 18:07:23.622  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-03 18:07:23.622  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-03 18:07:23.622  1292  4319 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-03 18:07:23.625  1048  2909 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+11-03 18:07:23.634  1292  5556 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+11-03 18:07:23.634  1292  5556 I Authzen : [TransactionCache] Clearing transaction cache
+11-03 18:07:23.636  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:23.638  1474  1730 I SP      : GC for 'next-word-predictor' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:07:23.650  3614  5560 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:23.657  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.662   483   890 D CleanupManager: Storing serial number for user 0.
+11-03 18:07:23.664  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.669  1292  4319 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+11-03 18:07:23.674   483  2159 I RecoverableKeyStoreMgr: Initialized secret types.
+11-03 18:07:23.676  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.679  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.681  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:23.682  4395  4511 I TestRunner: finished: ordinalAndUniqueFolderNameCanAnswerTheQuestion(com.jarvis.files.ConversationContextTest)

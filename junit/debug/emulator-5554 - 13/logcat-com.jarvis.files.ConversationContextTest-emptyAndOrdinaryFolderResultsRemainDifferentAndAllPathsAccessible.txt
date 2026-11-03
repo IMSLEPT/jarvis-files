@@ -1,0 +1,138 @@
+11-03 18:07:22.100  4395  4511 I TestRunner: started: emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible(com.jarvis.files.ConversationContextTest)
+11-03 18:07:22.106   483  1632 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:07:22.124  1029  1992 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=5, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@aa320e3
+11-03 18:07:22.161   483   505 W InputManager-JNI: Input channel object 'f4c7614 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:07:22.162  1587  1843 I AiAiEcho: Predicting[0]:
+11-03 18:07:22.164  1587  1843 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:07:22.169  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:07:22.170  1587  1843 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:07:22.184  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:22.184   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d53b0
+11-03 18:07:22.187  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:22.190  1474  1730 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/emoji/20190807165503/superpacks_manifest.zip to emoji-20190807.zip.fetched (constraints: m:b:u:l)
+11-03 18:07:22.204  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:22.212   770   778 I ndroid.systemui: Background young concurrent copying GC freed 190984(10MB) AllocSpace objects, 26(648KB) LOS objects, 42% free, 14MB/25MB, paused 51us,73us total 1.139s
+11-03 18:07:22.226  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+11-03 18:07:22.241  1474  1474 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:07:22.241  1474  1474 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+11-03 18:07:22.242  1474  1474 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+11-03 18:07:22.244  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:07:22.247  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:22.271  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:07:22.271  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:07:22.271  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:07:22.273  1048  2760 I FontLog : Received query Google Sans Text, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+11-03 18:07:22.273  1048  2760 I FontLog : Query [Google Sans Text] resolved to {Google Sans Text, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:07:22.274  1048  2760 I FontLog : Font PFD returned from cache for {Google Sans Text, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:07:22.274  1048  2760 I FontLog : Fetch {Google Sans Text, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+11-03 18:07:22.275  1474  1474 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:07:22.287  1792  1792 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:07:22.317  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:22.317  1474  1730 I SP      : Registering next-word-predictor.20210507, url: https://www.gstatic.com/android/keyboard/next_word_predictor/prod/superpacks-manifest-20210413_163718.json, constraints: *:*:*:*, flags: *, requested: 20210507, current: -1
+11-03 18:07:22.318  1474  1730 I SP      : Sync for bundled_delight succeeded in 2005 ms: no changes
+11-03 18:07:22.318  1474  1730 I SP      : GC for 'bundled_delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:07:22.318  1474  1730 I LmManager: LmManager$1.onSuccess():76 Bundled delight sync success
+11-03 18:07:22.322  1474  1730 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():68 DownloadSlicing#getSlices() : Locale = [en_US]
+11-03 18:07:22.327  1474  1730 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():125 DownloadSlicing#getSlices(): result {slices=[{delight:main_en_us_2022101700_1, m:*:*:*, fg}], last batch=true, sync metadata=false}
+11-03 18:07:22.327  1474  1730 I SP      : Syncing delight (2022101700) with slices: [{main_en_us_2022101700_1, m:*:*:*, fg}], metadata: false
+11-03 18:07:22.327  1474  1730 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/next_word_predictor/prod/superpacks-manifest-20210413_163718.json to next-word-predictor-20210507.fetched (constraints: m:b:u:l)
+11-03 18:07:22.328  1474  1611 I SuperDelight: SuperDelightManager$2.onSuccess():635 bundled_delight sync success, adding to data file manager
+11-03 18:07:22.330  1474  1611 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:07:22.334   770   832 D EGL_emulation: app_time_stats: avg=403.63ms min=30.99ms max=1210.96ms count=4
+11-03 18:07:22.360  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:22.362  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:22.370   483   558 W InputManager-JNI: Input channel object 'b9edcb com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:07:22.372  1474  1730 I SuperDelight: SuperDelightMergingStrategy.merge():55 SuperDelightMergingStrategy#merge(): selected[[main_en_us_2022101700_1]] synced[[main_en_us_2022101700_1]]
+11-03 18:07:22.376  1474  1730 I SP      : Successfully got manifest for bundled_emoji-manifest: manifests:bundled_emoji-20190807
+11-03 18:07:22.386  1474  1730 I SP      : Sync for delight succeeded in 67 ms: no changes
+11-03 18:07:22.391  1474  1730 I SP      : GC for 'delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:07:22.393  1474  1612 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+11-03 18:07:22.393  1474  1612 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+11-03 18:07:22.403  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:22.403  1792  2367 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:07:22.409  1474  1730 I SP      : Successfully got manifest for emoji-manifest: manifests:emoji-20190807
+11-03 18:07:22.412   365   378 W TransactionTracing: Could not find layer handle 0x7d782e4d44b0
+11-03 18:07:22.420  3614  5408 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:22.444  1474  1730 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():127 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+11-03 18:07:22.444  1474  1730 I SP      : Syncing bundled_emoji (20190807) with slices: [{7b9ddb0b8c001e17cee03b1edf554b20, m:*:*:*}], metadata: false
+11-03 18:07:22.445  1474  1730 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():127 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+11-03 18:07:22.445  1474  1730 I SP      : Syncing emoji (20190807) with slices: [{7b9ddb0b8c001e17cee03b1edf554b20, m:*:*:*}], metadata: false
+11-03 18:07:22.465  1792  2285 I A       : group apa_head_suggest not present without account in *
+11-03 18:07:22.466  1792  2286 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.128S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT52.326S] (THIRTY_SECONDS_TO_ONE_MINUTE), timeSinceDataDownloadInit = PT21.157S (TEN_SECONDS_TO_THIRTY_SECONDS))
+11-03 18:07:22.467  1792  2286 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:07:22.473  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.473  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.474  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.484  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.489  3157  3963 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:07:22.497  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.497  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.500  1474  4067 I FetchBundledResourceTask: FetchBundledResourceTask.execute():64 Successfully copied file from /data/user/0/com.google.android.inputmethod.latin/files/emoji_search_en_us.zip to /data/user/0/com.google.android.inputmethod.latin/files/superpacks/bundled_emoji/7b9ddb0b8c001e17cee03b1edf554b20.zip.fetched.
+11-03 18:07:22.505  1474  1485 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[6]
+11-03 18:07:22.505  1474  1485 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[6]
+11-03 18:07:22.505  3157  3963 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:07:22.505  1474  1485 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[6]
+11-03 18:07:22.505  1474  1485 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[6]
+11-03 18:07:22.508  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.514  3157  3963 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:07:22.515  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.515  1589  2097 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:22.517  1474  1730 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+11-03 18:07:22.521  3157  3963 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:07:22.537  1048  2501 I FontLog : Pulling font file for id = 10, cache size = 10 [CONTEXT service_id=132 ]
+11-03 18:07:22.539  1048  2760 I FontLog : Received query Google Sans Text:500, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+11-03 18:07:22.539  1048  2760 I FontLog : Query [Google Sans Text:500] resolved to {Google Sans Text, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:07:22.548   770   846 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:07:22.558  1474  1474 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():23 onStartJob: android.app.job.JobParameters@1997c6e
+11-03 18:07:22.558  1474  1474 I SP      : ====> Starting job {m:b:u:l, bg}
+11-03 18:07:22.566  1792  2367 I A       : Using proto config with mendel
+11-03 18:07:22.588  1048  2760 I FontLog : Font PFD returned from cache for {Google Sans Text, wdth 100.0, wght 500, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+11-03 18:07:22.600  1048  2760 I FontLog : Fetch {Google Sans Text, wdth 100.0, wght 500, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+11-03 18:07:22.608   770   846 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+11-03 18:07:22.613  1048  2760 I FontLog : Pulling font file for id = 11, cache size = 11 [CONTEXT service_id=132 ]
+11-03 18:07:22.625  1474  1730 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: emoji:7b9ddb0b8c001e17cee03b1edf554b20 * {m:b:u:l, bg}
+11-03 18:07:22.647  1792  1800 I earchbox:search: JIT allocated 100KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.amm.c()
+11-03 18:07:22.647  1792  1800 I earchbox:search: Compiler allocated 5213KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.amm.c()
+11-03 18:07:22.689  1474  1730 I SP      : Scheduling: job start ({m:b:u:l, bg}), 1 started, 0 paused, 0 scheduled, 1 pending: emoji:7b9ddb0b8c001e17cee03b1edf554b20 @ * {m:b:u:l, bg}
+11-03 18:07:22.690  1474  1730 I SP      : Successfully got manifest for next-word-predictor-manifest: manifests:next-word-predictor-20210507
+11-03 18:07:22.694  1474  1730 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/emoji/20190522144303/en-us.zip to 7b9ddb0b8c001e17cee03b1edf554b20.zip.fetched (constraints: m:b:u:l)
+11-03 18:07:22.696  1474  1730 I SP      : Syncing next-word-predictor (20210507) with slices: [tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be], metadata: false
+11-03 18:07:22.707   281  5443 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10135 0}
+11-03 18:07:22.714   281  5445 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:22.714   281  5444 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:22.716   281  5445 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73017f6a69d0
+11-03 18:07:22.716   281  5445 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+11-03 18:07:22.716   281  5444 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73017f6a7a50
+11-03 18:07:22.716   281  5444 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+11-03 18:07:22.717  1474  5442 D TrafficStats: tagSocket(147) with statsTag=0xffffffff, statsUid=-1
+11-03 18:07:22.724  3157  3963 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+11-03 18:07:22.738  1474  5442 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+11-03 18:07:22.753  1474  1730 I SP      : Scheduling: download registered, 1 started, 0 paused, 0 scheduled, 2 pending: emoji:7b9ddb0b8c001e17cee03b1edf554b20 @ {m:b:u:l, bg}, next-word-predictor:tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be @ * {m:b:u:l, bg}
+11-03 18:07:22.753  1474  1730 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/next_word_predictor/prod/tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be.zip to tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be.zip.fetched (constraints: m:b:u:l)
+11-03 18:07:22.774  1474  1730 I SP      : Sync for bundled_emoji succeeded in 333 ms: {added: [7b9ddb0b8c001e17cee03b1edf554b20], metadata: false
+11-03 18:07:22.780  1474  1730 I SP      : GC for 'bundled_emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:07:22.781  1474  1881 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():498 processPackSet() : isBundled = true
+11-03 18:07:22.781  1474  1731 I EmojiSuperpacksManager: EmojiSuperpacksManager.triggerSync():374 triggerSync() : isBundled = false
+11-03 18:07:22.782  1474  1731 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():117 Reading en_US emoji shortcuts
+11-03 18:07:22.782  1474  1730 I SP      : Registering emoji.20190807, url: https://www.gstatic.com/android/keyboard/modelpack/emoji/20190807165503/superpacks_manifest.zip, constraints: m:*:*:*, flags: fg, requested: 20190807, current: 20190807
+11-03 18:07:22.785  1474  1730 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():127 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+11-03 18:07:22.785  1474  1730 I SP      : Syncing emoji (20190807) with slices: [{7b9ddb0b8c001e17cee03b1edf554b20, m:*:*:*}], metadata: false
+11-03 18:07:22.793  1474  1731 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():134 Read en_US emoji shortcuts successfully.
+11-03 18:07:22.795  1474  1731 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():63 1 emoji shortcut maps loaded.
+11-03 18:07:22.798  1474  1731 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():72 Finished loading emoji shortcuts
+11-03 18:07:22.799  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:22.812  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:22.820  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:22.821  1474  1730 I SP      : Scheduling: download registered, 0 started, 0 paused, 0 scheduled, 2 pending: next-word-predictor:tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be @ {m:b:u:l, bg}, emoji:7b9ddb0b8c001e17cee03b1edf554b20 @ {m:b:u:l, bg}
+11-03 18:07:22.821  1474  1730 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:07:22.821  1474  1730 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): emoji.sync cancelled; expected if new request supersedes pending one.
+11-03 18:07:22.826  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:22.835  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:22.837  4395  4511 I TestRunner: finished: emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible(com.jarvis.files.ConversationContextTest)

@@ -1,0 +1,57 @@
+11-03 18:07:24.860  4395  4511 I TestRunner: started: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)
+11-03 18:07:24.881  2925  2925 W binder:2925_5: type=1400 audit(0.0:88): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:07:24.901  2925  3349 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-03 18:07:24.908  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.897  2925  2925 W binder:2925_5: type=1400 audit(0.0:89): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-03 18:07:24.907  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000029
+11-03 18:07:24.907  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000029
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.907  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.925  2925  3349 W libc    : Access denied finding property "service.adb.tls.port"
+11-03 18:07:24.937  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.954  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.971  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.988  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/keep.txt to set project id.: No such file or directory
+11-03 18:07:24.989  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/keep.txt
+11-03 18:07:24.989  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/keep.txt
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.989  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.999  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:25.023  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.028  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.029  3614  5784 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:25.033  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.036  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.041  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.064  1292  5527 I GCM-GMS : Scheduling task to register GMS
+11-03 18:07:25.067  1292  5519 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:07:25.070  1292  5519 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+11-03 18:07:25.084  1589  2062 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.098  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.108  3614  3614 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:07:25.110  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.113  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.121  1048  4290 I Herrevad: [253] aqwl.a: updateListenState
+11-03 18:07:25.125  3614  5795 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:25.127  2925  3349 D EGL_emulation: eglCreateContext: 0x7bae78494110: maj 3 min 0 rcv 3
+11-03 18:07:25.129  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:25.130  4395  4511 I TestRunner: finished: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)

@@ -1,0 +1,130 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.jarvis.files"
+    test_package: "com.jarvis.files.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.jarvis.files/additional_test_output"
+    }
+    args_map {
+      key: "class"
+      value: "com.jarvis.files.OrganizeRegressionTest,com.jarvis.files.AppInsightsTest,com.jarvis.files.AppsFlowTest,com.jarvis.files.ConversationContextTest,com.jarvis.files.CommandFlowTest"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/debug/app-debug.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+apks_to_install {
+  apk_paths: "/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+instrumentation_target_package_id: "com.jarvis.files"
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/debug/app-debug.apk] on device emulator-5554.
+INFO: Installing [/home/runner/work/jarvis-files/jarvis-files/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.jarvis.files/additional_test_output to /home/runner/work/jarvis-files/jarvis-files/app/build/outputs/connected_android_test_additional_output/debugAndroidTest/connected/emulator-5554 - 13
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.jarvis.files for device emulator-5554.
+INFO: Uninstalling com.jarvis.files.test for device emulator-5554.
+INFO: Execute com.jarvis.files.OrganizeRegressionTest.unrelatedRequestDoesNotContinuePendingOrganizer: PASSED
+INFO: Execute com.jarvis.files.OrganizeRegressionTest.allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure: PASSED
+INFO: Execute com.jarvis.files.OrganizeRegressionTest.topLevelOnlyAndCancellationDoNotMoveNestedFiles: PASSED
+INFO: Execute com.jarvis.files.OrganizeRegressionTest.missingScopeAsksOnceAndRetainsChosenMode: PASSED
+INFO: Execute com.jarvis.files.OrganizeRegressionTest.explicitTypeIsNotLostByFollowingChoice: PASSED
+SEVERE: Execute com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted: FAILED
+java.lang.ClassCastException: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+at java.lang.Integer.compareTo(Integer.java:56)
+at kotlin.comparisons.ComparisonsKt__ComparisonsKt.compareValues(Comparisons.kt:77)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$compareByDescending$1.compare(Comparisons.kt:120)
+at com.jarvis.files.core.AppInsights$ordered$$inlined$thenBy$1.compare(Comparisons.kt:143)
+at java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+at java.util.TimSort.sort(TimSort.java:220)
+at java.util.Arrays.sort(Arrays.java:1427)
+at kotlin.collections.ArraysKt___ArraysJvmKt.sortWith(_ArraysJvm.kt:2206)
+at kotlin.collections.CollectionsKt___CollectionsKt.sortedWith(_Collections.kt:1254)
+at com.jarvis.files.core.AppInsights.ordered(AppInsights.kt:39)
+at com.jarvis.files.AppInsightsTest.classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted(AppInsightsTest.kt:19)
+INFO: Execute com.jarvis.files.AppInsightsTest.revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros: PASSED
+INFO: Execute com.jarvis.files.AppInsightsTest.realInventoryProvidesRequestedDatesAndSeparatesMissingHistory: PASSED
+SEVERE: Execute com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart: FAILED
+java.lang.AssertionError: java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+
+java.lang.AssertionError: No node found that matches TestTag = 'app_com.jarvis.files' in scrollable container
+Semantics of the node:
+Node #226 at (l=0.0, t=24.0, r=320.0, b=554.0)px, Tag: 'apps_list'
+CollectionInfo = 'CollectionInfo(rowCount=6, columnCount=1)'
+IsTraversalGroup = 'true'
+Shape = 'androidx.compose.foundation.VerticalScrollableClipShape@cf5dd41'
+VerticalScrollAxisRange = 'ScrollAxisRange(value=0.0, maxValue=0.0, reverseScrolling=false)'
+Actions = [GetScrollViewportLength, IndexForKey, ScrollBy, ScrollByOffset, ScrollToIndex]
+Has 11 children
+Selector used: (TestTag = 'apps_list')
+
+at androidx.compose.ui.test.ActionsKt.performScrollToNode(Actions.kt:257)
+at com.jarvis.files.AppsFlowTest.moreOpensSearchableInventoryAndPerAppChart(AppsFlowTest.kt:23)
+INFO: Execute com.jarvis.files.ConversationContextTest.emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.multipleFoldersAskOnceAndResumePendingSearchOnSelection: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.ordinalAndUniqueFolderNameCanAnswerTheQuestion: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.contextualRenamePreservesNewNameCapitalizationAndExtension: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.contextMutationCannotAccidentallyDeleteEveryPdfOnPhone: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.removedResultOrFolderIsNotInventedAgain: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.duplicateFolderNamesCannotPickAnArbitraryPath: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess: PASSED
+INFO: Execute com.jarvis.files.ConversationContextTest.askForFileNameOnceAndKeepFolderAcrossSeveralSearches: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.clarificationChoiceRescansBeforeBuildingDeletionPreview: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.keyboardSendActionBuildsPreviewAndClearsDraft: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.allPlanEntriesCanBeReviewedBeyondOldLimit: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.vaultImportButtonMovesOnlySelectedFile: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.emptySendIsDisabledAndMicrophoneIsSeparate: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.directScreenshotCommandDoesNotAskModelForAnotherConfirmation: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.largestFilesAndShowThemWorkThroughChatWithoutModel: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.screenshotNoButtonCancelsWithoutModelOrFileChanges: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.openingAllResultsPreservesLargestFirstOrder: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.cancelButtonLeavesFilesUntouched: PASSED
+INFO: Execute com.jarvis.files.CommandFlowTest.settingsButtonOpensAiSettings: PASSED

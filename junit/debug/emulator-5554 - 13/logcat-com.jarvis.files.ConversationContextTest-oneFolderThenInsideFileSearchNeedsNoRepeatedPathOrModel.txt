@@ -1,0 +1,103 @@
+11-03 18:07:24.641  4395  4511 I TestRunner: started: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)
+11-03 18:07:24.648  1292  4317 I PeopleGalProvider: Gal directories started.
+11-03 18:07:24.648  1292  4317 I PeopleGalProvider: Method 1 completed.
+11-03 18:07:24.648  1292  4317 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:07:24.654  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000026
+11-03 18:07:24.654  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000026
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.654  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.660  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:07:24.661  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:07:24.661  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.661  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.662  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf to set project id.: No such file or directory
+11-03 18:07:24.662  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf
+11-03 18:07:24.662  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.662  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000027
+11-03 18:07:24.662  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000027
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.662  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.672  3614  5701 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:24.690   991   991 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+11-03 18:07:24.690   991   991 D CarrierSvcBindHelper: No carrier app for: 0
+11-03 18:07:24.695  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.699   991   991 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+11-03 18:07:24.699  5021  5153 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:07:24.712  1048  4289 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+11-03 18:07:24.714  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.730  1048  4290 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+11-03 18:07:24.733  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.749  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:24.755  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf to set project id.: No such file or directory
+11-03 18:07:24.755  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf
+11-03 18:07:24.755  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:24.755  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:24.771  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.777  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.782  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.786  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.789  1048  1063 I .gms.persistent: Background young concurrent copying GC freed 277064(15MB) AllocSpace objects, 4(208KB) LOS objects, 35% free, 26MB/41MB, paused 56us,19us total 334.319ms
+11-03 18:07:24.792  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:24.832  1292  5520 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.dtdi#com.google.android.gms, using defaults.
+11-03 18:07:24.833  1292  5520 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Device Discovery. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:07:24.833  1292  5520 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Spatial Orchestration. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:07:24.834  1292  5520 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Media Transfer. Flag is disabled. [CONTEXT service_id=312 ]
+11-03 18:07:24.840  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.845  1292  5520 I EnterpriseLoader: [ConditionsChecker] ZT config not present. [CONTEXT service_id=225 ]
+11-03 18:07:24.846  1292  5520 I EsimModuleInit: onHandleIntent action: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=333 ]
+11-03 18:07:24.848  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.851  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.853  1292  5520 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=2
+11-03 18:07:24.853  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.858  1589  2097 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:24.859  4395  4511 I TestRunner: finished: oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel(com.jarvis.files.ConversationContextTest)

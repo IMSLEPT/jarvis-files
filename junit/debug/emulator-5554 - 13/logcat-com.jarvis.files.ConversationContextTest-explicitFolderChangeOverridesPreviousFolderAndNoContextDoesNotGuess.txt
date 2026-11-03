@@ -1,0 +1,100 @@
+11-03 18:07:25.789  4395  4511 I TestRunner: started: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)
+11-03 18:07:25.791  1292  5527 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+11-03 18:07:25.793  1589  1916 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000032
+11-03 18:07:25.793  1589  1916 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000032
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.793  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.800  1292  5527 I NearbyFastPair: FastPairInitIntentOperation: check the Footprints sync tasks. [CONTEXT service_id=265 ]
+11-03 18:07:25.800  1292  5527 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:07:25.800  1292  5527 I NearbyFastPair: TSS cancel footprints recon sync [CONTEXT service_id=265 ]
+11-03 18:07:25.800  1292  5527 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_RECON_SYNC_SCHEDULE success. [CONTEXT service_id=265 ]
+11-03 18:07:25.800  1292  5527 I NearbyFastPair: TSS scheduleFootprintsOneOffSync: not enable [CONTEXT service_id=265 ]
+11-03 18:07:25.804  1292  3081 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+11-03 18:07:25.805  1292  3081 I NearbySharing: Granted slice and Uri permissions to android [CONTEXT service_id=194 ]
+11-03 18:07:25.807  1292  5520 I NearbySharing: Runtime state initialization complete. Sharing is enabled. [CONTEXT service_id=194 ]
+11-03 18:07:25.807  1589  1916 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:07:25.807  1589  1916 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:07:25.807  1589  1916 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:07:25.807  1589  1916 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:07:25.807  1292  5520 W libc    : Access denied finding property "ro.hardware.chipname"
+11-03 18:07:25.807  1292  5520 W ChipsetHelper: Unknown chipset! [CONTEXT service_id=301 ]
+11-03 18:07:25.807  1292  5520 I NnApiDriverManager: Registering application with chipset 'unknown' [CONTEXT service_id=301 ]
+11-03 18:07:25.811  1048  2499 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-03 18:07:25.811  1048  2499 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+11-03 18:07:25.812  1292  1305 I gle.android.gms: Background young concurrent copying GC freed 46091(2431KB) AllocSpace objects, 90(4680KB) LOS objects, 29% free, 15MB/21MB, paused 64us,16us total 237.783ms
+11-03 18:07:25.815  1292  1292 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0Ylryqnc+O2twz
+11-03 18:07:25.821  1292  5520 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:07:25.833  1292  1307 W System  : A resource failed to call close.
+11-03 18:07:25.833  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.837  1048  1048 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+11-03 18:07:25.847   483   580 I RoleService: Granting default roles...
+11-03 18:07:25.848   483   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:07:25.848   281  5923 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+11-03 18:07:25.852  5021  5035 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+11-03 18:07:25.853  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.854   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:25.854   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:25.854   770   770 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:07:25.855   962   962 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:07:25.856   962   962 D MediaPlayerList: Name of package changed: com.google.android.gms
+11-03 18:07:25.857  3157  3294 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c8d2c4a
+11-03 18:07:25.860   281  5930 I resolv  : res_nmkquery: (QUERY, IN, A)
+11-03 18:07:25.860   281  5930 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301af6a3c10
+11-03 18:07:25.860   281  5930 I resolv  : doQuery: rcode=0, ancount=8, return value=177
+11-03 18:07:25.862   281  5929 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+11-03 18:07:25.863   281  5929 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7301bf6a2890
+11-03 18:07:25.863   281  5929 I resolv  : doQuery: rcode=0, ancount=8, return value=273
+11-03 18:07:25.871   991   991 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+11-03 18:07:25.871   991   991 D CarrierSvcBindHelper: No carrier app for: 0
+11-03 18:07:25.879  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.880  1048  5564 D TrafficStats: tagSocket(107) with statsTag=0x30008100, statsUid=-1
+11-03 18:07:25.881   991   991 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+11-03 18:07:25.890  5021  5153 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+11-03 18:07:25.891  1292  2924 I PeopleGalProvider: Gal directories started.
+11-03 18:07:25.891  1292  2924 I PeopleGalProvider: Method 1 completed.
+11-03 18:07:25.891  1292  2924 I PeopleGalProvider: Method 1 finished successfully.
+11-03 18:07:25.892  1292  1354 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+11-03 18:07:25.897  1292  5519 W gle.android.gms: Long monitor contention with owner highpool[0] (1354) at cooe cooe.a(android.content.Context)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2) waiters=0 in cooe cooe.a(android.content.Context) for 311ms
+11-03 18:07:25.899  4395  4511 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:07:25.902  1048  5564 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-03 18:07:25.902  1048  5564 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:07:25.902  1048  5564 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:07:25.920  3614  5939 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:07:25.922  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.928  1292  5520 D EGL_emulation: eglCreateContext: 0x7bae78496bd0: maj 3 min 0 rcv 3
+11-03 18:07:25.933  1292  5520 D EGL_emulation: eglMakeCurrent: 0x7bae78496bd0: ver 3 0 (tinfo 0x7bb098e7b100) (first time)
+11-03 18:07:25.934  1292  5520 I NnApiDriverManager: Registering application with GPU 'Android Emulator OpenGL ES Translator (Google SwiftShader)' by 'Google (Google Inc.)' [CONTEXT service_id=301 ]
+11-03 18:07:25.966  1589  4650 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.970  1292  5950 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+11-03 18:07:25.972  1589  2113 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.975  1589  4557 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:25.978  1589  2062 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:07:26.017  1048  5604 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+11-03 18:07:26.019  1589  4557 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.026  1589  4650 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.030  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.033  1292  5518 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 1 Force : false UserId : 0 Start time : 110541
+11-03 18:07:26.035  1292  5518 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+11-03 18:07:26.036  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.039  1589  2113 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:07:26.041  4395  4511 I TestRunner: finished: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)
