@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Fractional insets scale with Android's adaptive foreground bounds at every launcher density. -->
-<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="20%">
-    <bitmap android:src="@drawable/jarvis_folder_brand" android:gravity="fill" android:filter="true" />
-</inset>
+<!-- Foreground adattivo: il PNG è già a 108 dp con il disegno entro la zona sicura di 66 dp (cerchio),
+     quindi nessuna maschera di launcher (cerchio, squircle, quadrato) lo ritaglia. Niente inset. -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/jarvis_launcher_foreground"
+    android:gravity="fill"
+    android:filter="true" />

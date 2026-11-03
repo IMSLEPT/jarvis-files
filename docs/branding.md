@@ -4,11 +4,12 @@ Applicazione del concept approvato nella conversazione del 26 ottobre 2026: cart
 
 | Risorsa | Uso |
 | --- | --- |
-| `app/src/main/res/drawable-nodpi/jarvis_folder_brand.webp` | Cartella del marchio e foreground dell'icona Android |
+| `app/src/main/res/drawable-nodpi/jarvis_folder_brand.webp` | Cartella del marchio nell'app (barra e Home); non è più il foreground dell'icona Android |
+| `app/src/main/res/drawable-nodpi/jarvis_launcher_foreground.png` | Foreground dell'icona Android (3 novembre 2026): nuova icona fornita dal proprietario, 648 px = 108 dp, disegno entro la zona sicura di 66 dp, sfondo blu notte `#000E39` identico al colore `jarvis_launcher_background` |
 | `app/src/main/res/drawable-nodpi/jarvis_sphere_brand.webp` | Sfera grande nella Home, benvenuto e ascolto |
 | `app/src/main/res/drawable/jarvis_symbol_brand.xml` | Simbolo vettoriale compatto per barra e chat |
 | `app/src/main/res/drawable/jarvis_wordmark_brand.xml` | Scritta vettoriale Jarvis / FILES |
-| `app/src/main/res/drawable/jarvis_launcher_layer.xml` | Foreground adattivo centrato, senza riquadro incorporato |
+| `app/src/main/res/drawable/jarvis_launcher_layer.xml` | Foreground adattivo: mostra `jarvis_launcher_foreground.png` a piena misura, senza inset (i margini sono già nel PNG) |
 | `app/src/main/res/drawable/jarvis_launcher_monochrome.xml` | Icone a tema Android 13+ |
 
 Il wordmark deriva da Inter già incluso nel progetto. Si rigenera con `python scripts/build_brand_wordmark.py` (richiede fontTools). La parola è convertita in tracciati: non dipende dai caratteri installati sul telefono.
