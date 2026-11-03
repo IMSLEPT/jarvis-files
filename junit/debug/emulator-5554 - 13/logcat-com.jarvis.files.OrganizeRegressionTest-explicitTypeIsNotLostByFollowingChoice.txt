@@ -1,0 +1,182 @@
+11-03 18:15:58.194  4426  4495 I TestRunner: started: explicitTypeIsNotLostByFollowingChoice(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:15:58.197  4858  4858 I timeinitializer: Using CollectorTypeCC GC.
+11-03 18:15:58.197  4858  4858 W timeinitializer: Unexpected CPU variant for x86: x86_64.
+11-03 18:15:58.197  4858  4858 W timeinitializer: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:15:58.209   375   404 I adbd    : jdwp connection from 4858
+11-03 18:15:58.219  4675  4780 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+11-03 18:15:58.230  1304  1304 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:15:58.230  1304  1304 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+11-03 18:15:58.231  4675  4780 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:15:58.232  4675  4780 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+11-03 18:15:58.234  4675  4780 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+11-03 18:15:58.239  4858  4858 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10109; state: ENABLED
+11-03 18:15:58.241  4858  4858 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/GoogleOneTimeInitializer/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.onetimeinitializer:/product/lib64:/system/product/lib64
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: dhwp: FULL
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+11-03 18:15:58.248  1066  3198 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:15:58.249  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000020
+11-03 18:15:58.249  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000020
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:58.249  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:58.250  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000022
+11-03 18:15:58.250  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000022
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:58.250  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:58.254  4858  4858 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.onetimeinitializer' set to: 'default'
+11-03 18:15:58.256  4675  4780 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+11-03 18:15:58.259   284   284 I netd    : tetherGetStats() -> {[]} <0.42ms>
+11-03 18:15:58.259  4858  4858 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.onetimeinitializer: false
+11-03 18:15:58.259  4858  4858 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:15:58.261   284   284 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+11-03 18:15:58.262  1304  4308 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.gservices.intent.action.GSERVICES_CHANGED flg=0x1000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+11-03 18:15:58.263  3171  3301 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-03 18:15:58.267  4858  4858 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:15:58.267  4858  4858 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:15:58.268  4858  4858 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+11-03 18:15:58.271  4675  4780 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-03 18:15:58.272  3171  3446 I RcsClientLib: com.google.android.rcs.client.chatsession.ChatSessionService connected
+11-03 18:15:58.272  3171  3446 I BugleRcs: com.google.android.rcs.client.chatsession.ChatSessionService RCS service connected
+11-03 18:15:58.274  4858  4885 V OneTimeInitializer: OneTimeInitializer.initialize
+11-03 18:15:58.279  1620  1969 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:15:58.280  1620  1969 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 34ms, 0 inserts 0 updates 0 deletes
+11-03 18:15:58.280  4426  4657 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to null
+11-03 18:15:58.281  4858  4885 V OneTimeInitializer: Device Policy is not installed, doing nothing.
+11-03 18:15:58.326  1304  4740 I OcrModelUpStIntentOp: Downloading text recognizer
+11-03 18:15:58.343  1304  1304 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:15:58.343  1304  1304 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:15:58.343  1620  1670 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf
+11-03 18:15:58.375   490  1604 I RecoverableKeyStoreMgr: This is a certificate change. Snapshot didn't exist
+11-03 18:15:58.377  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:58.381  1304  4309 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+11-03 18:15:58.395  3171  3185 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-03 18:15:58.397  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-03 18:15:58.401   490  1604 E RecoverySnapshotStorage: 	... 8 more
+11-03 18:15:58.418  4675  4773 W ymo     : Toggling Chat components off.
+11-03 18:15:58.430  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:58.437  1066  1066 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:15:58.437  1066  1066 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:15:58.457  3171  3301 I RcsClientLib: Connecting EventService
+11-03 18:15:58.467  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:58.471   490  1863 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: [WrappingKeyManager] InternalRecoveryServiceException during wrapping key generation [CONTEXT service_id=172 ]
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: android.security.keystore.recovery.InternalRecoveryServiceException: Failed to import secret key.
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.wrapUnexpectedServiceSpecificException(RecoveryController.java:773)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:562)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at qiw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at qiw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at qfw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at com.google.android.gms.auth.folsom.operation.GserviceChangeIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: Caused by: android.os.ServiceSpecificException: Failed to import secret key. (code 22)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3025)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.os.Parcel.createException(Parcel.java:2995)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2978)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2920)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at com.android.internal.widget.ILockSettings$Stub$Proxy.generateKey(ILockSettings.java:1574)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:549)
+11-03 18:15:58.475  1304  4309 W RecoverableKeyStoreGms: 	... 12 more
+11-03 18:15:58.483  1066  1479 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+11-03 18:15:58.491  3171  3301 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-03 18:15:58.493  3171  3301 I RcsClientLib: Connecting ContactsService
+11-03 18:15:58.493  3171  3446 I RcsClientLib: com.google.android.rcs.client.events.EventService connected
+11-03 18:15:58.493  3171  3446 I BugleRcs: com.google.android.rcs.client.events.EventService RCS service connected
+11-03 18:15:58.494  1620  1670 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 210ms, 0 inserts 0 updates 0 deletes
+11-03 18:15:58.498  2971  3158 I CarrierServices: [40] RcsStateSaver.saveRcsState:57 Saving RCS State
+11-03 18:15:58.499  2971  3158 I CarrierServices: [40] RcsStateSaver.saveRcsState:66 Old operation mode: 2
+11-03 18:15:58.499  2971  3158 I CarrierServices: [40] RcsStateSaver.saveRcsState:71 New operation mode: 2
+11-03 18:15:58.500  2971  2971 I CarrierServices: [2] RcsStateFetcher$1.onPostExecute:189 Finalizing migration for RCS state: Operation mode FULL STACK
+11-03 18:15:58.501  3171  3185 I BugleRcsEngine: [37] RcsStateProvider.onMigrationComplete: Migration complete.
+11-03 18:15:58.504  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:58.514  2971  2971 I CarrierServices: [2] RcsStateFetcher$GetRcsStateConnection.onFinish:162 Unbinding RcsMigrationService
+11-03 18:15:58.515  1304  3227 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=AMBIENT_ASSISTANT serviceId=32
+11-03 18:15:58.518  4426  4657 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisOrganizeRegression/Sub/PDF/c.pdf to null
+11-03 18:15:58.522  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:58.529  1620  4051 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:58.533  1620  2086 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:58.535  1304  4740 W MDM     : [208] aywf.d: Q+ devices does not need device admin.
+11-03 18:15:58.556  1304  4673 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+11-03 18:15:58.562  3171  3558 I BugleRcsEngine: [81] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: Rcs Engine should be running in cs.apk. Stopping JibeService.
+11-03 18:15:58.562  3171  3558 I RcsClientLib: Disconnecting ChatSessionService
+11-03 18:15:58.567  2685  2695 I id.gms.unstable: Background young concurrent copying GC freed 93304(5203KB) AllocSpace objects, 53(4600KB) LOS objects, 56% free, 7672KB/17MB, paused 22us,9us total 237.859ms
+11-03 18:15:58.607  3794  3807 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+11-03 18:15:58.609  3794  3807 I RemoteProvisioner: Pool status 6, 5, 0, 6
+11-03 18:15:58.609  3794  3807 I RemoteProvisioningService: Pool status.
+11-03 18:15:58.609  3794  3807 I RemoteProvisioningService: Total: 6
+11-03 18:15:58.609  3794  3807 I RemoteProvisioningService: Attested: 6
+11-03 18:15:58.609  3794  3807 I RemoteProvisioningService: Unassigned: 5
+11-03 18:15:58.609  3794  3807 I RemoteProvisioningService: Expiring: 0
+11-03 18:15:58.610  3794  3807 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+11-03 18:15:58.611  3794  3807 I RemoteProvisioningService: No provisioning needed.
+11-03 18:15:58.621  1304  1304 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+11-03 18:15:58.625  1304  1304 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+11-03 18:15:58.625  1304  1304 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+11-03 18:15:58.632  1304  4673 I Vision  : Supported ABIS: [x86_64]
+11-03 18:15:58.633  1304  4673 E Vision  : Couldn't read checkbot setting: android.provider.Settings$SettingNotFoundException: multi_cb
+11-03 18:15:58.638  1304  4740 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+11-03 18:15:58.649  3171  3558 I RcsClientLib: Disconnecting EventService
+11-03 18:15:58.653  1620  4051 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:58.656  1620  2083 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:15:58.665  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:58.671  1620  4051 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:58.674  1304  4740 I SystemUpdate: [Control,InstallationControl] Installation progress updated to (0x000, -1.000).
+11-03 18:15:58.676  4426  4495 I TestRunner: finished: explicitTypeIsNotLostByFollowingChoice(com.jarvis.files.OrganizeRegressionTest)

@@ -1,0 +1,245 @@
+11-03 18:16:33.180  4426  4495 I TestRunner: started: directScreenshotCommandDoesNotAskModelForAnotherConfirmation(com.jarvis.files.CommandFlowTest)
+11-03 18:16:33.183   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:33.193   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:33.193   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627010
+11-03 18:16:33.195   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6246d0
+11-03 18:16:33.196   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6247f0
+11-03 18:16:33.202  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:33.203  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:33.203  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:16:33.203  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:33.206  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:33.218   490  1072 W InputManager-JNI: Input channel object '629ca65 com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:16:33.222   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626470
+11-03 18:16:33.223   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6285d0
+11-03 18:16:33.223   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6266b0
+11-03 18:16:33.223   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6266b0
+11-03 18:16:33.237  1751  1751 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:16:33.247  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:33.265  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:33.291  1751  2362 I A       : group apa_head_suggest not present without account in *
+11-03 18:16:33.293  1751  2362 I A       : incrementApaDataDownloadStoreStatus(latency = PT0.015S, appVersion = 13.17.16.23, status = NOT_FOUND, locale = *, fileGroupnames = apa_head_suggest, accountScoped = false, localGroupsAvailable = false, timeSinceSearchBoot = Optional[PT1M14.767S] (ONE_TO_FIVE_MINUTES), timeSinceDataDownloadInit = PT9.478S (FIVE_TO_TEN_SECONDS))
+11-03 18:16:33.299  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:33.306  1751  2366 I A       : incrementApaDataDownloadStoreStatusNotFound(appVersion = 13.17.16.23, locale = *, groupName = apa_head_suggest, accountScoped = false, foundGroups = 0, status = 0, localGroupsAvailable = false)
+11-03 18:16:33.314  1751  2390 I A       : Using proto config with mendel
+11-03 18:16:33.315  1751  2390 W A       : Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-03 18:16:33.316  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+11-03 18:16:33.317  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:33.340   490  1742 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:16:33.343  1751  2390 I A       : Using proto config with mendel
+11-03 18:16:33.352  4426  4495 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@9a7e552]
+11-03 18:16:33.356  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 67 uptime_millis: 67 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+11-03 18:16:33.364  4426  4495 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:16:33.380   768   855 D SplashScreenView: Build android.window.SplashScreenView{85a5eaa V.E...... ......ID 0,0-0,0}
+11-03 18:16:33.380   768   855 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:16:33.380   768   855 D SplashScreenView: Branding: view: android.view.View{8ce4a9b G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:16:33.381   768   856 W Parcel  : Expecting binder but got null!
+11-03 18:16:33.415  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: PRE_ON_CREATE
+11-03 18:16:33.416  4426  4426 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:16:33.428  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: CREATED
+11-03 18:16:33.429  4426  4426 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@d250976
+11-03 18:16:33.430  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: STARTED
+11-03 18:16:33.430  4426  4426 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@d250976
+11-03 18:16:33.431  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: RESUMED
+11-03 18:16:33.431  4426  4426 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@d250976
+11-03 18:16:33.433  4426  5368 W Parcel  : Expecting binder but got null!
+11-03 18:16:33.440   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6229f0
+11-03 18:16:33.440   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626a70
+11-03 18:16:33.440   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626a70
+11-03 18:16:33.441  4426  4426 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:16:33.441   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6229f0
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 24, 16390, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 24, 16390, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 16390, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16398, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 16398, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16420, 39713516, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16435, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 16435, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16450, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 16450, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16465, 39265819, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.507  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16480, 37895154, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16488, 37973600, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16496, 38784967, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16504, 38245964, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16519, 37941268, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 16548, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.508  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 16548, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:33.509  1034  2319 V PerfettoTrigger: Not triggering com.android.telemetry.interaction-jank-monitor-9 - not enough time since last trigger
+11-03 18:16:33.517   490  1072 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:16:33.532  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(7, com.google.android.gms.time#com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:33.549   768   856 D EGL_emulation: app_time_stats: avg=304.38ms min=16.20ms max=750.03ms count=4
+11-03 18:16:33.553   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627730
+11-03 18:16:33.589   490   513 W ziparchive: Unable to open '/data/app/~~V4-3-G8FG5-mUhSbJaBXjQ==/com.jarvis.files-OXDShld6x1qq7g1YPgI8xg==/base.dm': No such file or directory
+11-03 18:16:33.590   490   513 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +220ms
+11-03 18:16:33.592  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:33.612   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:33.612   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:33.619   490  1848 W InputManager-JNI: Input channel object 'bf1bf14 Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:16:33.624  1751  2730 I PBSessionCacheImpl: Deleted sessionId[7702773170666239] from persistence.
+11-03 18:16:33.627  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:33.628  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:33.628  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:16:33.628  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:33.629  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:33.634  1034  2302 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:16:33.635  1034  6290 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74ef57cf3ba0 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627610
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626830
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625870
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625870
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626830
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625870
+11-03 18:16:33.638   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627610
+11-03 18:16:33.643  1620  4051 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.644  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.645  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.645  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.645  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.645  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.645  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:33.653   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627b50
+11-03 18:16:33.653   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6262f0
+11-03 18:16:33.674  4426  4426 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:16:33.674  4426  4426 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:16:33.720  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+11-03 18:16:33.723  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+11-03 18:16:33.924  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:33.925  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:33.925  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+11-03 18:16:33.925  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:33.926  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:33.928  4426  4426 D InsetsController: show(ime(), fromIme=false)
+11-03 18:16:33.928  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+11-03 18:16:33.928  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:33.928  4426  4426 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{90316bd VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT_BY_INSETS_API
+11-03 18:16:33.929  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:33.929  1496  1496 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:16:33.937  4426  4426 I AssistStructure: Flattened final assist data: 512 bytes, containing 1 windows, 3 views
+11-03 18:16:33.942  1066  1066 W AutofillChimeraService: Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+11-03 18:16:33.944  1514  1514 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:2041267208
+11-03 18:16:33.947  4426  4426 D InputMethodManager: showSoftInput() view=androidx.compose.ui.platform.AndroidComposeView{90316bd VFED..... .F....ID 0,0-320,640 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+11-03 18:16:33.949  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+11-03 18:16:33.949  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:33.950  1496  1496 W ModuleManager: ModuleManager.loadModule():450 Module erj is not available
+11-03 18:16:33.950  1496  1704 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:16:33.959  1066  1094 I .gms.persistent: Compiler allocated 4737KB to compile void bwhy.C(java.util.Set, long, dmuh, dmui, java.util.List, java.util.LinkedHashMap, dzew, bwhx, boolean)
+11-03 18:16:33.966  4426  4426 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+11-03 18:16:33.966  4426  4426 D Autofill Status:
+11-03 18:16:33.966  4426  4426 D Autofill Status: Did you set up autofill?
+11-03 18:16:33.966  4426  4426 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+11-03 18:16:33.966  4426  4426 D Autofill Status: 2. Pick a service
+11-03 18:16:33.966  4426  4426 D Autofill Status:
+11-03 18:16:33.966  4426  4426 D Autofill Status: Did you add an account?
+11-03 18:16:33.966  4426  4426 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+11-03 18:16:33.966  4426  4426 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+11-03 18:16:33.966  4426  4426 D Autofill Status: 3. Add your account
+11-03 18:16:33.968  1496  1496 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():189 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+11-03 18:16:33.969  1496  1496 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=false, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+11-03 18:16:33.970  1496  1496 I Delight5Facilitator: Delight5Facilitator.initializeForIme():777 initializeForIme() : Locale = [en_US], layout = qwerty
+11-03 18:16:33.971  1496  1496 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+11-03 18:16:33.971  1496  1496 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+11-03 18:16:33.971  1496  1496 I LatinIme: LatinIme.updateEnableInlineSuggestionsOnDecoderSideFlags():1003 inline flag updated to:false
+11-03 18:16:33.973  1496  5736 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():205 maybeScheduleAutoPackDownloadForFallback()
+11-03 18:16:33.973  1496  5736 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():195 maybeScheduleAutoPackDownload() for language tag en-US
+11-03 18:16:33.974  1496  1496 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:16:33.977  1496  1496 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:16:33.978  1496  1496 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:16:33.978  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = HEADER, shownType = SHOW_OPTIONAL
+11-03 18:16:33.978  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:16:33.979  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = BODY, shownType = SHOW_MANDATORY
+11-03 18:16:33.979  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = true
+11-03 18:16:33.979  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3483 setKeyboardViewShown() : type = FLOATING_CANDIDATES, shownType = HIDE
+11-03 18:16:33.979  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.setKeyboardViewShown():3530 setKeyboardViewShown() : shouldShow = false
+11-03 18:16:33.987  1496  1496 I KeyboardViewUtil: KeyboardViewUtil.calculateMaxKeyboardBodyHeight():40 leave 110 height for app when screen height:640, header height:38 and isFullscreenMode:false, so the max keyboard body height is:492
+11-03 18:16:33.988  1496  1496 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:16:33.990  1496  1496 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:320
+11-03 18:16:33.991  1496  1496 I KeyboardModeManager: KeyboardModeManager.setInputView():364 setInputView() : supportsOneHandedMode=true
+11-03 18:16:33.991  1496  1496 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:16:33.992  1496  1496 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:16:33.993  1496  1496 I KeyboardModeManager: KeyboardModeManager.setInputView():356 setInputView() : entry=hwn{languageTag=en-US, variant=qwerty, hasLocalizedResources=true, conditionCacheKey=_device=phone_device_size=default_enable_adaptive_text_editing=false_enable_inline_suggestions_on_client_side=false_enable_large_tablet_batch_1=false_enable_large_tablet_batch_2=false_enable_more_candidates_view_for_multilingual=false_enable_nav_redesign=false_enable_number_row=false_enable_preemptive_decode=true_enable_secondary_symbols=false_expressions=normal_four_or_more_letter_rows=false_keyboard_mode=normal_language=en-US_orientation=portrait_physical_keyboard=qwerty_show_secondary_digits=true_show_suggestions=true_split_with_duplicate_keys=true_variant=qwerty, imeDef.stringId=ime_english_united_states, imeDef.className=com.google.android.apps.inputmethod.libs.latin5.LatinIme, imeDef.languageTag=en-US}
+11-03 18:16:33.994  1496  1496 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():383 No private IME option set to start voice input.
+11-03 18:16:34.026  4426  4426 D InsetsController: show(ime(), fromIme=true)
+11-03 18:16:34.044  1496  1496 I NormalModeController: NormalModeController.getKeyboardBodyViewHolderPaddingBottom():116 currentPrimeKeyboardType:SOFT systemPaddingBottom:-1
+11-03 18:16:34.064  1496  2112 I Delight5Decoder: Delight5DecoderWrapper.setKeyboardLayout():457 setKeyboardLayout()
+11-03 18:16:34.148  1066  1344 W .gms.persistent: Long monitor contention with owner lowpool[5] (2726) at void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):200) waiters=0 in void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam) for 12.251s
+11-03 18:16:34.167  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, hub_android.device#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.211  1571  1994 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:16:34.216  1571  1994 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:16:34.217  1571  1994 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+11-03 18:16:34.222  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInputView():2241
+11-03 18:16:34.224  1496  1496 I KeyboardWrapper: KeyboardWrapper.consumeEvent():275 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+11-03 18:16:34.224  1496  1496 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+11-03 18:16:34.224  1496  1496 I AndroidIME: AbstractIme.onDeactivate():207 LatinIme.onDeactivate()
+11-03 18:16:34.225  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, true)
+11-03 18:16:34.225  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:34.242  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:34.242  1496  1496 W SessionManager: SessionManager.beginSession():53 Try to begin an already begun session [INPUT_SESSION], end it first
+11-03 18:16:34.333  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, gmail_android.user#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.343  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, gmail_android.device#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.386  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.partnersetup) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.406  1751  2756 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:16:34.414  1751  2756 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+11-03 18:16:34.418  3202  3202 E GooglePartnerSetup: Phenotype client.register: true
+11-03 18:16:34.484  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.lockbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.509  1620  6383 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:16:34.513  1620  6296 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:16:34.526   768   855 D SplashScreenView: Build android.window.SplashScreenView{ae6119d V.E...... ......ID 0,0-0,0}
+11-03 18:16:34.526   768   855 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:16:34.526   768   855 D SplashScreenView: Branding: view: android.view.View{9c18612 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:16:34.528  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: PAUSED
+11-03 18:16:34.528  4426  4426 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@d250976
+11-03 18:16:34.529   768   856 W Parcel  : Expecting binder but got null!
+11-03 18:16:34.534  3617  3617 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
+11-03 18:16:34.543  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.nnapi.drivermanager) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.550  1066  1347 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.icing.mdd) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:34.551  5489  5522 W Parcel  : Expecting binder but got null!
+11-03 18:16:34.587  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627af0
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623d70
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623d70
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627af0
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627af0
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b627af0
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623d70
+11-03 18:16:34.588   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623d70
+11-03 18:16:34.594  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.594  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.594  3617  6999 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:16:34.600  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.601  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.604   323   373 W TransactionTracing: Could not find layer handle 0x759f4b622c30
+11-03 18:16:34.619  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:34.636  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: STOPPED
+11-03 18:16:34.636  4426  4426 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@d250976
+11-03 18:16:34.650   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:34.650   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:34.659  4426  4426 D AutofillManager: onActivityFinishing(): calling cancelLocked()
+11-03 18:16:34.662  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@d250976 in: DESTROYED
+11-03 18:16:34.663  4426  4426 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:16:34.665  4426  4495 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@9a7e552]
+11-03 18:16:34.678  1571  1905 I AiAiEcho: Predicting[0]:
+11-03 18:16:34.679   490  1662 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:16:34.679  1571  1905 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:16:34.681  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:16:34.681  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:16:34.681  1034  2302 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=45, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@7577fc1
+11-03 18:16:34.689   490   516 W InputManager-JNI: Input channel object 'ae1bab6 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:16:34.691  5489  5496 I rvis.files.test: Compiler allocated 4355KB to compile void android.view.ViewRootImpl.performTraversals()
+11-03 18:16:34.700   490  1072 W InputManager-JNI: Input channel object '28cb762 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:16:34.701   768   856 D EGL_emulation: app_time_stats: avg=163.18ms min=2.41ms max=618.82ms count=7
+11-03 18:16:34.720  1751  1751 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:16:34.736  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:34.739   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626a10
+11-03 18:16:34.739   323   373 W TransactionTracing: Could not find layer handle 0x759f4b624c70
+11-03 18:16:34.739  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:34.739  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:16:34.739  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:34.740  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:34.748  4426  4495 I TestRunner: finished: directScreenshotCommandDoesNotAskModelForAnotherConfirmation(com.jarvis.files.CommandFlowTest)

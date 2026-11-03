@@ -1,0 +1,29 @@
+11-03 18:16:19.063  4426  4495 I TestRunner: started: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)
+11-03 18:16:19.071  1620  5510 I MediaProvider: Scanned external_primary due to REASON_DEMAND, found 0 items in 16ms, 0 inserts 0 updates 0 deletes
+11-03 18:16:19.072  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.074  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 5 candidates
+11-03 18:16:19.078  1571  2134 I SP.AiAi : Scheduling: job start ({m:b:u:l, bg}), 1 started, 0 paused, 6 scheduled, 7 pending: manifests:webref-2-en-us-19071200 @ * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:kg_collections_table-21051103 * {W:b:u:l, bg}, manifests:actions-ranking-table-211005 * {W:b:u:l, bg}, manifests:text-classifier-annotator-1687347939 * {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 * {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 * {W:b:u:l, bg}
+11-03 18:16:19.080  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.082  4426  4657 D MediaScannerConnection: Scanned /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to null
+11-03 18:16:19.093  1571  2134 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 5 started, 0 paused, 1 scheduled, 7 pending: manifests:webref-2-en-us-19071200 @ {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:kg_collections_table-21051103 @ * {W:b:u:l, bg}, manifests:actions-ranking-table-211005 @ * {W:b:u:l, bg}, manifests:text-classifier-annotator-1687347939 @ * {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 @ * {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 @ * {W:b:u:l, bg}
+11-03 18:16:19.094  1571  2134 I SP.AiAi : Requesting download of URL https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip to webref-2-en-us-19071200.zip.fetched (constraints: m:b:u:l)
+11-03 18:16:19.094  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.095  1571  2134 I SP.AiAi : Requesting download of URL https://www.gstatic.com/matchmaker/kg_collections_table/21051103/superpacks_manifest.zip to kg_collections_table-21051103.zip.fetched (constraints: W:b:u:l)
+11-03 18:16:19.109  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+11-03 18:16:19.110  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.120  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.128  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 37 uptime_millis: 37 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+11-03 18:16:19.132  1571  2134 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/superpacks_manifest.zip to actions-ranking-table-211005.zip.fetched (constraints: W:b:u:l)
+11-03 18:16:19.137  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.159  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.164  1620  2086 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.168  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.173  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.177  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.184  1571  2134 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/superpacks_manifest.zip to text-classifier-annotator-1687347939.zip.fetched (constraints: W:b:u:l)
+11-03 18:16:19.200  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.204  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.206  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.208  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.211  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.212  4426  4495 I TestRunner: finished: duplicateFolderNamesCannotPickAnArbitraryPath(com.jarvis.files.ConversationContextTest)

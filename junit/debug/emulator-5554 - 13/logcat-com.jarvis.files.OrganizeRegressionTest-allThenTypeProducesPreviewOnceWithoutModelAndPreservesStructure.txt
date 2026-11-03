@@ -1,0 +1,295 @@
+11-03 18:15:55.546  4426  4495 I TestRunner: started: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)
+11-03 18:15:55.550  1571  1571 I AiAiEcho: EchoSearch: AppFetcherImpl is initialized with [19] apps [time=29, reason=com.jarvis.files is added]
+11-03 18:15:55.568  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to set project id.: No such file or directory
+11-03 18:15:55.568  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:15:55.568  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:55.568  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:55.583  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf to set project id.: No such file or directory
+11-03 18:15:55.583  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:15:55.583  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/Sub/c.pdf
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:55.583  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:55.589  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000022
+11-03 18:15:55.589  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000022
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:55.589  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:55.596  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf to set project id.: No such file or directory
+11-03 18:15:55.622  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:15:55.622  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisOrganizeRegression/PDF/d.pdf
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:55.622  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:15:55.640  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:55.682  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:55.685  1304  2655 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-03 18:15:55.691  1066  2728 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+11-03 18:15:55.692   490   523 E system_server: No package ID 7f found for ID 0x7f080097.
+11-03 18:15:55.692   490   523 E system_server: No package ID 7f found for ID 0x7f0f0094.
+11-03 18:15:55.692   490   523 E system_server: No package ID 7f found for ID 0x7f0f0095.
+11-03 18:15:55.716  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:55.748  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f080096.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0093.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0093.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f080094.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0091.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0091.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f080095.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0092.
+11-03 18:15:55.778   490   523 E system_server: No package ID 7f found for ID 0x7f0f0092.
+11-03 18:15:55.787  1304  2655 I Icing   : Indexing done com.google.android.gms-apps
+11-03 18:15:55.795  1571  3772 I AiAiEcho: Settings cha with uri: content://settings/secure/accessibility_enabled
+11-03 18:15:55.796  1571  1905 I AiAiEcho: Predicting[0]:
+11-03 18:15:55.798  1571  1905 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:15:55.798  1571  1905 I AiAiEcho: Predicting[0]:
+11-03 18:15:55.799  1571  1905 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:15:55.800  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:15:55.802  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:15:55.805  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:15:55.806  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:15:55.815   768   856 D EGL_emulation: app_time_stats: avg=935.48ms min=1.74ms max=3772.78ms count=5
+11-03 18:15:55.856  1066  1479 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+11-03 18:15:55.891  3617  3617 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10085; state: ENABLED
+11-03 18:15:55.891  3617  3617 I ProvidersCache: Updating roots due to change on user 0at content://com.google.android.apps.docs.storage/root
+11-03 18:15:55.905  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:55.920  2685  2713 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-03 18:15:55.921  2685  2713 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-03 18:15:55.922  2685  2713 D TrafficStats: tagSocket(105) with statsTag=0x1809, statsUid=-1
+11-03 18:15:55.930  3837  3837 W GnpSdk  : Failed to get GrowthKitJobScheduler in GrowthKitBootCompletedBroadcastReceiver So GrowthKit failed to schedule jobs after package replaced / boot completed.
+11-03 18:15:55.930  3837  3837 W GnpSdk  : java.lang.NullPointerException: Unable to get GrowthKit Component from host app: com.google.android.calendar
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at cal.ufr.a(PG:15)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at com.google.android.libraries.internal.growth.growthkit.inject.GrowthKitBootCompletedBroadcastReceiver.onReceive(PG:1)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at java.lang.reflect.Method.invoke(Native Method)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+11-03 18:15:55.930  3837  3837 W GnpSdk  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+11-03 18:15:55.944  1304  2655 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+11-03 18:15:55.949  1304  2655 I Icing   : Indexing done com.google.android.gms-apps
+11-03 18:15:55.949  1620  2086 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:55.960  1620  2086 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:55.967  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:15:55.990  3617  4603 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+11-03 18:15:56.033  1066  1066 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:15:56.033  1066  1066 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+11-03 18:15:56.036   490  1848 D ConnectivityService: requestNetwork for uid/pid:1000/490 asUid: 10124 activeRequest: null callbackRequest: 122 [NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:15:56.040  1394  1394 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+11-03 18:15:56.043  1034  1847 D EGL_emulation: app_time_stats: avg=1033.95ms min=1033.95ms max=1033.95ms count=1
+11-03 18:15:56.044  1394  4608 D CellBroadcastContentProvider: database changed: notifying observers...
+11-03 18:15:56.047   490   707 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:15:56.047   490   707 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:15:56.048   490   707 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:15:56.050   490   714 D ConnectivityService: NetReassign [123 : null → 100] [c 1] [a 0] [i 12]
+11-03 18:15:56.050   490   707 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10124 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+11-03 18:15:56.052   286   286 D Zygote  : Forked child process 4609
+11-03 18:15:56.052  3171  4598 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+11-03 18:15:56.062  4609  4609 I d.configupdater: Using CollectorTypeCC GC.
+11-03 18:15:56.064  4609  4609 W d.configupdater: Unexpected CPU variant for x86: x86_64.
+11-03 18:15:56.064  4609  4609 W d.configupdater: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:15:56.081  3837  4613 E GnpSdk  : Failed to get android ID.
+11-03 18:15:56.094   375   404 I adbd    : jdwp connection from 4609
+11-03 18:15:56.108  1496  1511 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10135; state: ENABLED
+11-03 18:15:56.110  3171  3505 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10113; state: ENABLED
+11-03 18:15:56.110  2685  3365 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10120; state: ENABLED
+11-03 18:15:56.111  1786  4489 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10120; state: ENABLED
+11-03 18:15:56.111  3837  3850 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10124; state: ENABLED
+11-03 18:15:56.111  1751  2369 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10119; state: ENABLED
+11-03 18:15:56.112  1515  1547 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10115; state: ENABLED
+11-03 18:15:56.112  1726  1776 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10123; state: ENABLED
+11-03 18:15:56.113  4095  4110 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10139; state: ENABLED
+11-03 18:15:56.113  1444  1568 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10111; state: ENABLED
+11-03 18:15:56.114  3645  3705 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10122; state: ENABLED
+11-03 18:15:56.115  3202  4204 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10105; state: ENABLED
+11-03 18:15:56.115  1000  1274 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10116; state: ENABLED
+11-03 18:15:56.115  3542  3553 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10107; state: ENABLED
+11-03 18:15:56.115  1752  1808 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10141; state: ENABLED
+11-03 18:15:56.115  3335  3347 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10138; state: ENABLED
+11-03 18:15:56.116  1785  2108 I GservicesProvider: main update completed
+11-03 18:15:56.116  2185  3540 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10121; state: ENABLED
+11-03 18:15:56.117  2971  3000 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10112; state: ENABLED
+11-03 18:15:56.129  1611  3254 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10119; state: ENABLED
+11-03 18:15:56.135  4609  4609 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10104; state: ENABLED
+11-03 18:15:56.145  4609  4609 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/ConfigUpdater/ConfigUpdater.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/ConfigUpdater/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.configupdater:/product/lib64:/system/product/lib64
+11-03 18:15:56.156  4609  4609 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.configupdater' set to: 'default'
+11-03 18:15:56.156  4609  4609 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.configupdater: false
+11-03 18:15:56.156  4609  4609 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+11-03 18:15:56.157  4609  4609 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:15:56.158  4609  4609 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:15:56.175  1571  1994 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [27] widgets [reason=package added for userId: 0]
+11-03 18:15:56.178  3171  3261 I BugleRcsProvisioning: RcsProvisioningTrigger: onGservicesUpdated
+11-03 18:15:56.180  4609  4609 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10104; state: ENABLED
+11-03 18:15:56.185  3171  4598 I BugleNetwork: NewLightTickleFcmHandler: Handling firebase new token
+11-03 18:15:56.186  3171  3261 I BugleRcsProvisioning: RcsProvisioningTrigger: updateRcsAvailability : hint = GSERVICE_UPDATE
+11-03 18:15:56.187  3171  3261 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityAsync, hint: GSERVICE_UPDATE
+11-03 18:15:56.187  3171  3261 I BugleRcs: RcsAvailabilityUpdaterRemote: postUpdateRcsAvailability, hint: GSERVICE_UPDATE
+11-03 18:15:56.192  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.197  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.198  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.199  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.202  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.203  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.204  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.206  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.207  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.212  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.213  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.224  4609  4609 E ConfigUpdater: ignoring update request
+11-03 18:15:56.228  4609  4609 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10104; state: ENABLED
+11-03 18:15:56.242  1304  4308 I GmsModuleFndr: Beginning GMS chimera module scan
+11-03 18:15:56.245  1304  4308 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:231004600100000], [Cronetdynamite:231818190800], [Dynamiteloader:231818190000], [Dynamitemodulesa:231818190000], [Dynamitemodulesc:231818190000], [Googlecertificates:231818190000], [Mapsdynamite:231818190000], [Measurementdynamite:231818190000]]
+11-03 18:15:56.246  1066  1948 I Herrevad: [68] aqwl.a: updateListenState
+11-03 18:15:56.250  1304  4308 I ModuleSetMgr: Download of container feature antifingerprinting is disabled.
+11-03 18:15:56.250  1304  4308 I ModuleSetMgr: Download of container feature appsearch_dynamite_impl is disabled.
+11-03 18:15:56.250  1304  4308 I ModuleSetMgr: Download of container feature brella_dynamite is disabled.
+11-03 18:15:56.250  1304  4308 I ModuleSetMgr: Download of container feature cameraconnectivity_impl is disabled.
+11-03 18:15:56.250  1304  4308 I ModuleSetMgr: Download of container feature dck_management is disabled.
+11-03 18:15:56.251  1304  4308 I ModuleSetMgr: Download of container feature easyunlock is disabled.
+11-03 18:15:56.251  1304  4308 I ModuleSetMgr: Download of container feature enterprise is disabled.
+11-03 18:15:56.251  1304  4308 I ModuleSetMgr: Download of container feature enterprise_zt_mp_complete is disabled.
+11-03 18:15:56.251  1304  4308 I ModuleSetMgr: Download of container feature fast_pair is disabled.
+11-03 18:15:56.252  1304  4308 I ModuleSetMgr: Download of container feature game_platform is disabled.
+11-03 18:15:56.252  1304  4308 I ModuleSetMgr: Download of container feature games is disabled.
+11-03 18:15:56.252  1304  4308 I ModuleSetMgr: Download of container feature growth_upgradeparty is disabled.
+11-03 18:15:56.253  1304  4308 I ModuleSetMgr: Download of container feature tflite_dynamite is disabled.
+11-03 18:15:56.254  1304  4308 I ModuleSetMgr: Download of container feature homegraph is disabled.
+11-03 18:15:56.254  1304  4308 I ModuleSetMgr: Download of container feature magictether is disabled.
+11-03 18:15:56.254  1304  4308 I ModuleSetMgr: Download of container feature maps_core is disabled.
+11-03 18:15:56.254  1304  4308 I ModuleSetMgr: Download of container feature mlkit.docscan.crop is disabled.
+11-03 18:15:56.256  1304  4308 I ModuleSetMgr: Download of container feature mlkit.docscan.enhance is disabled.
+11-03 18:15:56.256  1304  4308 I ModuleSetMgr: Download of container feature multipackage_debug is disabled.
+11-03 18:15:56.257  1304  4308 I ModuleSetMgr: Download of container feature payse is disabled.
+11-03 18:15:56.257  1304  4308 I ModuleSetMgr: Download of container feature permissions_debug is disabled.
+11-03 18:15:56.257  1304  4308 I ModuleSetMgr: Download of container feature play_cloud_search is disabled.
+11-03 18:15:56.257  1304  4308 I ModuleSetMgr: Download of container feature semanticlocation_debug is disabled.
+11-03 18:15:56.258  1304  4308 I ModuleSetMgr: Download of container feature tflite_delegate_edgetpu is disabled.
+11-03 18:15:56.258  1304  4308 I ModuleSetMgr: Download of container feature tflite_delegate_test is disabled.
+11-03 18:15:56.258  1066  4376 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+11-03 18:15:56.258  1304  4308 I ModuleSetMgr: Download of container feature tflite_gpu_dynamite is disabled.
+11-03 18:15:56.258  1304  4308 I ModuleSetMgr: Download of container feature userstatus_impl is disabled.
+11-03 18:15:56.259  1066  4376 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-03 18:15:56.259  1304  4308 I ModuleSetMgr: Download of container feature usonia_iam is disabled.
+11-03 18:15:56.259  1304  4308 I ModuleSetMgr: Download of container feature vision.face is disabled.
+11-03 18:15:56.259  1066  4376 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-03 18:15:56.260  1304  4308 I ModuleSetMgr: Download of container feature vision.ica is disabled.
+11-03 18:15:56.260  1304  4308 I ModuleSetMgr: Download of container feature vision.ocr is disabled.
+11-03 18:15:56.266  1751  1751 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task UPDATE_GSERVICES_CONFIG.
+11-03 18:15:56.269  1751  2552 I A       : Updating Gservices keys
+11-03 18:15:56.272  2971  3439 W CarrierServices: [62] dta.w: Unable to send diagnostic log
+11-03 18:15:56.289  1304  4308 I ModuleSetMgr: Pending container module APKs: []
+11-03 18:15:56.290  1304  4308 I ModuleSetMgr: Pending non-container module APKs: []
+11-03 18:15:56.305  1978  1978 I AlarmClock: AlarmInitReceiver android.intent.action.BOOT_COMPLETED
+11-03 18:15:56.310  1978  1978 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10137; state: ENABLED
+11-03 18:15:56.349  1444  1467 I GnpSdk  : [GrowthKitBootCompletedListener] GrowthKit disabled by flag. Aborting GrowthKitBootCompletedBroadcastReceiver
+11-03 18:15:56.388  2971  2971 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: com.google.gservices.intent.action.GSERVICES_CHANGED
+11-03 18:15:56.388  2971  2971 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+11-03 18:15:56.392  3171  3171 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+11-03 18:15:56.404  3171  4628 W BugleRcsEngine: [142] bemz.x: Unable to send diagnostic log
+11-03 18:15:56.428  3171  3505 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-03 18:15:56.439  3202  3202 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10105; state: ENABLED
+11-03 18:15:56.451  1304  2459 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+11-03 18:15:56.452  1620  1657 I FuseDaemon: Background young concurrent copying GC freed 23391(1515KB) AllocSpace objects, 17(340KB) LOS objects, 31% free, 3271KB/4750KB, paused 59us,12us total 512.156ms
+11-03 18:15:56.457  3171  3446 I BugleDataModel: FixupMessageStatusOnStartupAction: sendFailedCnt: 0, downloadFailedCnt: 0, partsProcessingFailedCnt: 0
+11-03 18:15:56.461  1515  1591 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=ea97dee7-e8f4-4165-8204-348d000feb67, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.wellbeing.widget.WidgetFlagCheckWorker } ]
+11-03 18:15:56.467  3171  3243 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+11-03 18:15:56.470  3171  3263 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+11-03 18:15:56.470  3171  3263 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+11-03 18:15:56.471  3171  3243 I BugleNetwork: RegistrationProvider: Refresh Tachyon Registration Now
+11-03 18:15:56.472  3171  3263 I BugleNetwork: RegistrationProvider: Tachyon registration token is null, ignore immediate refresh
+11-03 18:15:56.472  3171  3263 I BugleNetwork: NewLightTickleFcmHandler: Successfully handled firebase new token.
+11-03 18:15:56.487   490  1857 D ConnectivityService: requestNetwork for uid/pid:10111/1444 activeRequest: null callbackRequest: 124 [NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10111 RequestorUid: 10111 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+11-03 18:15:56.488   490   714 D ConnectivityService: NetReassign [125 : null → 100] [c 0] [a 1] [i 1]
+11-03 18:15:56.488   490   707 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10111 RequestorUid: 10111 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:15:56.488   490   707 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10111 RequestorUid: 10111 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:15:56.488   490   707 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10111 RequestorUid: 10111 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:15:56.488   490   707 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10111 RequestorUid: 10111 RequestorPkg: com.google.android.dialer UnderlyingNetworks: Null] ]
+11-03 18:15:56.489  1444  1472 I DialerRestartCompletedReceiver: com.android.dialer.businessvoice.verifiedcall.impl.registration.RestartCompletedReceiver.lambda$enqueueWorker$2:116 Enqueued worker: CONSTELLATION_SYNC
+11-03 18:15:56.493  1444  1444 I DialerVoicemailPowerCycleReceiver: com.android.voicemail.VoicemailPowerCycleReceiver.onReceive:42 onReceive with intent action: android.intent.action.BOOT_COMPLETED
+11-03 18:15:56.493  1444  1444 I DialerDialerVisualVoicemailService: com.android.voicemail.impl.DialerVisualVoicemailService.onBoot:258 onBoot [CONTEXT enable_persistent_logger=true ]
+11-03 18:15:56.495  1304  2459 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 85384.
+11-03 18:15:56.507  1571  1579 I ogle.android.as: Background young concurrent copying GC freed 41913(1695KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 35MB/35MB, paused 558us,22us total 1.027s
+11-03 18:15:56.509  2971  3158 D CarrierServices: log_saver already enabled
+11-03 18:15:56.525  1978  4658 V AlarmClock: AppSearchController: Removed all documents from the database
+11-03 18:15:56.529  2971  3438 I CarrierServices: [61] EventHubProxy.unsubscribe: Removing event listener 6761901 for category 8 for hub ENGINE
+11-03 18:15:56.529  2971  3438 I CarrierServices: [61] EventHubProxy.subscribe: Adding event listener fit@5725013 for category 8 with key 91377683 for hub ENGINE
+11-03 18:15:56.532  2971  3438 I CarrierServices: [61] fiu.a: KEY_CONFIG_IMS_PACKAGE_OVERRIDE_STRING: com.google.android.ims
+11-03 18:15:56.544  1444  1444 I DialerConstellationSyncWorker: com.android.dialer.businessvoice.control.worker.ConstellationSyncWorker.startWork:66 starting work
+11-03 18:15:56.545  1444  1473 I DialerCountryCodeProvider: com.android.dialer.businessvoice.verifiedcall.impl.i18n.CountryCodeProvider.getSimCountryCodeInternal:85 returning Redacted-2-chars
+11-03 18:15:56.547  1444  1473 I DialerCachedVerifiedNumberProvider: com.android.dialer.businessvoice.verifiedcall.impl.constellation.CachedVerifiedNumberProvider.refreshConstellationInfo:190 Retrieving constellation info and refreshing the cache.
+11-03 18:15:56.551  1978  4658 V AlarmClock: AppSearchController: Put 2 documents in the alarms namespace
+11-03 18:15:56.565  3171  4662 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailability, hint: GSERVICE_UPDATE
+11-03 18:15:56.566  3171  3171 I RcsClientLib: Connecting SignupService
+11-03 18:15:56.567  3171  3171 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-03 18:15:56.595  1620  1969 W ModernMediaScanner: Failed to visit /storage/emulated/0/JarvisOrganizeRegression/a.pdf: java.nio.file.NoSuchFileException: /storage/emulated/0/JarvisOrganizeRegression/a.pdf
+11-03 18:15:56.595  3171  3301 I RcsClientLib: com.google.android.rcs.client.signup.SignupService connected
+11-03 18:15:56.605  1444  1444 I DialerStatusCheckJobService: com.android.voicemail.impl.StatusCheckJobService.onStartJob:100 attempting to reactivate ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} [CONTEXT enable_persistent_logger=true ]
+11-03 18:15:56.609  1978  4658 V AlarmClock: AppSearchController: Put 1 document in the stopwatches namespace
+11-03 18:15:56.610  2971  3000 I CarrierServices: [36] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+11-03 18:15:56.614  2322  2322 W iss     : [Gmail] ExchangeUpgradeReceiver: ExchangeUpgradeReceiver: action=android.intent.action.BOOT_COMPLETED data=null [CONTEXT android_log_tag="EasBundling" ]
+11-03 18:15:56.615  2971  3000 I CarrierServices: [36] fjp.y: Bugle is default SMS app: true
+11-03 18:15:56.616  2971  3000 I CarrierServices: [36] fhf.b: Bugle has minimum required RCS permissions: true
+11-03 18:15:56.617  2322  2322 W iss     : [Gmail] ExchangeUpgradeUtils: ExchangeUpgradeUtils: isExchangeLegacy=false [CONTEXT android_log_tag="EasBundling" ]
+11-03 18:15:56.634  1571  1579 I ogle.android.as: Background concurrent copying GC freed 41063(6656KB) AllocSpace objects, 0(0B) LOS objects, 45% free, 29MB/53MB, paused 23us,10us total 126.419ms
+11-03 18:15:56.643   286   286 I Zygote  : Process 2322 exited due to signal 9 (Killed)
+11-03 18:15:56.644   490   526 I libprocessgroup: Successfully killed process cgroup uid 10145 pid 2322 in 0ms
+11-03 18:15:56.654  3171  3505 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+11-03 18:15:56.656   286   286 D Zygote  : Forked child process 4675
+11-03 18:15:56.663   769  2237 I PermissionControllerServiceImpl: Updating user sensitive for uid 10145
+11-03 18:15:56.667   490   598 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+11-03 18:15:56.668   968   968 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:15:56.668   968   968 D MediaPlayerList: Name of package changed: com.google.android.gm
+11-03 18:15:56.669   968   968 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+11-03 18:15:56.669   968   968 D MediaPlayerList: Name of package changed: com.google.android.gm
+11-03 18:15:56.675  4675  4675 I ogle.android.gm: Using CollectorTypeCC GC.
+11-03 18:15:56.676  4675  4675 W ogle.android.gm: Unexpected CPU variant for x86: x86_64.
+11-03 18:15:56.676  4675  4675 W ogle.android.gm: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:15:56.678   768   768 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+11-03 18:15:56.681  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:56.683  1620  4051 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:15:56.685   375   404 I adbd    : jdwp connection from 4675
+11-03 18:15:56.687   490   588 I RoleService: Granting default roles...
+11-03 18:15:56.690  1620  4051 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:56.693  1620  4365 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:15:56.694   999   999 D CarrierSvcBindHelper: onPackageModified: com.google.android.gm
+11-03 18:15:56.694  4426  4495 I TestRunner: finished: allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure(com.jarvis.files.OrganizeRegressionTest)

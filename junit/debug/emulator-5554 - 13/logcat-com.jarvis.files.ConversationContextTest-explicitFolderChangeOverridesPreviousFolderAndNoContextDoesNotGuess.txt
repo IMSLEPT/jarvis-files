@@ -1,0 +1,117 @@
+11-03 18:16:19.213  4426  4495 I TestRunner: started: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)
+11-03 18:16:19.220  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:16:19.222  1571  2134 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip to text-classifier-actions-1140547708.zip.fetched (constraints: W:b:u:l)
+11-03 18:16:19.231  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:19.240  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:16:19.240  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.240  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.243  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000036
+11-03 18:16:19.243  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000036
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.243  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.248  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.250  1571  3109 I AstreaHttpConnection: Started download from url='https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip'
+11-03 18:16:19.252  1571  1902 E jdl     : Non-success http response code 404 for: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-03 18:16:19.256  1571  2134 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip to text-classifier-langid-1941001461.zip.fetched (constraints: W:b:u:l)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : Error downloading: manifests:webref-2-en-us-19071200
+11-03 18:16:19.257  1571  2134 W SP.AiAi : ixx: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at ixv.b(Unknown Source:5)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at jdl.o(PG:7)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at jdi.run(PG:9)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at dum.run(PG:65)
+11-03 18:16:19.257  1571  2134 W SP.AiAi : 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:16:19.258  1571  2134 I SP.AiAi : <==== Finishing job {m:b:u:l, bg}, 462 ms. elapsed since start
+11-03 18:16:19.258  1571  2134 I SP.AiAi : Download stopped: manifests:webref-2-en-us-19071200, failed (permanent), size: 0
+11-03 18:16:19.265  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.270  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.278  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.283  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 63 uptime_millis: 63 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:19.288  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 6 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:kg_collections_table-21051103 @ {W:b:u:l, bg}, manifests:actions-ranking-table-211005 @ {W:b:u:l, bg}, manifests:text-classifier-annotator-1687347939 @ {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 @ {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: Model sync failed.
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: irl: Request of 1 packs for webref-2-en-us-manifest failed
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at cun.call(PG:17)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at lsv.a(Unknown Source:2)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at ltx.run(PG:3)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: Caused by: ixx: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at ixv.b(Unknown Source:5)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at jdl.o(PG:7)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at jdi.run(PG:9)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	at dum.run(PG:65)
+11-03 18:16:19.289  1571  2134 W AiAiTextClassifier: 	... 1 more
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: [TextClassifierLibProviderImpl]: TcLib packs sync failed.
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: irl: Request of 1 packs for webref-2-en-us-manifest failed
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at cun.call(PG:17)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at lsv.a(Unknown Source:2)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at ltx.run(PG:3)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.lang.Thread.run(Thread.java:1012)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: Caused by: ixx: HTTP_ERROR 404, url: https://gstatic.com/webref-ondevice/aiai/19071200_pir/2/en-us/superpacks_manifest.zip
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at ixv.b(Unknown Source:5)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at jdl.o(PG:7)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at jdi.run(PG:9)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	at dum.run(PG:65)
+11-03 18:16:19.290  1571  2134 W AiAiTextClassifier: 	... 1 more
+11-03 18:16:19.300  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.322  1571  3108 I AstreaHttpConnection: Started download from url='https://www.gstatic.com/matchmaker/kg_collections_table/21051103/superpacks_manifest.zip'
+11-03 18:16:19.324  1571  3108 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 406 bytes from https://www.gstatic.com/matchmaker/kg_collections_table/21051103/superpacks_manifest.zip.
+11-03 18:16:19.325  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.329  1620  2086 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.335  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.338  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.342  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:19.346  1571  2134 I SP.AiAi : Download stopped: manifests:kg_collections_table-21051103, succeeded, size: 406
+11-03 18:16:19.358  1066  1344 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.platform.statsd_java_boot) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:19.370  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.383  1066  3198 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:19.391  1066  1344 W bwft    : Succeeded but not registered: com.google.android.gms.rcs [CONTEXT service_id=51 ]
+11-03 18:16:19.394  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.396  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.398  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.401  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.404  1620  5385 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:19.405  4426  4495 I TestRunner: finished: explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess(com.jarvis.files.ConversationContextTest)

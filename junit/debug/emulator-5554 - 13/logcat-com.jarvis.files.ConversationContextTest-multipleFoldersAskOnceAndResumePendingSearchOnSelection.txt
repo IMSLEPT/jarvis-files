@@ -1,0 +1,70 @@
+11-03 18:16:17.224  4426  4495 I TestRunner: started: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)
+11-03 18:16:17.227  1496  1888 I SP      : Download stopped: emoji:7b9ddb0b8c001e17cee03b1edf554b20, succeeded, size: 62634
+11-03 18:16:17.233  4609  5744 I ConfigUpdater: Update downloaded, starting installation
+11-03 18:16:17.244  2029  5826 D DownloadManager: [4] Starting
+11-03 18:16:17.282  2029  5826 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:16:17.286  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:17.298  2029  5826 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-03 18:16:17.311  1066  3198 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+11-03 18:16:17.319  2029  5826 D TrafficStats: tagSocket(75) with statsTag=0xffffff01, statsUid=10104
+11-03 18:16:17.321  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:17.328  1304  2655 W GCM-GMS : Failed to get direct boot token: java.io.IOException: QUOTA_EXCEEDED
+11-03 18:16:17.334  4609  5744 I ConfigUpdater: doneInstall
+11-03 18:16:17.351  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:17.352  1496  1888 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 1 pending: next-word-predictor:tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be @ {m:b:u:l, bg}
+11-03 18:16:17.357  2029  2095 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+11-03 18:16:17.362  1620  5510 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-metadata.txt
+11-03 18:16:17.365  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 3 elapsed_millis: 275 uptime_millis: 275 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+11-03 18:16:17.370  1620  5510 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 0 deletes
+11-03 18:16:17.373  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:17.398  1496  1888 I SP      : Sync for bundled_emoji succeeded in 434 ms: {added: [7b9ddb0b8c001e17cee03b1edf554b20], metadata: false
+11-03 18:16:17.400  2029  2095 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-pins.txt via provider delete
+11-03 18:16:17.401  1620  5510 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-pins.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-pins.txt
+11-03 18:16:17.402  1620  5510 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+11-03 18:16:17.445  1304  5461 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+11-03 18:16:17.446  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 106 [CONTEXT service_id=218 ]
+11-03 18:16:17.449  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:17.457  1496  1888 I SP      : GC for 'bundled_emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:16:17.465  1066  3198 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 32 uptime_millis: 32 exec_start_elapsed_seconds: 106 [CONTEXT service_id=218 ]
+11-03 18:16:17.465  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:17.496  1620  4051 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:17.511  1496  4241 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():498 processPackSet() : isBundled = true
+11-03 18:16:17.513  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:17.516  1496  1890 I EmojiSuperpacksManager: EmojiSuperpacksManager.triggerSync():374 triggerSync() : isBundled = false
+11-03 18:16:17.517  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():117 Reading en_US emoji shortcuts
+11-03 18:16:17.520  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:17.548  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():134 Read en_US emoji shortcuts successfully.
+11-03 18:16:17.551  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():63 1 emoji shortcut maps loaded.
+11-03 18:16:17.553  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():72 Finished loading emoji shortcuts
+11-03 18:16:17.565  1496  1888 I SP      : Registering emoji.20190807, url: https://www.gstatic.com/android/keyboard/modelpack/emoji/20190807165503/superpacks_manifest.zip, constraints: m:*:*:*, flags: fg, requested: 20190807, current: 20190807
+11-03 18:16:17.565  1496  1888 I SP      : Sync for emoji succeeded in 547 ms: {added: [7b9ddb0b8c001e17cee03b1edf554b20], metadata: false
+11-03 18:16:17.593  2029  5826 D DownloadManager: [4] Finished with status SUCCESS
+11-03 18:16:17.603  1496  1888 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:16:17.604  1496  1888 I SP      : <==== Finishing job {m:b:u:l, bg}, 553 ms. elapsed since start
+11-03 18:16:17.605  1496  1888 I SP      : Download stopped: next-word-predictor:tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be, succeeded, size: 1963527
+11-03 18:16:17.622  1066  3198 W .gms.persistent: Long monitor contention with owner netscheduler-queue-handler (3418) at void bysh.d(avza, android.net.Uri, int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9) waiters=0 in void bysh.c(byps) for 140ms
+11-03 18:16:17.629  1496  1888 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():127 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+11-03 18:16:17.629  1496  1888 I SP      : Syncing emoji (20190807) with slices: [{7b9ddb0b8c001e17cee03b1edf554b20, m:*:*:*}], metadata: false
+11-03 18:16:17.630  1496  4241 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():498 processPackSet() : isBundled = false
+11-03 18:16:17.630  1066  1066 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+11-03 18:16:17.634  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():117 Reading en_US emoji shortcuts
+11-03 18:16:17.643  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.getEmojiShortcuts():134 Read en_US emoji shortcuts successfully.
+11-03 18:16:17.644  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():63 1 emoji shortcut maps loaded.
+11-03 18:16:17.654  1496  1890 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():72 Finished loading emoji shortcuts
+11-03 18:16:17.668  2029  3309 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10077; state: ENABLED
+11-03 18:16:17.673  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:17.680  4609  5744 I ConfigUpdater: Update downloaded, starting installation
+11-03 18:16:17.686  4609  5744 I ConfigUpdater: doneInstall
+11-03 18:16:17.688  2029  2077 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/09252026-sms-denylist-metadata.txt via provider delete
+11-03 18:16:17.689  1496  1888 I SP      : Sync for emoji succeeded in 60 ms: no changes
+11-03 18:16:17.689  1496  1888 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:16:17.690  1620  5385 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:17.691  1066  1066 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+11-03 18:16:17.693  1620  5510 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/09252026-sms-denylist-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/09252026-sms-denylist-metadata.txt
+11-03 18:16:17.693  1620  5510 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+11-03 18:16:17.696  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:17.697  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:17.704  2029  2077 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/09252026-sms-denylist.txt via provider delete
+11-03 18:16:17.706  1620  5510 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/09252026-sms-denylist.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/09252026-sms-denylist.txt
+11-03 18:16:17.710  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:17.711  4426  4495 I TestRunner: finished: multipleFoldersAskOnceAndResumePendingSearchOnSelection(com.jarvis.files.ConversationContextTest)

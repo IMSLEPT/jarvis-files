@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.jarvis.files.OrganizeRegressionTest" tests="37" failures="0" errors="0" skipped="0" time="53.73" timestamp="2026-11-03T18:16:49" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="unrelatedRequestDoesNotContinuePendingOrganizer" classname="com.jarvis.files.OrganizeRegressionTest" time="0.391" />
+  <testcase name="allThenTypeProducesPreviewOnceWithoutModelAndPreservesStructure" classname="com.jarvis.files.OrganizeRegressionTest" time="1.095" />
+  <testcase name="topLevelOnlyAndCancellationDoNotMoveNestedFiles" classname="com.jarvis.files.OrganizeRegressionTest" time="0.958" />
+  <testcase name="missingScopeAsksOnceAndRetainsChosenMode" classname="com.jarvis.files.OrganizeRegressionTest" time="0.541" />
+  <testcase name="explicitTypeIsNotLostByFollowingChoice" classname="com.jarvis.files.OrganizeRegressionTest" time="0.482" />
+  <testcase name="filenamesAndUnrecognizedRestrictionsNeverBroadenThePlan" classname="com.jarvis.files.OrganizeRegressionTest" time="0.641" />
+  <testcase name="classificationsIncludeZerosButKeepUnknownValuesLastAndCacheIsNotDoubleCounted" classname="com.jarvis.files.AppInsightsTest" time="0.005" />
+  <testcase name="revokedPermissionStillListsEveryInstalledPackageWithoutInventingZeros" classname="com.jarvis.files.AppInsightsTest" time="1.743" />
+  <testcase name="realInventoryProvidesRequestedDatesAndSeparatesMissingHistory" classname="com.jarvis.files.AppInsightsTest" time="1.793" />
+  <testcase name="organizerChoiceButtonCarriesContextToExecutablePreview" classname="com.jarvis.files.AppsFlowTest" time="6.853" />
+  <testcase name="moreOpensSearchableInventoryAndPerAppChart" classname="com.jarvis.files.AppsFlowTest" time="6.908" />
+  <testcase name="emptyAndOrdinaryFolderResultsRemainDifferentAndAllPathsAccessible" classname="com.jarvis.files.ConversationContextTest" time="0.561" />
+  <testcase name="multipleFoldersAskOnceAndResumePendingSearchOnSelection" classname="com.jarvis.files.ConversationContextTest" time="0.477" />
+  <testcase name="ordinalAndUniqueFolderNameCanAnswerTheQuestion" classname="com.jarvis.files.ConversationContextTest" time="0.202" />
+  <testcase name="contextualRenamePreservesNewNameCapitalizationAndExtension" classname="com.jarvis.files.ConversationContextTest" time="0.227" />
+  <testcase name="contextMutationCannotAccidentallyDeleteEveryPdfOnPhone" classname="com.jarvis.files.ConversationContextTest" time="0.206" />
+  <testcase name="unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan" classname="com.jarvis.files.ConversationContextTest" time="0.153" />
+  <testcase name="oneFolderThenInsideFileSearchNeedsNoRepeatedPathOrModel" classname="com.jarvis.files.ConversationContextTest" time="0.179" />
+  <testcase name="removedResultOrFolderIsNotInventedAgain" classname="com.jarvis.files.ConversationContextTest" time="0.181" />
+  <testcase name="deletionPronounUsesOnlyPriorResultsWithPreviewAndActualUndo" classname="com.jarvis.files.ConversationContextTest" time="0.181" />
+  <testcase name="duplicateFolderNamesCannotPickAnArbitraryPath" classname="com.jarvis.files.ConversationContextTest" time="0.154" />
+  <testcase name="explicitFolderChangeOverridesPreviousFolderAndNoContextDoesNotGuess" classname="com.jarvis.files.ConversationContextTest" time="0.2" />
+  <testcase name="askForFileNameOnceAndKeepFolderAcrossSeveralSearches" classname="com.jarvis.files.ConversationContextTest" time="0.181" />
+  <testcase name="clarificationChoiceRescansBeforeBuildingDeletionPreview" classname="com.jarvis.files.CommandFlowTest" time="1.497" />
+  <testcase name="keyboardSendActionBuildsPreviewAndClearsDraft" classname="com.jarvis.files.CommandFlowTest" time="2.777" />
+  <testcase name="retryOfLegacyYesMessageKeepsTheOriginalScopeWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="1.69" />
+  <testcase name="allPlanEntriesCanBeReviewedBeyondOldLimit" classname="com.jarvis.files.CommandFlowTest" time="2.142" />
+  <testcase name="sendExecuteUndoButtonsCompleteRealFileOperationWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="2.298" />
+  <testcase name="vaultImportButtonMovesOnlySelectedFile" classname="com.jarvis.files.CommandFlowTest" time="0.879" />
+  <testcase name="emptySendIsDisabledAndMicrophoneIsSeparate" classname="com.jarvis.files.CommandFlowTest" time="1.007" />
+  <testcase name="screenshotYesButtonBuildsFreshPreviewThenExecuteAndUndoWorkWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="1.263" />
+  <testcase name="directScreenshotCommandDoesNotAskModelForAnotherConfirmation" classname="com.jarvis.files.CommandFlowTest" time="1.572" />
+  <testcase name="largestFilesAndShowThemWorkThroughChatWithoutModel" classname="com.jarvis.files.CommandFlowTest" time="2.858" />
+  <testcase name="screenshotNoButtonCancelsWithoutModelOrFileChanges" classname="com.jarvis.files.CommandFlowTest" time="1.31" />
+  <testcase name="openingAllResultsPreservesLargestFirstOrder" classname="com.jarvis.files.CommandFlowTest" time="3.809" />
+  <testcase name="cancelButtonLeavesFilesUntouched" classname="com.jarvis.files.CommandFlowTest" time="2.908" />
+  <testcase name="settingsButtonOpensAiSettings" classname="com.jarvis.files.CommandFlowTest" time="1.587" />
+</testsuite>

@@ -1,0 +1,372 @@
+11-03 18:16:19.599  4426  4495 I TestRunner: started: clarificationChoiceRescansBeforeBuildingDeletionPreview(com.jarvis.files.CommandFlowTest)
+11-03 18:16:19.602  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000039
+11-03 18:16:19.602  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000039
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.602  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.607  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.608  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:16:19.622  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:16:19.622  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Bolletta.pdf
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.622  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.631  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf to set project id.: No such file or directory
+11-03 18:16:19.632  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf
+11-03 18:16:19.632  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Invoice.pdf
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.632  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.636  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:19.640  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000031
+11-03 18:16:19.640  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000031
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.640  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.643  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.649  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf to set project id.: No such file or directory
+11-03 18:16:19.649  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf
+11-03 18:16:19.649  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/Sub/Nested.pdf
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.649  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.650  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000033
+11-03 18:16:19.650  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000033
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.650  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.658  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Reports/keep.txt to set project id.: No such file or directory
+11-03 18:16:19.658  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/keep.txt
+11-03 18:16:19.658  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Reports/keep.txt
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.658  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.659  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000034
+11-03 18:16:19.659  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000034
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.659  1620  1830 W MediaProvider: Failed to update quota for uri: content://media/external_primary/file/1000000036
+11-03 18:16:19.659  1620  1830 W MediaProvider: java.io.FileNotFoundException: No item at content://media/external_primary/file/1000000036
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForSingleItem(MediaProvider.java:8364)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8304)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.queryForDataFile(MediaProvider.java:8296)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:813)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.659  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.660  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.661  1620  1830 E StorageManager: Failed to open /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf to set project id.: No such file or directory
+11-03 18:16:19.661  1620  1830 W MediaProvider: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:16:19.661  1620  1830 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/JarvisConversationContext/Other/Bolletta.pdf
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.lambda$onFileCreatedForFuse$17(MediaProvider.java:1898)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider.$r8$lambda$RwX1jyw0H1CYPm6NAX9_DxGu3Co(Unknown Source:0)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda9.run(Unknown Source:4)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+11-03 18:16:19.661  1620  1830 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+11-03 18:16:19.678  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.685  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 4 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:text-classifier-annotator-1687347939 @ {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 @ {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}
+11-03 18:16:19.685  1571  2134 I SP.AiAi : Download stopped: manifests:text-classifier-annotator-1687347939, succeeded, size: 407
+11-03 18:16:19.688  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.693  1066  3198 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 94 uptime_millis: 94 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:19.695  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 3 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:text-classifier-actions-1140547708 @ {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}
+11-03 18:16:19.696  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:19.704  1571  3108 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip'
+11-03 18:16:19.704  1571  3108 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 408 bytes from https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip.
+11-03 18:16:19.705  1571  2134 I SP.AiAi : Download stopped: manifests:text-classifier-actions-1140547708, succeeded, size: 408
+11-03 18:16:19.718  4426  4495 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@2b3b3b2]
+11-03 18:16:19.721  4426  4495 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-03 18:16:19.732   768   855 D SplashScreenView: Build android.window.SplashScreenView{f985513 V.E...... ......ID 0,0-0,0}
+11-03 18:16:19.732   768   855 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:16:19.732   768   855 D SplashScreenView: Branding: view: android.view.View{d7a3350 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:16:19.732   768   856 W Parcel  : Expecting binder but got null!
+11-03 18:16:19.751  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: PRE_ON_CREATE
+11-03 18:16:19.751  4426  4426 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-03 18:16:19.753  1571  3108 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip'
+11-03 18:16:19.757  1571  3108 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 399 bytes from https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip.
+11-03 18:16:19.777  1034  1847 D EGL_emulation: app_time_stats: avg=168.26ms min=4.20ms max=2871.94ms count=19
+11-03 18:16:19.782  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: CREATED
+11-03 18:16:19.784  4426  4426 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jarvis.files.MainActivity@c3989d6
+11-03 18:16:19.785  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: STARTED
+11-03 18:16:19.785  4426  4426 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jarvis.files.MainActivity@c3989d6
+11-03 18:16:19.796  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: RESUMED
+11-03 18:16:19.796  4426  4426 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jarvis.files.MainActivity@c3989d6
+11-03 18:16:19.798  4426  5368 W Parcel  : Expecting binder but got null!
+11-03 18:16:19.804   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626410
+11-03 18:16:19.805   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625c90
+11-03 18:16:19.805   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625c90
+11-03 18:16:19.806   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626410
+11-03 18:16:19.809  4426  4426 D AutofillManager: Fill dialog is enabled:false, hints=[]
+11-03 18:16:19.813  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:19.821  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 88, 7819, 46700754, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.821  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 88, 7819, 46700754, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.821  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 7877, 19969084, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.822  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 7892, 25491504, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.822  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 7914, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.822  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 7914, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.823  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 7929, 33502824, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.823  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 88, 7944, 48155777, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.823  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 88, 7944, 48155777, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 88, 7959, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 88, 7959, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 7959, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 7974, 66798249, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8003, 45925545, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.824  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8019, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.825  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 8019, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.825  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 88, 8034, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.825  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 88, 8034, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.826  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 8034, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.826  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8049, 49445945, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.826  1034  1034 W FrameTracker: Missed App frame:UNKNOWN: 88, 8063, 54335564, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.826  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 88, 8063, 54335564, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.827  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8078, 0, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.827  1034  1034 W FrameTracker: Missing HWUI jank callback for vsyncId: 8078, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.827  1034  1034 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8101, 49840993, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.827  1034  1034 W FrameTracker: Missing SF jank callback for vsyncId: 8116, CUJ=J<LAUNCHER_APP_CLOSE_TO_HOME>
+11-03 18:16:19.828  1034  2319 V PerfettoTrigger: Not triggering com.android.telemetry.interaction-jank-monitor-9 - not enough time since last trigger
+11-03 18:16:19.864   490  5624 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:16:19.871   490  5624 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-03 18:16:19.872   490  5624 D EGL_emulation: eglCreateContext: 0x74efc7cb63d0: maj 3 min 0 rcv 3
+11-03 18:16:19.873   490  5624 D EGL_emulation: eglMakeCurrent: 0x74efc7cb63d0: ver 3 0 (tinfo 0x74f1ed48f180) (first time)
+11-03 18:16:19.881   490  1604 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+11-03 18:16:19.886  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}
+11-03 18:16:19.895  1571  2134 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 1099 ms. elapsed since start
+11-03 18:16:19.897  1571  2134 I SP.AiAi : Download stopped: manifests:text-classifier-langid-1941001461, succeeded, size: 399
+11-03 18:16:19.955  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:20.007   768   856 D EGL_emulation: app_time_stats: avg=752.57ms min=8.81ms max=3461.92ms count=5
+11-03 18:16:20.014  1034  2302 D OneSearchSuggestProvider: Shut down the binder channel
+11-03 18:16:20.014  1034  6290 I s.nexuslauncher: oneway function results for code 2 on binder at 0x74ef57d03b90 will be dropped but finished with status UNKNOWN_TRANSACTION
+11-03 18:16:20.016   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:20.016   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:20.021  1751  2465 I PBSessionCacheImpl: Deleted sessionId[7702773170666212] from persistence.
+11-03 18:16:20.022   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6236b0
+11-03 18:16:20.027   490   513 W ziparchive: Unable to open '/data/app/~~V4-3-G8FG5-mUhSbJaBXjQ==/com.jarvis.files-OXDShld6x1qq7g1YPgI8xg==/base.dm': No such file or directory
+11-03 18:16:20.028   490   513 I ActivityTaskManager: Displayed com.jarvis.files/.MainActivity: +303ms
+11-03 18:16:20.030  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:20.030  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:20.030  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:20.031  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:20.031  1751  2390 W SearchServiceCore: Abort, client detached.
+11-03 18:16:20.032  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:20.032  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:20.043   490  1604 W InputManager-JNI: Input channel object '219a5ea Splash Screen com.jarvis.files (client)' was disposed without first being removed with the input manager!
+11-03 18:16:20.045  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:20.046  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:20.046  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jarvis.files fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:16:20.046  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:20.047  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:20.058   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623cb0
+11-03 18:16:20.058   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623230
+11-03 18:16:20.058   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6246d0
+11-03 18:16:20.072   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6231d0
+11-03 18:16:20.072   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625ff0
+11-03 18:16:20.072   323   373 W TransactionTracing: Could not find layer handle 0x759f4b622cf0
+11-03 18:16:20.072   323   373 W TransactionTracing: Could not find layer handle 0x759f4b622cf0
+11-03 18:16:20.110  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}
+11-03 18:16:20.112  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:20.119  4426  4426 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+11-03 18:16:20.119  4426  4426 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+11-03 18:16:20.128  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 27 uptime_millis: 27 exec_start_elapsed_seconds: 108 [CONTEXT service_id=218 ]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[6]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022051700_2[6]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[6]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[6]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be[3]
+11-03 18:16:20.220  1496  1508 W SP      : File ref is being finalized but wasn't closed, file: tflite-nwp-9343e8ce723e0b22aa8e2733a7d475be[3]
+11-03 18:16:20.304  1620  4051 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:20.382  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 109 [CONTEXT service_id=218 ]
+11-03 18:16:20.406  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 75 uptime_millis: 75 exec_start_elapsed_seconds: 109 [CONTEXT service_id=218 ]
+11-03 18:16:20.415  4426  4433 I om.jarvis.files: Compiler allocated 4355KB to compile void android.view.ViewRootImpl.performTraversals()
+11-03 18:16:20.502  1751  2730 W A       : [Download] response code: 400
+11-03 18:16:20.506  1066  2726 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:20.509  1066  1347 W .gms.persistent: Long monitor contention with owner lowpool[3] (1483) at long bwdg.a(bwdv)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12) waiters=0 in void bwdg.b() for 684ms
+11-03 18:16:20.525  1066  1344 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.apps.dynamite.device#com.google.android.gm) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-03 18:16:20.530  1066  2726 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+11-03 18:16:20.626  1632  1632 V ContactsProvider: Scheduled notifyChange started.
+11-03 18:16:20.630   968   968 D BluetoothPbapService:  onChange on contact uri
+11-03 18:16:20.636  1620  2086 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:16:20.647  1620  2083 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to com.jarvis.files
+11-03 18:16:20.660  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: PAUSED
+11-03 18:16:20.660  4426  4426 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jarvis.files.MainActivity@c3989d6
+11-03 18:16:20.660   768   855 D SplashScreenView: Build android.window.SplashScreenView{f691080 V.E...... ......ID 0,0-0,0}
+11-03 18:16:20.660   768   855 D SplashScreenView: Icon: view: null drawable: null size: 0
+11-03 18:16:20.660   768   855 D SplashScreenView: Branding: view: android.view.View{5c336b9 G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0
+11-03 18:16:20.662   768   856 W Parcel  : Expecting binder but got null!
+11-03 18:16:20.683   968  6297 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+11-03 18:16:20.701  5489  5522 W Parcel  : Expecting binder but got null!
+11-03 18:16:20.708   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6271f0
+11-03 18:16:20.710   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625cf0
+11-03 18:16:20.710   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625cf0
+11-03 18:16:20.711   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625cf0
+11-03 18:16:20.711   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6271f0
+11-03 18:16:20.711   323   373 W TransactionTracing: Could not find layer handle 0x759f4b6271f0
+11-03 18:16:20.724  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: STOPPED
+11-03 18:16:20.724  4426  4426 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jarvis.files.MainActivity@c3989d6
+11-03 18:16:20.740  1571  1995 I SP.AiAi : Sync for captions_i18n_v0_en-US succeeded in 41254 ms: {added: [asr_en-US_v3003], metadata: false
+11-03 18:16:20.749  1571  1995 I SP.AiAi : Successfully got manifest for kg_collections_table-manifest: manifests:kg_collections_table-21051103
+11-03 18:16:20.758  1571  1995 I SP.AiAi : Successfully got manifest for actions-ranking-table-manifest: manifests:actions-ranking-table-211005
+11-03 18:16:20.760   490   513 W ziparchive: Unable to open '/data/app/~~FiebjSz4K8dpEGJidhKRSw==/com.jarvis.files.test-R8SP9BRCWwJ_8mxfpnlyeA==/base.dm': No such file or directory
+11-03 18:16:20.761   490   513 I ActivityTaskManager: Displayed com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +106ms
+11-03 18:16:20.775  1571  1995 I SP.AiAi : Successfully got manifest for text-classifier-annotator-manifest: manifests:text-classifier-annotator-1687347939
+11-03 18:16:20.778  1571  1995 I SP.AiAi : Successfully got manifest for text-classifier-actions-manifest: manifests:text-classifier-actions-1140547708
+11-03 18:16:20.782  1571  1995 I SP.AiAi : Successfully got manifest for text-classifier-langid-manifest: manifests:text-classifier-langid-1941001461
+11-03 18:16:20.785  1571  1995 I SP.AiAi : GC for 'captions_i18n_v0_en-US' (10) with ttl of 0 ms took 0 ms (0/0/0)
+11-03 18:16:20.786  1571  3671 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'kg_collections_table' (download version 21051103), starting to download superpack.
+11-03 18:16:20.787  1571  3640 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'actions-ranking-table' (download version 211005), starting to download superpack.
+11-03 18:16:20.787  1571  1995 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+11-03 18:16:20.789  1571  1995 I SP.AiAi : Syncing actions-ranking-table (211005) with slices: [table_5f787033cc44fc7a8804e0030b2bf848], metadata: false
+11-03 18:16:20.794  1571  6307 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-langid' (download version 1941001461), starting to download superpack.
+11-03 18:16:20.795  1571  6306 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-actions' (download version 1140547708), starting to download superpack.
+11-03 18:16:20.798  1571  6305 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-annotator' (download version 1687347939), starting to download superpack.
+11-03 18:16:20.800  1571  2455 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+11-03 18:16:20.806  1571  3671 I AiAiCaptions: downloadSuperpack(): Successfully downloaded superpack 'captions_i18n_v0_en-US' version 20210623.
+11-03 18:16:20.807   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625ed0
+11-03 18:16:20.811   490  1662 W AppSearchIcing: icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+11-03 18:16:20.815  1571  2572 I AiAiCaptions: ComponentsManagerImpl::update()
+11-03 18:16:20.815  1571  2572 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+11-03 18:16:20.815  1034  2302 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=13, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@fa9d394
+11-03 18:16:20.817   490  1057 W InputManager-JNI: Input channel object '7aae1b9 Splash Screen com.jarvis.files.test (client)' was disposed without first being removed with the input manager!
+11-03 18:16:20.820   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:20.824   968  1247 D BtGatt.ScanManager: uid 10120 isForeground true scanMode -1
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626170
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626a70
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626170
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626170
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b623230
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626a70
+11-03 18:16:20.825   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626170
+11-03 18:16:20.831  1571  2572 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity but already enabled
+11-03 18:16:20.833  1571  2572 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity but already enabled
+11-03 18:16:20.834  1571  2572 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService but already enabled
+11-03 18:16:20.835  1571  1995 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:20.837  1571  2455 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+11-03 18:16:20.865  1571  1995 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+11-03 18:16:20.868  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3227
+11-03 18:16:20.884  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:20.898  1571  2572 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+11-03 18:16:20.914  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 0, unlocked = true
+11-03 18:16:20.914  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+11-03 18:16:20.914  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState = false
+11-03 18:16:20.916  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes = 2, unlocked = true
+11-03 18:16:20.919  1751  1751 I A       : Created gRPC endpoint to "search" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService
+11-03 18:16:20.925  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:20.930  1571  1905 I AiAiEcho: Predicting[0]:
+11-03 18:16:20.931  1571  1905 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+11-03 18:16:20.932  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+11-03 18:16:20.939  1571  1905 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+11-03 18:16:20.947  1571  2572 I AiAiCaptions: Would disable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS (reason: Captions for calls is disabled in device config) but already disabled
+11-03 18:16:20.948  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:20.952   490  1865 W InputManager-JNI: Input channel object '981e7ba com.jarvis.files.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:16:20.953  1571  2572 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+11-03 18:16:20.963  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:20.980   323   373 W TransactionTracing: Could not find layer handle 0x759f4b626d10
+11-03 18:16:20.980   323   373 W TransactionTracing: Could not find layer handle 0x759f4b625c90
+11-03 18:16:20.983  1571  1571 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-03 18:16:20.987  1571  2572 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+11-03 18:16:20.995  1751  1751 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-03 18:16:20.998  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:21.007  1571  2572 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService
+11-03 18:16:21.018   286   286 D Zygote  : Forked child process 6309
+11-03 18:16:21.020  1571  1995 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 2 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}
+11-03 18:16:21.021  1571  1995 I SP.AiAi : Syncing kg_collections_table (21051103) with slices: [collections_table_main_21980965fbd997111d89f86c16e9e090], metadata: false
+11-03 18:16:21.021  1571  1995 I SP.AiAi : Syncing text-classifier-langid (1941001461) with slices: [tc_model_436dc3fd14049b93d75788a8c0cc8eea], metadata: false
+11-03 18:16:21.021  1571  1995 I SP.AiAi : Syncing text-classifier-actions (1140547708) with slices: [tc_model_e202592534082c01f9642f709a627dd9], metadata: false
+11-03 18:16:21.021  1571  1995 I SP.AiAi : Syncing text-classifier-annotator (1687347939) with slices: [tc_model_19e9928974f9d8742ad3b10f52373dea], metadata: false
+11-03 18:16:21.029  1496  1496 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+11-03 18:16:21.030  1496  1496 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():166 maybeFetchAndUpdate: start new task to fetch
+11-03 18:16:21.037  6309  6309 I equicksearchbox: Using CollectorTypeCC GC.
+11-03 18:16:21.040  1304  5412 W PeopleGmsPhenoRgstrIntentOp: Google Api connection failed
+11-03 18:16:21.043  6309  6309 W equicksearchbox: Unexpected CPU variant for x86: x86_64.
+11-03 18:16:21.043  6309  6309 W equicksearchbox: Known variants: atom, sandybridge, silvermont, kabylake, default
+11-03 18:16:21.048   375   404 I adbd    : jdwp connection from 6309
+11-03 18:16:21.051  1571  2572 I AiAiCaptions: initialize(): bound to superpacks service.
+11-03 18:16:21.059  4426  4426 D LifecycleMonitor: Lifecycle status change: com.jarvis.files.MainActivity@c3989d6 in: DESTROYED
+11-03 18:16:21.059  4426  4426 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-03 18:16:21.069  1571  1995 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:21.077  1571  1995 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 2 candidates
+11-03 18:16:21.080  1571  1571 I SP.AiAi : <<<<< Stopping job {W:b:u:l, bg}, 96 ms. elapsed since start
+11-03 18:16:21.083  1571  1995 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 * {W:b:u:l, bg}
+11-03 18:16:21.089   490  1861 W InputManager-JNI: Input channel object '1887d54 com.jarvis.files/com.jarvis.files.MainActivity (client)' was disposed without first being removed with the input manager!
+11-03 18:16:21.093  1571  1571 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-03 18:16:21.094  4426  4495 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@2b3b3b2]
+11-03 18:16:21.096  4426  4495 I TestRunner: finished: clarificationChoiceRescansBeforeBuildingDeletionPreview(com.jarvis.files.CommandFlowTest)

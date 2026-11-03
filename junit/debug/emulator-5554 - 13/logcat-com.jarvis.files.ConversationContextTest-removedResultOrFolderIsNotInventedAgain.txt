@@ -1,0 +1,36 @@
+11-03 18:16:18.685  4426  4495 I TestRunner: started: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)
+11-03 18:16:18.698  1066  2363 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+11-03 18:16:18.714  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.716  1571  3109 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 38498810 bytes from https://storage.googleapis.com/captions/aiai-en-US-v3003.zip.
+11-03 18:16:18.722  1571  1902 I LanguagePackMaintenance: Background downloading 0 packs, for an ideal set of 0 total packs
+11-03 18:16:18.722  1571  1902 I LPRequestState: [ManagerRequests] #resolveUnusedLanguagePacks
+11-03 18:16:18.722  1571  1902 I LPRequestState: [ManagerRequests] #resolveDesiredLanguagePacks
+11-03 18:16:18.723  1571  1902 I LPRequestState: [ManagerRequests] #resolveUnusedLanguagePacks
+11-03 18:16:18.723  1571  1902 I LPRequestState: [ManagerRequests] #resolveDesiredLanguagePacks
+11-03 18:16:18.723  1571  1902 I DefaultLPManager: #calculateRolledBackPacks
+11-03 18:16:18.724  1571  1902 I LanguagePackMaintenance: Background deleting 0 stale packs
+11-03 18:16:18.724  1571  1902 I LanguagePackMaintenance: Background LanguagePack updates finished successfully
+11-03 18:16:18.727  1571  1902 I FakeAppFlowTransport: (TEST) Generic AppFlow event: # oss@895e92be
+11-03 18:16:18.729  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.734  1571  2134 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 40904 ms. elapsed since start
+11-03 18:16:18.736  1571  2134 I SP.AiAi : Download stopped: captions_i18n_v0_en-US:asr_en-US_v3003, succeeded, size: 38498810
+11-03 18:16:18.742  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.751  1066  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 80 uptime_millis: 80 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+11-03 18:16:18.754  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.769  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+11-03 18:16:18.772  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.777  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.778  1571  1571 I SP.AiAi : ====> Starting job {m:b:u:l, bg}
+11-03 18:16:18.780  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.783  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.787  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+11-03 18:16:18.789  1620  4365 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.789  1571  2134 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 5 candidates
+11-03 18:16:18.795  1571  1571 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+11-03 18:16:18.807  1571  2134 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 7 scheduled, 7 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:kg_collections_table-21051103 * {W:b:u:l, bg}, manifests:actions-ranking-table-211005 * {W:b:u:l, bg}, manifests:text-classifier-annotator-1687347939 * {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 * {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 * {W:b:u:l, bg}
+11-03 18:16:18.826  1620  4365 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.845  1620  4365 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.856  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.859  1620  2083 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.861  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.862  4426  4495 I TestRunner: finished: removedResultOrFolderIsNotInventedAgain(com.jarvis.files.ConversationContextTest)

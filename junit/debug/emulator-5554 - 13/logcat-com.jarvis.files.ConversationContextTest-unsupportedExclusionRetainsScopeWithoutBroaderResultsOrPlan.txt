@@ -1,0 +1,24 @@
+11-03 18:16:18.360  4426  4495 I TestRunner: started: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
+11-03 18:16:18.394  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.404  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.413  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.423  4426  4495 W UiAutomation: UiAutomation.grantRuntimePermission() is more robust and should be used instead of 'pm grant'
+11-03 18:16:18.439  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.442  1620  5628 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.447  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.451  1620  2083 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.454  1620  5385 W MediaProvider: isAppCloneUserPair for user 0: false
+11-03 18:16:18.463   284   284 I netd    : tetherGetStats() -> {[]} <0.69ms>
+11-03 18:16:18.472   284   284 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.71ms>
+11-03 18:16:18.474   284   284 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.42ms>
+11-03 18:16:18.475   284   284 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+11-03 18:16:18.479  1066  3198 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+11-03 18:16:18.481   490   767 D NetworkStatsObservers: Unregistering RequestInfo from pid/uid:490/1000(android) for DataUsageRequest [ requestId=11, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3545091 ] accessLevel:3
+11-03 18:16:18.481   490   705 D NetworkStatsObservers: Registering observer for RequestInfo from pid/uid:490/1000(android) for DataUsageRequest [ requestId=12, networkTemplate=NetworkTemplate: matchRule=MOBILE, matchSubscriberIds=[310260...], matchWifiNetworkKeys=[], metered=YES, defaultNetwork=NO, thresholdInBytes=3538625 ] accessLevel:3
+11-03 18:16:18.486  1620  5385 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.490  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.492   284   284 I netd    : tetherGetStats() -> {[]} <0.42ms>
+11-03 18:16:18.494  1620  5628 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.496  1620  2086 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.501  1620  5385 I MediaProvider: Deleted 0 0 0 0 0 0 1 items on external_primary due to com.jarvis.files
+11-03 18:16:18.502  4426  4495 I TestRunner: finished: unsupportedExclusionRetainsScopeWithoutBroaderResultsOrPlan(com.jarvis.files.ConversationContextTest)
