@@ -56,6 +56,12 @@ class OrganizeRegressionTest {
         val reply = resolve(root, first.conversation)
         assertEquals(2, reply.plan!!.moves)
     }
+    @Test fun filenamesAndUnrecognizedRestrictionsNeverBroadenThePlan() {
+        val first = resolve("Riordina nella cartella '$root'")
+        for (text in listOf("Riordina solo a.pdf nella cartella '$root'", "Riordina i file vecchi nella cartella '$root'", "Riordina i PDF e video nella cartella '$root'")) {
+            assertNull(OrganizeCommands.resolve(listOf(ChatMsg("user", text)), first.conversation, null, FileIndex.entries))
+        }
+    }
     @Test fun unrelatedRequestDoesNotContinuePendingOrganizer() {
         val first = resolve("Riordina nella cartella '$root'")
         assertNull(OrganizeCommands.resolve(listOf(ChatMsg("user", "Trova gli APK")), first.conversation, null, FileIndex.entries))

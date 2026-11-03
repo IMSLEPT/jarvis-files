@@ -16,19 +16,24 @@ object OrganizeCommands {
         .lowercase(Locale.ITALY).replace('’', '\'').replace(Regex("\\s+"), " ").trim().trimEnd('.', '!', '?')
     private val start = Regex("^(?:(?:puoi|potresti|per favore) )?(?:riordina(?:re|mi)?|organizza(?:re|mi)?|metti in ordine)\\b")
     private fun begin(raw: String, context: ConversationContext?): OrganizeRequest? {
-        val n = norm(raw)
+        val n = norm(raw).replace(Regex("\\bfoto\\b"), "immagini")
         if (!start.containsMatchIn(n)) return null
+        // Filtri o nomi specifici non riconosciuti non autorizzano mai a spostare altri file.
+        if (Regex("\\b(?:tranne|eccetto|esclus[ioe]|soltanto|vecchi|vecchie|recenti|grandi|piccoli|prima|dopo|chiamat[ioae]|screenshot|schermate|excel|word|zip|jpeg|jpg|png|mp4|mp3)\\b").containsMatchIn(n) ||
+            Regex("\\b[\\w-]+\\.[a-z0-9]{1,8}\\b").containsMatchIn(n)) return null
+        if (listOf("pdf", "immagini", "video", "audio", "apk", "archivi", "documenti").count { Regex("\\b$it\\b").containsMatchIn(n) } > 1) return null
         val quoted = Regex("['\"“]([^'\"”]+)['\"”]").find(raw)?.groupValues?.get(1)
         val explicit = Regex("(?:nella|della|la|in|dentro|interno(?: della| di)?) (?:cartella )?([\\w/-]+)$").find(n)?.groupValues?.get(1)
         val candidate = when {
-            Regex("\\bdownloads?\\b").containsMatchIn(n) -> "Download"
             quoted != null -> quoted
+            explicit != null && '/' in explicit -> explicit
+            Regex("\\bdownloads?\\b").containsMatchIn(n) -> "Download"
             explicit != null && explicit !in setOf("file", "tipo", "nome", "data", "bene", "tutti") -> explicit
             else -> context?.folders?.singleOrNull() ?: context?.scope
         }
         val scope = candidate?.let { runCatching { FolderCommands.actualPath(it) }.getOrNull() }
         val mode = when { "per tipo" in n -> "tipo"; "per data" in n -> "data"; "per nome" in n -> "nome"; else -> null }
-        val kind = listOf("pdf", "immagini", "video", "audio", "apk", "archivi").firstOrNull { Regex("\\b$it\\b").containsMatchIn(n) } ?: "tutti"
+        val kind = listOf("pdf", "immagini", "video", "audio", "apk", "archivi", "documenti").firstOrNull { Regex("\\b$it\\b").containsMatchIn(n) } ?: "tutti"
         return OrganizeRequest(scope, mode, kind, Regex("sottocartell|tutte le cartelle|cartelle e file").containsMatchIn(n))
     }
 
@@ -36,6 +41,7 @@ object OrganizeCommands {
         val raw = history.lastOrNull()?.text ?: return null
         val n = norm(raw.substringAfter("\nScelgo: ", raw))
         val fresh = begin(raw, context)
+        if (start.containsMatchIn(norm(raw)) && fresh == null) return null
         var state = fresh ?: context?.organize
         // Recupera anche i pulsanti di una conversazione precedente all'aggiornamento.
         if (state == null && choice != null) {
@@ -49,7 +55,7 @@ object OrganizeCommands {
             val mode = when { "per tipo" in n -> "tipo"; "per data" in n -> "data"; "per nome" in n -> "nome"; else -> null }
             val kind = when {
                 n in setOf("tutti", "tutte", "tutti i file") -> "tutti"
-                n in setOf("pdf", "immagini", "video", "audio", "apk", "archivi", "altri") -> n
+                n in setOf("pdf", "immagini", "video", "audio", "apk", "archivi", "documenti", "altri") -> n
                 else -> null
             }
             val scope = if (state.scope == null) runCatching { FolderCommands.actualPath(raw.trim().trim('"', '\'')) }.getOrNull() else null
@@ -71,6 +77,7 @@ object OrganizeCommands {
         currentEntries.filter { e -> (e.folder == scope || request.recursive && e.folder.startsWith("$scope/")) && when (request.kind) {
             "pdf" -> e.ext == "pdf"; "immagini" -> e.category == FileCategory.IMAGE; "video" -> e.category == FileCategory.VIDEO
             "audio" -> e.category == FileCategory.AUDIO; "apk" -> e.category == FileCategory.APK; "archivi" -> e.category == FileCategory.ARCHIVE
+            "documenti" -> e.category == FileCategory.DOCUMENT
             "altri" -> e.category == FileCategory.OTHER; else -> true
         } }.forEach { e ->
             val group = if (request.mode == "data") SimpleDateFormat("yyyy-MM", Locale.ROOT).format(Date(e.modified)) else when {

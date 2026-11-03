@@ -36,10 +36,10 @@ object AppInsights {
     }
     fun ordered(apps: List<InstalledApp>, order: AppOrder): List<InstalledApp> = when (order) {
         AppOrder.NAME -> apps.sortedBy { it.name.lowercase(Locale.ITALY) }
-        AppOrder.LARGE -> apps.sortedWith(compareByDescending<InstalledApp> { it.totalBytes ?: -1 }.thenBy { it.name })
-        AppOrder.MOST -> apps.sortedWith(compareByDescending<InstalledApp> { it.foregroundMs ?: -1 }.thenBy { it.name })
+        AppOrder.LARGE -> apps.sortedWith(compareByDescending<InstalledApp> { it.totalBytes ?: -1L }.thenBy { it.name })
+        AppOrder.MOST -> apps.sortedWith(compareByDescending<InstalledApp> { it.foregroundMs ?: -1L }.thenBy { it.name })
         AppOrder.LEAST -> apps.sortedWith(compareBy<InstalledApp> { it.foregroundMs ?: Long.MAX_VALUE }.thenBy { it.name })
-        AppOrder.INACTIVE -> apps.filter { it.unused30 == true }.sortedWith(compareByDescending<InstalledApp> { it.totalBytes ?: -1 }.thenBy { it.name })
+        AppOrder.INACTIVE -> apps.filter { it.unused30 == true }.sortedWith(compareByDescending<InstalledApp> { it.totalBytes ?: -1L }.thenBy { it.name })
     }
 
     suspend fun load(c: Context, dayCount: Int, now: Long = System.currentTimeMillis()): AppInventory {

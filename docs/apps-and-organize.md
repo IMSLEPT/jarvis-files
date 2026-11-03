@@ -1,0 +1,11 @@
+# App installate e riordino in chat
+
+In **Altro → App installate** si trovano tutti i pacchetti visibili nel profilo Android corrente, inclusi i componenti di sistema. Ricerca per nome o pacchetto, interruttore sistema, ordinamenti per spazio e utilizzo e filtro inattive. Il dettaglio contiene grafico e valori giornalieri per oggi, 7 o 30 giorni, ultimo utilizzo noto, app/dati/cache e accesso alle impostazioni Android della singola app.
+
+Le dimensioni provengono da StorageStatsManager: totale = appBytes + dataBytes; cacheBytes è già compreso nei dati. I tempi provengono dai record giornalieri UsageStatsManager e rappresentano il primo piano, non i consumi di batteria né l'audio in background. Le giornate non presenti nello storico Android sono sconosciute, non zeri. I totali sommano i soli giorni registrati; le app contemporaneamente visibili possono sovrapporsi. Le inattive richiedono installazione da almeno 30 giorni e un ultimo uso noto più vecchio di 30 giorni, senza record recenti. L'assenza di uno storico non prova inattività. Tutta l'analisi avviene sul dispositivo.
+
+Senza accesso ai dati di utilizzo l'inventario rimane disponibile e le misure sono indicate come non disponibili. Ritorno dalle impostazioni, concessione e revoca aggiornano i dati. Nessun servizio di monitoraggio aggiuntivo o invio online.
+
+Il riordino comune è risolto localmente con stato esplicito della cartella, categoria e criterio: non si torna alle stesse domande dopo “tutti” e “per tipo”. Si esegue una scansione aggiornata prima dell'anteprima. I file delle sottocartelle sono inclusi solo su richiesta e vengono raggruppati nel proprio percorso, senza appiattire la struttura. Un secondo passaggio non crea PDF/PDF. La suddivisione per data usa il mese di modifica; l'ordine per nome rimanda all'ordinamento del browser e non rinomina i file. Restrizioni non supportate non sono convertite in operazioni più ampie. Il tasto Esegui e la funzione Annulla mantengono il loro ruolo.
+
+La verifica dedicata include test su permesso negato, inventario reale, ordinamenti con valori sconosciuti, cache non sommata due volte, stato del riordino, anteprima/esecuzione/ripristino e navigazione effettiva dei pulsanti e dei grafici. Esegue anche le regressioni delle conversazioni contestuali e dei comandi precedenti.
