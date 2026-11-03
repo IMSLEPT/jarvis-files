@@ -1,0 +1,69 @@
+name: Verifica App e riordino
+on:
+  push:
+    branches: ['codex/apps-usage-organizer']
+permissions:
+  contents: write
+concurrency:
+  group: apps-organize-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Compila app e test
+        run: |
+          chmod +x gradlew
+          set -o pipefail
+          ./gradlew assembleDebug assembleDebugAndroidTest assembleRelease 2>&1 | tee build.log || {
+            msg=$(grep -E '^e: |error: |What went wrong|Execution failed' build.log | head -50 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Compilazione::${msg}"
+            exit 1
+          }
+      - name: Abilita KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Regressioni su emulatore
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 33
+          target: google_apis
+          arch: x86_64
+          ram-size: 4096M
+          disk-size: 6000M
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          disable-animations: true
+          script: ./.github/scripts/run-apps-tests.sh
+      - name: Riepilogo
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import glob, xml.etree.ElementTree as ET
+          cases = [c for p in glob.glob('results/junit/**/*.xml', recursive=True) for c in ET.parse(p).getroot().iter('testcase')]
+          failed = [c for c in cases if c.find('failure') is not None or c.find('error') is not None]
+          print(f'::notice title=Test::{len(cases)} test, {len(failed)} falliti')
+          for c in failed:
+              msg = ''.join(c.itertext())[:1800].replace('\n','%0A')
+              print(f'::error title={c.get("name")}::{msg}')
+          PY
+      - name: Conserva prove
+        if: always()
+        run: |
+          mkdir -p results
+          cp build.log results/ 2>/dev/null || true
+          cd results
+          git init -q -b "apps-results/${GITHUB_SHA::12}"
+          git config user.name jarvis-ci
+          git config user.email ci@users.noreply.github.com
+          git add -A
+          git commit -qm "Verifica ${GITHUB_SHA::12}"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD

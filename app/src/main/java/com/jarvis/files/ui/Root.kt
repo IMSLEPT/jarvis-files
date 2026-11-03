@@ -212,6 +212,7 @@ private fun MainShell(vm: MainViewModel) {
                     label = "nav",
                 ) { (tab, sub) ->
                     when (sub) {
+                        Sub.APPS -> com.jarvis.files.ui.screens.AppsScreen(vm)
                         Sub.SECURITY -> SecurityScreen(vm)
                         Sub.BATTERY -> BatteryScreen(vm)
                         Sub.VAULT -> VaultScreen(vm)

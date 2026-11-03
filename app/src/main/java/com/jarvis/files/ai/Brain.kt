@@ -114,6 +114,9 @@ Regole inderogabili:
         val last = history.lastOrNull() ?: throw AiUnavailable("Scrivi un messaggio per Jarvis.")
         if (ChoiceCommands.declines(choice)) return BrainReply("Operazione annullata. Nessun file è stato modificato.") to "Comando locale"
         val coroutine = kotlinx.coroutines.currentCoroutineContext()
+        OrganizeCommands.resolve(history, conversation, choice, FileIndex.ensure(30_000))?.let {
+            return it to "Comando locale · riordino verificato"
+        }
         FolderCommands.resolve(history, previousFolders) { coroutine.ensureActive() }?.let {
             return it.copy(conversation = it.folderResults?.let { folders -> ConversationContext.from(folders) }) to "Dati locali · cartelle verificate"
         }

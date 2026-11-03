@@ -117,6 +117,8 @@ fun MoreScreen(vm: MainViewModel) {
         }
         SectionTitle("Strumenti")
         GlassCard(Modifier.fillMaxWidth(), padding = PaddingValues(vertical = 4.dp)) {
+            ListRow(Icons.Filled.Settings, "App installate", "Spazio, utilizzo e app inattive") { vm.sub = Sub.APPS }
+            com.jarvis.files.ui.components.RowDivider()
             ListRow(Icons.Filled.Schedule, "Automazioni", "Attività programmate") { vm.sub = Sub.AUTOMATIONS }
             com.jarvis.files.ui.components.RowDivider()
             ListRow(Icons.Filled.Search, "Trova documenti", "Cerca anche con parole tue") { vm.sub = Sub.FIND }

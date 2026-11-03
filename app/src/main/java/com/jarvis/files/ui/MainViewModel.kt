@@ -53,7 +53,7 @@ data class UiMsg(
 enum class Tab { HOME, FILES, CHAT, CLEAN, PHOTOS, MORE }
 
 /** Schermate secondarie aperte sopra le schede. */
-enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY, BROWSER, FOLDERS }
+enum class Sub { NONE, SECURITY, BATTERY, VAULT, AUTOMATIONS, SETTINGS, TRASH, PEOPLE, FIND, CATEGORY, BROWSER, FOLDERS, APPS }
 
 /** Suggerimento mostrato in Home (l'azione è decisa dalla UI in base al tipo). */
 data class HomeTip(val kind: String, val title: String, val big: String, val sub: String)

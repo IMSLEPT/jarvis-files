@@ -6,7 +6,7 @@ import java.util.Locale
 
 /** App-owned references, never interpreted from model-provided paths or prose. */
 data class ConversationContext(val scope: String? = null, val folders: List<String> = emptyList(),
-    val files: List<FileEntry>? = null, val pending: String? = null, val awaitingFileName: Boolean = false) {
+    val files: List<FileEntry>? = null, val pending: String? = null, val awaitingFileName: Boolean = false, val organize: OrganizeRequest? = null) {
     companion object { fun from(f: FolderMatches) = ConversationContext(f.scope, f.paths) }
 }
 
